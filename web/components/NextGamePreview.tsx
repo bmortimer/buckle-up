@@ -9,7 +9,7 @@ export default function NextGamePreview() {
   }
 
   return (
-    <div className="scoreboard-panel p-6 relative overflow-hidden">
+    <div data-card="next-game" className="scoreboard-panel p-6 relative overflow-hidden">
       {/* Top LED status bar - different color to distinguish */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-amber-500 opacity-70" />
 

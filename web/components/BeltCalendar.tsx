@@ -43,7 +43,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
   // Start with initial holder from the first change, or current holder if no changes
   let currentHolder = history.startingTeam
 
-  // Get date range from all games
+  // Get date range from all games (already filtered by year range in parent)
   if (allGames.length === 0) return null
   const gameDates = allGames.map(g => new Date(g.date))
   const minDate = new Date(Math.min(...gameDates.map(d => d.getTime())))
@@ -127,7 +127,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     .sort((a, b) => a[0].localeCompare(b[0]))
 
   return (
-    <div className="scoreboard-panel p-6 relative">
+    <div data-card="calendar" className="scoreboard-panel p-6 relative">
       <div className="flex items-center justify-between mb-6 border-b-2 border-border pb-3">
         <h3 className="text-base font-orbitron tracking-[0.2em] uppercase">
           ◆ {selectedTeam ? `${selectedTeam} Calendar` : 'Belt Calendar'}

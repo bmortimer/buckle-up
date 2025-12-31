@@ -10,7 +10,7 @@ interface TimelineProps {
 
 export default function Timeline({ changes, franchises, selectedTeam }: TimelineProps) {
   return (
-    <div className="scoreboard-panel p-6">
+    <div data-card="timeline" className="scoreboard-panel p-6">
       {/* Header with LED indicators */}
       <div className="flex items-center justify-between mb-6 border-b-2 border-border pb-3">
         <h3 className="text-base font-orbitron tracking-[0.2em] uppercase">

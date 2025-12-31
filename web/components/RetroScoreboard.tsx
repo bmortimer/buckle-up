@@ -7,7 +7,7 @@ interface RetroScoreboardProps {
 
 export default function RetroScoreboard({ totalGames, totalChanges, season, champion }: RetroScoreboardProps) {
   return (
-    <div className="scoreboard-panel p-6 relative overflow-hidden">
+    <div data-card="season-stats" className="scoreboard-panel p-6 relative overflow-hidden">
       {/* Top LED status bar */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-red-500 opacity-70" />
 

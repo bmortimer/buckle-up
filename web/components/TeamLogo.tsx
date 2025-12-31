@@ -4,11 +4,12 @@ import { getTeamColor } from '@/lib/franchises'
 interface TeamLogoProps {
   teamCode: string
   franchises: FranchiseInfo[]
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+  size?: 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   className?: string
 }
 
 const sizeMap = {
+  xxs: 'w-4 h-4 text-[6px]',
   xs: 'w-6 h-6 text-[10px]',
   sm: 'w-8 h-8 text-xs',
   md: 'w-12 h-12 text-sm',

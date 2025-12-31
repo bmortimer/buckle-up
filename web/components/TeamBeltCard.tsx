@@ -2,40 +2,49 @@ import type { TeamBeltStats, FranchiseInfo } from '@/lib/types'
 import { getTeamColor, getTeamDisplayName } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 
-interface BeltHolderCardProps {
-  currentHolder: string
+interface TeamBeltCardProps {
+  team: string
   stats: TeamBeltStats | undefined
   franchises: FranchiseInfo[]
-  isPastSeason?: boolean
+  isCurrentHolder: boolean
+  isSeasonChampion?: boolean
+  year?: number
 }
 
-export default function BeltHolderCard({ currentHolder, stats, franchises, isPastSeason = false }: BeltHolderCardProps) {
-  const color = getTeamColor(currentHolder, franchises)
-  const displayName = getTeamDisplayName(currentHolder, franchises)
+export default function TeamBeltCard({
+  team,
+  stats,
+  franchises,
+  isCurrentHolder,
+  isSeasonChampion = false,
+  year
+}: TeamBeltCardProps) {
+  const color = getTeamColor(team, franchises)
+  const displayName = getTeamDisplayName(team, franchises)
 
   return (
-    <div data-card="current-holder" className="scoreboard-panel p-8 text-center relative overflow-hidden">
+    <div data-card="team-belt-stats" className="scoreboard-panel p-8 text-center relative overflow-hidden">
       {/* LED status bar at top */}
-      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" />
+      <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
 
       <div className="relative z-10">
         <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-8 font-orbitron">
-          {isPastSeason ? '◆ SEASON CHAMPION ◆' : '◆ BELT HOLDER ◆'}
+          {isCurrentHolder ? '◆ CURRENT BELT HOLDER ◆' : isSeasonChampion ? `◆ ${year} CHAMPION ◆` : '◆ TEAM BELT STATS ◆'}
         </div>
 
         {/* Team Logo */}
         <div className="flex justify-center mb-6">
-          <TeamLogo teamCode={currentHolder} franchises={franchises} size="xl" />
+          <TeamLogo teamCode={team} franchises={franchises} size="xl" />
         </div>
 
         {/* Team code in giant LED style */}
         <div
           className="text-8xl font-mono mb-3 tabular-nums tracking-[0.3em] led-text"
           style={{
-            color: 'hsl(var(--led-red))',
+            color: 'hsl(var(--led-amber))',
           }}
         >
-          {currentHolder}
+          {team}
         </div>
 
         <div className="text-lg text-foreground mb-8 font-orbitron tracking-wider uppercase">
@@ -85,6 +94,12 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
                 LONGEST<br/>STREAK
               </div>
             </div>
+          </div>
+        )}
+
+        {!stats && (
+          <div className="text-muted-foreground font-orbitron text-sm">
+            No belt data for {team}
           </div>
         )}
       </div>

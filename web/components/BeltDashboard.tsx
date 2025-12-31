@@ -4,10 +4,13 @@ import { useState, useMemo, useEffect } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import type { SeasonData, FranchiseInfo } from '@/lib/types'
 import { BeltTracker, trackAllSeasons } from '@/lib/beltTracker'
+import { getSeasonConfig } from '@/lib/seasonConfig'
 import BeltHolderCard from './BeltHolderCard'
+import TeamBeltCard from './TeamBeltCard'
 import BarChartView from './BarChartView'
 import Timeline from './Timeline'
 import BeltCalendar from './BeltCalendar'
+import DetailedCalendar from './DetailedCalendar'
 import RetroScoreboard from './RetroScoreboard'
 import NextGamePreview from './NextGamePreview'
 import YearRangeSlider from './YearRangeSlider'
@@ -72,6 +75,26 @@ export default function BeltDashboard({
 
   const champions = league === 'wnba' ? wnbaChampions : nbaChampions
 
+  // Get season config for current league
+  const seasonConfig = getSeasonConfig(league)
+
+  // Detect current context
+  const context = useMemo(() => {
+    const isSingleYear = yearRange[0] === yearRange[1]
+    const isAllYears = yearRange[0] === minYear && yearRange[1] === maxYear
+    const selectedYear = yearRange[0]
+
+    if (selectedTeam) {
+      return 'TEAM' as const
+    } else if (isSingleYear && selectedYear < seasonConfig.currentYear) {
+      return 'PAST_YEAR' as const
+    } else if (isSingleYear && selectedYear === seasonConfig.currentYear && seasonConfig.isInSeason) {
+      return 'THIS_YEAR' as const
+    } else {
+      return 'OFF_SEASON' as const
+    }
+  }, [yearRange, minYear, maxYear, selectedTeam, seasonConfig])
+
   // Get all games for the current view (filtered by year range)
   const allGames = useMemo(() => {
     const filteredSeasons = Object.keys(seasons)
@@ -103,7 +126,7 @@ export default function BeltDashboard({
     return trackAllSeasons(seasonsData, franchises, 'LAS')
   }, [yearRange, seasons, franchises])
 
-  // Get all teams that appear in the data
+  // Get all teams that appear in the selected year range
   const allTeams = useMemo(() => {
     if (!history) return []
     const teamSet = new Set<string>()
@@ -113,6 +136,45 @@ export default function BeltDashboard({
     })
     return Array.from(teamSet).sort()
   }, [allGames, history])
+
+  // Get available years for the selected team (if any)
+  const availableYearsForTeam = useMemo(() => {
+    if (!selectedTeam) return availableYears
+
+    const teamYears = new Set<number>()
+    Object.keys(seasons).forEach(year => {
+      const yearNum = parseInt(year)
+      const games = seasons[year].games
+      const teamPlayedThisYear = games.some(
+        game => game.homeTeam === selectedTeam || game.awayTeam === selectedTeam
+      )
+      if (teamPlayedThisYear) {
+        teamYears.add(yearNum)
+      }
+    })
+
+    return Array.from(teamYears).sort((a, b) => a - b)
+  }, [selectedTeam, seasons])
+
+  // Adjust year range when team is selected if current range is invalid
+  useEffect(() => {
+    if (selectedTeam && availableYearsForTeam.length > 0) {
+      const teamMin = availableYearsForTeam[0]
+      const teamMax = availableYearsForTeam[availableYearsForTeam.length - 1]
+
+      // If current year range doesn't overlap with team's years, reset to all team years
+      if (yearRange[0] > teamMax || yearRange[1] < teamMin) {
+        setYearRange([teamMin, teamMax])
+      }
+      // If current year is outside team's range, clamp it
+      else if (yearRange[0] < teamMin || yearRange[1] > teamMax) {
+        setYearRange([
+          Math.max(yearRange[0], teamMin),
+          Math.min(yearRange[1], teamMax)
+        ])
+      }
+    }
+  }, [selectedTeam, availableYearsForTeam, yearRange])
 
   if (!history) {
     return (
@@ -139,7 +201,7 @@ export default function BeltDashboard({
       </div>
 
       {/* Header - Full retro LED scoreboard style */}
-      <div className="scoreboard-panel p-8 text-center space-y-4 relative overflow-hidden">
+      <div data-card="header" className="scoreboard-panel p-8 text-center space-y-4 relative overflow-hidden">
         {/* Top LED strip */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-500 via-amber-500 to-red-500 opacity-70" />
 
@@ -200,12 +262,12 @@ export default function BeltDashboard({
       )}
 
       {/* Filters */}
-      <div className="scoreboard-panel p-6">
+      <div data-card="filters" className="scoreboard-panel p-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Year Range Slider */}
           <YearRangeSlider
-            minYear={minYear}
-            maxYear={maxYear}
+            minYear={selectedTeam ? availableYearsForTeam[0] || minYear : minYear}
+            maxYear={selectedTeam ? availableYearsForTeam[availableYearsForTeam.length - 1] || maxYear : maxYear}
             value={yearRange}
             onChange={setYearRange}
           />
@@ -236,39 +298,74 @@ export default function BeltDashboard({
       </div>
 
       {/* Stats & Next Game Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <RetroScoreboard
-          totalGames={history.summary.totalGames}
-          totalChanges={history.summary.totalChanges}
-          season={yearRange[0] === yearRange[1] ? yearRange[0].toString() : undefined}
-          champion={yearRange[0] === yearRange[1] ? champions[yearRange[0].toString()] : undefined}
-        />
-        <NextGamePreview />
-      </div>
+      {/* season-stats: show on PAST_YEAR, THIS_YEAR, OFF_SEASON (not TEAM) */}
+      {/* next-game: show on THIS_YEAR, OFF_SEASON, and TEAM if team in title match */}
+      {context !== 'TEAM' && (
+        <div className={context === 'PAST_YEAR' ? "" : "grid grid-cols-1 lg:grid-cols-2 gap-6"}>
+          <RetroScoreboard
+            totalGames={history.summary.totalGames}
+            totalChanges={history.summary.totalChanges}
+            season={yearRange[0] === yearRange[1] ? yearRange[0].toString() : undefined}
+            champion={yearRange[0] === yearRange[1] ? champions[yearRange[0].toString()] : undefined}
+          />
+          {(context === 'THIS_YEAR' || context === 'OFF_SEASON') && <NextGamePreview />}
+        </div>
+      )}
 
-      {/* Current Holder Card - Only show when not filtering by specific team */}
-      {!selectedTeam && (
+      {/* Current Holder Card - show on PAST_YEAR, THIS_YEAR, OFF_SEASON */}
+      {context !== 'TEAM' && (
         <BeltHolderCard
           currentHolder={history.summary.currentHolder}
           stats={currentHolderStats}
           franchises={franchises}
-          isPastSeason={yearRange[1] < new Date().getFullYear()}
+          isPastSeason={context === 'PAST_YEAR'}
+        />
+      )}
+
+      {/* Team Belt Card - show on TEAM context */}
+      {context === 'TEAM' && selectedTeam && (() => {
+        const teamStats = history.summary.teams.find(t => t.team === selectedTeam)
+        const isCurrentHolder = history.summary.currentHolder === selectedTeam
+        const isSingleYear = yearRange[0] === yearRange[1]
+        const isSeasonChampion = isSingleYear && champions[yearRange[0].toString()] === selectedTeam
+
+        return (
+          <TeamBeltCard
+            team={selectedTeam}
+            stats={teamStats}
+            franchises={franchises}
+            isCurrentHolder={isCurrentHolder}
+            isSeasonChampion={isSeasonChampion}
+            year={isSingleYear ? yearRange[0] : undefined}
+          />
+        )
+      })()}
+
+      {/* Detailed Calendar - show on PAST_YEAR, THIS_YEAR, OFF_SEASON (1 year only) */}
+      {context !== 'TEAM' && yearRange[0] === yearRange[1] && (
+        <DetailedCalendar
+          history={history}
+          franchises={franchises}
+          allGames={allGames}
+          year={yearRange[0]}
         />
       )}
 
       {/* Visualizations Grid */}
-      <div className={selectedTeam ? "space-y-6" : "grid grid-cols-1 lg:grid-cols-2 gap-6"}>
-        {selectedTeam && (
+      {/* Calendar (github-style): show only on TEAM */}
+      {/* team-stats: always show */}
+      <div className={context === 'TEAM' ? "space-y-6" : ""}>
+        {context === 'TEAM' && (
           <BeltCalendar history={history} franchises={franchises} selectedTeam={selectedTeam} allGames={allGames} />
         )}
         <BarChartView teams={history.summary.teams} franchises={franchises} allGames={allGames} selectedTeam={selectedTeam} />
       </div>
 
-      {/* Timeline */}
-      <Timeline changes={history.changes} franchises={franchises} selectedTeam={selectedTeam} />
+      {/* Timeline - Hidden for now */}
+      {/* <Timeline changes={history.changes} franchises={franchises} selectedTeam={selectedTeam} /> */}
 
       {/* Footer */}
-      <div className="scoreboard-panel p-6 text-center">
+      <div data-card="footer" className="scoreboard-panel p-6 text-center">
         <div className="flex items-center justify-center gap-3 mb-3">
           <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
           <p className="text-xs font-mono text-muted-foreground tracking-wider uppercase">
