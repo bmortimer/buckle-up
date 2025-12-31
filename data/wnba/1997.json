@@ -1,0 +1,794 @@
+{
+  "season": "1997",
+  "league": "WNBA",
+  "games": [
+    {
+      "date": "1997-06-21",
+      "homeTeam": "CLE",
+      "awayTeam": "HOU",
+      "homeScore": 56,
+      "awayScore": 76
+    },
+    {
+      "date": "1997-06-21",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": 57,
+      "awayScore": 67
+    },
+    {
+      "date": "1997-06-21",
+      "homeTeam": "UTA",
+      "awayTeam": "SAC",
+      "homeScore": 60,
+      "awayScore": 70
+    },
+    {
+      "date": "1997-06-22",
+      "homeTeam": "PHO",
+      "awayTeam": "CHA",
+      "homeScore": 76,
+      "awayScore": 59
+    },
+    {
+      "date": "1997-06-23",
+      "homeTeam": "SAC",
+      "awayTeam": "NYL",
+      "homeScore": 62,
+      "awayScore": 73
+    },
+    {
+      "date": "1997-06-23",
+      "homeTeam": "UTA",
+      "awayTeam": "LAS",
+      "homeScore": 102,
+      "awayScore": 89
+    },
+    {
+      "date": "1997-06-24",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 70,
+      "awayScore": 55
+    },
+    {
+      "date": "1997-06-25",
+      "homeTeam": "LAS",
+      "awayTeam": "CHA",
+      "homeScore": 74,
+      "awayScore": 54
+    },
+    {
+      "date": "1997-06-26",
+      "homeTeam": "CLE",
+      "awayTeam": "UTA",
+      "homeScore": 74,
+      "awayScore": 63
+    },
+    {
+      "date": "1997-06-26",
+      "homeTeam": "HOU",
+      "awayTeam": "NYL",
+      "homeScore": 60,
+      "awayScore": 62
+    },
+    {
+      "date": "1997-06-26",
+      "homeTeam": "SAC",
+      "awayTeam": "CHA",
+      "homeScore": 78,
+      "awayScore": 70
+    },
+    {
+      "date": "1997-06-27",
+      "homeTeam": "LAS",
+      "awayTeam": "SAC",
+      "homeScore": 93,
+      "awayScore": 73
+    },
+    {
+      "date": "1997-06-28",
+      "homeTeam": "CLE",
+      "awayTeam": "PHO",
+      "homeScore": 63,
+      "awayScore": 68
+    },
+    {
+      "date": "1997-06-28",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 58,
+      "awayScore": 76
+    },
+    {
+      "date": "1997-06-29",
+      "homeTeam": "CHA",
+      "awayTeam": "CLE",
+      "homeScore": 67,
+      "awayScore": 44
+    },
+    {
+      "date": "1997-06-29",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 65,
+      "awayScore": 57
+    },
+    {
+      "date": "1997-06-30",
+      "homeTeam": "HOU",
+      "awayTeam": "LAS",
+      "homeScore": 71,
+      "awayScore": 66
+    },
+    {
+      "date": "1997-07-02",
+      "homeTeam": "NYL",
+      "awayTeam": "HOU",
+      "homeScore": 72,
+      "awayScore": 67
+    },
+    {
+      "date": "1997-07-02",
+      "homeTeam": "SAC",
+      "awayTeam": "UTA",
+      "homeScore": 68,
+      "awayScore": 73
+    },
+    {
+      "date": "1997-07-03",
+      "homeTeam": "CLE",
+      "awayTeam": "LAS",
+      "homeScore": 62,
+      "awayScore": 74
+    },
+    {
+      "date": "1997-07-03",
+      "homeTeam": "UTA",
+      "awayTeam": "PHO",
+      "homeScore": 55,
+      "awayScore": 77
+    },
+    {
+      "date": "1997-07-04",
+      "homeTeam": "HOU",
+      "awayTeam": "NYL",
+      "homeScore": 58,
+      "awayScore": 65
+    },
+    {
+      "date": "1997-07-05",
+      "homeTeam": "CHA",
+      "awayTeam": "LAS",
+      "homeScore": 78,
+      "awayScore": 66
+    },
+    {
+      "date": "1997-07-05",
+      "homeTeam": "UTA",
+      "awayTeam": "NYL",
+      "homeScore": 53,
+      "awayScore": 66
+    },
+    {
+      "date": "1997-07-06",
+      "homeTeam": "SAC",
+      "awayTeam": "CLE",
+      "homeScore": 70,
+      "awayScore": 67
+    },
+    {
+      "date": "1997-07-07",
+      "homeTeam": "HOU",
+      "awayTeam": "CHA",
+      "homeScore": 74,
+      "awayScore": 56
+    },
+    {
+      "date": "1997-07-07",
+      "homeTeam": "LAS",
+      "awayTeam": "CLE",
+      "homeScore": 70,
+      "awayScore": 81
+    },
+    {
+      "date": "1997-07-07",
+      "homeTeam": "PHO",
+      "awayTeam": "NYL",
+      "homeScore": 69,
+      "awayScore": 50
+    },
+    {
+      "date": "1997-07-07",
+      "homeTeam": "UTA",
+      "awayTeam": "SAC",
+      "homeScore": 69,
+      "awayScore": 79
+    },
+    {
+      "date": "1997-07-09",
+      "homeTeam": "CHA",
+      "awayTeam": "NYL",
+      "homeScore": 87,
+      "awayScore": 69
+    },
+    {
+      "date": "1997-07-09",
+      "homeTeam": "PHO",
+      "awayTeam": "HOU",
+      "homeScore": 69,
+      "awayScore": 64
+    },
+    {
+      "date": "1997-07-10",
+      "homeTeam": "CLE",
+      "awayTeam": "SAC",
+      "homeScore": 77,
+      "awayScore": 61
+    },
+    {
+      "date": "1997-07-10",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 62,
+      "awayScore": 48
+    },
+    {
+      "date": "1997-07-11",
+      "homeTeam": "LAS",
+      "awayTeam": "UTA",
+      "homeScore": 75,
+      "awayScore": 68
+    },
+    {
+      "date": "1997-07-12",
+      "homeTeam": "CHA",
+      "awayTeam": "CLE",
+      "homeScore": 72,
+      "awayScore": 43
+    },
+    {
+      "date": "1997-07-12",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 89,
+      "awayScore": 61
+    },
+    {
+      "date": "1997-07-12",
+      "homeTeam": "UTA",
+      "awayTeam": "PHO",
+      "homeScore": 52,
+      "awayScore": 51
+    },
+    {
+      "date": "1997-07-13",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 56,
+      "awayScore": 57
+    },
+    {
+      "date": "1997-07-14",
+      "homeTeam": "CLE",
+      "awayTeam": "NYL",
+      "homeScore": 57,
+      "awayScore": 68
+    },
+    {
+      "date": "1997-07-14",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 79,
+      "awayScore": 56
+    },
+    {
+      "date": "1997-07-15",
+      "homeTeam": "NYL",
+      "awayTeam": "CLE",
+      "homeScore": 76,
+      "awayScore": 59
+    },
+    {
+      "date": "1997-07-15",
+      "homeTeam": "SAC",
+      "awayTeam": "LAS",
+      "homeScore": 78,
+      "awayScore": 73
+    },
+    {
+      "date": "1997-07-16",
+      "homeTeam": "CHA",
+      "awayTeam": "UTA",
+      "homeScore": 75,
+      "awayScore": 63
+    },
+    {
+      "date": "1997-07-16",
+      "homeTeam": "LAS",
+      "awayTeam": "HOU",
+      "homeScore": 77,
+      "awayScore": 52
+    },
+    {
+      "date": "1997-07-16",
+      "homeTeam": "PHO",
+      "awayTeam": "SAC",
+      "homeScore": 84,
+      "awayScore": 67
+    },
+    {
+      "date": "1997-07-17",
+      "homeTeam": "CLE",
+      "awayTeam": "CHA",
+      "homeScore": 65,
+      "awayScore": 47
+    },
+    {
+      "date": "1997-07-17",
+      "homeTeam": "NYL",
+      "awayTeam": "UTA",
+      "homeScore": 80,
+      "awayScore": 54
+    },
+    {
+      "date": "1997-07-18",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 60,
+      "awayScore": 82
+    },
+    {
+      "date": "1997-07-19",
+      "homeTeam": "CLE",
+      "awayTeam": "UTA",
+      "homeScore": 95,
+      "awayScore": 68
+    },
+    {
+      "date": "1997-07-19",
+      "homeTeam": "NYL",
+      "awayTeam": "LAS",
+      "homeScore": 69,
+      "awayScore": 57
+    },
+    {
+      "date": "1997-07-21",
+      "homeTeam": "CHA",
+      "awayTeam": "LAS",
+      "homeScore": 75,
+      "awayScore": 64
+    },
+    {
+      "date": "1997-07-21",
+      "homeTeam": "SAC",
+      "awayTeam": "PHO",
+      "homeScore": 57,
+      "awayScore": 70
+    },
+    {
+      "date": "1997-07-22",
+      "homeTeam": "NYL",
+      "awayTeam": "UTA",
+      "homeScore": 71,
+      "awayScore": 78
+    },
+    {
+      "date": "1997-07-22",
+      "homeTeam": "PHO",
+      "awayTeam": "HOU",
+      "homeScore": 69,
+      "awayScore": 77
+    },
+    {
+      "date": "1997-07-23",
+      "homeTeam": "CHA",
+      "awayTeam": "NYL",
+      "homeScore": 63,
+      "awayScore": 65
+    },
+    {
+      "date": "1997-07-23",
+      "homeTeam": "LAS",
+      "awayTeam": "CLE",
+      "homeScore": 85,
+      "awayScore": 89
+    },
+    {
+      "date": "1997-07-25",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 83,
+      "awayScore": 86
+    },
+    {
+      "date": "1997-07-25",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 76,
+      "awayScore": 86
+    },
+    {
+      "date": "1997-07-26",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 61,
+      "awayScore": 64
+    },
+    {
+      "date": "1997-07-26",
+      "homeTeam": "UTA",
+      "awayTeam": "CLE",
+      "homeScore": 66,
+      "awayScore": 77
+    },
+    {
+      "date": "1997-07-27",
+      "homeTeam": "SAC",
+      "awayTeam": "LAS",
+      "homeScore": 62,
+      "awayScore": 84
+    },
+    {
+      "date": "1997-07-28",
+      "homeTeam": "PHO",
+      "awayTeam": "CLE",
+      "homeScore": 64,
+      "awayScore": 76
+    },
+    {
+      "date": "1997-07-29",
+      "homeTeam": "HOU",
+      "awayTeam": "CLE",
+      "homeScore": 64,
+      "awayScore": 73
+    },
+    {
+      "date": "1997-07-30",
+      "homeTeam": "CHA",
+      "awayTeam": "PHO",
+      "homeScore": 68,
+      "awayScore": 67
+    },
+    {
+      "date": "1997-07-30",
+      "homeTeam": "LAS",
+      "awayTeam": "UTA",
+      "homeScore": 91,
+      "awayScore": 69
+    },
+    {
+      "date": "1997-07-30",
+      "homeTeam": "NYL",
+      "awayTeam": "SAC",
+      "homeScore": 73,
+      "awayScore": 68
+    },
+    {
+      "date": "1997-07-31",
+      "homeTeam": "CLE",
+      "awayTeam": "PHO",
+      "homeScore": 79,
+      "awayScore": 67
+    },
+    {
+      "date": "1997-08-01",
+      "homeTeam": "CHA",
+      "awayTeam": "SAC",
+      "homeScore": 85,
+      "awayScore": 61
+    },
+    {
+      "date": "1997-08-01",
+      "homeTeam": "LAS",
+      "awayTeam": "HOU",
+      "homeScore": 57,
+      "awayScore": 81
+    },
+    {
+      "date": "1997-08-02",
+      "homeTeam": "CLE",
+      "awayTeam": "SAC",
+      "homeScore": 72,
+      "awayScore": 51
+    },
+    {
+      "date": "1997-08-02",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 80,
+      "awayScore": 70
+    },
+    {
+      "date": "1997-08-02",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 74,
+      "awayScore": 63
+    },
+    {
+      "date": "1997-08-03",
+      "homeTeam": "LAS",
+      "awayTeam": "CHA",
+      "homeScore": 70,
+      "awayScore": 77
+    },
+    {
+      "date": "1997-08-04",
+      "homeTeam": "PHO",
+      "awayTeam": "SAC",
+      "homeScore": 83,
+      "awayScore": 60
+    },
+    {
+      "date": "1997-08-04",
+      "homeTeam": "UTA",
+      "awayTeam": "CHA",
+      "homeScore": 73,
+      "awayScore": 70
+    },
+    {
+      "date": "1997-08-05",
+      "homeTeam": "CLE",
+      "awayTeam": "HOU",
+      "homeScore": 66,
+      "awayScore": 76
+    },
+    {
+      "date": "1997-08-05",
+      "homeTeam": "NYL",
+      "awayTeam": "LAS",
+      "homeScore": 50,
+      "awayScore": 67
+    },
+    {
+      "date": "1997-08-06",
+      "homeTeam": "PHO",
+      "awayTeam": "UTA",
+      "homeScore": 78,
+      "awayScore": 46
+    },
+    {
+      "date": "1997-08-06",
+      "homeTeam": "SAC",
+      "awayTeam": "CHA",
+      "homeScore": 77,
+      "awayScore": 64
+    },
+    {
+      "date": "1997-08-07",
+      "homeTeam": "CLE",
+      "awayTeam": "LAS",
+      "homeScore": 84,
+      "awayScore": 87
+    },
+    {
+      "date": "1997-08-07",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 74,
+      "awayScore": 70
+    },
+    {
+      "date": "1997-08-08",
+      "homeTeam": "SAC",
+      "awayTeam": "UTA",
+      "homeScore": 93,
+      "awayScore": 78
+    },
+    {
+      "date": "1997-08-09",
+      "homeTeam": "CHA",
+      "awayTeam": "PHO",
+      "homeScore": 79,
+      "awayScore": 59
+    },
+    {
+      "date": "1997-08-09",
+      "homeTeam": "HOU",
+      "awayTeam": "LAS",
+      "homeScore": 72,
+      "awayScore": 71
+    },
+    {
+      "date": "1997-08-10",
+      "homeTeam": "SAC",
+      "awayTeam": "NYL",
+      "homeScore": 76,
+      "awayScore": 69
+    },
+    {
+      "date": "1997-08-11",
+      "homeTeam": "CHA",
+      "awayTeam": "HOU",
+      "homeScore": 62,
+      "awayScore": 72
+    },
+    {
+      "date": "1997-08-11",
+      "homeTeam": "UTA",
+      "awayTeam": "CLE",
+      "homeScore": 59,
+      "awayScore": 74
+    },
+    {
+      "date": "1997-08-12",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 76,
+      "awayScore": 56
+    },
+    {
+      "date": "1997-08-12",
+      "homeTeam": "PHO",
+      "awayTeam": "NYL",
+      "homeScore": 77,
+      "awayScore": 67
+    },
+    {
+      "date": "1997-08-12",
+      "homeTeam": "SAC",
+      "awayTeam": "CLE",
+      "homeScore": 81,
+      "awayScore": 76
+    },
+    {
+      "date": "1997-08-14",
+      "homeTeam": "CHA",
+      "awayTeam": "SAC",
+      "homeScore": 68,
+      "awayScore": 51
+    },
+    {
+      "date": "1997-08-14",
+      "homeTeam": "PHO",
+      "awayTeam": "CLE",
+      "homeScore": 61,
+      "awayScore": 55
+    },
+    {
+      "date": "1997-08-15",
+      "homeTeam": "NYL",
+      "awayTeam": "SAC",
+      "homeScore": 79,
+      "awayScore": 63
+    },
+    {
+      "date": "1997-08-16",
+      "homeTeam": "CHA",
+      "awayTeam": "HOU",
+      "homeScore": 80,
+      "awayScore": 71
+    },
+    {
+      "date": "1997-08-16",
+      "homeTeam": "UTA",
+      "awayTeam": "LAS",
+      "homeScore": 64,
+      "awayScore": 74
+    },
+    {
+      "date": "1997-08-17",
+      "homeTeam": "CLE",
+      "awayTeam": "CHA",
+      "homeScore": 81,
+      "awayScore": 49
+    },
+    {
+      "date": "1997-08-17",
+      "homeTeam": "NYL",
+      "awayTeam": "HOU",
+      "homeScore": 55,
+      "awayScore": 70
+    },
+    {
+      "date": "1997-08-17",
+      "homeTeam": "PHO",
+      "awayTeam": "UTA",
+      "homeScore": 71,
+      "awayScore": 63
+    },
+    {
+      "date": "1997-08-18",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 75,
+      "awayScore": 66
+    },
+    {
+      "date": "1997-08-19",
+      "homeTeam": "HOU",
+      "awayTeam": "CHA",
+      "homeScore": 77,
+      "awayScore": 69
+    },
+    {
+      "date": "1997-08-19",
+      "homeTeam": "UTA",
+      "awayTeam": "NYL",
+      "homeScore": 81,
+      "awayScore": 75
+    },
+    {
+      "date": "1997-08-20",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": 78,
+      "awayScore": 76
+    },
+    {
+      "date": "1997-08-20",
+      "homeTeam": "SAC",
+      "awayTeam": "PHO",
+      "homeScore": 54,
+      "awayScore": 69
+    },
+    {
+      "date": "1997-08-21",
+      "homeTeam": "HOU",
+      "awayTeam": "CLE",
+      "homeScore": 75,
+      "awayScore": 76
+    },
+    {
+      "date": "1997-08-21",
+      "homeTeam": "UTA",
+      "awayTeam": "CHA",
+      "homeScore": 56,
+      "awayScore": 66
+    },
+    {
+      "date": "1997-08-22",
+      "homeTeam": "LAS",
+      "awayTeam": "SAC",
+      "homeScore": 88,
+      "awayScore": 77
+    },
+    {
+      "date": "1997-08-22",
+      "homeTeam": "PHO",
+      "awayTeam": "CHA",
+      "homeScore": 78,
+      "awayScore": 63
+    },
+    {
+      "date": "1997-08-23",
+      "homeTeam": "CLE",
+      "awayTeam": "NYL",
+      "homeScore": 72,
+      "awayScore": 71
+    },
+    {
+      "date": "1997-08-24",
+      "homeTeam": "CHA",
+      "awayTeam": "UTA",
+      "homeScore": 70,
+      "awayScore": 52
+    },
+    {
+      "date": "1997-08-24",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 58,
+      "awayScore": 68
+    },
+    {
+      "date": "1997-08-24",
+      "homeTeam": "NYL",
+      "awayTeam": "CLE",
+      "homeScore": 79,
+      "awayScore": 72
+    },
+    {
+      "date": "1997-08-24",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 73,
+      "awayScore": 68
+    }
+  ],
+  "metadata": {
+    "total_games": 112,
+    "ingested_at": "2025-11-21T11:21:42.355739"
+  }
+}

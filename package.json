@@ -1,0 +1,19 @@
+{
+  "name": "buckle-up",
+  "version": "1.0.0",
+  "description": "Lineal championship belt tracker for NBA and WNBA",
+  "type": "module",
+  "scripts": {
+    "track": "tsx src/cli.ts",
+    "dev": "tsx watch src/cli.ts"
+  },
+  "keywords": ["nba", "wnba", "championship", "belt", "tracker"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {}
+}

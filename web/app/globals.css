@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode - Vintage flip-board scoreboard */
+    --background: 42 25% 88%; /* Cream/beige like old scoreboards */
+    --foreground: 0 0% 10%;
+
+    --primary: 0 0% 10%; /* Deep black for flip-board text */
+    --primary-foreground: 42 25% 88%;
+
+    --secondary: 38 30% 75%;
+    --secondary-foreground: 0 0% 10%;
+
+    --accent: 35 80% 50%; /* Warm amber for highlights */
+    --accent-foreground: 0 0% 10%;
+
+    --muted: 38 30% 75%;
+    --muted-foreground: 0 0% 40%;
+
+    --card: 40 20% 82%;
+    --card-foreground: 0 0% 10%;
+
+    --border: 38 20% 60%;
+    --input: 38 20% 60%;
+    --ring: 0 0% 10%;
+
+    --radius: 0.125rem; /* Sharp corners for retro look */
+
+    /* LED colors for light mode */
+    --led-red: 0 100% 50%;
+    --led-green: 120 100% 40%;
+    --led-amber: 35 100% 50%;
+  }
+
+  .dark {
+    /* Dark mode - CRT/LED scoreboard */
+    --background: 0 0% 4%; /* Nearly black like CRT screen */
+    --foreground: 0 0% 95%;
+
+    --primary: 0 100% 60%; /* LED red */
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 100% 60%;
+
+    --accent: 35 100% 50%; /* LED amber/yellow */
+    --accent-foreground: 0 0% 4%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 50%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 100% 60%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 100% 60%;
+
+    --radius: 0.125rem;
+
+    /* LED colors for dark mode */
+    --led-red: 0 100% 60%;
+    --led-green: 120 100% 50%;
+    --led-amber: 35 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "tnum" 1; /* Tabular numbers everywhere */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+  }
+
+  /* CRT screen effect overlay - only in dark mode */
+  body.dark::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    /* Heavy scan lines */
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 0px,
+      rgba(0, 0, 0, 0) 1px,
+      rgba(0, 0, 0, 0.5) 1px,
+      rgba(0, 0, 0, 0.5) 2px
+    );
+    /* Screen flicker */
+    animation: flicker 0.15s infinite alternate;
+  }
+
+  /* Subtle screen curvature effect - dark mode only */
+  body.dark::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* Data/numbers should be tabular for alignment */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* LED glow effect for text in dark mode */
+  .led-text {
+    text-shadow:
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 30px currentColor;
+  }
+
+  /* Light mode gets drop shadow instead of glow */
+  body:not(.dark) .led-text {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Flicker animation for CRT effect */
+  @keyframes flicker {
+    0% { opacity: 0.98; }
+    100% { opacity: 1; }
+  }
+
+  /* Number flip animation */
+  @keyframes flip {
+    0% { transform: rotateX(0deg); }
+    50% { transform: rotateX(90deg); }
+    100% { transform: rotateX(0deg); }
+  }
+
+  .flip-animation {
+    animation: flip 0.6s ease-in-out;
+  }
+
+  /* Ticker tape scroll */
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .ticker-scroll {
+    animation: ticker 30s linear infinite;
+  }
+
+  /* Smooth scroll for timeline */
+  .overflow-x-auto {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--led-amber)) hsl(var(--muted));
+  }
+
+  .overflow-x-auto::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .overflow-x-auto::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  .overflow-x-auto::-webkit-scrollbar-thumb {
+    background: hsl(var(--led-amber));
+  }
+
+  .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--led-amber) / 0.8);
+  }
+
+  /* Retro boxy panels */
+  .scoreboard-panel {
+    background: hsl(var(--card));
+    border: 3px solid hsl(var(--border));
+    box-shadow:
+      inset 0 2px 4px rgba(0, 0, 0, 0.3),
+      0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  body.dark .scoreboard-panel {
+    box-shadow:
+      inset 0 2px 4px rgba(0, 0, 0, 0.6),
+      0 0 20px rgba(255, 0, 0, 0.1),
+      0 4px 8px rgba(0, 0, 0, 0.8);
+  }
+}

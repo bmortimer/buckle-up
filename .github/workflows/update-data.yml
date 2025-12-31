@@ -1,0 +1,51 @@
+name: Update Belt Data
+
+on:
+  schedule:
+    # Run every night at 3 AM ET (8 AM UTC)
+    - cron: '0 8 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Ingest current WNBA season
+        run: |
+          CURRENT_YEAR=$(date +%Y)
+          python scripts/ingest_wnba.py --season $CURRENT_YEAR || echo "WNBA ingestion failed or season not started"
+
+      - name: Ingest current NBA season
+        run: |
+          CURRENT_YEAR=$(date +%Y)
+          NEXT_YEAR=$((CURRENT_YEAR + 1))
+          SEASON="${CURRENT_YEAR}-$(echo $NEXT_YEAR | cut -c 3-4)"
+          python scripts/ingest_nba.py --season $SEASON || echo "NBA ingestion failed or season not started"
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet data/ || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/
+          git commit -m "Update belt data - $(date '+%Y-%m-%d')"
+          git push

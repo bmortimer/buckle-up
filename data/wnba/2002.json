@@ -1,0 +1,1802 @@
+{
+  "season": "2002",
+  "league": "WNBA",
+  "games": [
+    {
+      "date": "2002-05-25",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": 72,
+      "awayScore": 64
+    },
+    {
+      "date": "2002-05-25",
+      "homeTeam": "MIN",
+      "awayTeam": "UTA",
+      "homeScore": 75,
+      "awayScore": 79
+    },
+    {
+      "date": "2002-05-27",
+      "homeTeam": "HOU",
+      "awayTeam": "LAS",
+      "homeScore": 55,
+      "awayScore": 68
+    },
+    {
+      "date": "2002-05-28",
+      "homeTeam": "MIA",
+      "awayTeam": "MIN",
+      "homeScore": 63,
+      "awayScore": 66
+    },
+    {
+      "date": "2002-05-29",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 61,
+      "awayScore": 56
+    },
+    {
+      "date": "2002-05-29",
+      "homeTeam": "POR",
+      "awayTeam": "NYL",
+      "homeScore": 62,
+      "awayScore": 84
+    },
+    {
+      "date": "2002-05-30",
+      "homeTeam": "MIA",
+      "awayTeam": "LAS",
+      "homeScore": 65,
+      "awayScore": 69
+    },
+    {
+      "date": "2002-05-30",
+      "homeTeam": "ORL",
+      "awayTeam": "DET",
+      "homeScore": 80,
+      "awayScore": 66
+    },
+    {
+      "date": "2002-05-30",
+      "homeTeam": "SEA",
+      "awayTeam": "NYL",
+      "homeScore": 61,
+      "awayScore": 78
+    },
+    {
+      "date": "2002-05-30",
+      "homeTeam": "UTA",
+      "awayTeam": "POR",
+      "homeScore": 69,
+      "awayScore": 64
+    },
+    {
+      "date": "2002-06-01",
+      "homeTeam": "CHA",
+      "awayTeam": "LAS",
+      "homeScore": 94,
+      "awayScore": 87
+    },
+    {
+      "date": "2002-06-01",
+      "homeTeam": "CLE",
+      "awayTeam": "HOU",
+      "homeScore": 65,
+      "awayScore": 69
+    },
+    {
+      "date": "2002-06-01",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": 79,
+      "awayScore": 62
+    },
+    {
+      "date": "2002-06-01",
+      "homeTeam": "PHO",
+      "awayTeam": "UTA",
+      "homeScore": 71,
+      "awayScore": 66
+    },
+    {
+      "date": "2002-06-01",
+      "homeTeam": "SAC",
+      "awayTeam": "MIN",
+      "homeScore": 61,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-06-01",
+      "homeTeam": "WAS",
+      "awayTeam": "ORL",
+      "homeScore": 93,
+      "awayScore": 82
+    },
+    {
+      "date": "2002-06-02",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 65,
+      "awayScore": 78
+    },
+    {
+      "date": "2002-06-02",
+      "homeTeam": "NYL",
+      "awayTeam": "MIA",
+      "homeScore": 58,
+      "awayScore": 52
+    },
+    {
+      "date": "2002-06-02",
+      "homeTeam": "POR",
+      "awayTeam": "SEA",
+      "homeScore": 47,
+      "awayScore": 57
+    },
+    {
+      "date": "2002-06-03",
+      "homeTeam": "CHA",
+      "awayTeam": "HOU",
+      "homeScore": 67,
+      "awayScore": 52
+    },
+    {
+      "date": "2002-06-03",
+      "homeTeam": "LAS",
+      "awayTeam": "POR",
+      "homeScore": 89,
+      "awayScore": 72
+    },
+    {
+      "date": "2002-06-03",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 71,
+      "awayScore": 65
+    },
+    {
+      "date": "2002-06-04",
+      "homeTeam": "MIA",
+      "awayTeam": "ORL",
+      "homeScore": 69,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-06-04",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": 78,
+      "awayScore": 68
+    },
+    {
+      "date": "2002-06-04",
+      "homeTeam": "UTA",
+      "awayTeam": "WAS",
+      "homeScore": 89,
+      "awayScore": 97
+    },
+    {
+      "date": "2002-06-05",
+      "homeTeam": "IND",
+      "awayTeam": "HOU",
+      "homeScore": 45,
+      "awayScore": 56
+    },
+    {
+      "date": "2002-06-05",
+      "homeTeam": "NYL",
+      "awayTeam": "DET",
+      "homeScore": 60,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-06-06",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 72,
+      "awayScore": 55
+    },
+    {
+      "date": "2002-06-06",
+      "homeTeam": "POR",
+      "awayTeam": "SAC",
+      "homeScore": 86,
+      "awayScore": 73
+    },
+    {
+      "date": "2002-06-06",
+      "homeTeam": "SEA",
+      "awayTeam": "CHA",
+      "homeScore": 65,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-06-07",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 89,
+      "awayScore": 68
+    },
+    {
+      "date": "2002-06-08",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": 71,
+      "awayScore": 62
+    },
+    {
+      "date": "2002-06-08",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 72,
+      "awayScore": 76
+    },
+    {
+      "date": "2002-06-08",
+      "homeTeam": "ORL",
+      "awayTeam": "CLE",
+      "homeScore": 103,
+      "awayScore": 99
+    },
+    {
+      "date": "2002-06-08",
+      "homeTeam": "UTA",
+      "awayTeam": "CHA",
+      "homeScore": 69,
+      "awayScore": 64
+    },
+    {
+      "date": "2002-06-09",
+      "homeTeam": "DET",
+      "awayTeam": "NYL",
+      "homeScore": 63,
+      "awayScore": 70
+    },
+    {
+      "date": "2002-06-09",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 75,
+      "awayScore": 62
+    },
+    {
+      "date": "2002-06-09",
+      "homeTeam": "PHO",
+      "awayTeam": "CHA",
+      "homeScore": 80,
+      "awayScore": 77
+    },
+    {
+      "date": "2002-06-09",
+      "homeTeam": "SEA",
+      "awayTeam": "UTA",
+      "homeScore": 68,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-06-09",
+      "homeTeam": "WAS",
+      "awayTeam": "MIA",
+      "homeScore": 76,
+      "awayScore": 67
+    },
+    {
+      "date": "2002-06-11",
+      "homeTeam": "HOU",
+      "awayTeam": "CHA",
+      "homeScore": 78,
+      "awayScore": 66
+    },
+    {
+      "date": "2002-06-11",
+      "homeTeam": "LAS",
+      "awayTeam": "DET",
+      "homeScore": 90,
+      "awayScore": 80
+    },
+    {
+      "date": "2002-06-11",
+      "homeTeam": "MIA",
+      "awayTeam": "CLE",
+      "homeScore": 74,
+      "awayScore": 65
+    },
+    {
+      "date": "2002-06-11",
+      "homeTeam": "MIN",
+      "awayTeam": "SAC",
+      "homeScore": 72,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-06-11",
+      "homeTeam": "ORL",
+      "awayTeam": "IND",
+      "homeScore": 69,
+      "awayScore": 75
+    },
+    {
+      "date": "2002-06-11",
+      "homeTeam": "SEA",
+      "awayTeam": "POR",
+      "homeScore": 63,
+      "awayScore": 70
+    },
+    {
+      "date": "2002-06-11",
+      "homeTeam": "UTA",
+      "awayTeam": "NYL",
+      "homeScore": 68,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-06-13",
+      "homeTeam": "CHA",
+      "awayTeam": "IND",
+      "homeScore": 75,
+      "awayScore": 64
+    },
+    {
+      "date": "2002-06-13",
+      "homeTeam": "MIN",
+      "awayTeam": "POR",
+      "homeScore": 60,
+      "awayScore": 46
+    },
+    {
+      "date": "2002-06-13",
+      "homeTeam": "PHO",
+      "awayTeam": "DET",
+      "homeScore": 70,
+      "awayScore": 67
+    },
+    {
+      "date": "2002-06-13",
+      "homeTeam": "SAC",
+      "awayTeam": "NYL",
+      "homeScore": 78,
+      "awayScore": 77
+    },
+    {
+      "date": "2002-06-13",
+      "homeTeam": "WAS",
+      "awayTeam": "HOU",
+      "homeScore": 70,
+      "awayScore": 64
+    },
+    {
+      "date": "2002-06-14",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": 63,
+      "awayScore": 69
+    },
+    {
+      "date": "2002-06-14",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 82,
+      "awayScore": 90
+    },
+    {
+      "date": "2002-06-15",
+      "homeTeam": "HOU",
+      "awayTeam": "MIN",
+      "homeScore": 51,
+      "awayScore": 50
+    },
+    {
+      "date": "2002-06-15",
+      "homeTeam": "IND",
+      "awayTeam": "CLE",
+      "homeScore": 68,
+      "awayScore": 79
+    },
+    {
+      "date": "2002-06-15",
+      "homeTeam": "ORL",
+      "awayTeam": "MIA",
+      "homeScore": 65,
+      "awayScore": 69
+    },
+    {
+      "date": "2002-06-15",
+      "homeTeam": "POR",
+      "awayTeam": "DET",
+      "homeScore": 67,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-06-15",
+      "homeTeam": "SAC",
+      "awayTeam": "LAS",
+      "homeScore": 66,
+      "awayScore": 72
+    },
+    {
+      "date": "2002-06-15",
+      "homeTeam": "UTA",
+      "awayTeam": "SEA",
+      "homeScore": 61,
+      "awayScore": 54
+    },
+    {
+      "date": "2002-06-16",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 54,
+      "awayScore": 53
+    },
+    {
+      "date": "2002-06-18",
+      "homeTeam": "MIA",
+      "awayTeam": "HOU",
+      "homeScore": 46,
+      "awayScore": 53
+    },
+    {
+      "date": "2002-06-18",
+      "homeTeam": "NYL",
+      "awayTeam": "ORL",
+      "homeScore": 62,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-06-18",
+      "homeTeam": "PHO",
+      "awayTeam": "SAC",
+      "homeScore": 78,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-06-18",
+      "homeTeam": "POR",
+      "awayTeam": "MIN",
+      "homeScore": 59,
+      "awayScore": 51
+    },
+    {
+      "date": "2002-06-18",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 68,
+      "awayScore": 80
+    },
+    {
+      "date": "2002-06-18",
+      "homeTeam": "UTA",
+      "awayTeam": "IND",
+      "homeScore": 79,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-06-18",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 75,
+      "awayScore": 67
+    },
+    {
+      "date": "2002-06-19",
+      "homeTeam": "CHA",
+      "awayTeam": "WAS",
+      "homeScore": 78,
+      "awayScore": 64
+    },
+    {
+      "date": "2002-06-19",
+      "homeTeam": "CLE",
+      "awayTeam": "ORL",
+      "homeScore": 62,
+      "awayScore": 66
+    },
+    {
+      "date": "2002-06-20",
+      "homeTeam": "POR",
+      "awayTeam": "IND",
+      "homeScore": 72,
+      "awayScore": 81
+    },
+    {
+      "date": "2002-06-20",
+      "homeTeam": "SAC",
+      "awayTeam": "SEA",
+      "homeScore": 72,
+      "awayScore": 64
+    },
+    {
+      "date": "2002-06-21",
+      "homeTeam": "CLE",
+      "awayTeam": "NYL",
+      "homeScore": 80,
+      "awayScore": 69
+    },
+    {
+      "date": "2002-06-21",
+      "homeTeam": "DET",
+      "awayTeam": "ORL",
+      "homeScore": 59,
+      "awayScore": 80
+    },
+    {
+      "date": "2002-06-21",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 61,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-06-21",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 73,
+      "awayScore": 64
+    },
+    {
+      "date": "2002-06-21",
+      "homeTeam": "MIA",
+      "awayTeam": "WAS",
+      "homeScore": 60,
+      "awayScore": 65
+    },
+    {
+      "date": "2002-06-21",
+      "homeTeam": "SEA",
+      "awayTeam": "IND",
+      "homeScore": 63,
+      "awayScore": 51
+    },
+    {
+      "date": "2002-06-22",
+      "homeTeam": "CHA",
+      "awayTeam": "MIA",
+      "homeScore": 76,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-06-22",
+      "homeTeam": "SAC",
+      "awayTeam": "UTA",
+      "homeScore": 61,
+      "awayScore": 77
+    },
+    {
+      "date": "2002-06-23",
+      "homeTeam": "ORL",
+      "awayTeam": "NYL",
+      "homeScore": 77,
+      "awayScore": 65
+    },
+    {
+      "date": "2002-06-23",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 70,
+      "awayScore": 61
+    },
+    {
+      "date": "2002-06-23",
+      "homeTeam": "POR",
+      "awayTeam": "HOU",
+      "homeScore": 58,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-06-23",
+      "homeTeam": "SEA",
+      "awayTeam": "SAC",
+      "homeScore": 86,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-06-23",
+      "homeTeam": "WAS",
+      "awayTeam": "CLE",
+      "homeScore": 63,
+      "awayScore": 45
+    },
+    {
+      "date": "2002-06-25",
+      "homeTeam": "CLE",
+      "awayTeam": "MIA",
+      "homeScore": 71,
+      "awayScore": 50
+    },
+    {
+      "date": "2002-06-25",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 89,
+      "awayScore": 66
+    },
+    {
+      "date": "2002-06-25",
+      "homeTeam": "MIN",
+      "awayTeam": "HOU",
+      "homeScore": 55,
+      "awayScore": 73
+    },
+    {
+      "date": "2002-06-25",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 74,
+      "awayScore": 55
+    },
+    {
+      "date": "2002-06-25",
+      "homeTeam": "SAC",
+      "awayTeam": "WAS",
+      "homeScore": 86,
+      "awayScore": 87
+    },
+    {
+      "date": "2002-06-25",
+      "homeTeam": "UTA",
+      "awayTeam": "POR",
+      "homeScore": 86,
+      "awayScore": 83
+    },
+    {
+      "date": "2002-06-26",
+      "homeTeam": "DET",
+      "awayTeam": "CHA",
+      "homeScore": 73,
+      "awayScore": 80
+    },
+    {
+      "date": "2002-06-26",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 62,
+      "awayScore": 53
+    },
+    {
+      "date": "2002-06-26",
+      "homeTeam": "POR",
+      "awayTeam": "ORL",
+      "homeScore": 64,
+      "awayScore": 57
+    },
+    {
+      "date": "2002-06-27",
+      "homeTeam": "CLE",
+      "awayTeam": "SAC",
+      "homeScore": 73,
+      "awayScore": 50
+    },
+    {
+      "date": "2002-06-27",
+      "homeTeam": "LAS",
+      "awayTeam": "WAS",
+      "homeScore": 73,
+      "awayScore": 69
+    },
+    {
+      "date": "2002-06-27",
+      "homeTeam": "SEA",
+      "awayTeam": "ORL",
+      "homeScore": 73,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-06-28",
+      "homeTeam": "DET",
+      "awayTeam": "MIA",
+      "homeScore": 74,
+      "awayScore": 78
+    },
+    {
+      "date": "2002-06-28",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 73,
+      "awayScore": 57
+    },
+    {
+      "date": "2002-06-28",
+      "homeTeam": "IND",
+      "awayTeam": "SAC",
+      "homeScore": 67,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-06-28",
+      "homeTeam": "NYL",
+      "awayTeam": "CLE",
+      "homeScore": 58,
+      "awayScore": 67
+    },
+    {
+      "date": "2002-06-28",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 72,
+      "awayScore": 84
+    },
+    {
+      "date": "2002-06-28",
+      "homeTeam": "POR",
+      "awayTeam": "WAS",
+      "homeScore": 72,
+      "awayScore": 66
+    },
+    {
+      "date": "2002-06-29",
+      "homeTeam": "MIN",
+      "awayTeam": "ORL",
+      "homeScore": 67,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-06-30",
+      "homeTeam": "CLE",
+      "awayTeam": "UTA",
+      "homeScore": 62,
+      "awayScore": 79
+    },
+    {
+      "date": "2002-06-30",
+      "homeTeam": "DET",
+      "awayTeam": "SAC",
+      "homeScore": 71,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-06-30",
+      "homeTeam": "LAS",
+      "awayTeam": "HOU",
+      "homeScore": 58,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-06-30",
+      "homeTeam": "MIA",
+      "awayTeam": "IND",
+      "homeScore": 65,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-06-30",
+      "homeTeam": "NYL",
+      "awayTeam": "POR",
+      "homeScore": 44,
+      "awayScore": 54
+    },
+    {
+      "date": "2002-06-30",
+      "homeTeam": "WAS",
+      "awayTeam": "CHA",
+      "homeScore": 56,
+      "awayScore": 55
+    },
+    {
+      "date": "2002-07-01",
+      "homeTeam": "CHA",
+      "awayTeam": "PHO",
+      "homeScore": 90,
+      "awayScore": 68
+    },
+    {
+      "date": "2002-07-01",
+      "homeTeam": "MIN",
+      "awayTeam": "DET",
+      "homeScore": 85,
+      "awayScore": 80
+    },
+    {
+      "date": "2002-07-02",
+      "homeTeam": "CLE",
+      "awayTeam": "POR",
+      "homeScore": 64,
+      "awayScore": 68
+    },
+    {
+      "date": "2002-07-02",
+      "homeTeam": "NYL",
+      "awayTeam": "SEA",
+      "homeScore": 74,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-07-03",
+      "homeTeam": "CHA",
+      "awayTeam": "POR",
+      "homeScore": 73,
+      "awayScore": 76
+    },
+    {
+      "date": "2002-07-03",
+      "homeTeam": "MIA",
+      "awayTeam": "PHO",
+      "homeScore": 86,
+      "awayScore": 61
+    },
+    {
+      "date": "2002-07-03",
+      "homeTeam": "MIN",
+      "awayTeam": "WAS",
+      "homeScore": 63,
+      "awayScore": 64
+    },
+    {
+      "date": "2002-07-03",
+      "homeTeam": "ORL",
+      "awayTeam": "IND",
+      "homeScore": 79,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-07-03",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 67,
+      "awayScore": 78
+    },
+    {
+      "date": "2002-07-05",
+      "homeTeam": "CLE",
+      "awayTeam": "SEA",
+      "homeScore": 65,
+      "awayScore": 73
+    },
+    {
+      "date": "2002-07-05",
+      "homeTeam": "LAS",
+      "awayTeam": "SAC",
+      "homeScore": 87,
+      "awayScore": 65
+    },
+    {
+      "date": "2002-07-05",
+      "homeTeam": "MIA",
+      "awayTeam": "CHA",
+      "homeScore": 68,
+      "awayScore": 72
+    },
+    {
+      "date": "2002-07-05",
+      "homeTeam": "UTA",
+      "awayTeam": "MIN",
+      "homeScore": 87,
+      "awayScore": 56
+    },
+    {
+      "date": "2002-07-06",
+      "homeTeam": "CHA",
+      "awayTeam": "CLE",
+      "homeScore": 78,
+      "awayScore": 67
+    },
+    {
+      "date": "2002-07-06",
+      "homeTeam": "HOU",
+      "awayTeam": "DET",
+      "homeScore": 61,
+      "awayScore": 40
+    },
+    {
+      "date": "2002-07-06",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 50,
+      "awayScore": 45
+    },
+    {
+      "date": "2002-07-06",
+      "homeTeam": "ORL",
+      "awayTeam": "PHO",
+      "homeScore": 72,
+      "awayScore": 70
+    },
+    {
+      "date": "2002-07-07",
+      "homeTeam": "LAS",
+      "awayTeam": "UTA",
+      "homeScore": 102,
+      "awayScore": 75
+    },
+    {
+      "date": "2002-07-07",
+      "homeTeam": "MIA",
+      "awayTeam": "SEA",
+      "homeScore": 65,
+      "awayScore": 61
+    },
+    {
+      "date": "2002-07-07",
+      "homeTeam": "POR",
+      "awayTeam": "SAC",
+      "homeScore": 74,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-07-08",
+      "homeTeam": "IND",
+      "awayTeam": "CLE",
+      "homeScore": 68,
+      "awayScore": 57
+    },
+    {
+      "date": "2002-07-08",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 77,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-07-08",
+      "homeTeam": "ORL",
+      "awayTeam": "WAS",
+      "homeScore": 51,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-07-08",
+      "homeTeam": "UTA",
+      "awayTeam": "DET",
+      "homeScore": 94,
+      "awayScore": 76
+    },
+    {
+      "date": "2002-07-09",
+      "homeTeam": "CHA",
+      "awayTeam": "MIA",
+      "homeScore": 55,
+      "awayScore": 66
+    },
+    {
+      "date": "2002-07-09",
+      "homeTeam": "HOU",
+      "awayTeam": "SEA",
+      "homeScore": 67,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-07-09",
+      "homeTeam": "WAS",
+      "awayTeam": "PHO",
+      "homeScore": 68,
+      "awayScore": 54
+    },
+    {
+      "date": "2002-07-10",
+      "homeTeam": "DET",
+      "awayTeam": "NYL",
+      "homeScore": 66,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-07-10",
+      "homeTeam": "IND",
+      "awayTeam": "UTA",
+      "homeScore": 69,
+      "awayScore": 82
+    },
+    {
+      "date": "2002-07-10",
+      "homeTeam": "MIN",
+      "awayTeam": "POR",
+      "homeScore": 72,
+      "awayScore": 75
+    },
+    {
+      "date": "2002-07-11",
+      "homeTeam": "PHO",
+      "awayTeam": "HOU",
+      "homeScore": 58,
+      "awayScore": 52
+    },
+    {
+      "date": "2002-07-11",
+      "homeTeam": "SAC",
+      "awayTeam": "CLE",
+      "homeScore": 71,
+      "awayScore": 69
+    },
+    {
+      "date": "2002-07-11",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 79,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-07-12",
+      "homeTeam": "DET",
+      "awayTeam": "MIN",
+      "homeScore": 72,
+      "awayScore": 69
+    },
+    {
+      "date": "2002-07-12",
+      "homeTeam": "IND",
+      "awayTeam": "MIA",
+      "homeScore": 62,
+      "awayScore": 68
+    },
+    {
+      "date": "2002-07-12",
+      "homeTeam": "ORL",
+      "awayTeam": "CHA",
+      "homeScore": 67,
+      "awayScore": 72
+    },
+    {
+      "date": "2002-07-12",
+      "homeTeam": "POR",
+      "awayTeam": "LAS",
+      "homeScore": 76,
+      "awayScore": 82
+    },
+    {
+      "date": "2002-07-12",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 60,
+      "awayScore": 74
+    },
+    {
+      "date": "2002-07-12",
+      "homeTeam": "SEA",
+      "awayTeam": "CLE",
+      "homeScore": 58,
+      "awayScore": 62
+    },
+    {
+      "date": "2002-07-13",
+      "homeTeam": "CHA",
+      "awayTeam": "MIN",
+      "homeScore": 63,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-07-13",
+      "homeTeam": "MIA",
+      "awayTeam": "ORL",
+      "homeScore": 70,
+      "awayScore": 56
+    },
+    {
+      "date": "2002-07-13",
+      "homeTeam": "UTA",
+      "awayTeam": "PHO",
+      "homeScore": 75,
+      "awayScore": 66
+    },
+    {
+      "date": "2002-07-13",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 53,
+      "awayScore": 67
+    },
+    {
+      "date": "2002-07-17",
+      "homeTeam": "CHA",
+      "awayTeam": "ORL",
+      "homeScore": 89,
+      "awayScore": 62
+    },
+    {
+      "date": "2002-07-17",
+      "homeTeam": "IND",
+      "awayTeam": "LAS",
+      "homeScore": 58,
+      "awayScore": 73
+    },
+    {
+      "date": "2002-07-17",
+      "homeTeam": "MIA",
+      "awayTeam": "SAC",
+      "homeScore": 62,
+      "awayScore": 78
+    },
+    {
+      "date": "2002-07-17",
+      "homeTeam": "MIN",
+      "awayTeam": "CLE",
+      "homeScore": 48,
+      "awayScore": 58
+    },
+    {
+      "date": "2002-07-17",
+      "homeTeam": "POR",
+      "awayTeam": "PHO",
+      "homeScore": 73,
+      "awayScore": 61
+    },
+    {
+      "date": "2002-07-17",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 75,
+      "awayScore": 67
+    },
+    {
+      "date": "2002-07-18",
+      "homeTeam": "NYL",
+      "awayTeam": "LAS",
+      "homeScore": 72,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-07-18",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 63,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-07-19",
+      "homeTeam": "CHA",
+      "awayTeam": "SAC",
+      "homeScore": 70,
+      "awayScore": 51
+    },
+    {
+      "date": "2002-07-19",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": 62,
+      "awayScore": 70
+    },
+    {
+      "date": "2002-07-19",
+      "homeTeam": "MIN",
+      "awayTeam": "MIA",
+      "homeScore": 58,
+      "awayScore": 61
+    },
+    {
+      "date": "2002-07-19",
+      "homeTeam": "ORL",
+      "awayTeam": "UTA",
+      "homeScore": 84,
+      "awayScore": 73
+    },
+    {
+      "date": "2002-07-19",
+      "homeTeam": "POR",
+      "awayTeam": "HOU",
+      "homeScore": 70,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-07-19",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 89,
+      "awayScore": 48
+    },
+    {
+      "date": "2002-07-20",
+      "homeTeam": "CLE",
+      "awayTeam": "LAS",
+      "homeScore": 50,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-07-20",
+      "homeTeam": "DET",
+      "awayTeam": "MIA",
+      "homeScore": 69,
+      "awayScore": 48
+    },
+    {
+      "date": "2002-07-20",
+      "homeTeam": "SEA",
+      "awayTeam": "HOU",
+      "homeScore": 54,
+      "awayScore": 56
+    },
+    {
+      "date": "2002-07-20",
+      "homeTeam": "WAS",
+      "awayTeam": "UTA",
+      "homeScore": 73,
+      "awayScore": 83
+    },
+    {
+      "date": "2002-07-21",
+      "homeTeam": "PHO",
+      "awayTeam": "POR",
+      "homeScore": 75,
+      "awayScore": 87
+    },
+    {
+      "date": "2002-07-21",
+      "homeTeam": "SAC",
+      "awayTeam": "ORL",
+      "homeScore": 62,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-07-22",
+      "homeTeam": "IND",
+      "awayTeam": "CHA",
+      "homeScore": 73,
+      "awayScore": 72
+    },
+    {
+      "date": "2002-07-22",
+      "homeTeam": "LAS",
+      "awayTeam": "ORL",
+      "homeScore": 92,
+      "awayScore": 84
+    },
+    {
+      "date": "2002-07-22",
+      "homeTeam": "NYL",
+      "awayTeam": "CLE",
+      "homeScore": 73,
+      "awayScore": 52
+    },
+    {
+      "date": "2002-07-23",
+      "homeTeam": "DET",
+      "awayTeam": "UTA",
+      "homeScore": 75,
+      "awayScore": 86
+    },
+    {
+      "date": "2002-07-23",
+      "homeTeam": "HOU",
+      "awayTeam": "SEA",
+      "homeScore": 66,
+      "awayScore": 54
+    },
+    {
+      "date": "2002-07-23",
+      "homeTeam": "MIA",
+      "awayTeam": "NYL",
+      "homeScore": 54,
+      "awayScore": 46
+    },
+    {
+      "date": "2002-07-24",
+      "homeTeam": "CLE",
+      "awayTeam": "CHA",
+      "homeScore": 66,
+      "awayScore": 73
+    },
+    {
+      "date": "2002-07-24",
+      "homeTeam": "LAS",
+      "awayTeam": "POR",
+      "homeScore": 73,
+      "awayScore": 69
+    },
+    {
+      "date": "2002-07-24",
+      "homeTeam": "MIN",
+      "awayTeam": "UTA",
+      "homeScore": 70,
+      "awayScore": 62
+    },
+    {
+      "date": "2002-07-25",
+      "homeTeam": "CHA",
+      "awayTeam": "CLE",
+      "homeScore": 73,
+      "awayScore": 83
+    },
+    {
+      "date": "2002-07-25",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": 64,
+      "awayScore": 58
+    },
+    {
+      "date": "2002-07-25",
+      "homeTeam": "HOU",
+      "awayTeam": "MIA",
+      "homeScore": 69,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-07-25",
+      "homeTeam": "ORL",
+      "awayTeam": "SEA",
+      "homeScore": 76,
+      "awayScore": 79
+    },
+    {
+      "date": "2002-07-25",
+      "homeTeam": "SAC",
+      "awayTeam": "POR",
+      "homeScore": 81,
+      "awayScore": 80
+    },
+    {
+      "date": "2002-07-26",
+      "homeTeam": "IND",
+      "awayTeam": "MIN",
+      "homeScore": 73,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-07-26",
+      "homeTeam": "UTA",
+      "awayTeam": "PHO",
+      "homeScore": 74,
+      "awayScore": 61
+    },
+    {
+      "date": "2002-07-27",
+      "homeTeam": "CHA",
+      "awayTeam": "DET",
+      "homeScore": 66,
+      "awayScore": 74
+    },
+    {
+      "date": "2002-07-27",
+      "homeTeam": "PHO",
+      "awayTeam": "SAC",
+      "homeScore": 64,
+      "awayScore": 79
+    },
+    {
+      "date": "2002-07-27",
+      "homeTeam": "POR",
+      "awayTeam": "MIA",
+      "homeScore": 71,
+      "awayScore": 61
+    },
+    {
+      "date": "2002-07-27",
+      "homeTeam": "WAS",
+      "awayTeam": "SEA",
+      "homeScore": 71,
+      "awayScore": 80
+    },
+    {
+      "date": "2002-07-28",
+      "homeTeam": "CLE",
+      "awayTeam": "ORL",
+      "homeScore": 70,
+      "awayScore": 76
+    },
+    {
+      "date": "2002-07-28",
+      "homeTeam": "DET",
+      "awayTeam": "SEA",
+      "homeScore": 59,
+      "awayScore": 72
+    },
+    {
+      "date": "2002-07-28",
+      "homeTeam": "LAS",
+      "awayTeam": "IND",
+      "homeScore": 80,
+      "awayScore": 62
+    },
+    {
+      "date": "2002-07-28",
+      "homeTeam": "NYL",
+      "awayTeam": "HOU",
+      "homeScore": 62,
+      "awayScore": 56
+    },
+    {
+      "date": "2002-07-28",
+      "homeTeam": "SAC",
+      "awayTeam": "MIN",
+      "homeScore": 66,
+      "awayScore": 56
+    },
+    {
+      "date": "2002-07-29",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 57,
+      "awayScore": 45
+    },
+    {
+      "date": "2002-07-30",
+      "homeTeam": "HOU",
+      "awayTeam": "POR",
+      "homeScore": 89,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-07-30",
+      "homeTeam": "LAS",
+      "awayTeam": "MIA",
+      "homeScore": 73,
+      "awayScore": 82
+    },
+    {
+      "date": "2002-07-30",
+      "homeTeam": "SAC",
+      "awayTeam": "IND",
+      "homeScore": 74,
+      "awayScore": 65
+    },
+    {
+      "date": "2002-07-30",
+      "homeTeam": "WAS",
+      "awayTeam": "ORL",
+      "homeScore": 55,
+      "awayScore": 70
+    },
+    {
+      "date": "2002-07-31",
+      "homeTeam": "PHO",
+      "awayTeam": "IND",
+      "homeScore": 56,
+      "awayScore": 58
+    },
+    {
+      "date": "2002-07-31",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": 75,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-07-31",
+      "homeTeam": "UTA",
+      "awayTeam": "MIA",
+      "homeScore": 81,
+      "awayScore": 76
+    },
+    {
+      "date": "2002-08-01",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 66,
+      "awayScore": 68
+    },
+    {
+      "date": "2002-08-01",
+      "homeTeam": "LAS",
+      "awayTeam": "SEA",
+      "homeScore": 76,
+      "awayScore": 81
+    },
+    {
+      "date": "2002-08-01",
+      "homeTeam": "ORL",
+      "awayTeam": "CHA",
+      "homeScore": 65,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-08-01",
+      "homeTeam": "SAC",
+      "awayTeam": "UTA",
+      "homeScore": 80,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-08-02",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": 75,
+      "awayScore": 51
+    },
+    {
+      "date": "2002-08-02",
+      "homeTeam": "NYL",
+      "awayTeam": "MIA",
+      "homeScore": 66,
+      "awayScore": 54
+    },
+    {
+      "date": "2002-08-02",
+      "homeTeam": "WAS",
+      "awayTeam": "POR",
+      "homeScore": 65,
+      "awayScore": 67
+    },
+    {
+      "date": "2002-08-03",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 57,
+      "awayScore": 68
+    },
+    {
+      "date": "2002-08-03",
+      "homeTeam": "HOU",
+      "awayTeam": "ORL",
+      "homeScore": 69,
+      "awayScore": 62
+    },
+    {
+      "date": "2002-08-03",
+      "homeTeam": "IND",
+      "awayTeam": "CHA",
+      "homeScore": 69,
+      "awayScore": 48
+    },
+    {
+      "date": "2002-08-03",
+      "homeTeam": "SAC",
+      "awayTeam": "LAS",
+      "homeScore": 71,
+      "awayScore": 81
+    },
+    {
+      "date": "2002-08-04",
+      "homeTeam": "CHA",
+      "awayTeam": "NYL",
+      "homeScore": 58,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-08-04",
+      "homeTeam": "DET",
+      "awayTeam": "PHO",
+      "homeScore": 91,
+      "awayScore": 75
+    },
+    {
+      "date": "2002-08-04",
+      "homeTeam": "LAS",
+      "awayTeam": "UTA",
+      "homeScore": 90,
+      "awayScore": 86
+    },
+    {
+      "date": "2002-08-04",
+      "homeTeam": "MIA",
+      "awayTeam": "WAS",
+      "homeScore": 55,
+      "awayScore": 50
+    },
+    {
+      "date": "2002-08-04",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 73,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-08-04",
+      "homeTeam": "ORL",
+      "awayTeam": "POR",
+      "homeScore": 63,
+      "awayScore": 61
+    },
+    {
+      "date": "2002-08-06",
+      "homeTeam": "DET",
+      "awayTeam": "CHA",
+      "homeScore": 65,
+      "awayScore": 76
+    },
+    {
+      "date": "2002-08-06",
+      "homeTeam": "HOU",
+      "awayTeam": "CLE",
+      "homeScore": 67,
+      "awayScore": 54
+    },
+    {
+      "date": "2002-08-06",
+      "homeTeam": "NYL",
+      "awayTeam": "MIN",
+      "homeScore": 49,
+      "awayScore": 52
+    },
+    {
+      "date": "2002-08-06",
+      "homeTeam": "POR",
+      "awayTeam": "UTA",
+      "homeScore": 69,
+      "awayScore": 82
+    },
+    {
+      "date": "2002-08-06",
+      "homeTeam": "SAC",
+      "awayTeam": "PHO",
+      "homeScore": 73,
+      "awayScore": 70
+    },
+    {
+      "date": "2002-08-06",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 55,
+      "awayScore": 64
+    },
+    {
+      "date": "2002-08-07",
+      "homeTeam": "IND",
+      "awayTeam": "ORL",
+      "homeScore": 70,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-08-07",
+      "homeTeam": "PHO",
+      "awayTeam": "CLE",
+      "homeScore": 59,
+      "awayScore": 57
+    },
+    {
+      "date": "2002-08-08",
+      "homeTeam": "LAS",
+      "awayTeam": "HOU",
+      "homeScore": 64,
+      "awayScore": 67
+    },
+    {
+      "date": "2002-08-08",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 54,
+      "awayScore": 65
+    },
+    {
+      "date": "2002-08-08",
+      "homeTeam": "ORL",
+      "awayTeam": "SAC",
+      "homeScore": 72,
+      "awayScore": 82
+    },
+    {
+      "date": "2002-08-09",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 55,
+      "awayScore": 54
+    },
+    {
+      "date": "2002-08-09",
+      "homeTeam": "MIA",
+      "awayTeam": "CLE",
+      "homeScore": 65,
+      "awayScore": 59
+    },
+    {
+      "date": "2002-08-09",
+      "homeTeam": "MIN",
+      "awayTeam": "CHA",
+      "homeScore": 62,
+      "awayScore": 68
+    },
+    {
+      "date": "2002-08-09",
+      "homeTeam": "SEA",
+      "awayTeam": "POR",
+      "homeScore": 83,
+      "awayScore": 74
+    },
+    {
+      "date": "2002-08-09",
+      "homeTeam": "UTA",
+      "awayTeam": "LAS",
+      "homeScore": 77,
+      "awayScore": 85
+    },
+    {
+      "date": "2002-08-09",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 66,
+      "awayScore": 74
+    },
+    {
+      "date": "2002-08-10",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 59,
+      "awayScore": 61
+    },
+    {
+      "date": "2002-08-11",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": 54,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-08-11",
+      "homeTeam": "IND",
+      "awayTeam": "MIA",
+      "homeScore": 77,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-08-11",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 58,
+      "awayScore": 69
+    },
+    {
+      "date": "2002-08-11",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 58,
+      "awayScore": 71
+    },
+    {
+      "date": "2002-08-11",
+      "homeTeam": "ORL",
+      "awayTeam": "DET",
+      "homeScore": 71,
+      "awayScore": 58
+    },
+    {
+      "date": "2002-08-11",
+      "homeTeam": "POR",
+      "awayTeam": "PHO",
+      "homeScore": 70,
+      "awayScore": 73
+    },
+    {
+      "date": "2002-08-11",
+      "homeTeam": "SEA",
+      "awayTeam": "UTA",
+      "homeScore": 74,
+      "awayScore": 57
+    },
+    {
+      "date": "2002-08-12",
+      "homeTeam": "UTA",
+      "awayTeam": "SAC",
+      "homeScore": 81,
+      "awayScore": 79
+    },
+    {
+      "date": "2002-08-13",
+      "homeTeam": "CHA",
+      "awayTeam": "WAS",
+      "homeScore": 67,
+      "awayScore": 57
+    },
+    {
+      "date": "2002-08-13",
+      "homeTeam": "CLE",
+      "awayTeam": "IND",
+      "homeScore": 56,
+      "awayScore": 60
+    },
+    {
+      "date": "2002-08-13",
+      "homeTeam": "HOU",
+      "awayTeam": "MIN",
+      "homeScore": 63,
+      "awayScore": 51
+    },
+    {
+      "date": "2002-08-13",
+      "homeTeam": "MIA",
+      "awayTeam": "DET",
+      "homeScore": 61,
+      "awayScore": 56
+    },
+    {
+      "date": "2002-08-13",
+      "homeTeam": "ORL",
+      "awayTeam": "NYL",
+      "homeScore": 70,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-08-13",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 56,
+      "awayScore": 63
+    },
+    {
+      "date": "2002-08-13",
+      "homeTeam": "SAC",
+      "awayTeam": "SEA",
+      "homeScore": 59,
+      "awayScore": 51
+    }
+  ],
+  "metadata": {
+    "total_games": 256,
+    "ingested_at": "2025-11-21T11:21:27.992466"
+  }
+}

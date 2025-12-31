@@ -1,0 +1,677 @@
+{
+  "season": "2020",
+  "league": "WNBA",
+  "games": [
+    {
+      "date": "2020-07-25",
+      "homeTeam": "NYL",
+      "awayTeam": "SEA",
+      "homeScore": 71,
+      "awayScore": 87
+    },
+    {
+      "date": "2020-07-25",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 76,
+      "awayScore": 99
+    },
+    {
+      "date": "2020-07-25",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 101,
+      "awayScore": 76
+    },
+    {
+      "date": "2020-07-26",
+      "homeTeam": "ATL",
+      "awayTeam": "DAL",
+      "homeScore": 105,
+      "awayScore": 95
+    },
+    {
+      "date": "2020-07-26",
+      "homeTeam": "LVA",
+      "awayTeam": "CHI",
+      "homeScore": 86,
+      "awayScore": 88
+    },
+    {
+      "date": "2020-07-26",
+      "homeTeam": "MIN",
+      "awayTeam": "CON",
+      "homeScore": 77,
+      "awayScore": 69
+    },
+    {
+      "date": "2020-07-28",
+      "homeTeam": "CHI",
+      "awayTeam": "LAS",
+      "homeScore": 96,
+      "awayScore": 78
+    },
+    {
+      "date": "2020-07-28",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": 89,
+      "awayScore": 94
+    },
+    {
+      "date": "2020-07-28",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": 90,
+      "awayScore": 66
+    },
+    {
+      "date": "2020-07-29",
+      "homeTeam": "DAL",
+      "awayTeam": "NYL",
+      "homeScore": 93,
+      "awayScore": 80
+    },
+    {
+      "date": "2020-07-29",
+      "homeTeam": "IND",
+      "awayTeam": "PHO",
+      "homeScore": 106,
+      "awayScore": 100
+    },
+    {
+      "date": "2020-07-29",
+      "homeTeam": "LVA",
+      "awayTeam": "ATL",
+      "homeScore": 100,
+      "awayScore": 70
+    },
+    {
+      "date": "2020-07-30",
+      "homeTeam": "LAS",
+      "awayTeam": "CON",
+      "homeScore": 81,
+      "awayScore": 76
+    },
+    {
+      "date": "2020-07-30",
+      "homeTeam": "MIN",
+      "awayTeam": "CHI",
+      "homeScore": 83,
+      "awayScore": 81
+    },
+    {
+      "date": "2020-07-30",
+      "homeTeam": "WAS",
+      "awayTeam": "SEA",
+      "homeScore": 89,
+      "awayScore": 71
+    },
+    {
+      "date": "2020-07-31",
+      "homeTeam": "ATL",
+      "awayTeam": "NYL",
+      "homeScore": 84,
+      "awayScore": 78
+    },
+    {
+      "date": "2020-07-31",
+      "homeTeam": "DAL",
+      "awayTeam": "IND",
+      "homeScore": 76,
+      "awayScore": 73
+    },
+    {
+      "date": "2020-07-31",
+      "homeTeam": "PHO",
+      "awayTeam": "LVA",
+      "homeScore": 102,
+      "awayScore": 95
+    },
+    {
+      "date": "2020-08-01",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 88,
+      "awayScore": 86
+    },
+    {
+      "date": "2020-08-01",
+      "homeTeam": "CON",
+      "awayTeam": "MIN",
+      "homeScore": 69,
+      "awayScore": 78
+    },
+    {
+      "date": "2020-08-01",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 81,
+      "awayScore": 75
+    },
+    {
+      "date": "2020-08-02",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 93,
+      "awayScore": 77
+    },
+    {
+      "date": "2020-08-02",
+      "homeTeam": "LVA",
+      "awayTeam": "DAL",
+      "homeScore": 79,
+      "awayScore": 70
+    },
+    {
+      "date": "2020-08-02",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 67,
+      "awayScore": 96
+    },
+    {
+      "date": "2020-08-04",
+      "homeTeam": "ATL",
+      "awayTeam": "PHO",
+      "homeScore": 74,
+      "awayScore": 81
+    },
+    {
+      "date": "2020-08-04",
+      "homeTeam": "CHI",
+      "awayTeam": "DAL",
+      "homeScore": 82,
+      "awayScore": 79
+    },
+    {
+      "date": "2020-08-04",
+      "homeTeam": "SEA",
+      "awayTeam": "CON",
+      "homeScore": 87,
+      "awayScore": 74
+    },
+    {
+      "date": "2020-08-05",
+      "homeTeam": "LAS",
+      "awayTeam": "IND",
+      "homeScore": 86,
+      "awayScore": 75
+    },
+    {
+      "date": "2020-08-05",
+      "homeTeam": "NYL",
+      "awayTeam": "MIN",
+      "homeScore": 66,
+      "awayScore": 92
+    },
+    {
+      "date": "2020-08-05",
+      "homeTeam": "WAS",
+      "awayTeam": "LVA",
+      "homeScore": 77,
+      "awayScore": 83
+    },
+    {
+      "date": "2020-08-06",
+      "homeTeam": "ATL",
+      "awayTeam": "SEA",
+      "homeScore": 92,
+      "awayScore": 93
+    },
+    {
+      "date": "2020-08-06",
+      "homeTeam": "DAL",
+      "awayTeam": "CON",
+      "homeScore": 68,
+      "awayScore": 91
+    },
+    {
+      "date": "2020-08-06",
+      "homeTeam": "PHO",
+      "awayTeam": "CHI",
+      "homeScore": 96,
+      "awayScore": 86
+    },
+    {
+      "date": "2020-08-07",
+      "homeTeam": "LVA",
+      "awayTeam": "LAS",
+      "homeScore": 86,
+      "awayScore": 82
+    },
+    {
+      "date": "2020-08-07",
+      "homeTeam": "MIN",
+      "awayTeam": "IND",
+      "homeScore": 87,
+      "awayScore": 80
+    },
+    {
+      "date": "2020-08-07",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 66,
+      "awayScore": 74
+    },
+    {
+      "date": "2020-08-08",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": 93,
+      "awayScore": 100
+    },
+    {
+      "date": "2020-08-08",
+      "homeTeam": "DAL",
+      "awayTeam": "ATL",
+      "homeScore": 85,
+      "awayScore": 75
+    },
+    {
+      "date": "2020-08-08",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 74,
+      "awayScore": 68
+    },
+    {
+      "date": "2020-08-09",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 91,
+      "awayScore": 84
+    },
+    {
+      "date": "2020-08-09",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 97,
+      "awayScore": 81
+    },
+    {
+      "date": "2020-08-09",
+      "homeTeam": "NYL",
+      "awayTeam": "LVA",
+      "homeScore": 76,
+      "awayScore": 78
+    },
+    {
+      "date": "2020-08-10",
+      "homeTeam": "ATL",
+      "awayTeam": "CON",
+      "homeScore": 82,
+      "awayScore": 93
+    },
+    {
+      "date": "2020-08-10",
+      "homeTeam": "DAL",
+      "awayTeam": "PHO",
+      "homeScore": 79,
+      "awayScore": 91
+    },
+    {
+      "date": "2020-08-10",
+      "homeTeam": "SEA",
+      "awayTeam": "CHI",
+      "homeScore": 89,
+      "awayScore": 71
+    },
+    {
+      "date": "2020-08-11",
+      "homeTeam": "IND",
+      "awayTeam": "LVA",
+      "homeScore": 79,
+      "awayScore": 98
+    },
+    {
+      "date": "2020-08-11",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": 93,
+      "awayScore": 78
+    },
+    {
+      "date": "2020-08-11",
+      "homeTeam": "MIN",
+      "awayTeam": "WAS",
+      "homeScore": 68,
+      "awayScore": 48
+    },
+    {
+      "date": "2020-08-12",
+      "homeTeam": "CHI",
+      "awayTeam": "PHO",
+      "homeScore": 89,
+      "awayScore": 71
+    },
+    {
+      "date": "2020-08-12",
+      "homeTeam": "CON",
+      "awayTeam": "DAL",
+      "homeScore": 70,
+      "awayScore": 66
+    },
+    {
+      "date": "2020-08-12",
+      "homeTeam": "SEA",
+      "awayTeam": "ATL",
+      "homeScore": 100,
+      "awayScore": 63
+    },
+    {
+      "date": "2020-08-13",
+      "homeTeam": "LVA",
+      "awayTeam": "MIN",
+      "homeScore": 87,
+      "awayScore": 77
+    },
+    {
+      "date": "2020-08-13",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 79,
+      "awayScore": 86
+    },
+    {
+      "date": "2020-08-13",
+      "homeTeam": "WAS",
+      "awayTeam": "LAS",
+      "homeScore": 64,
+      "awayScore": 81
+    },
+    {
+      "date": "2020-08-14",
+      "homeTeam": "CHI",
+      "awayTeam": "CON",
+      "homeScore": 74,
+      "awayScore": 77
+    },
+    {
+      "date": "2020-08-14",
+      "homeTeam": "DAL",
+      "awayTeam": "SEA",
+      "homeScore": 65,
+      "awayScore": 83
+    },
+    {
+      "date": "2020-08-14",
+      "homeTeam": "PHO",
+      "awayTeam": "ATL",
+      "homeScore": 96,
+      "awayScore": 80
+    },
+    {
+      "date": "2020-08-15",
+      "homeTeam": "IND",
+      "awayTeam": "LAS",
+      "homeScore": 76,
+      "awayScore": 90
+    },
+    {
+      "date": "2020-08-15",
+      "homeTeam": "LVA",
+      "awayTeam": "WAS",
+      "homeScore": 88,
+      "awayScore": 73
+    },
+    {
+      "date": "2020-08-15",
+      "homeTeam": "MIN",
+      "awayTeam": "NYL",
+      "homeScore": 94,
+      "awayScore": 64
+    },
+    {
+      "date": "2020-08-16",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 67,
+      "awayScore": 92
+    },
+    {
+      "date": "2020-08-16",
+      "homeTeam": "CON",
+      "awayTeam": "SEA",
+      "homeScore": 72,
+      "awayScore": 95
+    },
+    {
+      "date": "2020-08-16",
+      "homeTeam": "PHO",
+      "awayTeam": "DAL",
+      "homeScore": 89,
+      "awayScore": 95
+    },
+    {
+      "date": "2020-08-18",
+      "homeTeam": "CHI",
+      "awayTeam": "LVA",
+      "homeScore": 84,
+      "awayScore": 82
+    },
+    {
+      "date": "2020-08-18",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 84,
+      "awayScore": 62
+    },
+    {
+      "date": "2020-08-18",
+      "homeTeam": "SEA",
+      "awayTeam": "NYL",
+      "homeScore": 105,
+      "awayScore": 64
+    },
+    {
+      "date": "2020-08-19",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 83,
+      "awayScore": 74
+    },
+    {
+      "date": "2020-08-19",
+      "homeTeam": "MIN",
+      "awayTeam": "DAL",
+      "homeScore": 91,
+      "awayScore": 84
+    },
+    {
+      "date": "2020-08-19",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 98,
+      "awayScore": 91
+    },
+    {
+      "date": "2020-08-20",
+      "homeTeam": "IND",
+      "awayTeam": "SEA",
+      "homeScore": 90,
+      "awayScore": 84
+    },
+    {
+      "date": "2020-08-20",
+      "homeTeam": "LVA",
+      "awayTeam": "CON",
+      "homeScore": 99,
+      "awayScore": 78
+    },
+    {
+      "date": "2020-08-20",
+      "homeTeam": "NYL",
+      "awayTeam": "CHI",
+      "homeScore": 85,
+      "awayScore": 101
+    },
+    {
+      "date": "2020-08-21",
+      "homeTeam": "ATL",
+      "awayTeam": "LAS",
+      "homeScore": 85,
+      "awayScore": 93
+    },
+    {
+      "date": "2020-08-21",
+      "homeTeam": "DAL",
+      "awayTeam": "WAS",
+      "homeScore": 101,
+      "awayScore": 92
+    },
+    {
+      "date": "2020-08-21",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 80,
+      "awayScore": 90
+    },
+    {
+      "date": "2020-08-22",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 87,
+      "awayScore": 76
+    },
+    {
+      "date": "2020-08-22",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 82,
+      "awayScore": 65
+    },
+    {
+      "date": "2020-08-22",
+      "homeTeam": "LVA",
+      "awayTeam": "SEA",
+      "homeScore": 82,
+      "awayScore": 74
+    },
+    {
+      "date": "2020-08-23",
+      "homeTeam": "LAS",
+      "awayTeam": "DAL",
+      "homeScore": 84,
+      "awayScore": 81
+    },
+    {
+      "date": "2020-08-23",
+      "homeTeam": "MIN",
+      "awayTeam": "ATL",
+      "homeScore": 75,
+      "awayScore": 78
+    },
+    {
+      "date": "2020-08-23",
+      "homeTeam": "WAS",
+      "awayTeam": "PHO",
+      "homeScore": 87,
+      "awayScore": 88
+    },
+    {
+      "date": "2020-08-25",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": 99,
+      "awayScore": 101
+    },
+    {
+      "date": "2020-08-25",
+      "homeTeam": "DAL",
+      "awayTeam": "LVA",
+      "homeScore": 92,
+      "awayScore": 96
+    },
+    {
+      "date": "2020-08-25",
+      "homeTeam": "SEA",
+      "awayTeam": "IND",
+      "homeScore": 87,
+      "awayScore": 74
+    },
+    {
+      "date": "2020-08-28",
+      "homeTeam": "ATL",
+      "awayTeam": "MIN",
+      "homeScore": 79,
+      "awayScore": 88
+    },
+    {
+      "date": "2020-08-28",
+      "homeTeam": "CON",
+      "awayTeam": "LAS",
+      "homeScore": 76,
+      "awayScore": 80
+    },
+    {
+      "date": "2020-08-28",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 94,
+      "awayScore": 72
+    },
+    {
+      "date": "2020-08-29",
+      "homeTeam": "CHI",
+      "awayTeam": "SEA",
+      "homeScore": 74,
+      "awayScore": 88
+    },
+    {
+      "date": "2020-08-29",
+      "homeTeam": "IND",
+      "awayTeam": "DAL",
+      "homeScore": 78,
+      "awayScore": 82
+    },
+    {
+      "date": "2020-08-29",
+      "homeTeam": "LVA",
+      "awayTeam": "NYL",
+      "homeScore": 80,
+      "awayScore": 63
+    },
+    {
+      "date": "2020-08-30",
+      "homeTeam": "LAS",
+      "awayTeam": "ATL",
+      "homeScore": 84,
+      "awayScore": 79
+    },
+    {
+      "date": "2020-08-30",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": 79,
+      "awayScore": 83
+    },
+    {
+      "date": "2020-08-30",
+      "homeTeam": "WAS",
+      "awayTeam": "CON",
+      "homeScore": 63,
+      "awayScore": 76
+    },
+    {
+      "date": "2020-08-31",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 77,
+      "awayScore": 100
+    },
+    {
+      "date": "2020-08-31",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 96,
+      "awayScore": 78
+    }
+  ],
+  "metadata": {
+    "total_games": 95,
+    "ingested_at": "2025-11-21T11:12:49.479943",
+    "cleaned_at": "2025-12-30T09:58:37.771217",
+    "removed_playoff_games": 37
+  }
+}

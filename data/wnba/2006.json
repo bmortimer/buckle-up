@@ -1,0 +1,1676 @@
+{
+  "season": "2006",
+  "league": "WNBA",
+  "games": [
+    {
+      "date": "2006-05-20",
+      "homeTeam": "CHA",
+      "awayTeam": "CHI",
+      "homeScore": 82,
+      "awayScore": 83
+    },
+    {
+      "date": "2006-05-20",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 91,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-05-20",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": 67,
+      "awayScore": 60
+    },
+    {
+      "date": "2006-05-20",
+      "homeTeam": "SAC",
+      "awayTeam": "PHO",
+      "homeScore": 105,
+      "awayScore": 78
+    },
+    {
+      "date": "2006-05-21",
+      "homeTeam": "HOU",
+      "awayTeam": "SAS",
+      "homeScore": 63,
+      "awayScore": 79
+    },
+    {
+      "date": "2006-05-21",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 90,
+      "awayScore": 67
+    },
+    {
+      "date": "2006-05-23",
+      "homeTeam": "CHA",
+      "awayTeam": "LAS",
+      "homeScore": 65,
+      "awayScore": 72
+    },
+    {
+      "date": "2006-05-23",
+      "homeTeam": "CHI",
+      "awayTeam": "SAC",
+      "homeScore": 63,
+      "awayScore": 76
+    },
+    {
+      "date": "2006-05-23",
+      "homeTeam": "MIN",
+      "awayTeam": "CON",
+      "homeScore": 69,
+      "awayScore": 81
+    },
+    {
+      "date": "2006-05-23",
+      "homeTeam": "SAS",
+      "awayTeam": "IND",
+      "homeScore": 53,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-05-23",
+      "homeTeam": "SEA",
+      "awayTeam": "HOU",
+      "homeScore": 59,
+      "awayScore": 84
+    },
+    {
+      "date": "2006-05-23",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 95,
+      "awayScore": 60
+    },
+    {
+      "date": "2006-05-24",
+      "homeTeam": "DET",
+      "awayTeam": "MIN",
+      "homeScore": 78,
+      "awayScore": 69
+    },
+    {
+      "date": "2006-05-25",
+      "homeTeam": "CHA",
+      "awayTeam": "WAS",
+      "homeScore": 73,
+      "awayScore": 63
+    },
+    {
+      "date": "2006-05-25",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 81,
+      "awayScore": 94
+    },
+    {
+      "date": "2006-05-25",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 66,
+      "awayScore": 81
+    },
+    {
+      "date": "2006-05-25",
+      "homeTeam": "SAS",
+      "awayTeam": "LAS",
+      "homeScore": 71,
+      "awayScore": 80
+    },
+    {
+      "date": "2006-05-26",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 60,
+      "awayScore": 75
+    },
+    {
+      "date": "2006-05-27",
+      "homeTeam": "CON",
+      "awayTeam": "DET",
+      "homeScore": 73,
+      "awayScore": 77
+    },
+    {
+      "date": "2006-05-27",
+      "homeTeam": "WAS",
+      "awayTeam": "MIN",
+      "homeScore": 90,
+      "awayScore": 75
+    },
+    {
+      "date": "2006-05-30",
+      "homeTeam": "CHI",
+      "awayTeam": "LAS",
+      "homeScore": 55,
+      "awayScore": 64
+    },
+    {
+      "date": "2006-05-30",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": 91,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-05-31",
+      "homeTeam": "HOU",
+      "awayTeam": "IND",
+      "homeScore": 73,
+      "awayScore": 60
+    },
+    {
+      "date": "2006-05-31",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 114,
+      "awayScore": 71
+    },
+    {
+      "date": "2006-05-31",
+      "homeTeam": "PHO",
+      "awayTeam": "SAS",
+      "homeScore": 76,
+      "awayScore": 82
+    },
+    {
+      "date": "2006-05-31",
+      "homeTeam": "SAC",
+      "awayTeam": "SEA",
+      "homeScore": 87,
+      "awayScore": 66
+    },
+    {
+      "date": "2006-06-01",
+      "homeTeam": "CHA",
+      "awayTeam": "CON",
+      "homeScore": 65,
+      "awayScore": 89
+    },
+    {
+      "date": "2006-06-01",
+      "homeTeam": "DET",
+      "awayTeam": "NYL",
+      "homeScore": 64,
+      "awayScore": 63
+    },
+    {
+      "date": "2006-06-02",
+      "homeTeam": "HOU",
+      "awayTeam": "CHI",
+      "homeScore": 71,
+      "awayScore": 60
+    },
+    {
+      "date": "2006-06-02",
+      "homeTeam": "MIN",
+      "awayTeam": "IND",
+      "homeScore": 92,
+      "awayScore": 87
+    },
+    {
+      "date": "2006-06-02",
+      "homeTeam": "SAC",
+      "awayTeam": "SAS",
+      "homeScore": 71,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-06-02",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 97,
+      "awayScore": 87
+    },
+    {
+      "date": "2006-06-03",
+      "homeTeam": "CON",
+      "awayTeam": "CHA",
+      "homeScore": 89,
+      "awayScore": 71
+    },
+    {
+      "date": "2006-06-03",
+      "homeTeam": "NYL",
+      "awayTeam": "LAS",
+      "homeScore": 89,
+      "awayScore": 79
+    },
+    {
+      "date": "2006-06-03",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 92,
+      "awayScore": 68
+    },
+    {
+      "date": "2006-06-04",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 66,
+      "awayScore": 81
+    },
+    {
+      "date": "2006-06-04",
+      "homeTeam": "HOU",
+      "awayTeam": "MIN",
+      "homeScore": 85,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-06-04",
+      "homeTeam": "SEA",
+      "awayTeam": "SAS",
+      "homeScore": 87,
+      "awayScore": 89
+    },
+    {
+      "date": "2006-06-06",
+      "homeTeam": "PHO",
+      "awayTeam": "SAC",
+      "homeScore": 90,
+      "awayScore": 76
+    },
+    {
+      "date": "2006-06-06",
+      "homeTeam": "WAS",
+      "awayTeam": "HOU",
+      "homeScore": 93,
+      "awayScore": 79
+    },
+    {
+      "date": "2006-06-07",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 83,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-06-07",
+      "homeTeam": "LAS",
+      "awayTeam": "DET",
+      "homeScore": 86,
+      "awayScore": 78
+    },
+    {
+      "date": "2006-06-07",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 60,
+      "awayScore": 75
+    },
+    {
+      "date": "2006-06-07",
+      "homeTeam": "SEA",
+      "awayTeam": "CHI",
+      "homeScore": 86,
+      "awayScore": 73
+    },
+    {
+      "date": "2006-06-09",
+      "homeTeam": "CHA",
+      "awayTeam": "IND",
+      "homeScore": 70,
+      "awayScore": 59
+    },
+    {
+      "date": "2006-06-09",
+      "homeTeam": "CON",
+      "awayTeam": "SEA",
+      "homeScore": 85,
+      "awayScore": 81
+    },
+    {
+      "date": "2006-06-09",
+      "homeTeam": "HOU",
+      "awayTeam": "NYL",
+      "homeScore": 97,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-06-09",
+      "homeTeam": "LAS",
+      "awayTeam": "CHI",
+      "homeScore": 73,
+      "awayScore": 65
+    },
+    {
+      "date": "2006-06-09",
+      "homeTeam": "PHO",
+      "awayTeam": "DET",
+      "homeScore": 93,
+      "awayScore": 79
+    },
+    {
+      "date": "2006-06-09",
+      "homeTeam": "SAS",
+      "awayTeam": "MIN",
+      "homeScore": 79,
+      "awayScore": 86
+    },
+    {
+      "date": "2006-06-10",
+      "homeTeam": "SAC",
+      "awayTeam": "CHI",
+      "homeScore": 80,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-06-10",
+      "homeTeam": "SAS",
+      "awayTeam": "NYL",
+      "homeScore": 67,
+      "awayScore": 71
+    },
+    {
+      "date": "2006-06-11",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": 85,
+      "awayScore": 71
+    },
+    {
+      "date": "2006-06-11",
+      "homeTeam": "IND",
+      "awayTeam": "SEA",
+      "homeScore": 69,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-06-11",
+      "homeTeam": "MIN",
+      "awayTeam": "HOU",
+      "homeScore": 75,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-06-13",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 98,
+      "awayScore": 84
+    },
+    {
+      "date": "2006-06-13",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 78,
+      "awayScore": 80
+    },
+    {
+      "date": "2006-06-13",
+      "homeTeam": "WAS",
+      "awayTeam": "CHA",
+      "homeScore": 87,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-06-14",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 73,
+      "awayScore": 66
+    },
+    {
+      "date": "2006-06-14",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 66,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-06-15",
+      "homeTeam": "CHA",
+      "awayTeam": "WAS",
+      "homeScore": 77,
+      "awayScore": 96
+    },
+    {
+      "date": "2006-06-15",
+      "homeTeam": "CHI",
+      "awayTeam": "SEA",
+      "homeScore": 61,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-06-16",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 71,
+      "awayScore": 63
+    },
+    {
+      "date": "2006-06-16",
+      "homeTeam": "NYL",
+      "awayTeam": "HOU",
+      "homeScore": 58,
+      "awayScore": 72
+    },
+    {
+      "date": "2006-06-16",
+      "homeTeam": "PHO",
+      "awayTeam": "CON",
+      "homeScore": 91,
+      "awayScore": 86
+    },
+    {
+      "date": "2006-06-16",
+      "homeTeam": "SAS",
+      "awayTeam": "MIN",
+      "homeScore": 90,
+      "awayScore": 60
+    },
+    {
+      "date": "2006-06-17",
+      "homeTeam": "CHI",
+      "awayTeam": "SAS",
+      "homeScore": 65,
+      "awayScore": 69
+    },
+    {
+      "date": "2006-06-17",
+      "homeTeam": "DET",
+      "awayTeam": "HOU",
+      "homeScore": 71,
+      "awayScore": 55
+    },
+    {
+      "date": "2006-06-17",
+      "homeTeam": "LAS",
+      "awayTeam": "CON",
+      "homeScore": 82,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-06-17",
+      "homeTeam": "SAC",
+      "awayTeam": "SEA",
+      "homeScore": 76,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-06-17",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 88,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-06-18",
+      "homeTeam": "IND",
+      "awayTeam": "CHA",
+      "homeScore": 92,
+      "awayScore": 85
+    },
+    {
+      "date": "2006-06-18",
+      "homeTeam": "LAS",
+      "awayTeam": "SAC",
+      "homeScore": 80,
+      "awayScore": 69
+    },
+    {
+      "date": "2006-06-18",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": 94,
+      "awayScore": 82
+    },
+    {
+      "date": "2006-06-20",
+      "homeTeam": "CHA",
+      "awayTeam": "CON",
+      "homeScore": 66,
+      "awayScore": 90
+    },
+    {
+      "date": "2006-06-21",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 77,
+      "awayScore": 55
+    },
+    {
+      "date": "2006-06-21",
+      "homeTeam": "LAS",
+      "awayTeam": "HOU",
+      "homeScore": 75,
+      "awayScore": 55
+    },
+    {
+      "date": "2006-06-21",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 72,
+      "awayScore": 66
+    },
+    {
+      "date": "2006-06-21",
+      "homeTeam": "SAC",
+      "awayTeam": "SAS",
+      "homeScore": 75,
+      "awayScore": 69
+    },
+    {
+      "date": "2006-06-21",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 80,
+      "awayScore": 87
+    },
+    {
+      "date": "2006-06-22",
+      "homeTeam": "CHA",
+      "awayTeam": "DET",
+      "homeScore": 74,
+      "awayScore": 86
+    },
+    {
+      "date": "2006-06-22",
+      "homeTeam": "CON",
+      "awayTeam": "MIN",
+      "homeScore": 79,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-06-23",
+      "homeTeam": "CHI",
+      "awayTeam": "CON",
+      "homeScore": 79,
+      "awayScore": 84
+    },
+    {
+      "date": "2006-06-23",
+      "homeTeam": "HOU",
+      "awayTeam": "CHA",
+      "homeScore": 85,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-06-23",
+      "homeTeam": "PHO",
+      "awayTeam": "IND",
+      "homeScore": 73,
+      "awayScore": 83
+    },
+    {
+      "date": "2006-06-23",
+      "homeTeam": "SAC",
+      "awayTeam": "LAS",
+      "homeScore": 63,
+      "awayScore": 77
+    },
+    {
+      "date": "2006-06-23",
+      "homeTeam": "SEA",
+      "awayTeam": "SAS",
+      "homeScore": 87,
+      "awayScore": 57
+    },
+    {
+      "date": "2006-06-24",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": 92,
+      "awayScore": 86
+    },
+    {
+      "date": "2006-06-24",
+      "homeTeam": "MIN",
+      "awayTeam": "NYL",
+      "homeScore": 83,
+      "awayScore": 93
+    },
+    {
+      "date": "2006-06-25",
+      "homeTeam": "DET",
+      "awayTeam": "CHA",
+      "homeScore": 71,
+      "awayScore": 61
+    },
+    {
+      "date": "2006-06-25",
+      "homeTeam": "HOU",
+      "awayTeam": "SEA",
+      "homeScore": 84,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-06-25",
+      "homeTeam": "LAS",
+      "awayTeam": "SAS",
+      "homeScore": 105,
+      "awayScore": 80
+    },
+    {
+      "date": "2006-06-25",
+      "homeTeam": "PHO",
+      "awayTeam": "CHI",
+      "homeScore": 90,
+      "awayScore": 77
+    },
+    {
+      "date": "2006-06-25",
+      "homeTeam": "SAC",
+      "awayTeam": "IND",
+      "homeScore": 82,
+      "awayScore": 61
+    },
+    {
+      "date": "2006-06-25",
+      "homeTeam": "WAS",
+      "awayTeam": "CON",
+      "homeScore": 87,
+      "awayScore": 80
+    },
+    {
+      "date": "2006-06-27",
+      "homeTeam": "CON",
+      "awayTeam": "HOU",
+      "homeScore": 73,
+      "awayScore": 57
+    },
+    {
+      "date": "2006-06-27",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 67,
+      "awayScore": 73
+    },
+    {
+      "date": "2006-06-27",
+      "homeTeam": "SAS",
+      "awayTeam": "DET",
+      "homeScore": 59,
+      "awayScore": 63
+    },
+    {
+      "date": "2006-06-27",
+      "homeTeam": "SEA",
+      "awayTeam": "SAC",
+      "homeScore": 68,
+      "awayScore": 53
+    },
+    {
+      "date": "2006-06-27",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 67,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-06-28",
+      "homeTeam": "LAS",
+      "awayTeam": "SEA",
+      "homeScore": 67,
+      "awayScore": 75
+    },
+    {
+      "date": "2006-06-28",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 81,
+      "awayScore": 78
+    },
+    {
+      "date": "2006-06-29",
+      "homeTeam": "CHI",
+      "awayTeam": "CHA",
+      "homeScore": 75,
+      "awayScore": 69
+    },
+    {
+      "date": "2006-06-29",
+      "homeTeam": "HOU",
+      "awayTeam": "WAS",
+      "homeScore": 83,
+      "awayScore": 76
+    },
+    {
+      "date": "2006-06-29",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": 66,
+      "awayScore": 56
+    },
+    {
+      "date": "2006-06-29",
+      "homeTeam": "SAC",
+      "awayTeam": "MIN",
+      "homeScore": 87,
+      "awayScore": 78
+    },
+    {
+      "date": "2006-06-30",
+      "homeTeam": "CON",
+      "awayTeam": "DET",
+      "homeScore": 64,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-06-30",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 85,
+      "awayScore": 83
+    },
+    {
+      "date": "2006-06-30",
+      "homeTeam": "NYL",
+      "awayTeam": "SAS",
+      "homeScore": 78,
+      "awayScore": 91
+    },
+    {
+      "date": "2006-07-01",
+      "homeTeam": "CHA",
+      "awayTeam": "SAC",
+      "homeScore": 57,
+      "awayScore": 65
+    },
+    {
+      "date": "2006-07-01",
+      "homeTeam": "IND",
+      "awayTeam": "CON",
+      "homeScore": 66,
+      "awayScore": 76
+    },
+    {
+      "date": "2006-07-01",
+      "homeTeam": "LAS",
+      "awayTeam": "WAS",
+      "homeScore": 80,
+      "awayScore": 75
+    },
+    {
+      "date": "2006-07-01",
+      "homeTeam": "SAS",
+      "awayTeam": "CHI",
+      "homeScore": 69,
+      "awayScore": 57
+    },
+    {
+      "date": "2006-07-01",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": 92,
+      "awayScore": 75
+    },
+    {
+      "date": "2006-07-02",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 77,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-07-02",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 78,
+      "awayScore": 81
+    },
+    {
+      "date": "2006-07-03",
+      "homeTeam": "LAS",
+      "awayTeam": "SAS",
+      "homeScore": 63,
+      "awayScore": 85
+    },
+    {
+      "date": "2006-07-05",
+      "homeTeam": "LAS",
+      "awayTeam": "HOU",
+      "homeScore": 74,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-07-05",
+      "homeTeam": "MIN",
+      "awayTeam": "WAS",
+      "homeScore": 84,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-07-06",
+      "homeTeam": "CON",
+      "awayTeam": "CHA",
+      "homeScore": 76,
+      "awayScore": 71
+    },
+    {
+      "date": "2006-07-06",
+      "homeTeam": "DET",
+      "awayTeam": "PHO",
+      "homeScore": 76,
+      "awayScore": 91
+    },
+    {
+      "date": "2006-07-06",
+      "homeTeam": "NYL",
+      "awayTeam": "SAC",
+      "homeScore": 58,
+      "awayScore": 79
+    },
+    {
+      "date": "2006-07-07",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": 78,
+      "awayScore": 73
+    },
+    {
+      "date": "2006-07-07",
+      "homeTeam": "LAS",
+      "awayTeam": "IND",
+      "homeScore": 72,
+      "awayScore": 60
+    },
+    {
+      "date": "2006-07-07",
+      "homeTeam": "MIN",
+      "awayTeam": "DET",
+      "homeScore": 80,
+      "awayScore": 92
+    },
+    {
+      "date": "2006-07-07",
+      "homeTeam": "SAS",
+      "awayTeam": "HOU",
+      "homeScore": 94,
+      "awayScore": 75
+    },
+    {
+      "date": "2006-07-07",
+      "homeTeam": "WAS",
+      "awayTeam": "SAC",
+      "homeScore": 60,
+      "awayScore": 73
+    },
+    {
+      "date": "2006-07-08",
+      "homeTeam": "CON",
+      "awayTeam": "PHO",
+      "homeScore": 82,
+      "awayScore": 77
+    },
+    {
+      "date": "2006-07-08",
+      "homeTeam": "LAS",
+      "awayTeam": "CHA",
+      "homeScore": 66,
+      "awayScore": 64
+    },
+    {
+      "date": "2006-07-09",
+      "homeTeam": "HOU",
+      "awayTeam": "DET",
+      "homeScore": 60,
+      "awayScore": 66
+    },
+    {
+      "date": "2006-07-09",
+      "homeTeam": "MIN",
+      "awayTeam": "SAS",
+      "homeScore": 85,
+      "awayScore": 80
+    },
+    {
+      "date": "2006-07-09",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 88,
+      "awayScore": 94
+    },
+    {
+      "date": "2006-07-09",
+      "homeTeam": "SAC",
+      "awayTeam": "CHA",
+      "homeScore": 70,
+      "awayScore": 61
+    },
+    {
+      "date": "2006-07-09",
+      "homeTeam": "SEA",
+      "awayTeam": "IND",
+      "homeScore": 62,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-07-09",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": 89,
+      "awayScore": 83
+    },
+    {
+      "date": "2006-07-14",
+      "homeTeam": "CHA",
+      "awayTeam": "SAS",
+      "homeScore": 81,
+      "awayScore": 65
+    },
+    {
+      "date": "2006-07-14",
+      "homeTeam": "CHI",
+      "awayTeam": "HOU",
+      "homeScore": 77,
+      "awayScore": 82
+    },
+    {
+      "date": "2006-07-14",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 85,
+      "awayScore": 95
+    },
+    {
+      "date": "2006-07-14",
+      "homeTeam": "SEA",
+      "awayTeam": "NYL",
+      "homeScore": 86,
+      "awayScore": 66
+    },
+    {
+      "date": "2006-07-15",
+      "homeTeam": "CHA",
+      "awayTeam": "IND",
+      "homeScore": 75,
+      "awayScore": 65
+    },
+    {
+      "date": "2006-07-15",
+      "homeTeam": "SAC",
+      "awayTeam": "CON",
+      "homeScore": 69,
+      "awayScore": 63
+    },
+    {
+      "date": "2006-07-16",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 75,
+      "awayScore": 83
+    },
+    {
+      "date": "2006-07-16",
+      "homeTeam": "DET",
+      "awayTeam": "SAS",
+      "homeScore": 77,
+      "awayScore": 67
+    },
+    {
+      "date": "2006-07-16",
+      "homeTeam": "IND",
+      "awayTeam": "HOU",
+      "homeScore": 60,
+      "awayScore": 56
+    },
+    {
+      "date": "2006-07-16",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 78,
+      "awayScore": 90
+    },
+    {
+      "date": "2006-07-16",
+      "homeTeam": "PHO",
+      "awayTeam": "NYL",
+      "homeScore": 80,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-07-16",
+      "homeTeam": "SEA",
+      "awayTeam": "CON",
+      "homeScore": 83,
+      "awayScore": 92
+    },
+    {
+      "date": "2006-07-18",
+      "homeTeam": "IND",
+      "awayTeam": "PHO",
+      "homeScore": 71,
+      "awayScore": 65
+    },
+    {
+      "date": "2006-07-18",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": 70,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-07-18",
+      "homeTeam": "SAS",
+      "awayTeam": "HOU",
+      "homeScore": 67,
+      "awayScore": 64
+    },
+    {
+      "date": "2006-07-18",
+      "homeTeam": "SEA",
+      "awayTeam": "SAC",
+      "homeScore": 61,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-07-19",
+      "homeTeam": "DET",
+      "awayTeam": "CHA",
+      "homeScore": 67,
+      "awayScore": 73
+    },
+    {
+      "date": "2006-07-19",
+      "homeTeam": "MIN",
+      "awayTeam": "CHI",
+      "homeScore": 90,
+      "awayScore": 82
+    },
+    {
+      "date": "2006-07-19",
+      "homeTeam": "WAS",
+      "awayTeam": "PHO",
+      "homeScore": 83,
+      "awayScore": 96
+    },
+    {
+      "date": "2006-07-20",
+      "homeTeam": "CHA",
+      "awayTeam": "SEA",
+      "homeScore": 86,
+      "awayScore": 72
+    },
+    {
+      "date": "2006-07-20",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": 86,
+      "awayScore": 72
+    },
+    {
+      "date": "2006-07-20",
+      "homeTeam": "HOU",
+      "awayTeam": "MIN",
+      "homeScore": 78,
+      "awayScore": 55
+    },
+    {
+      "date": "2006-07-20",
+      "homeTeam": "SAC",
+      "awayTeam": "NYL",
+      "homeScore": 71,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-07-21",
+      "homeTeam": "DET",
+      "awayTeam": "LAS",
+      "homeScore": 73,
+      "awayScore": 59
+    },
+    {
+      "date": "2006-07-21",
+      "homeTeam": "SAS",
+      "awayTeam": "WAS",
+      "homeScore": 77,
+      "awayScore": 80
+    },
+    {
+      "date": "2006-07-22",
+      "homeTeam": "CHA",
+      "awayTeam": "PHO",
+      "homeScore": 74,
+      "awayScore": 78
+    },
+    {
+      "date": "2006-07-22",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 89,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-07-22",
+      "homeTeam": "IND",
+      "awayTeam": "LAS",
+      "homeScore": 68,
+      "awayScore": 73
+    },
+    {
+      "date": "2006-07-22",
+      "homeTeam": "MIN",
+      "awayTeam": "SAC",
+      "homeScore": 59,
+      "awayScore": 86
+    },
+    {
+      "date": "2006-07-22",
+      "homeTeam": "NYL",
+      "awayTeam": "SEA",
+      "homeScore": 54,
+      "awayScore": 91
+    },
+    {
+      "date": "2006-07-22",
+      "homeTeam": "SAS",
+      "awayTeam": "CON",
+      "homeScore": 61,
+      "awayScore": 79
+    },
+    {
+      "date": "2006-07-23",
+      "homeTeam": "WAS",
+      "awayTeam": "SEA",
+      "homeScore": 71,
+      "awayScore": 73
+    },
+    {
+      "date": "2006-07-24",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 71,
+      "awayScore": 89
+    },
+    {
+      "date": "2006-07-25",
+      "homeTeam": "CHA",
+      "awayTeam": "MIN",
+      "homeScore": 62,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-07-25",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": 72,
+      "awayScore": 79
+    },
+    {
+      "date": "2006-07-25",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": 86,
+      "awayScore": 73
+    },
+    {
+      "date": "2006-07-25",
+      "homeTeam": "HOU",
+      "awayTeam": "LAS",
+      "homeScore": 52,
+      "awayScore": 56
+    },
+    {
+      "date": "2006-07-25",
+      "homeTeam": "IND",
+      "awayTeam": "SAC",
+      "homeScore": 75,
+      "awayScore": 60
+    },
+    {
+      "date": "2006-07-25",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 85,
+      "awayScore": 91
+    },
+    {
+      "date": "2006-07-26",
+      "homeTeam": "DET",
+      "awayTeam": "SAC",
+      "homeScore": 91,
+      "awayScore": 71
+    },
+    {
+      "date": "2006-07-26",
+      "homeTeam": "SAS",
+      "awayTeam": "LAS",
+      "homeScore": 67,
+      "awayScore": 81
+    },
+    {
+      "date": "2006-07-27",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 98,
+      "awayScore": 95
+    },
+    {
+      "date": "2006-07-27",
+      "homeTeam": "MIN",
+      "awayTeam": "CHA",
+      "homeScore": 68,
+      "awayScore": 81
+    },
+    {
+      "date": "2006-07-27",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": 92,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-07-28",
+      "homeTeam": "CHI",
+      "awayTeam": "MIN",
+      "homeScore": 79,
+      "awayScore": 65
+    },
+    {
+      "date": "2006-07-28",
+      "homeTeam": "CON",
+      "awayTeam": "SAC",
+      "homeScore": 75,
+      "awayScore": 68
+    },
+    {
+      "date": "2006-07-28",
+      "homeTeam": "SAS",
+      "awayTeam": "PHO",
+      "homeScore": 98,
+      "awayScore": 96
+    },
+    {
+      "date": "2006-07-28",
+      "homeTeam": "SEA",
+      "awayTeam": "DET",
+      "homeScore": 67,
+      "awayScore": 77
+    },
+    {
+      "date": "2006-07-29",
+      "homeTeam": "CHA",
+      "awayTeam": "NYL",
+      "homeScore": 80,
+      "awayScore": 85
+    },
+    {
+      "date": "2006-07-29",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 67,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-07-30",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 64,
+      "awayScore": 69
+    },
+    {
+      "date": "2006-07-30",
+      "homeTeam": "CON",
+      "awayTeam": "SAS",
+      "homeScore": 72,
+      "awayScore": 65
+    },
+    {
+      "date": "2006-07-30",
+      "homeTeam": "NYL",
+      "awayTeam": "MIN",
+      "homeScore": 78,
+      "awayScore": 69
+    },
+    {
+      "date": "2006-07-30",
+      "homeTeam": "PHO",
+      "awayTeam": "HOU",
+      "homeScore": 80,
+      "awayScore": 82
+    },
+    {
+      "date": "2006-07-30",
+      "homeTeam": "SAC",
+      "awayTeam": "DET",
+      "homeScore": 94,
+      "awayScore": 61
+    },
+    {
+      "date": "2006-07-30",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 70,
+      "awayScore": 71
+    },
+    {
+      "date": "2006-07-30",
+      "homeTeam": "WAS",
+      "awayTeam": "CHA",
+      "homeScore": 78,
+      "awayScore": 73
+    },
+    {
+      "date": "2006-08-01",
+      "homeTeam": "CHI",
+      "awayTeam": "PHO",
+      "homeScore": 70,
+      "awayScore": 90
+    },
+    {
+      "date": "2006-08-01",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 66,
+      "awayScore": 52
+    },
+    {
+      "date": "2006-08-01",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 70,
+      "awayScore": 66
+    },
+    {
+      "date": "2006-08-01",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 75,
+      "awayScore": 77
+    },
+    {
+      "date": "2006-08-01",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 74,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-08-01",
+      "homeTeam": "SAS",
+      "awayTeam": "CHA",
+      "homeScore": 65,
+      "awayScore": 68
+    },
+    {
+      "date": "2006-08-01",
+      "homeTeam": "WAS",
+      "awayTeam": "LAS",
+      "homeScore": 84,
+      "awayScore": 74
+    },
+    {
+      "date": "2006-08-03",
+      "homeTeam": "CON",
+      "awayTeam": "LAS",
+      "homeScore": 72,
+      "awayScore": 63
+    },
+    {
+      "date": "2006-08-03",
+      "homeTeam": "IND",
+      "awayTeam": "MIN",
+      "homeScore": 69,
+      "awayScore": 59
+    },
+    {
+      "date": "2006-08-03",
+      "homeTeam": "NYL",
+      "awayTeam": "DET",
+      "homeScore": 75,
+      "awayScore": 67
+    },
+    {
+      "date": "2006-08-03",
+      "homeTeam": "PHO",
+      "awayTeam": "CHA",
+      "homeScore": 112,
+      "awayScore": 84
+    },
+    {
+      "date": "2006-08-03",
+      "homeTeam": "SAS",
+      "awayTeam": "SAC",
+      "homeScore": 69,
+      "awayScore": 87
+    },
+    {
+      "date": "2006-08-03",
+      "homeTeam": "SEA",
+      "awayTeam": "WAS",
+      "homeScore": 86,
+      "awayScore": 78
+    },
+    {
+      "date": "2006-08-04",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 49,
+      "awayScore": 76
+    },
+    {
+      "date": "2006-08-04",
+      "homeTeam": "MIN",
+      "awayTeam": "HOU",
+      "homeScore": 73,
+      "awayScore": 77
+    },
+    {
+      "date": "2006-08-05",
+      "homeTeam": "IND",
+      "awayTeam": "SAS",
+      "homeScore": 76,
+      "awayScore": 70
+    },
+    {
+      "date": "2006-08-05",
+      "homeTeam": "NYL",
+      "awayTeam": "CHI",
+      "homeScore": 80,
+      "awayScore": 69
+    },
+    {
+      "date": "2006-08-05",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 96,
+      "awayScore": 80
+    },
+    {
+      "date": "2006-08-05",
+      "homeTeam": "SAC",
+      "awayTeam": "WAS",
+      "homeScore": 99,
+      "awayScore": 95
+    },
+    {
+      "date": "2006-08-05",
+      "homeTeam": "SEA",
+      "awayTeam": "CHA",
+      "homeScore": 87,
+      "awayScore": 81
+    },
+    {
+      "date": "2006-08-06",
+      "homeTeam": "DET",
+      "awayTeam": "NYL",
+      "homeScore": 65,
+      "awayScore": 53
+    },
+    {
+      "date": "2006-08-06",
+      "homeTeam": "HOU",
+      "awayTeam": "CON",
+      "homeScore": 67,
+      "awayScore": 86
+    },
+    {
+      "date": "2006-08-06",
+      "homeTeam": "MIN",
+      "awayTeam": "SAS",
+      "homeScore": 82,
+      "awayScore": 68
+    },
+    {
+      "date": "2006-08-08",
+      "homeTeam": "CHA",
+      "awayTeam": "HOU",
+      "homeScore": 68,
+      "awayScore": 57
+    },
+    {
+      "date": "2006-08-08",
+      "homeTeam": "CHI",
+      "awayTeam": "CON",
+      "homeScore": 59,
+      "awayScore": 85
+    },
+    {
+      "date": "2006-08-08",
+      "homeTeam": "DET",
+      "awayTeam": "SEA",
+      "homeScore": 79,
+      "awayScore": 81
+    },
+    {
+      "date": "2006-08-08",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 44,
+      "awayScore": 77
+    },
+    {
+      "date": "2006-08-08",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 99,
+      "awayScore": 68
+    },
+    {
+      "date": "2006-08-08",
+      "homeTeam": "WAS",
+      "awayTeam": "SAS",
+      "homeScore": 91,
+      "awayScore": 79
+    },
+    {
+      "date": "2006-08-09",
+      "homeTeam": "IND",
+      "awayTeam": "CON",
+      "homeScore": 63,
+      "awayScore": 71
+    },
+    {
+      "date": "2006-08-09",
+      "homeTeam": "LAS",
+      "awayTeam": "SAC",
+      "homeScore": 69,
+      "awayScore": 58
+    },
+    {
+      "date": "2006-08-10",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 82,
+      "awayScore": 48
+    },
+    {
+      "date": "2006-08-10",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 110,
+      "awayScore": 111
+    },
+    {
+      "date": "2006-08-10",
+      "homeTeam": "SAC",
+      "awayTeam": "MIN",
+      "homeScore": 74,
+      "awayScore": 66
+    },
+    {
+      "date": "2006-08-10",
+      "homeTeam": "SAS",
+      "awayTeam": "SEA",
+      "homeScore": 75,
+      "awayScore": 65
+    },
+    {
+      "date": "2006-08-11",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 68,
+      "awayScore": 87
+    },
+    {
+      "date": "2006-08-11",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 64,
+      "awayScore": 62
+    },
+    {
+      "date": "2006-08-11",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 78,
+      "awayScore": 66
+    },
+    {
+      "date": "2006-08-12",
+      "homeTeam": "CHA",
+      "awayTeam": "CHI",
+      "homeScore": 84,
+      "awayScore": 57
+    },
+    {
+      "date": "2006-08-12",
+      "homeTeam": "HOU",
+      "awayTeam": "SEA",
+      "homeScore": 89,
+      "awayScore": 72
+    },
+    {
+      "date": "2006-08-12",
+      "homeTeam": "SAS",
+      "awayTeam": "PHO",
+      "homeScore": 93,
+      "awayScore": 95
+    },
+    {
+      "date": "2006-08-13",
+      "homeTeam": "DET",
+      "awayTeam": "CON",
+      "homeScore": 88,
+      "awayScore": 65
+    },
+    {
+      "date": "2006-08-13",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 73,
+      "awayScore": 80
+    },
+    {
+      "date": "2006-08-13",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 78,
+      "awayScore": 59
+    },
+    {
+      "date": "2006-08-13",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 93,
+      "awayScore": 81
+    },
+    {
+      "date": "2006-08-13",
+      "homeTeam": "PHO",
+      "awayTeam": "SAC",
+      "homeScore": 81,
+      "awayScore": 71
+    }
+  ],
+  "metadata": {
+    "total_games": 238,
+    "ingested_at": "2025-11-21T11:21:17.723088"
+  }
+}

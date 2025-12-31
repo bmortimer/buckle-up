@@ -1,0 +1,1438 @@
+{
+  "season": "2010",
+  "league": "WNBA",
+  "games": [
+    {
+      "date": "2010-05-15",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": 74,
+      "awayScore": 61
+    },
+    {
+      "date": "2010-05-15",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 65,
+      "awayScore": 72
+    },
+    {
+      "date": "2010-05-15",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 78,
+      "awayScore": 77
+    },
+    {
+      "date": "2010-05-15",
+      "homeTeam": "SAS",
+      "awayTeam": "ATL",
+      "homeScore": 70,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-05-15",
+      "homeTeam": "TUL",
+      "awayTeam": "MIN",
+      "homeScore": 74,
+      "awayScore": 80
+    },
+    {
+      "date": "2010-05-16",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 66,
+      "awayScore": 62
+    },
+    {
+      "date": "2010-05-16",
+      "homeTeam": "MIN",
+      "awayTeam": "WAS",
+      "homeScore": 76,
+      "awayScore": 87
+    },
+    {
+      "date": "2010-05-16",
+      "homeTeam": "NYL",
+      "awayTeam": "CHI",
+      "homeScore": 85,
+      "awayScore": 82
+    },
+    {
+      "date": "2010-05-16",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 81,
+      "awayScore": 67
+    },
+    {
+      "date": "2010-05-19",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": 79,
+      "awayScore": 76
+    },
+    {
+      "date": "2010-05-20",
+      "homeTeam": "TUL",
+      "awayTeam": "SAS",
+      "homeScore": 74,
+      "awayScore": 83
+    },
+    {
+      "date": "2010-05-21",
+      "homeTeam": "ATL",
+      "awayTeam": "CON",
+      "homeScore": 97,
+      "awayScore": 82
+    },
+    {
+      "date": "2010-05-21",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 77,
+      "awayScore": 61
+    },
+    {
+      "date": "2010-05-22",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 86,
+      "awayScore": 92
+    },
+    {
+      "date": "2010-05-22",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 89,
+      "awayScore": 95
+    },
+    {
+      "date": "2010-05-22",
+      "homeTeam": "SAS",
+      "awayTeam": "LAS",
+      "homeScore": 88,
+      "awayScore": 81
+    },
+    {
+      "date": "2010-05-23",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": 80,
+      "awayScore": 65
+    },
+    {
+      "date": "2010-05-23",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 69,
+      "awayScore": 61
+    },
+    {
+      "date": "2010-05-23",
+      "homeTeam": "MIN",
+      "awayTeam": "TUL",
+      "homeScore": 82,
+      "awayScore": 94
+    },
+    {
+      "date": "2010-05-23",
+      "homeTeam": "NYL",
+      "awayTeam": "ATL",
+      "homeScore": 77,
+      "awayScore": 86
+    },
+    {
+      "date": "2010-05-25",
+      "homeTeam": "SEA",
+      "awayTeam": "WAS",
+      "homeScore": 82,
+      "awayScore": 76
+    },
+    {
+      "date": "2010-05-25",
+      "homeTeam": "TUL",
+      "awayTeam": "PHO",
+      "homeScore": 96,
+      "awayScore": 110
+    },
+    {
+      "date": "2010-05-27",
+      "homeTeam": "CHI",
+      "awayTeam": "SEA",
+      "homeScore": 84,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-05-27",
+      "homeTeam": "CON",
+      "awayTeam": "MIN",
+      "homeScore": 105,
+      "awayScore": 79
+    },
+    {
+      "date": "2010-05-28",
+      "homeTeam": "LAS",
+      "awayTeam": "WAS",
+      "homeScore": 81,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-05-28",
+      "homeTeam": "PHO",
+      "awayTeam": "ATL",
+      "homeScore": 93,
+      "awayScore": 96
+    },
+    {
+      "date": "2010-05-28",
+      "homeTeam": "SAS",
+      "awayTeam": "NYL",
+      "homeScore": 71,
+      "awayScore": 77
+    },
+    {
+      "date": "2010-05-29",
+      "homeTeam": "MIN",
+      "awayTeam": "CHI",
+      "homeScore": 58,
+      "awayScore": 73
+    },
+    {
+      "date": "2010-05-29",
+      "homeTeam": "TUL",
+      "awayTeam": "IND",
+      "homeScore": 79,
+      "awayScore": 74
+    },
+    {
+      "date": "2010-05-30",
+      "homeTeam": "LAS",
+      "awayTeam": "ATL",
+      "homeScore": 82,
+      "awayScore": 101
+    },
+    {
+      "date": "2010-05-30",
+      "homeTeam": "SAS",
+      "awayTeam": "SEA",
+      "homeScore": 56,
+      "awayScore": 84
+    },
+    {
+      "date": "2010-05-30",
+      "homeTeam": "WAS",
+      "awayTeam": "CON",
+      "homeScore": 69,
+      "awayScore": 65
+    },
+    {
+      "date": "2010-06-01",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": 92,
+      "awayScore": 82
+    },
+    {
+      "date": "2010-06-01",
+      "homeTeam": "SEA",
+      "awayTeam": "ATL",
+      "homeScore": 90,
+      "awayScore": 72
+    },
+    {
+      "date": "2010-06-03",
+      "homeTeam": "IND",
+      "awayTeam": "SAS",
+      "homeScore": 79,
+      "awayScore": 57
+    },
+    {
+      "date": "2010-06-04",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 70,
+      "awayScore": 80
+    },
+    {
+      "date": "2010-06-04",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 75,
+      "awayScore": 68
+    },
+    {
+      "date": "2010-06-04",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 90,
+      "awayScore": 89
+    },
+    {
+      "date": "2010-06-04",
+      "homeTeam": "TUL",
+      "awayTeam": "MIN",
+      "homeScore": 92,
+      "awayScore": 79
+    },
+    {
+      "date": "2010-06-05",
+      "homeTeam": "CHI",
+      "awayTeam": "TUL",
+      "homeScore": 95,
+      "awayScore": 70
+    },
+    {
+      "date": "2010-06-05",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": 78,
+      "awayScore": 73
+    },
+    {
+      "date": "2010-06-05",
+      "homeTeam": "LAS",
+      "awayTeam": "SEA",
+      "homeScore": 75,
+      "awayScore": 79
+    },
+    {
+      "date": "2010-06-05",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 79,
+      "awayScore": 86
+    },
+    {
+      "date": "2010-06-06",
+      "homeTeam": "CON",
+      "awayTeam": "SAS",
+      "homeScore": 81,
+      "awayScore": 68
+    },
+    {
+      "date": "2010-06-06",
+      "homeTeam": "MIN",
+      "awayTeam": "IND",
+      "homeScore": 51,
+      "awayScore": 89
+    },
+    {
+      "date": "2010-06-06",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 97,
+      "awayScore": 74
+    },
+    {
+      "date": "2010-06-08",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": 70,
+      "awayScore": 85
+    },
+    {
+      "date": "2010-06-08",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 92,
+      "awayScore": 91
+    },
+    {
+      "date": "2010-06-10",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 99,
+      "awayScore": 88
+    },
+    {
+      "date": "2010-06-11",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 78,
+      "awayScore": 95
+    },
+    {
+      "date": "2010-06-11",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 86,
+      "awayScore": 77
+    },
+    {
+      "date": "2010-06-11",
+      "homeTeam": "NYL",
+      "awayTeam": "ATL",
+      "homeScore": 91,
+      "awayScore": 79
+    },
+    {
+      "date": "2010-06-11",
+      "homeTeam": "SAS",
+      "awayTeam": "TUL",
+      "homeScore": 87,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-06-11",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 82,
+      "awayScore": 60
+    },
+    {
+      "date": "2010-06-12",
+      "homeTeam": "PHO",
+      "awayTeam": "TUL",
+      "homeScore": 116,
+      "awayScore": 84
+    },
+    {
+      "date": "2010-06-12",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 82,
+      "awayScore": 65
+    },
+    {
+      "date": "2010-06-13",
+      "homeTeam": "ATL",
+      "awayTeam": "SAS",
+      "homeScore": 90,
+      "awayScore": 83
+    },
+    {
+      "date": "2010-06-13",
+      "homeTeam": "IND",
+      "awayTeam": "CON",
+      "homeScore": 77,
+      "awayScore": 67
+    },
+    {
+      "date": "2010-06-13",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 88,
+      "awayScore": 84
+    },
+    {
+      "date": "2010-06-15",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 86,
+      "awayScore": 93
+    },
+    {
+      "date": "2010-06-17",
+      "homeTeam": "IND",
+      "awayTeam": "SEA",
+      "homeScore": 72,
+      "awayScore": 65
+    },
+    {
+      "date": "2010-06-18",
+      "homeTeam": "LAS",
+      "awayTeam": "CON",
+      "homeScore": 75,
+      "awayScore": 78
+    },
+    {
+      "date": "2010-06-18",
+      "homeTeam": "MIN",
+      "awayTeam": "TUL",
+      "homeScore": 78,
+      "awayScore": 67
+    },
+    {
+      "date": "2010-06-18",
+      "homeTeam": "NYL",
+      "awayTeam": "SEA",
+      "homeScore": 84,
+      "awayScore": 92
+    },
+    {
+      "date": "2010-06-18",
+      "homeTeam": "PHO",
+      "awayTeam": "SAS",
+      "homeScore": 105,
+      "awayScore": 108
+    },
+    {
+      "date": "2010-06-19",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 94,
+      "awayScore": 91
+    },
+    {
+      "date": "2010-06-19",
+      "homeTeam": "TUL",
+      "awayTeam": "MIN",
+      "homeScore": 78,
+      "awayScore": 92
+    },
+    {
+      "date": "2010-06-19",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": 65,
+      "awayScore": 61
+    },
+    {
+      "date": "2010-06-20",
+      "homeTeam": "PHO",
+      "awayTeam": "CON",
+      "homeScore": 94,
+      "awayScore": 96
+    },
+    {
+      "date": "2010-06-20",
+      "homeTeam": "SEA",
+      "awayTeam": "SAS",
+      "homeScore": 82,
+      "awayScore": 61
+    },
+    {
+      "date": "2010-06-22",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": 77,
+      "awayScore": 86
+    },
+    {
+      "date": "2010-06-22",
+      "homeTeam": "NYL",
+      "awayTeam": "MIN",
+      "homeScore": 68,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-06-23",
+      "homeTeam": "ATL",
+      "awayTeam": "TUL",
+      "homeScore": 96,
+      "awayScore": 90
+    },
+    {
+      "date": "2010-06-24",
+      "homeTeam": "WAS",
+      "awayTeam": "LAS",
+      "homeScore": 68,
+      "awayScore": 53
+    },
+    {
+      "date": "2010-06-25",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 79,
+      "awayScore": 72
+    },
+    {
+      "date": "2010-06-25",
+      "homeTeam": "CON",
+      "awayTeam": "PHO",
+      "homeScore": 82,
+      "awayScore": 79
+    },
+    {
+      "date": "2010-06-25",
+      "homeTeam": "SEA",
+      "awayTeam": "IND",
+      "homeScore": 85,
+      "awayScore": 81
+    },
+    {
+      "date": "2010-06-25",
+      "homeTeam": "TUL",
+      "awayTeam": "NYL",
+      "homeScore": 78,
+      "awayScore": 92
+    },
+    {
+      "date": "2010-06-26",
+      "homeTeam": "SAS",
+      "awayTeam": "MIN",
+      "homeScore": 80,
+      "awayScore": 66
+    },
+    {
+      "date": "2010-06-27",
+      "homeTeam": "ATL",
+      "awayTeam": "LAS",
+      "homeScore": 89,
+      "awayScore": 81
+    },
+    {
+      "date": "2010-06-27",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 64,
+      "awayScore": 70
+    },
+    {
+      "date": "2010-06-27",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 77,
+      "awayScore": 68
+    },
+    {
+      "date": "2010-06-27",
+      "homeTeam": "TUL",
+      "awayTeam": "SEA",
+      "homeScore": 72,
+      "awayScore": 83
+    },
+    {
+      "date": "2010-06-27",
+      "homeTeam": "WAS",
+      "awayTeam": "PHO",
+      "homeScore": 95,
+      "awayScore": 85
+    },
+    {
+      "date": "2010-06-29",
+      "homeTeam": "ATL",
+      "awayTeam": "PHO",
+      "homeScore": 94,
+      "awayScore": 88
+    },
+    {
+      "date": "2010-06-29",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": 68,
+      "awayScore": 80
+    },
+    {
+      "date": "2010-06-29",
+      "homeTeam": "SEA",
+      "awayTeam": "SAS",
+      "homeScore": 86,
+      "awayScore": 72
+    },
+    {
+      "date": "2010-06-29",
+      "homeTeam": "TUL",
+      "awayTeam": "CON",
+      "homeScore": 89,
+      "awayScore": 101
+    },
+    {
+      "date": "2010-06-29",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 68,
+      "awayScore": 65
+    },
+    {
+      "date": "2010-07-01",
+      "homeTeam": "ATL",
+      "awayTeam": "MIN",
+      "homeScore": 76,
+      "awayScore": 58
+    },
+    {
+      "date": "2010-07-01",
+      "homeTeam": "CHI",
+      "awayTeam": "CON",
+      "homeScore": 92,
+      "awayScore": 80
+    },
+    {
+      "date": "2010-07-01",
+      "homeTeam": "LAS",
+      "awayTeam": "SAS",
+      "homeScore": 73,
+      "awayScore": 63
+    },
+    {
+      "date": "2010-07-01",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 104,
+      "awayScore": 107
+    },
+    {
+      "date": "2010-07-03",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 82,
+      "awayScore": 88
+    },
+    {
+      "date": "2010-07-03",
+      "homeTeam": "LAS",
+      "awayTeam": "SEA",
+      "homeScore": 62,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-07-03",
+      "homeTeam": "PHO",
+      "awayTeam": "NYL",
+      "homeScore": 97,
+      "awayScore": 82
+    },
+    {
+      "date": "2010-07-03",
+      "homeTeam": "TUL",
+      "awayTeam": "WAS",
+      "homeScore": 54,
+      "awayScore": 69
+    },
+    {
+      "date": "2010-07-06",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 51,
+      "awayScore": 58
+    },
+    {
+      "date": "2010-07-06",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 89,
+      "awayScore": 98
+    },
+    {
+      "date": "2010-07-06",
+      "homeTeam": "SAS",
+      "awayTeam": "CON",
+      "homeScore": 79,
+      "awayScore": 66
+    },
+    {
+      "date": "2010-07-06",
+      "homeTeam": "SEA",
+      "awayTeam": "NYL",
+      "homeScore": 78,
+      "awayScore": 70
+    },
+    {
+      "date": "2010-07-07",
+      "homeTeam": "ATL",
+      "awayTeam": "CON",
+      "homeScore": 108,
+      "awayScore": 103
+    },
+    {
+      "date": "2010-07-08",
+      "homeTeam": "IND",
+      "awayTeam": "TUL",
+      "homeScore": 100,
+      "awayScore": 72
+    },
+    {
+      "date": "2010-07-08",
+      "homeTeam": "MIN",
+      "awayTeam": "SAS",
+      "homeScore": 89,
+      "awayScore": 66
+    },
+    {
+      "date": "2010-07-11",
+      "homeTeam": "NYL",
+      "awayTeam": "CHI",
+      "homeScore": 57,
+      "awayScore": 54
+    },
+    {
+      "date": "2010-07-13",
+      "homeTeam": "TUL",
+      "awayTeam": "LAS",
+      "homeScore": 71,
+      "awayScore": 87
+    },
+    {
+      "date": "2010-07-14",
+      "homeTeam": "CHI",
+      "awayTeam": "SAS",
+      "homeScore": 88,
+      "awayScore": 61
+    },
+    {
+      "date": "2010-07-14",
+      "homeTeam": "IND",
+      "awayTeam": "CON",
+      "homeScore": 68,
+      "awayScore": 77
+    },
+    {
+      "date": "2010-07-14",
+      "homeTeam": "MIN",
+      "awayTeam": "ATL",
+      "homeScore": 83,
+      "awayScore": 81
+    },
+    {
+      "date": "2010-07-14",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 107,
+      "awayScore": 111
+    },
+    {
+      "date": "2010-07-15",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 75,
+      "awayScore": 67
+    },
+    {
+      "date": "2010-07-16",
+      "homeTeam": "CHI",
+      "awayTeam": "LAS",
+      "homeScore": 80,
+      "awayScore": 68
+    },
+    {
+      "date": "2010-07-16",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 89,
+      "awayScore": 70
+    },
+    {
+      "date": "2010-07-16",
+      "homeTeam": "SAS",
+      "awayTeam": "TUL",
+      "homeScore": 70,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-07-17",
+      "homeTeam": "CON",
+      "awayTeam": "ATL",
+      "homeScore": 96,
+      "awayScore": 80
+    },
+    {
+      "date": "2010-07-17",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 71,
+      "awayScore": 73
+    },
+    {
+      "date": "2010-07-17",
+      "homeTeam": "PHO",
+      "awayTeam": "TUL",
+      "homeScore": 97,
+      "awayScore": 88
+    },
+    {
+      "date": "2010-07-18",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 81,
+      "awayScore": 84
+    },
+    {
+      "date": "2010-07-18",
+      "homeTeam": "SAS",
+      "awayTeam": "LAS",
+      "homeScore": 83,
+      "awayScore": 73
+    },
+    {
+      "date": "2010-07-18",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": 59,
+      "awayScore": 61
+    },
+    {
+      "date": "2010-07-20",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 74,
+      "awayScore": 82
+    },
+    {
+      "date": "2010-07-20",
+      "homeTeam": "LAS",
+      "awayTeam": "TUL",
+      "homeScore": 86,
+      "awayScore": 83
+    },
+    {
+      "date": "2010-07-20",
+      "homeTeam": "SAS",
+      "awayTeam": "SEA",
+      "homeScore": 74,
+      "awayScore": 80
+    },
+    {
+      "date": "2010-07-21",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 82,
+      "awayScore": 72
+    },
+    {
+      "date": "2010-07-22",
+      "homeTeam": "IND",
+      "awayTeam": "LAS",
+      "homeScore": 76,
+      "awayScore": 57
+    },
+    {
+      "date": "2010-07-22",
+      "homeTeam": "MIN",
+      "awayTeam": "SAS",
+      "homeScore": 72,
+      "awayScore": 74
+    },
+    {
+      "date": "2010-07-22",
+      "homeTeam": "TUL",
+      "awayTeam": "PHO",
+      "homeScore": 91,
+      "awayScore": 123
+    },
+    {
+      "date": "2010-07-23",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": 71,
+      "awayScore": 79
+    },
+    {
+      "date": "2010-07-24",
+      "homeTeam": "CON",
+      "awayTeam": "LAS",
+      "homeScore": 80,
+      "awayScore": 89
+    },
+    {
+      "date": "2010-07-24",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": 124,
+      "awayScore": 127
+    },
+    {
+      "date": "2010-07-24",
+      "homeTeam": "SAS",
+      "awayTeam": "CHI",
+      "homeScore": 72,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-07-24",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 73,
+      "awayScore": 78
+    },
+    {
+      "date": "2010-07-25",
+      "homeTeam": "ATL",
+      "awayTeam": "NYL",
+      "homeScore": 82,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-07-25",
+      "homeTeam": "SEA",
+      "awayTeam": "TUL",
+      "homeScore": 75,
+      "awayScore": 59
+    },
+    {
+      "date": "2010-07-27",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": 88,
+      "awayScore": 78
+    },
+    {
+      "date": "2010-07-27",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 78,
+      "awayScore": 74
+    },
+    {
+      "date": "2010-07-27",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 58,
+      "awayScore": 71
+    },
+    {
+      "date": "2010-07-27",
+      "homeTeam": "NYL",
+      "awayTeam": "SAS",
+      "homeScore": 77,
+      "awayScore": 72
+    },
+    {
+      "date": "2010-07-27",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 91,
+      "awayScore": 85
+    },
+    {
+      "date": "2010-07-27",
+      "homeTeam": "TUL",
+      "awayTeam": "ATL",
+      "homeScore": 89,
+      "awayScore": 105
+    },
+    {
+      "date": "2010-07-29",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 110,
+      "awayScore": 92
+    },
+    {
+      "date": "2010-07-29",
+      "homeTeam": "WAS",
+      "awayTeam": "SAS",
+      "homeScore": 75,
+      "awayScore": 79
+    },
+    {
+      "date": "2010-07-30",
+      "homeTeam": "CON",
+      "awayTeam": "ATL",
+      "homeScore": 62,
+      "awayScore": 94
+    },
+    {
+      "date": "2010-07-30",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 73,
+      "awayScore": 77
+    },
+    {
+      "date": "2010-07-30",
+      "homeTeam": "NYL",
+      "awayTeam": "LAS",
+      "homeScore": 88,
+      "awayScore": 79
+    },
+    {
+      "date": "2010-07-30",
+      "homeTeam": "SEA",
+      "awayTeam": "CHI",
+      "homeScore": 80,
+      "awayScore": 60
+    },
+    {
+      "date": "2010-07-30",
+      "homeTeam": "TUL",
+      "awayTeam": "SAS",
+      "homeScore": 85,
+      "awayScore": 101
+    },
+    {
+      "date": "2010-08-01",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 90,
+      "awayScore": 74
+    },
+    {
+      "date": "2010-08-01",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 72,
+      "awayScore": 71
+    },
+    {
+      "date": "2010-08-01",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 71,
+      "awayScore": 67
+    },
+    {
+      "date": "2010-08-01",
+      "homeTeam": "PHO",
+      "awayTeam": "CHI",
+      "homeScore": 97,
+      "awayScore": 96
+    },
+    {
+      "date": "2010-08-01",
+      "homeTeam": "WAS",
+      "awayTeam": "TUL",
+      "homeScore": 87,
+      "awayScore": 62
+    },
+    {
+      "date": "2010-08-03",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": 78,
+      "awayScore": 86
+    },
+    {
+      "date": "2010-08-03",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": 72,
+      "awayScore": 82
+    },
+    {
+      "date": "2010-08-03",
+      "homeTeam": "MIN",
+      "awayTeam": "CON",
+      "homeScore": 111,
+      "awayScore": 103
+    },
+    {
+      "date": "2010-08-03",
+      "homeTeam": "SAS",
+      "awayTeam": "PHO",
+      "homeScore": 92,
+      "awayScore": 103
+    },
+    {
+      "date": "2010-08-03",
+      "homeTeam": "TUL",
+      "awayTeam": "SEA",
+      "homeScore": 84,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-08-04",
+      "homeTeam": "LAS",
+      "awayTeam": "CHI",
+      "homeScore": 82,
+      "awayScore": 77
+    },
+    {
+      "date": "2010-08-05",
+      "homeTeam": "SEA",
+      "awayTeam": "CON",
+      "homeScore": 83,
+      "awayScore": 82
+    },
+    {
+      "date": "2010-08-06",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 95,
+      "awayScore": 93
+    },
+    {
+      "date": "2010-08-06",
+      "homeTeam": "LAS",
+      "awayTeam": "TUL",
+      "homeScore": 77,
+      "awayScore": 70
+    },
+    {
+      "date": "2010-08-06",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 85,
+      "awayScore": 77
+    },
+    {
+      "date": "2010-08-06",
+      "homeTeam": "PHO",
+      "awayTeam": "SAS",
+      "homeScore": 103,
+      "awayScore": 87
+    },
+    {
+      "date": "2010-08-07",
+      "homeTeam": "CHI",
+      "awayTeam": "MIN",
+      "homeScore": 82,
+      "awayScore": 87
+    },
+    {
+      "date": "2010-08-07",
+      "homeTeam": "SEA",
+      "awayTeam": "TUL",
+      "homeScore": 111,
+      "awayScore": 65
+    },
+    {
+      "date": "2010-08-08",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": 76,
+      "awayScore": 67
+    },
+    {
+      "date": "2010-08-08",
+      "homeTeam": "LAS",
+      "awayTeam": "SAS",
+      "homeScore": 83,
+      "awayScore": 92
+    },
+    {
+      "date": "2010-08-08",
+      "homeTeam": "MIN",
+      "awayTeam": "NYL",
+      "homeScore": 72,
+      "awayScore": 74
+    },
+    {
+      "date": "2010-08-08",
+      "homeTeam": "PHO",
+      "awayTeam": "IND",
+      "homeScore": 82,
+      "awayScore": 104
+    },
+    {
+      "date": "2010-08-10",
+      "homeTeam": "ATL",
+      "awayTeam": "SEA",
+      "homeScore": 70,
+      "awayScore": 80
+    },
+    {
+      "date": "2010-08-10",
+      "homeTeam": "CHI",
+      "awayTeam": "PHO",
+      "homeScore": 91,
+      "awayScore": 82
+    },
+    {
+      "date": "2010-08-10",
+      "homeTeam": "LAS",
+      "awayTeam": "IND",
+      "homeScore": 76,
+      "awayScore": 82
+    },
+    {
+      "date": "2010-08-10",
+      "homeTeam": "SAS",
+      "awayTeam": "MIN",
+      "homeScore": 66,
+      "awayScore": 73
+    },
+    {
+      "date": "2010-08-10",
+      "homeTeam": "WAS",
+      "awayTeam": "CON",
+      "homeScore": 84,
+      "awayScore": 74
+    },
+    {
+      "date": "2010-08-12",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 77,
+      "awayScore": 78
+    },
+    {
+      "date": "2010-08-13",
+      "homeTeam": "ATL",
+      "awayTeam": "NYL",
+      "homeScore": 83,
+      "awayScore": 90
+    },
+    {
+      "date": "2010-08-13",
+      "homeTeam": "CON",
+      "awayTeam": "SEA",
+      "homeScore": 88,
+      "awayScore": 68
+    },
+    {
+      "date": "2010-08-13",
+      "homeTeam": "IND",
+      "awayTeam": "PHO",
+      "homeScore": 110,
+      "awayScore": 90
+    },
+    {
+      "date": "2010-08-13",
+      "homeTeam": "SAS",
+      "awayTeam": "TUL",
+      "homeScore": 94,
+      "awayScore": 74
+    },
+    {
+      "date": "2010-08-13",
+      "homeTeam": "WAS",
+      "awayTeam": "MIN",
+      "homeScore": 61,
+      "awayScore": 58
+    },
+    {
+      "date": "2010-08-14",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 74,
+      "awayScore": 98
+    },
+    {
+      "date": "2010-08-14",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 107,
+      "awayScore": 69
+    },
+    {
+      "date": "2010-08-14",
+      "homeTeam": "TUL",
+      "awayTeam": "LAS",
+      "homeScore": 87,
+      "awayScore": 92
+    },
+    {
+      "date": "2010-08-15",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 66,
+      "awayScore": 79
+    },
+    {
+      "date": "2010-08-15",
+      "homeTeam": "MIN",
+      "awayTeam": "SAS",
+      "homeScore": 84,
+      "awayScore": 78
+    },
+    {
+      "date": "2010-08-15",
+      "homeTeam": "WAS",
+      "awayTeam": "SEA",
+      "homeScore": 80,
+      "awayScore": 71
+    },
+    {
+      "date": "2010-08-17",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 79,
+      "awayScore": 84
+    },
+    {
+      "date": "2010-08-17",
+      "homeTeam": "CON",
+      "awayTeam": "TUL",
+      "homeScore": 90,
+      "awayScore": 62
+    },
+    {
+      "date": "2010-08-17",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 84,
+      "awayScore": 90
+    },
+    {
+      "date": "2010-08-17",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 78,
+      "awayScore": 57
+    },
+    {
+      "date": "2010-08-17",
+      "homeTeam": "SAS",
+      "awayTeam": "WAS",
+      "homeScore": 66,
+      "awayScore": 76
+    },
+    {
+      "date": "2010-08-17",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": 68,
+      "awayScore": 64
+    },
+    {
+      "date": "2010-08-19",
+      "homeTeam": "NYL",
+      "awayTeam": "TUL",
+      "homeScore": 95,
+      "awayScore": 85
+    },
+    {
+      "date": "2010-08-20",
+      "homeTeam": "CHI",
+      "awayTeam": "CON",
+      "homeScore": 71,
+      "awayScore": 78
+    },
+    {
+      "date": "2010-08-20",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 98,
+      "awayScore": 91
+    },
+    {
+      "date": "2010-08-20",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 73,
+      "awayScore": 78
+    },
+    {
+      "date": "2010-08-20",
+      "homeTeam": "SAS",
+      "awayTeam": "IND",
+      "homeScore": 75,
+      "awayScore": 61
+    },
+    {
+      "date": "2010-08-20",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 75,
+      "awayScore": 74
+    },
+    {
+      "date": "2010-08-21",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 76,
+      "awayScore": 75
+    },
+    {
+      "date": "2010-08-21",
+      "homeTeam": "TUL",
+      "awayTeam": "CHI",
+      "homeScore": 84,
+      "awayScore": 71
+    },
+    {
+      "date": "2010-08-22",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": 81,
+      "awayScore": 90
+    },
+    {
+      "date": "2010-08-22",
+      "homeTeam": "IND",
+      "awayTeam": "MIN",
+      "homeScore": 79,
+      "awayScore": 83
+    },
+    {
+      "date": "2010-08-22",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 88,
+      "awayScore": 87
+    },
+    {
+      "date": "2010-08-22",
+      "homeTeam": "SAS",
+      "awayTeam": "PHO",
+      "homeScore": 83,
+      "awayScore": 82
+    }
+  ],
+  "metadata": {
+    "total_games": 204,
+    "ingested_at": "2025-11-21T11:13:16.607123"
+  }
+}

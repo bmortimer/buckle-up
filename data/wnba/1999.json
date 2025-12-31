@@ -1,0 +1,1354 @@
+{
+  "season": "1999",
+  "league": "WNBA",
+  "games": [
+    {
+      "date": "1999-06-10",
+      "homeTeam": "LAS",
+      "awayTeam": "SAC",
+      "homeScore": 100,
+      "awayScore": 78
+    },
+    {
+      "date": "1999-06-10",
+      "homeTeam": "NYL",
+      "awayTeam": "CLE",
+      "homeScore": 87,
+      "awayScore": 60
+    },
+    {
+      "date": "1999-06-10",
+      "homeTeam": "ORL",
+      "awayTeam": "HOU",
+      "homeScore": 63,
+      "awayScore": 77
+    },
+    {
+      "date": "1999-06-10",
+      "homeTeam": "WAS",
+      "awayTeam": "CHA",
+      "homeScore": 73,
+      "awayScore": 83
+    },
+    {
+      "date": "1999-06-12",
+      "homeTeam": "CHA",
+      "awayTeam": "NYL",
+      "homeScore": 57,
+      "awayScore": 68
+    },
+    {
+      "date": "1999-06-12",
+      "homeTeam": "CLE",
+      "awayTeam": "LAS",
+      "homeScore": 59,
+      "awayScore": 75
+    },
+    {
+      "date": "1999-06-12",
+      "homeTeam": "HOU",
+      "awayTeam": "WAS",
+      "homeScore": 88,
+      "awayScore": 63
+    },
+    {
+      "date": "1999-06-12",
+      "homeTeam": "MIN",
+      "awayTeam": "DET",
+      "homeScore": 68,
+      "awayScore": 51
+    },
+    {
+      "date": "1999-06-12",
+      "homeTeam": "SAC",
+      "awayTeam": "PHO",
+      "homeScore": 96,
+      "awayScore": 85
+    },
+    {
+      "date": "1999-06-12",
+      "homeTeam": "UTA",
+      "awayTeam": "ORL",
+      "homeScore": 71,
+      "awayScore": 65
+    },
+    {
+      "date": "1999-06-14",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 71,
+      "awayScore": 73
+    },
+    {
+      "date": "1999-06-14",
+      "homeTeam": "MIN",
+      "awayTeam": "UTA",
+      "homeScore": 78,
+      "awayScore": 54
+    },
+    {
+      "date": "1999-06-14",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 61,
+      "awayScore": 83
+    },
+    {
+      "date": "1999-06-14",
+      "homeTeam": "PHO",
+      "awayTeam": "SAC",
+      "homeScore": 64,
+      "awayScore": 74
+    },
+    {
+      "date": "1999-06-15",
+      "homeTeam": "ORL",
+      "awayTeam": "LAS",
+      "homeScore": 88,
+      "awayScore": 86
+    },
+    {
+      "date": "1999-06-17",
+      "homeTeam": "DET",
+      "awayTeam": "ORL",
+      "homeScore": 79,
+      "awayScore": 74
+    },
+    {
+      "date": "1999-06-17",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 93,
+      "awayScore": 73
+    },
+    {
+      "date": "1999-06-17",
+      "homeTeam": "SAC",
+      "awayTeam": "CLE",
+      "homeScore": 70,
+      "awayScore": 50
+    },
+    {
+      "date": "1999-06-18",
+      "homeTeam": "NYL",
+      "awayTeam": "LAS",
+      "homeScore": 84,
+      "awayScore": 72
+    },
+    {
+      "date": "1999-06-18",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 69,
+      "awayScore": 76
+    },
+    {
+      "date": "1999-06-19",
+      "homeTeam": "CHA",
+      "awayTeam": "LAS",
+      "homeScore": 69,
+      "awayScore": 73
+    },
+    {
+      "date": "1999-06-19",
+      "homeTeam": "MIN",
+      "awayTeam": "HOU",
+      "homeScore": 55,
+      "awayScore": 69
+    },
+    {
+      "date": "1999-06-19",
+      "homeTeam": "ORL",
+      "awayTeam": "WAS",
+      "homeScore": 73,
+      "awayScore": 68
+    },
+    {
+      "date": "1999-06-19",
+      "homeTeam": "PHO",
+      "awayTeam": "CLE",
+      "homeScore": 76,
+      "awayScore": 67
+    },
+    {
+      "date": "1999-06-19",
+      "homeTeam": "UTA",
+      "awayTeam": "SAC",
+      "homeScore": 85,
+      "awayScore": 75
+    },
+    {
+      "date": "1999-06-20",
+      "homeTeam": "NYL",
+      "awayTeam": "DET",
+      "homeScore": 69,
+      "awayScore": 62
+    },
+    {
+      "date": "1999-06-21",
+      "homeTeam": "ORL",
+      "awayTeam": "PHO",
+      "homeScore": 80,
+      "awayScore": 76
+    },
+    {
+      "date": "1999-06-22",
+      "homeTeam": "CLE",
+      "awayTeam": "ORL",
+      "homeScore": 62,
+      "awayScore": 71
+    },
+    {
+      "date": "1999-06-22",
+      "homeTeam": "DET",
+      "awayTeam": "CHA",
+      "homeScore": 75,
+      "awayScore": 69
+    },
+    {
+      "date": "1999-06-22",
+      "homeTeam": "HOU",
+      "awayTeam": "LAS",
+      "homeScore": 84,
+      "awayScore": 76
+    },
+    {
+      "date": "1999-06-22",
+      "homeTeam": "SAC",
+      "awayTeam": "MIN",
+      "homeScore": 79,
+      "awayScore": 62
+    },
+    {
+      "date": "1999-06-22",
+      "homeTeam": "WAS",
+      "awayTeam": "PHO",
+      "homeScore": 76,
+      "awayScore": 79
+    },
+    {
+      "date": "1999-06-24",
+      "homeTeam": "CHA",
+      "awayTeam": "PHO",
+      "homeScore": 88,
+      "awayScore": 72
+    },
+    {
+      "date": "1999-06-24",
+      "homeTeam": "DET",
+      "awayTeam": "HOU",
+      "homeScore": 65,
+      "awayScore": 77
+    },
+    {
+      "date": "1999-06-24",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 73,
+      "awayScore": 86
+    },
+    {
+      "date": "1999-06-24",
+      "homeTeam": "SAC",
+      "awayTeam": "UTA",
+      "homeScore": 107,
+      "awayScore": 69
+    },
+    {
+      "date": "1999-06-25",
+      "homeTeam": "CLE",
+      "awayTeam": "CHA",
+      "homeScore": 57,
+      "awayScore": 59
+    },
+    {
+      "date": "1999-06-25",
+      "homeTeam": "WAS",
+      "awayTeam": "HOU",
+      "homeScore": 69,
+      "awayScore": 72
+    },
+    {
+      "date": "1999-06-26",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": 76,
+      "awayScore": 65
+    },
+    {
+      "date": "1999-06-26",
+      "homeTeam": "DET",
+      "awayTeam": "PHO",
+      "homeScore": 60,
+      "awayScore": 66
+    },
+    {
+      "date": "1999-06-26",
+      "homeTeam": "SAC",
+      "awayTeam": "LAS",
+      "homeScore": 73,
+      "awayScore": 76
+    },
+    {
+      "date": "1999-06-26",
+      "homeTeam": "UTA",
+      "awayTeam": "MIN",
+      "homeScore": 62,
+      "awayScore": 72
+    },
+    {
+      "date": "1999-06-27",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 72,
+      "awayScore": 58
+    },
+    {
+      "date": "1999-06-28",
+      "homeTeam": "CLE",
+      "awayTeam": "PHO",
+      "homeScore": 70,
+      "awayScore": 51
+    },
+    {
+      "date": "1999-06-28",
+      "homeTeam": "DET",
+      "awayTeam": "NYL",
+      "homeScore": 91,
+      "awayScore": 71
+    },
+    {
+      "date": "1999-06-28",
+      "homeTeam": "HOU",
+      "awayTeam": "ORL",
+      "homeScore": 66,
+      "awayScore": 68
+    },
+    {
+      "date": "1999-06-28",
+      "homeTeam": "LAS",
+      "awayTeam": "UTA",
+      "homeScore": 102,
+      "awayScore": 70
+    },
+    {
+      "date": "1999-06-29",
+      "homeTeam": "MIN",
+      "awayTeam": "SAC",
+      "homeScore": 72,
+      "awayScore": 86
+    },
+    {
+      "date": "1999-06-30",
+      "homeTeam": "CHA",
+      "awayTeam": "WAS",
+      "homeScore": 63,
+      "awayScore": 68
+    },
+    {
+      "date": "1999-06-30",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 68,
+      "awayScore": 78
+    },
+    {
+      "date": "1999-07-01",
+      "homeTeam": "HOU",
+      "awayTeam": "CLE",
+      "homeScore": 76,
+      "awayScore": 64
+    },
+    {
+      "date": "1999-07-01",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 77,
+      "awayScore": 81
+    },
+    {
+      "date": "1999-07-01",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 83,
+      "awayScore": 67
+    },
+    {
+      "date": "1999-07-02",
+      "homeTeam": "DET",
+      "awayTeam": "LAS",
+      "homeScore": 81,
+      "awayScore": 91
+    },
+    {
+      "date": "1999-07-02",
+      "homeTeam": "UTA",
+      "awayTeam": "CLE",
+      "homeScore": 83,
+      "awayScore": 68
+    },
+    {
+      "date": "1999-07-02",
+      "homeTeam": "WAS",
+      "awayTeam": "SAC",
+      "homeScore": 74,
+      "awayScore": 79
+    },
+    {
+      "date": "1999-07-03",
+      "homeTeam": "HOU",
+      "awayTeam": "NYL",
+      "homeScore": 65,
+      "awayScore": 50
+    },
+    {
+      "date": "1999-07-03",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": 56,
+      "awayScore": 47
+    },
+    {
+      "date": "1999-07-03",
+      "homeTeam": "ORL",
+      "awayTeam": "CHA",
+      "homeScore": 58,
+      "awayScore": 75
+    },
+    {
+      "date": "1999-07-04",
+      "homeTeam": "DET",
+      "awayTeam": "SAC",
+      "homeScore": 78,
+      "awayScore": 92
+    },
+    {
+      "date": "1999-07-05",
+      "homeTeam": "LAS",
+      "awayTeam": "CLE",
+      "homeScore": 74,
+      "awayScore": 72
+    },
+    {
+      "date": "1999-07-05",
+      "homeTeam": "NYL",
+      "awayTeam": "SAC",
+      "homeScore": 76,
+      "awayScore": 63
+    },
+    {
+      "date": "1999-07-06",
+      "homeTeam": "HOU",
+      "awayTeam": "MIN",
+      "homeScore": 80,
+      "awayScore": 54
+    },
+    {
+      "date": "1999-07-06",
+      "homeTeam": "UTA",
+      "awayTeam": "DET",
+      "homeScore": 104,
+      "awayScore": 94
+    },
+    {
+      "date": "1999-07-06",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 71,
+      "awayScore": 63
+    },
+    {
+      "date": "1999-07-07",
+      "homeTeam": "CHA",
+      "awayTeam": "CLE",
+      "homeScore": 75,
+      "awayScore": 62
+    },
+    {
+      "date": "1999-07-07",
+      "homeTeam": "ORL",
+      "awayTeam": "MIN",
+      "homeScore": 66,
+      "awayScore": 71
+    },
+    {
+      "date": "1999-07-07",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 61,
+      "awayScore": 67
+    },
+    {
+      "date": "1999-07-08",
+      "homeTeam": "CLE",
+      "awayTeam": "NYL",
+      "homeScore": 49,
+      "awayScore": 84
+    },
+    {
+      "date": "1999-07-08",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 74,
+      "awayScore": 63
+    },
+    {
+      "date": "1999-07-08",
+      "homeTeam": "WAS",
+      "awayTeam": "UTA",
+      "homeScore": 65,
+      "awayScore": 81
+    },
+    {
+      "date": "1999-07-09",
+      "homeTeam": "CHA",
+      "awayTeam": "ORL",
+      "homeScore": 61,
+      "awayScore": 66
+    },
+    {
+      "date": "1999-07-09",
+      "homeTeam": "LAS",
+      "awayTeam": "SAC",
+      "homeScore": 72,
+      "awayScore": 77
+    },
+    {
+      "date": "1999-07-09",
+      "homeTeam": "PHO",
+      "awayTeam": "HOU",
+      "homeScore": 70,
+      "awayScore": 71
+    },
+    {
+      "date": "1999-07-10",
+      "homeTeam": "CLE",
+      "awayTeam": "CHA",
+      "homeScore": 82,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-07-10",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": 78,
+      "awayScore": 83
+    },
+    {
+      "date": "1999-07-10",
+      "homeTeam": "ORL",
+      "awayTeam": "UTA",
+      "homeScore": 62,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-07-11",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 68,
+      "awayScore": 63
+    },
+    {
+      "date": "1999-07-11",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 67,
+      "awayScore": 58
+    },
+    {
+      "date": "1999-07-11",
+      "homeTeam": "NYL",
+      "awayTeam": "MIN",
+      "homeScore": 56,
+      "awayScore": 58
+    },
+    {
+      "date": "1999-07-12",
+      "homeTeam": "CLE",
+      "awayTeam": "MIN",
+      "homeScore": 67,
+      "awayScore": 55
+    },
+    {
+      "date": "1999-07-12",
+      "homeTeam": "ORL",
+      "awayTeam": "DET",
+      "homeScore": 67,
+      "awayScore": 76
+    },
+    {
+      "date": "1999-07-12",
+      "homeTeam": "UTA",
+      "awayTeam": "PHO",
+      "homeScore": 66,
+      "awayScore": 80
+    },
+    {
+      "date": "1999-07-12",
+      "homeTeam": "WAS",
+      "awayTeam": "CHA",
+      "homeScore": 74,
+      "awayScore": 71
+    },
+    {
+      "date": "1999-07-16",
+      "homeTeam": "CLE",
+      "awayTeam": "SAC",
+      "homeScore": 71,
+      "awayScore": 85
+    },
+    {
+      "date": "1999-07-16",
+      "homeTeam": "ORL",
+      "awayTeam": "CHA",
+      "homeScore": 50,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-07-16",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 84,
+      "awayScore": 88
+    },
+    {
+      "date": "1999-07-16",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 68,
+      "awayScore": 78
+    },
+    {
+      "date": "1999-07-17",
+      "homeTeam": "CHA",
+      "awayTeam": "WAS",
+      "homeScore": 63,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-07-17",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 77,
+      "awayScore": 61
+    },
+    {
+      "date": "1999-07-17",
+      "homeTeam": "MIN",
+      "awayTeam": "NYL",
+      "homeScore": 60,
+      "awayScore": 58
+    },
+    {
+      "date": "1999-07-17",
+      "homeTeam": "ORL",
+      "awayTeam": "SAC",
+      "homeScore": 70,
+      "awayScore": 76
+    },
+    {
+      "date": "1999-07-17",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 84,
+      "awayScore": 76
+    },
+    {
+      "date": "1999-07-18",
+      "homeTeam": "LAS",
+      "awayTeam": "HOU",
+      "homeScore": 78,
+      "awayScore": 65
+    },
+    {
+      "date": "1999-07-18",
+      "homeTeam": "NYL",
+      "awayTeam": "UTA",
+      "homeScore": 88,
+      "awayScore": 82
+    },
+    {
+      "date": "1999-07-19",
+      "homeTeam": "CHA",
+      "awayTeam": "UTA",
+      "homeScore": 73,
+      "awayScore": 66
+    },
+    {
+      "date": "1999-07-19",
+      "homeTeam": "MIN",
+      "awayTeam": "SAC",
+      "homeScore": 76,
+      "awayScore": 69
+    },
+    {
+      "date": "1999-07-19",
+      "homeTeam": "PHO",
+      "awayTeam": "HOU",
+      "homeScore": 60,
+      "awayScore": 48
+    },
+    {
+      "date": "1999-07-19",
+      "homeTeam": "WAS",
+      "awayTeam": "ORL",
+      "homeScore": 52,
+      "awayScore": 77
+    },
+    {
+      "date": "1999-07-20",
+      "homeTeam": "NYL",
+      "awayTeam": "ORL",
+      "homeScore": 61,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-07-21",
+      "homeTeam": "CHA",
+      "awayTeam": "MIN",
+      "homeScore": 67,
+      "awayScore": 76
+    },
+    {
+      "date": "1999-07-21",
+      "homeTeam": "DET",
+      "awayTeam": "UTA",
+      "homeScore": 86,
+      "awayScore": 77
+    },
+    {
+      "date": "1999-07-21",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 84,
+      "awayScore": 63
+    },
+    {
+      "date": "1999-07-21",
+      "homeTeam": "WAS",
+      "awayTeam": "CLE",
+      "homeScore": 68,
+      "awayScore": 85
+    },
+    {
+      "date": "1999-07-22",
+      "homeTeam": "SAC",
+      "awayTeam": "NYL",
+      "homeScore": 71,
+      "awayScore": 55
+    },
+    {
+      "date": "1999-07-23",
+      "homeTeam": "CHA",
+      "awayTeam": "HOU",
+      "homeScore": 62,
+      "awayScore": 75
+    },
+    {
+      "date": "1999-07-23",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 60,
+      "awayScore": 69
+    },
+    {
+      "date": "1999-07-23",
+      "homeTeam": "MIN",
+      "awayTeam": "WAS",
+      "homeScore": 55,
+      "awayScore": 60
+    },
+    {
+      "date": "1999-07-23",
+      "homeTeam": "PHO",
+      "awayTeam": "ORL",
+      "homeScore": 73,
+      "awayScore": 67
+    },
+    {
+      "date": "1999-07-24",
+      "homeTeam": "CLE",
+      "awayTeam": "UTA",
+      "homeScore": 70,
+      "awayScore": 76
+    },
+    {
+      "date": "1999-07-24",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": 75,
+      "awayScore": 72
+    },
+    {
+      "date": "1999-07-24",
+      "homeTeam": "SAC",
+      "awayTeam": "ORL",
+      "homeScore": 64,
+      "awayScore": 73
+    },
+    {
+      "date": "1999-07-25",
+      "homeTeam": "DET",
+      "awayTeam": "CHA",
+      "homeScore": 66,
+      "awayScore": 78
+    },
+    {
+      "date": "1999-07-25",
+      "homeTeam": "MIN",
+      "awayTeam": "HOU",
+      "homeScore": 57,
+      "awayScore": 62
+    },
+    {
+      "date": "1999-07-25",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 72,
+      "awayScore": 59
+    },
+    {
+      "date": "1999-07-26",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 69,
+      "awayScore": 75
+    },
+    {
+      "date": "1999-07-26",
+      "homeTeam": "UTA",
+      "awayTeam": "WAS",
+      "homeScore": 73,
+      "awayScore": 61
+    },
+    {
+      "date": "1999-07-27",
+      "homeTeam": "HOU",
+      "awayTeam": "DET",
+      "homeScore": 85,
+      "awayScore": 46
+    },
+    {
+      "date": "1999-07-27",
+      "homeTeam": "LAS",
+      "awayTeam": "ORL",
+      "homeScore": 81,
+      "awayScore": 60
+    },
+    {
+      "date": "1999-07-27",
+      "homeTeam": "PHO",
+      "awayTeam": "UTA",
+      "homeScore": 86,
+      "awayScore": 73
+    },
+    {
+      "date": "1999-07-27",
+      "homeTeam": "SAC",
+      "awayTeam": "MIN",
+      "homeScore": 59,
+      "awayScore": 61
+    },
+    {
+      "date": "1999-07-28",
+      "homeTeam": "CHA",
+      "awayTeam": "DET",
+      "homeScore": 84,
+      "awayScore": 65
+    },
+    {
+      "date": "1999-07-29",
+      "homeTeam": "CLE",
+      "awayTeam": "HOU",
+      "homeScore": 65,
+      "awayScore": 71
+    },
+    {
+      "date": "1999-07-29",
+      "homeTeam": "ORL",
+      "awayTeam": "NYL",
+      "homeScore": 65,
+      "awayScore": 73
+    },
+    {
+      "date": "1999-07-29",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 79,
+      "awayScore": 46
+    },
+    {
+      "date": "1999-07-29",
+      "homeTeam": "SAC",
+      "awayTeam": "WAS",
+      "homeScore": 70,
+      "awayScore": 54
+    },
+    {
+      "date": "1999-07-30",
+      "homeTeam": "CHA",
+      "awayTeam": "NYL",
+      "homeScore": 62,
+      "awayScore": 58
+    },
+    {
+      "date": "1999-07-30",
+      "homeTeam": "LAS",
+      "awayTeam": "UTA",
+      "homeScore": 87,
+      "awayScore": 77
+    },
+    {
+      "date": "1999-07-31",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 53,
+      "awayScore": 55
+    },
+    {
+      "date": "1999-07-31",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 77,
+      "awayScore": 70
+    },
+    {
+      "date": "1999-07-31",
+      "homeTeam": "LAS",
+      "awayTeam": "WAS",
+      "homeScore": 81,
+      "awayScore": 64
+    },
+    {
+      "date": "1999-07-31",
+      "homeTeam": "MIN",
+      "awayTeam": "CHA",
+      "homeScore": 52,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-07-31",
+      "homeTeam": "UTA",
+      "awayTeam": "SAC",
+      "homeScore": 63,
+      "awayScore": 59
+    },
+    {
+      "date": "1999-08-01",
+      "homeTeam": "NYL",
+      "awayTeam": "ORL",
+      "homeScore": 74,
+      "awayScore": 61
+    },
+    {
+      "date": "1999-08-02",
+      "homeTeam": "CHA",
+      "awayTeam": "CLE",
+      "homeScore": 62,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-08-02",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": 70,
+      "awayScore": 75
+    },
+    {
+      "date": "1999-08-02",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 75,
+      "awayScore": 70
+    },
+    {
+      "date": "1999-08-02",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": 73,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-08-03",
+      "homeTeam": "UTA",
+      "awayTeam": "NYL",
+      "homeScore": 59,
+      "awayScore": 61
+    },
+    {
+      "date": "1999-08-04",
+      "homeTeam": "CHA",
+      "awayTeam": "SAC",
+      "homeScore": 62,
+      "awayScore": 68
+    },
+    {
+      "date": "1999-08-04",
+      "homeTeam": "DET",
+      "awayTeam": "MIN",
+      "homeScore": 59,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-08-04",
+      "homeTeam": "ORL",
+      "awayTeam": "CLE",
+      "homeScore": 70,
+      "awayScore": 62
+    },
+    {
+      "date": "1999-08-05",
+      "homeTeam": "UTA",
+      "awayTeam": "LAS",
+      "homeScore": 81,
+      "awayScore": 75
+    },
+    {
+      "date": "1999-08-05",
+      "homeTeam": "WAS",
+      "awayTeam": "ORL",
+      "homeScore": 72,
+      "awayScore": 68
+    },
+    {
+      "date": "1999-08-06",
+      "homeTeam": "HOU",
+      "awayTeam": "CHA",
+      "homeScore": 81,
+      "awayScore": 51
+    },
+    {
+      "date": "1999-08-06",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 59,
+      "awayScore": 77
+    },
+    {
+      "date": "1999-08-06",
+      "homeTeam": "PHO",
+      "awayTeam": "NYL",
+      "homeScore": 68,
+      "awayScore": 55
+    },
+    {
+      "date": "1999-08-06",
+      "homeTeam": "SAC",
+      "awayTeam": "DET",
+      "homeScore": 71,
+      "awayScore": 58
+    },
+    {
+      "date": "1999-08-07",
+      "homeTeam": "CHA",
+      "awayTeam": "ORL",
+      "homeScore": 64,
+      "awayScore": 60
+    },
+    {
+      "date": "1999-08-07",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": 62,
+      "awayScore": 63
+    },
+    {
+      "date": "1999-08-07",
+      "homeTeam": "SAC",
+      "awayTeam": "PHO",
+      "homeScore": 71,
+      "awayScore": 60
+    },
+    {
+      "date": "1999-08-07",
+      "homeTeam": "UTA",
+      "awayTeam": "MIN",
+      "homeScore": 80,
+      "awayScore": 70
+    },
+    {
+      "date": "1999-08-08",
+      "homeTeam": "NYL",
+      "awayTeam": "HOU",
+      "homeScore": 74,
+      "awayScore": 71
+    },
+    {
+      "date": "1999-08-08",
+      "homeTeam": "WAS",
+      "awayTeam": "CLE",
+      "homeScore": 80,
+      "awayScore": 45
+    },
+    {
+      "date": "1999-08-09",
+      "homeTeam": "LAS",
+      "awayTeam": "DET",
+      "homeScore": 59,
+      "awayScore": 84
+    },
+    {
+      "date": "1999-08-09",
+      "homeTeam": "ORL",
+      "awayTeam": "NYL",
+      "homeScore": 75,
+      "awayScore": 80
+    },
+    {
+      "date": "1999-08-09",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 64,
+      "awayScore": 55
+    },
+    {
+      "date": "1999-08-09",
+      "homeTeam": "UTA",
+      "awayTeam": "CHA",
+      "homeScore": 67,
+      "awayScore": 65
+    },
+    {
+      "date": "1999-08-10",
+      "homeTeam": "SAC",
+      "awayTeam": "LAS",
+      "homeScore": 82,
+      "awayScore": 80
+    },
+    {
+      "date": "1999-08-11",
+      "homeTeam": "MIN",
+      "awayTeam": "UTA",
+      "homeScore": 83,
+      "awayScore": 73
+    },
+    {
+      "date": "1999-08-11",
+      "homeTeam": "PHO",
+      "awayTeam": "DET",
+      "homeScore": 68,
+      "awayScore": 57
+    },
+    {
+      "date": "1999-08-11",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 59,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-08-12",
+      "homeTeam": "HOU",
+      "awayTeam": "LAS",
+      "homeScore": 83,
+      "awayScore": 61
+    },
+    {
+      "date": "1999-08-12",
+      "homeTeam": "ORL",
+      "awayTeam": "CLE",
+      "homeScore": 55,
+      "awayScore": 54
+    },
+    {
+      "date": "1999-08-13",
+      "homeTeam": "DET",
+      "awayTeam": "NYL",
+      "homeScore": 56,
+      "awayScore": 60
+    },
+    {
+      "date": "1999-08-13",
+      "homeTeam": "SAC",
+      "awayTeam": "CHA",
+      "homeScore": 78,
+      "awayScore": 64
+    },
+    {
+      "date": "1999-08-13",
+      "homeTeam": "UTA",
+      "awayTeam": "PHO",
+      "homeScore": 67,
+      "awayScore": 64
+    },
+    {
+      "date": "1999-08-14",
+      "homeTeam": "CLE",
+      "awayTeam": "ORL",
+      "homeScore": 61,
+      "awayScore": 73
+    },
+    {
+      "date": "1999-08-14",
+      "homeTeam": "HOU",
+      "awayTeam": "MIN",
+      "homeScore": 71,
+      "awayScore": 53
+    },
+    {
+      "date": "1999-08-14",
+      "homeTeam": "SAC",
+      "awayTeam": "UTA",
+      "homeScore": 89,
+      "awayScore": 97
+    },
+    {
+      "date": "1999-08-14",
+      "homeTeam": "WAS",
+      "awayTeam": "LAS",
+      "homeScore": 55,
+      "awayScore": 53
+    },
+    {
+      "date": "1999-08-15",
+      "homeTeam": "NYL",
+      "awayTeam": "DET",
+      "homeScore": 57,
+      "awayScore": 63
+    },
+    {
+      "date": "1999-08-15",
+      "homeTeam": "ORL",
+      "awayTeam": "WAS",
+      "homeScore": 81,
+      "awayScore": 54
+    },
+    {
+      "date": "1999-08-15",
+      "homeTeam": "PHO",
+      "awayTeam": "CHA",
+      "homeScore": 65,
+      "awayScore": 54
+    },
+    {
+      "date": "1999-08-16",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 80,
+      "awayScore": 71
+    },
+    {
+      "date": "1999-08-16",
+      "homeTeam": "LAS",
+      "awayTeam": "CHA",
+      "homeScore": 76,
+      "awayScore": 65
+    },
+    {
+      "date": "1999-08-16",
+      "homeTeam": "MIN",
+      "awayTeam": "CLE",
+      "homeScore": 57,
+      "awayScore": 50
+    },
+    {
+      "date": "1999-08-17",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 66,
+      "awayScore": 54
+    },
+    {
+      "date": "1999-08-17",
+      "homeTeam": "PHO",
+      "awayTeam": "SAC",
+      "homeScore": 71,
+      "awayScore": 59
+    },
+    {
+      "date": "1999-08-18",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 70,
+      "awayScore": 60
+    },
+    {
+      "date": "1999-08-18",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 72,
+      "awayScore": 54
+    },
+    {
+      "date": "1999-08-18",
+      "homeTeam": "ORL",
+      "awayTeam": "DET",
+      "homeScore": 93,
+      "awayScore": 81
+    },
+    {
+      "date": "1999-08-19",
+      "homeTeam": "NYL",
+      "awayTeam": "CLE",
+      "homeScore": 72,
+      "awayScore": 55
+    },
+    {
+      "date": "1999-08-20",
+      "homeTeam": "CHA",
+      "awayTeam": "DET",
+      "homeScore": 57,
+      "awayScore": 58
+    },
+    {
+      "date": "1999-08-20",
+      "homeTeam": "LAS",
+      "awayTeam": "HOU",
+      "homeScore": 68,
+      "awayScore": 64
+    },
+    {
+      "date": "1999-08-20",
+      "homeTeam": "MIN",
+      "awayTeam": "ORL",
+      "homeScore": 80,
+      "awayScore": 83
+    },
+    {
+      "date": "1999-08-20",
+      "homeTeam": "PHO",
+      "awayTeam": "UTA",
+      "homeScore": 62,
+      "awayScore": 70
+    },
+    {
+      "date": "1999-08-21",
+      "homeTeam": "CLE",
+      "awayTeam": "NYL",
+      "homeScore": 66,
+      "awayScore": 56
+    },
+    {
+      "date": "1999-08-21",
+      "homeTeam": "DET",
+      "awayTeam": "ORL",
+      "homeScore": 74,
+      "awayScore": 68
+    },
+    {
+      "date": "1999-08-21",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 65,
+      "awayScore": 74
+    },
+    {
+      "date": "1999-08-21",
+      "homeTeam": "UTA",
+      "awayTeam": "LAS",
+      "homeScore": 89,
+      "awayScore": 81
+    },
+    {
+      "date": "1999-08-21",
+      "homeTeam": "WAS",
+      "awayTeam": "MIN",
+      "homeScore": 45,
+      "awayScore": 48
+    }
+  ],
+  "metadata": {
+    "total_games": 192,
+    "ingested_at": "2025-11-21T11:21:36.620036"
+  }
+}

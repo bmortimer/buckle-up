@@ -1,0 +1,1438 @@
+{
+  "season": "2014",
+  "league": "WNBA",
+  "games": [
+    {
+      "date": "2014-05-16",
+      "homeTeam": "ATL",
+      "awayTeam": "SAS",
+      "homeScore": 79,
+      "awayScore": 75
+    },
+    {
+      "date": "2014-05-16",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 74,
+      "awayScore": 71
+    },
+    {
+      "date": "2014-05-16",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 54,
+      "awayScore": 75
+    },
+    {
+      "date": "2014-05-16",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 69,
+      "awayScore": 80
+    },
+    {
+      "date": "2014-05-16",
+      "homeTeam": "WAS",
+      "awayTeam": "MIN",
+      "homeScore": 77,
+      "awayScore": 89
+    },
+    {
+      "date": "2014-05-17",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 88,
+      "awayScore": 90
+    },
+    {
+      "date": "2014-05-17",
+      "homeTeam": "NYL",
+      "awayTeam": "CHI",
+      "homeScore": 65,
+      "awayScore": 79
+    },
+    {
+      "date": "2014-05-17",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 81,
+      "awayScore": 64
+    },
+    {
+      "date": "2014-05-17",
+      "homeTeam": "SAS",
+      "awayTeam": "TUL",
+      "homeScore": 80,
+      "awayScore": 76
+    },
+    {
+      "date": "2014-05-18",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 69,
+      "awayScore": 74
+    },
+    {
+      "date": "2014-05-18",
+      "homeTeam": "MIN",
+      "awayTeam": "CON",
+      "homeScore": 90,
+      "awayScore": 87
+    },
+    {
+      "date": "2014-05-21",
+      "homeTeam": "CHI",
+      "awayTeam": "CON",
+      "homeScore": 78,
+      "awayScore": 68
+    },
+    {
+      "date": "2014-05-23",
+      "homeTeam": "CON",
+      "awayTeam": "SEA",
+      "homeScore": 71,
+      "awayScore": 59
+    },
+    {
+      "date": "2014-05-23",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 63,
+      "awayScore": 79
+    },
+    {
+      "date": "2014-05-23",
+      "homeTeam": "PHO",
+      "awayTeam": "SAS",
+      "homeScore": 74,
+      "awayScore": 78
+    },
+    {
+      "date": "2014-05-23",
+      "homeTeam": "TUL",
+      "awayTeam": "MIN",
+      "homeScore": 93,
+      "awayScore": 94
+    },
+    {
+      "date": "2014-05-24",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 87,
+      "awayScore": 73
+    },
+    {
+      "date": "2014-05-24",
+      "homeTeam": "MIN",
+      "awayTeam": "NYL",
+      "homeScore": 87,
+      "awayScore": 82
+    },
+    {
+      "date": "2014-05-24",
+      "homeTeam": "WAS",
+      "awayTeam": "SEA",
+      "homeScore": 65,
+      "awayScore": 73
+    },
+    {
+      "date": "2014-05-25",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 77,
+      "awayScore": 82
+    },
+    {
+      "date": "2014-05-25",
+      "homeTeam": "LAS",
+      "awayTeam": "SAS",
+      "homeScore": 83,
+      "awayScore": 62
+    },
+    {
+      "date": "2014-05-26",
+      "homeTeam": "CHI",
+      "awayTeam": "MIN",
+      "homeScore": 72,
+      "awayScore": 75
+    },
+    {
+      "date": "2014-05-27",
+      "homeTeam": "NYL",
+      "awayTeam": "SEA",
+      "homeScore": 70,
+      "awayScore": 64
+    },
+    {
+      "date": "2014-05-28",
+      "homeTeam": "SAS",
+      "awayTeam": "TUL",
+      "homeScore": 82,
+      "awayScore": 79
+    },
+    {
+      "date": "2014-05-29",
+      "homeTeam": "IND",
+      "awayTeam": "CON",
+      "homeScore": 79,
+      "awayScore": 65
+    },
+    {
+      "date": "2014-05-30",
+      "homeTeam": "ATL",
+      "awayTeam": "SEA",
+      "homeScore": 80,
+      "awayScore": 69
+    },
+    {
+      "date": "2014-05-30",
+      "homeTeam": "CHI",
+      "awayTeam": "CON",
+      "homeScore": 101,
+      "awayScore": 82
+    },
+    {
+      "date": "2014-05-30",
+      "homeTeam": "MIN",
+      "awayTeam": "SAS",
+      "homeScore": 88,
+      "awayScore": 72
+    },
+    {
+      "date": "2014-05-30",
+      "homeTeam": "PHO",
+      "awayTeam": "TUL",
+      "homeScore": 100,
+      "awayScore": 78
+    },
+    {
+      "date": "2014-05-30",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 68,
+      "awayScore": 60
+    },
+    {
+      "date": "2014-05-31",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": 70,
+      "awayScore": 66
+    },
+    {
+      "date": "2014-06-01",
+      "homeTeam": "CON",
+      "awayTeam": "ATL",
+      "homeScore": 85,
+      "awayScore": 76
+    },
+    {
+      "date": "2014-06-01",
+      "homeTeam": "SAS",
+      "awayTeam": "MIN",
+      "homeScore": 79,
+      "awayScore": 87
+    },
+    {
+      "date": "2014-06-01",
+      "homeTeam": "SEA",
+      "awayTeam": "TUL",
+      "homeScore": 62,
+      "awayScore": 60
+    },
+    {
+      "date": "2014-06-01",
+      "homeTeam": "WAS",
+      "awayTeam": "LAS",
+      "homeScore": 92,
+      "awayScore": 84
+    },
+    {
+      "date": "2014-06-03",
+      "homeTeam": "ATL",
+      "awayTeam": "LAS",
+      "homeScore": 93,
+      "awayScore": 85
+    },
+    {
+      "date": "2014-06-03",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 87,
+      "awayScore": 72
+    },
+    {
+      "date": "2014-06-05",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": 66,
+      "awayScore": 74
+    },
+    {
+      "date": "2014-06-05",
+      "homeTeam": "NYL",
+      "awayTeam": "SAS",
+      "homeScore": 75,
+      "awayScore": 87
+    },
+    {
+      "date": "2014-06-06",
+      "homeTeam": "CHI",
+      "awayTeam": "LAS",
+      "homeScore": 88,
+      "awayScore": 102
+    },
+    {
+      "date": "2014-06-06",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": 65,
+      "awayScore": 62
+    },
+    {
+      "date": "2014-06-06",
+      "homeTeam": "TUL",
+      "awayTeam": "PHO",
+      "homeScore": 94,
+      "awayScore": 78
+    },
+    {
+      "date": "2014-06-06",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 61,
+      "awayScore": 64
+    },
+    {
+      "date": "2014-06-07",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 97,
+      "awayScore": 59
+    },
+    {
+      "date": "2014-06-07",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 88,
+      "awayScore": 71
+    },
+    {
+      "date": "2014-06-07",
+      "homeTeam": "SAS",
+      "awayTeam": "PHO",
+      "homeScore": 79,
+      "awayScore": 91
+    },
+    {
+      "date": "2014-06-08",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 72,
+      "awayScore": 85
+    },
+    {
+      "date": "2014-06-08",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 81,
+      "awayScore": 64
+    },
+    {
+      "date": "2014-06-10",
+      "homeTeam": "CHI",
+      "awayTeam": "SEA",
+      "homeScore": 76,
+      "awayScore": 80
+    },
+    {
+      "date": "2014-06-10",
+      "homeTeam": "TUL",
+      "awayTeam": "NYL",
+      "homeScore": 72,
+      "awayScore": 57
+    },
+    {
+      "date": "2014-06-10",
+      "homeTeam": "WAS",
+      "awayTeam": "PHO",
+      "homeScore": 66,
+      "awayScore": 81
+    },
+    {
+      "date": "2014-06-11",
+      "homeTeam": "IND",
+      "awayTeam": "SEA",
+      "homeScore": 76,
+      "awayScore": 68
+    },
+    {
+      "date": "2014-06-12",
+      "homeTeam": "CON",
+      "awayTeam": "PHO",
+      "homeScore": 96,
+      "awayScore": 95
+    },
+    {
+      "date": "2014-06-13",
+      "homeTeam": "ATL",
+      "awayTeam": "MIN",
+      "homeScore": 85,
+      "awayScore": 82
+    },
+    {
+      "date": "2014-06-13",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 75,
+      "awayScore": 83
+    },
+    {
+      "date": "2014-06-13",
+      "homeTeam": "SAS",
+      "awayTeam": "SEA",
+      "homeScore": 72,
+      "awayScore": 79
+    },
+    {
+      "date": "2014-06-13",
+      "homeTeam": "TUL",
+      "awayTeam": "LAS",
+      "homeScore": 69,
+      "awayScore": 67
+    },
+    {
+      "date": "2014-06-13",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": 79,
+      "awayScore": 68
+    },
+    {
+      "date": "2014-06-14",
+      "homeTeam": "SAS",
+      "awayTeam": "LAS",
+      "homeScore": 101,
+      "awayScore": 74
+    },
+    {
+      "date": "2014-06-15",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 76,
+      "awayScore": 72
+    },
+    {
+      "date": "2014-06-15",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": 72,
+      "awayScore": 80
+    },
+    {
+      "date": "2014-06-15",
+      "homeTeam": "TUL",
+      "awayTeam": "SEA",
+      "homeScore": 85,
+      "awayScore": 79
+    },
+    {
+      "date": "2014-06-15",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 67,
+      "awayScore": 75
+    },
+    {
+      "date": "2014-06-17",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 89,
+      "awayScore": 67
+    },
+    {
+      "date": "2014-06-17",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 77,
+      "awayScore": 94
+    },
+    {
+      "date": "2014-06-18",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": 83,
+      "awayScore": 73
+    },
+    {
+      "date": "2014-06-18",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": 105,
+      "awayScore": 100
+    },
+    {
+      "date": "2014-06-18",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 92,
+      "awayScore": 79
+    },
+    {
+      "date": "2014-06-19",
+      "homeTeam": "LAS",
+      "awayTeam": "TUL",
+      "homeScore": 87,
+      "awayScore": 77
+    },
+    {
+      "date": "2014-06-19",
+      "homeTeam": "SEA",
+      "awayTeam": "SAS",
+      "homeScore": 82,
+      "awayScore": 87
+    },
+    {
+      "date": "2014-06-20",
+      "homeTeam": "ATL",
+      "awayTeam": "NYL",
+      "homeScore": 85,
+      "awayScore": 64
+    },
+    {
+      "date": "2014-06-20",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 75,
+      "awayScore": 83
+    },
+    {
+      "date": "2014-06-20",
+      "homeTeam": "MIN",
+      "awayTeam": "WAS",
+      "homeScore": 75,
+      "awayScore": 65
+    },
+    {
+      "date": "2014-06-20",
+      "homeTeam": "PHO",
+      "awayTeam": "TUL",
+      "homeScore": 91,
+      "awayScore": 80
+    },
+    {
+      "date": "2014-06-22",
+      "homeTeam": "CHI",
+      "awayTeam": "TUL",
+      "homeScore": 99,
+      "awayScore": 105
+    },
+    {
+      "date": "2014-06-22",
+      "homeTeam": "LAS",
+      "awayTeam": "SAS",
+      "homeScore": 69,
+      "awayScore": 72
+    },
+    {
+      "date": "2014-06-22",
+      "homeTeam": "MIN",
+      "awayTeam": "IND",
+      "homeScore": 83,
+      "awayScore": 77
+    },
+    {
+      "date": "2014-06-22",
+      "homeTeam": "NYL",
+      "awayTeam": "ATL",
+      "homeScore": 85,
+      "awayScore": 78
+    },
+    {
+      "date": "2014-06-22",
+      "homeTeam": "SEA",
+      "awayTeam": "WAS",
+      "homeScore": 89,
+      "awayScore": 86
+    },
+    {
+      "date": "2014-06-24",
+      "homeTeam": "LAS",
+      "awayTeam": "SEA",
+      "homeScore": 65,
+      "awayScore": 57
+    },
+    {
+      "date": "2014-06-24",
+      "homeTeam": "SAS",
+      "awayTeam": "WAS",
+      "homeScore": 70,
+      "awayScore": 81
+    },
+    {
+      "date": "2014-06-25",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": 79,
+      "awayScore": 69
+    },
+    {
+      "date": "2014-06-25",
+      "homeTeam": "IND",
+      "awayTeam": "TUL",
+      "homeScore": 102,
+      "awayScore": 107
+    },
+    {
+      "date": "2014-06-26",
+      "homeTeam": "SAS",
+      "awayTeam": "ATL",
+      "homeScore": 79,
+      "awayScore": 81
+    },
+    {
+      "date": "2014-06-27",
+      "homeTeam": "IND",
+      "awayTeam": "PHO",
+      "homeScore": 76,
+      "awayScore": 81
+    },
+    {
+      "date": "2014-06-27",
+      "homeTeam": "NYL",
+      "awayTeam": "CHI",
+      "homeScore": 69,
+      "awayScore": 73
+    },
+    {
+      "date": "2014-06-27",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": 81,
+      "awayScore": 71
+    },
+    {
+      "date": "2014-06-27",
+      "homeTeam": "WAS",
+      "awayTeam": "CON",
+      "homeScore": 69,
+      "awayScore": 63
+    },
+    {
+      "date": "2014-06-28",
+      "homeTeam": "TUL",
+      "awayTeam": "LAS",
+      "homeScore": 89,
+      "awayScore": 92
+    },
+    {
+      "date": "2014-06-29",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 68,
+      "awayScore": 76
+    },
+    {
+      "date": "2014-06-29",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 74,
+      "awayScore": 69
+    },
+    {
+      "date": "2014-06-29",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 67,
+      "awayScore": 65
+    },
+    {
+      "date": "2014-06-29",
+      "homeTeam": "TUL",
+      "awayTeam": "PHO",
+      "homeScore": 77,
+      "awayScore": 80
+    },
+    {
+      "date": "2014-06-29",
+      "homeTeam": "WAS",
+      "awayTeam": "SAS",
+      "homeScore": 65,
+      "awayScore": 73
+    },
+    {
+      "date": "2014-07-01",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 70,
+      "awayScore": 77
+    },
+    {
+      "date": "2014-07-01",
+      "homeTeam": "CON",
+      "awayTeam": "SAS",
+      "homeScore": 71,
+      "awayScore": 74
+    },
+    {
+      "date": "2014-07-01",
+      "homeTeam": "LAS",
+      "awayTeam": "CHI",
+      "homeScore": 83,
+      "awayScore": 90
+    },
+    {
+      "date": "2014-07-01",
+      "homeTeam": "NYL",
+      "awayTeam": "TUL",
+      "homeScore": 90,
+      "awayScore": 74
+    },
+    {
+      "date": "2014-07-02",
+      "homeTeam": "PHO",
+      "awayTeam": "CHI",
+      "homeScore": 87,
+      "awayScore": 69
+    },
+    {
+      "date": "2014-07-02",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 77,
+      "awayScore": 80
+    },
+    {
+      "date": "2014-07-03",
+      "homeTeam": "CON",
+      "awayTeam": "TUL",
+      "homeScore": 83,
+      "awayScore": 96
+    },
+    {
+      "date": "2014-07-03",
+      "homeTeam": "MIN",
+      "awayTeam": "SAS",
+      "homeScore": 91,
+      "awayScore": 84
+    },
+    {
+      "date": "2014-07-03",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 56,
+      "awayScore": 70
+    },
+    {
+      "date": "2014-07-05",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": 86,
+      "awayScore": 73
+    },
+    {
+      "date": "2014-07-05",
+      "homeTeam": "IND",
+      "awayTeam": "SAS",
+      "homeScore": 70,
+      "awayScore": 71
+    },
+    {
+      "date": "2014-07-05",
+      "homeTeam": "SEA",
+      "awayTeam": "CHI",
+      "homeScore": 80,
+      "awayScore": 73
+    },
+    {
+      "date": "2014-07-05",
+      "homeTeam": "TUL",
+      "awayTeam": "CON",
+      "homeScore": 76,
+      "awayScore": 78
+    },
+    {
+      "date": "2014-07-06",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 89,
+      "awayScore": 94
+    },
+    {
+      "date": "2014-07-06",
+      "homeTeam": "NYL",
+      "awayTeam": "MIN",
+      "homeScore": 87,
+      "awayScore": 80
+    },
+    {
+      "date": "2014-07-08",
+      "homeTeam": "ATL",
+      "awayTeam": "CON",
+      "homeScore": 83,
+      "awayScore": 71
+    },
+    {
+      "date": "2014-07-08",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 83,
+      "awayScore": 72
+    },
+    {
+      "date": "2014-07-08",
+      "homeTeam": "TUL",
+      "awayTeam": "IND",
+      "homeScore": 76,
+      "awayScore": 78
+    },
+    {
+      "date": "2014-07-09",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 65,
+      "awayScore": 72
+    },
+    {
+      "date": "2014-07-09",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 78,
+      "awayScore": 58
+    },
+    {
+      "date": "2014-07-09",
+      "homeTeam": "SAS",
+      "awayTeam": "NYL",
+      "homeScore": 80,
+      "awayScore": 66
+    },
+    {
+      "date": "2014-07-10",
+      "homeTeam": "IND",
+      "awayTeam": "CON",
+      "homeScore": 72,
+      "awayScore": 68
+    },
+    {
+      "date": "2014-07-10",
+      "homeTeam": "TUL",
+      "awayTeam": "MIN",
+      "homeScore": 85,
+      "awayScore": 91
+    },
+    {
+      "date": "2014-07-11",
+      "homeTeam": "CHI",
+      "awayTeam": "PHO",
+      "homeScore": 66,
+      "awayScore": 72
+    },
+    {
+      "date": "2014-07-11",
+      "homeTeam": "NYL",
+      "awayTeam": "LAS",
+      "homeScore": 54,
+      "awayScore": 68
+    },
+    {
+      "date": "2014-07-11",
+      "homeTeam": "SAS",
+      "awayTeam": "SEA",
+      "homeScore": 67,
+      "awayScore": 88
+    },
+    {
+      "date": "2014-07-12",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 74,
+      "awayScore": 93
+    },
+    {
+      "date": "2014-07-12",
+      "homeTeam": "TUL",
+      "awayTeam": "WAS",
+      "homeScore": 74,
+      "awayScore": 91
+    },
+    {
+      "date": "2014-07-13",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 81,
+      "awayScore": 79
+    },
+    {
+      "date": "2014-07-13",
+      "homeTeam": "CON",
+      "awayTeam": "LAS",
+      "homeScore": 64,
+      "awayScore": 90
+    },
+    {
+      "date": "2014-07-13",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 77,
+      "awayScore": 60
+    },
+    {
+      "date": "2014-07-13",
+      "homeTeam": "PHO",
+      "awayTeam": "SAS",
+      "homeScore": 90,
+      "awayScore": 61
+    },
+    {
+      "date": "2014-07-15",
+      "homeTeam": "IND",
+      "awayTeam": "LAS",
+      "homeScore": 78,
+      "awayScore": 86
+    },
+    {
+      "date": "2014-07-15",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 90,
+      "awayScore": 78
+    },
+    {
+      "date": "2014-07-15",
+      "homeTeam": "SEA",
+      "awayTeam": "CON",
+      "homeScore": 63,
+      "awayScore": 86
+    },
+    {
+      "date": "2014-07-16",
+      "homeTeam": "MIN",
+      "awayTeam": "TUL",
+      "homeScore": 93,
+      "awayScore": 82
+    },
+    {
+      "date": "2014-07-16",
+      "homeTeam": "NYL",
+      "awayTeam": "ATL",
+      "homeScore": 77,
+      "awayScore": 75
+    },
+    {
+      "date": "2014-07-17",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 82,
+      "awayScore": 64
+    },
+    {
+      "date": "2014-07-17",
+      "homeTeam": "LAS",
+      "awayTeam": "WAS",
+      "homeScore": 75,
+      "awayScore": 79
+    },
+    {
+      "date": "2014-07-17",
+      "homeTeam": "PHO",
+      "awayTeam": "CON",
+      "homeScore": 101,
+      "awayScore": 85
+    },
+    {
+      "date": "2014-07-17",
+      "homeTeam": "TUL",
+      "awayTeam": "SAS",
+      "homeScore": 95,
+      "awayScore": 90
+    },
+    {
+      "date": "2014-07-22",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 60,
+      "awayScore": 57
+    },
+    {
+      "date": "2014-07-22",
+      "homeTeam": "MIN",
+      "awayTeam": "ATL",
+      "homeScore": 112,
+      "awayScore": 108
+    },
+    {
+      "date": "2014-07-22",
+      "homeTeam": "SAS",
+      "awayTeam": "TUL",
+      "homeScore": 95,
+      "awayScore": 93
+    },
+    {
+      "date": "2014-07-22",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 71,
+      "awayScore": 89
+    },
+    {
+      "date": "2014-07-23",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": 64,
+      "awayScore": 66
+    },
+    {
+      "date": "2014-07-23",
+      "homeTeam": "WAS",
+      "awayTeam": "CON",
+      "homeScore": 89,
+      "awayScore": 75
+    },
+    {
+      "date": "2014-07-24",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 73,
+      "awayScore": 93
+    },
+    {
+      "date": "2014-07-24",
+      "homeTeam": "SEA",
+      "awayTeam": "NYL",
+      "homeScore": 80,
+      "awayScore": 84
+    },
+    {
+      "date": "2014-07-25",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 75,
+      "awayScore": 79
+    },
+    {
+      "date": "2014-07-25",
+      "homeTeam": "MIN",
+      "awayTeam": "SAS",
+      "homeScore": 88,
+      "awayScore": 78
+    },
+    {
+      "date": "2014-07-25",
+      "homeTeam": "WAS",
+      "awayTeam": "TUL",
+      "homeScore": 82,
+      "awayScore": 77
+    },
+    {
+      "date": "2014-07-26",
+      "homeTeam": "PHO",
+      "awayTeam": "NYL",
+      "homeScore": 78,
+      "awayScore": 63
+    },
+    {
+      "date": "2014-07-26",
+      "homeTeam": "SAS",
+      "awayTeam": "IND",
+      "homeScore": 68,
+      "awayScore": 75
+    },
+    {
+      "date": "2014-07-26",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 69,
+      "awayScore": 77
+    },
+    {
+      "date": "2014-07-27",
+      "homeTeam": "CON",
+      "awayTeam": "MIN",
+      "homeScore": 65,
+      "awayScore": 76
+    },
+    {
+      "date": "2014-07-27",
+      "homeTeam": "TUL",
+      "awayTeam": "CHI",
+      "homeScore": 79,
+      "awayScore": 69
+    },
+    {
+      "date": "2014-07-27",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 77,
+      "awayScore": 67
+    },
+    {
+      "date": "2014-07-28",
+      "homeTeam": "LAS",
+      "awayTeam": "IND",
+      "homeScore": 77,
+      "awayScore": 73
+    },
+    {
+      "date": "2014-07-29",
+      "homeTeam": "ATL",
+      "awayTeam": "CON",
+      "homeScore": 89,
+      "awayScore": 80
+    },
+    {
+      "date": "2014-07-29",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 80,
+      "awayScore": 76
+    },
+    {
+      "date": "2014-07-29",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 90,
+      "awayScore": 69
+    },
+    {
+      "date": "2014-07-29",
+      "homeTeam": "SAS",
+      "awayTeam": "CHI",
+      "homeScore": 92,
+      "awayScore": 74
+    },
+    {
+      "date": "2014-07-29",
+      "homeTeam": "TUL",
+      "awayTeam": "SEA",
+      "homeScore": 80,
+      "awayScore": 74
+    },
+    {
+      "date": "2014-07-31",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": 87,
+      "awayScore": 74
+    },
+    {
+      "date": "2014-07-31",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": 75,
+      "awayScore": 67
+    },
+    {
+      "date": "2014-07-31",
+      "homeTeam": "SEA",
+      "awayTeam": "IND",
+      "homeScore": 67,
+      "awayScore": 76
+    },
+    {
+      "date": "2014-07-31",
+      "homeTeam": "TUL",
+      "awayTeam": "ATL",
+      "homeScore": 75,
+      "awayScore": 85
+    },
+    {
+      "date": "2014-08-01",
+      "homeTeam": "SAS",
+      "awayTeam": "CON",
+      "homeScore": 79,
+      "awayScore": 89
+    },
+    {
+      "date": "2014-08-02",
+      "homeTeam": "PHO",
+      "awayTeam": "IND",
+      "homeScore": 79,
+      "awayScore": 69
+    },
+    {
+      "date": "2014-08-02",
+      "homeTeam": "TUL",
+      "awayTeam": "MIN",
+      "homeScore": 75,
+      "awayScore": 84
+    },
+    {
+      "date": "2014-08-03",
+      "homeTeam": "ATL",
+      "awayTeam": "NYL",
+      "homeScore": 76,
+      "awayScore": 83
+    },
+    {
+      "date": "2014-08-03",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 76,
+      "awayScore": 65
+    },
+    {
+      "date": "2014-08-03",
+      "homeTeam": "LAS",
+      "awayTeam": "CON",
+      "homeScore": 70,
+      "awayScore": 69
+    },
+    {
+      "date": "2014-08-03",
+      "homeTeam": "SEA",
+      "awayTeam": "SAS",
+      "homeScore": 71,
+      "awayScore": 65
+    },
+    {
+      "date": "2014-08-05",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": 66,
+      "awayScore": 82
+    },
+    {
+      "date": "2014-08-05",
+      "homeTeam": "IND",
+      "awayTeam": "MIN",
+      "homeScore": 64,
+      "awayScore": 66
+    },
+    {
+      "date": "2014-08-05",
+      "homeTeam": "LAS",
+      "awayTeam": "TUL",
+      "homeScore": 90,
+      "awayScore": 96
+    },
+    {
+      "date": "2014-08-05",
+      "homeTeam": "PHO",
+      "awayTeam": "ATL",
+      "homeScore": 75,
+      "awayScore": 67
+    },
+    {
+      "date": "2014-08-05",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 79,
+      "awayScore": 46
+    },
+    {
+      "date": "2014-08-07",
+      "homeTeam": "MIN",
+      "awayTeam": "CHI",
+      "homeScore": 74,
+      "awayScore": 64
+    },
+    {
+      "date": "2014-08-07",
+      "homeTeam": "SAS",
+      "awayTeam": "PHO",
+      "homeScore": 73,
+      "awayScore": 78
+    },
+    {
+      "date": "2014-08-07",
+      "homeTeam": "SEA",
+      "awayTeam": "ATL",
+      "homeScore": 88,
+      "awayScore": 68
+    },
+    {
+      "date": "2014-08-08",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 61,
+      "awayScore": 74
+    },
+    {
+      "date": "2014-08-08",
+      "homeTeam": "LAS",
+      "awayTeam": "ATL",
+      "homeScore": 80,
+      "awayScore": 77
+    },
+    {
+      "date": "2014-08-08",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 71,
+      "awayScore": 66
+    },
+    {
+      "date": "2014-08-08",
+      "homeTeam": "TUL",
+      "awayTeam": "SAS",
+      "homeScore": 79,
+      "awayScore": 62
+    },
+    {
+      "date": "2014-08-09",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 82,
+      "awayScore": 80
+    },
+    {
+      "date": "2014-08-10",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 80,
+      "awayScore": 69
+    },
+    {
+      "date": "2014-08-10",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": 89,
+      "awayScore": 81
+    },
+    {
+      "date": "2014-08-10",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 76,
+      "awayScore": 90
+    },
+    {
+      "date": "2014-08-10",
+      "homeTeam": "SAS",
+      "awayTeam": "LAS",
+      "homeScore": 82,
+      "awayScore": 76
+    },
+    {
+      "date": "2014-08-10",
+      "homeTeam": "SEA",
+      "awayTeam": "TUL",
+      "homeScore": 74,
+      "awayScore": 68
+    },
+    {
+      "date": "2014-08-12",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": 63,
+      "awayScore": 71
+    },
+    {
+      "date": "2014-08-12",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 64,
+      "awayScore": 76
+    },
+    {
+      "date": "2014-08-13",
+      "homeTeam": "ATL",
+      "awayTeam": "PHO",
+      "homeScore": 96,
+      "awayScore": 82
+    },
+    {
+      "date": "2014-08-13",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": 69,
+      "awayScore": 72
+    },
+    {
+      "date": "2014-08-14",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": 76,
+      "awayScore": 63
+    },
+    {
+      "date": "2014-08-15",
+      "homeTeam": "ATL",
+      "awayTeam": "TUL",
+      "homeScore": 92,
+      "awayScore": 76
+    },
+    {
+      "date": "2014-08-15",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": 67,
+      "awayScore": 71
+    },
+    {
+      "date": "2014-08-15",
+      "homeTeam": "LAS",
+      "awayTeam": "SEA",
+      "homeScore": 77,
+      "awayScore": 65
+    },
+    {
+      "date": "2014-08-15",
+      "homeTeam": "SAS",
+      "awayTeam": "MIN",
+      "homeScore": 92,
+      "awayScore": 76
+    },
+    {
+      "date": "2014-08-16",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 71,
+      "awayScore": 67
+    },
+    {
+      "date": "2014-08-16",
+      "homeTeam": "MIN",
+      "awayTeam": "TUL",
+      "homeScore": 80,
+      "awayScore": 63
+    },
+    {
+      "date": "2014-08-16",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 76,
+      "awayScore": 69
+    },
+    {
+      "date": "2014-08-16",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 61,
+      "awayScore": 73
+    },
+    {
+      "date": "2014-08-17",
+      "homeTeam": "CHI",
+      "awayTeam": "SAS",
+      "homeScore": 72,
+      "awayScore": 84
+    },
+    {
+      "date": "2014-08-17",
+      "homeTeam": "CON",
+      "awayTeam": "ATL",
+      "homeScore": 84,
+      "awayScore": 55
+    },
+    {
+      "date": "2014-08-17",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 73,
+      "awayScore": 61
+    },
+    {
+      "date": "2014-08-17",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 65,
+      "awayScore": 78
+    }
+  ],
+  "metadata": {
+    "total_games": 204,
+    "ingested_at": "2025-11-21T11:13:07.270036"
+  }
+}

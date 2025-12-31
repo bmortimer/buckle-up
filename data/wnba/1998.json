@@ -1,0 +1,1060 @@
+{
+  "season": "1998",
+  "league": "WNBA",
+  "games": [
+    {
+      "date": "1998-06-11",
+      "homeTeam": "CHA",
+      "awayTeam": "WAS",
+      "homeScore": 83,
+      "awayScore": 57
+    },
+    {
+      "date": "1998-06-11",
+      "homeTeam": "CLE",
+      "awayTeam": "NYL",
+      "homeScore": 78,
+      "awayScore": 71
+    },
+    {
+      "date": "1998-06-11",
+      "homeTeam": "SAC",
+      "awayTeam": "PHO",
+      "homeScore": 70,
+      "awayScore": 73
+    },
+    {
+      "date": "1998-06-11",
+      "homeTeam": "UTA",
+      "awayTeam": "LAS",
+      "homeScore": 83,
+      "awayScore": 89
+    },
+    {
+      "date": "1998-06-13",
+      "homeTeam": "DET",
+      "awayTeam": "CHA",
+      "homeScore": 69,
+      "awayScore": 78
+    },
+    {
+      "date": "1998-06-13",
+      "homeTeam": "HOU",
+      "awayTeam": "NYL",
+      "homeScore": 73,
+      "awayScore": 62
+    },
+    {
+      "date": "1998-06-13",
+      "homeTeam": "UTA",
+      "awayTeam": "WAS",
+      "homeScore": 78,
+      "awayScore": 77
+    },
+    {
+      "date": "1998-06-14",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 70,
+      "awayScore": 60
+    },
+    {
+      "date": "1998-06-15",
+      "homeTeam": "CHA",
+      "awayTeam": "HOU",
+      "homeScore": 65,
+      "awayScore": 79
+    },
+    {
+      "date": "1998-06-15",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 85,
+      "awayScore": 96
+    },
+    {
+      "date": "1998-06-15",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 69,
+      "awayScore": 54
+    },
+    {
+      "date": "1998-06-15",
+      "homeTeam": "UTA",
+      "awayTeam": "NYL",
+      "homeScore": 71,
+      "awayScore": 60
+    },
+    {
+      "date": "1998-06-16",
+      "homeTeam": "SAC",
+      "awayTeam": "LAS",
+      "homeScore": 73,
+      "awayScore": 69
+    },
+    {
+      "date": "1998-06-18",
+      "homeTeam": "CHA",
+      "awayTeam": "DET",
+      "homeScore": 71,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-06-18",
+      "homeTeam": "HOU",
+      "awayTeam": "CLE",
+      "homeScore": 87,
+      "awayScore": 69
+    },
+    {
+      "date": "1998-06-18",
+      "homeTeam": "SAC",
+      "awayTeam": "NYL",
+      "homeScore": 48,
+      "awayScore": 64
+    },
+    {
+      "date": "1998-06-19",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": 78,
+      "awayScore": 75
+    },
+    {
+      "date": "1998-06-19",
+      "homeTeam": "WAS",
+      "awayTeam": "UTA",
+      "homeScore": 85,
+      "awayScore": 76
+    },
+    {
+      "date": "1998-06-20",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 68,
+      "awayScore": 66
+    },
+    {
+      "date": "1998-06-20",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 68,
+      "awayScore": 79
+    },
+    {
+      "date": "1998-06-21",
+      "homeTeam": "LAS",
+      "awayTeam": "HOU",
+      "homeScore": 63,
+      "awayScore": 79
+    },
+    {
+      "date": "1998-06-21",
+      "homeTeam": "NYL",
+      "awayTeam": "UTA",
+      "homeScore": 68,
+      "awayScore": 64
+    },
+    {
+      "date": "1998-06-21",
+      "homeTeam": "PHO",
+      "awayTeam": "CHA",
+      "homeScore": 71,
+      "awayScore": 72
+    },
+    {
+      "date": "1998-06-21",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 57,
+      "awayScore": 70
+    },
+    {
+      "date": "1998-06-22",
+      "homeTeam": "CLE",
+      "awayTeam": "UTA",
+      "homeScore": 88,
+      "awayScore": 72
+    },
+    {
+      "date": "1998-06-23",
+      "homeTeam": "DET",
+      "awayTeam": "SAC",
+      "homeScore": 61,
+      "awayScore": 57
+    },
+    {
+      "date": "1998-06-23",
+      "homeTeam": "NYL",
+      "awayTeam": "CLE",
+      "homeScore": 59,
+      "awayScore": 57
+    },
+    {
+      "date": "1998-06-24",
+      "homeTeam": "LAS",
+      "awayTeam": "CHA",
+      "homeScore": 73,
+      "awayScore": 77
+    },
+    {
+      "date": "1998-06-24",
+      "homeTeam": "PHO",
+      "awayTeam": "HOU",
+      "homeScore": 69,
+      "awayScore": 66
+    },
+    {
+      "date": "1998-06-25",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": 79,
+      "awayScore": 71
+    },
+    {
+      "date": "1998-06-25",
+      "homeTeam": "UTA",
+      "awayTeam": "CHA",
+      "homeScore": 83,
+      "awayScore": 91
+    },
+    {
+      "date": "1998-06-26",
+      "homeTeam": "NYL",
+      "awayTeam": "SAC",
+      "homeScore": 62,
+      "awayScore": 48
+    },
+    {
+      "date": "1998-06-26",
+      "homeTeam": "PHO",
+      "awayTeam": "UTA",
+      "homeScore": 96,
+      "awayScore": 63
+    },
+    {
+      "date": "1998-06-27",
+      "homeTeam": "CHA",
+      "awayTeam": "SAC",
+      "homeScore": 58,
+      "awayScore": 50
+    },
+    {
+      "date": "1998-06-27",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 73,
+      "awayScore": 84
+    },
+    {
+      "date": "1998-06-27",
+      "homeTeam": "HOU",
+      "awayTeam": "LAS",
+      "homeScore": 75,
+      "awayScore": 64
+    },
+    {
+      "date": "1998-06-28",
+      "homeTeam": "WAS",
+      "awayTeam": "PHO",
+      "homeScore": 69,
+      "awayScore": 86
+    },
+    {
+      "date": "1998-06-29",
+      "homeTeam": "DET",
+      "awayTeam": "CHA",
+      "homeScore": 60,
+      "awayScore": 49
+    },
+    {
+      "date": "1998-06-29",
+      "homeTeam": "HOU",
+      "awayTeam": "WAS",
+      "homeScore": 73,
+      "awayScore": 48
+    },
+    {
+      "date": "1998-06-29",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 71,
+      "awayScore": 68
+    },
+    {
+      "date": "1998-06-30",
+      "homeTeam": "SAC",
+      "awayTeam": "LAS",
+      "homeScore": 58,
+      "awayScore": 56
+    },
+    {
+      "date": "1998-06-30",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 73,
+      "awayScore": 75
+    },
+    {
+      "date": "1998-07-01",
+      "homeTeam": "DET",
+      "awayTeam": "NYL",
+      "homeScore": 82,
+      "awayScore": 65
+    },
+    {
+      "date": "1998-07-01",
+      "homeTeam": "WAS",
+      "awayTeam": "CLE",
+      "homeScore": 80,
+      "awayScore": 92
+    },
+    {
+      "date": "1998-07-02",
+      "homeTeam": "CLE",
+      "awayTeam": "PHO",
+      "homeScore": 61,
+      "awayScore": 76
+    },
+    {
+      "date": "1998-07-02",
+      "homeTeam": "LAS",
+      "awayTeam": "UTA",
+      "homeScore": 57,
+      "awayScore": 58
+    },
+    {
+      "date": "1998-07-03",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 84,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-07-03",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 76,
+      "awayScore": 60
+    },
+    {
+      "date": "1998-07-04",
+      "homeTeam": "CHA",
+      "awayTeam": "PHO",
+      "homeScore": 68,
+      "awayScore": 66
+    },
+    {
+      "date": "1998-07-05",
+      "homeTeam": "SAC",
+      "awayTeam": "UTA",
+      "homeScore": 70,
+      "awayScore": 66
+    },
+    {
+      "date": "1998-07-05",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 61,
+      "awayScore": 62
+    },
+    {
+      "date": "1998-07-06",
+      "homeTeam": "CLE",
+      "awayTeam": "HOU",
+      "homeScore": 64,
+      "awayScore": 78
+    },
+    {
+      "date": "1998-07-06",
+      "homeTeam": "NYL",
+      "awayTeam": "DET",
+      "homeScore": 59,
+      "awayScore": 56
+    },
+    {
+      "date": "1998-07-06",
+      "homeTeam": "UTA",
+      "awayTeam": "SAC",
+      "homeScore": 68,
+      "awayScore": 64
+    },
+    {
+      "date": "1998-07-07",
+      "homeTeam": "LAS",
+      "awayTeam": "CHA",
+      "homeScore": 86,
+      "awayScore": 79
+    },
+    {
+      "date": "1998-07-08",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": 77,
+      "awayScore": 65
+    },
+    {
+      "date": "1998-07-08",
+      "homeTeam": "DET",
+      "awayTeam": "PHO",
+      "homeScore": 76,
+      "awayScore": 78
+    },
+    {
+      "date": "1998-07-08",
+      "homeTeam": "LAS",
+      "awayTeam": "SAC",
+      "homeScore": 71,
+      "awayScore": 76
+    },
+    {
+      "date": "1998-07-08",
+      "homeTeam": "NYL",
+      "awayTeam": "HOU",
+      "homeScore": 54,
+      "awayScore": 79
+    },
+    {
+      "date": "1998-07-08",
+      "homeTeam": "UTA",
+      "awayTeam": "CHA",
+      "homeScore": 69,
+      "awayScore": 77
+    },
+    {
+      "date": "1998-07-09",
+      "homeTeam": "HOU",
+      "awayTeam": "DET",
+      "homeScore": 96,
+      "awayScore": 66
+    },
+    {
+      "date": "1998-07-10",
+      "homeTeam": "PHO",
+      "awayTeam": "CLE",
+      "homeScore": 76,
+      "awayScore": 60
+    },
+    {
+      "date": "1998-07-10",
+      "homeTeam": "SAC",
+      "awayTeam": "CHA",
+      "homeScore": 55,
+      "awayScore": 63
+    },
+    {
+      "date": "1998-07-11",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 72,
+      "awayScore": 68
+    },
+    {
+      "date": "1998-07-11",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 78,
+      "awayScore": 53
+    },
+    {
+      "date": "1998-07-12",
+      "homeTeam": "LAS",
+      "awayTeam": "CLE",
+      "homeScore": 87,
+      "awayScore": 66
+    },
+    {
+      "date": "1998-07-12",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 57,
+      "awayScore": 75
+    },
+    {
+      "date": "1998-07-13",
+      "homeTeam": "HOU",
+      "awayTeam": "WAS",
+      "homeScore": 81,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-07-13",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 72,
+      "awayScore": 62
+    },
+    {
+      "date": "1998-07-13",
+      "homeTeam": "UTA",
+      "awayTeam": "DET",
+      "homeScore": 67,
+      "awayScore": 74
+    },
+    {
+      "date": "1998-07-14",
+      "homeTeam": "SAC",
+      "awayTeam": "CLE",
+      "homeScore": 58,
+      "awayScore": 61
+    },
+    {
+      "date": "1998-07-15",
+      "homeTeam": "CHA",
+      "awayTeam": "NYL",
+      "homeScore": 72,
+      "awayScore": 65
+    },
+    {
+      "date": "1998-07-15",
+      "homeTeam": "LAS",
+      "awayTeam": "SAC",
+      "homeScore": 81,
+      "awayScore": 76
+    },
+    {
+      "date": "1998-07-15",
+      "homeTeam": "PHO",
+      "awayTeam": "DET",
+      "homeScore": 73,
+      "awayScore": 60
+    },
+    {
+      "date": "1998-07-16",
+      "homeTeam": "CLE",
+      "awayTeam": "NYL",
+      "homeScore": 60,
+      "awayScore": 51
+    },
+    {
+      "date": "1998-07-17",
+      "homeTeam": "CHA",
+      "awayTeam": "WAS",
+      "homeScore": 86,
+      "awayScore": 56
+    },
+    {
+      "date": "1998-07-17",
+      "homeTeam": "DET",
+      "awayTeam": "UTA",
+      "homeScore": 79,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-07-17",
+      "homeTeam": "LAS",
+      "awayTeam": "HOU",
+      "homeScore": 68,
+      "awayScore": 74
+    },
+    {
+      "date": "1998-07-18",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 72,
+      "awayScore": 57
+    },
+    {
+      "date": "1998-07-18",
+      "homeTeam": "PHO",
+      "awayTeam": "NYL",
+      "homeScore": 63,
+      "awayScore": 69
+    },
+    {
+      "date": "1998-07-18",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 44,
+      "awayScore": 75
+    },
+    {
+      "date": "1998-07-19",
+      "homeTeam": "CLE",
+      "awayTeam": "CHA",
+      "homeScore": 85,
+      "awayScore": 69
+    },
+    {
+      "date": "1998-07-19",
+      "homeTeam": "WAS",
+      "awayTeam": "UTA",
+      "homeScore": 88,
+      "awayScore": 99
+    },
+    {
+      "date": "1998-07-20",
+      "homeTeam": "PHO",
+      "awayTeam": "SAC",
+      "homeScore": 88,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-07-21",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": 77,
+      "awayScore": 92
+    },
+    {
+      "date": "1998-07-21",
+      "homeTeam": "PHO",
+      "awayTeam": "HOU",
+      "homeScore": 62,
+      "awayScore": 65
+    },
+    {
+      "date": "1998-07-21",
+      "homeTeam": "WAS",
+      "awayTeam": "CHA",
+      "homeScore": 67,
+      "awayScore": 84
+    },
+    {
+      "date": "1998-07-22",
+      "homeTeam": "CHA",
+      "awayTeam": "UTA",
+      "homeScore": 58,
+      "awayScore": 61
+    },
+    {
+      "date": "1998-07-22",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": 76,
+      "awayScore": 61
+    },
+    {
+      "date": "1998-07-23",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 70,
+      "awayScore": 68
+    },
+    {
+      "date": "1998-07-24",
+      "homeTeam": "SAC",
+      "awayTeam": "NYL",
+      "homeScore": 54,
+      "awayScore": 76
+    },
+    {
+      "date": "1998-07-25",
+      "homeTeam": "CHA",
+      "awayTeam": "HOU",
+      "homeScore": 58,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-07-25",
+      "homeTeam": "CLE",
+      "awayTeam": "UTA",
+      "homeScore": 69,
+      "awayScore": 59
+    },
+    {
+      "date": "1998-07-25",
+      "homeTeam": "DET",
+      "awayTeam": "LAS",
+      "homeScore": 69,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-07-26",
+      "homeTeam": "NYL",
+      "awayTeam": "DET",
+      "homeScore": 78,
+      "awayScore": 62
+    },
+    {
+      "date": "1998-07-26",
+      "homeTeam": "WAS",
+      "awayTeam": "SAC",
+      "homeScore": 65,
+      "awayScore": 79
+    },
+    {
+      "date": "1998-07-27",
+      "homeTeam": "CHA",
+      "awayTeam": "SAC",
+      "homeScore": 70,
+      "awayScore": 76
+    },
+    {
+      "date": "1998-07-27",
+      "homeTeam": "CLE",
+      "awayTeam": "LAS",
+      "homeScore": 83,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-07-27",
+      "homeTeam": "UTA",
+      "awayTeam": "PHO",
+      "homeScore": 90,
+      "awayScore": 80
+    },
+    {
+      "date": "1998-07-28",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 72,
+      "awayScore": 62
+    },
+    {
+      "date": "1998-07-29",
+      "homeTeam": "CLE",
+      "awayTeam": "SAC",
+      "homeScore": 75,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-07-29",
+      "homeTeam": "WAS",
+      "awayTeam": "LAS",
+      "homeScore": 68,
+      "awayScore": 77
+    },
+    {
+      "date": "1998-07-30",
+      "homeTeam": "CHA",
+      "awayTeam": "CLE",
+      "homeScore": 79,
+      "awayScore": 64
+    },
+    {
+      "date": "1998-07-30",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 88,
+      "awayScore": 65
+    },
+    {
+      "date": "1998-07-31",
+      "homeTeam": "DET",
+      "awayTeam": "SAC",
+      "homeScore": 78,
+      "awayScore": 77
+    },
+    {
+      "date": "1998-07-31",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 71,
+      "awayScore": 56
+    },
+    {
+      "date": "1998-08-01",
+      "homeTeam": "HOU",
+      "awayTeam": "CLE",
+      "homeScore": 71,
+      "awayScore": 74
+    },
+    {
+      "date": "1998-08-01",
+      "homeTeam": "UTA",
+      "awayTeam": "LAS",
+      "homeScore": 65,
+      "awayScore": 73
+    },
+    {
+      "date": "1998-08-01",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 53,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-08-02",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 70,
+      "awayScore": 53
+    },
+    {
+      "date": "1998-08-02",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 85,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-08-03",
+      "homeTeam": "CHA",
+      "awayTeam": "DET",
+      "homeScore": 71,
+      "awayScore": 68
+    },
+    {
+      "date": "1998-08-03",
+      "homeTeam": "LAS",
+      "awayTeam": "WAS",
+      "homeScore": 86,
+      "awayScore": 72
+    },
+    {
+      "date": "1998-08-04",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 88,
+      "awayScore": 59
+    },
+    {
+      "date": "1998-08-04",
+      "homeTeam": "SAC",
+      "awayTeam": "CLE",
+      "homeScore": 60,
+      "awayScore": 72
+    },
+    {
+      "date": "1998-08-04",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 57,
+      "awayScore": 77
+    },
+    {
+      "date": "1998-08-05",
+      "homeTeam": "CHA",
+      "awayTeam": "NYL",
+      "homeScore": 69,
+      "awayScore": 61
+    },
+    {
+      "date": "1998-08-05",
+      "homeTeam": "DET",
+      "awayTeam": "LAS",
+      "homeScore": 73,
+      "awayScore": 61
+    },
+    {
+      "date": "1998-08-06",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 75,
+      "awayScore": 64
+    },
+    {
+      "date": "1998-08-06",
+      "homeTeam": "UTA",
+      "awayTeam": "CLE",
+      "homeScore": 69,
+      "awayScore": 79
+    },
+    {
+      "date": "1998-08-07",
+      "homeTeam": "DET",
+      "awayTeam": "HOU",
+      "homeScore": 57,
+      "awayScore": 61
+    },
+    {
+      "date": "1998-08-07",
+      "homeTeam": "SAC",
+      "awayTeam": "WAS",
+      "homeScore": 76,
+      "awayScore": 55
+    },
+    {
+      "date": "1998-08-08",
+      "homeTeam": "CLE",
+      "awayTeam": "CHA",
+      "homeScore": 65,
+      "awayScore": 58
+    },
+    {
+      "date": "1998-08-08",
+      "homeTeam": "NYL",
+      "awayTeam": "LAS",
+      "homeScore": 80,
+      "awayScore": 62
+    },
+    {
+      "date": "1998-08-08",
+      "homeTeam": "PHO",
+      "awayTeam": "UTA",
+      "homeScore": 68,
+      "awayScore": 62
+    },
+    {
+      "date": "1998-08-09",
+      "homeTeam": "WAS",
+      "awayTeam": "LAS",
+      "homeScore": 76,
+      "awayScore": 74
+    },
+    {
+      "date": "1998-08-10",
+      "homeTeam": "CLE",
+      "awayTeam": "PHO",
+      "homeScore": 80,
+      "awayScore": 82
+    },
+    {
+      "date": "1998-08-10",
+      "homeTeam": "HOU",
+      "awayTeam": "CHA",
+      "homeScore": 70,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-08-10",
+      "homeTeam": "UTA",
+      "awayTeam": "DET",
+      "homeScore": 73,
+      "awayScore": 77
+    },
+    {
+      "date": "1998-08-11",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 79,
+      "awayScore": 78
+    },
+    {
+      "date": "1998-08-11",
+      "homeTeam": "SAC",
+      "awayTeam": "DET",
+      "homeScore": 41,
+      "awayScore": 50
+    },
+    {
+      "date": "1998-08-12",
+      "homeTeam": "CHA",
+      "awayTeam": "LAS",
+      "homeScore": 52,
+      "awayScore": 65
+    },
+    {
+      "date": "1998-08-12",
+      "homeTeam": "UTA",
+      "awayTeam": "SAC",
+      "homeScore": 81,
+      "awayScore": 71
+    },
+    {
+      "date": "1998-08-12",
+      "homeTeam": "WAS",
+      "awayTeam": "CLE",
+      "homeScore": 55,
+      "awayScore": 75
+    },
+    {
+      "date": "1998-08-13",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 88,
+      "awayScore": 45
+    },
+    {
+      "date": "1998-08-14",
+      "homeTeam": "CHA",
+      "awayTeam": "CLE",
+      "homeScore": 72,
+      "awayScore": 85
+    },
+    {
+      "date": "1998-08-14",
+      "homeTeam": "LAS",
+      "awayTeam": "UTA",
+      "homeScore": 87,
+      "awayScore": 67
+    },
+    {
+      "date": "1998-08-14",
+      "homeTeam": "PHO",
+      "awayTeam": "DET",
+      "homeScore": 84,
+      "awayScore": 59
+    },
+    {
+      "date": "1998-08-15",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": 90,
+      "awayScore": 71
+    },
+    {
+      "date": "1998-08-15",
+      "homeTeam": "NYL",
+      "awayTeam": "HOU",
+      "homeScore": 70,
+      "awayScore": 54
+    },
+    {
+      "date": "1998-08-15",
+      "homeTeam": "SAC",
+      "awayTeam": "UTA",
+      "homeScore": 82,
+      "awayScore": 55
+    },
+    {
+      "date": "1998-08-16",
+      "homeTeam": "LAS",
+      "awayTeam": "DET",
+      "homeScore": 76,
+      "awayScore": 77
+    },
+    {
+      "date": "1998-08-16",
+      "homeTeam": "SAC",
+      "awayTeam": "PHO",
+      "homeScore": 69,
+      "awayScore": 85
+    },
+    {
+      "date": "1998-08-17",
+      "homeTeam": "NYL",
+      "awayTeam": "CLE",
+      "homeScore": 64,
+      "awayScore": 70
+    },
+    {
+      "date": "1998-08-17",
+      "homeTeam": "UTA",
+      "awayTeam": "PHO",
+      "homeScore": 64,
+      "awayScore": 75
+    },
+    {
+      "date": "1998-08-17",
+      "homeTeam": "WAS",
+      "awayTeam": "HOU",
+      "homeScore": 65,
+      "awayScore": 110
+    },
+    {
+      "date": "1998-08-19",
+      "homeTeam": "DET",
+      "awayTeam": "NYL",
+      "homeScore": 82,
+      "awayScore": 68
+    },
+    {
+      "date": "1998-08-19",
+      "homeTeam": "HOU",
+      "awayTeam": "LAS",
+      "homeScore": 80,
+      "awayScore": 71
+    },
+    {
+      "date": "1998-08-19",
+      "homeTeam": "PHO",
+      "awayTeam": "SAC",
+      "homeScore": 71,
+      "awayScore": 62
+    },
+    {
+      "date": "1998-08-19",
+      "homeTeam": "WAS",
+      "awayTeam": "CHA",
+      "homeScore": 69,
+      "awayScore": 105
+    }
+  ],
+  "metadata": {
+    "total_games": 150,
+    "ingested_at": "2025-11-21T11:21:39.552692"
+  }
+}
