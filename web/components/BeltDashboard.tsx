@@ -17,6 +17,7 @@ import YearRangeSlider from './YearRangeSlider'
 import TeamSelector from './TeamSelector'
 import TeamLogo from './TeamLogo'
 import { ThemeToggle } from './ThemeToggle'
+import BuyMeCoffee from './BuyMeCoffee'
 
 interface BeltDashboardProps {
   wnbaSeasons: Record<string, SeasonData>
@@ -375,9 +376,12 @@ export default function BeltDashboard({
           <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
         </div>
         <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider">
-          ▸ {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS TRACKED ◂
+          ▸ {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS TRACKED • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-amber-500/70 hover:text-amber-500 transition-colors">☕ SUPPORT</a> ◂
         </p>
       </div>
+
+      {/* Buy Me a Coffee */}
+      <BuyMeCoffee />
     </div>
   )
 }
