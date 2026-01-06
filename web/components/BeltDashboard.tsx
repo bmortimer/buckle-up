@@ -319,7 +319,7 @@ export default function BeltDashboard({
             isPastSeason={context === 'PAST_YEAR'}
           />
           {(context === 'THIS_YEAR' || context === 'OFF_SEASON') && (
-            <NextGamePreview />
+            <NextGamePreview franchises={franchises} />
           )}
         </div>
       )}

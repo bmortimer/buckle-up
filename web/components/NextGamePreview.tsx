@@ -1,9 +1,17 @@
-export default function NextGamePreview() {
+import TeamLogo from './TeamLogo'
+import type { FranchiseInfo } from '@/lib/types'
+
+interface NextGamePreviewProps {
+  franchises?: FranchiseInfo[]
+}
+
+export default function NextGamePreview({ franchises = [] }: NextGamePreviewProps) {
   // Stubbed data for now
   const nextGame = {
     date: 'Friday, May 15, 2026',
     time: '7:00 PM ET',
     opponent: 'Washington Mystics',
+    opponentCode: 'WAS',
     location: 'Capital One Arena',
     isAway: true,
   }
@@ -44,13 +52,23 @@ export default function NextGamePreview() {
             <div className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.6rem] font-orbitron uppercase tracking-wide sm:tracking-wider text-muted-foreground mb-1 sm:mb-2">
               {nextGame.isAway ? '@ OPPONENT' : 'VS OPPONENT'}
             </div>
+
+            {/* Team Logo */}
+            <div className="flex justify-center mb-2 sm:mb-3">
+              <TeamLogo
+                teamCode={nextGame.opponentCode}
+                franchises={franchises}
+                size="lg"
+              />
+            </div>
+
             <div
-              className="text-xl sm:text-2xl md:text-3xl font-mono tracking-[0.15em] sm:tracking-[0.2em] mb-0.5 sm:mb-1 led-text"
+              className="text-lg sm:text-xl md:text-2xl font-mono tracking-[0.15em] sm:tracking-[0.2em] mb-0.5 sm:mb-1 led-text"
               style={{
                 color: 'hsl(var(--led-red))',
               }}
             >
-              WSH
+              {nextGame.opponentCode}
             </div>
             <div className="text-xs sm:text-sm font-orbitron text-foreground">
               {nextGame.opponent}
