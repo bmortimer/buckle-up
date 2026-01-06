@@ -1,114 +1,175 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 interface YearRangeSliderProps {
   minYear: number
   maxYear: number
   value: [number, number]
   onChange: (range: [number, number]) => void
+  isAllTime: boolean
+  onAllTimeChange: (isAllTime: boolean) => void
 }
 
-export default function YearRangeSlider({ minYear, maxYear, value, onChange }: YearRangeSliderProps) {
-  const isAllYears = value[0] === minYear && value[1] === maxYear
-  const [showAllYears, setShowAllYears] = useState(isAllYears)
-  const [selectedYear, setSelectedYear] = useState(maxYear)
+export default function YearRangeSlider({
+  minYear,
+  maxYear,
+  value,
+  onChange,
+  isAllTime,
+  onAllTimeChange
+}: YearRangeSliderProps) {
+  const [isOpen, setIsOpen] = useState(false)
+  const currentYear = isAllTime ? null : value[0]
 
-  useEffect(() => {
-    const isAll = value[0] === minYear && value[1] === maxYear
-    setShowAllYears(isAll)
-    if (!isAll) {
-      setSelectedYear(value[0])
-    }
-  }, [value, minYear, maxYear])
+  // Get unique decades with data
+  const decades = Array.from(
+    new Set(
+      Array.from(
+        { length: maxYear - minYear + 1 },
+        (_, i) => minYear + i
+      ).map(year => Math.floor(year / 10) * 10)
+    )
+  ).sort((a, b) => b - a) // Newest first
 
-  const handleYearChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const year = parseInt(e.target.value)
-    setSelectedYear(year)
-    if (!showAllYears) {
+  // Group years by decade for organized display
+  const yearsByDecade = decades.map(decade => {
+    const years = Array.from(
+      { length: maxYear - minYear + 1 },
+      (_, i) => minYear + i
+    ).filter(year => Math.floor(year / 10) * 10 === decade)
+    return { decade, years: years.sort((a, b) => b - a) } // Newest first within decade
+  })
+
+  const handleYearChange = (year: number | null) => {
+    if (year === null) {
+      onAllTimeChange(true)
+      onChange([minYear, maxYear])
+    } else {
+      onAllTimeChange(false)
       onChange([year, year])
     }
+    setIsOpen(false)
   }
-
-  const toggleAllYears = () => {
-    if (showAllYears) {
-      // Switch to single year
-      setShowAllYears(false)
-      onChange([selectedYear, selectedYear])
-    } else {
-      // Switch to all years
-      setShowAllYears(true)
-      onChange([minYear, maxYear])
-    }
-  }
-
-  const yearPercent = ((selectedYear - minYear) / (maxYear - minYear)) * 100
 
   return (
     <div className="space-y-2">
+      {/* Label */}
       <div className="flex items-center justify-between">
-        <span className="text-xs font-orbitron text-muted-foreground uppercase tracking-wider">▸ Year Select</span>
-        <div className="flex items-center gap-2">
-          <span className="text-sm font-mono font-bold tabular-nums">
-            {showAllYears ? 'ALL YEARS' : selectedYear}
-          </span>
-          <button
-            onClick={toggleAllYears}
-            className={`px-2 py-0.5 text-[0.6rem] font-mono uppercase border transition-all ${
-              showAllYears
-                ? 'bg-amber-500/20 text-amber-500 border-amber-500'
-                : 'bg-card text-muted-foreground border-border hover:border-amber-500'
-            }`}
-          >
-            ALL
-          </button>
+        <span className="text-[0.65rem] sm:text-xs font-orbitron text-muted-foreground uppercase tracking-wide sm:tracking-wider">
+          ◆ Time Period
+        </span>
+      </div>
+
+      {/* Clickable Year Display */}
+      <button
+        onClick={() => setIsOpen(true)}
+        className="w-full scoreboard-panel p-4 sm:p-5 relative group hover:border-primary transition-all active:scale-[0.98]"
+      >
+        {/* Year Display */}
+        <div className="text-center">
+          <div className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl font-mono font-bold tabular-nums tracking-wider transition-all group-hover:scale-105" style={{ color: 'hsl(var(--primary))' }}>
+            {isAllTime ? 'ALL TIME' : currentYear}
+          </div>
+          <div className="text-[0.6rem] text-muted-foreground/60 font-mono mt-2 uppercase tracking-wider">
+            Click to change ▸
+          </div>
         </div>
-      </div>
+      </button>
 
-      <div className="relative h-8 flex items-center">
-        {/* Track - LED style */}
-        <div className="absolute w-full h-1.5 bg-black/40 border border-border/30" />
-
-        {/* Active position - glowing LED indicator */}
-        {!showAllYears && (
+      {/* Year Selection Modal */}
+      {isOpen && (
+        <>
+          {/* Backdrop */}
           <div
-            className="absolute h-1.5 w-1 bg-amber-500 border border-amber-500/50 transition-all"
-            style={{
-              left: `${yearPercent}%`,
-              boxShadow: '0 0 8px rgba(251, 191, 36, 0.6), inset 0 1px 2px rgba(255,255,255,0.3)'
-            }}
+            className="fixed inset-0 bg-black/60 z-40 backdrop-blur-sm"
+            onClick={() => setIsOpen(false)}
           />
-        )}
 
-        {/* All years indicator */}
-        {showAllYears && (
-          <div
-            className="absolute h-1.5 bg-amber-500/30 border border-amber-500/30"
-            style={{
-              left: '0%',
-              right: '0%',
-              boxShadow: '0 0 8px rgba(251, 191, 36, 0.3)'
-            }}
-          />
-        )}
+          {/* Modal */}
+          <div className="fixed inset-4 sm:inset-auto sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-full sm:max-w-2xl sm:max-h-[80vh] scoreboard-panel z-50 overflow-hidden flex flex-col">
+            {/* Header */}
+            <div className="bg-muted/20 border-b-2 border-border p-4 sm:p-5 flex items-center justify-between">
+              <div>
+                <h3 className="text-base sm:text-lg font-orbitron uppercase tracking-wider">
+                  ◆ Select Time Period
+                </h3>
+                <div className="text-[0.6rem] text-muted-foreground/60 font-mono mt-1">
+                  {minYear} — {maxYear}
+                </div>
+              </div>
+              <button
+                onClick={() => setIsOpen(false)}
+                className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border-2 border-border bg-card text-muted-foreground hover:border-primary hover:text-primary active:scale-95 transition-all"
+                aria-label="Close"
+              >
+                ✕
+              </button>
+            </div>
 
-        {/* Year slider */}
-        <input
-          type="range"
-          min={minYear}
-          max={maxYear}
-          value={selectedYear}
-          onChange={handleYearChange}
-          disabled={showAllYears}
-          className="absolute w-full appearance-none bg-transparent pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:bg-amber-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:border-2 [&::-webkit-slider-thumb]:border-background [&::-webkit-slider-thumb]:shadow-[0_0_10px_rgba(251,191,36,0.8)] [&::-webkit-slider-thumb]:disabled:opacity-30 [&::-webkit-slider-thumb]:disabled:cursor-not-allowed [&::-moz-range-thumb]:pointer-events-auto [&::-moz-range-thumb]:appearance-none [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:bg-amber-500 [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-thumb]:border-2 [&::-moz-range-thumb]:border-background [&::-moz-range-thumb]:shadow-[0_0_10px_rgba(251,191,36,0.8)] [&::-moz-range-thumb]:disabled:opacity-30 [&::-moz-range-thumb]:disabled:cursor-not-allowed"
-        />
-      </div>
+            {/* Content - Scrollable */}
+            <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+              <div className="space-y-6">
+                {/* ALL TIME Button */}
+                <div>
+                  <button
+                    onClick={() => handleYearChange(null)}
+                    className={`
+                      w-full px-4 py-3 text-base sm:text-lg font-mono font-bold uppercase
+                      border-2 transition-all
+                      ${isAllTime
+                        ? 'bg-primary/10 text-primary border-primary'
+                        : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-[0.98]'
+                      }
+                    `}
+                  >
+                    ALL TIME
+                  </button>
+                </div>
 
-      {/* Year markers */}
-      <div className="flex justify-between text-[0.65rem] text-muted-foreground font-mono tabular-nums">
-        <span>{minYear}</span>
-        <span>{maxYear}</span>
-      </div>
+                {/* Years by Decade */}
+                {yearsByDecade.map(({ decade, years }) => {
+                  const decadeLabel = `${decade}s`
+
+                  return (
+                    <div key={decade}>
+                      {/* Decade Label */}
+                      <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
+                        <span>{decadeLabel}</span>
+                        <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" />
+                      </div>
+
+                      {/* Year Grid */}
+                      <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-2">
+                        {years.map(year => {
+                          const isSelected = currentYear === year
+
+                          return (
+                            <button
+                              key={year}
+                              onClick={() => handleYearChange(year)}
+                              className={`
+                                px-3 py-2 text-sm sm:text-base font-mono font-bold tabular-nums
+                                border-2 transition-all
+                                ${isSelected
+                                  ? 'bg-primary/10 text-primary border-primary scale-105'
+                                  : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
+                                }
+                              `}
+                            >
+                              {year}
+                            </button>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   )
 }

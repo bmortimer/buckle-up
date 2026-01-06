@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import type { BeltHistory, FranchiseInfo, Game } from '@/lib/types'
 import { getTeamColor } from '@/lib/franchises'
 import { isSameFranchise } from '@/lib/franchises'
@@ -22,6 +22,7 @@ interface DayData {
 }
 
 export default function DetailedCalendar({ history, franchises, allGames, year }: DetailedCalendarProps) {
+  const [selectedDay, setSelectedDay] = useState<DayData | null>(null)
   // Build day-by-day data for the year
   const dayMap = useMemo(() => {
     const map = new Map<string, DayData>()
@@ -116,14 +117,14 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
   }, [dayMap])
 
   return (
-    <div data-card="detailed-calendar" className="scoreboard-panel p-6 relative">
-      <div className="flex items-center justify-between mb-6 border-b-2 border-border pb-3">
-        <h3 className="text-base font-orbitron tracking-[0.2em] uppercase">
+    <div data-card="detailed-calendar" className="scoreboard-panel p-4 sm:p-6 relative">
+      <div className="flex items-center justify-between mb-4 sm:mb-6 border-b-2 border-border pb-2 sm:pb-3">
+        <h3 className="text-sm sm:text-base font-orbitron tracking-[0.15em] sm:tracking-[0.2em] uppercase">
           ◆ {year} Calendar
         </h3>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
         {Array.from(monthsData.entries()).map(([month, days]) => {
           const monthDate = new Date(year, month, 1)
           const monthName = monthDate.toLocaleDateString('en-US', { month: 'long' })
@@ -189,57 +190,38 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
                       const dayNum = date.getDate()
                       const holderColor = getTeamColor(dayData.holder, franchises)
 
+                      const isSelected = selectedDay?.date === dayData.date
+
                       return (
                         <div
                           key={dayIdx}
-                          className="aspect-square border-r border-b border-border/20 p-0.5 relative group hover:bg-muted/30 transition-colors"
+                          className={`aspect-square border-r border-b border-border/20 p-0.5 relative group transition-colors ${dayData.game ? 'cursor-pointer hover:bg-muted/30 active:bg-muted/40' : ''}`}
                           style={{
                             backgroundColor: `${holderColor}15`
                           }}
+                          onClick={() => dayData.game && setSelectedDay(isSelected ? null : dayData)}
                         >
                           {/* Day number */}
-                          <div className="text-[0.5rem] font-mono text-muted-foreground">
+                          <div className="text-[0.5rem] font-mono text-muted-foreground pointer-events-none">
                             {dayNum}
                           </div>
 
                           {/* Belt holder indicator */}
-                          <div className="absolute top-0 right-0 w-1 h-1 rounded-full opacity-60"
+                          <div className="absolute top-0 right-0 w-1 h-1 rounded-full opacity-60 pointer-events-none"
                             style={{ backgroundColor: holderColor }}
                           />
 
                           {/* Belt change indicator */}
                           {dayData.beltChanged && (
-                            <div className="absolute top-0.5 left-0.5 text-[0.5rem]" title="Belt changed hands">
+                            <div className="absolute top-0.5 left-0.5 text-[0.5rem] pointer-events-none">
                               ⚡
                             </div>
                           )}
 
                           {/* Game indicator */}
                           {dayData.game && (
-                            <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center gap-0.5 pb-0.5">
+                            <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center gap-0.5 pb-0.5 pointer-events-none">
                               <TeamLogo teamCode={dayData.holder} franchises={franchises} size="xxs" />
-                            </div>
-                          )}
-
-                          {/* Tooltip on hover */}
-                          {dayData.game && (
-                            <div className="hidden group-hover:block absolute z-10 left-full ml-2 top-0 bg-card border-2 border-amber-500 p-2 shadow-lg min-w-[200px]">
-                              <div className="text-[0.6rem] font-mono text-muted-foreground mb-1">
-                                {date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                              </div>
-                              <div className="flex items-center gap-2 mb-1">
-                                <TeamLogo teamCode={dayData.game.homeTeam} franchises={franchises} size="xs" />
-                                <span className="text-xs font-mono">{dayData.game.homeScore}</span>
-                              </div>
-                              <div className="flex items-center gap-2">
-                                <TeamLogo teamCode={dayData.game.awayTeam} franchises={franchises} size="xs" />
-                                <span className="text-xs font-mono">{dayData.game.awayScore}</span>
-                              </div>
-                              {dayData.beltChanged && (
-                                <div className="text-[0.6rem] text-amber-500 mt-1 font-orbitron uppercase">
-                                  ⚡ Belt Changed
-                                </div>
-                              )}
                             </div>
                           )}
                         </div>
@@ -252,6 +234,68 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
           )
         })}
       </div>
+
+      {/* Selected Day Modal - tap-friendly */}
+      {selectedDay && selectedDay.game && (
+        <>
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 bg-black/50 z-40"
+            onClick={() => setSelectedDay(null)}
+          />
+
+          {/* Modal */}
+          <div className="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:w-80 bg-card border-2 border-amber-500 p-4 shadow-[0_0_20px_rgba(251,191,36,0.3)] z-50">
+            {/* Close button */}
+            <button
+              onClick={() => setSelectedDay(null)}
+              className="absolute top-2 right-2 w-6 h-6 flex items-center justify-center text-muted-foreground hover:text-foreground active:text-amber-500 transition-colors"
+              aria-label="Close"
+            >
+              ×
+            </button>
+
+            {/* Date */}
+            <div className="text-xs sm:text-sm font-mono text-muted-foreground mb-3 uppercase">
+              {new Date(selectedDay.date).toLocaleDateString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+              })}
+            </div>
+
+            {/* Game Details */}
+            {(() => {
+              const game = selectedDay.game
+              const homeWon = game.homeScore > game.awayScore
+              const awayWon = game.awayScore > game.homeScore
+
+              return (
+                <div className="text-sm sm:text-base font-mono mb-3">
+                  <div className={awayWon ? 'font-bold' : ''}>
+                    {game.awayTeam} [{game.awayScore}]
+                  </div>
+                  <div className="text-muted-foreground text-xs my-1">@</div>
+                  <div className={homeWon ? 'font-bold' : ''}>
+                    {game.homeTeam} [{game.homeScore}]
+                  </div>
+                </div>
+              )
+            })()}
+
+            {/* Belt Status */}
+            <div className="text-xs sm:text-sm text-amber-500 font-orbitron uppercase border-t border-border/40 pt-3">
+              {selectedDay.beltChanged ? (
+                <span>⚡ Belt Changed Hands</span>
+              ) : selectedDay.holderWon ? (
+                <span>Defended Belt</span>
+              ) : (
+                <span>Holder Retained</span>
+              )}
+            </div>
+          </div>
+        </>
+      )}
     </div>
   )
 }

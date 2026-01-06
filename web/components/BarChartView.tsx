@@ -1,7 +1,6 @@
 import type { TeamBeltStats, FranchiseInfo, Game } from '@/lib/types'
 import { getTeamColor } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
-import MedalIcon from './MedalIcon'
 import { useState } from 'react'
 
 interface BarChartViewProps {
@@ -70,7 +69,7 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
           {[
             { value: 'wins', label: 'Wins' },
             { value: 'games', label: 'Games' },
-            { value: 'winpct', label: 'Win %' },
+            { value: 'winpct', label: 'Win%' },
             { value: 'streak', label: 'Streak' },
           ].map((option) => (
             <button
@@ -98,19 +97,14 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
           const isSelected = selectedTeam === team.team
           const isGreyedOut = selectedTeam && !isSelected
           const color = isGreyedOut ? 'hsl(var(--muted-foreground))' : getTeamColor(team.team, franchises)
-          const showMedal = index < 3 && value > 0 && !isGreyedOut
 
           return (
             <div key={team.team} className="flex items-center gap-3 group">
-              {/* Medal or rank number */}
+              {/* Rank number */}
               <div className="w-6 flex justify-center">
-                {showMedal ? (
-                  <MedalIcon rank={(index + 1) as 1 | 2 | 3} />
-                ) : (
-                  <span className="text-xs text-muted-foreground font-mono opacity-0 group-hover:opacity-100 transition-opacity tabular-nums">
-                    {index + 1}
-                  </span>
-                )}
+                <span className="text-xs text-muted-foreground font-mono opacity-0 group-hover:opacity-100 transition-opacity tabular-nums">
+                  {index + 1}
+                </span>
               </div>
 
               {/* Team Logo */}
@@ -122,7 +116,7 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
                 <div
                   className={`h-full flex items-center px-2.5 transition-all duration-300 relative ${isSelected ? 'ring-1 ring-amber-500' : ''}`}
                   style={{
-                    width: `${Math.max(percentage, 8)}%`,
+                    width: `${percentage}%`,
                     background: `linear-gradient(90deg, ${color} 0%, ${color} 90%, transparent 100%)`,
                     boxShadow: isGreyedOut ? 'none' : `0 0 10px ${color}40, inset 0 1px 2px rgba(255,255,255,0.2)`
                   }}
@@ -143,7 +137,9 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
                   >
                     {sortBy === 'winpct'
                       ? `${(winPct * 100).toFixed(1)}% (${team.wins}-${team.losses})`
-                      : `${value} ${sortBy === 'games' ? `(${team.wins}-${team.losses})` : sortBy === 'wins' ? 'W' : 'G'}`
+                      : sortBy === 'games'
+                        ? `${value} (${team.wins}-${team.losses})`
+                        : `${value}`
                     }
                   </span>
                 </div>

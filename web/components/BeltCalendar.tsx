@@ -20,10 +20,11 @@ interface DayData {
   won: boolean | null
   winner?: string // Team that won this game (if played)
   challenger?: string // Team that challenged for the belt (if played)
+  game?: Game // The actual game that was played (if any)
 }
 
 export default function BeltCalendar({ history, franchises, selectedTeam: externalSelectedTeam, allGames }: BeltCalendarProps) {
-  const [hoveredDay, setHoveredDay] = useState<DayData | null>(null)
+  const [clickedDay, setClickedDay] = useState<DayData | null>(null)
   const [selectedTeam, setSelectedTeam] = useState<string | null>(externalSelectedTeam || null)
 
   // Sync with external selection
@@ -91,6 +92,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
         won: holderWon,
         winner: winner,
         challenger: challenger,
+        game: holderGame,
       })
 
       // Update holder if they lost
@@ -126,20 +128,22 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     .filter(([_, days]) => days.some(d => d.played))
     .sort((a, b) => a[0].localeCompare(b[0]))
 
+  // Determine year display for title
+  const yearDisplay = (() => {
+    const uniqueYears = new Set(allGames.map(g => g.date.substring(0, 4)))
+    if (uniqueYears.size === 1) {
+      return Array.from(uniqueYears)[0]
+    }
+    const years = Array.from(uniqueYears).sort()
+    return `${years[0]}-${years[years.length - 1]}`
+  })()
+
   return (
     <div data-card="calendar" className="scoreboard-panel p-6 relative">
       <div className="flex items-center justify-between mb-6 border-b-2 border-border pb-3">
         <h3 className="text-base font-orbitron tracking-[0.2em] uppercase">
-          ◆ {selectedTeam ? `${selectedTeam} Calendar` : 'Belt Calendar'}
+          ◆ History - {selectedTeam} - {yearDisplay}
         </h3>
-        {selectedTeam && (
-          <button
-            onClick={() => setSelectedTeam(null)}
-            className="text-xs font-mono text-muted-foreground hover:text-amber-500 transition-colors uppercase"
-          >
-            [Clear]
-          </button>
-        )}
       </div>
 
       {/* Team selector */}
@@ -258,21 +262,21 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                           : color
                       const opacity = isWinOrDefense ? 1 : isLoss ? 0.5 : failedChallenge ? 0.6 : 0.25
 
+                      const isSelected = clickedDay?.date === dayData.date
+
                       return (
                         <div
                           key={dayIdx}
-                          className="w-2.5 h-2.5 cursor-pointer transition-all hover:scale-[2] hover:z-10 relative border border-black/20 flex items-center justify-center"
+                          className={`w-2.5 h-2.5 cursor-pointer transition-all hover:scale-[2] active:scale-[2.2] hover:z-10 active:z-10 relative border border-black/20 flex items-center justify-center ${isSelected ? 'scale-[2] z-10 ring-1 ring-amber-500' : ''}`}
                           style={{
                             backgroundColor: cellColor,
                             opacity: opacity,
                             boxShadow: isWinOrDefense ? `0 0 4px ${color}60` : 'none'
                           }}
-                          onMouseEnter={() => setHoveredDay(dayData)}
-                          onMouseLeave={() => setHoveredDay(null)}
-                          title={`${dayData.date}: ${dayData.holder}${dayData.played ? ' (played)' : ''}`}
+                          onClick={() => setClickedDay(isSelected ? null : dayData)}
                         >
                           {isLoss && (
-                            <span className="text-[6px] font-bold leading-none text-black" style={{ textShadow: '0 0 1px white' }}>
+                            <span className="text-[6px] font-bold leading-none text-black pointer-events-none" style={{ textShadow: '0 0 1px white' }}>
                               ×
                             </span>
                           )}
@@ -289,43 +293,77 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
         </>
       )}
 
-      {/* Tooltip */}
-      {hoveredDay && selectedTeam && (
-        <div className="absolute bottom-4 left-4 bg-card border-2 border-amber-500 p-3 shadow-[0_0_20px_rgba(251,191,36,0.3)] z-20 min-w-[200px]">
-          <div className="text-[0.65rem] font-mono text-muted-foreground mb-1 uppercase">
-            {new Date(hoveredDay.date).toLocaleDateString('en-US', {
-              month: 'short',
-              day: 'numeric',
-              year: 'numeric',
-            })}
-          </div>
+      {/* Day Details Modal - tap-friendly */}
+      {clickedDay && selectedTeam && (
+        <>
+          {/* Backdrop */}
           <div
-            className="text-sm font-mono font-bold mb-1"
-            style={{ color: getTeamColor(selectedTeam, franchises) }}
-          >
-            {selectedTeam}
-          </div>
-          <div className="text-[0.65rem] text-muted-foreground font-mono uppercase">
-            {(() => {
-              const heldBelt = hoveredDay.holder === selectedTeam
-              const wonBelt = hoveredDay.winner === selectedTeam && !heldBelt
-              const challengedBelt = hoveredDay.challenger === selectedTeam && !heldBelt && !wonBelt
+            className="fixed inset-0 bg-black/50 z-40"
+            onClick={() => setClickedDay(null)}
+          />
 
-              if (wonBelt) {
-                return '▸ WON BELT'
-              } else if (challengedBelt) {
-                return '▸ FAILED CHALLENGE'
-              } else if (heldBelt && hoveredDay.played && hoveredDay.won) {
-                return '▸ DEFENDED BELT'
-              } else if (heldBelt && hoveredDay.played && !hoveredDay.won) {
-                return '▸ LOST BELT'
-              } else if (heldBelt && !hoveredDay.played) {
-                return '▸ OFF DAY - HELD'
-              }
-              return ''
+          {/* Modal */}
+          <div className="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:w-80 bg-card border-2 border-amber-500 p-4 shadow-[0_0_20px_rgba(251,191,36,0.3)] z-50">
+            {/* Close button */}
+            <button
+              onClick={() => setClickedDay(null)}
+              className="absolute top-2 right-2 w-6 h-6 flex items-center justify-center text-muted-foreground hover:text-foreground active:text-amber-500 transition-colors"
+              aria-label="Close"
+            >
+              ×
+            </button>
+
+            {/* Date */}
+            <div className="text-xs sm:text-sm font-mono text-muted-foreground mb-3 uppercase">
+              {new Date(clickedDay.date).toLocaleDateString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+              })}
+            </div>
+
+            {/* Game Details */}
+            {clickedDay.game && (() => {
+              const game = clickedDay.game
+              const homeWon = game.homeScore > game.awayScore
+              const awayWon = game.awayScore > game.homeScore
+
+              return (
+                <div className="text-sm sm:text-base font-mono mb-3">
+                  <div className={awayWon ? 'font-bold' : ''}>
+                    {game.awayTeam} [{game.awayScore}]
+                  </div>
+                  <div className="text-muted-foreground text-xs my-1">@</div>
+                  <div className={homeWon ? 'font-bold' : ''}>
+                    {game.homeTeam} [{game.homeScore}]
+                  </div>
+                </div>
+              )
             })()}
+
+            {/* Status */}
+            <div className="text-xs sm:text-sm text-amber-500 font-orbitron uppercase border-t border-border/40 pt-3">
+              {(() => {
+                const heldBelt = clickedDay.holder === selectedTeam
+                const wonBelt = clickedDay.winner === selectedTeam && !heldBelt
+                const challengedBelt = clickedDay.challenger === selectedTeam && !heldBelt && !wonBelt
+
+                if (wonBelt) {
+                  return 'NEW CHAMPION 🏆'
+                } else if (challengedBelt) {
+                  return 'FAILED CHALLENGE'
+                } else if (heldBelt && clickedDay.played && clickedDay.won) {
+                  return 'DEFENDED BELT'
+                } else if (heldBelt && clickedDay.played && !clickedDay.won) {
+                  return 'LOST BELT'
+                } else if (heldBelt && !clickedDay.played) {
+                  return 'OFF DAY - HELD'
+                }
+                return ''
+              })()}
+            </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   )

@@ -14,6 +14,7 @@ import DetailedCalendar from './DetailedCalendar'
 import RetroScoreboard from './RetroScoreboard'
 import NextGamePreview from './NextGamePreview'
 import YearRangeSlider from './YearRangeSlider'
+import TeamSelector from './TeamSelector'
 import TeamLogo from './TeamLogo'
 import { ThemeToggle } from './ThemeToggle'
 
@@ -40,6 +41,7 @@ export default function BeltDashboard({
   const [league, setLeague] = useState<'nba' | 'wnba'>('wnba')
   const [season, setSeason] = useState<string>('all')
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null)
+  const [isAllTime, setIsAllTime] = useState(true) // Track "ALL TIME" selection explicitly
 
   // Check if league toggle should be visible
   const showLeagueToggle = searchParams.get('time') === 'dame'
@@ -70,6 +72,7 @@ export default function BeltDashboard({
     const newMin = newYears[0] || 1997
     const newMax = newYears[newYears.length - 1] || new Date().getFullYear()
     setYearRange([newMin, newMax])
+    setIsAllTime(true) // Reset to ALL TIME when switching leagues
     setSelectedTeam(null)
   }, [league, wnbaSeasons, nbaSeasons])
 
@@ -156,25 +159,36 @@ export default function BeltDashboard({
     return Array.from(teamYears).sort((a, b) => a - b)
   }, [selectedTeam, seasons])
 
-  // Adjust year range when team is selected if current range is invalid
+  // Adjust year range when team is selected
   useEffect(() => {
     if (selectedTeam && availableYearsForTeam.length > 0) {
       const teamMin = availableYearsForTeam[0]
       const teamMax = availableYearsForTeam[availableYearsForTeam.length - 1]
 
-      // If current year range doesn't overlap with team's years, reset to all team years
-      if (yearRange[0] > teamMax || yearRange[1] < teamMin) {
+      // If "ALL TIME" is selected, constrain to team's full range but keep isAllTime true
+      if (isAllTime) {
         setYearRange([teamMin, teamMax])
       }
-      // If current year is outside team's range, clamp it
-      else if (yearRange[0] < teamMin || yearRange[1] > teamMax) {
-        setYearRange([
-          Math.max(yearRange[0], teamMin),
-          Math.min(yearRange[1], teamMax)
-        ])
+      // If specific year/range is selected, clamp to team's available years
+      else {
+        // If current year range doesn't overlap with team's years, reset to all team years
+        if (yearRange[0] > teamMax || yearRange[1] < teamMin) {
+          setYearRange([teamMin, teamMax])
+          setIsAllTime(true) // Reset to ALL TIME since we're showing all team years
+        }
+        // If current year is outside team's range, clamp it
+        else if (yearRange[0] < teamMin || yearRange[1] > teamMax) {
+          setYearRange([
+            Math.max(yearRange[0], teamMin),
+            Math.min(yearRange[1], teamMax)
+          ])
+        }
       }
+    } else if (!selectedTeam && isAllTime) {
+      // When deselecting team, reset to full league range if ALL TIME
+      setYearRange([minYear, maxYear])
     }
-  }, [selectedTeam, availableYearsForTeam, yearRange])
+  }, [selectedTeam, availableYearsForTeam, isAllTime, minYear, maxYear])
 
   if (!history) {
     return (
@@ -194,29 +208,29 @@ export default function BeltDashboard({
   )
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-4 sm:space-y-6 md:space-y-8">
       {/* Theme Toggle - Top Right */}
       <div className="flex justify-end">
         <ThemeToggle />
       </div>
 
       {/* Header - Full retro LED scoreboard style */}
-      <div data-card="header" className="scoreboard-panel p-8 text-center space-y-4 relative overflow-hidden">
+      <div data-card="header" className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center space-y-2 sm:space-y-4 relative overflow-hidden">
         {/* Top LED strip */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-500 via-amber-500 to-red-500 opacity-70" />
 
-        <h1 className="text-6xl font-orbitron tracking-[0.25em] uppercase led-text" style={{ color: 'hsl(var(--led-red))' }}>
-          CHAMPIONSHIP
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-orbitron tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.25em] uppercase led-text" style={{ color: 'hsl(var(--led-red))' }}>
+          BELT TRACKER
         </h1>
-        <div className="flex items-center justify-center gap-3">
-          <div className="h-px w-12 bg-gradient-to-r from-transparent to-border" />
-          <h2 className="text-4xl font-mono tracking-[0.3em] uppercase led-text" style={{ color: 'hsl(var(--led-amber))' }}>
-            BELT TRACKER
+        <div className="flex items-center justify-center gap-2 sm:gap-3">
+          <div className="h-px w-6 sm:w-12 bg-gradient-to-r from-transparent to-border" />
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-mono tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase led-text" style={{ color: 'hsl(var(--led-amber))' }}>
+            REGULAR SEASON
           </h2>
-          <div className="h-px w-12 bg-gradient-to-l from-transparent to-border" />
+          <div className="h-px w-6 sm:w-12 bg-gradient-to-l from-transparent to-border" />
         </div>
-        <p className="text-muted-foreground text-xs font-mono tracking-[0.2em] uppercase pt-2">
-          ▸ Lineal Championship Tracking System ◂
+        <p className="text-muted-foreground text-[0.65rem] sm:text-xs font-mono tracking-[0.1em] sm:tracking-[0.2em] uppercase pt-1 sm:pt-2">
+          ▸ Lineal Championship Tracker ◂
         </p>
 
         {/* Bottom LED indicator dots */}
@@ -230,16 +244,16 @@ export default function BeltDashboard({
       {/* League Toggle - Only visible with ?time=dame */}
       {showLeagueToggle && (
         <div
-          className="flex justify-center gap-4"
+          className="flex justify-center gap-2 sm:gap-4"
           role="group"
           aria-label="League selection"
         >
           <button
             onClick={() => setLeague('wnba')}
-            className={`px-8 py-3 font-orbitron text-sm uppercase tracking-wider border-2 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+            className={`px-4 sm:px-6 md:px-8 py-2 sm:py-3 font-orbitron text-xs sm:text-sm uppercase tracking-wider border-2 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
               league === 'wnba'
                 ? 'bg-amber-500/20 text-amber-500 border-amber-500 shadow-[0_0_15px_rgba(251,191,36,0.4)]'
-                : 'bg-card text-muted-foreground border-border hover:border-muted-foreground'
+                : 'bg-card text-muted-foreground border-border active:border-muted-foreground'
             }`}
             aria-pressed={league === 'wnba'}
             aria-label="View WNBA data"
@@ -248,10 +262,10 @@ export default function BeltDashboard({
           </button>
           <button
             onClick={() => setLeague('nba')}
-            className={`px-8 py-3 font-orbitron text-sm uppercase tracking-wider border-2 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+            className={`px-4 sm:px-6 md:px-8 py-2 sm:py-3 font-orbitron text-xs sm:text-sm uppercase tracking-wider border-2 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
               league === 'nba'
                 ? 'bg-amber-500/20 text-amber-500 border-amber-500 shadow-[0_0_15px_rgba(251,191,36,0.4)]'
-                : 'bg-card text-muted-foreground border-border hover:border-muted-foreground'
+                : 'bg-card text-muted-foreground border-border active:border-muted-foreground'
             }`}
             aria-pressed={league === 'nba'}
             aria-label="View NBA data"
@@ -262,64 +276,51 @@ export default function BeltDashboard({
       )}
 
       {/* Filters */}
-      <div data-card="filters" className="scoreboard-panel p-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div data-card="filters" className="scoreboard-panel p-4 sm:p-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {/* Year Range Slider */}
           <YearRangeSlider
             minYear={selectedTeam ? availableYearsForTeam[0] || minYear : minYear}
             maxYear={selectedTeam ? availableYearsForTeam[availableYearsForTeam.length - 1] || maxYear : maxYear}
             value={yearRange}
             onChange={setYearRange}
+            isAllTime={isAllTime}
+            onAllTimeChange={setIsAllTime}
           />
 
-          {/* Team Dropdown */}
-          <div className="space-y-2">
-            <label className="text-xs font-orbitron text-muted-foreground uppercase tracking-wider">
-              ▸ Filter by Team
-            </label>
-            <select
-              value={selectedTeam || ''}
-              onChange={(e) => setSelectedTeam(e.target.value || null)}
-              className="w-full px-4 py-2.5 bg-background border-2 border-border text-foreground font-mono text-sm cursor-pointer hover:border-amber-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
-            >
-              <option value="">◆ ALL TEAMS</option>
-              {allTeams.map((team) => {
-                const franchise = franchises.find(f => f.teamAbbr === team)
-                const displayName = franchise?.displayName || team
-                return (
-                  <option key={team} value={team}>
-                    {displayName}
-                  </option>
-                )
-              })}
-            </select>
-          </div>
+          {/* Team Selector */}
+          <TeamSelector
+            teams={allTeams}
+            franchises={franchises}
+            selectedTeam={selectedTeam}
+            onTeamChange={setSelectedTeam}
+          />
         </div>
       </div>
 
-      {/* Stats & Next Game Grid */}
-      {/* season-stats: show on PAST_YEAR, THIS_YEAR, OFF_SEASON (not TEAM) */}
-      {/* next-game: show on THIS_YEAR, OFF_SEASON, and TEAM if team in title match */}
+      {/* Stats */}
       {context !== 'TEAM' && (
-        <div className={context === 'PAST_YEAR' ? "" : "grid grid-cols-1 lg:grid-cols-2 gap-6"}>
-          <RetroScoreboard
-            totalGames={history.summary.totalGames}
-            totalChanges={history.summary.totalChanges}
-            season={yearRange[0] === yearRange[1] ? yearRange[0].toString() : undefined}
-            champion={yearRange[0] === yearRange[1] ? champions[yearRange[0].toString()] : undefined}
-          />
-          {(context === 'THIS_YEAR' || context === 'OFF_SEASON') && <NextGamePreview />}
-        </div>
+        <RetroScoreboard
+          totalGames={allGames.length}
+          totalChanges={history.summary.totalChanges}
+          totalTitleBouts={history.summary.teams.reduce((sum, t) => sum + t.totalGames, 0) / 2}
+          isAllTime={isAllTime}
+        />
       )}
 
-      {/* Current Holder Card - show on PAST_YEAR, THIS_YEAR, OFF_SEASON */}
+      {/* Current Holder Card + Next Game Preview */}
       {context !== 'TEAM' && (
-        <BeltHolderCard
-          currentHolder={history.summary.currentHolder}
-          stats={currentHolderStats}
-          franchises={franchises}
-          isPastSeason={context === 'PAST_YEAR'}
-        />
+        <div className={(context === 'THIS_YEAR' || context === 'OFF_SEASON') ? "grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6" : ""}>
+          <BeltHolderCard
+            currentHolder={history.summary.currentHolder}
+            stats={currentHolderStats}
+            franchises={franchises}
+            isPastSeason={context === 'PAST_YEAR'}
+          />
+          {(context === 'THIS_YEAR' || context === 'OFF_SEASON') && (
+            <NextGamePreview />
+          )}
+        </div>
       )}
 
       {/* Team Belt Card - show on TEAM context */}
@@ -374,7 +375,7 @@ export default function BeltDashboard({
           <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
         </div>
         <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider">
-          ▸ {league.toUpperCase()} {season === 'all' ? 'ALL-TIME' : season} • {history.summary.teams.length} TEAMS TRACKED ◂
+          ▸ {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS TRACKED ◂
         </p>
       </div>
     </div>

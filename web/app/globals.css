@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Minimum width constraint */
+body {
+  min-width: 375px;
+}
+
 @layer base {
   :root {
     /* Light mode - Vintage flip-board scoreboard */
