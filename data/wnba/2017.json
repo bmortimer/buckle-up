@@ -1352,12 +1352,87 @@
       "awayTeam": "MIN",
       "homeScore": 69,
       "awayScore": 80
+    },
+    {
+      "date": "2017-09-01",
+      "homeTeam": "LAS",
+      "awayTeam": "ATL",
+      "homeScore": 81,
+      "awayScore": 56
+    },
+    {
+      "date": "2017-09-01",
+      "homeTeam": "MIN",
+      "awayTeam": "CHI",
+      "homeScore": 110,
+      "awayScore": 87
+    },
+    {
+      "date": "2017-09-01",
+      "homeTeam": "NYL",
+      "awayTeam": "SAS",
+      "homeScore": 81,
+      "awayScore": 69
+    },
+    {
+      "date": "2017-09-01",
+      "homeTeam": "PHO",
+      "awayTeam": "CON",
+      "homeScore": 86,
+      "awayScore": 66
+    },
+    {
+      "date": "2017-09-01",
+      "homeTeam": "WAS",
+      "awayTeam": "SEA",
+      "homeScore": 110,
+      "awayScore": 106
+    },
+    {
+      "date": "2017-09-02",
+      "homeTeam": "IND",
+      "awayTeam": "SAS",
+      "homeScore": 71,
+      "awayScore": 75
+    },
+    {
+      "date": "2017-09-03",
+      "homeTeam": "CHI",
+      "awayTeam": "SEA",
+      "homeScore": 80,
+      "awayScore": 85
+    },
+    {
+      "date": "2017-09-03",
+      "homeTeam": "DAL",
+      "awayTeam": "NYL",
+      "homeScore": 81,
+      "awayScore": 82
+    },
+    {
+      "date": "2017-09-03",
+      "homeTeam": "LAS",
+      "awayTeam": "CON",
+      "homeScore": 81,
+      "awayScore": 70
+    },
+    {
+      "date": "2017-09-03",
+      "homeTeam": "MIN",
+      "awayTeam": "WAS",
+      "homeScore": 86,
+      "awayScore": 72
+    },
+    {
+      "date": "2017-09-03",
+      "homeTeam": "PHO",
+      "awayTeam": "ATL",
+      "homeScore": 84,
+      "awayScore": 70
     }
   ],
   "metadata": {
-    "total_games": 193,
-    "ingested_at": "2025-11-21T11:12:58.819802",
-    "cleaned_at": "2025-12-30T09:58:37.768360",
-    "removed_playoff_games": 11
+    "total_games": 204,
+    "ingested_at": "2026-01-07T15:11:41.855278"
   }
 }

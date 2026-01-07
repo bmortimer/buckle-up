@@ -1324,12 +1324,234 @@
       "awayTeam": "MIN",
       "homeScore": 81,
       "awayScore": 75
+    },
+    {
+      "date": "2009-09-01",
+      "homeTeam": "DET",
+      "awayTeam": "PHO",
+      "homeScore": 101,
+      "awayScore": 99
+    },
+    {
+      "date": "2009-09-01",
+      "homeTeam": "LAS",
+      "awayTeam": "ATL",
+      "homeScore": 79,
+      "awayScore": 84
+    },
+    {
+      "date": "2009-09-01",
+      "homeTeam": "NYL",
+      "awayTeam": "SEA",
+      "homeScore": 58,
+      "awayScore": 65
+    },
+    {
+      "date": "2009-09-01",
+      "homeTeam": "SAC",
+      "awayTeam": "CON",
+      "homeScore": 90,
+      "awayScore": 70
+    },
+    {
+      "date": "2009-09-01",
+      "homeTeam": "SAS",
+      "awayTeam": "MIN",
+      "homeScore": 84,
+      "awayScore": 82
+    },
+    {
+      "date": "2009-09-02",
+      "homeTeam": "IND",
+      "awayTeam": "PHO",
+      "homeScore": 90,
+      "awayScore": 106
+    },
+    {
+      "date": "2009-09-03",
+      "homeTeam": "WAS",
+      "awayTeam": "SEA",
+      "homeScore": 78,
+      "awayScore": 67
+    },
+    {
+      "date": "2009-09-04",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 92,
+      "awayScore": 86
+    },
+    {
+      "date": "2009-09-04",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 88,
+      "awayScore": 85
+    },
+    {
+      "date": "2009-09-04",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 70,
+      "awayScore": 63
+    },
+    {
+      "date": "2009-09-04",
+      "homeTeam": "SAC",
+      "awayTeam": "ATL",
+      "homeScore": 90,
+      "awayScore": 98
+    },
+    {
+      "date": "2009-09-05",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 76,
+      "awayScore": 68
+    },
+    {
+      "date": "2009-09-05",
+      "homeTeam": "PHO",
+      "awayTeam": "ATL",
+      "homeScore": 100,
+      "awayScore": 82
+    },
+    {
+      "date": "2009-09-05",
+      "homeTeam": "SAS",
+      "awayTeam": "LAS",
+      "homeScore": 89,
+      "awayScore": 72
+    },
+    {
+      "date": "2009-09-06",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 84,
+      "awayScore": 75
+    },
+    {
+      "date": "2009-09-06",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 72,
+      "awayScore": 61
+    },
+    {
+      "date": "2009-09-08",
+      "homeTeam": "LAS",
+      "awayTeam": "SAS",
+      "homeScore": 76,
+      "awayScore": 68
+    },
+    {
+      "date": "2009-09-08",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 63,
+      "awayScore": 69
+    },
+    {
+      "date": "2009-09-09",
+      "homeTeam": "MIN",
+      "awayTeam": "DET",
+      "homeScore": 75,
+      "awayScore": 72
+    },
+    {
+      "date": "2009-09-10",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 86,
+      "awayScore": 79
+    },
+    {
+      "date": "2009-09-10",
+      "homeTeam": "DET",
+      "awayTeam": "NYL",
+      "homeScore": 94,
+      "awayScore": 87
+    },
+    {
+      "date": "2009-09-10",
+      "homeTeam": "SAC",
+      "awayTeam": "SAS",
+      "homeScore": 71,
+      "awayScore": 80
+    },
+    {
+      "date": "2009-09-10",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 84,
+      "awayScore": 92
+    },
+    {
+      "date": "2009-09-11",
+      "homeTeam": "ATL",
+      "awayTeam": "CON",
+      "homeScore": 88,
+      "awayScore": 64
+    },
+    {
+      "date": "2009-09-11",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 90,
+      "awayScore": 61
+    },
+    {
+      "date": "2009-09-12",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 69,
+      "awayScore": 80
+    },
+    {
+      "date": "2009-09-12",
+      "homeTeam": "SAS",
+      "awayTeam": "SEA",
+      "homeScore": 55,
+      "awayScore": 64
+    },
+    {
+      "date": "2009-09-12",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 82,
+      "awayScore": 64
+    },
+    {
+      "date": "2009-09-13",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 95,
+      "awayScore": 85
+    },
+    {
+      "date": "2009-09-13",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 86,
+      "awayScore": 65
+    },
+    {
+      "date": "2009-09-13",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 78,
+      "awayScore": 81
+    },
+    {
+      "date": "2009-09-13",
+      "homeTeam": "SAC",
+      "awayTeam": "MIN",
+      "homeScore": 88,
+      "awayScore": 66
     }
   ],
   "metadata": {
-    "total_games": 189,
-    "ingested_at": "2025-11-21T11:17:50.298980",
-    "cleaned_at": "2025-12-30T09:58:37.753665",
-    "removed_playoff_games": 32
+    "total_games": 221,
+    "ingested_at": "2026-01-07T15:11:20.777368"
   }
 }

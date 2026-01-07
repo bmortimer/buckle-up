@@ -1177,12 +1177,381 @@
       "awayTeam": "PHO",
       "homeScore": 82,
       "awayScore": 62
+    },
+    {
+      "date": "2004-09-01",
+      "homeTeam": "CHA",
+      "awayTeam": "CON",
+      "homeScore": 62,
+      "awayScore": 55
+    },
+    {
+      "date": "2004-09-01",
+      "homeTeam": "DET",
+      "awayTeam": "PHO",
+      "homeScore": 58,
+      "awayScore": 63
+    },
+    {
+      "date": "2004-09-01",
+      "homeTeam": "HOU",
+      "awayTeam": "MIN",
+      "homeScore": 64,
+      "awayScore": 72
+    },
+    {
+      "date": "2004-09-01",
+      "homeTeam": "LAS",
+      "awayTeam": "SAS",
+      "homeScore": 77,
+      "awayScore": 69
+    },
+    {
+      "date": "2004-09-01",
+      "homeTeam": "SEA",
+      "awayTeam": "SAC",
+      "homeScore": 65,
+      "awayScore": 73
+    },
+    {
+      "date": "2004-09-01",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 58,
+      "awayScore": 75
+    },
+    {
+      "date": "2004-09-02",
+      "homeTeam": "NYL",
+      "awayTeam": "CHA",
+      "homeScore": 56,
+      "awayScore": 52
+    },
+    {
+      "date": "2004-09-02",
+      "homeTeam": "SAC",
+      "awayTeam": "SAS",
+      "homeScore": 66,
+      "awayScore": 64
+    },
+    {
+      "date": "2004-09-03",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 61,
+      "awayScore": 43
+    },
+    {
+      "date": "2004-09-03",
+      "homeTeam": "HOU",
+      "awayTeam": "PHO",
+      "homeScore": 60,
+      "awayScore": 70
+    },
+    {
+      "date": "2004-09-03",
+      "homeTeam": "LAS",
+      "awayTeam": "SEA",
+      "homeScore": 82,
+      "awayScore": 81
+    },
+    {
+      "date": "2004-09-03",
+      "homeTeam": "MIN",
+      "awayTeam": "IND",
+      "homeScore": 61,
+      "awayScore": 69
+    },
+    {
+      "date": "2004-09-04",
+      "homeTeam": "CHA",
+      "awayTeam": "DET",
+      "homeScore": 58,
+      "awayScore": 66
+    },
+    {
+      "date": "2004-09-04",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 69,
+      "awayScore": 42
+    },
+    {
+      "date": "2004-09-04",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 63,
+      "awayScore": 55
+    },
+    {
+      "date": "2004-09-04",
+      "homeTeam": "SAS",
+      "awayTeam": "SAC",
+      "homeScore": 70,
+      "awayScore": 80
+    },
+    {
+      "date": "2004-09-07",
+      "homeTeam": "WAS",
+      "awayTeam": "SAC",
+      "homeScore": 67,
+      "awayScore": 63
+    },
+    {
+      "date": "2004-09-08",
+      "homeTeam": "MIN",
+      "awayTeam": "CHA",
+      "homeScore": 68,
+      "awayScore": 72
+    },
+    {
+      "date": "2004-09-08",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 72,
+      "awayScore": 58
+    },
+    {
+      "date": "2004-09-08",
+      "homeTeam": "SEA",
+      "awayTeam": "DET",
+      "homeScore": 86,
+      "awayScore": 67
+    },
+    {
+      "date": "2004-09-09",
+      "homeTeam": "CHA",
+      "awayTeam": "SAC",
+      "homeScore": 74,
+      "awayScore": 69
+    },
+    {
+      "date": "2004-09-09",
+      "homeTeam": "LAS",
+      "awayTeam": "DET",
+      "homeScore": 81,
+      "awayScore": 63
+    },
+    {
+      "date": "2004-09-09",
+      "homeTeam": "SAS",
+      "awayTeam": "HOU",
+      "homeScore": 77,
+      "awayScore": 72
+    },
+    {
+      "date": "2004-09-09",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": 71,
+      "awayScore": 59
+    },
+    {
+      "date": "2004-09-10",
+      "homeTeam": "IND",
+      "awayTeam": "SAS",
+      "homeScore": 65,
+      "awayScore": 82
+    },
+    {
+      "date": "2004-09-10",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 64,
+      "awayScore": 61
+    },
+    {
+      "date": "2004-09-10",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 66,
+      "awayScore": 77
+    },
+    {
+      "date": "2004-09-11",
+      "homeTeam": "CHA",
+      "awayTeam": "MIN",
+      "homeScore": 60,
+      "awayScore": 50
+    },
+    {
+      "date": "2004-09-11",
+      "homeTeam": "PHO",
+      "awayTeam": "DET",
+      "homeScore": 72,
+      "awayScore": 80
+    },
+    {
+      "date": "2004-09-12",
+      "homeTeam": "CON",
+      "awayTeam": "SEA",
+      "homeScore": 71,
+      "awayScore": 64
+    },
+    {
+      "date": "2004-09-12",
+      "homeTeam": "LAS",
+      "awayTeam": "SAC",
+      "homeScore": 65,
+      "awayScore": 52
+    },
+    {
+      "date": "2004-09-12",
+      "homeTeam": "NYL",
+      "awayTeam": "SAS",
+      "homeScore": 64,
+      "awayScore": 62
+    },
+    {
+      "date": "2004-09-12",
+      "homeTeam": "WAS",
+      "awayTeam": "HOU",
+      "homeScore": 75,
+      "awayScore": 63
+    },
+    {
+      "date": "2004-09-13",
+      "homeTeam": "IND",
+      "awayTeam": "SEA",
+      "homeScore": 70,
+      "awayScore": 76
+    },
+    {
+      "date": "2004-09-14",
+      "homeTeam": "DET",
+      "awayTeam": "NYL",
+      "homeScore": 82,
+      "awayScore": 71
+    },
+    {
+      "date": "2004-09-14",
+      "homeTeam": "HOU",
+      "awayTeam": "MIN",
+      "homeScore": 70,
+      "awayScore": 59
+    },
+    {
+      "date": "2004-09-14",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 73,
+      "awayScore": 60
+    },
+    {
+      "date": "2004-09-15",
+      "homeTeam": "CHA",
+      "awayTeam": "CON",
+      "homeScore": 67,
+      "awayScore": 81
+    },
+    {
+      "date": "2004-09-15",
+      "homeTeam": "SAS",
+      "awayTeam": "WAS",
+      "homeScore": 73,
+      "awayScore": 84
+    },
+    {
+      "date": "2004-09-15",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 73,
+      "awayScore": 58
+    },
+    {
+      "date": "2004-09-16",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 62,
+      "awayScore": 71
+    },
+    {
+      "date": "2004-09-16",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 77,
+      "awayScore": 71
+    },
+    {
+      "date": "2004-09-17",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 66,
+      "awayScore": 69
+    },
+    {
+      "date": "2004-09-17",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 66,
+      "awayScore": 78
+    },
+    {
+      "date": "2004-09-17",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 67,
+      "awayScore": 74
+    },
+    {
+      "date": "2004-09-17",
+      "homeTeam": "SAS",
+      "awayTeam": "CHA",
+      "homeScore": 82,
+      "awayScore": 65
+    },
+    {
+      "date": "2004-09-18",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 68,
+      "awayScore": 48
+    },
+    {
+      "date": "2004-09-18",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 80,
+      "awayScore": 83
+    },
+    {
+      "date": "2004-09-19",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 80,
+      "awayScore": 60
+    },
+    {
+      "date": "2004-09-19",
+      "homeTeam": "DET",
+      "awayTeam": "CHA",
+      "homeScore": 68,
+      "awayScore": 54
+    },
+    {
+      "date": "2004-09-19",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 79,
+      "awayScore": 75
+    },
+    {
+      "date": "2004-09-19",
+      "homeTeam": "PHO",
+      "awayTeam": "HOU",
+      "homeScore": 78,
+      "awayScore": 64
+    },
+    {
+      "date": "2004-09-19",
+      "homeTeam": "SAC",
+      "awayTeam": "MIN",
+      "homeScore": 72,
+      "awayScore": 63
     }
   ],
   "metadata": {
-    "total_games": 168,
-    "ingested_at": "2025-12-30T09:56:52.293081",
-    "cleaned_at": "2025-12-30T09:58:37.749348",
-    "removed_playoff_games": 53
+    "total_games": 221,
+    "ingested_at": "2026-01-07T15:11:13.785332"
   }
 }

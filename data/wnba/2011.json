@@ -1240,12 +1240,199 @@
       "awayTeam": "PHO",
       "homeScore": 74,
       "awayScore": 96
+    },
+    {
+      "date": "2011-09-01",
+      "homeTeam": "SAS",
+      "awayTeam": "PHO",
+      "homeScore": 86,
+      "awayScore": 68
+    },
+    {
+      "date": "2011-09-01",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 85,
+      "awayScore": 81
+    },
+    {
+      "date": "2011-09-02",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": 95,
+      "awayScore": 73
+    },
+    {
+      "date": "2011-09-02",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 83,
+      "awayScore": 55
+    },
+    {
+      "date": "2011-09-02",
+      "homeTeam": "MIN",
+      "awayTeam": "NYL",
+      "homeScore": 62,
+      "awayScore": 78
+    },
+    {
+      "date": "2011-09-02",
+      "homeTeam": "TUL",
+      "awayTeam": "SEA",
+      "homeScore": 72,
+      "awayScore": 78
+    },
+    {
+      "date": "2011-09-03",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 93,
+      "awayScore": 77
+    },
+    {
+      "date": "2011-09-03",
+      "homeTeam": "SAS",
+      "awayTeam": "SEA",
+      "homeScore": 60,
+      "awayScore": 70
+    },
+    {
+      "date": "2011-09-04",
+      "homeTeam": "ATL",
+      "awayTeam": "TUL",
+      "homeScore": 73,
+      "awayScore": 52
+    },
+    {
+      "date": "2011-09-04",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 80,
+      "awayScore": 88
+    },
+    {
+      "date": "2011-09-04",
+      "homeTeam": "NYL",
+      "awayTeam": "MIN",
+      "homeScore": 68,
+      "awayScore": 86
+    },
+    {
+      "date": "2011-09-04",
+      "homeTeam": "WAS",
+      "awayTeam": "CON",
+      "homeScore": 48,
+      "awayScore": 79
+    },
+    {
+      "date": "2011-09-06",
+      "homeTeam": "ATL",
+      "awayTeam": "CON",
+      "homeScore": 85,
+      "awayScore": 74
+    },
+    {
+      "date": "2011-09-06",
+      "homeTeam": "LAS",
+      "awayTeam": "SAS",
+      "homeScore": 65,
+      "awayScore": 82
+    },
+    {
+      "date": "2011-09-07",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 87,
+      "awayScore": 69
+    },
+    {
+      "date": "2011-09-08",
+      "homeTeam": "MIN",
+      "awayTeam": "CHI",
+      "homeScore": 78,
+      "awayScore": 69
+    },
+    {
+      "date": "2011-09-08",
+      "homeTeam": "PHO",
+      "awayTeam": "TUL",
+      "homeScore": 91,
+      "awayScore": 76
+    },
+    {
+      "date": "2011-09-09",
+      "homeTeam": "LAS",
+      "awayTeam": "TUL",
+      "homeScore": 84,
+      "awayScore": 73
+    },
+    {
+      "date": "2011-09-09",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": 83,
+      "awayScore": 75
+    },
+    {
+      "date": "2011-09-09",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": 85,
+      "awayScore": 70
+    },
+    {
+      "date": "2011-09-10",
+      "homeTeam": "LAS",
+      "awayTeam": "CHI",
+      "homeScore": 74,
+      "awayScore": 67
+    },
+    {
+      "date": "2011-09-10",
+      "homeTeam": "SAS",
+      "awayTeam": "WAS",
+      "homeScore": 82,
+      "awayScore": 74
+    },
+    {
+      "date": "2011-09-11",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": 69,
+      "awayScore": 63
+    },
+    {
+      "date": "2011-09-11",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 88,
+      "awayScore": 93
+    },
+    {
+      "date": "2011-09-11",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": 90,
+      "awayScore": 96
+    },
+    {
+      "date": "2011-09-11",
+      "homeTeam": "SEA",
+      "awayTeam": "CHI",
+      "homeScore": 81,
+      "awayScore": 70
+    },
+    {
+      "date": "2011-09-11",
+      "homeTeam": "TUL",
+      "awayTeam": "SAS",
+      "homeScore": 94,
+      "awayScore": 102
     }
   ],
   "metadata": {
-    "total_games": 177,
-    "ingested_at": "2025-11-21T11:13:14.186138",
-    "cleaned_at": "2025-12-30T09:58:37.755930",
-    "removed_playoff_games": 27
+    "total_games": 204,
+    "ingested_at": "2026-01-07T15:11:24.162562"
   }
 }

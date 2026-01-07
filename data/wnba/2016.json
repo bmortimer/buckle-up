@@ -1121,12 +1121,318 @@
       "awayTeam": "DAL",
       "homeScore": 78,
       "awayScore": 66
+    },
+    {
+      "date": "2016-09-01",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": 98,
+      "awayScore": 77
+    },
+    {
+      "date": "2016-09-01",
+      "homeTeam": "SAS",
+      "awayTeam": "LAS",
+      "homeScore": 61,
+      "awayScore": 70
+    },
+    {
+      "date": "2016-09-02",
+      "homeTeam": "CHI",
+      "awayTeam": "SEA",
+      "homeScore": 92,
+      "awayScore": 88
+    },
+    {
+      "date": "2016-09-02",
+      "homeTeam": "CON",
+      "awayTeam": "PHO",
+      "homeScore": 87,
+      "awayScore": 74
+    },
+    {
+      "date": "2016-09-02",
+      "homeTeam": "DAL",
+      "awayTeam": "LAS",
+      "homeScore": 79,
+      "awayScore": 87
+    },
+    {
+      "date": "2016-09-02",
+      "homeTeam": "MIN",
+      "awayTeam": "WAS",
+      "homeScore": 75,
+      "awayScore": 69
+    },
+    {
+      "date": "2016-09-03",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": 92,
+      "awayScore": 70
+    },
+    {
+      "date": "2016-09-04",
+      "homeTeam": "ATL",
+      "awayTeam": "SEA",
+      "homeScore": 82,
+      "awayScore": 91
+    },
+    {
+      "date": "2016-09-04",
+      "homeTeam": "CHI",
+      "awayTeam": "SAS",
+      "homeScore": 97,
+      "awayScore": 73
+    },
+    {
+      "date": "2016-09-04",
+      "homeTeam": "DAL",
+      "awayTeam": "WAS",
+      "homeScore": 83,
+      "awayScore": 88
+    },
+    {
+      "date": "2016-09-04",
+      "homeTeam": "LAS",
+      "awayTeam": "IND",
+      "homeScore": 88,
+      "awayScore": 81
+    },
+    {
+      "date": "2016-09-04",
+      "homeTeam": "MIN",
+      "awayTeam": "CON",
+      "homeScore": 93,
+      "awayScore": 79
+    },
+    {
+      "date": "2016-09-06",
+      "homeTeam": "ATL",
+      "awayTeam": "PHO",
+      "homeScore": 91,
+      "awayScore": 87
+    },
+    {
+      "date": "2016-09-06",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": 74,
+      "awayScore": 77
+    },
+    {
+      "date": "2016-09-06",
+      "homeTeam": "SAS",
+      "awayTeam": "IND",
+      "homeScore": 69,
+      "awayScore": 71
+    },
+    {
+      "date": "2016-09-07",
+      "homeTeam": "NYL",
+      "awayTeam": "SEA",
+      "homeScore": 78,
+      "awayScore": 102
+    },
+    {
+      "date": "2016-09-07",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": 118,
+      "awayScore": 81
+    },
+    {
+      "date": "2016-09-08",
+      "homeTeam": "LAS",
+      "awayTeam": "ATL",
+      "homeScore": 81,
+      "awayScore": 86
+    },
+    {
+      "date": "2016-09-09",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 95,
+      "awayScore": 88
+    },
+    {
+      "date": "2016-09-09",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 89,
+      "awayScore": 82
+    },
+    {
+      "date": "2016-09-09",
+      "homeTeam": "SAS",
+      "awayTeam": "DAL",
+      "homeScore": 84,
+      "awayScore": 92
+    },
+    {
+      "date": "2016-09-09",
+      "homeTeam": "WAS",
+      "awayTeam": "SEA",
+      "homeScore": 76,
+      "awayScore": 81
+    },
+    {
+      "date": "2016-09-11",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": 86,
+      "awayScore": 96
+    },
+    {
+      "date": "2016-09-11",
+      "homeTeam": "DAL",
+      "awayTeam": "NYL",
+      "homeScore": 84,
+      "awayScore": 81
+    },
+    {
+      "date": "2016-09-11",
+      "homeTeam": "PHO",
+      "awayTeam": "ATL",
+      "homeScore": 86,
+      "awayScore": 75
+    },
+    {
+      "date": "2016-09-11",
+      "homeTeam": "SAS",
+      "awayTeam": "MIN",
+      "homeScore": 76,
+      "awayScore": 81
+    },
+    {
+      "date": "2016-09-11",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 78,
+      "awayScore": 60
+    },
+    {
+      "date": "2016-09-11",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 73,
+      "awayScore": 80
+    },
+    {
+      "date": "2016-09-13",
+      "homeTeam": "ATL",
+      "awayTeam": "SAS",
+      "homeScore": 67,
+      "awayScore": 71
+    },
+    {
+      "date": "2016-09-13",
+      "homeTeam": "CHI",
+      "awayTeam": "MIN",
+      "homeScore": 98,
+      "awayScore": 97
+    },
+    {
+      "date": "2016-09-13",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 89,
+      "awayScore": 87
+    },
+    {
+      "date": "2016-09-13",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": 90,
+      "awayScore": 85
+    },
+    {
+      "date": "2016-09-13",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 62,
+      "awayScore": 75
+    },
+    {
+      "date": "2016-09-15",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": 94,
+      "awayScore": 91
+    },
+    {
+      "date": "2016-09-15",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": 86,
+      "awayScore": 62
+    },
+    {
+      "date": "2016-09-16",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": 92,
+      "awayScore": 68
+    },
+    {
+      "date": "2016-09-16",
+      "homeTeam": "CON",
+      "awayTeam": "DAL",
+      "homeScore": 107,
+      "awayScore": 74
+    },
+    {
+      "date": "2016-09-16",
+      "homeTeam": "IND",
+      "awayTeam": "MIN",
+      "homeScore": 75,
+      "awayScore": 82
+    },
+    {
+      "date": "2016-09-16",
+      "homeTeam": "LAS",
+      "awayTeam": "SAS",
+      "homeScore": 71,
+      "awayScore": 65
+    },
+    {
+      "date": "2016-09-17",
+      "homeTeam": "MIN",
+      "awayTeam": "ATL",
+      "homeScore": 95,
+      "awayScore": 87
+    },
+    {
+      "date": "2016-09-18",
+      "homeTeam": "IND",
+      "awayTeam": "DAL",
+      "homeScore": 83,
+      "awayScore": 60
+    },
+    {
+      "date": "2016-09-18",
+      "homeTeam": "SAS",
+      "awayTeam": "PHO",
+      "homeScore": 65,
+      "awayScore": 81
+    },
+    {
+      "date": "2016-09-18",
+      "homeTeam": "SEA",
+      "awayTeam": "CHI",
+      "homeScore": 88,
+      "awayScore": 75
+    },
+    {
+      "date": "2016-09-18",
+      "homeTeam": "WAS",
+      "awayTeam": "CON",
+      "homeScore": 78,
+      "awayScore": 87
     }
   ],
   "metadata": {
-    "total_games": 160,
-    "ingested_at": "2025-11-21T11:13:01.784870",
-    "cleaned_at": "2025-12-30T09:58:37.767255",
-    "removed_playoff_games": 44
+    "total_games": 204,
+    "ingested_at": "2026-01-07T15:11:38.256088"
   }
 }

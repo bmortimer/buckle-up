@@ -1506,12 +1506,185 @@
       "awayTeam": "WAS",
       "homeScore": 84,
       "awayScore": 75
+    },
+    {
+      "date": "2023-09-01",
+      "homeTeam": "IND",
+      "awayTeam": "DAL",
+      "homeScore": 100,
+      "awayScore": 110
+    },
+    {
+      "date": "2023-09-01",
+      "homeTeam": "MIN",
+      "awayTeam": "ATL",
+      "homeScore": 91,
+      "awayScore": 85
+    },
+    {
+      "date": "2023-09-01",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 89,
+      "awayScore": 58
+    },
+    {
+      "date": "2023-09-02",
+      "homeTeam": "LVA",
+      "awayTeam": "SEA",
+      "homeScore": 103,
+      "awayScore": 77
+    },
+    {
+      "date": "2023-09-03",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": 69,
+      "awayScore": 86
+    },
+    {
+      "date": "2023-09-03",
+      "homeTeam": "DAL",
+      "awayTeam": "IND",
+      "homeScore": 84,
+      "awayScore": 97
+    },
+    {
+      "date": "2023-09-03",
+      "homeTeam": "LAS",
+      "awayTeam": "WAS",
+      "homeScore": 72,
+      "awayScore": 64
+    },
+    {
+      "date": "2023-09-03",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": 86,
+      "awayScore": 73
+    },
+    {
+      "date": "2023-09-05",
+      "homeTeam": "CON",
+      "awayTeam": "LAS",
+      "homeScore": 90,
+      "awayScore": 76
+    },
+    {
+      "date": "2023-09-05",
+      "homeTeam": "DAL",
+      "awayTeam": "NYL",
+      "homeScore": 93,
+      "awayScore": 94
+    },
+    {
+      "date": "2023-09-05",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 69,
+      "awayScore": 96
+    },
+    {
+      "date": "2023-09-05",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 77,
+      "awayScore": 100
+    },
+    {
+      "date": "2023-09-06",
+      "homeTeam": "ATL",
+      "awayTeam": "SEA",
+      "homeScore": 79,
+      "awayScore": 68
+    },
+    {
+      "date": "2023-09-07",
+      "homeTeam": "NYL",
+      "awayTeam": "LAS",
+      "homeScore": 96,
+      "awayScore": 89
+    },
+    {
+      "date": "2023-09-08",
+      "homeTeam": "CHI",
+      "awayTeam": "MIN",
+      "homeScore": 92,
+      "awayScore": 87
+    },
+    {
+      "date": "2023-09-08",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": 76,
+      "awayScore": 59
+    },
+    {
+      "date": "2023-09-08",
+      "homeTeam": "DAL",
+      "awayTeam": "SEA",
+      "homeScore": 106,
+      "awayScore": 91
+    },
+    {
+      "date": "2023-09-08",
+      "homeTeam": "PHO",
+      "awayTeam": "LVA",
+      "homeScore": 73,
+      "awayScore": 94
+    },
+    {
+      "date": "2023-09-08",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 75,
+      "awayScore": 80
+    },
+    {
+      "date": "2023-09-10",
+      "homeTeam": "ATL",
+      "awayTeam": "DAL",
+      "homeScore": 77,
+      "awayScore": 94
+    },
+    {
+      "date": "2023-09-10",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": 91,
+      "awayScore": 102
+    },
+    {
+      "date": "2023-09-10",
+      "homeTeam": "IND",
+      "awayTeam": "MIN",
+      "homeScore": 87,
+      "awayScore": 72
+    },
+    {
+      "date": "2023-09-10",
+      "homeTeam": "LVA",
+      "awayTeam": "PHO",
+      "homeScore": 100,
+      "awayScore": 85
+    },
+    {
+      "date": "2023-09-10",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 88,
+      "awayScore": 90
+    },
+    {
+      "date": "2023-09-10",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": 89,
+      "awayScore": 91
     }
   ],
   "metadata": {
-    "total_games": 215,
-    "ingested_at": "2025-11-21T11:12:39.097859",
-    "cleaned_at": "2025-12-30T09:58:37.773215",
-    "removed_playoff_games": 25
+    "total_games": 240,
+    "ingested_at": "2026-01-07T15:11:56.287974"
   }
 }

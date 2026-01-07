@@ -1233,12 +1233,206 @@
       "awayTeam": "IND",
       "homeScore": 76,
       "awayScore": 70
+    },
+    {
+      "date": "2015-09-01",
+      "homeTeam": "IND",
+      "awayTeam": "CON",
+      "homeScore": 81,
+      "awayScore": 51
+    },
+    {
+      "date": "2015-09-01",
+      "homeTeam": "NYL",
+      "awayTeam": "ATL",
+      "homeScore": 80,
+      "awayScore": 75
+    },
+    {
+      "date": "2015-09-02",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": 73,
+      "awayScore": 53
+    },
+    {
+      "date": "2015-09-03",
+      "homeTeam": "LAS",
+      "awayTeam": "WAS",
+      "homeScore": 93,
+      "awayScore": 91
+    },
+    {
+      "date": "2015-09-03",
+      "homeTeam": "NYL",
+      "awayTeam": "CHI",
+      "homeScore": 60,
+      "awayScore": 82
+    },
+    {
+      "date": "2015-09-03",
+      "homeTeam": "SEA",
+      "awayTeam": "TUL",
+      "homeScore": 67,
+      "awayScore": 85
+    },
+    {
+      "date": "2015-09-04",
+      "homeTeam": "MIN",
+      "awayTeam": "IND",
+      "homeScore": 81,
+      "awayScore": 65
+    },
+    {
+      "date": "2015-09-04",
+      "homeTeam": "SAS",
+      "awayTeam": "CON",
+      "homeScore": 72,
+      "awayScore": 73
+    },
+    {
+      "date": "2015-09-05",
+      "homeTeam": "SAS",
+      "awayTeam": "PHO",
+      "homeScore": 52,
+      "awayScore": 82
+    },
+    {
+      "date": "2015-09-06",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": 73,
+      "awayScore": 67
+    },
+    {
+      "date": "2015-09-06",
+      "homeTeam": "CHI",
+      "awayTeam": "SEA",
+      "homeScore": 93,
+      "awayScore": 65
+    },
+    {
+      "date": "2015-09-06",
+      "homeTeam": "LAS",
+      "awayTeam": "TUL",
+      "homeScore": 92,
+      "awayScore": 73
+    },
+    {
+      "date": "2015-09-06",
+      "homeTeam": "MIN",
+      "awayTeam": "NYL",
+      "homeScore": 71,
+      "awayScore": 75
+    },
+    {
+      "date": "2015-09-08",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 73,
+      "awayScore": 67
+    },
+    {
+      "date": "2015-09-08",
+      "homeTeam": "TUL",
+      "awayTeam": "SAS",
+      "homeScore": 74,
+      "awayScore": 64
+    },
+    {
+      "date": "2015-09-08",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 76,
+      "awayScore": 72
+    },
+    {
+      "date": "2015-09-09",
+      "homeTeam": "ATL",
+      "awayTeam": "LAS",
+      "homeScore": 90,
+      "awayScore": 60
+    },
+    {
+      "date": "2015-09-09",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": 74,
+      "awayScore": 64
+    },
+    {
+      "date": "2015-09-11",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 67,
+      "awayScore": 75
+    },
+    {
+      "date": "2015-09-11",
+      "homeTeam": "CHI",
+      "awayTeam": "TUL",
+      "homeScore": 92,
+      "awayScore": 71
+    },
+    {
+      "date": "2015-09-11",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": 55,
+      "awayScore": 82
+    },
+    {
+      "date": "2015-09-11",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": 70,
+      "awayScore": 65
+    },
+    {
+      "date": "2015-09-11",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": 78,
+      "awayScore": 64
+    },
+    {
+      "date": "2015-09-13",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": 86,
+      "awayScore": 75
+    },
+    {
+      "date": "2015-09-13",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": 81,
+      "awayScore": 76
+    },
+    {
+      "date": "2015-09-13",
+      "homeTeam": "SEA",
+      "awayTeam": "SAS",
+      "homeScore": 58,
+      "awayScore": 59
+    },
+    {
+      "date": "2015-09-13",
+      "homeTeam": "TUL",
+      "awayTeam": "PHO",
+      "homeScore": 91,
+      "awayScore": 87
+    },
+    {
+      "date": "2015-09-13",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 71,
+      "awayScore": 73
     }
   ],
   "metadata": {
-    "total_games": 176,
-    "ingested_at": "2025-11-21T11:13:04.827676",
-    "cleaned_at": "2025-12-30T09:58:37.765955",
-    "removed_playoff_games": 28
+    "total_games": 204,
+    "ingested_at": "2026-01-07T15:11:34.561756"
   }
 }
