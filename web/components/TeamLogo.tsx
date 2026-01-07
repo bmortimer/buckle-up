@@ -23,15 +23,15 @@ const TEAMS_WITH_LOGOS = new Set([
   // Current teams (SVG)
   'ATL', 'CHI', 'CON', 'DAL', 'GSV', 'IND',
   'LAS', 'LVA', 'MIN', 'NYL', 'PHO', 'SEA', 'WAS',
+  // Historical teams (SVG)
+  'CHA', 'MIA', 'ORL', 'POR', 'UTA',
   // Historical teams (PNG)
-  'DET', 'ORL', 'SAS', 'TUL', 'UTA',
-  'CHA', 'CLE', 'HOU', 'MIA', 'PFI', 'SAC'
+  'DET', 'SAS', 'TUL', 'CLE', 'HOU', 'SAC'
 ])
 
 // Teams using PNG instead of SVG
 const PNG_TEAMS = new Set([
-  'DET', 'ORL', 'SAS', 'TUL', 'UTA',
-  'CHA', 'CLE', 'HOU', 'MIA', 'PFI', 'SAC'
+  'DET', 'SAS', 'TUL', 'CLE', 'HOU', 'SAC'
 ])
 
 export default function TeamLogo({ teamCode, franchises, size = 'md', className = '' }: TeamLogoProps) {

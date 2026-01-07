@@ -10,8 +10,19 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        // Retro Scoreboard
         orbitron: ['var(--font-orbitron)', 'sans-serif'],
-        mono: ['var(--font-share-tech)', 'monospace'],
+        'share-tech': ['var(--font-share-tech)', 'monospace'],
+        // Midnight Court
+        oswald: ['var(--font-oswald)', 'sans-serif'],
+        inter: ['var(--font-inter)', 'sans-serif'],
+        // Hardwood Classic
+        teko: ['var(--font-teko)', 'sans-serif'],
+        archivo: ['var(--font-archivo)', 'sans-serif'],
+        // Dynamic (set by theme)
+        display: ['var(--font-display)', 'sans-serif'],
+        mono: ['var(--font-mono)', 'monospace'],
+        body: ['var(--font-body)', 'sans-serif'],
       },
       colors: {
         gold: '#FFD700',

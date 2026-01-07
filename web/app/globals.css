@@ -7,210 +7,529 @@ body {
   min-width: 375px;
 }
 
+/* =====================================================
+   THEME DESIGN SYSTEMS
+   Each theme defines: colors, typography, shapes,
+   shadows, decorations, and animations
+
+   Note: data-skin and .dark are both on <html> element
+   ===================================================== */
+
 @layer base {
-  :root {
+  /* ============================================
+     THEME 1: RETRO SCOREBOARD
+     Classic 70s-80s arena flip-board aesthetic
+     - Sharp corners, mechanical feel
+     - Heavy borders, inset shadows
+     - LED glow effects, CRT scan lines
+     - Corner rivets decoration
+     ============================================ */
+
+  :root,
+  [data-skin="retro"] {
+    /* Typography */
+    --font-display: var(--font-orbitron);
+    --font-mono: var(--font-share-tech);
+    --font-body: var(--font-orbitron);
+
     /* Light mode - Vintage flip-board scoreboard */
-    --background: 42 25% 88%; /* Cream/beige like old scoreboards */
-    --foreground: 0 0% 10%;
+    --background: 38 30% 82%;
+    --foreground: 30 20% 15%;
+    --primary: 30 20% 15%;
+    --primary-foreground: 38 30% 85%;
+    --secondary: 35 25% 75%;
+    --secondary-foreground: 30 20% 18%;
+    --accent: 28 85% 40%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 35 22% 75%;
+    --muted-foreground: 30 15% 35%;
+    --card: 30 15% 18%;
+    --card-foreground: 45 40% 92%;
+    --border: 30 12% 55%;
+    --input: 30 12% 55%;
+    --ring: 28 85% 40%;
 
-    --primary: 0 0% 10%; /* Deep black for flip-board text */
-    --primary-foreground: 42 25% 88%;
+    /* Shape system */
+    --radius: 0.125rem;
+    --border-width: 3px;
 
-    --secondary: 38 30% 75%;
-    --secondary-foreground: 0 0% 10%;
-
-    --accent: 35 80% 50%; /* Warm amber for highlights */
-    --accent-foreground: 0 0% 10%;
-
-    --muted: 38 30% 75%;
-    --muted-foreground: 0 0% 40%;
-
-    --card: 40 20% 82%;
-    --card-foreground: 0 0% 10%;
-
-    --border: 38 20% 60%;
-    --input: 38 20% 60%;
-    --ring: 0 0% 10%;
-
-    --radius: 0.125rem; /* Sharp corners for retro look */
-
-    /* LED colors for light mode */
-    --led-red: 0 100% 50%;
-    --led-green: 120 100% 40%;
+    /* LED colors */
+    --led-red: 0 90% 55%;
+    --led-green: 145 85% 45%;
     --led-amber: 35 100% 50%;
+
+    /* Theme identity */
+    --theme-name: 'retro';
   }
 
-  .dark {
-    /* Dark mode - CRT/LED scoreboard */
-    --background: 0 0% 4%; /* Nearly black like CRT screen */
+  [data-skin="retro"].dark,
+  .dark[data-skin="retro"],
+  .dark:not([data-skin]) {
+    --background: 0 0% 4%;
     --foreground: 0 0% 95%;
-
-    --primary: 0 100% 60%; /* LED red */
+    --primary: 0 85% 58%;
     --primary-foreground: 0 0% 4%;
-
     --secondary: 0 0% 12%;
-    --secondary-foreground: 0 100% 60%;
-
-    --accent: 35 100% 50%; /* LED amber/yellow */
+    --secondary-foreground: 0 85% 58%;
+    --accent: 35 100% 50%;
     --accent-foreground: 0 0% 4%;
-
     --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 50%;
-
+    --muted-foreground: 0 0% 55%;
     --card: 0 0% 8%;
-    --card-foreground: 0 100% 60%;
-
+    --card-foreground: 0 85% 58%;
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 0 100% 60%;
+    --ring: 0 85% 58%;
 
-    --radius: 0.125rem;
-
-    /* LED colors for dark mode */
-    --led-red: 0 100% 60%;
+    --led-red: 0 100% 58%;
     --led-green: 120 100% 50%;
     --led-amber: 35 100% 50%;
   }
+
+  /* ============================================
+     THEME 2: MIDNIGHT COURT
+     Premium sports broadcasting aesthetic
+     - Clean lines, editorial feel
+     - Thin borders or borderless
+     - Subtle shadows, no glow
+     - Gold accent underlines
+     ============================================ */
+
+  [data-skin="midnight"] {
+    /* Typography */
+    --font-display: var(--font-oswald);
+    --font-mono: var(--font-inter);
+    --font-body: var(--font-inter);
+
+    /* Light mode - Broadcast studio */
+    --background: 220 20% 97%;
+    --foreground: 222 47% 11%;
+    --primary: 222 47% 25%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 222 47% 15%;
+    --accent: 45 100% 51%;
+    --accent-foreground: 222 47% 11%;
+    --muted: 220 14% 92%;
+    --muted-foreground: 220 9% 46%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 222 47% 25%;
+
+    /* Shape system */
+    --radius: 0.5rem;
+    --border-width: 1px;
+
+    /* LED colors (used as accent colors) */
+    --led-red: 0 72% 51%;
+    --led-green: 160 84% 39%;
+    --led-amber: 45 100% 51%;
+
+    --theme-name: 'midnight';
+  }
+
+  [data-skin="midnight"].dark,
+  .dark[data-skin="midnight"] {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 96%;
+    --primary: 45 100% 51%;
+    --primary-foreground: 222 47% 6%;
+    --secondary: 217 33% 12%;
+    --secondary-foreground: 210 40% 90%;
+    --accent: 45 100% 51%;
+    --accent-foreground: 222 47% 6%;
+    --muted: 217 33% 12%;
+    --muted-foreground: 215 20% 55%;
+    --card: 222 40% 10%;
+    --card-foreground: 210 40% 96%;
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 45 100% 51%;
+
+    --led-red: 0 80% 55%;
+    --led-green: 160 85% 45%;
+    --led-amber: 45 100% 55%;
+  }
+
+  /* ============================================
+     THEME 3: HARDWOOD CLASSIC
+     Basketball court and gym aesthetic
+     - Athletic, bold typography
+     - Court-line decorations
+     - Warm wood tones
+     - Painted/stencil feel
+     ============================================ */
+
+  [data-skin="hardwood"] {
+    /* Typography */
+    --font-display: var(--font-archivo);
+    --font-mono: var(--font-teko);
+    --font-body: var(--font-teko);
+
+    /* Light mode - Bright gym */
+    --background: 35 40% 92%;
+    --foreground: 25 50% 14%;
+    --primary: 24 95% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 30% 85%;
+    --secondary-foreground: 25 50% 18%;
+    --accent: 24 95% 48%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 35 25% 85%;
+    --muted-foreground: 25 20% 40%;
+    --card: 40 35% 96%;
+    --card-foreground: 25 50% 14%;
+    --border: 30 25% 75%;
+    --input: 30 25% 75%;
+    --ring: 24 95% 48%;
+
+    /* Shape system */
+    --radius: 0.25rem;
+    --border-width: 2px;
+
+    /* LED colors (warm) */
+    --led-red: 0 75% 50%;
+    --led-green: 145 70% 40%;
+    --led-amber: 24 95% 50%;
+
+    --theme-name: 'hardwood';
+  }
+
+  [data-skin="hardwood"].dark,
+  .dark[data-skin="hardwood"] {
+    --background: 25 30% 7%;
+    --foreground: 35 30% 92%;
+    --primary: 24 100% 55%;
+    --primary-foreground: 25 30% 7%;
+    --secondary: 25 25% 13%;
+    --secondary-foreground: 35 30% 88%;
+    --accent: 24 100% 55%;
+    --accent-foreground: 25 30% 7%;
+    --muted: 25 25% 13%;
+    --muted-foreground: 30 15% 50%;
+    --card: 25 28% 11%;
+    --card-foreground: 35 30% 92%;
+    --border: 25 20% 22%;
+    --input: 25 20% 22%;
+    --ring: 24 100% 55%;
+
+    --led-red: 0 80% 55%;
+    --led-green: 145 75% 45%;
+    --led-amber: 24 100% 58%;
+  }
 }
+
+/* =====================================================
+   BASE STYLES
+   ===================================================== */
 
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "tnum" 1; /* Tabular numbers everywhere */
+    font-family: var(--font-body);
+    font-feature-settings: "tnum" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  /* CRT screen effect overlay - only in dark mode */
-  body.dark::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 9999;
-    /* Heavy scan lines */
-    background: repeating-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0) 0px,
-      rgba(0, 0, 0, 0) 1px,
-      rgba(0, 0, 0, 0.5) 1px,
-      rgba(0, 0, 0, 0.5) 2px
-    );
-    /* Screen flicker */
-    animation: flicker 0.15s infinite alternate;
-  }
-
-  /* Subtle screen curvature effect - dark mode only */
-  body.dark::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 9998;
-    background: radial-gradient(
-      ellipse at center,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 60%,
-      rgba(0, 0, 0, 0.6) 100%
-    );
-  }
-
+  /* Typography - varies by theme */
   h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
 
-  /* Data/numbers should be tabular for alignment */
   .tabular-nums {
     font-variant-numeric: tabular-nums;
   }
+}
 
-  /* LED glow effect for text in dark mode */
+/* =====================================================
+   RETRO SCOREBOARD - CRT Effects (dark mode only)
+   ===================================================== */
+
+/* CRT scan lines */
+.dark:not([data-skin]) body::before,
+[data-skin="retro"].dark body::before,
+.dark[data-skin="retro"] body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 1px,
+    rgba(0, 0, 0, 0.4) 1px,
+    rgba(0, 0, 0, 0.4) 2px
+  );
+  animation: flicker 0.15s infinite alternate;
+}
+
+/* Screen curvature */
+.dark:not([data-skin]) body::after,
+[data-skin="retro"].dark body::after,
+.dark[data-skin="retro"] body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9998;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+@keyframes flicker {
+  0% { opacity: 0.97; }
+  100% { opacity: 1; }
+}
+
+/* =====================================================
+   COMPONENT STYLES
+   ===================================================== */
+
+@layer components {
+  /* ---- SCOREBOARD PANEL ---- */
+  .scoreboard-panel {
+    background: hsl(var(--card));
+    border: var(--border-width) solid hsl(var(--border));
+    border-radius: var(--radius);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  /* Retro panel style */
+  :root .scoreboard-panel,
+  [data-skin="retro"] .scoreboard-panel {
+    box-shadow:
+      inset 0 2px 4px rgba(0, 0, 0, 0.3),
+      0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .dark:not([data-skin]) .scoreboard-panel,
+  [data-skin="retro"].dark .scoreboard-panel,
+  .dark[data-skin="retro"] .scoreboard-panel {
+    box-shadow:
+      inset 0 2px 4px rgba(0, 0, 0, 0.6),
+      0 0 20px rgba(255, 0, 0, 0.1),
+      0 4px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Midnight panel style */
+  [data-skin="midnight"] .scoreboard-panel {
+    border-color: transparent;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  [data-skin="midnight"].dark .scoreboard-panel,
+  .dark[data-skin="midnight"] .scoreboard-panel {
+    border-color: hsl(var(--border));
+    box-shadow: 0 0 0 1px hsl(var(--accent) / 0.2), 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Hardwood panel style */
+  [data-skin="hardwood"] .scoreboard-panel {
+    box-shadow: 0 2px 0 hsl(var(--border)), 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  [data-skin="hardwood"].dark .scoreboard-panel,
+  .dark[data-skin="hardwood"] .scoreboard-panel {
+    box-shadow: 0 2px 0 hsl(var(--accent) / 0.3), 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  /* ---- LED TEXT EFFECTS ---- */
   .led-text {
+    font-family: var(--font-mono);
+  }
+
+  /* Retro: Strong glow in dark mode */
+  :root .led-text,
+  [data-skin="retro"] .led-text {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .dark:not([data-skin]) .led-text,
+  [data-skin="retro"].dark .led-text,
+  .dark[data-skin="retro"] .led-text {
     text-shadow:
       0 0 10px currentColor,
       0 0 20px currentColor,
       0 0 30px currentColor;
   }
 
-  /* Light mode gets drop shadow instead of glow */
-  body:not(.dark) .led-text {
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  /* Midnight: Clean look */
+  [data-skin="midnight"] .led-text {
+    text-shadow: none;
+    font-weight: 600;
   }
 
-  /* Flicker animation for CRT effect */
-  @keyframes flicker {
-    0% { opacity: 0.98; }
-    100% { opacity: 1; }
+  [data-skin="midnight"].dark .led-text,
+  .dark[data-skin="midnight"] .led-text {
+    text-shadow: 0 0 20px currentColor;
   }
 
-  /* Number flip animation */
-  @keyframes flip {
-    0% { transform: rotateX(0deg); }
-    50% { transform: rotateX(90deg); }
-    100% { transform: rotateX(0deg); }
+  /* Hardwood: Bold with subtle shadow */
+  [data-skin="hardwood"] .led-text {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    font-weight: 700;
   }
 
-  .flip-animation {
-    animation: flip 0.6s ease-in-out;
+  [data-skin="hardwood"].dark .led-text,
+  .dark[data-skin="hardwood"] .led-text {
+    text-shadow: 0 0 15px currentColor;
   }
 
-  /* Ticker tape scroll */
-  @keyframes ticker {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+  /* ---- LED STATUS BARS ---- */
+  /* Only show on retro theme */
+  .led-bar-top,
+  .led-bar-bottom {
+    display: none;
   }
 
-  .ticker-scroll {
-    animation: ticker 30s linear infinite;
+  :root .led-bar-top,
+  [data-skin="retro"] .led-bar-top {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      hsl(var(--led-red)) 20%,
+      hsl(var(--led-amber)) 50%,
+      hsl(var(--led-red)) 80%,
+      transparent 100%
+    );
+    opacity: 0.7;
   }
 
-  /* Smooth scroll for timeline */
-  .overflow-x-auto {
-    scrollbar-width: thin;
-    scrollbar-color: hsl(var(--led-amber)) hsl(var(--muted));
+  :root .led-bar-bottom,
+  [data-skin="retro"] .led-bar-bottom {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: hsl(var(--led-green));
+    opacity: 0.5;
   }
 
-  .overflow-x-auto::-webkit-scrollbar {
-    height: 8px;
+  /* ---- ACCENT DECORATIONS ---- */
+
+  /* Midnight: Gold underline on accent-line elements */
+  [data-skin="midnight"] .accent-line::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: hsl(var(--accent));
+    margin: 8px auto 0;
   }
 
-  .overflow-x-auto::-webkit-scrollbar-track {
-    background: hsl(var(--muted));
+  /* Hardwood: Orange top stripe on panels */
+  [data-skin="hardwood"] .scoreboard-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 3px;
+    background: hsl(var(--accent));
+    opacity: 0.8;
   }
+}
 
-  .overflow-x-auto::-webkit-scrollbar-thumb {
-    background: hsl(var(--led-amber));
-  }
+/* =====================================================
+   ANIMATIONS
+   ===================================================== */
 
-  .overflow-x-auto::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--led-amber) / 0.8);
-  }
+@keyframes flip {
+  0% { transform: rotateX(0deg); }
+  50% { transform: rotateX(90deg); }
+  100% { transform: rotateX(0deg); }
+}
 
-  /* Retro boxy panels */
-  .scoreboard-panel {
-    background: hsl(var(--card));
-    border: 3px solid hsl(var(--border));
-    box-shadow:
-      inset 0 2px 4px rgba(0, 0, 0, 0.3),
-      0 4px 8px rgba(0, 0, 0, 0.4);
-  }
+.flip-animation {
+  animation: flip 0.6s ease-in-out;
+}
 
-  body.dark .scoreboard-panel {
-    box-shadow:
-      inset 0 2px 4px rgba(0, 0, 0, 0.6),
-      0 0 20px rgba(255, 0, 0, 0.1),
-      0 4px 8px rgba(0, 0, 0, 0.8);
-  }
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-scroll {
+  animation: ticker 30s linear infinite;
+}
+
+/* =====================================================
+   SCROLLBAR STYLES
+   ===================================================== */
+
+.overflow-x-auto {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--accent)) hsl(var(--muted));
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  height: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: var(--radius);
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: hsl(var(--accent));
+  border-radius: var(--radius);
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent) / 0.8);
+}
+
+/* =====================================================
+   FONT CLASSES
+   ===================================================== */
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Legacy compatibility */
+.font-orbitron {
+  font-family: var(--font-display);
 }

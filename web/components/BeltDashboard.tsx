@@ -16,7 +16,7 @@ import NextGamePreview from './NextGamePreview'
 import YearRangeSlider from './YearRangeSlider'
 import TeamSelector from './TeamSelector'
 import TeamLogo from './TeamLogo'
-import { ThemeToggle } from './ThemeToggle'
+import { ThemeSwitcher } from './ThemeSwitcher'
 import BuyMeCoffee from './BuyMeCoffee'
 
 interface BeltDashboardProps {
@@ -210,17 +210,17 @@ export default function BeltDashboard({
 
   return (
     <div className="space-y-4 sm:space-y-6 md:space-y-8">
-      {/* Theme Toggle - Top Right */}
+      {/* Theme Switcher - Top Right */}
       <div className="flex justify-end">
-        <ThemeToggle />
+        <ThemeSwitcher />
       </div>
 
-      {/* Header - Full retro LED scoreboard style */}
-      <div data-card="header" className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center space-y-2 sm:space-y-4 relative overflow-hidden">
-        {/* Top LED strip */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-500 via-amber-500 to-red-500 opacity-70" />
+      {/* Header */}
+      <div data-card="header" className="scoreboard-panel panel-rivets p-4 sm:p-6 md:p-8 text-center space-y-2 sm:space-y-4 relative overflow-hidden">
+        {/* LED strip - shown/hidden by CSS */}
+        <div className="led-bar-top" />
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-orbitron tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.25em] uppercase led-text" style={{ color: 'hsl(var(--led-red))' }}>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.25em] uppercase led-text accent-line" style={{ color: 'hsl(var(--led-red))' }}>
           BELT TRACKER
         </h1>
         <div className="flex items-center justify-center gap-2 sm:gap-3">
@@ -231,15 +231,11 @@ export default function BeltDashboard({
           <div className="h-px w-6 sm:w-12 bg-gradient-to-l from-transparent to-border" />
         </div>
         <p className="text-muted-foreground text-[0.65rem] sm:text-xs font-mono tracking-[0.1em] sm:tracking-[0.2em] uppercase pt-1 sm:pt-2">
-          ▸ Lineal Championship Tracker ◂
+          Lineal Championship Tracker
         </p>
 
-        {/* Bottom LED indicator dots */}
-        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
-          <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
-          <div className="w-1.5 h-1.5 rounded-full bg-green-500 opacity-60" />
-          <div className="w-1.5 h-1.5 rounded-full bg-amber-500 opacity-60" />
-        </div>
+        {/* Bottom LED bar - shown/hidden by CSS */}
+        <div className="led-bar-bottom" />
       </div>
 
       {/* League Toggle - Only visible with ?time=dame */}
@@ -367,17 +363,17 @@ export default function BeltDashboard({
       {/* <Timeline changes={history.changes} franchises={franchises} selectedTeam={selectedTeam} /> */}
 
       {/* Footer */}
-      <div data-card="footer" className="scoreboard-panel p-6 text-center">
-        <div className="flex items-center justify-center gap-3 mb-3">
-          <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-          <p className="text-xs font-mono text-muted-foreground tracking-wider uppercase">
-            Data updates nightly at 03:00 ET • System Active
+      <div data-card="footer" className="scoreboard-panel panel-rivets p-6 text-center relative overflow-hidden">
+        <div className="led-bar-top" />
+        <div className="relative z-10">
+          <p className="text-xs font-mono text-muted-foreground tracking-wider uppercase mb-2">
+            Data updates nightly at 03:00 ET
           </p>
-          <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+          <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider">
+            {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-accent hover:opacity-80 transition-colors">SUPPORT</a>
+          </p>
         </div>
-        <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider">
-          ▸ {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS TRACKED • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-amber-500/70 hover:text-amber-500 transition-colors">☕ SUPPORT</a> ◂
-        </p>
+        <div className="led-bar-bottom" />
       </div>
 
       {/* Buy Me a Coffee */}

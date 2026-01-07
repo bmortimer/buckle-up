@@ -7,9 +7,9 @@ interface RetroScoreboardProps {
 
 export default function RetroScoreboard({ totalGames, totalChanges, totalTitleBouts, isAllTime = false }: RetroScoreboardProps) {
   return (
-    <div data-card="season-stats" className="scoreboard-panel p-3 sm:p-4 md:p-6 relative overflow-hidden">
-      {/* Top LED status bar */}
-      <div className="absolute top-0 left-0 right-0 h-0.5 sm:h-1 bg-red-500 opacity-70" />
+    <div data-card="season-stats" className="scoreboard-panel panel-rivets p-3 sm:p-4 md:p-6 relative overflow-hidden">
+      {/* Top LED status bar - shown/hidden by CSS based on theme */}
+      <div className="led-bar-top" />
 
       <div className="relative z-10">
         {/* Header */}
@@ -72,8 +72,8 @@ export default function RetroScoreboard({ totalGames, totalChanges, totalTitleBo
         </div>
       </div>
 
-      {/* Bottom status bar */}
-      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-green-500 opacity-40" />
+      {/* Bottom LED bar - shown/hidden by CSS based on theme */}
+      <div className="led-bar-bottom" />
     </div>
   )
 }

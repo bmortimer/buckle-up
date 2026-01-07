@@ -14,9 +14,9 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
   const displayName = getTeamDisplayName(currentHolder, franchises)
 
   return (
-    <div data-card="current-holder" className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
-      {/* LED status bar at top */}
-      <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" />
+    <div data-card="current-holder" className="scoreboard-panel panel-rivets p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
+      {/* LED status bar at top - shown/hidden by CSS based on theme */}
+      <div className="led-bar-top" />
 
       <div className="relative z-10">
         <div className="text-[0.6rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 font-orbitron text-center">
@@ -97,11 +97,8 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
         </div>
       </div>
 
-      {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      {/* Bottom LED bar - shown/hidden by CSS based on theme */}
+      <div className="led-bar-bottom" />
     </div>
   )
 }
