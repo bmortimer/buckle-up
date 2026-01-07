@@ -12,9 +12,14 @@ import { VizGenerator } from './viz/generator.js';
 interface CliOptions {
   league: 'nba' | 'wnba';
   seasons: string[]; // Can be multiple seasons
-  champion: string;
+  champion?: string; // Optional - will auto-lookup if not provided
   save?: boolean;
   visualize?: boolean;
+}
+
+interface ChampionsData {
+  description: string;
+  champions: Record<string, string>;
 }
 
 function parseArgs(): CliOptions | null {
@@ -36,7 +41,7 @@ function parseArgs(): CliOptions | null {
   const save = args.includes('--save');
   const visualize = args.includes('--visualize');
 
-  if (!league || !seasonArg || !champion) {
+  if (!league || !seasonArg) {
     console.error('Error: Missing required arguments\n');
     printHelp();
     process.exit(1);

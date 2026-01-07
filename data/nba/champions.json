@@ -1,0 +1,9 @@
+{
+  "description": "NBA champions by season - value is the team that starts the belt for that season (previous year's champion)",
+  "champions": {
+    "2021-22": "MIL",
+    "2022-23": "GSW",
+    "2023-24": "DEN",
+    "2024-25": "BOS"
+  }
+}

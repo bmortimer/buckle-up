@@ -44,7 +44,7 @@ export function getAvailableSeasons(league: 'nba' | 'wnba'): string[] {
     const files = readdirSync(leagueDir)
 
     return files
-      .filter((f: string) => f.endsWith('.json') && !f.includes('belt'))
+      .filter((f: string) => f.endsWith('.json') && !f.includes('belt') && !f.includes('champions'))
       .map((f: string) => f.replace('.json', ''))
       .sort()
       .reverse() // Most recent first
@@ -59,23 +59,21 @@ export function getCurrentSeason(league: 'nba' | 'wnba'): string {
   return seasons[0] || (league === 'wnba' ? '2024' : '2024-25')
 }
 
+export function loadChampions(league: 'nba' | 'wnba'): Record<string, string> {
+  try {
+    const filePath = join(DATA_DIR, league, 'champions.json')
+    const content = readFileSync(filePath, 'utf-8')
+    const data = JSON.parse(content)
+    return data.champions || {}
+  } catch (error: any) {
+    if (error.code !== 'ENOENT') {
+      console.error(`Failed to load ${league} champions:`, error)
+    }
+    return {}
+  }
+}
+
 export function getDefendingChampion(league: 'nba' | 'wnba', season: string): string {
-  // Hardcoded for now - could be loaded from a champions.json file
-  const wnbaChampions: Record<string, string> = {
-    '2024': 'LVA', // 2023 champion
-    '2023': 'LVA', // 2022 champion
-    '2022': 'CHI', // 2021 champion
-  }
-
-  const nbaChampions: Record<string, string> = {
-    '2024-25': 'BOS', // 2024 champion
-    '2023-24': 'DEN', // 2023 champion
-    '2022-23': 'GSW', // 2022 champion
-  }
-
-  if (league === 'wnba') {
-    return wnbaChampions[season] || 'LVA'
-  } else {
-    return nbaChampions[season] || 'BOS'
-  }
+  const champions = loadChampions(league)
+  return champions[season] || (league === 'wnba' ? 'LVA' : 'BOS')
 }

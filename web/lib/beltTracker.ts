@@ -148,27 +148,81 @@ export class BeltTracker {
 }
 
 /**
- * Track belt across multiple seasons continuously
- * The belt carries over from the end of one season to the start of the next
+ * Track belt across multiple seasons with per-season reset
+ * Each season starts with the previous year's actual champion (from champions lookup)
+ * Belt transfers during the season when holder loses, but resets at season start
  */
 export function trackAllSeasons(
   seasonsData: { season: string; games: Game[] }[],
   franchises: FranchiseInfo[],
-  initialHolder: string
+  champions: Record<string, string>
 ): BeltHistory {
-  // Combine all games in chronological order
-  const allGames: Game[] = []
+  const allChanges: BeltChange[] = []
+  const teamStatsMap = new Map<string, TeamBeltStats>()
+
+  const initStats = (team: string): TeamBeltStats => ({
+    team,
+    timesHeld: 0,
+    totalGames: 0,
+    longestReign: 0,
+    wins: 0,
+    losses: 0,
+  })
+
+  let finalHolder = ''
+
+  // Process each season separately
   for (const seasonData of seasonsData) {
-    allGames.push(...seasonData.games)
+    // Get the starting champion for this season from the champions lookup
+    const startingChampion = champions[seasonData.season]
+    if (!startingChampion) {
+      console.warn(`No champion defined for season ${seasonData.season}, skipping`)
+      continue
+    }
+
+    // Track this season
+    const tracker = new BeltTracker(startingChampion)
+    const seasonHistory = tracker.trackSeason(seasonData.games, franchises)
+
+    // Merge changes
+    allChanges.push(...seasonHistory.changes)
+
+    // Merge team stats
+    for (const teamStats of seasonHistory.summary.teams) {
+      const existing = teamStatsMap.get(teamStats.team)
+      if (existing) {
+        existing.timesHeld += teamStats.timesHeld
+        existing.totalGames += teamStats.totalGames
+        existing.wins += teamStats.wins
+        existing.losses += teamStats.losses
+        existing.longestReign = Math.max(existing.longestReign, teamStats.longestReign)
+      } else {
+        teamStatsMap.set(teamStats.team, { ...teamStats })
+      }
+    }
+
+    // Track the final holder (from the last season processed)
+    finalHolder = seasonHistory.summary.currentHolder
   }
 
-  // Track through all games at once (this naturally carries belt across seasons)
-  const tracker = new BeltTracker(initialHolder)
-  const history = tracker.trackSeason(allGames, franchises)
+  // Convert team stats map to sorted array
+  const teams = Array.from(teamStatsMap.values()).sort(
+    (a, b) => b.totalGames - a.totalGames
+  )
 
-  // Override season info for all-time view
-  history.season = 'All-Time'
-  history.league = 'WNBA'
+  // Calculate total games from all seasons
+  const totalGames = seasonsData.reduce((sum, sd) => sum + sd.games.length, 0)
 
-  return history
+  return {
+    season: 'All-Time',
+    league: 'WNBA',
+    startingTeam: champions[seasonsData[0]?.season] || '',
+    changes: allChanges,
+    summary: {
+      totalGames,
+      totalChanges: allChanges.length,
+      teams,
+      currentHolder: finalHolder,
+    },
+  }
 }

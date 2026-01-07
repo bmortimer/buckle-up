@@ -127,8 +127,8 @@ export default function BeltDashboard({
       games: seasons[s].games
     }))
 
-    return trackAllSeasons(seasonsData, franchises, 'LAS')
-  }, [yearRange, seasons, franchises])
+    return trackAllSeasons(seasonsData, franchises, champions)
+  }, [yearRange, seasons, franchises, champions])
 
   // Get all teams that appear in the selected year range
   const allTeams = useMemo(() => {
