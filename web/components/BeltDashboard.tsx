@@ -370,7 +370,7 @@ export default function BeltDashboard({
             Data updates nightly at 03:00 ET
           </p>
           <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider">
-            {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-accent hover:opacity-80 transition-colors">SUPPORT</a>
+            {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 transition-colors">DONATE</a>
           </p>
         </div>
         <div className="led-bar-bottom" />

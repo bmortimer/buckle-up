@@ -63,9 +63,8 @@ export default function NextGamePreview({ franchises = [] }: NextGamePreviewProp
             </div>
 
             <div
-              className="text-base sm:text-lg md:text-xl font-orbitron text-foreground uppercase tracking-wide sm:tracking-wider led-text"
-              style={{ color: 'hsl(var(--led-red))' }}
-            >
+              className="text-sm sm:text-base md:text-lg text-foreground mb-4 sm:mb-6 md:mb-8 font-orbitron tracking-wide sm:tracking-wider uppercase">
+                
               {nextGame.opponent}
             </div>
           </div>

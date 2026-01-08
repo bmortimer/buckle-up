@@ -48,7 +48,7 @@ export default function RetroScoreboard({ totalGames, totalChanges, totalTitleBo
               {totalTitleBouts}
             </div>
             <div className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.6rem] font-orbitron uppercase tracking-wide sm:tracking-wider text-muted-foreground">
-              TITLE<br/>BOUTS
+              TITLE BOUTS
             </div>
           </div>
 
@@ -66,7 +66,7 @@ export default function RetroScoreboard({ totalGames, totalChanges, totalTitleBo
               {totalChanges}
             </div>
             <div className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.6rem] font-orbitron uppercase tracking-wide sm:tracking-wider text-muted-foreground">
-              BELT<br/>CHANGES
+              BELT CHANGES
             </div>
           </div>
         </div>
