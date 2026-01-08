@@ -37,16 +37,6 @@ export default function TeamBeltCard({
           <TeamLogo teamCode={team} franchises={franchises} size="xl" />
         </div>
 
-        {/* Team code in giant LED style */}
-        <div
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-mono mb-2 sm:mb-3 tabular-nums tracking-[0.2em] sm:tracking-[0.25em] md:tracking-[0.3em] led-text"
-          style={{
-            color: 'hsl(var(--led-amber))',
-          }}
-        >
-          {team}
-        </div>
-
         <div className="text-sm sm:text-base md:text-lg text-foreground mb-4 sm:mb-6 md:mb-8 font-orbitron tracking-wide sm:tracking-wider uppercase">
           {displayName}
         </div>

@@ -19,7 +19,7 @@ export function SkinProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // Load saved skin from localStorage
-    const savedSkin = localStorage.getItem(SKIN_STORAGE_KEY) as Skin | null
+    const savedSkin = localStorage.getItem(SKIN_STORAGE_KEY)
     // Migrate old values to new schema
     if (savedSkin === 'retro' || savedSkin === 'hardwood') {
       localStorage.setItem(SKIN_STORAGE_KEY, 'default')

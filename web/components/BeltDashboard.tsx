@@ -18,6 +18,7 @@ import TeamSelector from './TeamSelector'
 import TeamLogo from './TeamLogo'
 import { ThemeSwitcher } from './ThemeSwitcher'
 import BuyMeCoffee from './BuyMeCoffee'
+import Link from 'next/link'
 
 interface BeltDashboardProps {
   wnbaSeasons: Record<string, SeasonData>
@@ -231,7 +232,9 @@ export default function BeltDashboard({
           <div className="h-px w-6 sm:w-12 bg-gradient-to-l from-transparent to-border" />
         </div>
         <p className="text-muted-foreground text-[0.65rem] sm:text-xs font-mono tracking-[0.1em] sm:tracking-[0.2em] uppercase pt-1 sm:pt-2">
-          Lineal Championship Tracker
+          <Link href="/about" className="hover:text-primary transition-colors">
+            Lineal Championship Tracker <span className="text-primary">?</span>
+          </Link>
         </p>
 
         {/* Bottom LED bar - shown/hidden by CSS */}
