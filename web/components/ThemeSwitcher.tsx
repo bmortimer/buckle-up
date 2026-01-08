@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { useSkin } from './SkinProvider'
 
-type Skin = 'retro' | 'midnight' | 'hardwood'
+type Skin = 'default' | 'midnight'
 
 interface ThemeOption {
   id: Skin
@@ -16,25 +16,18 @@ interface ThemeOption {
 
 const themes: ThemeOption[] = [
   {
-    id: 'retro',
-    name: 'Retro Scoreboard',
-    description: 'CRT scan lines, LED glow, rivets',
-    lightPreview: { bg: '#d4c4a8', accent: '#b85c14', text: '#2d2518' },
+    id: 'default',
+    name: 'Court Classic',
+    description: 'Hardwood light, Retro dark',
+    lightPreview: { bg: '#f0e6d2', accent: '#ea580c', text: '#292018' },
     darkPreview: { bg: '#0a0a0a', accent: '#e63333', text: '#f2f2f2' },
   },
   {
     id: 'midnight',
     name: 'Midnight Court',
-    description: 'Clean cards, gold accents, Oswald',
+    description: 'Clean cards, gold accents',
     lightPreview: { bg: '#f7f8fa', accent: '#e6b800', text: '#172554' },
     darkPreview: { bg: '#0c1424', accent: '#fbbf24', text: '#f0f4f8' },
-  },
-  {
-    id: 'hardwood',
-    name: 'Hardwood Classic',
-    description: 'Court lines, bold Archivo type',
-    lightPreview: { bg: '#f0e6d2', accent: '#ea580c', text: '#292018' },
-    darkPreview: { bg: '#181210', accent: '#f97316', text: '#f0e6d2' },
   },
 ]
 

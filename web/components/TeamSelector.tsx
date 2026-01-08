@@ -54,14 +54,14 @@ export default function TeamSelector({ teams, franchises, selectedTeam, onTeamCh
       {/* Clickable Team Display */}
       <button
         onClick={() => setIsOpen(true)}
-        className="w-full scoreboard-panel p-4 sm:p-5 relative group hover:border-primary transition-all active:scale-[0.98]"
+        className="w-full scoreboard-panel p-2 sm:p-3 relative group hover:border-primary transition-all active:scale-[0.98]"
       >
         {/* Team Display */}
         <div className="text-center">
-          <div className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl font-mono font-bold uppercase tracking-wider transition-all group-hover:scale-105" style={{ color: 'hsl(var(--primary))' }}>
+          <div className="text-lg sm:text-xl md:text-lg lg:text-xl font-mono font-bold uppercase tracking-wider transition-all group-hover:scale-105" style={{ color: 'hsl(var(--primary))' }}>
             {displayText}
           </div>
-          <div className="text-[0.6rem] text-muted-foreground/60 font-mono mt-2 uppercase tracking-wider">
+          <div className="text-[0.55rem] text-muted-foreground/60 font-mono mt-1 uppercase tracking-wider">
             Click to change ▸
           </div>
         </div>

@@ -9,62 +9,60 @@ body {
 
 /* =====================================================
    THEME DESIGN SYSTEMS
-   Each theme defines: colors, typography, shapes,
-   shadows, decorations, and animations
 
-   Note: data-skin and .dark are both on <html> element
+   Default: Hardwood Light + Retro Dark (combined)
+   Midnight Court: Premium broadcasting aesthetic
    ===================================================== */
 
 @layer base {
   /* ============================================
-     THEME 1: RETRO SCOREBOARD
-     Classic 70s-80s arena flip-board aesthetic
-     - Sharp corners, mechanical feel
-     - Heavy borders, inset shadows
-     - LED glow effects, CRT scan lines
-     - Corner rivets decoration
+     DEFAULT THEME (Hardwood Light + Retro Dark)
+     Light: Warm gym, wood tones, orange accents
+     Dark: CRT effects, LED glow, red/amber
      ============================================ */
 
-  :root,
-  [data-skin="retro"] {
-    /* Typography */
+  :root {
+    /* Typography - Hardwood style for light */
+    --font-display: var(--font-archivo);
+    --font-mono: var(--font-teko);
+    --font-body: var(--font-teko);
+
+    /* Light mode - Bright gym aesthetic */
+    --background: 35 40% 92%;
+    --foreground: 25 50% 14%;
+    --primary: 24 95% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 30% 85%;
+    --secondary-foreground: 25 50% 18%;
+    --accent: 24 95% 48%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 35 25% 85%;
+    --muted-foreground: 25 20% 40%;
+    --card: 40 35% 96%;
+    --card-foreground: 25 50% 14%;
+    --border: 30 25% 75%;
+    --input: 30 25% 75%;
+    --ring: 24 95% 48%;
+
+    /* Shape system - slightly rounded */
+    --radius: 0.25rem;
+    --border-width: 2px;
+
+    /* LED colors (warm) */
+    --led-red: 0 75% 50%;
+    --led-green: 145 70% 40%;
+    --led-amber: 24 95% 50%;
+
+    --theme-name: 'default';
+  }
+
+  .dark:not([data-skin="midnight"]) {
+    /* Typography switches to Retro feel */
     --font-display: var(--font-orbitron);
     --font-mono: var(--font-share-tech);
     --font-body: var(--font-orbitron);
 
-    /* Light mode - Vintage flip-board scoreboard */
-    --background: 38 30% 82%;
-    --foreground: 30 20% 15%;
-    --primary: 30 20% 15%;
-    --primary-foreground: 38 30% 85%;
-    --secondary: 35 25% 75%;
-    --secondary-foreground: 30 20% 18%;
-    --accent: 28 85% 40%;
-    --accent-foreground: 0 0% 100%;
-    --muted: 35 22% 75%;
-    --muted-foreground: 30 15% 35%;
-    --card: 30 15% 18%;
-    --card-foreground: 45 40% 92%;
-    --border: 30 12% 55%;
-    --input: 30 12% 55%;
-    --ring: 28 85% 40%;
-
-    /* Shape system */
-    --radius: 0.125rem;
-    --border-width: 3px;
-
-    /* LED colors */
-    --led-red: 0 90% 55%;
-    --led-green: 145 85% 45%;
-    --led-amber: 35 100% 50%;
-
-    /* Theme identity */
-    --theme-name: 'retro';
-  }
-
-  [data-skin="retro"].dark,
-  .dark[data-skin="retro"],
-  .dark:not([data-skin]) {
+    /* Dark mode - CRT black with red/amber glow */
     --background: 0 0% 4%;
     --foreground: 0 0% 95%;
     --primary: 0 85% 58%;
@@ -81,13 +79,18 @@ body {
     --input: 0 0% 20%;
     --ring: 0 85% 58%;
 
+    /* Shape system - sharp corners for retro */
+    --radius: 0.125rem;
+    --border-width: 3px;
+
+    /* LED colors - bright neon */
     --led-red: 0 100% 58%;
     --led-green: 120 100% 50%;
     --led-amber: 35 100% 50%;
   }
 
   /* ============================================
-     THEME 2: MIDNIGHT COURT
+     MIDNIGHT COURT
      Premium sports broadcasting aesthetic
      - Clean lines, editorial feel
      - Thin borders or borderless
@@ -152,73 +155,6 @@ body {
     --led-green: 160 85% 45%;
     --led-amber: 45 100% 55%;
   }
-
-  /* ============================================
-     THEME 3: HARDWOOD CLASSIC
-     Basketball court and gym aesthetic
-     - Athletic, bold typography
-     - Court-line decorations
-     - Warm wood tones
-     - Painted/stencil feel
-     ============================================ */
-
-  [data-skin="hardwood"] {
-    /* Typography */
-    --font-display: var(--font-archivo);
-    --font-mono: var(--font-teko);
-    --font-body: var(--font-teko);
-
-    /* Light mode - Bright gym */
-    --background: 35 40% 92%;
-    --foreground: 25 50% 14%;
-    --primary: 24 95% 48%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 35 30% 85%;
-    --secondary-foreground: 25 50% 18%;
-    --accent: 24 95% 48%;
-    --accent-foreground: 0 0% 100%;
-    --muted: 35 25% 85%;
-    --muted-foreground: 25 20% 40%;
-    --card: 40 35% 96%;
-    --card-foreground: 25 50% 14%;
-    --border: 30 25% 75%;
-    --input: 30 25% 75%;
-    --ring: 24 95% 48%;
-
-    /* Shape system */
-    --radius: 0.25rem;
-    --border-width: 2px;
-
-    /* LED colors (warm) */
-    --led-red: 0 75% 50%;
-    --led-green: 145 70% 40%;
-    --led-amber: 24 95% 50%;
-
-    --theme-name: 'hardwood';
-  }
-
-  [data-skin="hardwood"].dark,
-  .dark[data-skin="hardwood"] {
-    --background: 25 30% 7%;
-    --foreground: 35 30% 92%;
-    --primary: 24 100% 55%;
-    --primary-foreground: 25 30% 7%;
-    --secondary: 25 25% 13%;
-    --secondary-foreground: 35 30% 88%;
-    --accent: 24 100% 55%;
-    --accent-foreground: 25 30% 7%;
-    --muted: 25 25% 13%;
-    --muted-foreground: 30 15% 50%;
-    --card: 25 28% 11%;
-    --card-foreground: 35 30% 92%;
-    --border: 25 20% 22%;
-    --input: 25 20% 22%;
-    --ring: 24 100% 55%;
-
-    --led-red: 0 80% 55%;
-    --led-green: 145 75% 45%;
-    --led-amber: 24 100% 58%;
-  }
 }
 
 /* =====================================================
@@ -254,13 +190,11 @@ body {
 }
 
 /* =====================================================
-   RETRO SCOREBOARD - CRT Effects (dark mode only)
+   CRT Effects (dark mode, default theme only)
    ===================================================== */
 
 /* CRT scan lines */
-.dark:not([data-skin]) body::before,
-[data-skin="retro"].dark body::before,
-.dark[data-skin="retro"] body::before {
+.dark:not([data-skin="midnight"]) body::before {
   content: '';
   position: fixed;
   top: 0;
@@ -280,9 +214,7 @@ body {
 }
 
 /* Screen curvature */
-.dark:not([data-skin]) body::after,
-[data-skin="retro"].dark body::after,
-.dark[data-skin="retro"] body::after {
+.dark:not([data-skin="midnight"]) body::after {
   content: '';
   position: fixed;
   top: 0;
@@ -319,17 +251,13 @@ body {
     transition: all 0.3s ease;
   }
 
-  /* Retro panel style */
-  :root .scoreboard-panel,
-  [data-skin="retro"] .scoreboard-panel {
-    box-shadow:
-      inset 0 2px 4px rgba(0, 0, 0, 0.3),
-      0 4px 8px rgba(0, 0, 0, 0.4);
+  /* Default theme panel - light (Hardwood style) */
+  :root:not([data-skin="midnight"]) .scoreboard-panel {
+    box-shadow: 0 2px 0 hsl(var(--border)), 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
-  .dark:not([data-skin]) .scoreboard-panel,
-  [data-skin="retro"].dark .scoreboard-panel,
-  .dark[data-skin="retro"] .scoreboard-panel {
+  /* Default theme panel - dark (Retro style with glow) */
+  .dark:not([data-skin="midnight"]) .scoreboard-panel {
     box-shadow:
       inset 0 2px 4px rgba(0, 0, 0, 0.6),
       0 0 20px rgba(255, 0, 0, 0.1),
@@ -348,30 +276,19 @@ body {
     box-shadow: 0 0 0 1px hsl(var(--accent) / 0.2), 0 8px 32px rgba(0, 0, 0, 0.4);
   }
 
-  /* Hardwood panel style */
-  [data-skin="hardwood"] .scoreboard-panel {
-    box-shadow: 0 2px 0 hsl(var(--border)), 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-
-  [data-skin="hardwood"].dark .scoreboard-panel,
-  .dark[data-skin="hardwood"] .scoreboard-panel {
-    box-shadow: 0 2px 0 hsl(var(--accent) / 0.3), 0 8px 24px rgba(0, 0, 0, 0.4);
-  }
-
   /* ---- LED TEXT EFFECTS ---- */
   .led-text {
     font-family: var(--font-mono);
   }
 
-  /* Retro: Strong glow in dark mode */
-  :root .led-text,
-  [data-skin="retro"] .led-text {
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  /* Default light - Hardwood style: Bold with subtle shadow */
+  :root:not([data-skin="midnight"]) .led-text {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    font-weight: 700;
   }
 
-  .dark:not([data-skin]) .led-text,
-  [data-skin="retro"].dark .led-text,
-  .dark[data-skin="retro"] .led-text {
+  /* Default dark - Retro style: Strong glow */
+  .dark:not([data-skin="midnight"]) .led-text {
     text-shadow:
       0 0 10px currentColor,
       0 0 20px currentColor,
@@ -389,26 +306,14 @@ body {
     text-shadow: 0 0 20px currentColor;
   }
 
-  /* Hardwood: Bold with subtle shadow */
-  [data-skin="hardwood"] .led-text {
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-    font-weight: 700;
-  }
-
-  [data-skin="hardwood"].dark .led-text,
-  .dark[data-skin="hardwood"] .led-text {
-    text-shadow: 0 0 15px currentColor;
-  }
-
   /* ---- LED STATUS BARS ---- */
-  /* Only show on retro theme */
+  /* Show on default dark mode (retro style) */
   .led-bar-top,
   .led-bar-bottom {
     display: none;
   }
 
-  :root .led-bar-top,
-  [data-skin="retro"] .led-bar-top {
+  .dark:not([data-skin="midnight"]) .led-bar-top {
     display: block;
     position: absolute;
     top: 0;
@@ -425,8 +330,7 @@ body {
     opacity: 0.7;
   }
 
-  :root .led-bar-bottom,
-  [data-skin="retro"] .led-bar-bottom {
+  .dark:not([data-skin="midnight"]) .led-bar-bottom {
     display: block;
     position: absolute;
     bottom: 0;
@@ -439,18 +343,8 @@ body {
 
   /* ---- ACCENT DECORATIONS ---- */
 
-  /* Midnight: Gold underline on accent-line elements */
-  [data-skin="midnight"] .accent-line::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: hsl(var(--accent));
-    margin: 8px auto 0;
-  }
-
-  /* Hardwood: Orange top stripe on panels */
-  [data-skin="hardwood"] .scoreboard-panel::before {
+  /* Default light - Hardwood: Orange top stripe on panels */
+  :root:not([data-skin="midnight"]):not(.dark) .scoreboard-panel::before {
     content: '';
     position: absolute;
     top: 0;
@@ -460,6 +354,16 @@ body {
     height: 3px;
     background: hsl(var(--accent));
     opacity: 0.8;
+  }
+
+  /* Midnight: Gold underline on accent-line elements */
+  [data-skin="midnight"] .accent-line::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: hsl(var(--accent));
+    margin: 8px auto 0;
   }
 }
 

@@ -225,7 +225,7 @@ export default function BeltDashboard({
         </h1>
         <div className="flex items-center justify-center gap-2 sm:gap-3">
           <div className="h-px w-6 sm:w-12 bg-gradient-to-r from-transparent to-border" />
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-mono tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase led-text" style={{ color: 'hsl(var(--led-amber))' }}>
+          <h2 className="text-xl sm:text-3xl md:text-4xl font-mono tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase led-text" style={{ color: 'hsl(var(--led-amber))' }}>
             REGULAR SEASON
           </h2>
           <div className="h-px w-6 sm:w-12 bg-gradient-to-l from-transparent to-border" />
