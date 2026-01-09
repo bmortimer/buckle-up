@@ -1,25 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
-import { SkinProvider } from '@/components/SkinProvider'
-import { Orbitron, Share_Tech_Mono, Oswald, Inter, Teko, Archivo_Black } from 'next/font/google'
+import { Oswald, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 
-// Retro Scoreboard fonts
-const orbitron = Orbitron({
-  subsets: ['latin'],
-  variable: '--font-orbitron',
-  display: 'swap',
-})
-
-const shareTechMono = Share_Tech_Mono({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-share-tech',
-  display: 'swap',
-})
-
-// Midnight Court fonts (premium broadcast)
+// Midnight Court fonts
 const oswald = Oswald({
   subsets: ['latin'],
   variable: '--font-oswald',
@@ -29,20 +14,6 @@ const oswald = Oswald({
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap',
-})
-
-// Hardwood Classic fonts (athletic)
-const teko = Teko({
-  subsets: ['latin'],
-  variable: '--font-teko',
-  display: 'swap',
-})
-
-const archivoBlack = Archivo_Black({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-archivo',
   display: 'swap',
 })
 
@@ -68,18 +39,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`min-h-screen bg-background text-foreground transition-colors ${orbitron.variable} ${shareTechMono.variable} ${oswald.variable} ${inter.variable} ${teko.variable} ${archivoBlack.variable}`}>
+      <body className={`min-h-screen bg-background text-foreground transition-colors ${oswald.variable} ${inter.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange={false}
         >
-          <SkinProvider>
-            <div className="container mx-auto px-4 py-8 max-w-7xl">
-              {children}
-            </div>
-          </SkinProvider>
+          <div className="container mx-auto px-4 py-8 max-w-7xl">
+            {children}
+          </div>
         </ThemeProvider>
         <Analytics />
       </body>
