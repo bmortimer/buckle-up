@@ -118,10 +118,10 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
 
   return (
     <div data-card="detailed-calendar" className="scoreboard-panel p-4 sm:p-6 relative">
-      <div className="flex items-center justify-between mb-4 sm:mb-6 border-b-2 border-border pb-2 sm:pb-3">
-        <h3 className="text-sm sm:text-base font-orbitron tracking-[0.15em] sm:tracking-[0.2em] uppercase">
-          ◆ {year} Calendar
-        </h3>
+      <div className="flex items-center justify-center mb-4 sm:mb-6 border-b-2 border-border pb-2 sm:pb-3">
+        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
+          ◆ {year} Calendar ◆
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">

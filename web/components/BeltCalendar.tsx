@@ -140,10 +140,10 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
 
   return (
     <div data-card="calendar" className="scoreboard-panel p-6 relative">
-      <div className="flex items-center justify-between mb-6 border-b-2 border-border pb-3">
-        <h3 className="text-base font-orbitron tracking-[0.2em] uppercase">
-          ◆ History - {selectedTeam} - {yearDisplay}
-        </h3>
+      <div className="flex items-center justify-center mb-6 border-b-2 border-border pb-3">
+        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
+          ◆ History · {selectedTeam} · {yearDisplay} ◆
+        </div>
       </div>
 
       {/* Team selector */}

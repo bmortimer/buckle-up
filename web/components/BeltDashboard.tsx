@@ -211,8 +211,14 @@ export default function BeltDashboard({
 
   return (
     <div className="space-y-4 sm:space-y-6 md:space-y-8">
-      {/* Theme Switcher - Top Right */}
-      <div className="flex justify-end">
+      {/* Top Navigation Bar */}
+      <div className="flex justify-end items-center gap-2">
+        <Link
+          href="/about"
+          className="px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider text-muted-foreground hover:text-foreground border border-border hover:border-muted-foreground bg-card transition-all"
+        >
+          About
+        </Link>
         <ThemeSwitcher />
       </div>
 
@@ -232,9 +238,7 @@ export default function BeltDashboard({
           <div className="h-px w-6 sm:w-12 bg-gradient-to-l from-transparent to-border" />
         </div>
         <p className="text-muted-foreground text-[0.65rem] sm:text-xs font-mono tracking-[0.1em] sm:tracking-[0.2em] uppercase pt-1 sm:pt-2">
-          <Link href="/about" className="hover:text-primary transition-colors">
-            Lineal Championship Tracker <span className="text-primary">?</span>
-          </Link>
+          Lineal Championship Tracker
         </p>
 
         {/* Bottom LED bar - shown/hidden by CSS */}
@@ -372,8 +376,11 @@ export default function BeltDashboard({
           <p className="text-xs font-mono text-muted-foreground tracking-wider uppercase mb-2">
             Data updates nightly at 03:00 ET
           </p>
+          <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider mb-2">
+            {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS
+          </p>
           <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider">
-            {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 transition-colors">DONATE</a>
+            Created by Avid Squid LLC • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-400 transition-colors">DONATE</a>
           </p>
         </div>
         <div className="led-bar-bottom" />
