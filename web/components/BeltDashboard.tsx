@@ -322,7 +322,7 @@ export default function BeltDashboard({
             isPastSeason={context === 'PAST_YEAR'}
           />
           {(context === 'THIS_YEAR' || context === 'OFF_SEASON') && (
-            <NextGamePreview franchises={franchises} />
+            <NextGamePreview />
           )}
         </div>
       )}
@@ -380,7 +380,7 @@ export default function BeltDashboard({
             {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS
           </p>
           <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider">
-            Created by Avid Squid LLC • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-400 transition-colors">DONATE</a>
+            Created by Avid Squid LLC • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-400 transition-colors">DONATE</a> • <a href="https://forms.gle/LPBtZDxih1HQT53E9" target="_blank" rel="noopener noreferrer" className="text-amber-500 hover:text-amber-400 transition-colors">FEEDBACK</a>
           </p>
         </div>
         <div className="led-bar-bottom" />

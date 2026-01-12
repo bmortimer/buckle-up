@@ -1,79 +1,53 @@
-import TeamLogo from './TeamLogo'
-import type { FranchiseInfo } from '@/lib/types'
-
-interface NextGamePreviewProps {
-  franchises?: FranchiseInfo[]
-}
-
-export default function NextGamePreview({ franchises = [] }: NextGamePreviewProps) {
-  // Stubbed data for now
-  const nextGame = {
-    date: 'Friday, May 15, 2026',
-    time: '7:00 PM ET',
-    opponent: 'Washington Mystics',
-    opponentCode: 'WAS',
-    location: 'Capital One Arena',
-    isAway: true,
-  }
-
+export default function NextGamePreview() {
   return (
-    <div data-card="next-game" className="scoreboard-panel p-3 sm:p-4 md:p-6 relative overflow-hidden">
+    <div data-card="next-game" className="scoreboard-panel p-3 sm:p-4 md:p-6 relative overflow-hidden h-full flex flex-col">
       {/* Top LED status bar - different color to distinguish */}
       <div className="absolute top-0 left-0 right-0 h-0.5 sm:h-1 bg-amber-500 opacity-70" />
 
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col flex-1 justify-between">
         {/* Header */}
         <div className="text-[0.55rem] sm:text-[0.6rem] md:text-[0.65rem] font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-2 sm:mb-3 md:mb-4 text-center">
           ◆ Next Title Bout ◆
         </div>
 
-        {/* Game Info */}
-        <div className="space-y-2 sm:space-y-2.5 md:space-y-3">
-          {/* Date & Time */}
-          <div className="text-center">
+        {/* TBD State - centered vertically */}
+        <div className="flex-1 flex flex-col justify-center">
+          {/* TBD Display */}
+          <div className="text-center mb-3 sm:mb-4">
             <div
-              className="text-base sm:text-lg md:text-xl lg:text-2xl font-mono tracking-[0.1em] sm:tracking-[0.15em] mb-0.5 sm:mb-1 led-text"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-mono tracking-[0.15em] sm:tracking-[0.2em] led-text"
               style={{
                 color: 'hsl(var(--led-amber))',
               }}
             >
-              {nextGame.date}
-            </div>
-            <div className="text-xs sm:text-sm font-mono text-muted-foreground tracking-wide sm:tracking-wider">
-              {nextGame.time}
+              TBD
             </div>
           </div>
 
           {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-3 sm:mb-4" />
 
-          {/* Opponent */}
-          <div className="text-center">
-            <div className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.6rem] font-orbitron uppercase tracking-wide sm:tracking-wider text-muted-foreground mb-1 sm:mb-2">
-              {nextGame.isAway ? '@ OPPONENT' : 'VS OPPONENT'}
-            </div>
-
-            {/* Team Logo */}
-            <div className="flex justify-center mb-2 sm:mb-3">
-              <TeamLogo
-                teamCode={nextGame.opponentCode}
-                franchises={franchises}
-                size="lg"
-              />
-            </div>
-
-            <div
-              className="text-sm sm:text-base md:text-lg text-foreground mb-4 sm:mb-6 md:mb-8 font-orbitron tracking-wide sm:tracking-wider uppercase">
-                
-              {nextGame.opponent}
-            </div>
+          {/* Explanation */}
+          <div className="text-center px-2">
+            <p className="text-xs sm:text-sm text-muted-foreground font-body leading-relaxed">
+              The 2026 season schedule is not yet available due to the lapse in the {' '}
+              <a
+                href="https://en.wikipedia.org/wiki/2026_WNBA_season"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:opacity-80 underline"
+              >
+                collective bargaining agreement
+              </a>
+              .
+            </p>
           </div>
+        </div>
 
-          {/* Location */}
-          <div className="text-center pt-1 sm:pt-2">
-            <div className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.6rem] font-mono text-muted-foreground uppercase tracking-wide sm:tracking-wider">
-              ▸ {nextGame.location} ◂
-            </div>
+        {/* Status indicator - anchored to bottom */}
+        <div className="text-center pt-3 sm:pt-4">
+          <div className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.6rem] font-mono text-muted-foreground uppercase tracking-wide sm:tracking-wider">
+            ▸ Awaiting Schedule Release ◂
           </div>
         </div>
       </div>

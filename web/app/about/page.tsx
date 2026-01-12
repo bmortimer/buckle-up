@@ -236,9 +236,15 @@ export default function AboutPage() {
           <p className="text-xs text-muted-foreground font-mono tracking-wider uppercase mb-3">
             Data updates nightly at 03:00 ET.
           </p>
-          <Link href="/" className="text-xs font-mono uppercase tracking-wider text-primary hover:opacity-80 transition-colors">
-            &larr; Back to the Belt Tracker
-          </Link>
+          <div className="flex items-center justify-center gap-3 text-xs font-mono uppercase tracking-wider">
+            <Link href="/" className="text-primary hover:opacity-80 transition-colors">
+              &larr; Back to the Belt Tracker
+            </Link>
+            <span className="text-muted-foreground">•</span>
+            <a href="https://forms.gle/LPBtZDxih1HQT53E9" target="_blank" rel="noopener noreferrer" className="text-amber-500 hover:text-amber-400 transition-colors">
+              Feedback
+            </a>
+          </div>
         </footer>
       </article>
     </>

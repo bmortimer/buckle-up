@@ -33,7 +33,7 @@ export default function BuyMeCoffee() {
       rel="noopener noreferrer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`hidden sm:flex fixed bottom-6 right-6 z-50 items-center justify-center scoreboard-panel border-amber-500 hover:border-amber-400 hover:shadow-[0_0_20px_rgba(251,191,36,0.5)] group transition-all duration-500 ${
+      className={`hidden sm:flex fixed bottom-6 right-6 z-50 items-center justify-center scoreboard-panel border-emerald-500 hover:border-emerald-400 hover:shadow-[0_0_20px_rgba(16,185,129,0.5)] group transition-all duration-500 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
       } ${isExpanded ? 'gap-2 px-4 py-3' : 'p-3'}`}
     >
@@ -42,7 +42,7 @@ export default function BuyMeCoffee() {
         <span className="text-[0.6rem] font-orbitron uppercase tracking-wider text-muted-foreground whitespace-nowrap">
           Support
         </span>
-        <span className="text-xs font-mono text-amber-500 group-hover:text-amber-400 transition-colors whitespace-nowrap">
+        <span className="text-xs font-mono text-emerald-500 group-hover:text-emerald-400 transition-colors whitespace-nowrap">
           Buy Coffee
         </span>
       </div>
