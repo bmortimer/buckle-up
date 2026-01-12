@@ -5,6 +5,7 @@ import type { BeltHistory, FranchiseInfo, Game } from '@/lib/types'
 import { getTeamColor, getTeamDisplayName } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 import { isSameFranchise } from '@/lib/franchises'
+import CalendarDayPopup from './CalendarDayPopup'
 
 interface BeltCalendarProps {
   history: BeltHistory
@@ -23,8 +24,14 @@ interface DayData {
   game?: Game // The actual game that was played (if any)
 }
 
+interface PopupPosition {
+  x: number
+  y: number
+}
+
 export default function BeltCalendar({ history, franchises, selectedTeam: externalSelectedTeam, allGames }: BeltCalendarProps) {
   const [clickedDay, setClickedDay] = useState<DayData | null>(null)
+  const [popupPosition, setPopupPosition] = useState<PopupPosition | null>(null)
   const [selectedTeam, setSelectedTeam] = useState<string | null>(externalSelectedTeam || null)
 
   // Sync with external selection
@@ -172,7 +179,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
       {selectedTeam && (
         <>
           <p className="text-[0.65rem] text-muted-foreground mb-4 font-mono">
-            ▸ BRIGHT = WON/DEFENDED • TAN = FAILED CHALLENGE • GREY × = LOST • DIM = OFF DAY
+            ▸ BRIGHT = WON/DEFENDED • TAN = FAILED CHALLENGE
           </p>
 
       <div className="flex flex-wrap gap-4">
@@ -254,29 +261,38 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                       const isWinOrDefense = wonBeltThisDay || defendedBelt
                       const isLoss = lostBelt
 
-                      // Color logic: team color for wins/defenses/off days, grey for losses, tan for failed challenges
+                      // Color logic: team color for wins/defenses/off days, transparent for losses, tan for failed challenges
                       const cellColor = isLoss
-                        ? 'hsl(var(--muted))'
+                        ? 'transparent'
                         : failedChallenge
                           ? 'hsl(30, 30%, 50%)' // Darker tan/brown
                           : color
-                      const opacity = isWinOrDefense ? 1 : isLoss ? 0.5 : failedChallenge ? 0.6 : 0.25
+                      const opacity = isWinOrDefense ? 1 : isLoss ? 1 : failedChallenge ? 0.6 : 0.25
 
                       const isSelected = clickedDay?.date === dayData.date
 
                       return (
                         <div
                           key={dayIdx}
-                          className={`w-2.5 h-2.5 cursor-pointer transition-all hover:scale-[2] active:scale-[2.2] hover:z-10 active:z-10 relative border border-black/20 flex items-center justify-center ${isSelected ? 'scale-[2] z-10 ring-1 ring-amber-500' : ''}`}
+                          className={`w-2.5 h-2.5 cursor-pointer transition-all hover:scale-[2] active:scale-[2.2] hover:z-10 active:z-10 relative flex items-center justify-center ${isSelected ? 'scale-[2] z-10 ring-1 ring-amber-500' : ''} ${isLoss ? 'border border-muted-foreground' : ''}`}
                           style={{
                             backgroundColor: cellColor,
                             opacity: opacity,
-                            boxShadow: isWinOrDefense ? `0 0 4px ${color}60` : 'none'
+                            boxShadow: isWinOrDefense ? `0 0 4px ${color}60` : 'none',
+                            border: isLoss ? undefined : '1px solid rgba(255,255,255,0.3)'
                           }}
-                          onClick={() => setClickedDay(isSelected ? null : dayData)}
+                          onClick={(e) => {
+                            if (isSelected) {
+                              setClickedDay(null)
+                              setPopupPosition(null)
+                            } else {
+                              setClickedDay(dayData)
+                              setPopupPosition({ x: e.clientX, y: e.clientY })
+                            }
+                          }}
                         >
                           {isLoss && (
-                            <span className="text-[6px] font-bold leading-none text-black pointer-events-none" style={{ textShadow: '0 0 1px white' }}>
+                            <span className="text-[7px] font-bold leading-none text-muted-foreground pointer-events-none">
                               ×
                             </span>
                           )}
@@ -293,77 +309,18 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
         </>
       )}
 
-      {/* Day Details Modal - tap-friendly */}
+      {/* Shared popup component */}
       {clickedDay && selectedTeam && (
-        <>
-          {/* Backdrop */}
-          <div
-            className="fixed inset-0 bg-black/50 z-40"
-            onClick={() => setClickedDay(null)}
-          />
-
-          {/* Modal */}
-          <div className="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:w-80 bg-card border-2 border-amber-500 p-4 shadow-[0_0_20px_rgba(251,191,36,0.3)] z-50">
-            {/* Close button */}
-            <button
-              onClick={() => setClickedDay(null)}
-              className="absolute top-2 right-2 w-6 h-6 flex items-center justify-center text-muted-foreground hover:text-foreground active:text-amber-500 transition-colors"
-              aria-label="Close"
-            >
-              ×
-            </button>
-
-            {/* Date */}
-            <div className="text-xs sm:text-sm font-mono text-muted-foreground mb-3 uppercase">
-              {new Date(clickedDay.date).toLocaleDateString('en-US', {
-                month: 'short',
-                day: 'numeric',
-                year: 'numeric',
-              })}
-            </div>
-
-            {/* Game Details */}
-            {clickedDay.game && (() => {
-              const game = clickedDay.game
-              const homeWon = game.homeScore > game.awayScore
-              const awayWon = game.awayScore > game.homeScore
-
-              return (
-                <div className="text-sm sm:text-base font-mono mb-3">
-                  <div className={awayWon ? 'font-bold' : ''}>
-                    {game.awayTeam} [{game.awayScore}]
-                  </div>
-                  <div className="text-muted-foreground text-xs my-1">@</div>
-                  <div className={homeWon ? 'font-bold' : ''}>
-                    {game.homeTeam} [{game.homeScore}]
-                  </div>
-                </div>
-              )
-            })()}
-
-            {/* Status */}
-            <div className="text-xs sm:text-sm text-amber-500 font-orbitron uppercase border-t border-border/40 pt-3">
-              {(() => {
-                const heldBelt = clickedDay.holder === selectedTeam
-                const wonBelt = clickedDay.winner === selectedTeam && !heldBelt
-                const challengedBelt = clickedDay.challenger === selectedTeam && !heldBelt && !wonBelt
-
-                if (wonBelt) {
-                  return 'NEW CHAMPION 🏆'
-                } else if (challengedBelt) {
-                  return 'FAILED CHALLENGE'
-                } else if (heldBelt && clickedDay.played && clickedDay.won) {
-                  return 'DEFENDED BELT'
-                } else if (heldBelt && clickedDay.played && !clickedDay.won) {
-                  return 'LOST BELT'
-                } else if (heldBelt && !clickedDay.played) {
-                  return 'OFF DAY - HELD'
-                }
-                return ''
-              })()}
-            </div>
-          </div>
-        </>
+        <CalendarDayPopup
+          dayData={clickedDay}
+          position={popupPosition}
+          franchises={franchises}
+          selectedTeam={selectedTeam}
+          onClose={() => {
+            setClickedDay(null)
+            setPopupPosition(null)
+          }}
+        />
       )}
     </div>
   )

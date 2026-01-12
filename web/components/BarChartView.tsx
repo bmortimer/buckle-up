@@ -119,7 +119,9 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
                   style={{
                     width: `${percentage}%`,
                     background: `linear-gradient(90deg, ${color} 0%, ${color} 90%, transparent 100%)`,
-                    boxShadow: isGreyedOut ? 'none' : `0 0 10px ${color}40, inset 0 1px 2px rgba(255,255,255,0.2)`
+                    boxShadow: isGreyedOut ? 'none' : `0 0 10px ${color}40, inset 0 1px 2px rgba(255,255,255,0.2)`,
+                    borderTop: '1px solid rgba(255,255,255,0.3)',
+                    borderBottom: '1px solid rgba(0,0,0,0.3)'
                   }}
                 >
                   {/* LED segments overlay */}

@@ -5,6 +5,7 @@ import type { BeltHistory, FranchiseInfo, Game } from '@/lib/types'
 import { getTeamColor } from '@/lib/franchises'
 import { isSameFranchise } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
+import CalendarDayPopup from './CalendarDayPopup'
 
 interface DetailedCalendarProps {
   history: BeltHistory
@@ -13,16 +14,25 @@ interface DetailedCalendarProps {
   year: number
 }
 
+interface PopupPosition {
+  x: number
+  y: number
+}
+
 interface DayData {
   date: string
   holder: string
   game?: Game
   beltChanged: boolean
   holderWon: boolean | null
+  winner?: string
+  challenger?: string
 }
 
 export default function DetailedCalendar({ history, franchises, allGames, year }: DetailedCalendarProps) {
   const [selectedDay, setSelectedDay] = useState<DayData | null>(null)
+  const [popupPosition, setPopupPosition] = useState<PopupPosition | null>(null)
+
   // Build day-by-day data for the year
   const dayMap = useMemo(() => {
     const map = new Map<string, DayData>()
@@ -63,7 +73,9 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
           ? holderGame.homeScore > holderGame.awayScore
           : holderGame.awayScore > holderGame.homeScore
 
-        const newHolder = holderWon ? currentHolder : (holderIsHome ? holderGame.awayTeam : holderGame.homeTeam)
+        const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
+        const winner = holderWon ? currentHolder : challenger
+        const newHolder = holderWon ? currentHolder : challenger
         const beltChanged = !holderWon
 
         map.set(dateStr, {
@@ -72,6 +84,8 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
           game: holderGame,
           beltChanged,
           holderWon,
+          winner,
+          challenger,
         })
 
         currentHolder = newHolder
@@ -115,6 +129,11 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
 
     return monthsWithGames
   }, [dayMap])
+
+  const handleClose = () => {
+    setSelectedDay(null)
+    setPopupPosition(null)
+  }
 
   return (
     <div data-card="detailed-calendar" className="scoreboard-panel p-4 sm:p-6 relative">
@@ -188,28 +207,27 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
 
                       const date = new Date(dayData.date)
                       const dayNum = date.getDate()
+                      const isSelectedDay = selectedDay?.date === dayData.date
 
-                      // Compute winner for game days
-                      const game = dayData.game
-                      const winner = game ? (() => {
-                        const holderIsHome = isSameFranchise(game.homeTeam, dayData.holder, franchises)
-                        return dayData.holderWon
-                          ? dayData.holder
-                          : (holderIsHome ? game.awayTeam : game.homeTeam)
-                      })() : null
-
-                      // Use winner's color on game days, holder's color on off days
+                      // Show winner's logo and color
+                      const winner = dayData.winner
                       const displayColor = winner ? getTeamColor(winner, franchises) : getTeamColor(dayData.holder, franchises)
-                      const isSelected = selectedDay?.date === dayData.date
 
                       return (
                         <div
                           key={dayIdx}
-                          className={`aspect-square border-r border-b border-border/20 p-0.5 relative group transition-colors ${dayData.game ? 'cursor-pointer hover:bg-muted/30 active:bg-muted/40' : ''}`}
+                          className="aspect-square border-r border-b border-border/20 p-0.5 relative group transition-colors cursor-pointer hover:bg-muted/30 active:bg-muted/40"
                           style={{
                             backgroundColor: `${displayColor}15`
                           }}
-                          onClick={() => dayData.game && setSelectedDay(isSelected ? null : dayData)}
+                          onClick={(e) => {
+                            if (isSelectedDay) {
+                              handleClose()
+                            } else {
+                              setSelectedDay(dayData)
+                              setPopupPosition({ x: e.clientX, y: e.clientY })
+                            }
+                          }}
                         >
                           {/* Day number */}
                           <div className="text-[0.5rem] font-mono text-muted-foreground pointer-events-none">
@@ -230,7 +248,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
 
                           {/* Game indicator - show the winner, positioned 1/3 up from bottom */}
                           {winner && (
-                            <div className="absolute inset-0 flex items-end justify-center pb-[30%] pointer-events-none">
+                            <div className="absolute inset-0 flex items-end justify-center pb-[10%] pointer-events-none">
                               <TeamLogo teamCode={winner} franchises={franchises} size="xs" />
                             </div>
                           )}
@@ -245,66 +263,14 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
         })}
       </div>
 
-      {/* Selected Day Modal - tap-friendly */}
-      {selectedDay && selectedDay.game && (
-        <>
-          {/* Backdrop */}
-          <div
-            className="fixed inset-0 bg-black/50 z-40"
-            onClick={() => setSelectedDay(null)}
-          />
-
-          {/* Modal */}
-          <div className="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:w-80 bg-card border-2 border-amber-500 p-4 shadow-[0_0_20px_rgba(251,191,36,0.3)] z-50">
-            {/* Close button */}
-            <button
-              onClick={() => setSelectedDay(null)}
-              className="absolute top-2 right-2 w-6 h-6 flex items-center justify-center text-muted-foreground hover:text-foreground active:text-amber-500 transition-colors"
-              aria-label="Close"
-            >
-              ×
-            </button>
-
-            {/* Date */}
-            <div className="text-xs sm:text-sm font-mono text-muted-foreground mb-3 uppercase">
-              {new Date(selectedDay.date).toLocaleDateString('en-US', {
-                month: 'short',
-                day: 'numeric',
-                year: 'numeric',
-              })}
-            </div>
-
-            {/* Game Details */}
-            {(() => {
-              const game = selectedDay.game
-              const homeWon = game.homeScore > game.awayScore
-              const awayWon = game.awayScore > game.homeScore
-
-              return (
-                <div className="text-sm sm:text-base font-mono mb-3">
-                  <div className={awayWon ? 'font-bold' : ''}>
-                    {game.awayTeam} [{game.awayScore}]
-                  </div>
-                  <div className="text-muted-foreground text-xs my-1">@</div>
-                  <div className={homeWon ? 'font-bold' : ''}>
-                    {game.homeTeam} [{game.homeScore}]
-                  </div>
-                </div>
-              )
-            })()}
-
-            {/* Belt Status */}
-            <div className="text-xs sm:text-sm text-amber-500 font-orbitron uppercase border-t border-border/40 pt-3">
-              {selectedDay.beltChanged ? (
-                <span>⚡ Belt Changed Hands</span>
-              ) : selectedDay.holderWon ? (
-                <span>Defended Belt</span>
-              ) : (
-                <span>Holder Retained</span>
-              )}
-            </div>
-          </div>
-        </>
+      {/* Shared popup component */}
+      {selectedDay && (
+        <CalendarDayPopup
+          dayData={selectedDay}
+          position={popupPosition}
+          franchises={franchises}
+          onClose={handleClose}
+        />
       )}
     </div>
   )
