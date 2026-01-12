@@ -60,12 +60,12 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
   return (
     <div data-card="team-stats" className="scoreboard-panel p-4 sm:p-6">
       {/* Header with sort controls */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6 border-b-2 border-border pb-3">
-        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center sm:text-left">
+      <div className="flex flex-col items-center gap-3 mb-6 border-b-2 border-border pb-3">
+        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center">
           ◆ Bouts By Team ◆
         </div>
 
-        <div className="flex gap-1.5 justify-center sm:justify-end" role="group" aria-label="Sort options">
+        <div className="flex flex-wrap gap-1.5 justify-center" role="group" aria-label="Sort options">
           {[
             { value: 'wins', label: 'Wins' },
             { value: 'games', label: 'Games' },
@@ -75,7 +75,7 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
             <button
               key={option.value}
               onClick={() => setSortBy(option.value as SortOption)}
-              className={`px-2 sm:px-2.5 py-1 text-[0.6rem] sm:text-[0.65rem] font-mono uppercase border transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+              className={`px-3 sm:px-4 py-2 text-[0.6rem] sm:text-[0.65rem] font-mono uppercase border transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
                 sortBy === option.value
                   ? 'bg-amber-500/20 text-amber-500 border-amber-500 shadow-[0_0_8px_rgba(251,191,36,0.4)]'
                   : 'bg-card text-muted-foreground border-border hover:border-muted-foreground'

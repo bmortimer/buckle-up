@@ -1,12 +1,12 @@
 export default function NextGamePreview() {
   return (
     <div data-card="next-game" className="scoreboard-panel p-3 sm:p-4 md:p-6 relative overflow-hidden h-full flex flex-col">
-      {/* Top LED status bar - different color to distinguish */}
-      <div className="absolute top-0 left-0 right-0 h-0.5 sm:h-1 bg-amber-500 opacity-70" />
+      {/* Top LED status bar - matches BeltHolderCard style */}
+      <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
 
       <div className="relative z-10 flex flex-col flex-1 justify-between">
         {/* Header */}
-        <div className="text-[0.55rem] sm:text-[0.6rem] md:text-[0.65rem] font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-2 sm:mb-3 md:mb-4 text-center">
+        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center">
           ◆ Next Title Bout ◆
         </div>
 
@@ -52,8 +52,6 @@ export default function NextGamePreview() {
         </div>
       </div>
 
-      {/* Bottom status bar with pulsing indicator */}
-      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-amber-500 opacity-40 animate-pulse" />
     </div>
   )
 }

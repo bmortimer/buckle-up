@@ -75,7 +75,7 @@ export class BeltTracker {
     })
 
     let currentHolder = this.startingTeam
-    let currentReign = 0
+    let currentWinStreak = 0
 
     for (const game of games) {
       const holderIsHome = isSameFranchise(game.homeTeam, currentHolder, this.franchises)
@@ -102,7 +102,6 @@ export class BeltTracker {
 
       holderStats.totalGames++
       challengerStats.totalGames++
-      currentReign++
 
       const holderWon = holderIsHome
         ? game.homeScore > game.awayScore
@@ -111,23 +110,27 @@ export class BeltTracker {
       if (holderWon) {
         holderStats.wins++
         challengerStats.losses++
+        currentWinStreak++
       } else {
         holderStats.losses++
         challengerStats.wins++
 
-        if (currentReign > holderStats.longestReign) {
-          holderStats.longestReign = currentReign
+        // Update longest streak before resetting (streak = consecutive wins, not including the loss)
+        if (currentWinStreak > holderStats.longestReign) {
+          holderStats.longestReign = currentWinStreak
         }
 
         currentHolder = challenger
-        currentReign = 0
+        // The win that takes the belt counts toward the new holder's streak
+        currentWinStreak = 1
         challengerStats.timesHeld++
       }
     }
 
+    // Check final holder's current streak at end of season
     const finalStats = teamStats.get(currentHolder)
-    if (finalStats && currentReign > finalStats.longestReign) {
-      finalStats.longestReign = currentReign
+    if (finalStats && currentWinStreak > finalStats.longestReign) {
+      finalStats.longestReign = currentWinStreak
     }
 
     const teams = Array.from(teamStats.values()).sort(

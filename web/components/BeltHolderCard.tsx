@@ -21,7 +21,7 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
       <div className="relative z-10">
         {/* Header - always centered */}
         <div className="text-[0.6rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 font-orbitron text-center">
-          {isPastSeason ? '◆ SEASON CHAMPION ◆' : '◆ BELT HOLDER ◆'}
+          {isPastSeason ? '◆ OFFSEASON BELT HOLDER ◆' : '◆ CURRENT BELT HOLDER ◆'}
         </div>
 
         {/* Mobile Layout: Stacked */}

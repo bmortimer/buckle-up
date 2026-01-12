@@ -188,8 +188,18 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
 
                       const date = new Date(dayData.date)
                       const dayNum = date.getDate()
-                      const holderColor = getTeamColor(dayData.holder, franchises)
 
+                      // Compute winner for game days
+                      const game = dayData.game
+                      const winner = game ? (() => {
+                        const holderIsHome = isSameFranchise(game.homeTeam, dayData.holder, franchises)
+                        return dayData.holderWon
+                          ? dayData.holder
+                          : (holderIsHome ? game.awayTeam : game.homeTeam)
+                      })() : null
+
+                      // Use winner's color on game days, holder's color on off days
+                      const displayColor = winner ? getTeamColor(winner, franchises) : getTeamColor(dayData.holder, franchises)
                       const isSelected = selectedDay?.date === dayData.date
 
                       return (
@@ -197,7 +207,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
                           key={dayIdx}
                           className={`aspect-square border-r border-b border-border/20 p-0.5 relative group transition-colors ${dayData.game ? 'cursor-pointer hover:bg-muted/30 active:bg-muted/40' : ''}`}
                           style={{
-                            backgroundColor: `${holderColor}15`
+                            backgroundColor: `${displayColor}15`
                           }}
                           onClick={() => dayData.game && setSelectedDay(isSelected ? null : dayData)}
                         >
@@ -208,20 +218,20 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
 
                           {/* Belt holder indicator */}
                           <div className="absolute top-0 right-0 w-1 h-1 rounded-full opacity-60 pointer-events-none"
-                            style={{ backgroundColor: holderColor }}
+                            style={{ backgroundColor: displayColor }}
                           />
 
                           {/* Belt change indicator */}
                           {dayData.beltChanged && (
-                            <div className="absolute top-0.5 left-0.5 text-[0.5rem] pointer-events-none">
+                            <div className="absolute top-0 right-2 text-[0.6rem] font-bold pointer-events-none" style={{ textShadow: '0 0 2px rgba(0,0,0,0.5)' }}>
                               ⚡
                             </div>
                           )}
 
-                          {/* Game indicator */}
-                          {dayData.game && (
-                            <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center gap-0.5 pb-0.5 pointer-events-none">
-                              <TeamLogo teamCode={dayData.holder} franchises={franchises} size="xxs" />
+                          {/* Game indicator - show the winner, positioned 1/3 up from bottom */}
+                          {winner && (
+                            <div className="absolute inset-0 flex items-end justify-center pb-[30%] pointer-events-none">
+                              <TeamLogo teamCode={winner} franchises={franchises} size="xs" />
                             </div>
                           )}
                         </div>
