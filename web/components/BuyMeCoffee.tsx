@@ -42,7 +42,7 @@ export default function BuyMeCoffee() {
         <span className="text-[0.6rem] font-orbitron uppercase tracking-wider text-muted-foreground whitespace-nowrap">
           Support
         </span>
-        <span className="text-xs font-mono text-emerald-500 group-hover:text-emerald-400 transition-colors whitespace-nowrap">
+        <span className="text-xs font-mono text-emerald-500 group-hover:text-emerald-400 underline decoration-1 underline-offset-2 transition-colors whitespace-nowrap">
           Buy Coffee
         </span>
       </div>
