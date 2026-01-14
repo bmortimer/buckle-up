@@ -159,6 +159,21 @@ export default function BeltDashboard({
     return Array.from(teamSet).sort()
   }, [allGames, history])
 
+  // Get all teams across all seasons (unfiltered) for the team selector
+  // This ensures users can switch to any team regardless of current year filter
+  // TODO: Future enhancement - when filtering by year, show teams in their
+  // historical conference for that season (requires conference history data)
+  const allTeamsAllYears = useMemo(() => {
+    const teamSet = new Set<string>()
+    Object.values(seasons).forEach(seasonData => {
+      seasonData.games.forEach(game => {
+        teamSet.add(game.homeTeam)
+        teamSet.add(game.awayTeam)
+      })
+    })
+    return Array.from(teamSet).sort()
+  }, [seasons])
+
   // Get available years for the selected team (if any)
   const availableYearsForTeam = useMemo(() => {
     if (!selectedTeam) return availableYears
@@ -278,7 +293,7 @@ export default function BeltDashboard({
 
           <TeamSelector
             league={league}
-            teams={allTeams}
+            teams={isAllTime ? allTeamsAllYears : allTeams}
             franchises={franchises}
             selectedTeam={selectedTeam}
             onTeamChange={setSelectedTeam}
