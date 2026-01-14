@@ -47,6 +47,8 @@ const NBA_TEAMS_WITH_LOGOS = new Set([
 
 export default function TeamLogo({ teamCode, franchises, league = 'wnba', size = 'md', className = '' }: TeamLogoProps) {
   const color = getTeamColor(teamCode, franchises)
+  const franchise = franchises.find(f => f.teamAbbr === teamCode)
+  const displayName = franchise?.displayName || teamCode
 
   const teamsWithLogos = league === 'nba' ? NBA_TEAMS_WITH_LOGOS : WNBA_TEAMS_WITH_LOGOS
   const pngTeams = league === 'nba' ? new Set<string>() : WNBA_PNG_TEAMS // NBA has all SVGs
@@ -58,13 +60,10 @@ export default function TeamLogo({ teamCode, franchises, league = 'wnba', size =
   // If logo exists, render the image
   if (hasLogo) {
     return (
-      <div
-        className={`${sizeMap[size]} relative ${className}`}
-        aria-label={`${teamCode} team logo`}
-      >
+      <div className={`${sizeMap[size]} relative ${className}`}>
         <Image
           src={`/logos/${league}/${teamCode}.${fileExtension}`}
-          alt={`${teamCode} logo`}
+          alt={`${displayName} logo`}
           fill
           className="object-contain"
           unoptimized // SVGs and small PNGs don't need optimization
@@ -81,9 +80,10 @@ export default function TeamLogo({ teamCode, franchises, league = 'wnba', size =
         backgroundColor: color,
         ['--tw-ring-color' as any]: color,
       }}
-      aria-label={`${teamCode} team logo`}
+      role="img"
+      aria-label={`${displayName} logo`}
     >
-      <span className="text-white drop-shadow-sm" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.3)' }}>
+      <span className="text-white drop-shadow-sm" aria-hidden="true" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.3)' }}>
         {teamCode}
       </span>
     </div>

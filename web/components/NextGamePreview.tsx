@@ -58,7 +58,9 @@ export default function NextGamePreview({
         <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
         <div className="relative z-10 flex flex-col flex-1 justify-between">
           <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center">
-            ◆ Next Title Bout ◆
+            <span aria-hidden="true">◆ </span>
+            <h2 className="inline font-normal">Next Title Bout</h2>
+            <span aria-hidden="true"> ◆</span>
           </div>
           <div className="flex-1 flex flex-col justify-center">
             <div className="text-center mb-3 sm:mb-4">
@@ -106,7 +108,9 @@ export default function NextGamePreview({
       <div className="relative z-10 flex flex-col flex-1">
         {/* Header */}
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center">
-          ◆ Next Title Bout ◆
+          <span aria-hidden="true">◆ </span>
+          <h2 className="inline font-normal">Next Title Bout</h2>
+          <span aria-hidden="true"> ◆</span>
         </div>
 
         {/* Matchup Display */}

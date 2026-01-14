@@ -63,7 +63,9 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
       {/* Header with sort controls */}
       <div className="flex flex-col items-center gap-3 mb-6 border-b-2 border-border pb-3">
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center">
-          ◆ Bouts By Team ◆
+          <span aria-hidden="true">◆ </span>
+          <h2 className="inline font-normal">Bouts By Team</h2>
+          <span aria-hidden="true"> ◆</span>
         </div>
 
         <div className="flex flex-wrap gap-1.5 justify-center" role="group" aria-label="Sort options">

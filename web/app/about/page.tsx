@@ -101,9 +101,11 @@ export default function AboutPage() {
         {/* The Concept */}
         <section className="mb-8 sm:mb-12">
           <div className="scoreboard-panel p-5 sm:p-6">
-            <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 text-center border-b border-border pb-3">
-              ◆ The Concept ◆
-            </h2>
+            <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 text-center border-b border-border pb-3">
+              <span aria-hidden="true">◆ </span>
+              <h2 className="inline font-normal">The Concept</h2>
+              <span aria-hidden="true"> ◆</span>
+            </div>
             <div className="text-muted-foreground font-body text-sm sm:text-base leading-relaxed">
               <p>
                 The lineal championship (a.k.a. Regular-Season Championship Belt) applies the logic of king of the hill to our favorite sports leagues. The result? Hilarity, of course. The Belt adds a little sizzle to meaningless regular season games, where any old Tuesday could be a title bout and bottom-feeding teams have their opportunity to shine.
@@ -115,9 +117,11 @@ export default function AboutPage() {
         {/* How It Works */}
         <section className="mb-8 sm:mb-12">
           <div className="scoreboard-panel p-5 sm:p-6">
-            <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center border-b border-border pb-3">
-              ◆ How It Works ◆
-            </h2>
+            <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center border-b border-border pb-3">
+              <span aria-hidden="true">◆ </span>
+              <h2 className="inline font-normal">How It Works</h2>
+              <span aria-hidden="true"> ◆</span>
+            </div>
             <div className="space-y-4">
               <div className="flex gap-4 items-start">
                 <div className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center" style={{ color: 'hsl(var(--led-green))' }}>1</div>
@@ -164,9 +168,11 @@ export default function AboutPage() {
 
         {/* FAQ Section */}
         <section className="mb-8 sm:mb-12">
-          <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center">
-            ◆ Questions ◆
-          </h2>
+          <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center">
+            <span aria-hidden="true">◆ </span>
+            <h2 className="inline font-normal">Questions</h2>
+            <span aria-hidden="true"> ◆</span>
+          </div>
           <div className="space-y-3">
             <details className="group scoreboard-panel" open>
               <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">

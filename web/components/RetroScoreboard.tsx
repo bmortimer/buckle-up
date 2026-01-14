@@ -14,7 +14,9 @@ export default function RetroScoreboard({ totalGames, totalChanges, totalTitleBo
       <div className="relative z-10">
         {/* Header */}
         <div className="text-[0.55rem] sm:text-[0.6rem] md:text-[0.65rem] font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-2 sm:mb-3 md:mb-4 text-center">
-          ◆ {isAllTime ? 'All Time Stats' : 'Season Stats'} ◆
+          <span aria-hidden="true">◆ </span>
+          <h2 className="inline font-normal">{isAllTime ? 'All Time Stats' : 'Season Stats'}</h2>
+          <span aria-hidden="true"> ◆</span>
         </div>
 
         {/* Stats Grid */}

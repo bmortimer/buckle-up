@@ -155,7 +155,9 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     <div data-card="detailed-calendar" className="scoreboard-panel p-4 sm:p-6 relative">
       <div className="flex items-center justify-center mb-4 sm:mb-6 border-b-2 border-border pb-2 sm:pb-3">
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
-          ◆ {year} Calendar ◆
+          <span aria-hidden="true">◆ </span>
+          <h2 className="inline font-normal">{year} Calendar</h2>
+          <span aria-hidden="true"> ◆</span>
         </div>
       </div>
 
@@ -198,9 +200,9 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
             <div key={month} className="border border-border/40">
               {/* Month header */}
               <div className="bg-muted/20 px-2 py-1.5 border-b border-border/40">
-                <div className="text-xs font-orbitron uppercase tracking-wider text-center">
+                <h3 className="text-xs font-orbitron uppercase tracking-wider text-center font-normal">
                   {monthName}
-                </div>
+                </h3>
               </div>
 
               {/* Day headers */}

@@ -259,7 +259,7 @@ export default function BeltDashboard({
       </div>
 
       {/* Header */}
-      <div data-card="header" className="scoreboard-panel panel-rivets p-4 sm:p-6 md:p-8 text-center space-y-2 sm:space-y-4 relative overflow-hidden">
+      <header data-card="header" className="scoreboard-panel panel-rivets p-4 sm:p-6 md:p-8 text-center space-y-2 sm:space-y-4 relative overflow-hidden">
         <div className="led-bar-top" />
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.25em] uppercase led-text accent-line" style={{ color: 'hsl(var(--led-red))' }}>
@@ -267,9 +267,9 @@ export default function BeltDashboard({
         </h1>
         <div className="flex items-center justify-center gap-2 sm:gap-3">
           <div className="h-px w-6 sm:w-12 bg-gradient-to-r from-transparent to-border" />
-          <h2 className="text-xl sm:text-3xl md:text-4xl font-mono tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase led-text" style={{ color: 'hsl(var(--led-amber))' }}>
+          <span className="text-xl sm:text-3xl md:text-4xl font-mono tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] uppercase led-text" style={{ color: 'hsl(var(--led-amber))' }}>
             REGULAR SEASON
-          </h2>
+          </span>
           <div className="h-px w-6 sm:w-12 bg-gradient-to-l from-transparent to-border" />
         </div>
         <p className="text-muted-foreground text-[0.65rem] sm:text-xs font-mono tracking-[0.1em] sm:tracking-[0.2em] uppercase pt-1 sm:pt-2">
@@ -277,7 +277,7 @@ export default function BeltDashboard({
         </p>
 
         <div className="led-bar-bottom" />
-      </div>
+      </header>
 
       {/* Filters */}
       <div data-card="filters" className="scoreboard-panel p-4 sm:p-6">
@@ -373,7 +373,7 @@ export default function BeltDashboard({
       </div>
 
       {/* Footer */}
-      <div data-card="footer" className="scoreboard-panel panel-rivets p-6 text-center relative overflow-hidden">
+      <footer data-card="footer" className="scoreboard-panel panel-rivets p-6 text-center relative overflow-hidden">
         <div className="led-bar-top" />
         <div className="relative z-10">
           <p className="text-xs font-mono text-muted-foreground tracking-wider uppercase mb-2">
@@ -387,7 +387,7 @@ export default function BeltDashboard({
           </p>
         </div>
         <div className="led-bar-bottom" />
-      </div>
+      </footer>
 
       {/* Buy Me a Coffee */}
       <BuyMeCoffee />

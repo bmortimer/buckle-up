@@ -56,14 +56,16 @@ export default function YearRangeSlider({
     <div className="space-y-2">
       {/* Label */}
       <div className="flex items-center justify-between">
-        <span className="text-[0.65rem] sm:text-xs font-orbitron text-muted-foreground uppercase tracking-wide sm:tracking-wider">
-          ◆ Time Period
+        <span id="time-period-label" className="text-[0.65rem] sm:text-xs font-orbitron text-muted-foreground uppercase tracking-wide sm:tracking-wider">
+          <span aria-hidden="true">◆ </span>Time Period
         </span>
       </div>
 
       {/* Clickable Year Display */}
       <button
         onClick={() => setIsOpen(true)}
+        aria-labelledby="time-period-label"
+        aria-haspopup="dialog"
         className="w-full scoreboard-panel p-2 sm:p-3 relative group hover:border-primary transition-all active:scale-[0.98]"
       >
         {/* Year Display */}
@@ -87,12 +89,17 @@ export default function YearRangeSlider({
           />
 
           {/* Modal */}
-          <div className="fixed inset-4 sm:inset-auto sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-full sm:max-w-2xl sm:max-h-[80vh] scoreboard-panel z-50 overflow-hidden flex flex-col">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="time-period-dialog-title"
+            className="fixed inset-4 sm:inset-auto sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-full sm:max-w-2xl sm:max-h-[80vh] scoreboard-panel z-50 overflow-hidden flex flex-col"
+          >
             {/* Header */}
             <div className="bg-muted/20 border-b-2 border-border p-4 sm:p-5 flex items-center justify-between">
               <div>
-                <h3 className="text-base sm:text-lg font-orbitron uppercase tracking-wider">
-                  ◆ Select Time Period
+                <h3 id="time-period-dialog-title" className="text-base sm:text-lg font-orbitron uppercase tracking-wider">
+                  <span aria-hidden="true">◆ </span>Select Time Period
                 </h3>
                 <div className="text-[0.6rem] text-muted-foreground/60 font-mono mt-1">
                   {minYear} — {maxYear}
@@ -114,6 +121,7 @@ export default function YearRangeSlider({
                 <div>
                   <button
                     onClick={() => handleYearChange(null)}
+                    aria-current={isAllTime ? 'true' : undefined}
                     className={`
                       w-full px-4 py-3 text-base sm:text-lg font-mono font-bold uppercase
                       border-2 transition-all
@@ -148,6 +156,7 @@ export default function YearRangeSlider({
                             <button
                               key={year}
                               onClick={() => handleYearChange(year)}
+                              aria-current={isSelected ? 'true' : undefined}
                               className={`
                                 px-3 py-2 text-sm sm:text-base font-mono font-bold tabular-nums
                                 border-2 transition-all

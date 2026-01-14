@@ -164,7 +164,10 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     <div data-card="calendar" className="scoreboard-panel p-6 relative">
       <div className="flex items-center justify-center mb-6 border-b-2 border-border pb-3">
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
-          ◆ History · {selectedTeam} · {yearDisplay} ◆
+          <span aria-hidden="true">◆ </span>
+          <h2 className="inline font-normal">History</h2>
+          <span> · {selectedTeam} · {yearDisplay} </span>
+          <span aria-hidden="true">◆</span>
         </div>
       </div>
 
@@ -253,7 +256,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                         return (
                           <div
                             key={dayIdx}
-                            className="w-2.5 h-2.5 bg-muted/10 border border-border/20"
+                            className="w-2.5 h-2.5 bg-muted/40 border border-border/50"
                           />
                         )
                       }
@@ -280,7 +283,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                       const cellColor = isLoss
                         ? 'transparent'
                         : failedChallenge
-                          ? 'hsl(30, 30%, 50%)' // Darker tan/brown
+                          ? 'hsl(30, 40%, 50%)' // Darker tan/brown
                           : color
                       const opacity = isWinOrDefense ? 1 : isLoss ? 1 : failedChallenge ? 0.6 : 0.25
 

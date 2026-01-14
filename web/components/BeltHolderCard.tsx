@@ -22,7 +22,9 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
       <div className="relative z-10">
         {/* Header - always centered */}
         <div className="text-[0.6rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 font-orbitron text-center">
-          {isPastSeason ? '◆ OFFSEASON BELT HOLDER ◆' : '◆ CURRENT BELT HOLDER ◆'}
+          <span aria-hidden="true">◆ </span>
+          <h2 className="inline font-normal">{isPastSeason ? 'Offseason Belt Holder' : 'Current Belt Holder'}</h2>
+          <span aria-hidden="true"> ◆</span>
         </div>
 
         {/* Mobile Layout: Stacked */}
@@ -32,9 +34,9 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
             <TeamLogo teamCode={currentHolder} franchises={franchises} league={league} size="xl" />
           </div>
 
-          <div className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 font-orbitron tracking-wide sm:tracking-wider uppercase">
+          <h3 className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 font-orbitron tracking-wide sm:tracking-wider uppercase font-normal">
             {displayName}
-          </div>
+          </h3>
 
           {/* Divider line */}
           <div className="h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-border to-transparent mb-4 sm:mb-6" />
@@ -90,7 +92,7 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
             <div className="mb-4">
               <TeamLogo teamCode={currentHolder} franchises={franchises} league={league} size="xl" />
             </div>
-            <div className="text-base lg:text-lg text-foreground font-orbitron tracking-wider uppercase text-center">
+            <div aria-hidden="true" className="text-base lg:text-lg text-foreground font-orbitron tracking-wider uppercase text-center">
               {displayName}
             </div>
           </div>
