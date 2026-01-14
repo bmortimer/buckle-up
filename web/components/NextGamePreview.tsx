@@ -3,7 +3,7 @@
 import { useMemo } from 'react'
 import type { Game, FranchiseInfo } from '@/lib/types'
 import { findNextTitleBout } from '@/lib/beltTracker'
-import { getTeamDisplayName, getTeamColor } from '@/lib/franchises'
+import { getTeamColor } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 
 interface NextGamePreviewProps {
@@ -37,15 +37,6 @@ export default function NextGamePreview({
 
   // Determine if it's a home or away game for the belt holder
   const isHolderHome = nextGame?.homeTeam === currentHolder
-  const challenger = nextGame
-    ? isHolderHome
-      ? nextGame.awayTeam
-      : nextGame.homeTeam
-    : null
-
-  // Get team info
-  const holderColor = getTeamColor(currentHolder, franchises)
-  const challengerColor = challenger ? getTeamColor(challenger, franchises) : null
 
   // If no next game found, show TBD
   if (!nextGame) {
@@ -130,90 +121,81 @@ export default function NextGamePreview({
             </div>
           </div>
 
-          {/* Teams */}
+          {/* Teams - Always Away @ Home */}
           <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 mb-3 sm:mb-4">
-            {/* Challenger (Away) */}
+            {/* Away Team (Left) */}
             <div className="flex flex-col items-center gap-1 sm:gap-2 min-w-0 flex-1">
               <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 relative">
                 <TeamLogo
-                  teamCode={challenger || ''}
+                  teamCode={nextGame.awayTeam}
                   franchises={franchises}
                   league={league}
                   size="md"
                   className="w-full h-full"
                 />
+                {/* Belt indicator for away team if they're the champion */}
+                {!isHolderHome && (
+                  <div className="absolute -top-1 -right-1 text-amber-500 text-xs sm:text-sm">
+                    🏆
+                  </div>
+                )}
               </div>
               <div className="text-center">
                 <div
                   className="text-xs sm:text-sm md:text-base font-mono tracking-wider led-text truncate max-w-[80px] sm:max-w-[100px]"
-                  style={{ color: challengerColor || 'hsl(var(--led-amber))' }}
+                  style={{ color: getTeamColor(nextGame.awayTeam, franchises) || 'hsl(var(--led-amber))' }}
                 >
-                  {challenger}
+                  {nextGame.awayTeam}
                 </div>
                 <div className="text-[0.5rem] sm:text-[0.6rem] text-muted-foreground uppercase tracking-wide">
-                  Challenger
+                  {isHolderHome ? 'Challenger' : 'Champion'}
                 </div>
               </div>
             </div>
 
-            {/* VS */}
+            {/* @ */}
             <div className="flex flex-col items-center px-2">
               <div
                 className="text-lg sm:text-xl md:text-2xl font-display tracking-wider led-text"
                 style={{ color: 'hsl(var(--led-red))' }}
               >
-                {isHolderHome ? '@' : 'vs'}
+                @
               </div>
             </div>
 
-            {/* Belt Holder (Home or Away depending on matchup) */}
+            {/* Home Team (Right) */}
             <div className="flex flex-col items-center gap-1 sm:gap-2 min-w-0 flex-1">
               <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 relative">
                 <TeamLogo
-                  teamCode={currentHolder}
+                  teamCode={nextGame.homeTeam}
                   franchises={franchises}
                   league={league}
                   size="md"
                   className="w-full h-full"
                 />
-                {/* Belt indicator */}
-                <div className="absolute -top-1 -right-1 text-amber-500 text-xs sm:text-sm">
-                  🏆
-                </div>
+                {/* Belt indicator for home team if they're the champion */}
+                {isHolderHome && (
+                  <div className="absolute -top-1 -right-1 text-amber-500 text-xs sm:text-sm">
+                    🏆
+                  </div>
+                )}
               </div>
               <div className="text-center">
                 <div
                   className="text-xs sm:text-sm md:text-base font-mono tracking-wider led-text truncate max-w-[80px] sm:max-w-[100px]"
-                  style={{ color: holderColor || 'hsl(var(--led-green))' }}
+                  style={{ color: getTeamColor(nextGame.homeTeam, franchises) || 'hsl(var(--led-green))' }}
                 >
-                  {currentHolder}
+                  {nextGame.homeTeam}
                 </div>
                 <div className="text-[0.5rem] sm:text-[0.6rem] text-muted-foreground uppercase tracking-wide">
-                  Champion
+                  {isHolderHome ? 'Champion' : 'Challenger'}
                 </div>
               </div>
             </div>
           </div>
 
           {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-3 sm:mb-4" />
-
-          {/* Location indicator */}
-          <div className="text-center">
-            <p className="text-[0.6rem] sm:text-xs text-muted-foreground font-mono tracking-wider">
-              {isHolderHome ? (
-                <>
-                  <span className="text-amber-500">{challenger}</span> travels to{' '}
-                  <span className="text-emerald-500">{currentHolder}</span>
-                </>
-              ) : (
-                <>
-                  <span className="text-emerald-500">{currentHolder}</span> defends at{' '}
-                  <span className="text-amber-500">{challenger}</span>
-                </>
-              )}
-            </p>
-          </div>
+          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
         </div>
 
         {/* Status indicator */}

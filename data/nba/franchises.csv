@@ -1,0 +1,170 @@
+franchise_id,team_abbr,display_name,city,start_year,end_year,status,successor_franchise_id,hex_color
+
+# ============================================
+# ATLANTA HAWKS
+# ============================================
+ATL,ATL,Atlanta Hawks,Atlanta,1968,,active,,#E03A3E
+
+# ============================================
+# BOSTON CELTICS
+# ============================================
+BOS,BOS,Boston Celtics,Boston,1946,,active,,#007A33
+
+# ============================================
+# BROOKLYN NETS (formerly New Jersey/New York Nets)
+# ============================================
+BKN,BKN,Brooklyn Nets,Brooklyn,2012,,active,,#000000
+NJN,NJN,New Jersey Nets,East Rutherford,1977,2012,relocated,BKN,
+NYN,NYN,New York Nets,Uniondale,1976,1977,relocated,NJN,
+
+# ============================================
+# CHARLOTTE HORNETS (Bobcats expansion, NOT original Hornets)
+# ============================================
+CHA,CHA,Charlotte Hornets,Charlotte,2014,,active,,#1D1160
+CHA04,CHA,Charlotte Bobcats,Charlotte,2004,2014,rebranded,CHA,
+
+# ============================================
+# CHICAGO BULLS
+# ============================================
+CHI,CHI,Chicago Bulls,Chicago,1966,,active,,#CE1141
+
+# ============================================
+# CLEVELAND CAVALIERS
+# ============================================
+CLE,CLE,Cleveland Cavaliers,Cleveland,1970,,active,,#860038
+
+# ============================================
+# DALLAS MAVERICKS
+# ============================================
+DAL,DAL,Dallas Mavericks,Dallas,1980,,active,,#00538C
+
+# ============================================
+# DENVER NUGGETS
+# ============================================
+DEN,DEN,Denver Nuggets,Denver,1976,,active,,#0E2240
+
+# ============================================
+# DETROIT PISTONS
+# ============================================
+DET,DET,Detroit Pistons,Detroit,1957,,active,,#C8102E
+
+# ============================================
+# GOLDEN STATE WARRIORS (abbrev change GOS -> GSW in 1996)
+# ============================================
+GSW,GSW,Golden State Warriors,Oakland,1996,,active,,#1D428A
+GOS,GOS,Golden State Warriors,Oakland,1971,1996,rebranded,GSW,#1D428A
+
+# ============================================
+# HOUSTON ROCKETS (moved from San Diego 1971)
+# ============================================
+HOU,HOU,Houston Rockets,Houston,1971,,active,,#CE1141
+
+# ============================================
+# INDIANA PACERS
+# ============================================
+IND,IND,Indiana Pacers,Indianapolis,1976,,active,,#002D62
+
+# ============================================
+# LA CLIPPERS (Buffalo Braves -> San Diego -> LA)
+# ============================================
+LAC,LAC,Los Angeles Clippers,Los Angeles,1984,,active,,#C8102E
+SDC,SDC,San Diego Clippers,San Diego,1978,1984,relocated,LAC,
+BUF,BUF,Buffalo Braves,Buffalo,1970,1978,relocated,SDC,
+
+# ============================================
+# LOS ANGELES LAKERS
+# ============================================
+LAL,LAL,Los Angeles Lakers,Los Angeles,1960,,active,,#552583
+
+# ============================================
+# MEMPHIS GRIZZLIES (moved from Vancouver 2001)
+# ============================================
+MEM,MEM,Memphis Grizzlies,Memphis,2001,,active,,#5D76A9
+VAN,VAN,Vancouver Grizzlies,Vancouver,1995,2001,relocated,MEM,
+
+# ============================================
+# MIAMI HEAT
+# ============================================
+MIA,MIA,Miami Heat,Miami,1988,,active,,#98002E
+
+# ============================================
+# MILWAUKEE BUCKS
+# ============================================
+MIL,MIL,Milwaukee Bucks,Milwaukee,1968,,active,,#00471B
+
+# ============================================
+# MINNESOTA TIMBERWOLVES
+# ============================================
+MIN,MIN,Minnesota Timberwolves,Minneapolis,1989,,active,,#0C2340
+
+# ============================================
+# NEW ORLEANS PELICANS (Charlotte Hornets -> NO Hornets -> NO/OKC Hornets -> Pelicans)
+# ============================================
+NOP,NOP,New Orleans Pelicans,New Orleans,2013,,active,,#0C2340
+NOH2,NOH,New Orleans Hornets,New Orleans,2007,2013,rebranded,NOP,#00778B
+NOK,NOK,New Orleans/Oklahoma City Hornets,Oklahoma City,2005,2007,relocated,NOH2,#00778B
+NOH,NOH,New Orleans Hornets,New Orleans,2002,2005,relocated,NOK,#00778B
+CHH,CHH,Charlotte Hornets,Charlotte,1988,2002,relocated,NOH,#1D1160
+
+# ============================================
+# NEW YORK KNICKS
+# ============================================
+NYK,NYK,New York Knicks,New York,1946,,active,,#006BB6
+
+# ============================================
+# OKLAHOMA CITY THUNDER (moved from Seattle 2008)
+# ============================================
+OKC,OKC,Oklahoma City Thunder,Oklahoma City,2008,,active,,#007AC1
+SEA,SEA,Seattle SuperSonics,Seattle,1967,2008,relocated,OKC,
+
+# ============================================
+# ORLANDO MAGIC
+# ============================================
+ORL,ORL,Orlando Magic,Orlando,1989,,active,,#0077C0
+
+# ============================================
+# PHILADELPHIA 76ERS (abbrev change PHL -> PHI in 1996)
+# ============================================
+PHI,PHI,Philadelphia 76ers,Philadelphia,1996,,active,,#006BB6
+PHL,PHL,Philadelphia 76ers,Philadelphia,1963,1996,rebranded,PHI,#006BB6
+
+# ============================================
+# PHOENIX SUNS
+# ============================================
+PHX,PHX,Phoenix Suns,Phoenix,1968,,active,,#1D1160
+
+# ============================================
+# PORTLAND TRAIL BLAZERS
+# ============================================
+POR,POR,Portland Trail Blazers,Portland,1970,,active,,#E03A3E
+
+# ============================================
+# SACRAMENTO KINGS (KC Kings -> Sacramento)
+# ============================================
+SAC,SAC,Sacramento Kings,Sacramento,1985,,active,,#5A2D81
+KCK,KCK,Kansas City Kings,Kansas City,1975,1985,relocated,SAC,
+
+# ============================================
+# SAN ANTONIO SPURS (abbrev change SAN -> SAS in 1996)
+# ============================================
+SAS,SAS,San Antonio Spurs,San Antonio,1996,,active,,#C4CED4
+SAN,SAN,San Antonio Spurs,San Antonio,1976,1996,rebranded,SAS,#C4CED4
+
+# ============================================
+# TORONTO RAPTORS
+# ============================================
+TOR,TOR,Toronto Raptors,Toronto,1995,,active,,#CE1141
+
+# ============================================
+# UTAH JAZZ (moved from New Orleans 1979, abbrev change UTH -> UTA in 1996)
+# ============================================
+UTA,UTA,Utah Jazz,Salt Lake City,1996,,active,,#002B5C
+UTH,UTH,Utah Jazz,Salt Lake City,1979,1996,rebranded,UTA,#002B5C
+NOJ,NOJ,New Orleans Jazz,New Orleans,1974,1979,relocated,UTH,
+
+# ============================================
+# WASHINGTON WIZARDS (Bullets -> Wizards)
+# ============================================
+WAS,WAS,Washington Wizards,Washington,1997,,active,,#002B5C
+WSB,WSB,Washington Bullets,Washington,1974,1997,rebranded,WAS,
+
