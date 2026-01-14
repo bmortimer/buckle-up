@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import type { BeltHistory, FranchiseInfo, Game } from '@/lib/types'
+import { isGameCompleted } from '@/lib/types'
 import { getTeamColor, getTeamDisplayName } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 import { isSameFranchise } from '@/lib/franchises'
@@ -12,6 +13,7 @@ interface BeltCalendarProps {
   franchises: FranchiseInfo[]
   selectedTeam?: string | null
   allGames: Game[]
+  league?: 'nba' | 'wnba'
 }
 
 interface DayData {
@@ -29,7 +31,7 @@ interface PopupPosition {
   y: number
 }
 
-export default function BeltCalendar({ history, franchises, selectedTeam: externalSelectedTeam, allGames }: BeltCalendarProps) {
+export default function BeltCalendar({ history, franchises, selectedTeam: externalSelectedTeam, allGames, league = 'wnba' }: BeltCalendarProps) {
   const [clickedDay, setClickedDay] = useState<DayData | null>(null)
   const [popupPosition, setPopupPosition] = useState<PopupPosition | null>(null)
   const [selectedTeam, setSelectedTeam] = useState<string | null>(externalSelectedTeam || null)
@@ -79,12 +81,12 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
       isSameFranchise(game.awayTeam, currentHolder, franchises)
     )
 
-    if (holderGame) {
-      // Belt holder played
+    if (holderGame && isGameCompleted(holderGame)) {
+      // Belt holder played a completed game
       const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
       const holderWon = holderIsHome
-        ? holderGame.homeScore > holderGame.awayScore
-        : holderGame.awayScore > holderGame.homeScore
+        ? holderGame.homeScore! > holderGame.awayScore!
+        : holderGame.awayScore! > holderGame.homeScore!
 
       const winner = holderIsHome
         ? (holderWon ? holderGame.homeTeam : holderGame.awayTeam)
@@ -106,6 +108,19 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
       if (!holderWon) {
         currentHolder = winner
       }
+    } else if (holderGame && !isGameCompleted(holderGame)) {
+      // Belt holder has a scheduled (not yet played) game
+      const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
+      const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
+
+      dayMap.set(dateStr, {
+        date: dateStr,
+        holder: currentHolder,
+        played: false,
+        won: null,
+        challenger: challenger,
+        game: holderGame,
+      })
     } else {
       // Belt holder didn't play (off day)
       dayMap.set(dateStr, {
@@ -166,7 +181,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                 onClick={() => setSelectedTeam(team)}
                 className="flex items-center gap-2 px-3 py-2 border border-border hover:border-amber-500 transition-all group"
               >
-                <TeamLogo teamCode={team} franchises={franchises} size="xs" />
+                <TeamLogo teamCode={team} franchises={franchises} league={league} size="xs" />
                 <span className="text-xs font-mono group-hover:text-amber-500 transition-colors">
                   {team}
                 </span>
@@ -316,6 +331,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
           position={popupPosition}
           franchises={franchises}
           selectedTeam={selectedTeam}
+          league={league}
           onClose={() => {
             setClickedDay(null)
             setPopupPosition(null)

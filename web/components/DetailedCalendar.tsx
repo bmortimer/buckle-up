@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react'
 import type { BeltHistory, FranchiseInfo, Game } from '@/lib/types'
+import { isGameCompleted } from '@/lib/types'
 import { getTeamColor } from '@/lib/franchises'
 import { isSameFranchise } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
@@ -12,6 +13,7 @@ interface DetailedCalendarProps {
   franchises: FranchiseInfo[]
   allGames: Game[]
   year: number
+  league?: 'nba' | 'wnba'
 }
 
 interface PopupPosition {
@@ -29,7 +31,7 @@ interface DayData {
   challenger?: string
 }
 
-export default function DetailedCalendar({ history, franchises, allGames, year }: DetailedCalendarProps) {
+export default function DetailedCalendar({ history, franchises, allGames, year, league = 'wnba' }: DetailedCalendarProps) {
   const [selectedDay, setSelectedDay] = useState<DayData | null>(null)
   const [popupPosition, setPopupPosition] = useState<PopupPosition | null>(null)
 
@@ -67,11 +69,12 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
         isSameFranchise(game.awayTeam, currentHolder, franchises)
       )
 
-      if (holderGame) {
+      if (holderGame && isGameCompleted(holderGame)) {
+        // Belt holder played a completed game
         const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
         const holderWon = holderIsHome
-          ? holderGame.homeScore > holderGame.awayScore
-          : holderGame.awayScore > holderGame.homeScore
+          ? holderGame.homeScore! > holderGame.awayScore!
+          : holderGame.awayScore! > holderGame.homeScore!
 
         const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
         const winner = holderWon ? currentHolder : challenger
@@ -89,6 +92,19 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
         })
 
         currentHolder = newHolder
+      } else if (holderGame && !isGameCompleted(holderGame)) {
+        // Belt holder has a scheduled game (not yet played)
+        const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
+        const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
+
+        map.set(dateStr, {
+          date: dateStr,
+          holder: currentHolder,
+          game: holderGame,
+          beltChanged: false,
+          holderWon: null,
+          challenger,
+        })
       } else {
         // Off day
         map.set(dateStr, {
@@ -249,7 +265,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
                           {/* Game indicator - show the winner, positioned 1/3 up from bottom */}
                           {winner && (
                             <div className="absolute inset-0 flex items-end justify-center pb-[10%] pointer-events-none">
-                              <TeamLogo teamCode={winner} franchises={franchises} size="xs" />
+                              <TeamLogo teamCode={winner} franchises={franchises} league={league} size="xs" />
                             </div>
                           )}
                         </div>
@@ -269,6 +285,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year }
           dayData={selectedDay}
           position={popupPosition}
           franchises={franchises}
+          league={league}
           onClose={handleClose}
         />
       )}

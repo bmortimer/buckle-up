@@ -6,8 +6,15 @@ export interface Game {
   date: string
   homeTeam: string
   awayTeam: string
-  homeScore: number
-  awayScore: number
+  homeScore: number | null  // null for scheduled/unplayed games
+  awayScore: number | null  // null for scheduled/unplayed games
+}
+
+/**
+ * Check if a game has been played (has scores)
+ */
+export function isGameCompleted(game: Game): boolean {
+  return game.homeScore !== null && game.awayScore !== null
 }
 
 export interface SeasonData {

@@ -1,0 +1,8627 @@
+{
+  "season": "2025-26",
+  "league": "NBA",
+  "games": [
+    {
+      "date": "2025-10-21",
+      "homeTeam": "OKC",
+      "awayTeam": "HOU",
+      "homeScore": 125,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-10-21",
+      "homeTeam": "LAL",
+      "awayTeam": "GSW",
+      "homeScore": 109,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "NYK",
+      "awayTeam": "CLE",
+      "homeScore": 119,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "DAL",
+      "awayTeam": "SAS",
+      "homeScore": 92,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "CHA",
+      "awayTeam": "BKN",
+      "homeScore": 136,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "ORL",
+      "awayTeam": "MIA",
+      "homeScore": 125,
+      "awayScore": 121
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "ATL",
+      "awayTeam": "TOR",
+      "homeScore": 118,
+      "awayScore": 138
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 116,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 115,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "MEM",
+      "awayTeam": "NOP",
+      "homeScore": 128,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "MIL",
+      "awayTeam": "WAS",
+      "homeScore": 133,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "UTA",
+      "awayTeam": "LAC",
+      "homeScore": 129,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "PHX",
+      "awayTeam": "SAC",
+      "homeScore": 120,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-10-22",
+      "homeTeam": "POR",
+      "awayTeam": "MIN",
+      "homeScore": 114,
+      "awayScore": 118
+    },
+    {
+      "date": "2025-10-23",
+      "homeTeam": "IND",
+      "awayTeam": "OKC",
+      "homeScore": 135,
+      "awayScore": 141
+    },
+    {
+      "date": "2025-10-23",
+      "homeTeam": "GSW",
+      "awayTeam": "DEN",
+      "homeScore": 137,
+      "awayScore": 131
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "NYK",
+      "awayTeam": "BOS",
+      "homeScore": 105,
+      "awayScore": 95
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "LAL",
+      "awayTeam": "MIN",
+      "homeScore": 128,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "ORL",
+      "awayTeam": "ATL",
+      "homeScore": 107,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "BKN",
+      "awayTeam": "CLE",
+      "homeScore": 124,
+      "awayScore": 131
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "TOR",
+      "awayTeam": "MIL",
+      "homeScore": 116,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "HOU",
+      "awayTeam": "DET",
+      "homeScore": 111,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "MEM",
+      "awayTeam": "MIA",
+      "homeScore": 114,
+      "awayScore": 146
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "NOP",
+      "awayTeam": "SAS",
+      "homeScore": 116,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "DAL",
+      "awayTeam": "WAS",
+      "homeScore": 107,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "POR",
+      "awayTeam": "GSW",
+      "homeScore": 139,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "SAC",
+      "awayTeam": "UTA",
+      "homeScore": 105,
+      "awayScore": 104
+    },
+    {
+      "date": "2025-10-24",
+      "homeTeam": "LAC",
+      "awayTeam": "PHX",
+      "homeScore": 129,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-10-25",
+      "homeTeam": "ORL",
+      "awayTeam": "CHI",
+      "homeScore": 98,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-10-25",
+      "homeTeam": "ATL",
+      "awayTeam": "OKC",
+      "homeScore": 100,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-10-25",
+      "homeTeam": "PHI",
+      "awayTeam": "CHA",
+      "homeScore": 125,
+      "awayScore": 121
+    },
+    {
+      "date": "2025-10-25",
+      "homeTeam": "MEM",
+      "awayTeam": "IND",
+      "homeScore": 128,
+      "awayScore": 103
+    },
+    {
+      "date": "2025-10-25",
+      "homeTeam": "DEN",
+      "awayTeam": "PHX",
+      "homeScore": 133,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-10-26",
+      "homeTeam": "SAS",
+      "awayTeam": "BKN",
+      "homeScore": 118,
+      "awayScore": 107
+    },
+    {
+      "date": "2025-10-26",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 119,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-10-26",
+      "homeTeam": "CLE",
+      "awayTeam": "MIL",
+      "homeScore": 118,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-10-26",
+      "homeTeam": "MIA",
+      "awayTeam": "NYK",
+      "homeScore": 115,
+      "awayScore": 107
+    },
+    {
+      "date": "2025-10-26",
+      "homeTeam": "WAS",
+      "awayTeam": "CHA",
+      "homeScore": 113,
+      "awayScore": 139
+    },
+    {
+      "date": "2025-10-26",
+      "homeTeam": "MIN",
+      "awayTeam": "IND",
+      "homeScore": 114,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-10-26",
+      "homeTeam": "DAL",
+      "awayTeam": "TOR",
+      "homeScore": 139,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-10-26",
+      "homeTeam": "LAC",
+      "awayTeam": "POR",
+      "homeScore": 114,
+      "awayScore": 107
+    },
+    {
+      "date": "2025-10-26",
+      "homeTeam": "SAC",
+      "awayTeam": "LAL",
+      "homeScore": 120,
+      "awayScore": 127
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 95,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "MIN",
+      "awayTeam": "DEN",
+      "homeScore": 114,
+      "awayScore": 127
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "PHI",
+      "awayTeam": "ORL",
+      "homeScore": 136,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 128,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "HOU",
+      "awayTeam": "BKN",
+      "homeScore": 137,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "NOP",
+      "awayTeam": "BOS",
+      "homeScore": 90,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "SAS",
+      "awayTeam": "TOR",
+      "homeScore": 121,
+      "awayScore": 103
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "DAL",
+      "awayTeam": "OKC",
+      "homeScore": 94,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "UTA",
+      "awayTeam": "PHX",
+      "homeScore": 138,
+      "awayScore": 134
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "GSW",
+      "awayTeam": "MEM",
+      "homeScore": 131,
+      "awayScore": 118
+    },
+    {
+      "date": "2025-10-27",
+      "homeTeam": "LAL",
+      "awayTeam": "POR",
+      "homeScore": 108,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-10-28",
+      "homeTeam": "WAS",
+      "awayTeam": "PHI",
+      "homeScore": 134,
+      "awayScore": 139
+    },
+    {
+      "date": "2025-10-28",
+      "homeTeam": "MIA",
+      "awayTeam": "CHA",
+      "homeScore": 144,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-10-28",
+      "homeTeam": "MIL",
+      "awayTeam": "NYK",
+      "homeScore": 121,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-10-28",
+      "homeTeam": "OKC",
+      "awayTeam": "SAC",
+      "homeScore": 107,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-10-28",
+      "homeTeam": "GSW",
+      "awayTeam": "LAC",
+      "homeScore": 98,
+      "awayScore": 79
+    },
+    {
+      "date": "2025-10-29",
+      "homeTeam": "BOS",
+      "awayTeam": "CLE",
+      "homeScore": 125,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-10-29",
+      "homeTeam": "DET",
+      "awayTeam": "ORL",
+      "homeScore": 135,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-10-29",
+      "homeTeam": "BKN",
+      "awayTeam": "ATL",
+      "homeScore": 112,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-10-29",
+      "homeTeam": "TOR",
+      "awayTeam": "HOU",
+      "homeScore": 121,
+      "awayScore": 139
+    },
+    {
+      "date": "2025-10-29",
+      "homeTeam": "CHI",
+      "awayTeam": "SAC",
+      "homeScore": 126,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-10-29",
+      "homeTeam": "DAL",
+      "awayTeam": "IND",
+      "homeScore": 107,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-10-29",
+      "homeTeam": "DEN",
+      "awayTeam": "NOP",
+      "homeScore": 122,
+      "awayScore": 88
+    },
+    {
+      "date": "2025-10-29",
+      "homeTeam": "UTA",
+      "awayTeam": "POR",
+      "homeScore": 134,
+      "awayScore": 136
+    },
+    {
+      "date": "2025-10-29",
+      "homeTeam": "MIN",
+      "awayTeam": "LAL",
+      "homeScore": 115,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-10-29",
+      "homeTeam": "PHX",
+      "awayTeam": "MEM",
+      "homeScore": 113,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-10-30",
+      "homeTeam": "CHA",
+      "awayTeam": "ORL",
+      "homeScore": 107,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-10-30",
+      "homeTeam": "MIL",
+      "awayTeam": "GSW",
+      "homeScore": 120,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-10-30",
+      "homeTeam": "OKC",
+      "awayTeam": "WAS",
+      "homeScore": 127,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-10-30",
+      "homeTeam": "SAS",
+      "awayTeam": "MIA",
+      "homeScore": 107,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-10-31",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 108,
+      "awayScore": 128
+    },
+    {
+      "date": "2025-10-31",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 108,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-10-31",
+      "homeTeam": "CLE",
+      "awayTeam": "TOR",
+      "homeScore": 101,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-10-31",
+      "homeTeam": "CHI",
+      "awayTeam": "NYK",
+      "homeScore": 135,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-10-31",
+      "homeTeam": "MEM",
+      "awayTeam": "LAL",
+      "homeScore": 112,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-10-31",
+      "homeTeam": "PHX",
+      "awayTeam": "UTA",
+      "homeScore": 118,
+      "awayScore": 96
+    },
+    {
+      "date": "2025-10-31",
+      "homeTeam": "POR",
+      "awayTeam": "DEN",
+      "homeScore": 109,
+      "awayScore": 107
+    },
+    {
+      "date": "2025-10-31",
+      "homeTeam": "LAC",
+      "awayTeam": "NOP",
+      "homeScore": 126,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-11-01",
+      "homeTeam": "MIL",
+      "awayTeam": "SAC",
+      "homeScore": 133,
+      "awayScore": 135
+    },
+    {
+      "date": "2025-11-01",
+      "homeTeam": "CHA",
+      "awayTeam": "MIN",
+      "homeScore": 105,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-11-01",
+      "homeTeam": "IND",
+      "awayTeam": "GSW",
+      "homeScore": 114,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-11-01",
+      "homeTeam": "WAS",
+      "awayTeam": "ORL",
+      "homeScore": 94,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-11-01",
+      "homeTeam": "BOS",
+      "awayTeam": "HOU",
+      "homeScore": 101,
+      "awayScore": 128
+    },
+    {
+      "date": "2025-11-01",
+      "homeTeam": "DET",
+      "awayTeam": "DAL",
+      "homeScore": 122,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-11-02",
+      "homeTeam": "OKC",
+      "awayTeam": "NOP",
+      "homeScore": 137,
+      "awayScore": 106
+    },
+    {
+      "date": "2025-11-02",
+      "homeTeam": "BKN",
+      "awayTeam": "PHI",
+      "homeScore": 105,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-11-02",
+      "homeTeam": "CHA",
+      "awayTeam": "UTA",
+      "homeScore": 126,
+      "awayScore": 103
+    },
+    {
+      "date": "2025-11-02",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "homeScore": 117,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-11-02",
+      "homeTeam": "TOR",
+      "awayTeam": "MEM",
+      "homeScore": 117,
+      "awayScore": 104
+    },
+    {
+      "date": "2025-11-02",
+      "homeTeam": "NYK",
+      "awayTeam": "CHI",
+      "homeScore": 128,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-11-02",
+      "homeTeam": "PHX",
+      "awayTeam": "SAS",
+      "homeScore": 130,
+      "awayScore": 118
+    },
+    {
+      "date": "2025-11-02",
+      "homeTeam": "LAL",
+      "awayTeam": "MIA",
+      "homeScore": 130,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-11-03",
+      "homeTeam": "BKN",
+      "awayTeam": "MIN",
+      "homeScore": 109,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-11-03",
+      "homeTeam": "IND",
+      "awayTeam": "MIL",
+      "homeScore": 115,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-11-03",
+      "homeTeam": "BOS",
+      "awayTeam": "UTA",
+      "homeScore": 103,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-11-03",
+      "homeTeam": "NYK",
+      "awayTeam": "WAS",
+      "homeScore": 119,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-11-03",
+      "homeTeam": "HOU",
+      "awayTeam": "DAL",
+      "homeScore": 110,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-11-03",
+      "homeTeam": "MEM",
+      "awayTeam": "DET",
+      "homeScore": 106,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-11-03",
+      "homeTeam": "DEN",
+      "awayTeam": "SAC",
+      "homeScore": 130,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-11-03",
+      "homeTeam": "POR",
+      "awayTeam": "LAL",
+      "homeScore": 115,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-11-03",
+      "homeTeam": "LAC",
+      "awayTeam": "MIA",
+      "homeScore": 119,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-11-04",
+      "homeTeam": "TOR",
+      "awayTeam": "MIL",
+      "homeScore": 128,
+      "awayScore": 100
+    },
+    {
+      "date": "2025-11-04",
+      "homeTeam": "ATL",
+      "awayTeam": "ORL",
+      "homeScore": 127,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-04",
+      "homeTeam": "CHI",
+      "awayTeam": "PHI",
+      "homeScore": 113,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-11-04",
+      "homeTeam": "NOP",
+      "awayTeam": "CHA",
+      "homeScore": 116,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-04",
+      "homeTeam": "GSW",
+      "awayTeam": "PHX",
+      "homeScore": 118,
+      "awayScore": 107
+    },
+    {
+      "date": "2025-11-04",
+      "homeTeam": "LAC",
+      "awayTeam": "OKC",
+      "homeScore": 107,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "CLE",
+      "awayTeam": "PHI",
+      "homeScore": 132,
+      "awayScore": 121
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "DET",
+      "awayTeam": "UTA",
+      "homeScore": 114,
+      "awayScore": 103
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "IND",
+      "awayTeam": "BKN",
+      "homeScore": 103,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "BOS",
+      "awayTeam": "WAS",
+      "homeScore": 136,
+      "awayScore": 107
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "NYK",
+      "awayTeam": "MIN",
+      "homeScore": 137,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "MEM",
+      "awayTeam": "HOU",
+      "homeScore": 109,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "DAL",
+      "awayTeam": "NOP",
+      "homeScore": 99,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "DEN",
+      "awayTeam": "MIA",
+      "homeScore": 122,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "LAL",
+      "awayTeam": "SAS",
+      "homeScore": 118,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "POR",
+      "awayTeam": "OKC",
+      "homeScore": 121,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-11-05",
+      "homeTeam": "SAC",
+      "awayTeam": "GSW",
+      "homeScore": 121,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-11-06",
+      "homeTeam": "PHX",
+      "awayTeam": "LAC",
+      "homeScore": 115,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "ORL",
+      "awayTeam": "BOS",
+      "homeScore": 123,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "WAS",
+      "awayTeam": "CLE",
+      "homeScore": 115,
+      "awayScore": 148
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "ATL",
+      "awayTeam": "TOR",
+      "homeScore": 97,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "BKN",
+      "awayTeam": "DET",
+      "homeScore": 107,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "SAS",
+      "awayTeam": "HOU",
+      "homeScore": 121,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "MIA",
+      "awayTeam": "CHA",
+      "homeScore": 126,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "MEM",
+      "awayTeam": "DAL",
+      "homeScore": 118,
+      "awayScore": 104
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "MIL",
+      "awayTeam": "CHI",
+      "homeScore": 126,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "MIN",
+      "awayTeam": "UTA",
+      "homeScore": 137,
+      "awayScore": 97
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "DEN",
+      "awayTeam": "GSW",
+      "homeScore": 129,
+      "awayScore": 104
+    },
+    {
+      "date": "2025-11-07",
+      "homeTeam": "SAC",
+      "awayTeam": "OKC",
+      "homeScore": 101,
+      "awayScore": 132
+    },
+    {
+      "date": "2025-11-08",
+      "homeTeam": "WAS",
+      "awayTeam": "DAL",
+      "homeScore": 105,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-11-08",
+      "homeTeam": "PHI",
+      "awayTeam": "TOR",
+      "homeScore": 130,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-11-08",
+      "homeTeam": "ATL",
+      "awayTeam": "LAL",
+      "homeScore": 122,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-11-08",
+      "homeTeam": "CLE",
+      "awayTeam": "CHI",
+      "homeScore": 128,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-11-08",
+      "homeTeam": "MIA",
+      "awayTeam": "POR",
+      "homeScore": 136,
+      "awayScore": 131
+    },
+    {
+      "date": "2025-11-08",
+      "homeTeam": "SAS",
+      "awayTeam": "NOP",
+      "homeScore": 126,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-11-08",
+      "homeTeam": "DEN",
+      "awayTeam": "IND",
+      "homeScore": 117,
+      "awayScore": 100
+    },
+    {
+      "date": "2025-11-08",
+      "homeTeam": "LAC",
+      "awayTeam": "PHX",
+      "homeScore": 103,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-11-09",
+      "homeTeam": "MIL",
+      "awayTeam": "HOU",
+      "homeScore": 115,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-11-09",
+      "homeTeam": "NYK",
+      "awayTeam": "BKN",
+      "homeScore": 134,
+      "awayScore": 98
+    },
+    {
+      "date": "2025-11-09",
+      "homeTeam": "ORL",
+      "awayTeam": "BOS",
+      "homeScore": 107,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-11-09",
+      "homeTeam": "MEM",
+      "awayTeam": "OKC",
+      "homeScore": 100,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-11-09",
+      "homeTeam": "PHI",
+      "awayTeam": "DET",
+      "homeScore": 108,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-11-09",
+      "homeTeam": "GSW",
+      "awayTeam": "IND",
+      "homeScore": 114,
+      "awayScore": 83
+    },
+    {
+      "date": "2025-11-09",
+      "homeTeam": "SAC",
+      "awayTeam": "MIN",
+      "homeScore": 117,
+      "awayScore": 144
+    },
+    {
+      "date": "2025-11-10",
+      "homeTeam": "CHA",
+      "awayTeam": "LAL",
+      "homeScore": 111,
+      "awayScore": 121
+    },
+    {
+      "date": "2025-11-10",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": 137,
+      "awayScore": 135
+    },
+    {
+      "date": "2025-11-10",
+      "homeTeam": "ORL",
+      "awayTeam": "POR",
+      "homeScore": 115,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-10",
+      "homeTeam": "MIA",
+      "awayTeam": "CLE",
+      "homeScore": 140,
+      "awayScore": 138
+    },
+    {
+      "date": "2025-11-10",
+      "homeTeam": "CHI",
+      "awayTeam": "SAS",
+      "homeScore": 117,
+      "awayScore": 121
+    },
+    {
+      "date": "2025-11-10",
+      "homeTeam": "DAL",
+      "awayTeam": "MIL",
+      "homeScore": 114,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-11-10",
+      "homeTeam": "PHX",
+      "awayTeam": "NOP",
+      "homeScore": 121,
+      "awayScore": 98
+    },
+    {
+      "date": "2025-11-10",
+      "homeTeam": "UTA",
+      "awayTeam": "MIN",
+      "homeScore": 113,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-11-10",
+      "homeTeam": "LAC",
+      "awayTeam": "ATL",
+      "homeScore": 102,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-11-11",
+      "homeTeam": "BKN",
+      "awayTeam": "TOR",
+      "homeScore": 109,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-11-11",
+      "homeTeam": "NYK",
+      "awayTeam": "MEM",
+      "homeScore": 133,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-11-11",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 102,
+      "awayScore": 100
+    },
+    {
+      "date": "2025-11-11",
+      "homeTeam": "OKC",
+      "awayTeam": "GSW",
+      "homeScore": 126,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-11-11",
+      "homeTeam": "UTA",
+      "awayTeam": "IND",
+      "homeScore": 152,
+      "awayScore": 128
+    },
+    {
+      "date": "2025-11-11",
+      "homeTeam": "SAC",
+      "awayTeam": "DEN",
+      "homeScore": 108,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "CHA",
+      "awayTeam": "MIL",
+      "homeScore": 111,
+      "awayScore": 100
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 124,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "NYK",
+      "awayTeam": "ORL",
+      "homeScore": 107,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "BOS",
+      "awayTeam": "MEM",
+      "homeScore": 131,
+      "awayScore": 95
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "MIA",
+      "awayTeam": "CLE",
+      "homeScore": 116,
+      "awayScore": 130
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "HOU",
+      "awayTeam": "WAS",
+      "homeScore": 135,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "NOP",
+      "awayTeam": "POR",
+      "homeScore": 117,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "SAS",
+      "awayTeam": "GSW",
+      "homeScore": 120,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "DAL",
+      "awayTeam": "PHX",
+      "homeScore": 114,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "OKC",
+      "awayTeam": "LAL",
+      "homeScore": 121,
+      "awayScore": 92
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "SAC",
+      "awayTeam": "ATL",
+      "homeScore": 100,
+      "awayScore": 133
+    },
+    {
+      "date": "2025-11-12",
+      "homeTeam": "LAC",
+      "awayTeam": "DEN",
+      "homeScore": 116,
+      "awayScore": 130
+    },
+    {
+      "date": "2025-11-13",
+      "homeTeam": "CLE",
+      "awayTeam": "TOR",
+      "homeScore": 113,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-11-13",
+      "homeTeam": "PHX",
+      "awayTeam": "IND",
+      "homeScore": 133,
+      "awayScore": 98
+    },
+    {
+      "date": "2025-11-13",
+      "homeTeam": "UTA",
+      "awayTeam": "ATL",
+      "homeScore": 122,
+      "awayScore": 132
+    },
+    {
+      "date": "2025-11-14",
+      "homeTeam": "NYK",
+      "awayTeam": "MIA",
+      "homeScore": 140,
+      "awayScore": 132
+    },
+    {
+      "date": "2025-11-14",
+      "homeTeam": "ORL",
+      "awayTeam": "BKN",
+      "homeScore": 105,
+      "awayScore": 98
+    },
+    {
+      "date": "2025-11-14",
+      "homeTeam": "DET",
+      "awayTeam": "PHI",
+      "homeScore": 114,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-11-14",
+      "homeTeam": "HOU",
+      "awayTeam": "POR",
+      "homeScore": 140,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-11-14",
+      "homeTeam": "MIL",
+      "awayTeam": "CHA",
+      "homeScore": 147,
+      "awayScore": 134
+    },
+    {
+      "date": "2025-11-14",
+      "homeTeam": "MIN",
+      "awayTeam": "SAC",
+      "homeScore": 124,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-11-14",
+      "homeTeam": "NOP",
+      "awayTeam": "LAL",
+      "homeScore": 104,
+      "awayScore": 118
+    },
+    {
+      "date": "2025-11-14",
+      "homeTeam": "DAL",
+      "awayTeam": "LAC",
+      "homeScore": 127,
+      "awayScore": 133
+    },
+    {
+      "date": "2025-11-14",
+      "homeTeam": "SAS",
+      "awayTeam": "GSW",
+      "homeScore": 108,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-11-15",
+      "homeTeam": "CLE",
+      "awayTeam": "MEM",
+      "homeScore": 108,
+      "awayScore": 100
+    },
+    {
+      "date": "2025-11-15",
+      "homeTeam": "CHA",
+      "awayTeam": "OKC",
+      "homeScore": 96,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-11-15",
+      "homeTeam": "IND",
+      "awayTeam": "TOR",
+      "homeScore": 111,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-11-15",
+      "homeTeam": "MIL",
+      "awayTeam": "LAL",
+      "homeScore": 95,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-11-15",
+      "homeTeam": "MIN",
+      "awayTeam": "DEN",
+      "homeScore": 112,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-11-16",
+      "homeTeam": "BOS",
+      "awayTeam": "LAC",
+      "homeScore": 121,
+      "awayScore": 118
+    },
+    {
+      "date": "2025-11-16",
+      "homeTeam": "SAS",
+      "awayTeam": "SAC",
+      "homeScore": 123,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-11-16",
+      "homeTeam": "WAS",
+      "awayTeam": "BKN",
+      "homeScore": 106,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-11-16",
+      "homeTeam": "HOU",
+      "awayTeam": "ORL",
+      "homeScore": 117,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-11-16",
+      "homeTeam": "NOP",
+      "awayTeam": "GSW",
+      "homeScore": 106,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-11-16",
+      "homeTeam": "DAL",
+      "awayTeam": "POR",
+      "homeScore": 138,
+      "awayScore": 133
+    },
+    {
+      "date": "2025-11-16",
+      "homeTeam": "PHX",
+      "awayTeam": "ATL",
+      "homeScore": 122,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-11-16",
+      "homeTeam": "UTA",
+      "awayTeam": "CHI",
+      "homeScore": 150,
+      "awayScore": 147
+    },
+    {
+      "date": "2025-11-17",
+      "homeTeam": "CLE",
+      "awayTeam": "MIL",
+      "homeScore": 118,
+      "awayScore": 106
+    },
+    {
+      "date": "2025-11-17",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 127,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-17",
+      "homeTeam": "PHI",
+      "awayTeam": "LAC",
+      "homeScore": 110,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-11-17",
+      "homeTeam": "MIA",
+      "awayTeam": "NYK",
+      "homeScore": 115,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-11-17",
+      "homeTeam": "TOR",
+      "awayTeam": "CHA",
+      "homeScore": 110,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-11-17",
+      "homeTeam": "MIN",
+      "awayTeam": "DAL",
+      "homeScore": 120,
+      "awayScore": 96
+    },
+    {
+      "date": "2025-11-17",
+      "homeTeam": "NOP",
+      "awayTeam": "OKC",
+      "homeScore": 109,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-11-17",
+      "homeTeam": "DEN",
+      "awayTeam": "CHI",
+      "homeScore": 127,
+      "awayScore": 130
+    },
+    {
+      "date": "2025-11-18",
+      "homeTeam": "ORL",
+      "awayTeam": "GSW",
+      "homeScore": 121,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-11-18",
+      "homeTeam": "BKN",
+      "awayTeam": "BOS",
+      "homeScore": 99,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-11-18",
+      "homeTeam": "ATL",
+      "awayTeam": "DET",
+      "homeScore": 112,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-11-18",
+      "homeTeam": "SAS",
+      "awayTeam": "MEM",
+      "homeScore": 111,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-11-18",
+      "homeTeam": "LAL",
+      "awayTeam": "UTA",
+      "homeScore": 140,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-11-18",
+      "homeTeam": "POR",
+      "awayTeam": "PHX",
+      "homeScore": 110,
+      "awayScore": 127
+    },
+    {
+      "date": "2025-11-19",
+      "homeTeam": "CLE",
+      "awayTeam": "HOU",
+      "homeScore": 104,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-11-19",
+      "homeTeam": "IND",
+      "awayTeam": "CHA",
+      "homeScore": 127,
+      "awayScore": 118
+    },
+    {
+      "date": "2025-11-19",
+      "homeTeam": "MIA",
+      "awayTeam": "GSW",
+      "homeScore": 110,
+      "awayScore": 96
+    },
+    {
+      "date": "2025-11-19",
+      "homeTeam": "PHI",
+      "awayTeam": "TOR",
+      "homeScore": 112,
+      "awayScore": 121
+    },
+    {
+      "date": "2025-11-19",
+      "homeTeam": "MIN",
+      "awayTeam": "WAS",
+      "homeScore": 120,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-11-19",
+      "homeTeam": "NOP",
+      "awayTeam": "DEN",
+      "homeScore": 118,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-11-19",
+      "homeTeam": "OKC",
+      "awayTeam": "SAC",
+      "homeScore": 113,
+      "awayScore": 99
+    },
+    {
+      "date": "2025-11-19",
+      "homeTeam": "DAL",
+      "awayTeam": "NYK",
+      "homeScore": 111,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-11-19",
+      "homeTeam": "POR",
+      "awayTeam": "CHI",
+      "homeScore": 121,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-11-20",
+      "homeTeam": "ORL",
+      "awayTeam": "LAC",
+      "homeScore": 129,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-11-20",
+      "homeTeam": "MEM",
+      "awayTeam": "SAC",
+      "homeScore": 137,
+      "awayScore": 96
+    },
+    {
+      "date": "2025-11-20",
+      "homeTeam": "MIL",
+      "awayTeam": "PHI",
+      "homeScore": 114,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-11-20",
+      "homeTeam": "SAS",
+      "awayTeam": "ATL",
+      "homeScore": 135,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-11-21",
+      "homeTeam": "CLE",
+      "awayTeam": "IND",
+      "homeScore": 120,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-11-21",
+      "homeTeam": "BOS",
+      "awayTeam": "BKN",
+      "homeScore": 105,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-11-21",
+      "homeTeam": "TOR",
+      "awayTeam": "WAS",
+      "homeScore": 140,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-11-21",
+      "homeTeam": "CHI",
+      "awayTeam": "MIA",
+      "homeScore": 107,
+      "awayScore": 143
+    },
+    {
+      "date": "2025-11-21",
+      "homeTeam": "DAL",
+      "awayTeam": "NOP",
+      "homeScore": 118,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-11-21",
+      "homeTeam": "PHX",
+      "awayTeam": "MIN",
+      "homeScore": 114,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-11-21",
+      "homeTeam": "HOU",
+      "awayTeam": "DEN",
+      "homeScore": 109,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-21",
+      "homeTeam": "UTA",
+      "awayTeam": "OKC",
+      "homeScore": 112,
+      "awayScore": 144
+    },
+    {
+      "date": "2025-11-21",
+      "homeTeam": "GSW",
+      "awayTeam": "POR",
+      "homeScore": 123,
+      "awayScore": 127
+    },
+    {
+      "date": "2025-11-22",
+      "homeTeam": "CHA",
+      "awayTeam": "LAC",
+      "homeScore": 116,
+      "awayScore": 131
+    },
+    {
+      "date": "2025-11-22",
+      "homeTeam": "ORL",
+      "awayTeam": "NYK",
+      "homeScore": 133,
+      "awayScore": 121
+    },
+    {
+      "date": "2025-11-22",
+      "homeTeam": "NOP",
+      "awayTeam": "ATL",
+      "homeScore": 98,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-11-22",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 121,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-11-22",
+      "homeTeam": "MIL",
+      "awayTeam": "DET",
+      "homeScore": 116,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-11-22",
+      "homeTeam": "DAL",
+      "awayTeam": "MEM",
+      "homeScore": 96,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-11-22",
+      "homeTeam": "DEN",
+      "awayTeam": "SAC",
+      "homeScore": 123,
+      "awayScore": 128
+    },
+    {
+      "date": "2025-11-23",
+      "homeTeam": "PHI",
+      "awayTeam": "MIA",
+      "homeScore": 117,
+      "awayScore": 127
+    },
+    {
+      "date": "2025-11-23",
+      "homeTeam": "ATL",
+      "awayTeam": "CHA",
+      "homeScore": 113,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-11-23",
+      "homeTeam": "BOS",
+      "awayTeam": "ORL",
+      "homeScore": 138,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-11-23",
+      "homeTeam": "CLE",
+      "awayTeam": "LAC",
+      "homeScore": 120,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-11-23",
+      "homeTeam": "TOR",
+      "awayTeam": "BKN",
+      "homeScore": 119,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-11-23",
+      "homeTeam": "OKC",
+      "awayTeam": "POR",
+      "homeScore": 122,
+      "awayScore": 95
+    },
+    {
+      "date": "2025-11-23",
+      "homeTeam": "PHX",
+      "awayTeam": "SAS",
+      "homeScore": 111,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-11-23",
+      "homeTeam": "UTA",
+      "awayTeam": "LAL",
+      "homeScore": 106,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-11-24",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": 117,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-11-24",
+      "homeTeam": "TOR",
+      "awayTeam": "CLE",
+      "homeScore": 110,
+      "awayScore": 99
+    },
+    {
+      "date": "2025-11-24",
+      "homeTeam": "BKN",
+      "awayTeam": "NYK",
+      "homeScore": 100,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-11-24",
+      "homeTeam": "MIA",
+      "awayTeam": "DAL",
+      "homeScore": 106,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-11-24",
+      "homeTeam": "MEM",
+      "awayTeam": "DEN",
+      "homeScore": 115,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-11-24",
+      "homeTeam": "MIL",
+      "awayTeam": "POR",
+      "homeScore": 103,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-11-24",
+      "homeTeam": "NOP",
+      "awayTeam": "CHI",
+      "homeScore": 143,
+      "awayScore": 130
+    },
+    {
+      "date": "2025-11-24",
+      "homeTeam": "PHX",
+      "awayTeam": "HOU",
+      "homeScore": 92,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-11-24",
+      "homeTeam": "GSW",
+      "awayTeam": "UTA",
+      "homeScore": 134,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-11-24",
+      "homeTeam": "SAC",
+      "awayTeam": "MIN",
+      "homeScore": 117,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-25",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 132,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-11-25",
+      "homeTeam": "PHI",
+      "awayTeam": "ORL",
+      "homeScore": 103,
+      "awayScore": 144
+    },
+    {
+      "date": "2025-11-25",
+      "homeTeam": "LAL",
+      "awayTeam": "LAC",
+      "homeScore": 135,
+      "awayScore": 118
+    },
+    {
+      "date": "2025-11-26",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 117,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-11-26",
+      "homeTeam": "CHA",
+      "awayTeam": "NYK",
+      "homeScore": 101,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-11-26",
+      "homeTeam": "MIA",
+      "awayTeam": "MIL",
+      "homeScore": 106,
+      "awayScore": 103
+    },
+    {
+      "date": "2025-11-26",
+      "homeTeam": "TOR",
+      "awayTeam": "IND",
+      "homeScore": 97,
+      "awayScore": 95
+    },
+    {
+      "date": "2025-11-26",
+      "homeTeam": "OKC",
+      "awayTeam": "MIN",
+      "homeScore": 113,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-11-26",
+      "homeTeam": "NOP",
+      "awayTeam": "MEM",
+      "homeScore": 128,
+      "awayScore": 133
+    },
+    {
+      "date": "2025-11-26",
+      "homeTeam": "GSW",
+      "awayTeam": "HOU",
+      "homeScore": 100,
+      "awayScore": 104
+    },
+    {
+      "date": "2025-11-26",
+      "homeTeam": "POR",
+      "awayTeam": "SAS",
+      "homeScore": 102,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-11-26",
+      "homeTeam": "SAC",
+      "awayTeam": "PHX",
+      "homeScore": 100,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "ATL",
+      "awayTeam": "CLE",
+      "homeScore": 130,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "BKN",
+      "awayTeam": "PHI",
+      "homeScore": 103,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "CHA",
+      "awayTeam": "CHI",
+      "homeScore": 123,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "DET",
+      "awayTeam": "ORL",
+      "homeScore": 109,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 119,
+      "awayScore": 86
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "NYK",
+      "awayTeam": "MIL",
+      "homeScore": 118,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "OKC",
+      "awayTeam": "PHX",
+      "homeScore": 123,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "DEN",
+      "awayTeam": "SAS",
+      "homeScore": 136,
+      "awayScore": 139
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "UTA",
+      "awayTeam": "SAC",
+      "homeScore": 128,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "LAL",
+      "awayTeam": "DAL",
+      "homeScore": 129,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "LAC",
+      "awayTeam": "MEM",
+      "homeScore": 107,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-29",
+      "homeTeam": "MIN",
+      "awayTeam": "BOS",
+      "homeScore": 119,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-11-29",
+      "homeTeam": "CHA",
+      "awayTeam": "TOR",
+      "homeScore": 118,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-11-29",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 103,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-11-29",
+      "homeTeam": "MIA",
+      "awayTeam": "DET",
+      "homeScore": 135,
+      "awayScore": 138
+    },
+    {
+      "date": "2025-11-29",
+      "homeTeam": "MIL",
+      "awayTeam": "BKN",
+      "homeScore": 116,
+      "awayScore": 99
+    },
+    {
+      "date": "2025-11-29",
+      "homeTeam": "GSW",
+      "awayTeam": "NOP",
+      "homeScore": 104,
+      "awayScore": 96
+    },
+    {
+      "date": "2025-11-29",
+      "homeTeam": "PHX",
+      "awayTeam": "DEN",
+      "homeScore": 112,
+      "awayScore": 130
+    },
+    {
+      "date": "2025-11-29",
+      "homeTeam": "LAC",
+      "awayTeam": "DAL",
+      "homeScore": 110,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-11-30",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 101,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-11-30",
+      "homeTeam": "CLE",
+      "awayTeam": "BOS",
+      "homeScore": 115,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-11-30",
+      "homeTeam": "NYK",
+      "awayTeam": "TOR",
+      "homeScore": 116,
+      "awayScore": 94
+    },
+    {
+      "date": "2025-11-30",
+      "homeTeam": "PHI",
+      "awayTeam": "ATL",
+      "homeScore": 134,
+      "awayScore": 142
+    },
+    {
+      "date": "2025-11-30",
+      "homeTeam": "POR",
+      "awayTeam": "OKC",
+      "homeScore": 115,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-11-30",
+      "homeTeam": "MIN",
+      "awayTeam": "SAS",
+      "homeScore": 125,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-11-30",
+      "homeTeam": "SAC",
+      "awayTeam": "MEM",
+      "homeScore": 107,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-11-30",
+      "homeTeam": "LAL",
+      "awayTeam": "NOP",
+      "homeScore": 133,
+      "awayScore": 121
+    },
+    {
+      "date": "2025-12-01",
+      "homeTeam": "DET",
+      "awayTeam": "ATL",
+      "homeScore": 99,
+      "awayScore": 98
+    },
+    {
+      "date": "2025-12-01",
+      "homeTeam": "IND",
+      "awayTeam": "CLE",
+      "homeScore": 119,
+      "awayScore": 135
+    },
+    {
+      "date": "2025-12-01",
+      "homeTeam": "WAS",
+      "awayTeam": "MIL",
+      "homeScore": 129,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-12-01",
+      "homeTeam": "BKN",
+      "awayTeam": "CHA",
+      "homeScore": 116,
+      "awayScore": 103
+    },
+    {
+      "date": "2025-12-01",
+      "homeTeam": "MIA",
+      "awayTeam": "LAC",
+      "homeScore": 140,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-12-01",
+      "homeTeam": "ORL",
+      "awayTeam": "CHI",
+      "homeScore": 125,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-12-01",
+      "homeTeam": "DEN",
+      "awayTeam": "DAL",
+      "homeScore": 121,
+      "awayScore": 131
+    },
+    {
+      "date": "2025-12-01",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 133,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-12-01",
+      "homeTeam": "LAL",
+      "awayTeam": "PHX",
+      "homeScore": 108,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-12-02",
+      "homeTeam": "PHI",
+      "awayTeam": "WAS",
+      "homeScore": 121,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-12-02",
+      "homeTeam": "TOR",
+      "awayTeam": "POR",
+      "homeScore": 121,
+      "awayScore": 118
+    },
+    {
+      "date": "2025-12-02",
+      "homeTeam": "BOS",
+      "awayTeam": "NYK",
+      "homeScore": 123,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-12-02",
+      "homeTeam": "NOP",
+      "awayTeam": "MIN",
+      "homeScore": 142,
+      "awayScore": 149
+    },
+    {
+      "date": "2025-12-02",
+      "homeTeam": "SAS",
+      "awayTeam": "MEM",
+      "homeScore": 126,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-12-02",
+      "homeTeam": "GSW",
+      "awayTeam": "OKC",
+      "homeScore": 112,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "CLE",
+      "awayTeam": "POR",
+      "homeScore": 110,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "IND",
+      "awayTeam": "DEN",
+      "homeScore": 120,
+      "awayScore": 135
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "ORL",
+      "awayTeam": "SAS",
+      "homeScore": 112,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "ATL",
+      "awayTeam": "LAC",
+      "homeScore": 92,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "NYK",
+      "awayTeam": "CHA",
+      "homeScore": 119,
+      "awayScore": 104
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "CHI",
+      "awayTeam": "BKN",
+      "homeScore": 103,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 121,
+      "awayScore": 95
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "MIL",
+      "awayTeam": "DET",
+      "homeScore": 113,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "DAL",
+      "awayTeam": "MIA",
+      "homeScore": 118,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-12-04",
+      "homeTeam": "PHI",
+      "awayTeam": "GSW",
+      "homeScore": 99,
+      "awayScore": 98
+    },
+    {
+      "date": "2025-12-04",
+      "homeTeam": "WAS",
+      "awayTeam": "BOS",
+      "homeScore": 101,
+      "awayScore": 146
+    },
+    {
+      "date": "2025-12-04",
+      "homeTeam": "BKN",
+      "awayTeam": "UTA",
+      "homeScore": 110,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-12-04",
+      "homeTeam": "TOR",
+      "awayTeam": "LAL",
+      "homeScore": 120,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-12-04",
+      "homeTeam": "NOP",
+      "awayTeam": "MIN",
+      "homeScore": 116,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "BOS",
+      "awayTeam": "LAL",
+      "homeScore": 126,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "ORL",
+      "awayTeam": "MIA",
+      "homeScore": 106,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "ATL",
+      "awayTeam": "DEN",
+      "homeScore": 133,
+      "awayScore": 134
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "CLE",
+      "awayTeam": "SAS",
+      "homeScore": 130,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "DET",
+      "awayTeam": "POR",
+      "homeScore": 122,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "NYK",
+      "awayTeam": "UTA",
+      "homeScore": 146,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "TOR",
+      "awayTeam": "CHA",
+      "homeScore": 86,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 105,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "HOU",
+      "awayTeam": "PHX",
+      "homeScore": 117,
+      "awayScore": 98
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "MEM",
+      "awayTeam": "LAC",
+      "homeScore": 107,
+      "awayScore": 98
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "MIL",
+      "awayTeam": "PHI",
+      "homeScore": 101,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-12-05",
+      "homeTeam": "OKC",
+      "awayTeam": "DAL",
+      "homeScore": 132,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-12-06",
+      "homeTeam": "BKN",
+      "awayTeam": "NOP",
+      "homeScore": 119,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-12-06",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 116,
+      "awayScore": 131
+    },
+    {
+      "date": "2025-12-06",
+      "homeTeam": "CLE",
+      "awayTeam": "GSW",
+      "homeScore": 94,
+      "awayScore": 99
+    },
+    {
+      "date": "2025-12-06",
+      "homeTeam": "DET",
+      "awayTeam": "MIL",
+      "homeScore": 124,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-12-06",
+      "homeTeam": "MIA",
+      "awayTeam": "SAC",
+      "homeScore": 111,
+      "awayScore": 127
+    },
+    {
+      "date": "2025-12-06",
+      "homeTeam": "MIN",
+      "awayTeam": "LAC",
+      "homeScore": 109,
+      "awayScore": 106
+    },
+    {
+      "date": "2025-12-06",
+      "homeTeam": "DAL",
+      "awayTeam": "HOU",
+      "homeScore": 122,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-12-07",
+      "homeTeam": "NYK",
+      "awayTeam": "ORL",
+      "homeScore": 106,
+      "awayScore": 100
+    },
+    {
+      "date": "2025-12-07",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 113,
+      "awayScore": 121
+    },
+    {
+      "date": "2025-12-07",
+      "homeTeam": "CHA",
+      "awayTeam": "DEN",
+      "homeScore": 106,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-12-07",
+      "homeTeam": "MEM",
+      "awayTeam": "POR",
+      "homeScore": 119,
+      "awayScore": 96
+    },
+    {
+      "date": "2025-12-07",
+      "homeTeam": "CHI",
+      "awayTeam": "GSW",
+      "homeScore": 91,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-12-07",
+      "homeTeam": "PHI",
+      "awayTeam": "LAL",
+      "homeScore": 108,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-12-07",
+      "homeTeam": "UTA",
+      "awayTeam": "OKC",
+      "homeScore": 101,
+      "awayScore": 131
+    },
+    {
+      "date": "2025-12-08",
+      "homeTeam": "IND",
+      "awayTeam": "SAC",
+      "homeScore": 116,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-12-08",
+      "homeTeam": "MIN",
+      "awayTeam": "PHX",
+      "homeScore": 105,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-12-08",
+      "homeTeam": "NOP",
+      "awayTeam": "SAS",
+      "homeScore": 132,
+      "awayScore": 135
+    },
+    {
+      "date": "2025-12-09",
+      "homeTeam": "ORL",
+      "awayTeam": "MIA",
+      "homeScore": 117,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-12-09",
+      "homeTeam": "TOR",
+      "awayTeam": "NYK",
+      "homeScore": 101,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-12-10",
+      "homeTeam": "OKC",
+      "awayTeam": "PHX",
+      "homeScore": 138,
+      "awayScore": 89
+    },
+    {
+      "date": "2025-12-10",
+      "homeTeam": "LAL",
+      "awayTeam": "SAS",
+      "homeScore": 119,
+      "awayScore": 132
+    },
+    {
+      "date": "2025-12-11",
+      "homeTeam": "HOU",
+      "awayTeam": "LAC",
+      "homeScore": 115,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-12-11",
+      "homeTeam": "MIL",
+      "awayTeam": "BOS",
+      "homeScore": 116,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-12-11",
+      "homeTeam": "NOP",
+      "awayTeam": "POR",
+      "homeScore": 143,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-12-11",
+      "homeTeam": "SAC",
+      "awayTeam": "DEN",
+      "homeScore": 105,
+      "awayScore": 136
+    },
+    {
+      "date": "2025-12-12",
+      "homeTeam": "CHA",
+      "awayTeam": "CHI",
+      "homeScore": 126,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-12-12",
+      "homeTeam": "DET",
+      "awayTeam": "ATL",
+      "homeScore": 142,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-12-12",
+      "homeTeam": "PHI",
+      "awayTeam": "IND",
+      "homeScore": 115,
+      "awayScore": 105
+    },
+    {
+      "date": "2025-12-12",
+      "homeTeam": "WAS",
+      "awayTeam": "CLE",
+      "homeScore": 126,
+      "awayScore": 130
+    },
+    {
+      "date": "2025-12-12",
+      "homeTeam": "MEM",
+      "awayTeam": "UTA",
+      "homeScore": 126,
+      "awayScore": 130
+    },
+    {
+      "date": "2025-12-12",
+      "homeTeam": "DAL",
+      "awayTeam": "BKN",
+      "homeScore": 119,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-12-12",
+      "homeTeam": "GSW",
+      "awayTeam": "MIN",
+      "homeScore": 120,
+      "awayScore": 127
+    },
+    {
+      "date": "2025-12-13",
+      "homeTeam": "ORL",
+      "awayTeam": "NYK",
+      "homeScore": 120,
+      "awayScore": 132
+    },
+    {
+      "date": "2025-12-13",
+      "homeTeam": "OKC",
+      "awayTeam": "SAS",
+      "homeScore": 109,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-12-14",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 89,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-12-14",
+      "homeTeam": "ATL",
+      "awayTeam": "PHI",
+      "homeScore": 120,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-12-14",
+      "homeTeam": "CLE",
+      "awayTeam": "CHA",
+      "homeScore": 111,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-12-14",
+      "homeTeam": "BKN",
+      "awayTeam": "MIL",
+      "homeScore": 127,
+      "awayScore": 82
+    },
+    {
+      "date": "2025-12-14",
+      "homeTeam": "MIN",
+      "awayTeam": "SAC",
+      "homeScore": 117,
+      "awayScore": 103
+    },
+    {
+      "date": "2025-12-14",
+      "homeTeam": "POR",
+      "awayTeam": "GSW",
+      "homeScore": 136,
+      "awayScore": 131
+    },
+    {
+      "date": "2025-12-14",
+      "homeTeam": "CHI",
+      "awayTeam": "NOP",
+      "homeScore": 104,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-12-14",
+      "homeTeam": "PHX",
+      "awayTeam": "LAL",
+      "homeScore": 114,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-12-15",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 105,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-12-15",
+      "homeTeam": "UTA",
+      "awayTeam": "DAL",
+      "homeScore": 140,
+      "awayScore": 133
+    },
+    {
+      "date": "2025-12-15",
+      "homeTeam": "DEN",
+      "awayTeam": "HOU",
+      "homeScore": 128,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-12-15",
+      "homeTeam": "LAC",
+      "awayTeam": "MEM",
+      "homeScore": 103,
+      "awayScore": 121
+    },
+    {
+      "date": "2025-12-15",
+      "homeTeam": "MIA",
+      "awayTeam": "TOR",
+      "homeScore": 96,
+      "awayScore": 106
+    },
+    {
+      "date": "2025-12-16",
+      "homeTeam": "NYK",
+      "awayTeam": "SAS",
+      "homeScore": 124,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-12-17",
+      "homeTeam": "CHI",
+      "awayTeam": "CLE",
+      "homeScore": 127,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-12-17",
+      "homeTeam": "MIN",
+      "awayTeam": "MEM",
+      "homeScore": 110,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "OKC",
+      "awayTeam": "LAC",
+      "homeScore": 122,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "SAS",
+      "awayTeam": "WAS",
+      "homeScore": 119,
+      "awayScore": 94
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "CHA",
+      "awayTeam": "ATL",
+      "homeScore": 133,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "IND",
+      "awayTeam": "NYK",
+      "homeScore": 113,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "BKN",
+      "awayTeam": "MIA",
+      "homeScore": 95,
+      "awayScore": 106
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "MIL",
+      "awayTeam": "TOR",
+      "homeScore": 105,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "NOP",
+      "awayTeam": "HOU",
+      "homeScore": 133,
+      "awayScore": 128
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "DAL",
+      "awayTeam": "DET",
+      "homeScore": 116,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "DEN",
+      "awayTeam": "ORL",
+      "homeScore": 126,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "PHX",
+      "awayTeam": "GSW",
+      "homeScore": 99,
+      "awayScore": 98
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "UTA",
+      "awayTeam": "LAL",
+      "homeScore": 135,
+      "awayScore": 143
+    },
+    {
+      "date": "2025-12-18",
+      "homeTeam": "POR",
+      "awayTeam": "SAC",
+      "homeScore": 134,
+      "awayScore": 133
+    },
+    {
+      "date": "2025-12-19",
+      "homeTeam": "BOS",
+      "awayTeam": "MIA",
+      "homeScore": 129,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-12-19",
+      "homeTeam": "NYK",
+      "awayTeam": "PHI",
+      "homeScore": 107,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-12-19",
+      "homeTeam": "ATL",
+      "awayTeam": "SAS",
+      "homeScore": 98,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-12-19",
+      "homeTeam": "CLE",
+      "awayTeam": "CHI",
+      "homeScore": 125,
+      "awayScore": 136
+    },
+    {
+      "date": "2025-12-19",
+      "homeTeam": "MIN",
+      "awayTeam": "OKC",
+      "homeScore": 112,
+      "awayScore": 107
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "DEN",
+      "awayTeam": "HOU",
+      "homeScore": 101,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "PHI",
+      "awayTeam": "DAL",
+      "homeScore": 121,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 96,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "NOP",
+      "awayTeam": "IND",
+      "homeScore": 128,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "DET",
+      "awayTeam": "CHA",
+      "homeScore": 112,
+      "awayScore": 86
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "MEM",
+      "awayTeam": "WAS",
+      "homeScore": 122,
+      "awayScore": 130
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "GSW",
+      "awayTeam": "PHX",
+      "homeScore": 119,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "UTA",
+      "awayTeam": "ORL",
+      "homeScore": 127,
+      "awayScore": 128
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "SAC",
+      "awayTeam": "POR",
+      "homeScore": 93,
+      "awayScore": 98
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "LAC",
+      "awayTeam": "LAL",
+      "homeScore": 103,
+      "awayScore": 88
+    },
+    {
+      "date": "2025-12-21",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 150,
+      "awayScore": 152
+    },
+    {
+      "date": "2025-12-21",
+      "homeTeam": "BKN",
+      "awayTeam": "TOR",
+      "homeScore": 96,
+      "awayScore": 81
+    },
+    {
+      "date": "2025-12-21",
+      "homeTeam": "NYK",
+      "awayTeam": "MIA",
+      "homeScore": 132,
+      "awayScore": 125
+    },
+    {
+      "date": "2025-12-21",
+      "homeTeam": "WAS",
+      "awayTeam": "SAS",
+      "homeScore": 113,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-12-21",
+      "homeTeam": "MIN",
+      "awayTeam": "MIL",
+      "homeScore": 103,
+      "awayScore": 100
+    },
+    {
+      "date": "2025-12-21",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 125,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-12-22",
+      "homeTeam": "CLE",
+      "awayTeam": "CHA",
+      "homeScore": 139,
+      "awayScore": 132
+    },
+    {
+      "date": "2025-12-22",
+      "homeTeam": "BOS",
+      "awayTeam": "IND",
+      "homeScore": 103,
+      "awayScore": 95
+    },
+    {
+      "date": "2025-12-22",
+      "homeTeam": "NOP",
+      "awayTeam": "DAL",
+      "homeScore": 119,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-12-22",
+      "homeTeam": "DEN",
+      "awayTeam": "UTA",
+      "homeScore": 135,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-12-22",
+      "homeTeam": "OKC",
+      "awayTeam": "MEM",
+      "homeScore": 119,
+      "awayScore": 103
+    },
+    {
+      "date": "2025-12-22",
+      "homeTeam": "GSW",
+      "awayTeam": "ORL",
+      "homeScore": 120,
+      "awayScore": 97
+    },
+    {
+      "date": "2025-12-22",
+      "homeTeam": "POR",
+      "awayTeam": "DET",
+      "homeScore": 102,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "CHA",
+      "awayTeam": "WAS",
+      "homeScore": 126,
+      "awayScore": 109
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "PHI",
+      "awayTeam": "BKN",
+      "homeScore": 106,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 123,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "CLE",
+      "awayTeam": "NOP",
+      "homeScore": 141,
+      "awayScore": 118
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "IND",
+      "awayTeam": "MIL",
+      "homeScore": 94,
+      "awayScore": 111
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "MIA",
+      "awayTeam": "TOR",
+      "homeScore": 91,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "DAL",
+      "awayTeam": "DEN",
+      "homeScore": 131,
+      "awayScore": 130
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "MIN",
+      "awayTeam": "NYK",
+      "homeScore": 115,
+      "awayScore": 104
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "SAS",
+      "awayTeam": "OKC",
+      "homeScore": 130,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "PHX",
+      "awayTeam": "LAL",
+      "homeScore": 132,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "UTA",
+      "awayTeam": "MEM",
+      "homeScore": 128,
+      "awayScore": 137
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "POR",
+      "awayTeam": "ORL",
+      "homeScore": 106,
+      "awayScore": 110
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "SAC",
+      "awayTeam": "DET",
+      "homeScore": 127,
+      "awayScore": 136
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "LAC",
+      "awayTeam": "HOU",
+      "homeScore": 128,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-12-25",
+      "homeTeam": "NYK",
+      "awayTeam": "CLE",
+      "homeScore": 126,
+      "awayScore": 124
+    },
+    {
+      "date": "2025-12-25",
+      "homeTeam": "OKC",
+      "awayTeam": "SAS",
+      "homeScore": 102,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-12-25",
+      "homeTeam": "GSW",
+      "awayTeam": "DAL",
+      "homeScore": 126,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-12-25",
+      "homeTeam": "LAL",
+      "awayTeam": "HOU",
+      "homeScore": 96,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-12-25",
+      "homeTeam": "DEN",
+      "awayTeam": "MIN",
+      "homeScore": 142,
+      "awayScore": 138
+    },
+    {
+      "date": "2025-12-26",
+      "homeTeam": "ATL",
+      "awayTeam": "MIA",
+      "homeScore": 111,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-12-26",
+      "homeTeam": "ORL",
+      "awayTeam": "CHA",
+      "homeScore": 105,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-12-26",
+      "homeTeam": "WAS",
+      "awayTeam": "TOR",
+      "homeScore": 138,
+      "awayScore": 117
+    },
+    {
+      "date": "2025-12-26",
+      "homeTeam": "IND",
+      "awayTeam": "BOS",
+      "homeScore": 122,
+      "awayScore": 140
+    },
+    {
+      "date": "2025-12-26",
+      "homeTeam": "CHI",
+      "awayTeam": "PHI",
+      "homeScore": 109,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-12-26",
+      "homeTeam": "MEM",
+      "awayTeam": "MIL",
+      "homeScore": 125,
+      "awayScore": 104
+    },
+    {
+      "date": "2025-12-26",
+      "homeTeam": "NOP",
+      "awayTeam": "PHX",
+      "homeScore": 108,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-12-26",
+      "homeTeam": "UTA",
+      "awayTeam": "DET",
+      "homeScore": 131,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-12-26",
+      "homeTeam": "POR",
+      "awayTeam": "LAC",
+      "homeScore": 103,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "SAC",
+      "awayTeam": "DAL",
+      "homeScore": 113,
+      "awayScore": 107
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "ORL",
+      "awayTeam": "DEN",
+      "homeScore": 127,
+      "awayScore": 126
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "NOP",
+      "awayTeam": "PHX",
+      "homeScore": 114,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "ATL",
+      "awayTeam": "NYK",
+      "homeScore": 125,
+      "awayScore": 128
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "MIA",
+      "awayTeam": "IND",
+      "homeScore": 142,
+      "awayScore": 116
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "CHI",
+      "awayTeam": "MIL",
+      "homeScore": 103,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "HOU",
+      "awayTeam": "CLE",
+      "homeScore": 117,
+      "awayScore": 100
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "MIN",
+      "awayTeam": "BKN",
+      "homeScore": 107,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "SAS",
+      "awayTeam": "UTA",
+      "homeScore": 114,
+      "awayScore": 127
+    },
+    {
+      "date": "2025-12-28",
+      "homeTeam": "TOR",
+      "awayTeam": "GSW",
+      "homeScore": 141,
+      "awayScore": 127
+    },
+    {
+      "date": "2025-12-28",
+      "homeTeam": "OKC",
+      "awayTeam": "PHI",
+      "homeScore": 129,
+      "awayScore": 104
+    },
+    {
+      "date": "2025-12-28",
+      "homeTeam": "WAS",
+      "awayTeam": "MEM",
+      "homeScore": 116,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-12-28",
+      "homeTeam": "POR",
+      "awayTeam": "BOS",
+      "homeScore": 114,
+      "awayScore": 108
+    },
+    {
+      "date": "2025-12-28",
+      "homeTeam": "LAC",
+      "awayTeam": "DET",
+      "homeScore": 112,
+      "awayScore": 99
+    },
+    {
+      "date": "2025-12-28",
+      "homeTeam": "LAL",
+      "awayTeam": "SAC",
+      "homeScore": 125,
+      "awayScore": 101
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "CHA",
+      "awayTeam": "MIL",
+      "homeScore": 113,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "WAS",
+      "awayTeam": "PHX",
+      "homeScore": 101,
+      "awayScore": 115
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "BKN",
+      "awayTeam": "GSW",
+      "homeScore": 107,
+      "awayScore": 120
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "MIA",
+      "awayTeam": "DEN",
+      "homeScore": 147,
+      "awayScore": 123
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "TOR",
+      "awayTeam": "ORL",
+      "homeScore": 107,
+      "awayScore": 106
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "CHI",
+      "awayTeam": "MIN",
+      "homeScore": 101,
+      "awayScore": 136
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "HOU",
+      "awayTeam": "IND",
+      "homeScore": 126,
+      "awayScore": 119
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "NOP",
+      "awayTeam": "NYK",
+      "homeScore": 125,
+      "awayScore": 130
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "OKC",
+      "awayTeam": "ATL",
+      "homeScore": 140,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "SAS",
+      "awayTeam": "CLE",
+      "homeScore": 101,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-12-29",
+      "homeTeam": "POR",
+      "awayTeam": "DAL",
+      "homeScore": 125,
+      "awayScore": 122
+    },
+    {
+      "date": "2025-12-30",
+      "homeTeam": "MEM",
+      "awayTeam": "PHI",
+      "homeScore": 136,
+      "awayScore": 139
+    },
+    {
+      "date": "2025-12-30",
+      "homeTeam": "UTA",
+      "awayTeam": "BOS",
+      "homeScore": 119,
+      "awayScore": 129
+    },
+    {
+      "date": "2025-12-30",
+      "homeTeam": "LAL",
+      "awayTeam": "DET",
+      "homeScore": 106,
+      "awayScore": 128
+    },
+    {
+      "date": "2025-12-30",
+      "homeTeam": "LAC",
+      "awayTeam": "SAC",
+      "homeScore": 131,
+      "awayScore": 90
+    },
+    {
+      "date": "2025-12-31",
+      "homeTeam": "CHA",
+      "awayTeam": "GSW",
+      "homeScore": 125,
+      "awayScore": 132
+    },
+    {
+      "date": "2025-12-31",
+      "homeTeam": "ATL",
+      "awayTeam": "MIN",
+      "homeScore": 126,
+      "awayScore": 102
+    },
+    {
+      "date": "2025-12-31",
+      "homeTeam": "IND",
+      "awayTeam": "ORL",
+      "homeScore": 110,
+      "awayScore": 112
+    },
+    {
+      "date": "2025-12-31",
+      "homeTeam": "CLE",
+      "awayTeam": "PHX",
+      "homeScore": 129,
+      "awayScore": 113
+    },
+    {
+      "date": "2025-12-31",
+      "homeTeam": "CHI",
+      "awayTeam": "NOP",
+      "homeScore": 134,
+      "awayScore": 118
+    },
+    {
+      "date": "2025-12-31",
+      "homeTeam": "SAS",
+      "awayTeam": "NYK",
+      "homeScore": 134,
+      "awayScore": 132
+    },
+    {
+      "date": "2025-12-31",
+      "homeTeam": "TOR",
+      "awayTeam": "DEN",
+      "homeScore": 103,
+      "awayScore": 106
+    },
+    {
+      "date": "2025-12-31",
+      "homeTeam": "MIL",
+      "awayTeam": "WAS",
+      "homeScore": 113,
+      "awayScore": 114
+    },
+    {
+      "date": "2025-12-31",
+      "homeTeam": "OKC",
+      "awayTeam": "POR",
+      "homeScore": 124,
+      "awayScore": 95
+    },
+    {
+      "date": "2026-01-01",
+      "homeTeam": "BKN",
+      "awayTeam": "HOU",
+      "homeScore": 96,
+      "awayScore": 120
+    },
+    {
+      "date": "2026-01-01",
+      "homeTeam": "DET",
+      "awayTeam": "MIA",
+      "homeScore": 112,
+      "awayScore": 118
+    },
+    {
+      "date": "2026-01-01",
+      "homeTeam": "DAL",
+      "awayTeam": "PHI",
+      "homeScore": 108,
+      "awayScore": 123
+    },
+    {
+      "date": "2026-01-01",
+      "homeTeam": "SAC",
+      "awayTeam": "BOS",
+      "homeScore": 106,
+      "awayScore": 120
+    },
+    {
+      "date": "2026-01-01",
+      "homeTeam": "LAC",
+      "awayTeam": "UTA",
+      "homeScore": 118,
+      "awayScore": 101
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "IND",
+      "awayTeam": "SAS",
+      "homeScore": 113,
+      "awayScore": 123
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "WAS",
+      "awayTeam": "BKN",
+      "homeScore": 119,
+      "awayScore": 99
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "CLE",
+      "awayTeam": "DEN",
+      "homeScore": 113,
+      "awayScore": 108
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "NYK",
+      "awayTeam": "ATL",
+      "homeScore": 99,
+      "awayScore": 111
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "CHI",
+      "awayTeam": "ORL",
+      "homeScore": 121,
+      "awayScore": 114
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "MIL",
+      "awayTeam": "CHA",
+      "homeScore": 122,
+      "awayScore": 121
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "NOP",
+      "awayTeam": "POR",
+      "homeScore": 109,
+      "awayScore": 122
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "PHX",
+      "awayTeam": "SAC",
+      "homeScore": 129,
+      "awayScore": 102
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "GSW",
+      "awayTeam": "OKC",
+      "homeScore": 94,
+      "awayScore": 131
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "LAL",
+      "awayTeam": "MEM",
+      "homeScore": 128,
+      "awayScore": 121
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "MIA",
+      "awayTeam": "MIN",
+      "homeScore": 115,
+      "awayScore": 125
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "NYK",
+      "awayTeam": "PHI",
+      "homeScore": 119,
+      "awayScore": 130
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "TOR",
+      "awayTeam": "ATL",
+      "homeScore": 134,
+      "awayScore": 117
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "CHI",
+      "awayTeam": "CHA",
+      "homeScore": 99,
+      "awayScore": 112
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "SAS",
+      "awayTeam": "POR",
+      "homeScore": 110,
+      "awayScore": 115
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "DAL",
+      "awayTeam": "HOU",
+      "homeScore": 110,
+      "awayScore": 104
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "GSW",
+      "awayTeam": "UTA",
+      "homeScore": 123,
+      "awayScore": 114
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "LAC",
+      "awayTeam": "BOS",
+      "homeScore": 115,
+      "awayScore": 146
+    },
+    {
+      "date": "2026-01-04",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 110,
+      "awayScore": 114
+    },
+    {
+      "date": "2026-01-04",
+      "homeTeam": "ORL",
+      "awayTeam": "IND",
+      "homeScore": 135,
+      "awayScore": 127
+    },
+    {
+      "date": "2026-01-04",
+      "homeTeam": "BKN",
+      "awayTeam": "DEN",
+      "homeScore": 127,
+      "awayScore": 115
+    },
+    {
+      "date": "2026-01-04",
+      "homeTeam": "MIA",
+      "awayTeam": "NOP",
+      "homeScore": 125,
+      "awayScore": 106
+    },
+    {
+      "date": "2026-01-04",
+      "homeTeam": "WAS",
+      "awayTeam": "MIN",
+      "homeScore": 115,
+      "awayScore": 141
+    },
+    {
+      "date": "2026-01-04",
+      "homeTeam": "PHX",
+      "awayTeam": "OKC",
+      "homeScore": 108,
+      "awayScore": 105
+    },
+    {
+      "date": "2026-01-04",
+      "homeTeam": "SAC",
+      "awayTeam": "MIL",
+      "homeScore": 98,
+      "awayScore": 115
+    },
+    {
+      "date": "2026-01-04",
+      "homeTeam": "LAL",
+      "awayTeam": "MEM",
+      "homeScore": 120,
+      "awayScore": 114
+    },
+    {
+      "date": "2026-01-05",
+      "homeTeam": "DET",
+      "awayTeam": "NYK",
+      "homeScore": 121,
+      "awayScore": 90
+    },
+    {
+      "date": "2026-01-05",
+      "homeTeam": "BOS",
+      "awayTeam": "CHI",
+      "homeScore": 115,
+      "awayScore": 101
+    },
+    {
+      "date": "2026-01-05",
+      "homeTeam": "TOR",
+      "awayTeam": "ATL",
+      "homeScore": 118,
+      "awayScore": 100
+    },
+    {
+      "date": "2026-01-05",
+      "homeTeam": "HOU",
+      "awayTeam": "PHX",
+      "homeScore": 100,
+      "awayScore": 97
+    },
+    {
+      "date": "2026-01-05",
+      "homeTeam": "OKC",
+      "awayTeam": "CHA",
+      "homeScore": 97,
+      "awayScore": 124
+    },
+    {
+      "date": "2026-01-05",
+      "homeTeam": "PHI",
+      "awayTeam": "DEN",
+      "homeScore": 124,
+      "awayScore": 125
+    },
+    {
+      "date": "2026-01-05",
+      "homeTeam": "LAC",
+      "awayTeam": "GSW",
+      "homeScore": 103,
+      "awayScore": 102
+    },
+    {
+      "date": "2026-01-05",
+      "homeTeam": "POR",
+      "awayTeam": "UTA",
+      "homeScore": 137,
+      "awayScore": 117
+    },
+    {
+      "date": "2026-01-06",
+      "homeTeam": "IND",
+      "awayTeam": "CLE",
+      "homeScore": 116,
+      "awayScore": 120
+    },
+    {
+      "date": "2026-01-06",
+      "homeTeam": "WAS",
+      "awayTeam": "ORL",
+      "homeScore": 120,
+      "awayScore": 112
+    },
+    {
+      "date": "2026-01-06",
+      "homeTeam": "MEM",
+      "awayTeam": "SAS",
+      "homeScore": 106,
+      "awayScore": 105
+    },
+    {
+      "date": "2026-01-06",
+      "homeTeam": "MIN",
+      "awayTeam": "MIA",
+      "homeScore": 122,
+      "awayScore": 94
+    },
+    {
+      "date": "2026-01-06",
+      "homeTeam": "NOP",
+      "awayTeam": "LAL",
+      "homeScore": 103,
+      "awayScore": 111
+    },
+    {
+      "date": "2026-01-06",
+      "homeTeam": "SAC",
+      "awayTeam": "DAL",
+      "homeScore": 98,
+      "awayScore": 100
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "CHA",
+      "awayTeam": "TOR",
+      "homeScore": 96,
+      "awayScore": 97
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 108,
+      "awayScore": 93
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "PHI",
+      "awayTeam": "WAS",
+      "homeScore": 131,
+      "awayScore": 110
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "ATL",
+      "awayTeam": "NOP",
+      "homeScore": 117,
+      "awayScore": 100
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "BOS",
+      "awayTeam": "DEN",
+      "homeScore": 110,
+      "awayScore": 114
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "BKN",
+      "awayTeam": "ORL",
+      "homeScore": 103,
+      "awayScore": 104
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "NYK",
+      "awayTeam": "LAC",
+      "homeScore": 123,
+      "awayScore": 111
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "SAS",
+      "awayTeam": "LAL",
+      "homeScore": 107,
+      "awayScore": 91
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "MEM",
+      "awayTeam": "PHX",
+      "homeScore": 98,
+      "awayScore": 117
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "OKC",
+      "awayTeam": "UTA",
+      "homeScore": 129,
+      "awayScore": 125
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "GSW",
+      "awayTeam": "MIL",
+      "homeScore": 120,
+      "awayScore": 113
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "POR",
+      "awayTeam": "HOU",
+      "homeScore": 103,
+      "awayScore": 102
+    },
+    {
+      "date": "2026-01-08",
+      "homeTeam": "CHA",
+      "awayTeam": "IND",
+      "homeScore": 112,
+      "awayScore": 114
+    },
+    {
+      "date": "2026-01-08",
+      "homeTeam": "MIN",
+      "awayTeam": "CLE",
+      "homeScore": 131,
+      "awayScore": 122
+    },
+    {
+      "date": "2026-01-08",
+      "homeTeam": "UTA",
+      "awayTeam": "DAL",
+      "homeScore": 116,
+      "awayScore": 114
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 125,
+      "awayScore": 117
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "ORL",
+      "awayTeam": "PHI",
+      "homeScore": 91,
+      "awayScore": 103
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "WAS",
+      "awayTeam": "NOP",
+      "homeScore": 107,
+      "awayScore": 128
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "BKN",
+      "awayTeam": "LAC",
+      "homeScore": 105,
+      "awayScore": 121
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "MEM",
+      "awayTeam": "OKC",
+      "homeScore": 116,
+      "awayScore": 117
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "DEN",
+      "awayTeam": "ATL",
+      "homeScore": 87,
+      "awayScore": 110
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "PHX",
+      "awayTeam": "NYK",
+      "homeScore": 112,
+      "awayScore": 107
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "GSW",
+      "awayTeam": "SAC",
+      "homeScore": 137,
+      "awayScore": 103
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "POR",
+      "awayTeam": "HOU",
+      "homeScore": 111,
+      "awayScore": 105
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "LAL",
+      "awayTeam": "MIL",
+      "homeScore": 101,
+      "awayScore": 105
+    },
+    {
+      "date": "2026-01-10",
+      "homeTeam": "CLE",
+      "awayTeam": "MIN",
+      "homeScore": 146,
+      "awayScore": 134
+    },
+    {
+      "date": "2026-01-10",
+      "homeTeam": "IND",
+      "awayTeam": "MIA",
+      "homeScore": 123,
+      "awayScore": 99
+    },
+    {
+      "date": "2026-01-10",
+      "homeTeam": "DET",
+      "awayTeam": "LAC",
+      "homeScore": 92,
+      "awayScore": 98
+    },
+    {
+      "date": "2026-01-10",
+      "homeTeam": "BOS",
+      "awayTeam": "SAS",
+      "homeScore": 95,
+      "awayScore": 100
+    },
+    {
+      "date": "2026-01-10",
+      "homeTeam": "CHI",
+      "awayTeam": "DAL",
+      "homeScore": 125,
+      "awayScore": 107
+    },
+    {
+      "date": "2026-01-10",
+      "homeTeam": "UTA",
+      "awayTeam": "CHA",
+      "homeScore": 95,
+      "awayScore": 150
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "ORL",
+      "awayTeam": "NOP",
+      "homeScore": 128,
+      "awayScore": 118
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "MEM",
+      "awayTeam": "BKN",
+      "homeScore": 103,
+      "awayScore": 98
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "TOR",
+      "awayTeam": "PHI",
+      "homeScore": 116,
+      "awayScore": 115
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "POR",
+      "awayTeam": "NYK",
+      "homeScore": 114,
+      "awayScore": 123
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "MIN",
+      "awayTeam": "SAS",
+      "homeScore": 104,
+      "awayScore": 103
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "OKC",
+      "awayTeam": "MIA",
+      "homeScore": 124,
+      "awayScore": 112
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "DEN",
+      "awayTeam": "MIL",
+      "homeScore": 108,
+      "awayScore": 104
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "PHX",
+      "awayTeam": "WAS",
+      "homeScore": 112,
+      "awayScore": 93
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "GSW",
+      "awayTeam": "ATL",
+      "homeScore": 111,
+      "awayScore": 124
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 111,
+      "awayScore": 98
+    },
+    {
+      "date": "2026-01-12",
+      "homeTeam": "CLE",
+      "awayTeam": "UTA",
+      "homeScore": 112,
+      "awayScore": 123
+    },
+    {
+      "date": "2026-01-12",
+      "homeTeam": "IND",
+      "awayTeam": "BOS",
+      "homeScore": 98,
+      "awayScore": 96
+    },
+    {
+      "date": "2026-01-12",
+      "homeTeam": "TOR",
+      "awayTeam": "PHI",
+      "homeScore": 102,
+      "awayScore": 115
+    },
+    {
+      "date": "2026-01-12",
+      "homeTeam": "DAL",
+      "awayTeam": "BKN",
+      "homeScore": 113,
+      "awayScore": 105
+    },
+    {
+      "date": "2026-01-12",
+      "homeTeam": "SAC",
+      "awayTeam": "LAL",
+      "homeScore": 124,
+      "awayScore": 112
+    },
+    {
+      "date": "2026-01-12",
+      "homeTeam": "LAC",
+      "awayTeam": "CHA",
+      "homeScore": 117,
+      "awayScore": 109
+    },
+    {
+      "date": "2026-01-13",
+      "homeTeam": "MIA",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-13",
+      "homeTeam": "HOU",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-13",
+      "homeTeam": "MIL",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-13",
+      "homeTeam": "NOP",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-13",
+      "homeTeam": "OKC",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-13",
+      "homeTeam": "LAL",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-13",
+      "homeTeam": "GSW",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-14",
+      "homeTeam": "IND",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-14",
+      "homeTeam": "PHI",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-14",
+      "homeTeam": "CHI",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-14",
+      "homeTeam": "NOP",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-14",
+      "homeTeam": "DAL",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-14",
+      "homeTeam": "SAC",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-14",
+      "homeTeam": "LAC",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-15",
+      "homeTeam": "ORL",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-15",
+      "homeTeam": "DET",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-15",
+      "homeTeam": "MIA",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-15",
+      "homeTeam": "HOU",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-15",
+      "homeTeam": "SAS",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-15",
+      "homeTeam": "DAL",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-15",
+      "homeTeam": "GSW",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-15",
+      "homeTeam": "POR",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-15",
+      "homeTeam": "LAL",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-16",
+      "homeTeam": "BKN",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-16",
+      "homeTeam": "IND",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-16",
+      "homeTeam": "PHI",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-16",
+      "homeTeam": "TOR",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-16",
+      "homeTeam": "HOU",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-16",
+      "homeTeam": "SAC",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-17",
+      "homeTeam": "DAL",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-17",
+      "homeTeam": "ATL",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-17",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-17",
+      "homeTeam": "NYK",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-17",
+      "homeTeam": "MIA",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-17",
+      "homeTeam": "SAS",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-17",
+      "homeTeam": "GSW",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-17",
+      "homeTeam": "DEN",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-17",
+      "homeTeam": "POR",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-18",
+      "homeTeam": "MEM",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-18",
+      "homeTeam": "CHI",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-18",
+      "homeTeam": "HOU",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-18",
+      "homeTeam": "DEN",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-18",
+      "homeTeam": "SAC",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-18",
+      "homeTeam": "LAL",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-19",
+      "homeTeam": "ATL",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-19",
+      "homeTeam": "CLE",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-19",
+      "homeTeam": "NYK",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-19",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-19",
+      "homeTeam": "WAS",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-19",
+      "homeTeam": "PHI",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-19",
+      "homeTeam": "BKN",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-19",
+      "homeTeam": "SAS",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-19",
+      "homeTeam": "GSW",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-20",
+      "homeTeam": "PHI",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-20",
+      "homeTeam": "CHI",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-20",
+      "homeTeam": "HOU",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-20",
+      "homeTeam": "UTA",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-20",
+      "homeTeam": "DEN",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-20",
+      "homeTeam": "GSW",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-20",
+      "homeTeam": "SAC",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-21",
+      "homeTeam": "CHA",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-21",
+      "homeTeam": "BOS",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-21",
+      "homeTeam": "NYK",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-21",
+      "homeTeam": "MEM",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-21",
+      "homeTeam": "NOP",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-21",
+      "homeTeam": "MIL",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-21",
+      "homeTeam": "SAC",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-22",
+      "homeTeam": "ORL",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-22",
+      "homeTeam": "PHI",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-22",
+      "homeTeam": "WAS",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-22",
+      "homeTeam": "DAL",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-22",
+      "homeTeam": "MIN",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-22",
+      "homeTeam": "UTA",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-22",
+      "homeTeam": "LAC",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-22",
+      "homeTeam": "POR",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-23",
+      "homeTeam": "DET",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-23",
+      "homeTeam": "ATL",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-23",
+      "homeTeam": "BKN",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-23",
+      "homeTeam": "CLE",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-23",
+      "homeTeam": "MEM",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-23",
+      "homeTeam": "MIL",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-23",
+      "homeTeam": "OKC",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-23",
+      "homeTeam": "POR",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-24",
+      "homeTeam": "PHI",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-24",
+      "homeTeam": "MIN",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-24",
+      "homeTeam": "CHA",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-24",
+      "homeTeam": "ORL",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-24",
+      "homeTeam": "CHI",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-24",
+      "homeTeam": "DAL",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-24",
+      "homeTeam": "UTA",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-25",
+      "homeTeam": "DET",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-25",
+      "homeTeam": "MEM",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-25",
+      "homeTeam": "MIL",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-25",
+      "homeTeam": "OKC",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-25",
+      "homeTeam": "SAS",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-25",
+      "homeTeam": "PHX",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-25",
+      "homeTeam": "LAC",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-26",
+      "homeTeam": "CHA",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-26",
+      "homeTeam": "CLE",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-26",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-26",
+      "homeTeam": "BOS",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-26",
+      "homeTeam": "CHI",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-26",
+      "homeTeam": "HOU",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-26",
+      "homeTeam": "MIN",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-27",
+      "homeTeam": "WAS",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-27",
+      "homeTeam": "NYK",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-27",
+      "homeTeam": "PHI",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-27",
+      "homeTeam": "OKC",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-27",
+      "homeTeam": "DEN",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-27",
+      "homeTeam": "PHX",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-27",
+      "homeTeam": "UTA",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "CLE",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "BOS",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "MIA",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "TOR",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "MEM",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "DAL",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "UTA",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "HOU",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-29",
+      "homeTeam": "CHI",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-29",
+      "homeTeam": "PHI",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-29",
+      "homeTeam": "WAS",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-29",
+      "homeTeam": "ATL",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-29",
+      "homeTeam": "DAL",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-29",
+      "homeTeam": "DEN",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-29",
+      "homeTeam": "PHX",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-29",
+      "homeTeam": "MIN",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-30",
+      "homeTeam": "ORL",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-30",
+      "homeTeam": "WAS",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-30",
+      "homeTeam": "BOS",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-30",
+      "homeTeam": "NYK",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-30",
+      "homeTeam": "NOP",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-30",
+      "homeTeam": "PHX",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-30",
+      "homeTeam": "UTA",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-30",
+      "homeTeam": "DEN",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-30",
+      "homeTeam": "GSW",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-31",
+      "homeTeam": "MIA",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-31",
+      "homeTeam": "CHA",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-31",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-31",
+      "homeTeam": "PHI",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-31",
+      "homeTeam": "MEM",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-01-31",
+      "homeTeam": "HOU",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-01",
+      "homeTeam": "BOS",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-01",
+      "homeTeam": "SAS",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-01",
+      "homeTeam": "DET",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-01",
+      "homeTeam": "MIA",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-01",
+      "homeTeam": "TOR",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-01",
+      "homeTeam": "WAS",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-01",
+      "homeTeam": "NYK",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-01",
+      "homeTeam": "PHX",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-01",
+      "homeTeam": "POR",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-01",
+      "homeTeam": "DEN",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-02",
+      "homeTeam": "CHA",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-02",
+      "homeTeam": "IND",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-02",
+      "homeTeam": "MEM",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-02",
+      "homeTeam": "LAC",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-03",
+      "homeTeam": "DET",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-03",
+      "homeTeam": "IND",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-03",
+      "homeTeam": "WAS",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-03",
+      "homeTeam": "BKN",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-03",
+      "homeTeam": "MIA",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-03",
+      "homeTeam": "DAL",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-03",
+      "homeTeam": "MIL",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-03",
+      "homeTeam": "OKC",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-03",
+      "homeTeam": "GSW",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-03",
+      "homeTeam": "POR",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-04",
+      "homeTeam": "NYK",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-04",
+      "homeTeam": "TOR",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-04",
+      "homeTeam": "HOU",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-04",
+      "homeTeam": "MIL",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-04",
+      "homeTeam": "SAS",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-04",
+      "homeTeam": "SAC",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-04",
+      "homeTeam": "LAC",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-05",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-05",
+      "homeTeam": "ORL",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-05",
+      "homeTeam": "ATL",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-05",
+      "homeTeam": "TOR",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-05",
+      "homeTeam": "HOU",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-05",
+      "homeTeam": "DAL",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-05",
+      "homeTeam": "PHX",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-05",
+      "homeTeam": "LAL",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-06",
+      "homeTeam": "BOS",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-06",
+      "homeTeam": "DET",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-06",
+      "homeTeam": "MIL",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-06",
+      "homeTeam": "MIN",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-06",
+      "homeTeam": "POR",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-06",
+      "homeTeam": "SAC",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-07",
+      "homeTeam": "BKN",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-07",
+      "homeTeam": "OKC",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-07",
+      "homeTeam": "SAS",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-07",
+      "homeTeam": "ORL",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-07",
+      "homeTeam": "ATL",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-07",
+      "homeTeam": "CHI",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-07",
+      "homeTeam": "LAL",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-07",
+      "homeTeam": "PHX",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-07",
+      "homeTeam": "POR",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-07",
+      "homeTeam": "SAC",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-08",
+      "homeTeam": "BOS",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-08",
+      "homeTeam": "WAS",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-08",
+      "homeTeam": "TOR",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-08",
+      "homeTeam": "MIN",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-09",
+      "homeTeam": "CHA",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-09",
+      "homeTeam": "BKN",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-09",
+      "homeTeam": "MIA",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-09",
+      "homeTeam": "ORL",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-09",
+      "homeTeam": "MIN",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-09",
+      "homeTeam": "NOP",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-09",
+      "homeTeam": "DEN",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-09",
+      "homeTeam": "GSW",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-09",
+      "homeTeam": "LAL",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-09",
+      "homeTeam": "POR",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-10",
+      "homeTeam": "NYK",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-10",
+      "homeTeam": "HOU",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-10",
+      "homeTeam": "PHX",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-10",
+      "homeTeam": "LAL",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "CHA",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "ORL",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "BOS",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "BKN",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "PHI",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "HOU",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "MIN",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "NOP",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "PHX",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "UTA",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "DEN",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "GSW",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-12",
+      "homeTeam": "OKC",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-12",
+      "homeTeam": "UTA",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-12",
+      "homeTeam": "LAL",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-19",
+      "homeTeam": "CHA",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-19",
+      "homeTeam": "CLE",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-19",
+      "homeTeam": "PHI",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-19",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-19",
+      "homeTeam": "NYK",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-19",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-19",
+      "homeTeam": "SAS",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-19",
+      "homeTeam": "GSW",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-19",
+      "homeTeam": "SAC",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-19",
+      "homeTeam": "LAC",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-20",
+      "homeTeam": "CHA",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-20",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-20",
+      "homeTeam": "MEM",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-20",
+      "homeTeam": "ATL",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-20",
+      "homeTeam": "MIN",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-20",
+      "homeTeam": "NOP",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-20",
+      "homeTeam": "OKC",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-20",
+      "homeTeam": "LAL",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-20",
+      "homeTeam": "POR",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-21",
+      "homeTeam": "PHX",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-21",
+      "homeTeam": "NOP",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-21",
+      "homeTeam": "MIA",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-21",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-21",
+      "homeTeam": "SAS",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-21",
+      "homeTeam": "NYK",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "OKC",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "ATL",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "MIL",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "GSW",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "IND",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "WAS",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "LAL",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "MIN",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "CHI",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "PHX",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-22",
+      "homeTeam": "LAC",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-23",
+      "homeTeam": "DET",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-23",
+      "homeTeam": "MEM",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-23",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "IND",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "BKN",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "TOR",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "CLE",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "CHI",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "MIL",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "NOP",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "PHX",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "LAL",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-24",
+      "homeTeam": "POR",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-25",
+      "homeTeam": "DET",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-25",
+      "homeTeam": "TOR",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-25",
+      "homeTeam": "MEM",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-25",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-25",
+      "homeTeam": "MIL",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-25",
+      "homeTeam": "DEN",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "IND",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "PHI",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "BKN",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "ORL",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "CHI",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "DAL",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "PHX",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "UTA",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "LAC",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-27",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-27",
+      "homeTeam": "BOS",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-27",
+      "homeTeam": "MIL",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-27",
+      "homeTeam": "DAL",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-27",
+      "homeTeam": "OKC",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-28",
+      "homeTeam": "CHA",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-28",
+      "homeTeam": "MIA",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-28",
+      "homeTeam": "WAS",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-28",
+      "homeTeam": "GSW",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-28",
+      "homeTeam": "UTA",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "NYK",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "BKN",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "CHI",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "DEN",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "IND",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "ATL",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "ORL",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "DAL",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "LAC",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "LAL",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-02",
+      "homeTeam": "WAS",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-02",
+      "homeTeam": "MIL",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-02",
+      "homeTeam": "UTA",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-02",
+      "homeTeam": "GSW",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "CHA",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "ORL",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "MIA",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "TOR",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "PHI",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "CHI",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "MIN",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "LAL",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "SAC",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-04",
+      "homeTeam": "NYK",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-04",
+      "homeTeam": "BOS",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-04",
+      "homeTeam": "PHI",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-04",
+      "homeTeam": "MEM",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-04",
+      "homeTeam": "MIL",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-04",
+      "homeTeam": "LAC",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-05",
+      "homeTeam": "ORL",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-05",
+      "homeTeam": "WAS",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-05",
+      "homeTeam": "MIA",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-05",
+      "homeTeam": "HOU",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-05",
+      "homeTeam": "MIN",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-05",
+      "homeTeam": "SAS",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-05",
+      "homeTeam": "PHX",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-05",
+      "homeTeam": "DEN",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-05",
+      "homeTeam": "SAC",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-06",
+      "homeTeam": "BOS",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-06",
+      "homeTeam": "CHA",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-06",
+      "homeTeam": "HOU",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-06",
+      "homeTeam": "DEN",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-06",
+      "homeTeam": "PHX",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-06",
+      "homeTeam": "SAS",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-06",
+      "homeTeam": "LAL",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-07",
+      "homeTeam": "MIN",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-07",
+      "homeTeam": "DET",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-07",
+      "homeTeam": "ATL",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-07",
+      "homeTeam": "MEM",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-07",
+      "homeTeam": "MIL",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-07",
+      "homeTeam": "OKC",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "CLE",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "LAL",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "MIA",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "TOR",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "NOP",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "MIL",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "SAS",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "PHX",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "POR",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "SAC",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-09",
+      "homeTeam": "CLE",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-09",
+      "homeTeam": "BKN",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-09",
+      "homeTeam": "OKC",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-09",
+      "homeTeam": "UTA",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-09",
+      "homeTeam": "LAC",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "PHI",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "BKN",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "MIA",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "ATL",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "HOU",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "MIL",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "SAS",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "GSW",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "POR",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "SAC",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "LAL",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-11",
+      "homeTeam": "ORL",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-11",
+      "homeTeam": "NOP",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-11",
+      "homeTeam": "UTA",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-11",
+      "homeTeam": "DEN",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-11",
+      "homeTeam": "SAC",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-11",
+      "homeTeam": "LAC",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-12",
+      "homeTeam": "DET",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-12",
+      "homeTeam": "IND",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-12",
+      "homeTeam": "ORL",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-12",
+      "homeTeam": "ATL",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-12",
+      "homeTeam": "MIA",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-12",
+      "homeTeam": "SAS",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-12",
+      "homeTeam": "OKC",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-12",
+      "homeTeam": "LAL",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-13",
+      "homeTeam": "DET",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-13",
+      "homeTeam": "IND",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-13",
+      "homeTeam": "TOR",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-13",
+      "homeTeam": "HOU",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-13",
+      "homeTeam": "DAL",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-13",
+      "homeTeam": "GSW",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-13",
+      "homeTeam": "POR",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-13",
+      "homeTeam": "LAC",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-14",
+      "homeTeam": "PHI",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-14",
+      "homeTeam": "ATL",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-14",
+      "homeTeam": "BOS",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-14",
+      "homeTeam": "MIA",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-14",
+      "homeTeam": "SAS",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-14",
+      "homeTeam": "LAL",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-14",
+      "homeTeam": "LAC",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-15",
+      "homeTeam": "OKC",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-15",
+      "homeTeam": "CLE",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-15",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-15",
+      "homeTeam": "MIL",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-15",
+      "homeTeam": "PHI",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-15",
+      "homeTeam": "NYK",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-15",
+      "homeTeam": "SAC",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-16",
+      "homeTeam": "ATL",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-16",
+      "homeTeam": "WAS",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-16",
+      "homeTeam": "BKN",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-16",
+      "homeTeam": "BOS",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-16",
+      "homeTeam": "CHI",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-16",
+      "homeTeam": "NOP",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-16",
+      "homeTeam": "HOU",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-16",
+      "homeTeam": "LAC",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-17",
+      "homeTeam": "CHA",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-17",
+      "homeTeam": "ORL",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-17",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-17",
+      "homeTeam": "NYK",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-17",
+      "homeTeam": "MIL",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-17",
+      "homeTeam": "MIN",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-17",
+      "homeTeam": "DEN",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-17",
+      "homeTeam": "SAC",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "BOS",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "BKN",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "IND",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "MEM",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "MIN",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "NOP",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "DAL",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "HOU",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-19",
+      "homeTeam": "CHA",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-19",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-19",
+      "homeTeam": "MIA",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-19",
+      "homeTeam": "CHI",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-19",
+      "homeTeam": "NOP",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-19",
+      "homeTeam": "SAS",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-19",
+      "homeTeam": "UTA",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-19",
+      "homeTeam": "SAC",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-20",
+      "homeTeam": "BKN",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-20",
+      "homeTeam": "DET",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-20",
+      "homeTeam": "HOU",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-20",
+      "homeTeam": "MEM",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-20",
+      "homeTeam": "MIN",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-20",
+      "homeTeam": "DEN",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "WAS",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "CHA",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "ORL",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "NOP",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "ATL",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "HOU",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "SAS",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "DAL",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "UTA",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "PHX",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-22",
+      "homeTeam": "DEN",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-22",
+      "homeTeam": "SAC",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-22",
+      "homeTeam": "NYK",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-22",
+      "homeTeam": "BOS",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-22",
+      "homeTeam": "PHX",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-23",
+      "homeTeam": "ATL",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-23",
+      "homeTeam": "DET",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-23",
+      "homeTeam": "ORL",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-23",
+      "homeTeam": "PHI",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-23",
+      "homeTeam": "MIA",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-23",
+      "homeTeam": "CHI",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-23",
+      "homeTeam": "UTA",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-23",
+      "homeTeam": "DAL",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-23",
+      "homeTeam": "POR",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-23",
+      "homeTeam": "LAC",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-24",
+      "homeTeam": "CHA",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-24",
+      "homeTeam": "NYK",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-24",
+      "homeTeam": "CLE",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-24",
+      "homeTeam": "PHX",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "DET",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "IND",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "PHI",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "BOS",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "CLE",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "MEM",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "UTA",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "MIN",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "DEN",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "GSW",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "POR",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "LAC",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-26",
+      "homeTeam": "CHA",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-26",
+      "homeTeam": "DET",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-26",
+      "homeTeam": "ORL",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "IND",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "BOS",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "CLE",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "MEM",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "OKC",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "TOR",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "DEN",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "GSW",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "POR",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "LAL",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-28",
+      "homeTeam": "MIL",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-28",
+      "homeTeam": "CHA",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-28",
+      "homeTeam": "ATL",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-28",
+      "homeTeam": "MEM",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-28",
+      "homeTeam": "MIN",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-28",
+      "homeTeam": "PHX",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "MIL",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "IND",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "BKN",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "CHA",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "TOR",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "POR",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "NOP",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "OKC",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "DEN",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-30",
+      "homeTeam": "MIA",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-30",
+      "homeTeam": "ATL",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-30",
+      "homeTeam": "MEM",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-30",
+      "homeTeam": "SAS",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-30",
+      "homeTeam": "DAL",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-30",
+      "homeTeam": "UTA",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-30",
+      "homeTeam": "OKC",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-30",
+      "homeTeam": "LAL",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-31",
+      "homeTeam": "ORL",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-31",
+      "homeTeam": "BKN",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-31",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-31",
+      "homeTeam": "HOU",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-31",
+      "homeTeam": "LAL",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-31",
+      "homeTeam": "LAC",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "WAS",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "MIA",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "ORL",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "TOR",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "HOU",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "MEM",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "UTA",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "GSW",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-02",
+      "homeTeam": "CHA",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-02",
+      "homeTeam": "DET",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-02",
+      "homeTeam": "OKC",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-02",
+      "homeTeam": "GSW",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-02",
+      "homeTeam": "POR",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-02",
+      "homeTeam": "LAC",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "CHA",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "PHI",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "BKN",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "NYK",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "MEM",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "MIL",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "DAL",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "SAC",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-04",
+      "homeTeam": "MIA",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-04",
+      "homeTeam": "DEN",
+      "awayTeam": "SAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-04",
+      "homeTeam": "PHI",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "BKN",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "CHI",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "MIL",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "CLE",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "MIN",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "NOP",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "OKC",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "DAL",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "SAC",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "GSW",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-06",
+      "homeTeam": "ATL",
+      "awayTeam": "NYK",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-06",
+      "homeTeam": "ORL",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-06",
+      "homeTeam": "MEM",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-06",
+      "homeTeam": "SAS",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-06",
+      "homeTeam": "DEN",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "BOS",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "BKN",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "TOR",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "IND",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "NOP",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "GSW",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "LAL",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "LAC",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "PHX",
+      "awayTeam": "HOU",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-08",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-08",
+      "homeTeam": "ORL",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-08",
+      "homeTeam": "DET",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-08",
+      "homeTeam": "SAS",
+      "awayTeam": "POR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-08",
+      "homeTeam": "DEN",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-08",
+      "homeTeam": "LAC",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-08",
+      "homeTeam": "PHX",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-09",
+      "homeTeam": "TOR",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-09",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-09",
+      "homeTeam": "BKN",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-09",
+      "homeTeam": "NYK",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-09",
+      "homeTeam": "HOU",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-09",
+      "homeTeam": "GSW",
+      "awayTeam": "LAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "CHA",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "WAS",
+      "awayTeam": "MIA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "ATL",
+      "awayTeam": "CLE",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "BOS",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "IND",
+      "awayTeam": "PHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "NYK",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "CHI",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "HOU",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "MIL",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "SAS",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "UTA",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "DEN",
+      "awayTeam": "OKC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "POR",
+      "awayTeam": "LAC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "SAC",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-10",
+      "homeTeam": "LAL",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "BOS",
+      "awayTeam": "ORL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "MIA",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "NYK",
+      "awayTeam": "CHA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "PHI",
+      "awayTeam": "MIL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "TOR",
+      "awayTeam": "BKN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "HOU",
+      "awayTeam": "MEM",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "MIN",
+      "awayTeam": "NOP",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "OKC",
+      "awayTeam": "PHX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "SAS",
+      "awayTeam": "DEN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "LAL",
+      "awayTeam": "UTA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "LAC",
+      "awayTeam": "GSW",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "POR",
+      "awayTeam": "SAC",
+      "homeScore": null,
+      "awayScore": null
+    }
+  ],
+  "metadata": {
+    "total_games": 1231,
+    "ingested_at": "2026-01-13T18:45:38.941598"
+  }
+}

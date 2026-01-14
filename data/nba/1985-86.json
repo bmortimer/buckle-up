@@ -1,0 +1,6611 @@
+{
+  "season": "1985-86",
+  "league": "NBA",
+  "games": [
+    {
+      "date": "1985-10-25",
+      "homeTeam": "NJN",
+      "awayTeam": "BOS",
+      "homeScore": 113,
+      "awayScore": 109
+    },
+    {
+      "date": "1985-10-25",
+      "homeTeam": "POR",
+      "awayTeam": "PHX",
+      "homeScore": 128,
+      "awayScore": 123
+    },
+    {
+      "date": "1985-10-25",
+      "homeTeam": "GOS",
+      "awayTeam": "DEN",
+      "homeScore": 105,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-10-25",
+      "homeTeam": "CHI",
+      "awayTeam": "CLE",
+      "homeScore": 116,
+      "awayScore": 115
+    },
+    {
+      "date": "1985-10-25",
+      "homeTeam": "SAC",
+      "awayTeam": "LAC",
+      "homeScore": 104,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-10-25",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": 91,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-10-25",
+      "homeTeam": "DET",
+      "awayTeam": "MIL",
+      "homeScore": 118,
+      "awayScore": 116
+    },
+    {
+      "date": "1985-10-25",
+      "homeTeam": "UTH",
+      "awayTeam": "HOU",
+      "homeScore": 108,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-10-26",
+      "homeTeam": "DAL",
+      "awayTeam": "SEA",
+      "homeScore": 101,
+      "awayScore": 95
+    },
+    {
+      "date": "1985-10-26",
+      "homeTeam": "SAN",
+      "awayTeam": "LAL",
+      "homeScore": 116,
+      "awayScore": 121
+    },
+    {
+      "date": "1985-10-26",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 121,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-10-26",
+      "homeTeam": "NYK",
+      "awayTeam": "PHL",
+      "homeScore": 89,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-10-26",
+      "homeTeam": "MIL",
+      "awayTeam": "ATL",
+      "homeScore": 117,
+      "awayScore": 91
+    },
+    {
+      "date": "1985-10-26",
+      "homeTeam": "CLE",
+      "awayTeam": "BOS",
+      "homeScore": 100,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-10-26",
+      "homeTeam": "DEN",
+      "awayTeam": "SAC",
+      "homeScore": 123,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-10-26",
+      "homeTeam": "LAC",
+      "awayTeam": "HOU",
+      "homeScore": 130,
+      "awayScore": 129
+    },
+    {
+      "date": "1985-10-26",
+      "homeTeam": "IND",
+      "awayTeam": "NJN",
+      "homeScore": 119,
+      "awayScore": 92
+    },
+    {
+      "date": "1985-10-27",
+      "homeTeam": "POR",
+      "awayTeam": "GOS",
+      "homeScore": 116,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-10-29",
+      "homeTeam": "DAL",
+      "awayTeam": "LAL",
+      "homeScore": 115,
+      "awayScore": 133
+    },
+    {
+      "date": "1985-10-29",
+      "homeTeam": "SAN",
+      "awayTeam": "UTH",
+      "homeScore": 124,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-10-29",
+      "homeTeam": "DET",
+      "awayTeam": "NJN",
+      "homeScore": 124,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-10-29",
+      "homeTeam": "LAC",
+      "awayTeam": "POR",
+      "homeScore": 119,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-10-29",
+      "homeTeam": "HOU",
+      "awayTeam": "SEA",
+      "homeScore": 111,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-10-29",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": 90,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-10-29",
+      "homeTeam": "MIL",
+      "awayTeam": "PHL",
+      "homeScore": 119,
+      "awayScore": 117
+    },
+    {
+      "date": "1985-10-29",
+      "homeTeam": "GOS",
+      "awayTeam": "CHI",
+      "homeScore": 105,
+      "awayScore": 111
+    },
+    {
+      "date": "1985-10-29",
+      "homeTeam": "ATL",
+      "awayTeam": "NYK",
+      "homeScore": 102,
+      "awayScore": 87
+    },
+    {
+      "date": "1985-10-29",
+      "homeTeam": "PHX",
+      "awayTeam": "DEN",
+      "homeScore": 127,
+      "awayScore": 142
+    },
+    {
+      "date": "1985-10-30",
+      "homeTeam": "BOS",
+      "awayTeam": "MIL",
+      "homeScore": 117,
+      "awayScore": 106
+    },
+    {
+      "date": "1985-10-30",
+      "homeTeam": "NJN",
+      "awayTeam": "IND",
+      "homeScore": 147,
+      "awayScore": 138
+    },
+    {
+      "date": "1985-10-30",
+      "homeTeam": "PHL",
+      "awayTeam": "DET",
+      "homeScore": 132,
+      "awayScore": 125
+    },
+    {
+      "date": "1985-10-30",
+      "homeTeam": "UTH",
+      "awayTeam": "SAN",
+      "homeScore": 102,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-10-31",
+      "homeTeam": "GOS",
+      "awayTeam": "NYK",
+      "homeScore": 111,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-10-31",
+      "homeTeam": "WAS",
+      "awayTeam": "CLE",
+      "homeScore": 107,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-10-31",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 122,
+      "awayScore": 116
+    },
+    {
+      "date": "1985-10-31",
+      "homeTeam": "DEN",
+      "awayTeam": "SEA",
+      "homeScore": 90,
+      "awayScore": 73
+    },
+    {
+      "date": "1985-10-31",
+      "homeTeam": "LAC",
+      "awayTeam": "CHI",
+      "homeScore": 120,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-10-31",
+      "homeTeam": "PHX",
+      "awayTeam": "LAL",
+      "homeScore": 107,
+      "awayScore": 144
+    },
+    {
+      "date": "1985-11-01",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 124,
+      "awayScore": 116
+    },
+    {
+      "date": "1985-11-01",
+      "homeTeam": "SAN",
+      "awayTeam": "DAL",
+      "homeScore": 116,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-11-01",
+      "homeTeam": "BOS",
+      "awayTeam": "ATL",
+      "homeScore": 109,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-11-01",
+      "homeTeam": "UTH",
+      "awayTeam": "PHX",
+      "homeScore": 121,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-11-01",
+      "homeTeam": "NJN",
+      "awayTeam": "PHL",
+      "homeScore": 106,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-11-02",
+      "homeTeam": "DAL",
+      "awayTeam": "SAC",
+      "homeScore": 119,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-11-02",
+      "homeTeam": "SEA",
+      "awayTeam": "CHI",
+      "homeScore": 118,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-11-02",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": 117,
+      "awayScore": 128
+    },
+    {
+      "date": "1985-11-02",
+      "homeTeam": "MIL",
+      "awayTeam": "NJN",
+      "homeScore": 136,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-11-02",
+      "homeTeam": "ATL",
+      "awayTeam": "PHL",
+      "homeScore": 114,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-11-02",
+      "homeTeam": "POR",
+      "awayTeam": "UTH",
+      "homeScore": 128,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-11-02",
+      "homeTeam": "HOU",
+      "awayTeam": "SAN",
+      "homeScore": 111,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-11-02",
+      "homeTeam": "GOS",
+      "awayTeam": "LAL",
+      "homeScore": 116,
+      "awayScore": 120
+    },
+    {
+      "date": "1985-11-02",
+      "homeTeam": "WAS",
+      "awayTeam": "BOS",
+      "homeScore": 73,
+      "awayScore": 88
+    },
+    {
+      "date": "1985-11-02",
+      "homeTeam": "LAC",
+      "awayTeam": "NYK",
+      "homeScore": 103,
+      "awayScore": 95
+    },
+    {
+      "date": "1985-11-03",
+      "homeTeam": "POR",
+      "awayTeam": "NYK",
+      "homeScore": 110,
+      "awayScore": 96
+    },
+    {
+      "date": "1985-11-03",
+      "homeTeam": "CLE",
+      "awayTeam": "MIL",
+      "homeScore": 110,
+      "awayScore": 120
+    },
+    {
+      "date": "1985-11-05",
+      "homeTeam": "MIL",
+      "awayTeam": "SAN",
+      "homeScore": 126,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-11-05",
+      "homeTeam": "HOU",
+      "awayTeam": "POR",
+      "homeScore": 127,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-11-05",
+      "homeTeam": "LAL",
+      "awayTeam": "CLE",
+      "homeScore": 111,
+      "awayScore": 129
+    },
+    {
+      "date": "1985-11-05",
+      "homeTeam": "SEA",
+      "awayTeam": "NYK",
+      "homeScore": 84,
+      "awayScore": 80
+    },
+    {
+      "date": "1985-11-05",
+      "homeTeam": "NJN",
+      "awayTeam": "WAS",
+      "homeScore": 112,
+      "awayScore": 106
+    },
+    {
+      "date": "1985-11-05",
+      "homeTeam": "DEN",
+      "awayTeam": "ATL",
+      "homeScore": 128,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-11-05",
+      "homeTeam": "UTH",
+      "awayTeam": "GOS",
+      "homeScore": 118,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-11-06",
+      "homeTeam": "DAL",
+      "awayTeam": "POR",
+      "homeScore": 109,
+      "awayScore": 111
+    },
+    {
+      "date": "1985-11-06",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 122,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-11-06",
+      "homeTeam": "WAS",
+      "awayTeam": "SAN",
+      "homeScore": 80,
+      "awayScore": 81
+    },
+    {
+      "date": "1985-11-06",
+      "homeTeam": "GOS",
+      "awayTeam": "SEA",
+      "homeScore": 105,
+      "awayScore": 101
+    },
+    {
+      "date": "1985-11-06",
+      "homeTeam": "PHX",
+      "awayTeam": "ATL",
+      "homeScore": 106,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-11-06",
+      "homeTeam": "PHL",
+      "awayTeam": "IND",
+      "homeScore": 105,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-11-07",
+      "homeTeam": "SAC",
+      "awayTeam": "CLE",
+      "homeScore": 94,
+      "awayScore": 95
+    },
+    {
+      "date": "1985-11-07",
+      "homeTeam": "DEN",
+      "awayTeam": "DAL",
+      "homeScore": 131,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-11-07",
+      "homeTeam": "UTH",
+      "awayTeam": "LAL",
+      "homeScore": 106,
+      "awayScore": 116
+    },
+    {
+      "date": "1985-11-07",
+      "homeTeam": "NJN",
+      "awayTeam": "CHI",
+      "homeScore": 106,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-11-07",
+      "homeTeam": "HOU",
+      "awayTeam": "LAC",
+      "homeScore": 137,
+      "awayScore": 115
+    },
+    {
+      "date": "1985-11-07",
+      "homeTeam": "NYK",
+      "awayTeam": "MIL",
+      "homeScore": 88,
+      "awayScore": 92
+    },
+    {
+      "date": "1985-11-08",
+      "homeTeam": "BOS",
+      "awayTeam": "PHX",
+      "homeScore": 125,
+      "awayScore": 101
+    },
+    {
+      "date": "1985-11-08",
+      "homeTeam": "PHL",
+      "awayTeam": "SAN",
+      "homeScore": 95,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-11-08",
+      "homeTeam": "LAL",
+      "awayTeam": "DEN",
+      "homeScore": 128,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-11-08",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 110,
+      "awayScore": 117
+    },
+    {
+      "date": "1985-11-08",
+      "homeTeam": "POR",
+      "awayTeam": "SEA",
+      "homeScore": 92,
+      "awayScore": 88
+    },
+    {
+      "date": "1985-11-08",
+      "homeTeam": "GOS",
+      "awayTeam": "ATL",
+      "homeScore": 130,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-11-09",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 105,
+      "awayScore": 124
+    },
+    {
+      "date": "1985-11-09",
+      "homeTeam": "SAC",
+      "awayTeam": "SEA",
+      "homeScore": 98,
+      "awayScore": 93
+    },
+    {
+      "date": "1985-11-09",
+      "homeTeam": "IND",
+      "awayTeam": "PHX",
+      "homeScore": 127,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-11-09",
+      "homeTeam": "NYK",
+      "awayTeam": "CHI",
+      "homeScore": 94,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-11-09",
+      "homeTeam": "DAL",
+      "awayTeam": "HOU",
+      "homeScore": 110,
+      "awayScore": 115
+    },
+    {
+      "date": "1985-11-09",
+      "homeTeam": "LAC",
+      "awayTeam": "ATL",
+      "homeScore": 94,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-11-09",
+      "homeTeam": "UTH",
+      "awayTeam": "CLE",
+      "homeScore": 121,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-11-09",
+      "homeTeam": "NJN",
+      "awayTeam": "MIL",
+      "homeScore": 126,
+      "awayScore": 123
+    },
+    {
+      "date": "1985-11-10",
+      "homeTeam": "GOS",
+      "awayTeam": "SAC",
+      "homeScore": 117,
+      "awayScore": 111
+    },
+    {
+      "date": "1985-11-10",
+      "homeTeam": "POR",
+      "awayTeam": "CLE",
+      "homeScore": 110,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-11-10",
+      "homeTeam": "PHL",
+      "awayTeam": "MIL",
+      "homeScore": 105,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-11-11",
+      "homeTeam": "SAN",
+      "awayTeam": "NJN",
+      "homeScore": 111,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-11-12",
+      "homeTeam": "POR",
+      "awayTeam": "SAC",
+      "homeScore": 126,
+      "awayScore": 115
+    },
+    {
+      "date": "1985-11-12",
+      "homeTeam": "GOS",
+      "awayTeam": "LAC",
+      "homeScore": 127,
+      "awayScore": 115
+    },
+    {
+      "date": "1985-11-12",
+      "homeTeam": "NYK",
+      "awayTeam": "PHX",
+      "homeScore": 103,
+      "awayScore": 93
+    },
+    {
+      "date": "1985-11-12",
+      "homeTeam": "SEA",
+      "awayTeam": "DAL",
+      "homeScore": 109,
+      "awayScore": 90
+    },
+    {
+      "date": "1985-11-12",
+      "homeTeam": "LAL",
+      "awayTeam": "UTH",
+      "homeScore": 119,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-11-12",
+      "homeTeam": "HOU",
+      "awayTeam": "DEN",
+      "homeScore": 127,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-11-12",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": 124,
+      "awayScore": 122
+    },
+    {
+      "date": "1985-11-12",
+      "homeTeam": "CHI",
+      "awayTeam": "MIL",
+      "homeScore": 103,
+      "awayScore": 132
+    },
+    {
+      "date": "1985-11-13",
+      "homeTeam": "ATL",
+      "awayTeam": "PHX",
+      "homeScore": 108,
+      "awayScore": 101
+    },
+    {
+      "date": "1985-11-13",
+      "homeTeam": "PHL",
+      "awayTeam": "CHI",
+      "homeScore": 110,
+      "awayScore": 106
+    },
+    {
+      "date": "1985-11-13",
+      "homeTeam": "LAC",
+      "awayTeam": "SEA",
+      "homeScore": 89,
+      "awayScore": 93
+    },
+    {
+      "date": "1985-11-13",
+      "homeTeam": "BOS",
+      "awayTeam": "IND",
+      "homeScore": 118,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-11-13",
+      "homeTeam": "UTH",
+      "awayTeam": "DAL",
+      "homeScore": 100,
+      "awayScore": 115
+    },
+    {
+      "date": "1985-11-13",
+      "homeTeam": "MIL",
+      "awayTeam": "DET",
+      "homeScore": 137,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-11-14",
+      "homeTeam": "IND",
+      "awayTeam": "CLE",
+      "homeScore": 104,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-11-14",
+      "homeTeam": "SAC",
+      "awayTeam": "GOS",
+      "homeScore": 112,
+      "awayScore": 103
+    },
+    {
+      "date": "1985-11-14",
+      "homeTeam": "LAL",
+      "awayTeam": "POR",
+      "homeScore": 114,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-11-14",
+      "homeTeam": "HOU",
+      "awayTeam": "NJN",
+      "homeScore": 112,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-11-14",
+      "homeTeam": "DEN",
+      "awayTeam": "SAN",
+      "homeScore": 112,
+      "awayScore": 109
+    },
+    {
+      "date": "1985-11-15",
+      "homeTeam": "DAL",
+      "awayTeam": "NJN",
+      "homeScore": 110,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-11-15",
+      "homeTeam": "UTH",
+      "awayTeam": "POR",
+      "homeScore": 133,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-11-15",
+      "homeTeam": "PHX",
+      "awayTeam": "SEA",
+      "homeScore": 117,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-11-15",
+      "homeTeam": "ATL",
+      "awayTeam": "DET",
+      "homeScore": 122,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-11-15",
+      "homeTeam": "LAC",
+      "awayTeam": "LAL",
+      "homeScore": 96,
+      "awayScore": 127
+    },
+    {
+      "date": "1985-11-15",
+      "homeTeam": "BOS",
+      "awayTeam": "WAS",
+      "homeScore": 118,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-11-15",
+      "homeTeam": "MIL",
+      "awayTeam": "CHI",
+      "homeScore": 118,
+      "awayScore": 103
+    },
+    {
+      "date": "1985-11-16",
+      "homeTeam": "CHI",
+      "awayTeam": "CLE",
+      "homeScore": 128,
+      "awayScore": 132
+    },
+    {
+      "date": "1985-11-16",
+      "homeTeam": "DEN",
+      "awayTeam": "LAC",
+      "homeScore": 113,
+      "awayScore": 109
+    },
+    {
+      "date": "1985-11-16",
+      "homeTeam": "SAC",
+      "awayTeam": "UTH",
+      "homeScore": 96,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-11-16",
+      "homeTeam": "HOU",
+      "awayTeam": "DAL",
+      "homeScore": 122,
+      "awayScore": 117
+    },
+    {
+      "date": "1985-11-16",
+      "homeTeam": "GOS",
+      "awayTeam": "PHX",
+      "homeScore": 118,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-11-16",
+      "homeTeam": "WAS",
+      "awayTeam": "PHL",
+      "homeScore": 118,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-11-16",
+      "homeTeam": "IND",
+      "awayTeam": "BOS",
+      "homeScore": 111,
+      "awayScore": 109
+    },
+    {
+      "date": "1985-11-16",
+      "homeTeam": "SAN",
+      "awayTeam": "SEA",
+      "homeScore": 97,
+      "awayScore": 95
+    },
+    {
+      "date": "1985-11-16",
+      "homeTeam": "NYK",
+      "awayTeam": "ATL",
+      "homeScore": 103,
+      "awayScore": 96
+    },
+    {
+      "date": "1985-11-17",
+      "homeTeam": "LAL",
+      "awayTeam": "NJN",
+      "homeScore": 138,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-11-17",
+      "homeTeam": "POR",
+      "awayTeam": "MIL",
+      "homeScore": 104,
+      "awayScore": 117
+    },
+    {
+      "date": "1985-11-19",
+      "homeTeam": "POR",
+      "awayTeam": "NJN",
+      "homeScore": 102,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-11-19",
+      "homeTeam": "CLE",
+      "awayTeam": "GOS",
+      "homeScore": 104,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-11-19",
+      "homeTeam": "DAL",
+      "awayTeam": "PHX",
+      "homeScore": 123,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-11-19",
+      "homeTeam": "DEN",
+      "awayTeam": "HOU",
+      "homeScore": 127,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-11-19",
+      "homeTeam": "SAN",
+      "awayTeam": "SAC",
+      "homeScore": 99,
+      "awayScore": 103
+    },
+    {
+      "date": "1985-11-19",
+      "homeTeam": "NYK",
+      "awayTeam": "WAS",
+      "homeScore": 98,
+      "awayScore": 94
+    },
+    {
+      "date": "1985-11-19",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 121,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-11-20",
+      "homeTeam": "BOS",
+      "awayTeam": "UTH",
+      "homeScore": 115,
+      "awayScore": 106
+    },
+    {
+      "date": "1985-11-20",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 116,
+      "awayScore": 101
+    },
+    {
+      "date": "1985-11-20",
+      "homeTeam": "HOU",
+      "awayTeam": "IND",
+      "homeScore": 126,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-11-20",
+      "homeTeam": "DET",
+      "awayTeam": "NYK",
+      "homeScore": 109,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-11-20",
+      "homeTeam": "LAL",
+      "awayTeam": "LAC",
+      "homeScore": 122,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-11-20",
+      "homeTeam": "PHX",
+      "awayTeam": "SAN",
+      "homeScore": 121,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-11-20",
+      "homeTeam": "WAS",
+      "awayTeam": "CLE",
+      "homeScore": 101,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-11-20",
+      "homeTeam": "PHL",
+      "awayTeam": "GOS",
+      "homeScore": 117,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-11-20",
+      "homeTeam": "SEA",
+      "awayTeam": "MIL",
+      "homeScore": 106,
+      "awayScore": 116
+    },
+    {
+      "date": "1985-11-21",
+      "homeTeam": "SAC",
+      "awayTeam": "MIL",
+      "homeScore": 97,
+      "awayScore": 131
+    },
+    {
+      "date": "1985-11-21",
+      "homeTeam": "LAC",
+      "awayTeam": "POR",
+      "homeScore": 108,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-11-21",
+      "homeTeam": "DEN",
+      "awayTeam": "LAL",
+      "homeScore": 121,
+      "awayScore": 120
+    },
+    {
+      "date": "1985-11-22",
+      "homeTeam": "WAS",
+      "awayTeam": "NYK",
+      "homeScore": 102,
+      "awayScore": 94
+    },
+    {
+      "date": "1985-11-22",
+      "homeTeam": "DET",
+      "awayTeam": "GOS",
+      "homeScore": 115,
+      "awayScore": 96
+    },
+    {
+      "date": "1985-11-22",
+      "homeTeam": "CLE",
+      "awayTeam": "UTH",
+      "homeScore": 113,
+      "awayScore": 121
+    },
+    {
+      "date": "1985-11-22",
+      "homeTeam": "BOS",
+      "awayTeam": "PHL",
+      "homeScore": 110,
+      "awayScore": 103
+    },
+    {
+      "date": "1985-11-22",
+      "homeTeam": "SEA",
+      "awayTeam": "HOU",
+      "homeScore": 122,
+      "awayScore": 103
+    },
+    {
+      "date": "1985-11-22",
+      "homeTeam": "SAN",
+      "awayTeam": "IND",
+      "homeScore": 108,
+      "awayScore": 96
+    },
+    {
+      "date": "1985-11-22",
+      "homeTeam": "PHX",
+      "awayTeam": "NJN",
+      "homeScore": 96,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-11-23",
+      "homeTeam": "LAC",
+      "awayTeam": "MIL",
+      "homeScore": 116,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-11-23",
+      "homeTeam": "PHL",
+      "awayTeam": "DET",
+      "homeScore": 114,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-11-23",
+      "homeTeam": "DAL",
+      "awayTeam": "IND",
+      "homeScore": 117,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-11-23",
+      "homeTeam": "DEN",
+      "awayTeam": "SAC",
+      "homeScore": 122,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-11-23",
+      "homeTeam": "NYK",
+      "awayTeam": "BOS",
+      "homeScore": 104,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-11-23",
+      "homeTeam": "ATL",
+      "awayTeam": "UTH",
+      "homeScore": 106,
+      "awayScore": 116
+    },
+    {
+      "date": "1985-11-23",
+      "homeTeam": "CHI",
+      "awayTeam": "GOS",
+      "homeScore": 135,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-11-23",
+      "homeTeam": "POR",
+      "awayTeam": "LAL",
+      "homeScore": 113,
+      "awayScore": 130
+    },
+    {
+      "date": "1985-11-24",
+      "homeTeam": "POR",
+      "awayTeam": "HOU",
+      "homeScore": 125,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-11-24",
+      "homeTeam": "PHX",
+      "awayTeam": "MIL",
+      "homeScore": 138,
+      "awayScore": 140
+    },
+    {
+      "date": "1985-11-24",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": 115,
+      "awayScore": 106
+    },
+    {
+      "date": "1985-11-24",
+      "homeTeam": "SEA",
+      "awayTeam": "DEN",
+      "homeScore": 110,
+      "awayScore": 84
+    },
+    {
+      "date": "1985-11-24",
+      "homeTeam": "LAL",
+      "awayTeam": "SAN",
+      "homeScore": 118,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-11-24",
+      "homeTeam": "SAC",
+      "awayTeam": "NJN",
+      "homeScore": 103,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-11-24",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "homeScore": 98,
+      "awayScore": 90
+    },
+    {
+      "date": "1985-11-25",
+      "homeTeam": "IND",
+      "awayTeam": "UTH",
+      "homeScore": 101,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-11-26",
+      "homeTeam": "SAC",
+      "awayTeam": "PHX",
+      "homeScore": 111,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-11-26",
+      "homeTeam": "HOU",
+      "awayTeam": "GOS",
+      "homeScore": 130,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-11-26",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 113,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-11-26",
+      "homeTeam": "SEA",
+      "awayTeam": "LAC",
+      "homeScore": 131,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-11-26",
+      "homeTeam": "PHL",
+      "awayTeam": "BOS",
+      "homeScore": 91,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-11-26",
+      "homeTeam": "DAL",
+      "awayTeam": "WAS",
+      "homeScore": 112,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-11-26",
+      "homeTeam": "DEN",
+      "awayTeam": "CHI",
+      "homeScore": 123,
+      "awayScore": 128
+    },
+    {
+      "date": "1985-11-26",
+      "homeTeam": "ATL",
+      "awayTeam": "NYK",
+      "homeScore": 104,
+      "awayScore": 94
+    },
+    {
+      "date": "1985-11-27",
+      "homeTeam": "MIL",
+      "awayTeam": "ATL",
+      "homeScore": 114,
+      "awayScore": 96
+    },
+    {
+      "date": "1985-11-27",
+      "homeTeam": "IND",
+      "awayTeam": "NYK",
+      "homeScore": 77,
+      "awayScore": 80
+    },
+    {
+      "date": "1985-11-27",
+      "homeTeam": "NJN",
+      "awayTeam": "PHL",
+      "homeScore": 100,
+      "awayScore": 111
+    },
+    {
+      "date": "1985-11-27",
+      "homeTeam": "GOS",
+      "awayTeam": "DEN",
+      "homeScore": 104,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-11-27",
+      "homeTeam": "PHX",
+      "awayTeam": "POR",
+      "homeScore": 93,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-11-27",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 132,
+      "awayScore": 124
+    },
+    {
+      "date": "1985-11-27",
+      "homeTeam": "LAC",
+      "awayTeam": "HOU",
+      "homeScore": 130,
+      "awayScore": 137
+    },
+    {
+      "date": "1985-11-27",
+      "homeTeam": "UTH",
+      "awayTeam": "CHI",
+      "homeScore": 114,
+      "awayScore": 96
+    },
+    {
+      "date": "1985-11-27",
+      "homeTeam": "SAN",
+      "awayTeam": "WAS",
+      "homeScore": 104,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-11-29",
+      "homeTeam": "LAL",
+      "awayTeam": "SEA",
+      "homeScore": 108,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-11-29",
+      "homeTeam": "NJN",
+      "awayTeam": "ATL",
+      "homeScore": 107,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-11-29",
+      "homeTeam": "PHX",
+      "awayTeam": "HOU",
+      "homeScore": 126,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-11-29",
+      "homeTeam": "POR",
+      "awayTeam": "CHI",
+      "homeScore": 122,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-11-29",
+      "homeTeam": "DET",
+      "awayTeam": "MIL",
+      "homeScore": 111,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-11-29",
+      "homeTeam": "BOS",
+      "awayTeam": "NYK",
+      "homeScore": 94,
+      "awayScore": 88
+    },
+    {
+      "date": "1985-11-29",
+      "homeTeam": "SAN",
+      "awayTeam": "LAC",
+      "homeScore": 134,
+      "awayScore": 106
+    },
+    {
+      "date": "1985-11-29",
+      "homeTeam": "UTH",
+      "awayTeam": "DEN",
+      "homeScore": 114,
+      "awayScore": 129
+    },
+    {
+      "date": "1985-11-29",
+      "homeTeam": "DAL",
+      "awayTeam": "SAC",
+      "homeScore": 133,
+      "awayScore": 111
+    },
+    {
+      "date": "1985-11-29",
+      "homeTeam": "IND",
+      "awayTeam": "PHL",
+      "homeScore": 100,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-11-30",
+      "homeTeam": "CLE",
+      "awayTeam": "NJN",
+      "homeScore": 119,
+      "awayScore": 90
+    },
+    {
+      "date": "1985-11-30",
+      "homeTeam": "MIL",
+      "awayTeam": "IND",
+      "homeScore": 111,
+      "awayScore": 94
+    },
+    {
+      "date": "1985-11-30",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 133,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-11-30",
+      "homeTeam": "DEN",
+      "awayTeam": "SEA",
+      "homeScore": 123,
+      "awayScore": 131
+    },
+    {
+      "date": "1985-11-30",
+      "homeTeam": "ATL",
+      "awayTeam": "BOS",
+      "homeScore": 97,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-11-30",
+      "homeTeam": "DAL",
+      "awayTeam": "LAC",
+      "homeScore": 124,
+      "awayScore": 115
+    },
+    {
+      "date": "1985-11-30",
+      "homeTeam": "NYK",
+      "awayTeam": "PHL",
+      "homeScore": 95,
+      "awayScore": 115
+    },
+    {
+      "date": "1985-11-30",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 131,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-11-30",
+      "homeTeam": "GOS",
+      "awayTeam": "UTH",
+      "homeScore": 88,
+      "awayScore": 89
+    },
+    {
+      "date": "1985-12-01",
+      "homeTeam": "LAL",
+      "awayTeam": "CHI",
+      "homeScore": 117,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-12-01",
+      "homeTeam": "POR",
+      "awayTeam": "SAN",
+      "homeScore": 106,
+      "awayScore": 117
+    },
+    {
+      "date": "1985-12-02",
+      "homeTeam": "UTH",
+      "awayTeam": "GOS",
+      "homeScore": 103,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-12-03",
+      "homeTeam": "SEA",
+      "awayTeam": "SAN",
+      "homeScore": 123,
+      "awayScore": 103
+    },
+    {
+      "date": "1985-12-03",
+      "homeTeam": "HOU",
+      "awayTeam": "PHX",
+      "homeScore": 118,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-12-03",
+      "homeTeam": "NYK",
+      "awayTeam": "DEN",
+      "homeScore": 111,
+      "awayScore": 94
+    },
+    {
+      "date": "1985-12-03",
+      "homeTeam": "MIL",
+      "awayTeam": "BOS",
+      "homeScore": 109,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-12-03",
+      "homeTeam": "DET",
+      "awayTeam": "PHL",
+      "homeScore": 107,
+      "awayScore": 127
+    },
+    {
+      "date": "1985-12-03",
+      "homeTeam": "CLE",
+      "awayTeam": "IND",
+      "homeScore": 84,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-12-03",
+      "homeTeam": "GOS",
+      "awayTeam": "DAL",
+      "homeScore": 100,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-12-03",
+      "homeTeam": "WAS",
+      "awayTeam": "POR",
+      "homeScore": 118,
+      "awayScore": 115
+    },
+    {
+      "date": "1985-12-03",
+      "homeTeam": "SAC",
+      "awayTeam": "CHI",
+      "homeScore": 131,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-12-04",
+      "homeTeam": "IND",
+      "awayTeam": "DEN",
+      "homeScore": 105,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-12-04",
+      "homeTeam": "PHL",
+      "awayTeam": "WAS",
+      "homeScore": 115,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-12-04",
+      "homeTeam": "LAC",
+      "awayTeam": "SAC",
+      "homeScore": 128,
+      "awayScore": 103
+    },
+    {
+      "date": "1985-12-04",
+      "homeTeam": "UTH",
+      "awayTeam": "LAL",
+      "homeScore": 127,
+      "awayScore": 131
+    },
+    {
+      "date": "1985-12-04",
+      "homeTeam": "PHX",
+      "awayTeam": "CHI",
+      "homeScore": 100,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-12-04",
+      "homeTeam": "ATL",
+      "awayTeam": "POR",
+      "homeScore": 109,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-12-04",
+      "homeTeam": "NJN",
+      "awayTeam": "BOS",
+      "homeScore": 111,
+      "awayScore": 130
+    },
+    {
+      "date": "1985-12-05",
+      "homeTeam": "DET",
+      "awayTeam": "NJN",
+      "homeScore": 113,
+      "awayScore": 111
+    },
+    {
+      "date": "1985-12-05",
+      "homeTeam": "NYK",
+      "awayTeam": "MIL",
+      "homeScore": 95,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-12-05",
+      "homeTeam": "CLE",
+      "awayTeam": "SEA",
+      "homeScore": 100,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-12-05",
+      "homeTeam": "GOS",
+      "awayTeam": "LAC",
+      "homeScore": 121,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-12-05",
+      "homeTeam": "DAL",
+      "awayTeam": "SAN",
+      "homeScore": 116,
+      "awayScore": 120
+    },
+    {
+      "date": "1985-12-06",
+      "homeTeam": "PHL",
+      "awayTeam": "DEN",
+      "homeScore": 121,
+      "awayScore": 123
+    },
+    {
+      "date": "1985-12-06",
+      "homeTeam": "ATL",
+      "awayTeam": "MIL",
+      "homeScore": 94,
+      "awayScore": 93
+    },
+    {
+      "date": "1985-12-06",
+      "homeTeam": "BOS",
+      "awayTeam": "POR",
+      "homeScore": 103,
+      "awayScore": 121
+    },
+    {
+      "date": "1985-12-06",
+      "homeTeam": "LAL",
+      "awayTeam": "HOU",
+      "homeScore": 120,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-12-06",
+      "homeTeam": "PHX",
+      "awayTeam": "UTH",
+      "homeScore": 111,
+      "awayScore": 92
+    },
+    {
+      "date": "1985-12-06",
+      "homeTeam": "SAN",
+      "awayTeam": "CHI",
+      "homeScore": 123,
+      "awayScore": 131
+    },
+    {
+      "date": "1985-12-06",
+      "homeTeam": "WAS",
+      "awayTeam": "SEA",
+      "homeScore": 115,
+      "awayScore": 109
+    },
+    {
+      "date": "1985-12-06",
+      "homeTeam": "IND",
+      "awayTeam": "NYK",
+      "homeScore": 107,
+      "awayScore": 83
+    },
+    {
+      "date": "1985-12-07",
+      "homeTeam": "DAL",
+      "awayTeam": "GOS",
+      "homeScore": 120,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-12-07",
+      "homeTeam": "NJN",
+      "awayTeam": "POR",
+      "homeScore": 118,
+      "awayScore": 106
+    },
+    {
+      "date": "1985-12-07",
+      "homeTeam": "LAC",
+      "awayTeam": "UTH",
+      "homeScore": 91,
+      "awayScore": 131
+    },
+    {
+      "date": "1985-12-07",
+      "homeTeam": "CLE",
+      "awayTeam": "DEN",
+      "homeScore": 124,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-12-07",
+      "homeTeam": "DET",
+      "awayTeam": "SAC",
+      "homeScore": 112,
+      "awayScore": 122
+    },
+    {
+      "date": "1985-12-07",
+      "homeTeam": "HOU",
+      "awayTeam": "CHI",
+      "homeScore": 116,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-12-08",
+      "homeTeam": "WAS",
+      "awayTeam": "SAC",
+      "homeScore": 111,
+      "awayScore": 89
+    },
+    {
+      "date": "1985-12-08",
+      "homeTeam": "LAL",
+      "awayTeam": "DAL",
+      "homeScore": 125,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-12-08",
+      "homeTeam": "PHL",
+      "awayTeam": "SEA",
+      "homeScore": 100,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-12-08",
+      "homeTeam": "SAN",
+      "awayTeam": "GOS",
+      "homeScore": 121,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-12-10",
+      "homeTeam": "NJN",
+      "awayTeam": "SAC",
+      "homeScore": 106,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-12-10",
+      "homeTeam": "NYK",
+      "awayTeam": "IND",
+      "homeScore": 82,
+      "awayScore": 64
+    },
+    {
+      "date": "1985-12-10",
+      "homeTeam": "CHI",
+      "awayTeam": "SAN",
+      "homeScore": 107,
+      "awayScore": 109
+    },
+    {
+      "date": "1985-12-10",
+      "homeTeam": "POR",
+      "awayTeam": "GOS",
+      "homeScore": 94,
+      "awayScore": 92
+    },
+    {
+      "date": "1985-12-10",
+      "homeTeam": "HOU",
+      "awayTeam": "UTH",
+      "homeScore": 134,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-12-10",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 120,
+      "awayScore": 130
+    },
+    {
+      "date": "1985-12-10",
+      "homeTeam": "BOS",
+      "awayTeam": "ATL",
+      "homeScore": 114,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-12-10",
+      "homeTeam": "LAC",
+      "awayTeam": "DAL",
+      "homeScore": 120,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-12-10",
+      "homeTeam": "MIL",
+      "awayTeam": "SEA",
+      "homeScore": 117,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-12-11",
+      "homeTeam": "GOS",
+      "awayTeam": "PHX",
+      "homeScore": 113,
+      "awayScore": 123
+    },
+    {
+      "date": "1985-12-11",
+      "homeTeam": "PHL",
+      "awayTeam": "CLE",
+      "homeScore": 125,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-12-11",
+      "homeTeam": "BOS",
+      "awayTeam": "SAC",
+      "homeScore": 118,
+      "awayScore": 101
+    },
+    {
+      "date": "1985-12-11",
+      "homeTeam": "ATL",
+      "awayTeam": "SEA",
+      "homeScore": 105,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-12-11",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": 100,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-12-11",
+      "homeTeam": "DEN",
+      "awayTeam": "LAC",
+      "homeScore": 134,
+      "awayScore": 95
+    },
+    {
+      "date": "1985-12-11",
+      "homeTeam": "UTH",
+      "awayTeam": "POR",
+      "homeScore": 119,
+      "awayScore": 111
+    },
+    {
+      "date": "1985-12-11",
+      "homeTeam": "IND",
+      "awayTeam": "SAN",
+      "homeScore": 114,
+      "awayScore": 101
+    },
+    {
+      "date": "1985-12-12",
+      "homeTeam": "HOU",
+      "awayTeam": "DAL",
+      "homeScore": 123,
+      "awayScore": 120
+    },
+    {
+      "date": "1985-12-12",
+      "homeTeam": "CHI",
+      "awayTeam": "PHL",
+      "homeScore": 106,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-12-12",
+      "homeTeam": "LAL",
+      "awayTeam": "PHX",
+      "homeScore": 127,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-12-12",
+      "homeTeam": "WAS",
+      "awayTeam": "MIL",
+      "homeScore": 110,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-12-12",
+      "homeTeam": "NYK",
+      "awayTeam": "NJN",
+      "homeScore": 85,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-12-13",
+      "homeTeam": "DET",
+      "awayTeam": "SAN",
+      "homeScore": 113,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-12-13",
+      "homeTeam": "MIL",
+      "awayTeam": "CLE",
+      "homeScore": 124,
+      "awayScore": 128
+    },
+    {
+      "date": "1985-12-13",
+      "homeTeam": "SEA",
+      "awayTeam": "LAC",
+      "homeScore": 114,
+      "awayScore": 95
+    },
+    {
+      "date": "1985-12-13",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 109,
+      "awayScore": 89
+    },
+    {
+      "date": "1985-12-13",
+      "homeTeam": "GOS",
+      "awayTeam": "POR",
+      "homeScore": 124,
+      "awayScore": 127
+    },
+    {
+      "date": "1985-12-13",
+      "homeTeam": "DEN",
+      "awayTeam": "LAL",
+      "homeScore": 124,
+      "awayScore": 120
+    },
+    {
+      "date": "1985-12-14",
+      "homeTeam": "UTH",
+      "awayTeam": "HOU",
+      "homeScore": 114,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-12-14",
+      "homeTeam": "NJN",
+      "awayTeam": "IND",
+      "homeScore": 105,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-12-14",
+      "homeTeam": "NYK",
+      "awayTeam": "SAN",
+      "homeScore": 108,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-12-14",
+      "homeTeam": "CHI",
+      "awayTeam": "SAC",
+      "homeScore": 103,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-12-14",
+      "homeTeam": "DAL",
+      "awayTeam": "DEN",
+      "homeScore": 127,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-12-14",
+      "homeTeam": "ATL",
+      "awayTeam": "PHL",
+      "homeScore": 107,
+      "awayScore": 103
+    },
+    {
+      "date": "1985-12-14",
+      "homeTeam": "CLE",
+      "awayTeam": "BOS",
+      "homeScore": 109,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-12-14",
+      "homeTeam": "LAC",
+      "awayTeam": "PHX",
+      "homeScore": 92,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-12-15",
+      "homeTeam": "MIL",
+      "awayTeam": "SAC",
+      "homeScore": 140,
+      "awayScore": 82
+    },
+    {
+      "date": "1985-12-15",
+      "homeTeam": "GOS",
+      "awayTeam": "SEA",
+      "homeScore": 112,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-12-15",
+      "homeTeam": "LAL",
+      "awayTeam": "DET",
+      "homeScore": 132,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-12-15",
+      "homeTeam": "BOS",
+      "awayTeam": "CHI",
+      "homeScore": 109,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-12-17",
+      "homeTeam": "CLE",
+      "awayTeam": "HOU",
+      "homeScore": 94,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-12-17",
+      "homeTeam": "IND",
+      "awayTeam": "PHL",
+      "homeScore": 96,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-12-17",
+      "homeTeam": "SAC",
+      "awayTeam": "DET",
+      "homeScore": 132,
+      "awayScore": 121
+    },
+    {
+      "date": "1985-12-17",
+      "homeTeam": "SAN",
+      "awayTeam": "POR",
+      "homeScore": 126,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-12-17",
+      "homeTeam": "CHI",
+      "awayTeam": "BOS",
+      "homeScore": 116,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-12-17",
+      "homeTeam": "ATL",
+      "awayTeam": "NJN",
+      "homeScore": 104,
+      "awayScore": 103
+    },
+    {
+      "date": "1985-12-17",
+      "homeTeam": "NYK",
+      "awayTeam": "LAL",
+      "homeScore": 99,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-12-17",
+      "homeTeam": "DEN",
+      "awayTeam": "GOS",
+      "homeScore": 122,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-12-17",
+      "homeTeam": "SEA",
+      "awayTeam": "PHX",
+      "homeScore": 99,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-12-17",
+      "homeTeam": "WAS",
+      "awayTeam": "UTH",
+      "homeScore": 98,
+      "awayScore": 106
+    },
+    {
+      "date": "1985-12-18",
+      "homeTeam": "NJN",
+      "awayTeam": "UTH",
+      "homeScore": 113,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-12-18",
+      "homeTeam": "LAC",
+      "awayTeam": "GOS",
+      "homeScore": 103,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-12-18",
+      "homeTeam": "MIL",
+      "awayTeam": "LAL",
+      "homeScore": 105,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-12-18",
+      "homeTeam": "BOS",
+      "awayTeam": "DAL",
+      "homeScore": 137,
+      "awayScore": 117
+    },
+    {
+      "date": "1985-12-18",
+      "homeTeam": "PHL",
+      "awayTeam": "HOU",
+      "homeScore": 126,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-12-19",
+      "homeTeam": "DEN",
+      "awayTeam": "POR",
+      "homeScore": 123,
+      "awayScore": 118
+    },
+    {
+      "date": "1985-12-19",
+      "homeTeam": "NYK",
+      "awayTeam": "CLE",
+      "homeScore": 105,
+      "awayScore": 109
+    },
+    {
+      "date": "1985-12-19",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 92,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-12-19",
+      "homeTeam": "PHX",
+      "awayTeam": "SAC",
+      "homeScore": 107,
+      "awayScore": 106
+    },
+    {
+      "date": "1985-12-19",
+      "homeTeam": "ATL",
+      "awayTeam": "DAL",
+      "homeScore": 108,
+      "awayScore": 120
+    },
+    {
+      "date": "1985-12-19",
+      "homeTeam": "SEA",
+      "awayTeam": "DET",
+      "homeScore": 97,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-12-20",
+      "homeTeam": "PHL",
+      "awayTeam": "UTH",
+      "homeScore": 112,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-12-20",
+      "homeTeam": "CLE",
+      "awayTeam": "LAL",
+      "homeScore": 116,
+      "awayScore": 128
+    },
+    {
+      "date": "1985-12-20",
+      "homeTeam": "LAC",
+      "awayTeam": "SAN",
+      "homeScore": 104,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-12-20",
+      "homeTeam": "IND",
+      "awayTeam": "MIL",
+      "homeScore": 114,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-12-20",
+      "homeTeam": "NJN",
+      "awayTeam": "HOU",
+      "homeScore": 122,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "IND",
+      "awayTeam": "NJN",
+      "homeScore": 98,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "PHL",
+      "awayTeam": "BOS",
+      "homeScore": 108,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "SEA",
+      "awayTeam": "POR",
+      "homeScore": 97,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "MIL",
+      "awayTeam": "DAL",
+      "homeScore": 132,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "NYK",
+      "awayTeam": "DET",
+      "homeScore": 112,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "ATL",
+      "awayTeam": "HOU",
+      "homeScore": 123,
+      "awayScore": 122
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "DEN",
+      "awayTeam": "SAN",
+      "homeScore": 118,
+      "awayScore": 128
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "SAC",
+      "awayTeam": "LAC",
+      "homeScore": 116,
+      "awayScore": 117
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "PHX",
+      "awayTeam": "GOS",
+      "homeScore": 115,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "WAS",
+      "awayTeam": "LAL",
+      "homeScore": 84,
+      "awayScore": 96
+    },
+    {
+      "date": "1985-12-21",
+      "homeTeam": "CHI",
+      "awayTeam": "UTH",
+      "homeScore": 117,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-12-22",
+      "homeTeam": "WAS",
+      "awayTeam": "NYK",
+      "homeScore": 93,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-12-22",
+      "homeTeam": "CLE",
+      "awayTeam": "DAL",
+      "homeScore": 119,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-12-22",
+      "homeTeam": "POR",
+      "awayTeam": "DEN",
+      "homeScore": 121,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-12-23",
+      "homeTeam": "NJN",
+      "awayTeam": "CLE",
+      "homeScore": 108,
+      "awayScore": 101
+    },
+    {
+      "date": "1985-12-25",
+      "homeTeam": "POR",
+      "awayTeam": "LAC",
+      "homeScore": 121,
+      "awayScore": 107
+    },
+    {
+      "date": "1985-12-25",
+      "homeTeam": "NYK",
+      "awayTeam": "BOS",
+      "homeScore": 113,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-12-26",
+      "homeTeam": "HOU",
+      "awayTeam": "UTH",
+      "homeScore": 106,
+      "awayScore": 99
+    },
+    {
+      "date": "1985-12-26",
+      "homeTeam": "CHI",
+      "awayTeam": "NYK",
+      "homeScore": 96,
+      "awayScore": 113
+    },
+    {
+      "date": "1985-12-26",
+      "homeTeam": "NJN",
+      "awayTeam": "DET",
+      "homeScore": 124,
+      "awayScore": 116
+    },
+    {
+      "date": "1985-12-26",
+      "homeTeam": "MIL",
+      "awayTeam": "IND",
+      "homeScore": 105,
+      "awayScore": 87
+    },
+    {
+      "date": "1985-12-26",
+      "homeTeam": "SAN",
+      "awayTeam": "LAL",
+      "homeScore": 109,
+      "awayScore": 91
+    },
+    {
+      "date": "1985-12-26",
+      "homeTeam": "GOS",
+      "awayTeam": "SAC",
+      "homeScore": 131,
+      "awayScore": 121
+    },
+    {
+      "date": "1985-12-26",
+      "homeTeam": "PHX",
+      "awayTeam": "DAL",
+      "homeScore": 98,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-12-26",
+      "homeTeam": "LAC",
+      "awayTeam": "PHL",
+      "homeScore": 108,
+      "awayScore": 117
+    },
+    {
+      "date": "1985-12-27",
+      "homeTeam": "DAL",
+      "awayTeam": "POR",
+      "homeScore": 133,
+      "awayScore": 142
+    },
+    {
+      "date": "1985-12-27",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 111,
+      "awayScore": 109
+    },
+    {
+      "date": "1985-12-27",
+      "homeTeam": "SEA",
+      "awayTeam": "GOS",
+      "homeScore": 114,
+      "awayScore": 102
+    },
+    {
+      "date": "1985-12-27",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 105,
+      "awayScore": 119
+    },
+    {
+      "date": "1985-12-28",
+      "homeTeam": "SAC",
+      "awayTeam": "LAL",
+      "homeScore": 111,
+      "awayScore": 133
+    },
+    {
+      "date": "1985-12-28",
+      "homeTeam": "HOU",
+      "awayTeam": "POR",
+      "homeScore": 118,
+      "awayScore": 108
+    },
+    {
+      "date": "1985-12-28",
+      "homeTeam": "NYK",
+      "awayTeam": "ATL",
+      "homeScore": 80,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-12-28",
+      "homeTeam": "SEA",
+      "awayTeam": "LAC",
+      "homeScore": 106,
+      "awayScore": 111
+    },
+    {
+      "date": "1985-12-28",
+      "homeTeam": "SAN",
+      "awayTeam": "DEN",
+      "homeScore": 116,
+      "awayScore": 112
+    },
+    {
+      "date": "1985-12-28",
+      "homeTeam": "NJN",
+      "awayTeam": "WAS",
+      "homeScore": 93,
+      "awayScore": 98
+    },
+    {
+      "date": "1985-12-28",
+      "homeTeam": "PHX",
+      "awayTeam": "PHL",
+      "homeScore": 98,
+      "awayScore": 100
+    },
+    {
+      "date": "1985-12-28",
+      "homeTeam": "UTH",
+      "awayTeam": "BOS",
+      "homeScore": 108,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-12-28",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 108,
+      "awayScore": 104
+    },
+    {
+      "date": "1985-12-28",
+      "homeTeam": "CLE",
+      "awayTeam": "MIL",
+      "homeScore": 112,
+      "awayScore": 114
+    },
+    {
+      "date": "1985-12-29",
+      "homeTeam": "LAL",
+      "awayTeam": "GOS",
+      "homeScore": 122,
+      "awayScore": 130
+    },
+    {
+      "date": "1985-12-30",
+      "homeTeam": "NJN",
+      "awayTeam": "NYK",
+      "homeScore": 123,
+      "awayScore": 111
+    },
+    {
+      "date": "1985-12-30",
+      "homeTeam": "MIL",
+      "awayTeam": "DET",
+      "homeScore": 121,
+      "awayScore": 110
+    },
+    {
+      "date": "1985-12-30",
+      "homeTeam": "SAC",
+      "awayTeam": "PHL",
+      "homeScore": 84,
+      "awayScore": 87
+    },
+    {
+      "date": "1985-12-30",
+      "homeTeam": "LAC",
+      "awayTeam": "BOS",
+      "homeScore": 103,
+      "awayScore": 125
+    },
+    {
+      "date": "1985-12-30",
+      "homeTeam": "DEN",
+      "awayTeam": "HOU",
+      "homeScore": 125,
+      "awayScore": 122
+    },
+    {
+      "date": "1985-12-30",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 80,
+      "awayScore": 97
+    },
+    {
+      "date": "1985-12-30",
+      "homeTeam": "CLE",
+      "awayTeam": "CHI",
+      "homeScore": 117,
+      "awayScore": 121
+    },
+    {
+      "date": "1985-12-30",
+      "homeTeam": "UTH",
+      "awayTeam": "SEA",
+      "homeScore": 107,
+      "awayScore": 105
+    },
+    {
+      "date": "1985-12-30",
+      "homeTeam": "POR",
+      "awayTeam": "SAN",
+      "homeScore": 125,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-01-01",
+      "homeTeam": "POR",
+      "awayTeam": "PHL",
+      "homeScore": 119,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-01-02",
+      "homeTeam": "SAC",
+      "awayTeam": "SAN",
+      "homeScore": 114,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-01-02",
+      "homeTeam": "IND",
+      "awayTeam": "BOS",
+      "homeScore": 104,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-01-02",
+      "homeTeam": "GOS",
+      "awayTeam": "HOU",
+      "homeScore": 115,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-01-02",
+      "homeTeam": "NYK",
+      "awayTeam": "WAS",
+      "homeScore": 109,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-01-02",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 131,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-01-03",
+      "homeTeam": "WAS",
+      "awayTeam": "MIL",
+      "homeScore": 100,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-01-03",
+      "homeTeam": "POR",
+      "awayTeam": "PHX",
+      "homeScore": 133,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-01-03",
+      "homeTeam": "LAL",
+      "awayTeam": "UTH",
+      "homeScore": 110,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-01-03",
+      "homeTeam": "CLE",
+      "awayTeam": "LAC",
+      "homeScore": 130,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-01-03",
+      "homeTeam": "BOS",
+      "awayTeam": "NJN",
+      "homeScore": 129,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-01-03",
+      "homeTeam": "SEA",
+      "awayTeam": "DEN",
+      "homeScore": 117,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-01-03",
+      "homeTeam": "ATL",
+      "awayTeam": "DET",
+      "homeScore": 111,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-01-04",
+      "homeTeam": "MIL",
+      "awayTeam": "NYK",
+      "homeScore": 119,
+      "awayScore": 86
+    },
+    {
+      "date": "1986-01-04",
+      "homeTeam": "NJN",
+      "awayTeam": "CLE",
+      "homeScore": 125,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-01-04",
+      "homeTeam": "HOU",
+      "awayTeam": "PHL",
+      "homeScore": 115,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-01-04",
+      "homeTeam": "DAL",
+      "awayTeam": "UTH",
+      "homeScore": 119,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-01-04",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 100,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-01-04",
+      "homeTeam": "GOS",
+      "awayTeam": "SAN",
+      "homeScore": 116,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-01-04",
+      "homeTeam": "IND",
+      "awayTeam": "LAC",
+      "homeScore": 106,
+      "awayScore": 77
+    },
+    {
+      "date": "1986-01-04",
+      "homeTeam": "SAC",
+      "awayTeam": "DEN",
+      "homeScore": 112,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-01-05",
+      "homeTeam": "LAL",
+      "awayTeam": "WAS",
+      "homeScore": 118,
+      "awayScore": 88
+    },
+    {
+      "date": "1986-01-05",
+      "homeTeam": "POR",
+      "awayTeam": "GOS",
+      "homeScore": 136,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-01-06",
+      "homeTeam": "SAN",
+      "awayTeam": "PHL",
+      "homeScore": 102,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-01-06",
+      "homeTeam": "SEA",
+      "awayTeam": "PHX",
+      "homeScore": 97,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-01-06",
+      "homeTeam": "SAC",
+      "awayTeam": "WAS",
+      "homeScore": 106,
+      "awayScore": 87
+    },
+    {
+      "date": "1986-01-07",
+      "homeTeam": "NYK",
+      "awayTeam": "IND",
+      "homeScore": 93,
+      "awayScore": 85
+    },
+    {
+      "date": "1986-01-07",
+      "homeTeam": "SEA",
+      "awayTeam": "UTH",
+      "homeScore": 91,
+      "awayScore": 84
+    },
+    {
+      "date": "1986-01-07",
+      "homeTeam": "MIL",
+      "awayTeam": "CLE",
+      "homeScore": 110,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-01-07",
+      "homeTeam": "HOU",
+      "awayTeam": "GOS",
+      "homeScore": 124,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-01-07",
+      "homeTeam": "DEN",
+      "awayTeam": "DAL",
+      "homeScore": 132,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-01-07",
+      "homeTeam": "CHI",
+      "awayTeam": "NJN",
+      "homeScore": 105,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-01-07",
+      "homeTeam": "ATL",
+      "awayTeam": "LAC",
+      "homeScore": 117,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-01-07",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 113,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-01-08",
+      "homeTeam": "BOS",
+      "awayTeam": "CLE",
+      "homeScore": 126,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-01-08",
+      "homeTeam": "IND",
+      "awayTeam": "SAC",
+      "homeScore": 87,
+      "awayScore": 88
+    },
+    {
+      "date": "1986-01-08",
+      "homeTeam": "PHX",
+      "awayTeam": "WAS",
+      "homeScore": 109,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-01-08",
+      "homeTeam": "NJN",
+      "awayTeam": "MIL",
+      "homeScore": 106,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-01-08",
+      "homeTeam": "LAL",
+      "awayTeam": "POR",
+      "homeScore": 125,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-01-08",
+      "homeTeam": "PHL",
+      "awayTeam": "LAC",
+      "homeScore": 116,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-01-09",
+      "homeTeam": "HOU",
+      "awayTeam": "SAN",
+      "homeScore": 120,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-01-09",
+      "homeTeam": "DET",
+      "awayTeam": "ATL",
+      "homeScore": 99,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-01-09",
+      "homeTeam": "UTH",
+      "awayTeam": "WAS",
+      "homeScore": 89,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-01-09",
+      "homeTeam": "DEN",
+      "awayTeam": "SEA",
+      "homeScore": 94,
+      "awayScore": 90
+    },
+    {
+      "date": "1986-01-10",
+      "homeTeam": "DAL",
+      "awayTeam": "PHX",
+      "homeScore": 117,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-01-10",
+      "homeTeam": "MIL",
+      "awayTeam": "POR",
+      "homeScore": 95,
+      "awayScore": 89
+    },
+    {
+      "date": "1986-01-10",
+      "homeTeam": "NJN",
+      "awayTeam": "LAC",
+      "homeScore": 120,
+      "awayScore": 125
+    },
+    {
+      "date": "1986-01-10",
+      "homeTeam": "LAL",
+      "awayTeam": "IND",
+      "homeScore": 124,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-01-10",
+      "homeTeam": "BOS",
+      "awayTeam": "ATL",
+      "homeScore": 115,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-01-10",
+      "homeTeam": "SAN",
+      "awayTeam": "GOS",
+      "homeScore": 124,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-01-10",
+      "homeTeam": "PHL",
+      "awayTeam": "SAC",
+      "homeScore": 113,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-01-11",
+      "homeTeam": "DEN",
+      "awayTeam": "UTH",
+      "homeScore": 114,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-01-11",
+      "homeTeam": "CLE",
+      "awayTeam": "SAC",
+      "homeScore": 105,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-01-11",
+      "homeTeam": "PHX",
+      "awayTeam": "IND",
+      "homeScore": 128,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-01-11",
+      "homeTeam": "HOU",
+      "awayTeam": "WAS",
+      "homeScore": 87,
+      "awayScore": 86
+    },
+    {
+      "date": "1986-01-11",
+      "homeTeam": "DAL",
+      "awayTeam": "GOS",
+      "homeScore": 127,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-01-11",
+      "homeTeam": "CHI",
+      "awayTeam": "LAC",
+      "homeScore": 132,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-01-11",
+      "homeTeam": "SEA",
+      "awayTeam": "LAL",
+      "homeScore": 105,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-01-11",
+      "homeTeam": "NYK",
+      "awayTeam": "POR",
+      "homeScore": 106,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-01-11",
+      "homeTeam": "DET",
+      "awayTeam": "PHL",
+      "homeScore": 101,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-01-12",
+      "homeTeam": "SAN",
+      "awayTeam": "UTH",
+      "homeScore": 102,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-01-13",
+      "homeTeam": "WAS",
+      "awayTeam": "LAC",
+      "homeScore": 90,
+      "awayScore": 77
+    },
+    {
+      "date": "1986-01-13",
+      "homeTeam": "PHX",
+      "awayTeam": "SAN",
+      "homeScore": 121,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-01-13",
+      "homeTeam": "NYK",
+      "awayTeam": "SAC",
+      "homeScore": 115,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-01-13",
+      "homeTeam": "GOS",
+      "awayTeam": "IND",
+      "homeScore": 119,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-01-13",
+      "homeTeam": "SEA",
+      "awayTeam": "DAL",
+      "homeScore": 89,
+      "awayScore": 90
+    },
+    {
+      "date": "1986-01-13",
+      "homeTeam": "MIL",
+      "awayTeam": "DEN",
+      "homeScore": 115,
+      "awayScore": 119
+    },
+    {
+      "date": "1986-01-14",
+      "homeTeam": "HOU",
+      "awayTeam": "UTH",
+      "homeScore": 102,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-01-14",
+      "homeTeam": "CLE",
+      "awayTeam": "POR",
+      "homeScore": 108,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-01-14",
+      "homeTeam": "LAL",
+      "awayTeam": "PHX",
+      "homeScore": 143,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-01-14",
+      "homeTeam": "NJN",
+      "awayTeam": "PHL",
+      "homeScore": 105,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-01-14",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 113,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-01-14",
+      "homeTeam": "ATL",
+      "awayTeam": "SAC",
+      "homeScore": 115,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-01-15",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 123,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-01-15",
+      "homeTeam": "BOS",
+      "awayTeam": "DEN",
+      "homeScore": 123,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-01-15",
+      "homeTeam": "SAN",
+      "awayTeam": "HOU",
+      "homeScore": 113,
+      "awayScore": 119
+    },
+    {
+      "date": "1986-01-15",
+      "homeTeam": "DAL",
+      "awayTeam": "NYK",
+      "homeScore": 112,
+      "awayScore": 116
+    },
+    {
+      "date": "1986-01-15",
+      "homeTeam": "LAC",
+      "awayTeam": "SEA",
+      "homeScore": 110,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-01-15",
+      "homeTeam": "IND",
+      "awayTeam": "POR",
+      "homeScore": 104,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-01-15",
+      "homeTeam": "GOS",
+      "awayTeam": "UTH",
+      "homeScore": 150,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-01-15",
+      "homeTeam": "PHL",
+      "awayTeam": "NJN",
+      "homeScore": 89,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-01-16",
+      "homeTeam": "ATL",
+      "awayTeam": "CLE",
+      "homeScore": 116,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-01-16",
+      "homeTeam": "MIL",
+      "awayTeam": "WAS",
+      "homeScore": 114,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-01-16",
+      "homeTeam": "LAL",
+      "awayTeam": "LAC",
+      "homeScore": 112,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-01-17",
+      "homeTeam": "IND",
+      "awayTeam": "BOS",
+      "homeScore": 105,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-01-17",
+      "homeTeam": "CHI",
+      "awayTeam": "PHL",
+      "homeScore": 118,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-01-17",
+      "homeTeam": "UTH",
+      "awayTeam": "DAL",
+      "homeScore": 139,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-01-17",
+      "homeTeam": "PHX",
+      "awayTeam": "SEA",
+      "homeScore": 103,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-01-17",
+      "homeTeam": "SAN",
+      "awayTeam": "NYK",
+      "homeScore": 113,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-01-17",
+      "homeTeam": "GOS",
+      "awayTeam": "SAC",
+      "homeScore": 111,
+      "awayScore": 125
+    },
+    {
+      "date": "1986-01-17",
+      "homeTeam": "WAS",
+      "awayTeam": "NJN",
+      "homeScore": 116,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-01-17",
+      "homeTeam": "DET",
+      "awayTeam": "DEN",
+      "homeScore": 129,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-01-18",
+      "homeTeam": "CLE",
+      "awayTeam": "IND",
+      "homeScore": 108,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-01-18",
+      "homeTeam": "SAC",
+      "awayTeam": "SEA",
+      "homeScore": 98,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-01-18",
+      "homeTeam": "LAC",
+      "awayTeam": "UTH",
+      "homeScore": 131,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-01-18",
+      "homeTeam": "NJN",
+      "awayTeam": "DEN",
+      "homeScore": 124,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-01-18",
+      "homeTeam": "HOU",
+      "awayTeam": "NYK",
+      "homeScore": 104,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-01-18",
+      "homeTeam": "ATL",
+      "awayTeam": "BOS",
+      "homeScore": 122,
+      "awayScore": 125
+    },
+    {
+      "date": "1986-01-18",
+      "homeTeam": "POR",
+      "awayTeam": "PHX",
+      "homeScore": 112,
+      "awayScore": 87
+    },
+    {
+      "date": "1986-01-19",
+      "homeTeam": "POR",
+      "awayTeam": "SAN",
+      "homeScore": 105,
+      "awayScore": 116
+    },
+    {
+      "date": "1986-01-19",
+      "homeTeam": "MIL",
+      "awayTeam": "GOS",
+      "homeScore": 122,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-01-19",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": 112,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-01-19",
+      "homeTeam": "DET",
+      "awayTeam": "LAL",
+      "homeScore": 118,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-01-19",
+      "homeTeam": "DAL",
+      "awayTeam": "HOU",
+      "homeScore": 131,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-01-20",
+      "homeTeam": "PHL",
+      "awayTeam": "NYK",
+      "homeScore": 103,
+      "awayScore": 93
+    },
+    {
+      "date": "1986-01-20",
+      "homeTeam": "CLE",
+      "awayTeam": "PHX",
+      "homeScore": 108,
+      "awayScore": 93
+    },
+    {
+      "date": "1986-01-20",
+      "homeTeam": "ATL",
+      "awayTeam": "MIL",
+      "homeScore": 101,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-01-20",
+      "homeTeam": "CHI",
+      "awayTeam": "LAL",
+      "homeScore": 118,
+      "awayScore": 133
+    },
+    {
+      "date": "1986-01-20",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": 105,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-01-21",
+      "homeTeam": "UTH",
+      "awayTeam": "DEN",
+      "homeScore": 117,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-01-21",
+      "homeTeam": "SEA",
+      "awayTeam": "HOU",
+      "homeScore": 96,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-01-21",
+      "homeTeam": "SAN",
+      "awayTeam": "LAC",
+      "homeScore": 96,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-01-21",
+      "homeTeam": "NYK",
+      "awayTeam": "GOS",
+      "homeScore": 121,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-01-21",
+      "homeTeam": "SAC",
+      "awayTeam": "DAL",
+      "homeScore": 119,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-01-22",
+      "homeTeam": "BOS",
+      "awayTeam": "LAL",
+      "homeScore": 110,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-01-22",
+      "homeTeam": "DEN",
+      "awayTeam": "NJN",
+      "homeScore": 137,
+      "awayScore": 124
+    },
+    {
+      "date": "1986-01-22",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 104,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-01-22",
+      "homeTeam": "DAL",
+      "awayTeam": "LAC",
+      "homeScore": 118,
+      "awayScore": 131
+    },
+    {
+      "date": "1986-01-22",
+      "homeTeam": "ATL",
+      "awayTeam": "GOS",
+      "homeScore": 131,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-01-22",
+      "homeTeam": "PHL",
+      "awayTeam": "PHX",
+      "homeScore": 118,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-01-23",
+      "homeTeam": "WAS",
+      "awayTeam": "PHX",
+      "homeScore": 114,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-01-23",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 124,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-01-23",
+      "homeTeam": "POR",
+      "awayTeam": "SEA",
+      "homeScore": 117,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-01-23",
+      "homeTeam": "UTH",
+      "awayTeam": "NJN",
+      "homeScore": 105,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-01-24",
+      "homeTeam": "IND",
+      "awayTeam": "MIL",
+      "homeScore": 92,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-01-24",
+      "homeTeam": "ATL",
+      "awayTeam": "NYK",
+      "homeScore": 117,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-01-24",
+      "homeTeam": "CLE",
+      "awayTeam": "PHL",
+      "homeScore": 114,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-01-24",
+      "homeTeam": "LAC",
+      "awayTeam": "LAL",
+      "homeScore": 120,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-01-24",
+      "homeTeam": "DAL",
+      "awayTeam": "DET",
+      "homeScore": 120,
+      "awayScore": 129
+    },
+    {
+      "date": "1986-01-24",
+      "homeTeam": "DEN",
+      "awayTeam": "SAN",
+      "homeScore": 98,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-01-24",
+      "homeTeam": "BOS",
+      "awayTeam": "GOS",
+      "homeScore": 135,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-01-25",
+      "homeTeam": "UTH",
+      "awayTeam": "LAC",
+      "homeScore": 130,
+      "awayScore": 90
+    },
+    {
+      "date": "1986-01-25",
+      "homeTeam": "SAC",
+      "awayTeam": "POR",
+      "homeScore": 125,
+      "awayScore": 129
+    },
+    {
+      "date": "1986-01-25",
+      "homeTeam": "NYK",
+      "awayTeam": "MIL",
+      "homeScore": 88,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-01-25",
+      "homeTeam": "LAL",
+      "awayTeam": "DEN",
+      "homeScore": 115,
+      "awayScore": 127
+    },
+    {
+      "date": "1986-01-25",
+      "homeTeam": "SEA",
+      "awayTeam": "NJN",
+      "homeScore": 106,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-01-25",
+      "homeTeam": "CHI",
+      "awayTeam": "PHX",
+      "homeScore": 133,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-01-25",
+      "homeTeam": "IND",
+      "awayTeam": "GOS",
+      "homeScore": 124,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-01-25",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 111,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-01-25",
+      "homeTeam": "SAN",
+      "awayTeam": "DAL",
+      "homeScore": 107,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-01-25",
+      "homeTeam": "HOU",
+      "awayTeam": "DET",
+      "homeScore": 117,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-01-26",
+      "homeTeam": "POR",
+      "awayTeam": "SAC",
+      "homeScore": 116,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-01-26",
+      "homeTeam": "BOS",
+      "awayTeam": "PHL",
+      "homeScore": 105,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-01-27",
+      "homeTeam": "SAN",
+      "awayTeam": "DET",
+      "homeScore": 117,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-01-27",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": 124,
+      "awayScore": 116
+    },
+    {
+      "date": "1986-01-27",
+      "homeTeam": "DEN",
+      "awayTeam": "CLE",
+      "homeScore": 124,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-01-27",
+      "homeTeam": "UTH",
+      "awayTeam": "MIL",
+      "homeScore": 103,
+      "awayScore": 127
+    },
+    {
+      "date": "1986-01-27",
+      "homeTeam": "LAC",
+      "awayTeam": "NJN",
+      "homeScore": 103,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-01-28",
+      "homeTeam": "SAC",
+      "awayTeam": "DEN",
+      "homeScore": 125,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-01-28",
+      "homeTeam": "HOU",
+      "awayTeam": "CLE",
+      "homeScore": 116,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-01-28",
+      "homeTeam": "NYK",
+      "awayTeam": "CHI",
+      "homeScore": 118,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-01-28",
+      "homeTeam": "PHX",
+      "awayTeam": "POR",
+      "homeScore": 136,
+      "awayScore": 130
+    },
+    {
+      "date": "1986-01-28",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 123,
+      "awayScore": 92
+    },
+    {
+      "date": "1986-01-28",
+      "homeTeam": "LAL",
+      "awayTeam": "MIL",
+      "homeScore": 125,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-01-28",
+      "homeTeam": "SEA",
+      "awayTeam": "PHL",
+      "homeScore": 99,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-01-28",
+      "homeTeam": "GOS",
+      "awayTeam": "NJN",
+      "homeScore": 113,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-01-29",
+      "homeTeam": "UTH",
+      "awayTeam": "PHL",
+      "homeScore": 107,
+      "awayScore": 86
+    },
+    {
+      "date": "1986-01-29",
+      "homeTeam": "DET",
+      "awayTeam": "ATL",
+      "homeScore": 107,
+      "awayScore": 94
+    },
+    {
+      "date": "1986-01-29",
+      "homeTeam": "DAL",
+      "awayTeam": "SAN",
+      "homeScore": 126,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-01-29",
+      "homeTeam": "LAC",
+      "awayTeam": "PHX",
+      "homeScore": 108,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-01-29",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 92,
+      "awayScore": 88
+    },
+    {
+      "date": "1986-01-30",
+      "homeTeam": "GOS",
+      "awayTeam": "MIL",
+      "homeScore": 108,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-01-30",
+      "homeTeam": "DEN",
+      "awayTeam": "NYK",
+      "homeScore": 102,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-01-30",
+      "homeTeam": "SAN",
+      "awayTeam": "CLE",
+      "homeScore": 112,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-01-30",
+      "homeTeam": "NJN",
+      "awayTeam": "SEA",
+      "homeScore": 82,
+      "awayScore": 89
+    },
+    {
+      "date": "1986-01-30",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 109,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-01-30",
+      "homeTeam": "CHI",
+      "awayTeam": "BOS",
+      "homeScore": 91,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-01-30",
+      "homeTeam": "POR",
+      "awayTeam": "LAL",
+      "homeScore": 94,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-01-31",
+      "homeTeam": "IND",
+      "awayTeam": "SEA",
+      "homeScore": 101,
+      "awayScore": 94
+    },
+    {
+      "date": "1986-01-31",
+      "homeTeam": "DAL",
+      "awayTeam": "CLE",
+      "homeScore": 107,
+      "awayScore": 91
+    },
+    {
+      "date": "1986-01-31",
+      "homeTeam": "LAL",
+      "awayTeam": "PHL",
+      "homeScore": 134,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-01-31",
+      "homeTeam": "UTH",
+      "awayTeam": "SAC",
+      "homeScore": 113,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-01-31",
+      "homeTeam": "ATL",
+      "awayTeam": "DET",
+      "homeScore": 116,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-01-31",
+      "homeTeam": "PHX",
+      "awayTeam": "NYK",
+      "homeScore": 112,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-01-31",
+      "homeTeam": "WAS",
+      "awayTeam": "BOS",
+      "homeScore": 88,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-02-01",
+      "homeTeam": "DEN",
+      "awayTeam": "MIL",
+      "homeScore": 116,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-02-01",
+      "homeTeam": "POR",
+      "awayTeam": "LAC",
+      "homeScore": 156,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-02-01",
+      "homeTeam": "CHI",
+      "awayTeam": "HOU",
+      "homeScore": 132,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-02-01",
+      "homeTeam": "NJN",
+      "awayTeam": "ATL",
+      "homeScore": 108,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-02-01",
+      "homeTeam": "GOS",
+      "awayTeam": "PHL",
+      "homeScore": 125,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-02-01",
+      "homeTeam": "SAN",
+      "awayTeam": "PHX",
+      "homeScore": 111,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-02-01",
+      "homeTeam": "DET",
+      "awayTeam": "WAS",
+      "homeScore": 116,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-02-02",
+      "homeTeam": "DAL",
+      "awayTeam": "UTH",
+      "homeScore": 100,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-02-02",
+      "homeTeam": "BOS",
+      "awayTeam": "SEA",
+      "homeScore": 114,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-02-02",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 131,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-02-02",
+      "homeTeam": "LAL",
+      "awayTeam": "NYK",
+      "homeScore": 96,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-02-03",
+      "homeTeam": "SAC",
+      "awayTeam": "NYK",
+      "homeScore": 94,
+      "awayScore": 90
+    },
+    {
+      "date": "1986-02-03",
+      "homeTeam": "UTH",
+      "awayTeam": "SAN",
+      "homeScore": 104,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-02-03",
+      "homeTeam": "HOU",
+      "awayTeam": "DEN",
+      "homeScore": 104,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-02-04",
+      "homeTeam": "IND",
+      "awayTeam": "NJN",
+      "homeScore": 117,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-02-04",
+      "homeTeam": "SAN",
+      "awayTeam": "SEA",
+      "homeScore": 124,
+      "awayScore": 119
+    },
+    {
+      "date": "1986-02-04",
+      "homeTeam": "LAL",
+      "awayTeam": "DAL",
+      "homeScore": 110,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-02-04",
+      "homeTeam": "MIL",
+      "awayTeam": "BOS",
+      "homeScore": 93,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-02-04",
+      "homeTeam": "PHX",
+      "awayTeam": "GOS",
+      "homeScore": 127,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-02-04",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "homeScore": 104,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-02-04",
+      "homeTeam": "DEN",
+      "awayTeam": "POR",
+      "homeScore": 119,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-02-04",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 115,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-02-05",
+      "homeTeam": "BOS",
+      "awayTeam": "WAS",
+      "homeScore": 103,
+      "awayScore": 88
+    },
+    {
+      "date": "1986-02-05",
+      "homeTeam": "PHL",
+      "awayTeam": "NJN",
+      "homeScore": 142,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-02-06",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 85,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-02-06",
+      "homeTeam": "UTH",
+      "awayTeam": "NYK",
+      "homeScore": 119,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-02-06",
+      "homeTeam": "WAS",
+      "awayTeam": "DET",
+      "homeScore": 109,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-02-06",
+      "homeTeam": "CLE",
+      "awayTeam": "PHL",
+      "homeScore": 103,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-02-06",
+      "homeTeam": "SAC",
+      "awayTeam": "SEA",
+      "homeScore": 115,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-02-06",
+      "homeTeam": "PHX",
+      "awayTeam": "LAC",
+      "homeScore": 116,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-02-06",
+      "homeTeam": "SAN",
+      "awayTeam": "DEN",
+      "homeScore": 95,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-02-06",
+      "homeTeam": "MIL",
+      "awayTeam": "CHI",
+      "homeScore": 117,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-02-06",
+      "homeTeam": "POR",
+      "awayTeam": "DAL",
+      "homeScore": 111,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-02-06",
+      "homeTeam": "HOU",
+      "awayTeam": "LAL",
+      "homeScore": 95,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-02-11",
+      "homeTeam": "GOS",
+      "awayTeam": "LAL",
+      "homeScore": 137,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-02-11",
+      "homeTeam": "HOU",
+      "awayTeam": "ATL",
+      "homeScore": 113,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-02-11",
+      "homeTeam": "SAN",
+      "awayTeam": "DAL",
+      "homeScore": 107,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-02-11",
+      "homeTeam": "LAC",
+      "awayTeam": "PHX",
+      "homeScore": 120,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-02-11",
+      "homeTeam": "CLE",
+      "awayTeam": "IND",
+      "homeScore": 119,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-02-11",
+      "homeTeam": "SEA",
+      "awayTeam": "UTH",
+      "homeScore": 105,
+      "awayScore": 92
+    },
+    {
+      "date": "1986-02-11",
+      "homeTeam": "NJN",
+      "awayTeam": "DET",
+      "homeScore": 130,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-02-11",
+      "homeTeam": "POR",
+      "awayTeam": "WAS",
+      "homeScore": 116,
+      "awayScore": 124
+    },
+    {
+      "date": "1986-02-11",
+      "homeTeam": "SAC",
+      "awayTeam": "BOS",
+      "homeScore": 105,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-02-12",
+      "homeTeam": "IND",
+      "awayTeam": "MIL",
+      "homeScore": 97,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-02-12",
+      "homeTeam": "DAL",
+      "awayTeam": "DEN",
+      "homeScore": 117,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-02-12",
+      "homeTeam": "DET",
+      "awayTeam": "NYK",
+      "homeScore": 113,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-02-12",
+      "homeTeam": "PHX",
+      "awayTeam": "LAL",
+      "homeScore": 100,
+      "awayScore": 126
+    },
+    {
+      "date": "1986-02-12",
+      "homeTeam": "PHL",
+      "awayTeam": "CHI",
+      "homeScore": 106,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-02-13",
+      "homeTeam": "SAN",
+      "awayTeam": "HOU",
+      "homeScore": 119,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-02-13",
+      "homeTeam": "MIL",
+      "awayTeam": "UTH",
+      "homeScore": 113,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-02-13",
+      "homeTeam": "LAC",
+      "awayTeam": "POR",
+      "homeScore": 118,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-02-13",
+      "homeTeam": "NYK",
+      "awayTeam": "PHL",
+      "homeScore": 92,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-02-13",
+      "homeTeam": "CLE",
+      "awayTeam": "NJN",
+      "homeScore": 135,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-02-13",
+      "homeTeam": "GOS",
+      "awayTeam": "WAS",
+      "homeScore": 109,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-02-13",
+      "homeTeam": "SEA",
+      "awayTeam": "BOS",
+      "homeScore": 98,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-02-13",
+      "homeTeam": "SAC",
+      "awayTeam": "ATL",
+      "homeScore": 114,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-02-14",
+      "homeTeam": "POR",
+      "awayTeam": "BOS",
+      "homeScore": 119,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-02-14",
+      "homeTeam": "DET",
+      "awayTeam": "DAL",
+      "homeScore": 119,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-02-14",
+      "homeTeam": "LAL",
+      "awayTeam": "ATL",
+      "homeScore": 141,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-02-14",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 88,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-02-14",
+      "homeTeam": "PHX",
+      "awayTeam": "DEN",
+      "homeScore": 112,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-02-15",
+      "homeTeam": "IND",
+      "awayTeam": "CLE",
+      "homeScore": 105,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-02-15",
+      "homeTeam": "DEN",
+      "awayTeam": "GOS",
+      "homeScore": 113,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-02-15",
+      "homeTeam": "SEA",
+      "awayTeam": "WAS",
+      "homeScore": 112,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-02-15",
+      "homeTeam": "MIL",
+      "awayTeam": "NJN",
+      "homeScore": 112,
+      "awayScore": 94
+    },
+    {
+      "date": "1986-02-15",
+      "homeTeam": "LAC",
+      "awayTeam": "HOU",
+      "homeScore": 108,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-02-15",
+      "homeTeam": "NYK",
+      "awayTeam": "UTH",
+      "homeScore": 97,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-02-15",
+      "homeTeam": "DET",
+      "awayTeam": "PHL",
+      "homeScore": 134,
+      "awayScore": 133
+    },
+    {
+      "date": "1986-02-16",
+      "homeTeam": "CHI",
+      "awayTeam": "DAL",
+      "homeScore": 114,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-02-16",
+      "homeTeam": "SAN",
+      "awayTeam": "SAC",
+      "homeScore": 113,
+      "awayScore": 94
+    },
+    {
+      "date": "1986-02-16",
+      "homeTeam": "LAL",
+      "awayTeam": "BOS",
+      "homeScore": 99,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-02-16",
+      "homeTeam": "POR",
+      "awayTeam": "ATL",
+      "homeScore": 101,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-02-17",
+      "homeTeam": "PHX",
+      "awayTeam": "BOS",
+      "homeScore": 108,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-02-17",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 124,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-02-17",
+      "homeTeam": "DET",
+      "awayTeam": "UTH",
+      "homeScore": 117,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-02-17",
+      "homeTeam": "CLE",
+      "awayTeam": "NYK",
+      "homeScore": 111,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-02-17",
+      "homeTeam": "NJN",
+      "awayTeam": "DAL",
+      "homeScore": 124,
+      "awayScore": 126
+    },
+    {
+      "date": "1986-02-17",
+      "homeTeam": "GOS",
+      "awayTeam": "HOU",
+      "homeScore": 110,
+      "awayScore": 116
+    },
+    {
+      "date": "1986-02-17",
+      "homeTeam": "LAC",
+      "awayTeam": "WAS",
+      "homeScore": 94,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-02-17",
+      "homeTeam": "PHL",
+      "awayTeam": "MIL",
+      "homeScore": 106,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-02-17",
+      "homeTeam": "SEA",
+      "awayTeam": "ATL",
+      "homeScore": 100,
+      "awayScore": 87
+    },
+    {
+      "date": "1986-02-18",
+      "homeTeam": "SAC",
+      "awayTeam": "HOU",
+      "homeScore": 115,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-02-18",
+      "homeTeam": "NYK",
+      "awayTeam": "CLE",
+      "homeScore": 105,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-02-18",
+      "homeTeam": "DEN",
+      "awayTeam": "WAS",
+      "homeScore": 101,
+      "awayScore": 90
+    },
+    {
+      "date": "1986-02-18",
+      "homeTeam": "SAN",
+      "awayTeam": "PHX",
+      "homeScore": 120,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-02-19",
+      "homeTeam": "GOS",
+      "awayTeam": "BOS",
+      "homeScore": 100,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-02-19",
+      "homeTeam": "PHL",
+      "awayTeam": "POR",
+      "homeScore": 153,
+      "awayScore": 133
+    },
+    {
+      "date": "1986-02-19",
+      "homeTeam": "IND",
+      "awayTeam": "LAL",
+      "homeScore": 81,
+      "awayScore": 90
+    },
+    {
+      "date": "1986-02-19",
+      "homeTeam": "UTH",
+      "awayTeam": "ATL",
+      "homeScore": 109,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-02-19",
+      "homeTeam": "DAL",
+      "awayTeam": "MIL",
+      "homeScore": 107,
+      "awayScore": 124
+    },
+    {
+      "date": "1986-02-19",
+      "homeTeam": "NJN",
+      "awayTeam": "CHI",
+      "homeScore": 96,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-02-19",
+      "homeTeam": "DET",
+      "awayTeam": "SEA",
+      "homeScore": 118,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-02-20",
+      "homeTeam": "DEN",
+      "awayTeam": "BOS",
+      "homeScore": 102,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-02-20",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 107,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-02-20",
+      "homeTeam": "SAC",
+      "awayTeam": "SAN",
+      "homeScore": 107,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-02-20",
+      "homeTeam": "HOU",
+      "awayTeam": "MIL",
+      "homeScore": 113,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-02-21",
+      "homeTeam": "LAC",
+      "awayTeam": "GOS",
+      "homeScore": 123,
+      "awayScore": 125
+    },
+    {
+      "date": "1986-02-21",
+      "homeTeam": "DAL",
+      "awayTeam": "HOU",
+      "homeScore": 104,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-02-21",
+      "homeTeam": "NJN",
+      "awayTeam": "LAL",
+      "homeScore": 121,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-02-21",
+      "homeTeam": "NYK",
+      "awayTeam": "SEA",
+      "homeScore": 117,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-02-21",
+      "homeTeam": "PHX",
+      "awayTeam": "SAC",
+      "homeScore": 110,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-02-21",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 106,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-02-21",
+      "homeTeam": "PHL",
+      "awayTeam": "WAS",
+      "homeScore": 97,
+      "awayScore": 87
+    },
+    {
+      "date": "1986-02-21",
+      "homeTeam": "CHI",
+      "awayTeam": "POR",
+      "homeScore": 108,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-02-22",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": 102,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-02-22",
+      "homeTeam": "DEN",
+      "awayTeam": "DAL",
+      "homeScore": 113,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-02-22",
+      "homeTeam": "CHI",
+      "awayTeam": "SEA",
+      "homeScore": 129,
+      "awayScore": 125
+    },
+    {
+      "date": "1986-02-22",
+      "homeTeam": "UTH",
+      "awayTeam": "PHX",
+      "homeScore": 105,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-02-22",
+      "homeTeam": "SAN",
+      "awayTeam": "MIL",
+      "homeScore": 115,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-02-22",
+      "homeTeam": "ATL",
+      "awayTeam": "NJN",
+      "homeScore": 112,
+      "awayScore": 83
+    },
+    {
+      "date": "1986-02-22",
+      "homeTeam": "DET",
+      "awayTeam": "POR",
+      "homeScore": 113,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-02-23",
+      "homeTeam": "SAC",
+      "awayTeam": "GOS",
+      "homeScore": 127,
+      "awayScore": 124
+    },
+    {
+      "date": "1986-02-23",
+      "homeTeam": "NYK",
+      "awayTeam": "LAC",
+      "homeScore": 99,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-02-23",
+      "homeTeam": "PHL",
+      "awayTeam": "LAL",
+      "homeScore": 111,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-02-23",
+      "homeTeam": "BOS",
+      "awayTeam": "IND",
+      "homeScore": 113,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-02-24",
+      "homeTeam": "ATL",
+      "awayTeam": "LAL",
+      "homeScore": 102,
+      "awayScore": 93
+    },
+    {
+      "date": "1986-02-24",
+      "homeTeam": "POR",
+      "awayTeam": "DEN",
+      "homeScore": 113,
+      "awayScore": 119
+    },
+    {
+      "date": "1986-02-24",
+      "homeTeam": "CLE",
+      "awayTeam": "SAN",
+      "homeScore": 124,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-02-24",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 110,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-02-24",
+      "homeTeam": "HOU",
+      "awayTeam": "DAL",
+      "homeScore": 110,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-02-24",
+      "homeTeam": "WAS",
+      "awayTeam": "NJN",
+      "homeScore": 99,
+      "awayScore": 89
+    },
+    {
+      "date": "1986-02-25",
+      "homeTeam": "DEN",
+      "awayTeam": "PHX",
+      "homeScore": 112,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-02-25",
+      "homeTeam": "UTH",
+      "awayTeam": "HOU",
+      "homeScore": 100,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-02-25",
+      "homeTeam": "NYK",
+      "awayTeam": "BOS",
+      "homeScore": 74,
+      "awayScore": 91
+    },
+    {
+      "date": "1986-02-25",
+      "homeTeam": "CHI",
+      "awayTeam": "PHL",
+      "homeScore": 108,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-02-25",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 100,
+      "awayScore": 87
+    },
+    {
+      "date": "1986-02-25",
+      "homeTeam": "NJN",
+      "awayTeam": "GOS",
+      "homeScore": 109,
+      "awayScore": 116
+    },
+    {
+      "date": "1986-02-25",
+      "homeTeam": "MIL",
+      "awayTeam": "LAC",
+      "homeScore": 114,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-02-25",
+      "homeTeam": "SEA",
+      "awayTeam": "SAC",
+      "homeScore": 100,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-02-26",
+      "homeTeam": "DAL",
+      "awayTeam": "LAL",
+      "homeScore": 116,
+      "awayScore": 119
+    },
+    {
+      "date": "1986-02-26",
+      "homeTeam": "PHX",
+      "awayTeam": "POR",
+      "homeScore": 113,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-02-26",
+      "homeTeam": "BOS",
+      "awayTeam": "SAN",
+      "homeScore": 120,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-02-26",
+      "homeTeam": "DET",
+      "awayTeam": "LAC",
+      "homeScore": 111,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-02-26",
+      "homeTeam": "ATL",
+      "awayTeam": "CLE",
+      "homeScore": 129,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-02-27",
+      "homeTeam": "SEA",
+      "awayTeam": "POR",
+      "homeScore": 107,
+      "awayScore": 94
+    },
+    {
+      "date": "1986-02-27",
+      "homeTeam": "WAS",
+      "awayTeam": "GOS",
+      "homeScore": 114,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-02-27",
+      "homeTeam": "HOU",
+      "awayTeam": "DEN",
+      "homeScore": 117,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-02-27",
+      "homeTeam": "UTH",
+      "awayTeam": "IND",
+      "homeScore": 109,
+      "awayScore": 92
+    },
+    {
+      "date": "1986-02-28",
+      "homeTeam": "NJN",
+      "awayTeam": "SAN",
+      "homeScore": 113,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-02-28",
+      "homeTeam": "DET",
+      "awayTeam": "ATL",
+      "homeScore": 115,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-02-28",
+      "homeTeam": "SAC",
+      "awayTeam": "IND",
+      "homeScore": 121,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-02-28",
+      "homeTeam": "MIL",
+      "awayTeam": "WAS",
+      "homeScore": 102,
+      "awayScore": 84
+    },
+    {
+      "date": "1986-02-28",
+      "homeTeam": "CHI",
+      "awayTeam": "CLE",
+      "homeScore": 116,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-02-28",
+      "homeTeam": "DAL",
+      "awayTeam": "PHL",
+      "homeScore": 120,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-02-28",
+      "homeTeam": "BOS",
+      "awayTeam": "LAC",
+      "homeScore": 124,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-02-28",
+      "homeTeam": "LAL",
+      "awayTeam": "PHX",
+      "homeScore": 115,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-03-01",
+      "homeTeam": "NYK",
+      "awayTeam": "NJN",
+      "homeScore": 100,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-03-01",
+      "homeTeam": "DEN",
+      "awayTeam": "PHL",
+      "homeScore": 107,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-03-01",
+      "homeTeam": "ATL",
+      "awayTeam": "SAN",
+      "homeScore": 116,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-03-01",
+      "homeTeam": "POR",
+      "awayTeam": "HOU",
+      "homeScore": 117,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-03-01",
+      "homeTeam": "UTH",
+      "awayTeam": "SAC",
+      "homeScore": 110,
+      "awayScore": 94
+    },
+    {
+      "date": "1986-03-01",
+      "homeTeam": "PHX",
+      "awayTeam": "LAL",
+      "homeScore": 123,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-03-01",
+      "homeTeam": "DAL",
+      "awayTeam": "GOS",
+      "homeScore": 119,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-03-02",
+      "homeTeam": "LAC",
+      "awayTeam": "IND",
+      "homeScore": 112,
+      "awayScore": 129
+    },
+    {
+      "date": "1986-03-02",
+      "homeTeam": "WAS",
+      "awayTeam": "MIL",
+      "homeScore": 125,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-03-02",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 129,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-03-03",
+      "homeTeam": "LAL",
+      "awayTeam": "GOS",
+      "homeScore": 127,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-03-03",
+      "homeTeam": "MIL",
+      "awayTeam": "NYK",
+      "homeScore": 115,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-03-03",
+      "homeTeam": "SEA",
+      "awayTeam": "HOU",
+      "homeScore": 118,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-03-03",
+      "homeTeam": "PHX",
+      "awayTeam": "DAL",
+      "homeScore": 138,
+      "awayScore": 139
+    },
+    {
+      "date": "1986-03-04",
+      "homeTeam": "DEN",
+      "awayTeam": "HOU",
+      "homeScore": 128,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-03-04",
+      "homeTeam": "LAC",
+      "awayTeam": "CLE",
+      "homeScore": 106,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-03-04",
+      "homeTeam": "NYK",
+      "awayTeam": "WAS",
+      "homeScore": 119,
+      "awayScore": 83
+    },
+    {
+      "date": "1986-03-04",
+      "homeTeam": "ATL",
+      "awayTeam": "PHL",
+      "homeScore": 128,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-03-04",
+      "homeTeam": "GOS",
+      "awayTeam": "SAN",
+      "homeScore": 129,
+      "awayScore": 126
+    },
+    {
+      "date": "1986-03-04",
+      "homeTeam": "POR",
+      "awayTeam": "IND",
+      "homeScore": 102,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-03-04",
+      "homeTeam": "DET",
+      "awayTeam": "NJN",
+      "homeScore": 120,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-03-04",
+      "homeTeam": "CHI",
+      "awayTeam": "BOS",
+      "homeScore": 94,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-03-04",
+      "homeTeam": "SAC",
+      "awayTeam": "UTH",
+      "homeScore": 94,
+      "awayScore": 92
+    },
+    {
+      "date": "1986-03-05",
+      "homeTeam": "NJN",
+      "awayTeam": "MIL",
+      "homeScore": 106,
+      "awayScore": 119
+    },
+    {
+      "date": "1986-03-05",
+      "homeTeam": "SEA",
+      "awayTeam": "IND",
+      "homeScore": 112,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-03-05",
+      "homeTeam": "PHL",
+      "awayTeam": "ATL",
+      "homeScore": 114,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-03-05",
+      "homeTeam": "BOS",
+      "awayTeam": "CHI",
+      "homeScore": 108,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-03-05",
+      "homeTeam": "LAL",
+      "awayTeam": "UTH",
+      "homeScore": 130,
+      "awayScore": 84
+    },
+    {
+      "date": "1986-03-05",
+      "homeTeam": "PHX",
+      "awayTeam": "CLE",
+      "homeScore": 100,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-03-06",
+      "homeTeam": "WAS",
+      "awayTeam": "NYK",
+      "homeScore": 113,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-03-06",
+      "homeTeam": "HOU",
+      "awayTeam": "SAC",
+      "homeScore": 116,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-03-06",
+      "homeTeam": "LAC",
+      "awayTeam": "DAL",
+      "homeScore": 113,
+      "awayScore": 131
+    },
+    {
+      "date": "1986-03-06",
+      "homeTeam": "GOS",
+      "awayTeam": "LAL",
+      "homeScore": 111,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-03-07",
+      "homeTeam": "SAN",
+      "awayTeam": "LAC",
+      "homeScore": 142,
+      "awayScore": 126
+    },
+    {
+      "date": "1986-03-07",
+      "homeTeam": "BOS",
+      "awayTeam": "NYK",
+      "homeScore": 115,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-03-07",
+      "homeTeam": "SEA",
+      "awayTeam": "CLE",
+      "homeScore": 120,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-03-07",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 108,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-03-07",
+      "homeTeam": "MIL",
+      "awayTeam": "PHL",
+      "homeScore": 125,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-03-07",
+      "homeTeam": "DEN",
+      "awayTeam": "IND",
+      "homeScore": 134,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-03-07",
+      "homeTeam": "PHX",
+      "awayTeam": "UTH",
+      "homeScore": 103,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-03-07",
+      "homeTeam": "NJN",
+      "awayTeam": "DET",
+      "homeScore": 102,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-03-07",
+      "homeTeam": "POR",
+      "awayTeam": "DAL",
+      "homeScore": 125,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-03-08",
+      "homeTeam": "POR",
+      "awayTeam": "UTH",
+      "homeScore": 104,
+      "awayScore": 90
+    },
+    {
+      "date": "1986-03-08",
+      "homeTeam": "ATL",
+      "awayTeam": "MIL",
+      "homeScore": 111,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-03-08",
+      "homeTeam": "GOS",
+      "awayTeam": "CLE",
+      "homeScore": 138,
+      "awayScore": 128
+    },
+    {
+      "date": "1986-03-08",
+      "homeTeam": "LAL",
+      "awayTeam": "SAC",
+      "homeScore": 122,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-03-08",
+      "homeTeam": "WAS",
+      "awayTeam": "BOS",
+      "homeScore": 110,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-03-08",
+      "homeTeam": "HOU",
+      "awayTeam": "SAN",
+      "homeScore": 126,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-03-09",
+      "homeTeam": "NJN",
+      "awayTeam": "PHX",
+      "homeScore": 115,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-03-09",
+      "homeTeam": "PHL",
+      "awayTeam": "IND",
+      "homeScore": 120,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-03-09",
+      "homeTeam": "SAC",
+      "awayTeam": "DAL",
+      "homeScore": 102,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-03-09",
+      "homeTeam": "SEA",
+      "awayTeam": "LAL",
+      "homeScore": 106,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-03-09",
+      "homeTeam": "LAC",
+      "awayTeam": "DEN",
+      "homeScore": 121,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-03-09",
+      "homeTeam": "CHI",
+      "awayTeam": "NYK",
+      "homeScore": 114,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-03-10",
+      "homeTeam": "DET",
+      "awayTeam": "PHX",
+      "homeScore": 109,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-03-10",
+      "homeTeam": "GOS",
+      "awayTeam": "SEA",
+      "homeScore": 108,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-03-10",
+      "homeTeam": "DAL",
+      "awayTeam": "BOS",
+      "homeScore": 116,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-03-11",
+      "homeTeam": "HOU",
+      "awayTeam": "BOS",
+      "homeScore": 104,
+      "awayScore": 116
+    },
+    {
+      "date": "1986-03-11",
+      "homeTeam": "SAC",
+      "awayTeam": "SAN",
+      "homeScore": 132,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-03-11",
+      "homeTeam": "ATL",
+      "awayTeam": "DEN",
+      "homeScore": 128,
+      "awayScore": 116
+    },
+    {
+      "date": "1986-03-11",
+      "homeTeam": "NYK",
+      "awayTeam": "CLE",
+      "homeScore": 107,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-03-11",
+      "homeTeam": "LAL",
+      "awayTeam": "LAC",
+      "homeScore": 129,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-03-11",
+      "homeTeam": "IND",
+      "awayTeam": "PHL",
+      "homeScore": 91,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-03-11",
+      "homeTeam": "CHI",
+      "awayTeam": "NJN",
+      "homeScore": 113,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-03-12",
+      "homeTeam": "NJN",
+      "awayTeam": "ATL",
+      "homeScore": 97,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-03-12",
+      "homeTeam": "UTH",
+      "awayTeam": "GOS",
+      "homeScore": 111,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-03-12",
+      "homeTeam": "PHL",
+      "awayTeam": "NYK",
+      "homeScore": 105,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-03-12",
+      "homeTeam": "DAL",
+      "awayTeam": "SAC",
+      "homeScore": 120,
+      "awayScore": 127
+    },
+    {
+      "date": "1986-03-12",
+      "homeTeam": "LAC",
+      "awayTeam": "SEA",
+      "homeScore": 100,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-03-12",
+      "homeTeam": "CLE",
+      "awayTeam": "WAS",
+      "homeScore": 114,
+      "awayScore": 128
+    },
+    {
+      "date": "1986-03-12",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 111,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-03-12",
+      "homeTeam": "MIL",
+      "awayTeam": "PHX",
+      "homeScore": 126,
+      "awayScore": 127
+    },
+    {
+      "date": "1986-03-13",
+      "homeTeam": "LAL",
+      "awayTeam": "SEA",
+      "homeScore": 105,
+      "awayScore": 92
+    },
+    {
+      "date": "1986-03-13",
+      "homeTeam": "CHI",
+      "awayTeam": "DEN",
+      "homeScore": 112,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-03-13",
+      "homeTeam": "SAN",
+      "awayTeam": "BOS",
+      "homeScore": 119,
+      "awayScore": 135
+    },
+    {
+      "date": "1986-03-13",
+      "homeTeam": "HOU",
+      "awayTeam": "POR",
+      "homeScore": 126,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-03-14",
+      "homeTeam": "LAC",
+      "awayTeam": "SAC",
+      "homeScore": 105,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-03-14",
+      "homeTeam": "WAS",
+      "awayTeam": "DEN",
+      "homeScore": 91,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-03-14",
+      "homeTeam": "PHL",
+      "awayTeam": "CLE",
+      "homeScore": 109,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-03-14",
+      "homeTeam": "DAL",
+      "awayTeam": "POR",
+      "homeScore": 129,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-03-14",
+      "homeTeam": "DET",
+      "awayTeam": "NYK",
+      "homeScore": 112,
+      "awayScore": 89
+    },
+    {
+      "date": "1986-03-14",
+      "homeTeam": "MIL",
+      "awayTeam": "IND",
+      "homeScore": 104,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-03-14",
+      "homeTeam": "UTH",
+      "awayTeam": "SAN",
+      "homeScore": 146,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-03-14",
+      "homeTeam": "ATL",
+      "awayTeam": "BOS",
+      "homeScore": 114,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-03-15",
+      "homeTeam": "CHI",
+      "awayTeam": "MIL",
+      "homeScore": 116,
+      "awayScore": 125
+    },
+    {
+      "date": "1986-03-15",
+      "homeTeam": "NYK",
+      "awayTeam": "ATL",
+      "homeScore": 101,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-03-15",
+      "homeTeam": "HOU",
+      "awayTeam": "LAC",
+      "homeScore": 148,
+      "awayScore": 116
+    },
+    {
+      "date": "1986-03-15",
+      "homeTeam": "DAL",
+      "awayTeam": "UTH",
+      "homeScore": 108,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-03-15",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": 105,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-03-15",
+      "homeTeam": "CLE",
+      "awayTeam": "NJN",
+      "homeScore": 100,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-03-16",
+      "homeTeam": "GOS",
+      "awayTeam": "PHX",
+      "homeScore": 130,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-03-16",
+      "homeTeam": "SEA",
+      "awayTeam": "SAN",
+      "homeScore": 129,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-03-16",
+      "homeTeam": "DEN",
+      "awayTeam": "SAC",
+      "homeScore": 119,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-03-16",
+      "homeTeam": "BOS",
+      "awayTeam": "PHL",
+      "homeScore": 118,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-03-16",
+      "homeTeam": "POR",
+      "awayTeam": "DET",
+      "homeScore": 119,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-03-16",
+      "homeTeam": "LAL",
+      "awayTeam": "HOU",
+      "homeScore": 116,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-03-17",
+      "homeTeam": "CLE",
+      "awayTeam": "PHL",
+      "homeScore": 112,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-03-17",
+      "homeTeam": "WAS",
+      "awayTeam": "NJN",
+      "homeScore": 102,
+      "awayScore": 130
+    },
+    {
+      "date": "1986-03-17",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 106,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-03-17",
+      "homeTeam": "UTH",
+      "awayTeam": "DET",
+      "homeScore": 107,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-03-17",
+      "homeTeam": "IND",
+      "awayTeam": "NYK",
+      "homeScore": 112,
+      "awayScore": 92
+    },
+    {
+      "date": "1986-03-18",
+      "homeTeam": "HOU",
+      "awayTeam": "PHX",
+      "homeScore": 112,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-03-18",
+      "homeTeam": "BOS",
+      "awayTeam": "CLE",
+      "homeScore": 126,
+      "awayScore": 96
+    },
+    {
+      "date": "1986-03-18",
+      "homeTeam": "MIL",
+      "awayTeam": "WAS",
+      "homeScore": 116,
+      "awayScore": 87
+    },
+    {
+      "date": "1986-03-18",
+      "homeTeam": "LAL",
+      "awayTeam": "POR",
+      "homeScore": 128,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-03-18",
+      "homeTeam": "SEA",
+      "awayTeam": "UTH",
+      "homeScore": 104,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-03-18",
+      "homeTeam": "NJN",
+      "awayTeam": "NYK",
+      "homeScore": 103,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-03-18",
+      "homeTeam": "DAL",
+      "awayTeam": "SAN",
+      "homeScore": 120,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-03-18",
+      "homeTeam": "GOS",
+      "awayTeam": "LAC",
+      "homeScore": 126,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-03-18",
+      "homeTeam": "SAC",
+      "awayTeam": "DEN",
+      "homeScore": 117,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-03-19",
+      "homeTeam": "DEN",
+      "awayTeam": "DET",
+      "homeScore": 114,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-03-19",
+      "homeTeam": "PHL",
+      "awayTeam": "CHI",
+      "homeScore": 118,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-03-19",
+      "homeTeam": "LAC",
+      "awayTeam": "LAL",
+      "homeScore": 115,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-03-19",
+      "homeTeam": "PHX",
+      "awayTeam": "SAC",
+      "homeScore": 108,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-03-19",
+      "homeTeam": "SAN",
+      "awayTeam": "ATL",
+      "homeScore": 115,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-03-19",
+      "homeTeam": "BOS",
+      "awayTeam": "IND",
+      "homeScore": 127,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-03-20",
+      "homeTeam": "CLE",
+      "awayTeam": "NYK",
+      "homeScore": 87,
+      "awayScore": 93
+    },
+    {
+      "date": "1986-03-20",
+      "homeTeam": "UTH",
+      "awayTeam": "DAL",
+      "homeScore": 107,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-03-20",
+      "homeTeam": "SEA",
+      "awayTeam": "GOS",
+      "homeScore": 116,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-03-20",
+      "homeTeam": "MIL",
+      "awayTeam": "HOU",
+      "homeScore": 116,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-03-21",
+      "homeTeam": "PHX",
+      "awayTeam": "DET",
+      "homeScore": 105,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-03-21",
+      "homeTeam": "SAN",
+      "awayTeam": "LAL",
+      "homeScore": 109,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-03-21",
+      "homeTeam": "POR",
+      "awayTeam": "SEA",
+      "homeScore": 115,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-03-21",
+      "homeTeam": "PHL",
+      "awayTeam": "WAS",
+      "homeScore": 112,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-03-21",
+      "homeTeam": "DEN",
+      "awayTeam": "LAC",
+      "homeScore": 115,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-03-21",
+      "homeTeam": "DAL",
+      "awayTeam": "ATL",
+      "homeScore": 103,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-03-21",
+      "homeTeam": "BOS",
+      "awayTeam": "CHI",
+      "homeScore": 126,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-03-22",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 111,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-03-22",
+      "homeTeam": "UTH",
+      "awayTeam": "PHX",
+      "homeScore": 119,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-03-22",
+      "homeTeam": "SAC",
+      "awayTeam": "LAL",
+      "homeScore": 113,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-03-22",
+      "homeTeam": "LAC",
+      "awayTeam": "DET",
+      "homeScore": 99,
+      "awayScore": 119
+    },
+    {
+      "date": "1986-03-22",
+      "homeTeam": "MIL",
+      "awayTeam": "ATL",
+      "homeScore": 113,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-03-22",
+      "homeTeam": "PHL",
+      "awayTeam": "NJN",
+      "homeScore": 123,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-03-22",
+      "homeTeam": "CLE",
+      "awayTeam": "CHI",
+      "homeScore": 123,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-03-22",
+      "homeTeam": "NYK",
+      "awayTeam": "HOU",
+      "homeScore": 99,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-03-23",
+      "homeTeam": "SAN",
+      "awayTeam": "SEA",
+      "homeScore": 104,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-03-23",
+      "homeTeam": "GOS",
+      "awayTeam": "DEN",
+      "homeScore": 113,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-03-23",
+      "homeTeam": "POR",
+      "awayTeam": "SAC",
+      "homeScore": 112,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-03-24",
+      "homeTeam": "WAS",
+      "awayTeam": "PHL",
+      "homeScore": 100,
+      "awayScore": 93
+    },
+    {
+      "date": "1986-03-24",
+      "homeTeam": "UTH",
+      "awayTeam": "SEA",
+      "homeScore": 116,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-03-24",
+      "homeTeam": "BOS",
+      "awayTeam": "HOU",
+      "homeScore": 114,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-03-24",
+      "homeTeam": "IND",
+      "awayTeam": "DAL",
+      "homeScore": 120,
+      "awayScore": 126
+    },
+    {
+      "date": "1986-03-24",
+      "homeTeam": "LAL",
+      "awayTeam": "SAN",
+      "homeScore": 124,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-03-25",
+      "homeTeam": "SAC",
+      "awayTeam": "POR",
+      "homeScore": 116,
+      "awayScore": 99
+    },
+    {
+      "date": "1986-03-25",
+      "homeTeam": "MIL",
+      "awayTeam": "NJN",
+      "homeScore": 118,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-03-25",
+      "homeTeam": "GOS",
+      "awayTeam": "DET",
+      "homeScore": 125,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-03-25",
+      "homeTeam": "CHI",
+      "awayTeam": "NYK",
+      "homeScore": 111,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-03-25",
+      "homeTeam": "DEN",
+      "awayTeam": "LAL",
+      "homeScore": 115,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-03-25",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "homeScore": 91,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-03-26",
+      "homeTeam": "PHL",
+      "awayTeam": "ATL",
+      "homeScore": 112,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-03-26",
+      "homeTeam": "UTH",
+      "awayTeam": "DEN",
+      "homeScore": 116,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-03-26",
+      "homeTeam": "PHX",
+      "awayTeam": "SEA",
+      "homeScore": 120,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-03-26",
+      "homeTeam": "NJN",
+      "awayTeam": "CLE",
+      "homeScore": 108,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-03-26",
+      "homeTeam": "IND",
+      "awayTeam": "HOU",
+      "homeScore": 101,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-03-26",
+      "homeTeam": "LAC",
+      "awayTeam": "SAN",
+      "homeScore": 97,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-03-26",
+      "homeTeam": "WAS",
+      "awayTeam": "DAL",
+      "homeScore": 120,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-03-26",
+      "homeTeam": "BOS",
+      "awayTeam": "MIL",
+      "homeScore": 121,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-03-27",
+      "homeTeam": "NYK",
+      "awayTeam": "DAL",
+      "homeScore": 105,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-03-27",
+      "homeTeam": "GOS",
+      "awayTeam": "SAN",
+      "homeScore": 121,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-03-27",
+      "homeTeam": "SEA",
+      "awayTeam": "SAC",
+      "homeScore": 101,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-03-28",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 92,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-03-28",
+      "homeTeam": "PHX",
+      "awayTeam": "LAC",
+      "homeScore": 96,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-03-28",
+      "homeTeam": "DET",
+      "awayTeam": "HOU",
+      "homeScore": 116,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-03-28",
+      "homeTeam": "DEN",
+      "awayTeam": "UTH",
+      "homeScore": 128,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-03-28",
+      "homeTeam": "BOS",
+      "awayTeam": "WAS",
+      "homeScore": 116,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-03-28",
+      "homeTeam": "NJN",
+      "awayTeam": "CHI",
+      "homeScore": 118,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-03-28",
+      "homeTeam": "PHL",
+      "awayTeam": "MIL",
+      "homeScore": 94,
+      "awayScore": 116
+    },
+    {
+      "date": "1986-03-29",
+      "homeTeam": "SEA",
+      "awayTeam": "LAL",
+      "homeScore": 88,
+      "awayScore": 87
+    },
+    {
+      "date": "1986-03-29",
+      "homeTeam": "NYK",
+      "awayTeam": "CHI",
+      "homeScore": 96,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-03-29",
+      "homeTeam": "SAN",
+      "awayTeam": "UTH",
+      "homeScore": 102,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-03-29",
+      "homeTeam": "SAC",
+      "awayTeam": "LAC",
+      "homeScore": 103,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-03-29",
+      "homeTeam": "WAS",
+      "awayTeam": "HOU",
+      "homeScore": 109,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-03-29",
+      "homeTeam": "GOS",
+      "awayTeam": "POR",
+      "homeScore": 130,
+      "awayScore": 129
+    },
+    {
+      "date": "1986-03-29",
+      "homeTeam": "MIL",
+      "awayTeam": "DET",
+      "homeScore": 130,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-03-29",
+      "homeTeam": "ATL",
+      "awayTeam": "CLE",
+      "homeScore": 105,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-03-30",
+      "homeTeam": "LAL",
+      "awayTeam": "GOS",
+      "homeScore": 124,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-03-30",
+      "homeTeam": "BOS",
+      "awayTeam": "NJN",
+      "homeScore": 122,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-03-30",
+      "homeTeam": "SEA",
+      "awayTeam": "PHX",
+      "homeScore": 103,
+      "awayScore": 89
+    },
+    {
+      "date": "1986-03-30",
+      "homeTeam": "PHL",
+      "awayTeam": "DAL",
+      "homeScore": 114,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "DAL",
+      "awayTeam": "PHX",
+      "homeScore": 128,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "POR",
+      "awayTeam": "DEN",
+      "homeScore": 127,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "MIL",
+      "awayTeam": "CHI",
+      "homeScore": 116,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "HOU",
+      "awayTeam": "GOS",
+      "homeScore": 125,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "CLE",
+      "awayTeam": "BOS",
+      "homeScore": 105,
+      "awayScore": 123
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 116,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "NYK",
+      "awayTeam": "NJN",
+      "homeScore": 93,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "UTH",
+      "awayTeam": "LAC",
+      "homeScore": 109,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "LAL",
+      "awayTeam": "SEA",
+      "homeScore": 109,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "SAN",
+      "awayTeam": "SAC",
+      "homeScore": 99,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-04-01",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": 107,
+      "awayScore": 91
+    },
+    {
+      "date": "1986-04-02",
+      "homeTeam": "PHX",
+      "awayTeam": "GOS",
+      "homeScore": 110,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-04-02",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 122,
+      "awayScore": 106
+    },
+    {
+      "date": "1986-04-02",
+      "homeTeam": "PHL",
+      "awayTeam": "NYK",
+      "homeScore": 93,
+      "awayScore": 87
+    },
+    {
+      "date": "1986-04-02",
+      "homeTeam": "SEA",
+      "awayTeam": "POR",
+      "homeScore": 109,
+      "awayScore": 121
+    },
+    {
+      "date": "1986-04-02",
+      "homeTeam": "LAC",
+      "awayTeam": "UTH",
+      "homeScore": 97,
+      "awayScore": 94
+    },
+    {
+      "date": "1986-04-03",
+      "homeTeam": "SAN",
+      "awayTeam": "HOU",
+      "homeScore": 110,
+      "awayScore": 136
+    },
+    {
+      "date": "1986-04-03",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 108,
+      "awayScore": 109
+    },
+    {
+      "date": "1986-04-03",
+      "homeTeam": "DAL",
+      "awayTeam": "DEN",
+      "homeScore": 115,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-04-03",
+      "homeTeam": "NJN",
+      "awayTeam": "WAS",
+      "homeScore": 108,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-04-03",
+      "homeTeam": "LAL",
+      "awayTeam": "SAC",
+      "homeScore": 135,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-04-03",
+      "homeTeam": "MIL",
+      "awayTeam": "CLE",
+      "homeScore": 114,
+      "awayScore": 93
+    },
+    {
+      "date": "1986-04-04",
+      "homeTeam": "BOS",
+      "awayTeam": "NYK",
+      "homeScore": 119,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-04-04",
+      "homeTeam": "PHL",
+      "awayTeam": "CLE",
+      "homeScore": 122,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-04-04",
+      "homeTeam": "DET",
+      "awayTeam": "MIL",
+      "homeScore": 108,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-04-04",
+      "homeTeam": "PHX",
+      "awayTeam": "HOU",
+      "homeScore": 89,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-04-04",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": 135,
+      "awayScore": 129
+    },
+    {
+      "date": "1986-04-05",
+      "homeTeam": "NJN",
+      "awayTeam": "NYK",
+      "homeScore": 107,
+      "awayScore": 93
+    },
+    {
+      "date": "1986-04-05",
+      "homeTeam": "DAL",
+      "awayTeam": "SEA",
+      "homeScore": 109,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-04-05",
+      "homeTeam": "SAC",
+      "awayTeam": "PHX",
+      "homeScore": 119,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-04-05",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": 106,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-04-05",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 102,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-04-05",
+      "homeTeam": "LAC",
+      "awayTeam": "GOS",
+      "homeScore": 106,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-04-05",
+      "homeTeam": "UTH",
+      "awayTeam": "POR",
+      "homeScore": 114,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-04-06",
+      "homeTeam": "WAS",
+      "awayTeam": "CLE",
+      "homeScore": 106,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-04-06",
+      "homeTeam": "HOU",
+      "awayTeam": "LAL",
+      "homeScore": 109,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-04-06",
+      "homeTeam": "PHL",
+      "awayTeam": "BOS",
+      "homeScore": 95,
+      "awayScore": 94
+    },
+    {
+      "date": "1986-04-06",
+      "homeTeam": "SAN",
+      "awayTeam": "DEN",
+      "homeScore": 106,
+      "awayScore": 124
+    },
+    {
+      "date": "1986-04-07",
+      "homeTeam": "CHI",
+      "awayTeam": "MIL",
+      "homeScore": 107,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-04-07",
+      "homeTeam": "NYK",
+      "awayTeam": "IND",
+      "homeScore": 106,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-04-07",
+      "homeTeam": "PHX",
+      "awayTeam": "DEN",
+      "homeScore": 123,
+      "awayScore": 131
+    },
+    {
+      "date": "1986-04-07",
+      "homeTeam": "SAC",
+      "awayTeam": "DAL",
+      "homeScore": 122,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-04-07",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 128,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-04-08",
+      "homeTeam": "POR",
+      "awayTeam": "LAL",
+      "homeScore": 114,
+      "awayScore": 120
+    },
+    {
+      "date": "1986-04-08",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 131,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-04-08",
+      "homeTeam": "PHL",
+      "awayTeam": "DET",
+      "homeScore": 116,
+      "awayScore": 112
+    },
+    {
+      "date": "1986-04-08",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": 104,
+      "awayScore": 111
+    },
+    {
+      "date": "1986-04-08",
+      "homeTeam": "MIL",
+      "awayTeam": "BOS",
+      "homeScore": 114,
+      "awayScore": 126
+    },
+    {
+      "date": "1986-04-08",
+      "homeTeam": "GOS",
+      "awayTeam": "DAL",
+      "homeScore": 129,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-04-08",
+      "homeTeam": "HOU",
+      "awayTeam": "SEA",
+      "homeScore": 109,
+      "awayScore": 95
+    },
+    {
+      "date": "1986-04-09",
+      "homeTeam": "NJN",
+      "awayTeam": "BOS",
+      "homeScore": 108,
+      "awayScore": 98
+    },
+    {
+      "date": "1986-04-09",
+      "homeTeam": "PHX",
+      "awayTeam": "SAN",
+      "homeScore": 102,
+      "awayScore": 114
+    },
+    {
+      "date": "1986-04-09",
+      "homeTeam": "LAC",
+      "awayTeam": "DEN",
+      "homeScore": 132,
+      "awayScore": 127
+    },
+    {
+      "date": "1986-04-09",
+      "homeTeam": "UTH",
+      "awayTeam": "SAC",
+      "homeScore": 108,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-04-10",
+      "homeTeam": "SAC",
+      "awayTeam": "UTH",
+      "homeScore": 108,
+      "awayScore": 119
+    },
+    {
+      "date": "1986-04-10",
+      "homeTeam": "POR",
+      "awayTeam": "LAC",
+      "homeScore": 115,
+      "awayScore": 100
+    },
+    {
+      "date": "1986-04-10",
+      "homeTeam": "SEA",
+      "awayTeam": "DAL",
+      "homeScore": 109,
+      "awayScore": 115
+    },
+    {
+      "date": "1986-04-10",
+      "homeTeam": "ATL",
+      "awayTeam": "NJN",
+      "homeScore": 126,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-04-10",
+      "homeTeam": "DEN",
+      "awayTeam": "PHX",
+      "homeScore": 115,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-04-10",
+      "homeTeam": "LAL",
+      "awayTeam": "HOU",
+      "homeScore": 117,
+      "awayScore": 113
+    },
+    {
+      "date": "1986-04-10",
+      "homeTeam": "CLE",
+      "awayTeam": "MIL",
+      "homeScore": 101,
+      "awayScore": 102
+    },
+    {
+      "date": "1986-04-11",
+      "homeTeam": "NYK",
+      "awayTeam": "DET",
+      "homeScore": 95,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-04-11",
+      "homeTeam": "BOS",
+      "awayTeam": "CLE",
+      "homeScore": 117,
+      "awayScore": 104
+    },
+    {
+      "date": "1986-04-11",
+      "homeTeam": "PHL",
+      "awayTeam": "IND",
+      "homeScore": 130,
+      "awayScore": 122
+    },
+    {
+      "date": "1986-04-11",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": 105,
+      "awayScore": 103
+    },
+    {
+      "date": "1986-04-11",
+      "homeTeam": "GOS",
+      "awayTeam": "POR",
+      "homeScore": 130,
+      "awayScore": 131
+    },
+    {
+      "date": "1986-04-12",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 108,
+      "awayScore": 91
+    },
+    {
+      "date": "1986-04-12",
+      "homeTeam": "SAC",
+      "awayTeam": "LAL",
+      "homeScore": 92,
+      "awayScore": 105
+    },
+    {
+      "date": "1986-04-12",
+      "homeTeam": "LAC",
+      "awayTeam": "DAL",
+      "homeScore": 115,
+      "awayScore": 108
+    },
+    {
+      "date": "1986-04-12",
+      "homeTeam": "DEN",
+      "awayTeam": "UTH",
+      "homeScore": 99,
+      "awayScore": 117
+    },
+    {
+      "date": "1986-04-12",
+      "homeTeam": "HOU",
+      "awayTeam": "PHX",
+      "homeScore": 92,
+      "awayScore": 110
+    },
+    {
+      "date": "1986-04-12",
+      "homeTeam": "MIL",
+      "awayTeam": "NYK",
+      "homeScore": 116,
+      "awayScore": 78
+    },
+    {
+      "date": "1986-04-12",
+      "homeTeam": "SEA",
+      "awayTeam": "GOS",
+      "homeScore": 121,
+      "awayScore": 101
+    },
+    {
+      "date": "1986-04-13",
+      "homeTeam": "BOS",
+      "awayTeam": "NJN",
+      "homeScore": 135,
+      "awayScore": 107
+    },
+    {
+      "date": "1986-04-13",
+      "homeTeam": "SAN",
+      "awayTeam": "POR",
+      "homeScore": 123,
+      "awayScore": 118
+    },
+    {
+      "date": "1986-04-13",
+      "homeTeam": "CLE",
+      "awayTeam": "CHI",
+      "homeScore": 104,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-04-13",
+      "homeTeam": "LAL",
+      "awayTeam": "DAL",
+      "homeScore": 104,
+      "awayScore": 127
+    },
+    {
+      "date": "1986-04-13",
+      "homeTeam": "WAS",
+      "awayTeam": "PHL",
+      "homeScore": 98,
+      "awayScore": 97
+    },
+    {
+      "date": "1986-04-13",
+      "homeTeam": "PHX",
+      "awayTeam": "LAC",
+      "homeScore": 118,
+      "awayScore": 99
+    }
+  ],
+  "metadata": {
+    "total_games": 943,
+    "ingested_at": "2026-01-13T18:34:50.263693"
+  }
+}

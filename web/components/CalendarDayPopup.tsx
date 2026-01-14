@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import type { FranchiseInfo, Game } from '@/lib/types'
+import { isGameCompleted } from '@/lib/types'
 import { getTeamDisplayName } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 
@@ -27,10 +28,11 @@ interface CalendarDayPopupProps {
   position: PopupPosition | null
   franchises: FranchiseInfo[]
   selectedTeam?: string | null
+  league?: 'nba' | 'wnba'
   onClose: () => void
 }
 
-export default function CalendarDayPopup({ dayData, position, franchises, selectedTeam, onClose }: CalendarDayPopupProps) {
+export default function CalendarDayPopup({ dayData, position, franchises, selectedTeam, league = 'wnba', onClose }: CalendarDayPopupProps) {
   const [isDesktop, setIsDesktop] = useState(false)
 
   useEffect(() => {
@@ -82,23 +84,24 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
             {/* Game Details */}
             {(() => {
               const game = dayData.game!
-              const homeWon = game.homeScore > game.awayScore
-              const awayWon = game.awayScore > game.homeScore
+              const completed = isGameCompleted(game)
+              const homeWon = completed ? game.homeScore! > game.awayScore! : false
+              const awayWon = completed ? game.awayScore! > game.homeScore! : false
               const awayName = getTeamDisplayName(game.awayTeam, franchises)
               const homeName = getTeamDisplayName(game.homeTeam, franchises)
 
               return (
                 <div className="text-sm font-mono mb-3">
                   <div className={`flex items-center gap-2 ${awayWon ? 'font-bold' : ''}`}>
-                    <TeamLogo teamCode={game.awayTeam} franchises={franchises} size="xs" />
+                    <TeamLogo teamCode={game.awayTeam} franchises={franchises} league={league} size="xs" />
                     <span className="flex-1">{awayName}</span>
-                    <span className="tabular-nums">{game.awayScore}</span>
+                    <span className="tabular-nums">{completed ? game.awayScore : '—'}</span>
                   </div>
                   <div className="text-muted-foreground text-xs my-1 pl-6">@</div>
                   <div className={`flex items-center gap-2 ${homeWon ? 'font-bold' : ''}`}>
-                    <TeamLogo teamCode={game.homeTeam} franchises={franchises} size="xs" />
+                    <TeamLogo teamCode={game.homeTeam} franchises={franchises} league={league} size="xs" />
                     <span className="flex-1">{homeName}</span>
-                    <span className="tabular-nums">{game.homeScore}</span>
+                    <span className="tabular-nums">{completed ? game.homeScore : '—'}</span>
                   </div>
                 </div>
               )
@@ -129,7 +132,7 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
         ) : (
           /* Off Day - show belt holder */
           <div className="flex items-center gap-3">
-            <TeamLogo teamCode={dayData.holder} franchises={franchises} size="sm" />
+            <TeamLogo teamCode={dayData.holder} franchises={franchises} league={league} size="sm" />
             <div>
               <div className="text-xs text-muted-foreground uppercase mb-1">Belt Holder</div>
               <div className="text-sm font-mono">{getTeamDisplayName(dayData.holder, franchises)}</div>

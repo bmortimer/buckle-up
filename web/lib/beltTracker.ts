@@ -3,6 +3,7 @@
  */
 
 import type { Game, BeltHistory, BeltSummary, TeamBeltStats, BeltChange, FranchiseInfo } from './types'
+import { isGameCompleted } from './types'
 import { isSameFranchise } from './franchises'
 
 export class BeltTracker {
@@ -17,6 +18,11 @@ export class BeltTracker {
   }
 
   processGame(game: Game): void {
+    // Skip unplayed games (no scores yet)
+    if (!isGameCompleted(game)) {
+      return
+    }
+
     const holderIsHome = isSameFranchise(game.homeTeam, this.currentHolder, this.franchises)
     const holderIsAway = isSameFranchise(game.awayTeam, this.currentHolder, this.franchises)
 
@@ -25,8 +31,8 @@ export class BeltTracker {
     }
 
     const holderWon = holderIsHome
-      ? game.homeScore > game.awayScore
-      : game.awayScore > game.homeScore
+      ? game.homeScore! > game.awayScore!
+      : game.awayScore! > game.homeScore!
 
     if (!holderWon) {
       const newHolder = holderIsHome ? game.awayTeam : game.homeTeam
@@ -77,7 +83,10 @@ export class BeltTracker {
     let currentHolder = this.startingTeam
     let currentWinStreak = 0
 
-    for (const game of games) {
+    // Only process completed games
+    const completedGames = games.filter(isGameCompleted)
+
+    for (const game of completedGames) {
       const holderIsHome = isSameFranchise(game.homeTeam, currentHolder, this.franchises)
       const holderIsAway = isSameFranchise(game.awayTeam, currentHolder, this.franchises)
 
@@ -103,9 +112,10 @@ export class BeltTracker {
       holderStats.totalGames++
       challengerStats.totalGames++
 
+      // Since we filtered for completed games, scores are guaranteed to be non-null
       const holderWon = holderIsHome
-        ? game.homeScore > game.awayScore
-        : game.awayScore > game.homeScore
+        ? game.homeScore! > game.awayScore!
+        : game.awayScore! > game.homeScore!
 
       if (holderWon) {
         holderStats.wins++
@@ -138,7 +148,7 @@ export class BeltTracker {
     )
 
     return {
-      totalGames: games.length,
+      totalGames: completedGames.length,
       totalChanges: this.changes.length,
       teams,
       currentHolder: this.currentHolder,
@@ -148,6 +158,50 @@ export class BeltTracker {
   getCurrentHolder(): string {
     return this.currentHolder
   }
+}
+
+/**
+ * Find the next scheduled game for a team
+ */
+export function findNextGameForTeam(
+  games: Game[],
+  team: string,
+  franchises: FranchiseInfo[]
+): Game | null {
+  const today = new Date().toISOString().split('T')[0]
+
+  for (const game of games) {
+    // Skip completed games
+    if (isGameCompleted(game)) {
+      continue
+    }
+
+    // Only consider games from today onwards
+    if (game.date < today) {
+      continue
+    }
+
+    // Check if the team is in this game
+    const isHome = isSameFranchise(game.homeTeam, team, franchises)
+    const isAway = isSameFranchise(game.awayTeam, team, franchises)
+
+    if (isHome || isAway) {
+      return game
+    }
+  }
+
+  return null
+}
+
+/**
+ * Find the next title bout - the current belt holder's next scheduled game
+ */
+export function findNextTitleBout(
+  games: Game[],
+  currentHolder: string,
+  franchises: FranchiseInfo[]
+): Game | null {
+  return findNextGameForTeam(games, currentHolder, franchises)
 }
 
 /**
@@ -213,8 +267,11 @@ export function trackAllSeasons(
     (a, b) => b.totalGames - a.totalGames
   )
 
-  // Calculate total games from all seasons
-  const totalGames = seasonsData.reduce((sum, sd) => sum + sd.games.length, 0)
+  // Calculate total completed games from all seasons
+  const totalGames = seasonsData.reduce(
+    (sum, sd) => sum + sd.games.filter(isGameCompleted).length,
+    0
+  )
 
   return {
     season: 'All-Time',
