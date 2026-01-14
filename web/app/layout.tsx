@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'WNBA Championship Belt Tracker',
     description: 'Track the lineal championship belt across WNBA seasons. See current champion and full history.',
     images: [{
-      url: '/og-image.png',
+      url: 'https://buckle-up.vercel.app/og-image.png',
       width: 1200,
       height: 630,
       alt: 'Championship Belt Tracker - WNBA Lineal Title'
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'WNBA Championship Belt Tracker',
     description: 'Track the lineal championship belt across WNBA seasons. Every game is a title defense.',
-    images: ['/og-image.png']
+    images: ['https://buckle-up.vercel.app/og-image.png']
   },
   robots: {
     index: true,
