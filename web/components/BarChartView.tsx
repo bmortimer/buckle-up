@@ -8,11 +8,12 @@ interface BarChartViewProps {
   franchises: FranchiseInfo[]
   allGames: Game[]
   selectedTeam?: string | null
+  league?: 'nba' | 'wnba'
 }
 
 type SortOption = 'games' | 'wins' | 'streak' | 'winpct'
 
-export default function BarChartView({ teams, franchises, allGames, selectedTeam }: BarChartViewProps) {
+export default function BarChartView({ teams, franchises, allGames, selectedTeam, league = 'wnba' }: BarChartViewProps) {
   const [sortBy, setSortBy] = useState<SortOption>('wins')
   // Get all unique teams from the games
   const allTeams = new Set<string>()
@@ -109,7 +110,7 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
               </div>
 
               {/* Team Logo */}
-              <TeamLogo teamCode={team.team} franchises={franchises} size="xs" />
+              <TeamLogo teamCode={team.team} franchises={franchises} league={league} size="xs" />
 
               {/* LED bar display */}
               <div className="flex-1 bg-black/40 h-7 overflow-hidden relative border border-border/30">

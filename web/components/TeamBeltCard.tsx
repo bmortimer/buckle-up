@@ -9,6 +9,7 @@ interface TeamBeltCardProps {
   isCurrentHolder: boolean
   isSeasonChampion?: boolean
   year?: number
+  league?: 'nba' | 'wnba'
 }
 
 export default function TeamBeltCard({
@@ -17,7 +18,8 @@ export default function TeamBeltCard({
   franchises,
   isCurrentHolder,
   isSeasonChampion = false,
-  year
+  year,
+  league = 'wnba'
 }: TeamBeltCardProps) {
   const color = getTeamColor(team, franchises)
   const displayName = getTeamDisplayName(team, franchises)
@@ -37,7 +39,7 @@ export default function TeamBeltCard({
         <div className="md:hidden text-center">
           {/* Team Logo */}
           <div className="flex justify-center mb-3 sm:mb-4">
-            <TeamLogo teamCode={team} franchises={franchises} size="xl" />
+            <TeamLogo teamCode={team} franchises={franchises} league={league} size="xl" />
           </div>
 
           <div className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 font-orbitron tracking-wide sm:tracking-wider uppercase">
@@ -102,7 +104,7 @@ export default function TeamBeltCard({
           {/* Left side: Logo and name */}
           <div className="flex flex-col items-center justify-center flex-1 min-w-0">
             <div className="mb-4">
-              <TeamLogo teamCode={team} franchises={franchises} size="xl" />
+              <TeamLogo teamCode={team} franchises={franchises} league={league} size="xl" />
             </div>
             <div className="text-base lg:text-lg text-foreground font-orbitron tracking-wider uppercase text-center">
               {displayName}

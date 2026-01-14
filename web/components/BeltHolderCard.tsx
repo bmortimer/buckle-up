@@ -7,9 +7,10 @@ interface BeltHolderCardProps {
   stats: TeamBeltStats | undefined
   franchises: FranchiseInfo[]
   isPastSeason?: boolean
+  league?: 'nba' | 'wnba'
 }
 
-export default function BeltHolderCard({ currentHolder, stats, franchises, isPastSeason = false }: BeltHolderCardProps) {
+export default function BeltHolderCard({ currentHolder, stats, franchises, isPastSeason = false, league = 'wnba' }: BeltHolderCardProps) {
   const color = getTeamColor(currentHolder, franchises)
   const displayName = getTeamDisplayName(currentHolder, franchises)
 
@@ -28,7 +29,7 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
         <div className="md:hidden text-center">
           {/* Team Logo */}
           <div className="flex justify-center mb-3 sm:mb-4">
-            <TeamLogo teamCode={currentHolder} franchises={franchises} size="xl" />
+            <TeamLogo teamCode={currentHolder} franchises={franchises} league={league} size="xl" />
           </div>
 
           <div className="text-sm sm:text-base text-foreground mb-4 sm:mb-6 font-orbitron tracking-wide sm:tracking-wider uppercase">
@@ -87,7 +88,7 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
           {/* Left side: Logo and name */}
           <div className="flex flex-col items-center justify-center flex-1 min-w-0">
             <div className="mb-4">
-              <TeamLogo teamCode={currentHolder} franchises={franchises} size="xl" />
+              <TeamLogo teamCode={currentHolder} franchises={franchises} league={league} size="xl" />
             </div>
             <div className="text-base lg:text-lg text-foreground font-orbitron tracking-wider uppercase text-center">
               {displayName}

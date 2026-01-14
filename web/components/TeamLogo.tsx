@@ -5,6 +5,7 @@ import Image from 'next/image'
 interface TeamLogoProps {
   teamCode: string
   franchises: FranchiseInfo[]
+  league?: 'nba' | 'wnba'
   size?: 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   className?: string
 }
@@ -18,8 +19,8 @@ const sizeMap = {
   xl: 'w-24 h-24 text-2xl',
 }
 
-// Teams with logos available (SVG or PNG)
-const TEAMS_WITH_LOGOS = new Set([
+// WNBA teams with logos available (SVG or PNG)
+const WNBA_TEAMS_WITH_LOGOS = new Set([
   // Current teams (SVG)
   'ATL', 'CHI', 'CON', 'DAL', 'GSV', 'IND',
   'LAS', 'LVA', 'MIN', 'NYL', 'PHO', 'SEA', 'WAS',
@@ -29,15 +30,29 @@ const TEAMS_WITH_LOGOS = new Set([
   'DET', 'SAS', 'TUL', 'CLE', 'HOU', 'SAC'
 ])
 
-// Teams using PNG instead of SVG
-const PNG_TEAMS = new Set([
+// WNBA teams using PNG instead of SVG
+const WNBA_PNG_TEAMS = new Set([
   'DET', 'SAS', 'TUL', 'CLE', 'HOU', 'SAC'
 ])
 
-export default function TeamLogo({ teamCode, franchises, size = 'md', className = '' }: TeamLogoProps) {
+// NBA teams - all 30 current teams have SVG logos
+const NBA_TEAMS_WITH_LOGOS = new Set([
+  'ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET',
+  'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN',
+  'NOP', 'NYK', 'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS',
+  'TOR', 'UTA', 'WAS',
+  // Historical teams
+  'SEA', 'NJN', 'VAN', 'NOH', 'CHH', 'WSB', 'NOJ', 'KCK', 'SDC', 'BUF', 'NYN'
+])
+
+export default function TeamLogo({ teamCode, franchises, league = 'wnba', size = 'md', className = '' }: TeamLogoProps) {
   const color = getTeamColor(teamCode, franchises)
-  const hasLogo = TEAMS_WITH_LOGOS.has(teamCode)
-  const isPng = PNG_TEAMS.has(teamCode)
+
+  const teamsWithLogos = league === 'nba' ? NBA_TEAMS_WITH_LOGOS : WNBA_TEAMS_WITH_LOGOS
+  const pngTeams = league === 'nba' ? new Set<string>() : WNBA_PNG_TEAMS // NBA has all SVGs
+
+  const hasLogo = teamsWithLogos.has(teamCode)
+  const isPng = pngTeams.has(teamCode)
   const fileExtension = isPng ? 'png' : 'svg'
 
   // If logo exists, render the image
@@ -48,7 +63,7 @@ export default function TeamLogo({ teamCode, franchises, size = 'md', className 
         aria-label={`${teamCode} team logo`}
       >
         <Image
-          src={`/logos/wnba/${teamCode}.${fileExtension}`}
+          src={`/logos/${league}/${teamCode}.${fileExtension}`}
           alt={`${teamCode} logo`}
           fill
           className="object-contain"

@@ -1,14 +1,40 @@
 #!/bin/bash
 
-# WNBA Logo Downloader - SVG Edition
+# WNBA & NBA Logo Downloader - SVG Edition
 # Downloads team logos in SVG format from official sources
 
 set -e
 
-# Create logos directory
-mkdir -p web/public/logos/wnba
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
-cd web/public/logos/wnba
+# Parse arguments
+DOWNLOAD_WNBA=false
+DOWNLOAD_NBA=false
+
+if [ $# -eq 0 ]; then
+  # No args = download both
+  DOWNLOAD_WNBA=true
+  DOWNLOAD_NBA=true
+else
+  for arg in "$@"; do
+    case $arg in
+      wnba) DOWNLOAD_WNBA=true ;;
+      nba) DOWNLOAD_NBA=true ;;
+      *) echo "Unknown argument: $arg"; echo "Usage: $0 [wnba] [nba]"; exit 1 ;;
+    esac
+  done
+fi
+
+# ============================================
+# WNBA LOGOS
+# ============================================
+if [ "$DOWNLOAD_WNBA" = true ]; then
+
+# Create logos directory
+mkdir -p "$PROJECT_ROOT/web/public/logos/wnba"
+
+cd "$PROJECT_ROOT/web/public/logos/wnba"
 
 echo "Downloading WNBA team logos (SVG format)..."
 echo ""
@@ -107,4 +133,87 @@ echo "  PNG logos (historical teams): $png_count"
 echo "  Total logos: $((svg_count + png_count))"
 
 echo ""
-echo "All logos saved to: web/public/logos/wnba/"
+echo "All WNBA logos saved to: web/public/logos/wnba/"
+
+fi # end DOWNLOAD_WNBA
+
+# ============================================
+# NBA LOGOS
+# ============================================
+if [ "$DOWNLOAD_NBA" = true ]; then
+
+# Create logos directory
+mkdir -p "$PROJECT_ROOT/web/public/logos/nba"
+
+cd "$PROJECT_ROOT/web/public/logos/nba"
+
+echo ""
+echo "=========================================="
+echo "Downloading NBA team logos (SVG format)..."
+echo "=========================================="
+echo ""
+
+# All 30 NBA Teams - Official NBA Stats CDN
+# Pattern: https://cdn.nba.com/logos/nba/{TEAM_ID}/primary/L/logo.svg
+
+# NBA team IDs (from nba.com API)
+nba_teams=(
+  "1610612737:ATL:Atlanta Hawks"
+  "1610612738:BOS:Boston Celtics"
+  "1610612751:BKN:Brooklyn Nets"
+  "1610612766:CHA:Charlotte Hornets"
+  "1610612741:CHI:Chicago Bulls"
+  "1610612739:CLE:Cleveland Cavaliers"
+  "1610612742:DAL:Dallas Mavericks"
+  "1610612743:DEN:Denver Nuggets"
+  "1610612765:DET:Detroit Pistons"
+  "1610612744:GSW:Golden State Warriors"
+  "1610612745:HOU:Houston Rockets"
+  "1610612754:IND:Indiana Pacers"
+  "1610612746:LAC:LA Clippers"
+  "1610612747:LAL:Los Angeles Lakers"
+  "1610612763:MEM:Memphis Grizzlies"
+  "1610612748:MIA:Miami Heat"
+  "1610612749:MIL:Milwaukee Bucks"
+  "1610612750:MIN:Minnesota Timberwolves"
+  "1610612740:NOP:New Orleans Pelicans"
+  "1610612752:NYK:New York Knicks"
+  "1610612760:OKC:Oklahoma City Thunder"
+  "1610612753:ORL:Orlando Magic"
+  "1610612755:PHI:Philadelphia 76ers"
+  "1610612756:PHX:Phoenix Suns"
+  "1610612757:POR:Portland Trail Blazers"
+  "1610612758:SAC:Sacramento Kings"
+  "1610612759:SAS:San Antonio Spurs"
+  "1610612761:TOR:Toronto Raptors"
+  "1610612762:UTA:Utah Jazz"
+  "1610612764:WAS:Washington Wizards"
+)
+
+echo "📥 NBA Teams (Official NBA CDN):"
+for team in "${nba_teams[@]}"; do
+  team_id="${team%%:*}"
+  rest="${team#*:}"
+  code="${rest%%:*}"
+  name="${rest#*:}"
+
+  # Try the CDN URL first
+  if curl -f -s "https://cdn.nba.com/logos/nba/${team_id}/primary/L/logo.svg" -o "${code}.svg"; then
+    size=$(stat -f%z "${code}.svg" 2>/dev/null || stat -c%s "${code}.svg" 2>/dev/null)
+    echo "  ✅ $code - $name (${size} bytes)"
+  else
+    echo "  ❌ $code - $name (failed)"
+    rm -f "${code}.svg"
+  fi
+done
+
+echo ""
+echo "✅ NBA Download complete!"
+echo ""
+echo "Summary:"
+nba_svg_count=$(ls -1 *.svg 2>/dev/null | wc -l | tr -d ' ')
+echo "  SVG logos: $nba_svg_count"
+echo ""
+echo "All NBA logos saved to: web/public/logos/nba/"
+
+fi # end DOWNLOAD_NBA

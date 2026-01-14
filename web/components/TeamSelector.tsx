@@ -5,6 +5,7 @@ import type { FranchiseInfo } from '@/lib/types'
 import TeamLogo from './TeamLogo'
 
 interface TeamSelectorProps {
+  league: 'nba' | 'wnba'
   teams: string[]
   franchises: FranchiseInfo[]
   selectedTeam: string | null
@@ -12,15 +13,26 @@ interface TeamSelectorProps {
 }
 
 // WNBA Conference organization (current active teams)
-const EASTERN_CONFERENCE = ['ATL', 'CHI', 'CON', 'IND', 'NYL', 'WAS']
-const WESTERN_CONFERENCE = ['DAL', 'LVA', 'LAS', 'MIN', 'PHO', 'SEA', 'GSV']
+const WNBA_EASTERN_CONFERENCE = ['ATL', 'CHI', 'CON', 'IND', 'NYL', 'WAS']
+const WNBA_WESTERN_CONFERENCE = ['DAL', 'LVA', 'LAS', 'MIN', 'PHO', 'SEA', 'GSV']
 
-export default function TeamSelector({ teams, franchises, selectedTeam, onTeamChange }: TeamSelectorProps) {
+// NBA Conference organization (current active teams)
+const NBA_EASTERN_CONFERENCE = [
+  'ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DET', 'IND', 'MIA', 'MIL', 'NYK', 'ORL', 'PHI', 'TOR', 'WAS'
+]
+const NBA_WESTERN_CONFERENCE = [
+  'DAL', 'DEN', 'GSW', 'HOU', 'LAC', 'LAL', 'MEM', 'MIN', 'NOP', 'OKC', 'PHX', 'POR', 'SAC', 'SAS', 'UTA'
+]
+
+export default function TeamSelector({ league, teams, franchises, selectedTeam, onTeamChange }: TeamSelectorProps) {
   const [isOpen, setIsOpen] = useState(false)
 
+  const easternConference = league === 'nba' ? NBA_EASTERN_CONFERENCE : WNBA_EASTERN_CONFERENCE
+  const westernConference = league === 'nba' ? NBA_WESTERN_CONFERENCE : WNBA_WESTERN_CONFERENCE
+
   // Organize teams by status and conference
-  const activeEast = teams.filter(t => EASTERN_CONFERENCE.includes(t))
-  const activeWest = teams.filter(t => WESTERN_CONFERENCE.includes(t))
+  const activeEast = teams.filter(t => easternConference.includes(t))
+  const activeWest = teams.filter(t => westernConference.includes(t))
   const former = teams.filter(t => {
     const franchise = franchises.find(f => f.teamAbbr === t)
     return franchise?.status === 'defunct' ||
@@ -139,7 +151,7 @@ export default function TeamSelector({ teams, franchises, selectedTeam, onTeamCh
                               }
                             `}
                           >
-                            <TeamLogo teamCode={team} franchises={franchises} size="md" />
+                            <TeamLogo teamCode={team} franchises={franchises} league={league} size="md" />
                             <span className="text-xs sm:text-sm font-mono font-bold text-center leading-tight">
                               {displayName}
                             </span>
@@ -175,7 +187,7 @@ export default function TeamSelector({ teams, franchises, selectedTeam, onTeamCh
                               }
                             `}
                           >
-                            <TeamLogo teamCode={team} franchises={franchises} size="md" />
+                            <TeamLogo teamCode={team} franchises={franchises} league={league} size="md" />
                             <span className="text-xs sm:text-sm font-mono font-bold text-center leading-tight">
                               {displayName}
                             </span>
@@ -211,7 +223,7 @@ export default function TeamSelector({ teams, franchises, selectedTeam, onTeamCh
                               }
                             `}
                           >
-                            <TeamLogo teamCode={team} franchises={franchises} size="md" />
+                            <TeamLogo teamCode={team} franchises={franchises} league={league} size="md" />
                             <span className="text-xs sm:text-sm font-mono font-bold text-center leading-tight opacity-60">
                               {displayName}
                             </span>
