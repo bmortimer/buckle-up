@@ -31,9 +31,18 @@ jobs:
 
       - name: Ingest current NBA season
         run: |
-          CURRENT_YEAR=$(date +%Y)
-          NEXT_YEAR=$((CURRENT_YEAR + 1))
-          SEASON="${CURRENT_YEAR}-$(echo $NEXT_YEAR | cut -c 3-4)"
+          # NBA season spans Oct-June across two calendar years
+          # In Oct-Dec, season started this year (e.g., Oct 2025 = 2025-26)
+          # In Jan-Sept, season started last year (e.g., Jan 2026 = 2025-26)
+          CURRENT_MONTH=$(date +%-m)
+          if [ "$CURRENT_MONTH" -ge 10 ]; then
+            START_YEAR=$(date +%Y)
+          else
+            START_YEAR=$(($(date +%Y) - 1))
+          fi
+          END_YEAR=$((START_YEAR + 1))
+          SEASON="${START_YEAR}-$(echo $END_YEAR | cut -c 3-4)"
+          echo "Ingesting NBA season: $SEASON"
           python scripts/ingest_nba.py --season $SEASON || echo "NBA ingestion failed or season not started"
 
       - name: Check for changes
