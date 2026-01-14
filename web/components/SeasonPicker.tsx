@@ -2,23 +2,37 @@
 
 import { useState } from 'react'
 
-interface YearRangeSliderProps {
+interface SeasonPickerProps {
   minYear: number
   maxYear: number
   value: [number, number]
   onChange: (range: [number, number]) => void
   isAllTime: boolean
   onAllTimeChange: (isAllTime: boolean) => void
+  league?: 'nba' | 'wnba'
 }
 
-export default function YearRangeSlider({
+// Format year for display based on league
+// NBA: "2024-25" format (season spans two calendar years)
+// WNBA: "2024" format (single calendar year)
+function formatSeasonDisplay(year: number, league: 'nba' | 'wnba'): string {
+  if (league === 'wnba') {
+    return year.toString()
+  }
+  // NBA uses YYYY-YY format
+  const nextYear = (year + 1) % 100
+  return `${year}-${nextYear.toString().padStart(2, '0')}`
+}
+
+export default function SeasonPicker({
   minYear,
   maxYear,
   value,
   onChange,
   isAllTime,
-  onAllTimeChange
-}: YearRangeSliderProps) {
+  onAllTimeChange,
+  league = 'wnba'
+}: SeasonPickerProps) {
   const [isOpen, setIsOpen] = useState(false)
   const currentYear = isAllTime ? null : value[0]
 
@@ -71,7 +85,7 @@ export default function YearRangeSlider({
         {/* Year Display */}
         <div className="text-center">
           <div className="text-lg sm:text-xl md:text-lg lg:text-xl font-mono font-bold tabular-nums tracking-wider transition-all group-hover:scale-105" style={{ color: 'hsl(var(--primary))' }}>
-            {isAllTime ? 'ALL TIME' : currentYear}
+            {isAllTime ? 'ALL TIME' : formatSeasonDisplay(currentYear!, league)}
           </div>
           <div className="text-[0.55rem] text-muted-foreground/60 font-mono mt-1 uppercase tracking-wider">
             Click to change ▸
@@ -99,10 +113,10 @@ export default function YearRangeSlider({
             <div className="bg-muted/20 border-b-2 border-border p-4 sm:p-5 flex items-center justify-between">
               <div>
                 <h3 id="time-period-dialog-title" className="text-base sm:text-lg font-orbitron uppercase tracking-wider">
-                  <span aria-hidden="true">◆ </span>Select Time Period
+                  <span aria-hidden="true">◆ </span>Select {league === 'nba' ? 'Season' : 'Year'}
                 </h3>
                 <div className="text-[0.6rem] text-muted-foreground/60 font-mono mt-1">
-                  {minYear} — {maxYear}
+                  {formatSeasonDisplay(minYear, league)} — {formatSeasonDisplay(maxYear, league)}
                 </div>
               </div>
               <button
@@ -148,7 +162,7 @@ export default function YearRangeSlider({
                       </div>
 
                       {/* Year Grid */}
-                      <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-2">
+                      <div className={`grid gap-2 ${league === 'nba' ? 'grid-cols-3 sm:grid-cols-4 md:grid-cols-5' : 'grid-cols-4 sm:grid-cols-6 md:grid-cols-8'}`}>
                         {years.map(year => {
                           const isSelected = currentYear === year
 
@@ -166,7 +180,7 @@ export default function YearRangeSlider({
                                 }
                               `}
                             >
-                              {year}
+                              {formatSeasonDisplay(year, league)}
                             </button>
                           )
                         })}
@@ -182,3 +196,4 @@ export default function YearRangeSlider({
     </div>
   )
 }
+

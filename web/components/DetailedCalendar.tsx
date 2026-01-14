@@ -35,21 +35,35 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
   const [selectedDay, setSelectedDay] = useState<DayData | null>(null)
   const [popupPosition, setPopupPosition] = useState<PopupPosition | null>(null)
 
-  // Build day-by-day data for the year
+  // Build day-by-day data for the season
   const dayMap = useMemo(() => {
     const map = new Map<string, DayData>()
     let currentHolder = history.startingTeam
 
-    // Filter games to this year only
-    const yearGames = allGames.filter(g => g.date.startsWith(year.toString()))
+    // For NBA, seasons span two calendar years (Oct to Apr/Jun)
+    // For WNBA, seasons are within a single calendar year (May to Oct)
+    let seasonStart: Date
+    let seasonEnd: Date
 
-    // Get date range for this year
-    const yearStart = new Date(year, 0, 1)
-    const yearEnd = new Date(year, 11, 31)
+    if (league === 'nba') {
+      // NBA season: October of year to June of year+1
+      seasonStart = new Date(year, 9, 1)  // October 1st
+      seasonEnd = new Date(year + 1, 5, 30)  // June 30th
+    } else {
+      // WNBA season: January to December of same year
+      seasonStart = new Date(year, 0, 1)
+      seasonEnd = new Date(year, 11, 31)
+    }
+
+    // Filter games to this season
+    const seasonGames = allGames.filter(g => {
+      const gameDate = new Date(g.date)
+      return gameDate >= seasonStart && gameDate <= seasonEnd
+    })
 
     // Create a map of games by date
     const gamesByDate = new Map<string, Game[]>()
-    yearGames.forEach(game => {
+    seasonGames.forEach(game => {
       const dateStr = game.date
       if (!gamesByDate.has(dateStr)) {
         gamesByDate.set(dateStr, [])
@@ -57,9 +71,9 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
       gamesByDate.get(dateStr)!.push(game)
     })
 
-    // Iterate through every day of the year
-    const currentDate = new Date(yearStart)
-    while (currentDate <= yearEnd) {
+    // Iterate through every day of the season
+    const currentDate = new Date(seasonStart)
+    while (currentDate <= seasonEnd) {
       const dateStr = currentDate.toISOString().split('T')[0]
       const gamesOnDate = gamesByDate.get(dateStr) || []
 
@@ -119,31 +133,41 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     }
 
     return map
-  }, [history, allGames, year, franchises])
+  }, [history, allGames, year, franchises, league])
 
   // Group by month (only months with games)
+  // For NBA, we need to track year+month since seasons span two calendar years
   const monthsData = useMemo(() => {
-    const months: Map<number, DayData[]> = new Map()
+    // Use a composite key of "YYYY-MM" to handle cross-year seasons
+    const months: Map<string, DayData[]> = new Map()
 
     dayMap.forEach((dayData) => {
       const date = new Date(dayData.date)
-      const month = date.getMonth()
+      const yearMonth = `${date.getFullYear()}-${String(date.getMonth()).padStart(2, '0')}`
 
-      if (!months.has(month)) {
-        months.set(month, [])
+      if (!months.has(yearMonth)) {
+        months.set(yearMonth, [])
       }
-      months.get(month)!.push(dayData)
+      months.get(yearMonth)!.push(dayData)
     })
 
     // Filter to only months that have at least one game
-    const monthsWithGames = new Map<number, DayData[]>()
-    months.forEach((days, month) => {
+    const monthsWithGames = new Map<string, DayData[]>()
+    months.forEach((days, yearMonth) => {
       if (days.some(day => day.game)) {
-        monthsWithGames.set(month, days)
+        monthsWithGames.set(yearMonth, days)
       }
     })
 
-    return monthsWithGames
+    // Sort months chronologically
+    const sortedMonths = new Map<string, DayData[]>()
+    Array.from(monthsWithGames.keys())
+      .sort()
+      .forEach(key => {
+        sortedMonths.set(key, monthsWithGames.get(key)!)
+      })
+
+    return sortedMonths
   }, [dayMap])
 
   const handleClose = () => {
@@ -156,19 +180,23 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
       <div className="flex items-center justify-center mb-4 sm:mb-6 border-b-2 border-border pb-2 sm:pb-3">
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
           <span aria-hidden="true">◆ </span>
-          <h2 className="inline font-normal">{year} Calendar</h2>
+          <h2 className="inline font-normal">
+            {league === 'nba' ? `${year}-${String((year + 1) % 100).padStart(2, '0')}` : year} Calendar
+          </h2>
           <span aria-hidden="true"> ◆</span>
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
-        {Array.from(monthsData.entries()).map(([month, days]) => {
-          const monthDate = new Date(year, month, 1)
+        {Array.from(monthsData.entries()).map(([yearMonth, days]) => {
+          // Parse the YYYY-MM key
+          const [calendarYear, monthNum] = yearMonth.split('-').map(Number)
+          const monthDate = new Date(calendarYear, monthNum, 1)
           const monthName = monthDate.toLocaleDateString('en-US', { month: 'long' })
           const firstDayOfWeek = monthDate.getDay() // 0 = Sunday
 
           // Build calendar grid
-          const daysInMonth = new Date(year, month + 1, 0).getDate()
+          const daysInMonth = new Date(calendarYear, monthNum + 1, 0).getDate()
           const weeks: (DayData | null)[][] = []
           let currentWeek: (DayData | null)[] = []
 
@@ -179,7 +207,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
           // Add all days in month
           for (let day = 1; day <= daysInMonth; day++) {
-            const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+            const dateStr = `${calendarYear}-${String(monthNum + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
             currentWeek.push(dayMap.get(dateStr) || null)
 
             if (currentWeek.length === 7) {
@@ -197,7 +225,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
           }
 
           return (
-            <div key={month} className="border border-border/40">
+            <div key={yearMonth} className="border border-border/40">
               {/* Month header */}
               <div className="bg-muted/20 px-2 py-1.5 border-b border-border/40">
                 <h3 className="text-xs font-orbitron uppercase tracking-wider text-center font-normal">

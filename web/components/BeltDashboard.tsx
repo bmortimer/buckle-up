@@ -12,7 +12,7 @@ import BeltCalendar from './BeltCalendar'
 import DetailedCalendar from './DetailedCalendar'
 import RetroScoreboard from './RetroScoreboard'
 import NextGamePreview from './NextGamePreview'
-import YearRangeSlider from './YearRangeSlider'
+import SeasonPicker from './SeasonPicker'
 import TeamSelector from './TeamSelector'
 import { ThemeSwitcher } from './ThemeSwitcher'
 import BuyMeCoffee from './BuyMeCoffee'
@@ -282,13 +282,14 @@ export default function BeltDashboard({
       {/* Filters */}
       <div data-card="filters" className="scoreboard-panel p-4 sm:p-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-          <YearRangeSlider
+          <SeasonPicker
             minYear={selectedTeam ? availableYearsForTeam[0] || minYear : minYear}
             maxYear={selectedTeam ? availableYearsForTeam[availableYearsForTeam.length - 1] || maxYear : maxYear}
             value={yearRange}
             onChange={setYearRange}
             isAllTime={isAllTime}
             onAllTimeChange={setIsAllTime}
+            league={league}
           />
 
           <TeamSelector
@@ -380,7 +381,9 @@ export default function BeltDashboard({
             Data updates nightly at 03:00 ET
           </p>
           <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider mb-2">
-            {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] ? yearRange[0] : `${yearRange[0]}-${yearRange[1]}`} • {history.summary.teams.length} TEAMS
+            {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1] 
+              ? (league === 'nba' ? `${yearRange[0]}-${String((yearRange[0] + 1) % 100).padStart(2, '0')}` : yearRange[0]) 
+              : (league === 'nba' ? `${yearRange[0]}-${String((yearRange[1] + 1) % 100).padStart(2, '0')}` : `${yearRange[0]}-${yearRange[1]}`)} • {history.summary.teams.length} TEAMS
           </p>
           <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider">
             Created by Avid Squid LLC • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-400 underline decoration-1 underline-offset-2 transition-colors">DONATE</a> • <a href="https://forms.gle/LPBtZDxih1HQT53E9" target="_blank" rel="noopener noreferrer" className="text-amber-500 hover:text-amber-400 underline decoration-1 underline-offset-2 transition-colors">FEEDBACK</a>
