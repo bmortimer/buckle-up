@@ -16,6 +16,8 @@ interface DayData {
   challenger?: string
   played?: boolean
   won?: boolean | null
+  isScheduledTitleBout?: boolean  // Has an unplayed title bout
+  isUncertainFuture?: boolean     // After an unplayed title bout - outcome unknown
 }
 
 interface PopupPosition {
@@ -110,6 +112,11 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
             {/* Belt Status */}
             <div className="text-xs sm:text-sm text-amber-500 font-orbitron uppercase border-t border-border/40 pt-3">
               {(() => {
+                // Handle scheduled title bout (unplayed game where belt is on the line)
+                if (dayData.isScheduledTitleBout) {
+                  return <span>🏆 Upcoming Title Bout</span>
+                }
+                
                 if (selectedTeam) {
                   const heldBelt = dayData.holder === selectedTeam
                   const wonBelt = dayData.winner === selectedTeam && !heldBelt
@@ -129,6 +136,13 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
               })()}
             </div>
           </>
+        ) : dayData.isUncertainFuture ? (
+          /* Uncertain Future - after an unplayed title bout */
+          <div className="text-center">
+            <div className="text-amber-500 text-2xl mb-2">🏆</div>
+            <div className="text-xs text-muted-foreground uppercase">Belt Holder Unknown</div>
+            <div className="text-xs text-muted-foreground/60 mt-1">Waiting for title bout result</div>
+          </div>
         ) : (
           /* Off Day - show belt holder */
           <div className="flex items-center gap-3">

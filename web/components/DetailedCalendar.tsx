@@ -29,6 +29,8 @@ interface DayData {
   holderWon: boolean | null
   winner?: string
   challenger?: string
+  isScheduledTitleBout?: boolean  // Has an unplayed title bout
+  isUncertainFuture?: boolean     // After an unplayed title bout - outcome unknown
 }
 
 export default function DetailedCalendar({ history, franchises, allGames, year, league = 'wnba' }: DetailedCalendarProps) {
@@ -72,18 +74,32 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     })
 
     // Iterate through every day of the season
+    // Track when we encounter the first unplayed title bout - after that, future is uncertain
+    let hasHitUnplayedTitleBout = false
+    
     const currentDate = new Date(seasonStart)
     while (currentDate <= seasonEnd) {
       const dateStr = currentDate.toISOString().split('T')[0]
       const gamesOnDate = gamesByDate.get(dateStr) || []
 
-      // Find if belt holder played
-      const holderGame = gamesOnDate.find(game =>
-        isSameFranchise(game.homeTeam, currentHolder, franchises) ||
-        isSameFranchise(game.awayTeam, currentHolder, franchises)
-      )
+      // Find if belt holder played (only matters if we haven't hit uncertainty)
+      const holderGame = !hasHitUnplayedTitleBout 
+        ? gamesOnDate.find(game =>
+            isSameFranchise(game.homeTeam, currentHolder, franchises) ||
+            isSameFranchise(game.awayTeam, currentHolder, franchises)
+          )
+        : undefined
 
-      if (holderGame && isGameCompleted(holderGame)) {
+      if (hasHitUnplayedTitleBout) {
+        // After an unplayed title bout - outcome is uncertain
+        map.set(dateStr, {
+          date: dateStr,
+          holder: currentHolder,
+          beltChanged: false,
+          holderWon: null,
+          isUncertainFuture: true,
+        })
+      } else if (holderGame && isGameCompleted(holderGame)) {
         // Belt holder played a completed game
         const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
         const holderWon = holderIsHome
@@ -107,7 +123,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
         currentHolder = newHolder
       } else if (holderGame && !isGameCompleted(holderGame)) {
-        // Belt holder has a scheduled game (not yet played)
+        // Belt holder has a scheduled game (not yet played) - this is a title bout!
         const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
         const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
 
@@ -118,7 +134,11 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
           beltChanged: false,
           holderWon: null,
           challenger,
+          isScheduledTitleBout: true,
         })
+        
+        // Mark that we've hit an unplayed title bout - all future days are uncertain
+        hasHitUnplayedTitleBout = true
       } else {
         // Off day
         map.set(dateStr, {
@@ -255,17 +275,31 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                       const dayNum = date.getDate()
                       const isSelectedDay = selectedDay?.date === dayData.date
 
-                      // Show winner's logo and color
+                      // Determine display based on day state
                       const winner = dayData.winner
-                      const displayColor = winner ? getTeamColor(winner, franchises) : getTeamColor(dayData.holder, franchises)
+                      const isScheduledBout = dayData.isScheduledTitleBout
+                      const isUncertain = dayData.isUncertainFuture
+                      
+                      // Background color logic:
+                      // - Completed game: winner's color
+                      // - Known holder (no game): holder's color  
+                      // - Scheduled title bout: no color (transparent)
+                      // - Uncertain future: neutral gray
+                      let bgStyle: React.CSSProperties = {}
+                      if (isUncertain) {
+                        bgStyle = { backgroundColor: 'hsl(var(--muted) / 0.3)' }
+                      } else if (isScheduledBout) {
+                        bgStyle = {} // No team color for scheduled bouts
+                      } else {
+                        const displayColor = winner ? getTeamColor(winner, franchises) : getTeamColor(dayData.holder, franchises)
+                        bgStyle = { backgroundColor: `${displayColor}15` }
+                      }
 
                       return (
                         <div
                           key={dayIdx}
                           className="aspect-square border-r border-b border-border/20 p-0.5 relative group transition-colors cursor-pointer hover:bg-muted/30 active:bg-muted/40"
-                          style={{
-                            backgroundColor: `${displayColor}15`
-                          }}
+                          style={bgStyle}
                           onClick={(e) => {
                             if (isSelectedDay) {
                               handleClose()
@@ -280,10 +314,13 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                             {dayNum}
                           </div>
 
-                          {/* Belt holder indicator */}
-                          <div className="absolute top-0 right-0 w-1 h-1 rounded-full opacity-60 pointer-events-none"
-                            style={{ backgroundColor: displayColor }}
-                          />
+                          {/* Belt holder indicator - only show for known states */}
+                          {!isScheduledBout && !isUncertain && (
+                            <div 
+                              className="absolute top-0 right-0 w-1 h-1 rounded-full opacity-60 pointer-events-none"
+                              style={{ backgroundColor: winner ? getTeamColor(winner, franchises) : getTeamColor(dayData.holder, franchises) }}
+                            />
+                          )}
 
                           {/* Belt change indicator */}
                           {dayData.beltChanged && (
@@ -292,10 +329,24 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                             </div>
                           )}
 
-                          {/* Game indicator - show the winner, positioned 1/3 up from bottom */}
+                          {/* Game indicator - show the winner for completed games */}
                           {winner && (
                             <div className="absolute inset-0 flex items-end justify-center pb-[10%] pointer-events-none">
                               <TeamLogo teamCode={winner} franchises={franchises} league={league} size="xs" />
+                            </div>
+                          )}
+                          
+                          {/* Belt icon for scheduled title bouts */}
+                          {isScheduledBout && (
+                            <div className="absolute inset-0 flex items-end justify-center pb-[5%] pointer-events-none">
+                              <svg viewBox="0 0 200 200" className="w-4 h-4 drop-shadow-sm">
+                                <ellipse cx="100" cy="100" rx="45" ry="40" fill="#D4AF37" stroke="#8B7355" strokeWidth="4"/>
+                                <ellipse cx="100" cy="100" rx="25" ry="20" fill="#FFD700" opacity="0.6"/>
+                                <circle cx="100" cy="75" r="4" fill="#FFD700"/>
+                                <circle cx="125" cy="100" r="4" fill="#FFD700"/>
+                                <circle cx="100" cy="125" r="4" fill="#FFD700"/>
+                                <circle cx="75" cy="100" r="4" fill="#FFD700"/>
+                              </svg>
                             </div>
                           )}
                         </div>
