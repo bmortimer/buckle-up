@@ -82,7 +82,7 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
     : sortedTeams[0]?.[sortBy === 'wins' ? 'wins' : sortBy === 'streak' ? 'longestReign' : 'totalGames'] || 1
 
   return (
-    <div data-card="team-stats" className="scoreboard-panel p-4 sm:p-6">
+    <div data-card="team-stats" className="scoreboard-panel p-2 lg:p-6">
       {/* Header with sort controls */}
       <div className="flex flex-col items-center gap-3 mb-6 border-b-2 border-border pb-3">
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center">
@@ -126,16 +126,23 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
           const teamDisplayName = getTeamDisplayName(team.team, franchises)
 
           return (
-            <div key={team.team} className="flex items-center gap-3 group" title={teamDisplayName}>
-              {/* Rank number */}
+            <div key={team.team} className="flex items-center gap-2 lg:gap-3 group" title={teamDisplayName}>
+              {/* Rank number - hidden until hover */}
               <div className="w-6 flex justify-center">
                 <span className="text-xs text-muted-foreground font-mono opacity-0 group-hover:opacity-100 transition-opacity tabular-nums">
                   {index + 1}
                 </span>
               </div>
 
+              {/* Team abbreviation - hidden until hover */}
+              <div className="w-8 flex justify-center">
+                <span className="text-xs text-muted-foreground font-mono opacity-0 group-hover:opacity-100 transition-opacity">
+                  {team.team}
+                </span>
+              </div>
+
               {/* Team Logo */}
-              <TeamLogo teamCode={team.team} franchises={franchises} league={league} size="xs" />
+              <TeamLogo teamCode={team.team} franchises={franchises} league={league} size="sm" />
 
               {/* LED bar display */}
               <div className="flex-1 bg-black/40 h-7 overflow-hidden relative border border-border/30">
