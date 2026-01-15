@@ -73,3 +73,33 @@ export function getTeamDisplayName(teamAbbr: string, franchises: FranchiseInfo[]
   const info = franchises.find(f => f.teamAbbr === teamAbbr)
   return info?.displayName || teamAbbr
 }
+
+/**
+ * Get the current/active franchise abbreviation from any era's abbreviation.
+ * For example, "UTA" (Utah Starzz) returns "LVA" (Las Vegas Aces).
+ */
+export function getCurrentFranchiseAbbr(teamAbbr: string, franchises: FranchiseInfo[]): string {
+  const rootId = getRootFranchiseId(teamAbbr, franchises)
+  const rootFranchise = franchises.find(f => f.franchiseId === rootId)
+  return rootFranchise?.teamAbbr || teamAbbr
+}
+
+/**
+ * Get all team abbreviations that belong to the same franchise lineage.
+ * For example, "LVA" returns ["UTA", "SAS", "LVA"].
+ */
+export function getAllFranchiseAbbrs(teamAbbr: string, franchises: FranchiseInfo[]): string[] {
+  const rootId = getRootFranchiseId(teamAbbr, franchises)
+  return franchises
+    .filter(f => getRootFranchiseId(f.teamAbbr, franchises) === rootId)
+    .map(f => f.teamAbbr)
+}
+
+/**
+ * Get the current franchise display name from any era's abbreviation.
+ * For example, "UTA" returns "Las Vegas Aces".
+ */
+export function getCurrentFranchiseName(teamAbbr: string, franchises: FranchiseInfo[]): string {
+  const currentAbbr = getCurrentFranchiseAbbr(teamAbbr, franchises)
+  return getTeamDisplayName(currentAbbr, franchises)
+}

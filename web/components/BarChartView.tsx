@@ -1,5 +1,5 @@
 import type { TeamBeltStats, FranchiseInfo, Game } from '@/lib/types'
-import { getTeamColor, getTeamDisplayName } from '@/lib/franchises'
+import { getTeamColor, getTeamDisplayName, getCurrentFranchiseAbbr } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 import { useState } from 'react'
 
@@ -9,11 +9,12 @@ interface BarChartViewProps {
   allGames: Game[]
   selectedTeam?: string | null
   league?: 'nba' | 'wnba'
+  isAllTime?: boolean
 }
 
 type SortOption = 'games' | 'wins' | 'streak' | 'winpct'
 
-export default function BarChartView({ teams, franchises, allGames, selectedTeam, league = 'wnba' }: BarChartViewProps) {
+export default function BarChartView({ teams, franchises, allGames, selectedTeam, league = 'wnba', isAllTime = false }: BarChartViewProps) {
   const [sortBy, setSortBy] = useState<SortOption>('wins')
   // Get all unique teams from the games
   const allTeams = new Set<string>()
@@ -26,16 +27,38 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
   const beltStatsMap = new Map(teams.map(t => [t.team, t]))
 
   // Merge all teams with their belt stats (0 if they never held the belt)
-  const allTeamsStats: TeamBeltStats[] = Array.from(allTeams).map(teamCode => {
-    return beltStatsMap.get(teamCode) || {
-      team: teamCode,
-      timesHeld: 0,
-      totalGames: 0,
-      longestReign: 0,
-      wins: 0,
-      losses: 0,
-    }
-  })
+  // In All Time mode, merge by franchise (e.g., UTA -> LVA)
+  let allTeamsStats: TeamBeltStats[]
+
+  if (isAllTime) {
+    // First, dedupe teams by franchise
+    const franchiseSet = new Set<string>()
+    allTeams.forEach(team => {
+      franchiseSet.add(getCurrentFranchiseAbbr(team, franchises))
+    })
+
+    allTeamsStats = Array.from(franchiseSet).map(franchiseAbbr => {
+      return beltStatsMap.get(franchiseAbbr) || {
+        team: franchiseAbbr,
+        timesHeld: 0,
+        totalGames: 0,
+        longestReign: 0,
+        wins: 0,
+        losses: 0,
+      }
+    })
+  } else {
+    allTeamsStats = Array.from(allTeams).map(teamCode => {
+      return beltStatsMap.get(teamCode) || {
+        team: teamCode,
+        timesHeld: 0,
+        totalGames: 0,
+        longestReign: 0,
+        wins: 0,
+        losses: 0,
+      }
+    })
+  }
 
   // Sort based on selected option
   const sortedTeams = allTeamsStats.sort((a, b) => {

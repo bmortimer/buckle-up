@@ -10,6 +10,7 @@ interface TeamSelectorProps {
   franchises: FranchiseInfo[]
   selectedTeam: string | null
   onTeamChange: (team: string | null) => void
+  isAllTime?: boolean
 }
 
 // WNBA Conference organization (current active teams)
@@ -24,7 +25,7 @@ const NBA_WESTERN_CONFERENCE = [
   'DAL', 'DEN', 'GSW', 'HOU', 'LAC', 'LAL', 'MEM', 'MIN', 'NOP', 'OKC', 'PHX', 'POR', 'SAC', 'SAS', 'UTA'
 ]
 
-export default function TeamSelector({ league, teams, franchises, selectedTeam, onTeamChange }: TeamSelectorProps) {
+export default function TeamSelector({ league, teams, franchises, selectedTeam, onTeamChange, isAllTime = false }: TeamSelectorProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   const easternConference = league === 'nba' ? NBA_EASTERN_CONFERENCE : WNBA_EASTERN_CONFERENCE
@@ -33,11 +34,22 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
   // Organize teams by status and conference
   const activeEast = teams.filter(t => easternConference.includes(t))
   const activeWest = teams.filter(t => westernConference.includes(t))
+
+  // In All Time mode, only show truly defunct teams (no successor)
+  // Relocated/rebranded teams are merged into their current franchise
   const former = teams.filter(t => {
     const franchise = franchises.find(f => f.teamAbbr === t)
-    return franchise?.status === 'defunct' ||
-           franchise?.status === 'relocated' ||
-           franchise?.status === 'rebranded'
+    if (!franchise) return false
+
+    if (isAllTime) {
+      // Only show defunct teams (no successor) in All Time mode
+      return franchise.status === 'defunct'
+    }
+
+    // In year-filtered mode, show all former teams
+    return franchise.status === 'defunct' ||
+           franchise.status === 'relocated' ||
+           franchise.status === 'rebranded'
   })
 
   const handleTeamChange = (team: string | null) => {
@@ -208,7 +220,7 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                   </div>
                 )}
 
-                {/* Former Teams */}
+                {/* Former Teams - in All Time mode, only shows defunct teams (relocated/rebranded are merged) */}
                 {former.length > 0 && (
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">

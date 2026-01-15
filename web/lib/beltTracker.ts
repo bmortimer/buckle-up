@@ -4,7 +4,7 @@
 
 import type { Game, BeltHistory, BeltSummary, TeamBeltStats, BeltChange, FranchiseInfo } from './types'
 import { isGameCompleted } from './types'
-import { isSameFranchise } from './franchises'
+import { isSameFranchise, getCurrentFranchiseAbbr } from './franchises'
 
 export class BeltTracker {
   private currentHolder: string
@@ -205,6 +205,37 @@ export function findNextTitleBout(
 }
 
 /**
+ * Merge stats by franchise - combines all historical team eras into current franchise
+ */
+function mergeStatsByFranchise(
+  statsMap: Map<string, TeamBeltStats>,
+  franchises: FranchiseInfo[]
+): Map<string, TeamBeltStats> {
+  const merged = new Map<string, TeamBeltStats>()
+
+  statsMap.forEach((stats) => {
+    const currentAbbr = getCurrentFranchiseAbbr(stats.team, franchises)
+    const existing = merged.get(currentAbbr)
+
+    if (existing) {
+      existing.timesHeld += stats.timesHeld
+      existing.totalGames += stats.totalGames
+      existing.wins += stats.wins
+      existing.losses += stats.losses
+      existing.longestReign = Math.max(existing.longestReign, stats.longestReign)
+    } else {
+      merged.set(currentAbbr, { ...stats, team: currentAbbr })
+    }
+  })
+
+  return merged
+}
+
+export interface TrackAllSeasonsOptions {
+  mergeByFranchise?: boolean
+}
+
+/**
  * Track belt across multiple seasons with per-season reset
  * Each season starts with the previous year's actual champion (from champions lookup)
  * Belt transfers during the season when holder loses, but resets at season start
@@ -212,7 +243,8 @@ export function findNextTitleBout(
 export function trackAllSeasons(
   seasonsData: { season: string; games: Game[] }[],
   franchises: FranchiseInfo[],
-  champions: Record<string, string>
+  champions: Record<string, string>,
+  options?: TrackAllSeasonsOptions
 ): BeltHistory {
   const allChanges: BeltChange[] = []
   const teamStatsMap = new Map<string, TeamBeltStats>()
@@ -262,8 +294,16 @@ export function trackAllSeasons(
     finalHolder = seasonHistory.summary.currentHolder
   }
 
+  // Optionally merge stats by franchise (for All Time view)
+  let finalStatsMap = teamStatsMap
+  if (options?.mergeByFranchise) {
+    finalStatsMap = mergeStatsByFranchise(teamStatsMap, franchises)
+    // Also update finalHolder to use current franchise abbreviation
+    finalHolder = getCurrentFranchiseAbbr(finalHolder, franchises)
+  }
+
   // Convert team stats map to sorted array
-  const teams = Array.from(teamStatsMap.values()).sort(
+  const teams = Array.from(finalStatsMap.values()).sort(
     (a, b) => b.totalGames - a.totalGames
   )
 

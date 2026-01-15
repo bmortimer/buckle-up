@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import type { SeasonData, FranchiseInfo } from '@/lib/types'
 import { trackAllSeasons } from '@/lib/beltTracker'
+import { getCurrentFranchiseAbbr } from '@/lib/franchises'
 import { getSeasonConfig } from '@/lib/seasonConfig'
 import BeltHolderCard from './BeltHolderCard'
 import TeamBeltCard from './TeamBeltCard'
@@ -145,8 +146,8 @@ export default function BeltDashboard({
       games: seasons[s].games
     }))
 
-    return trackAllSeasons(seasonsData, franchises, champions)
-  }, [yearRange, seasons, franchises, champions])
+    return trackAllSeasons(seasonsData, franchises, champions, { mergeByFranchise: isAllTime })
+  }, [yearRange, seasons, franchises, champions, isAllTime])
 
   // Get all teams that appear in the selected year range
   const allTeams = useMemo(() => {
@@ -161,8 +162,7 @@ export default function BeltDashboard({
 
   // Get all teams across all seasons (unfiltered) for the team selector
   // This ensures users can switch to any team regardless of current year filter
-  // TODO: Future enhancement - when filtering by year, show teams in their
-  // historical conference for that season (requires conference history data)
+  // In All Time mode, dedupe by franchise (Utah Starzz -> Las Vegas Aces)
   const allTeamsAllYears = useMemo(() => {
     const teamSet = new Set<string>()
     Object.values(seasons).forEach(seasonData => {
@@ -171,8 +171,18 @@ export default function BeltDashboard({
         teamSet.add(game.awayTeam)
       })
     })
+
+    if (isAllTime) {
+      // Dedupe by franchise - only keep current franchise abbreviation
+      const franchiseSet = new Set<string>()
+      teamSet.forEach(team => {
+        franchiseSet.add(getCurrentFranchiseAbbr(team, franchises))
+      })
+      return Array.from(franchiseSet).sort()
+    }
+
     return Array.from(teamSet).sort()
-  }, [seasons])
+  }, [seasons, isAllTime, franchises])
 
   // Get available years for the selected team (if any)
   const availableYearsForTeam = useMemo(() => {
@@ -298,6 +308,7 @@ export default function BeltDashboard({
             franchises={franchises}
             selectedTeam={selectedTeam}
             onTeamChange={setSelectedTeam}
+            isAllTime={isAllTime}
           />
         </div>
       </div>
@@ -370,7 +381,7 @@ export default function BeltDashboard({
         {context === 'TEAM' && (
           <BeltCalendar history={history} franchises={franchises} selectedTeam={selectedTeam} allGames={allGames} league={league} />
         )}
-        <BarChartView teams={history.summary.teams} franchises={franchises} allGames={allGames} selectedTeam={selectedTeam} league={league} />
+        <BarChartView teams={history.summary.teams} franchises={franchises} allGames={allGames} selectedTeam={selectedTeam} league={league} isAllTime={isAllTime} />
       </div>
 
       {/* Footer */}
