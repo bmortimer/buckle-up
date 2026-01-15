@@ -18,7 +18,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://buckle-up.vercel.app'),
+  metadataBase: new URL('https://whohasthebelt.com'),
   title: {
     default: 'WNBA Championship Belt Tracker | Lineal Title History',
     template: '%s | Belt Tracker'
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://buckle-up.vercel.app',
+    url: 'https://whohasthebelt.com',
     siteName: 'Championship Belt Tracker',
     title: 'WNBA Championship Belt Tracker',
     description: 'Track the lineal championship belt across WNBA seasons. See current champion and full history.',
     images: [{
-      url: 'https://buckle-up.vercel.app/og-image.png',
+      url: 'https://whohasthebelt.com/og-image.png',
       width: 1200,
       height: 630,
       alt: 'Championship Belt Tracker - WNBA Lineal Title'
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'WNBA Championship Belt Tracker',
     description: 'Track the lineal championship belt across WNBA seasons. Every game is a title defense.',
-    images: ['https://buckle-up.vercel.app/og-image.png']
+    images: ['https://whohasthebelt.com/og-image.png']
   },
   robots: {
     index: true,
@@ -67,9 +67,9 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'WebApplication',
-      '@id': 'https://buckle-up.vercel.app/#webapp',
+      '@id': 'https://whohasthebelt.com/#webapp',
       name: 'Championship Belt Tracker',
-      url: 'https://buckle-up.vercel.app',
+      url: 'https://whohasthebelt.com',
       description: 'Interactive tracker for lineal championship belts in WNBA basketball. Track which team holds the belt, view historical data from 1997-present, and see upcoming title bouts.',
       applicationCategory: 'SportsApplication',
       operatingSystem: 'Web Browser',
@@ -89,8 +89,8 @@ const jsonLd = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://buckle-up.vercel.app/#website',
-      url: 'https://buckle-up.vercel.app',
+      '@id': 'https://whohasthebelt.com/#website',
+      url: 'https://whohasthebelt.com',
       name: 'Championship Belt Tracker',
       description: 'Track the lineal championship belt across WNBA seasons',
       inLanguage: 'en-US'

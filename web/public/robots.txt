@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://buckle-up.vercel.app/sitemap.xml
+Sitemap: https://whohasthebelt.com/sitemap.xml
 
