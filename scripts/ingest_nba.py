@@ -21,6 +21,42 @@ from pathlib import Path
 from datetime import datetime
 from nba_api.stats.endpoints import leaguegamefinder, scheduleleaguev2
 import time
+from functools import wraps
+
+
+def retry_on_timeout(max_attempts=3, delay=5):
+    """
+    Decorator to retry a function if it times out.
+
+    Args:
+        max_attempts: Maximum number of retry attempts
+        delay: Seconds to wait between retries (doubles each time)
+    """
+    def decorator(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            attempt = 1
+            current_delay = delay
+
+            while attempt <= max_attempts:
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    if 'timeout' in str(e).lower() or 'timed out' in str(e).lower():
+                        if attempt < max_attempts:
+                            print(f"Timeout on attempt {attempt}/{max_attempts}. Retrying in {current_delay}s...")
+                            time.sleep(current_delay)
+                            current_delay *= 2  # Exponential backoff
+                            attempt += 1
+                        else:
+                            print(f"Failed after {max_attempts} attempts")
+                            raise
+                    else:
+                        # If it's not a timeout error, raise immediately
+                        raise
+
+        return wrapper
+    return decorator
 
 
 def parse_season(season_str: str) -> tuple[str, str]:
@@ -48,6 +84,7 @@ def parse_season(season_str: str) -> tuple[str, str]:
     return f"{start_year}-{end_year}", start_year
 
 
+@retry_on_timeout(max_attempts=3, delay=10)
 def fetch_nba_season(season: str) -> list[dict]:
     """
     Fetch all games for an NBA season.
@@ -66,7 +103,8 @@ def fetch_nba_season(season: str) -> list[dict]:
     gamefinder = leaguegamefinder.LeagueGameFinder(
         season_nullable=season,
         season_type_nullable='Regular Season',
-        league_id_nullable='00'  # NBA
+        league_id_nullable='00',  # NBA
+        timeout=60  # Increase timeout to 60 seconds
     )
 
     # Get the dataframe
@@ -131,6 +169,7 @@ def fetch_nba_season(season: str) -> list[dict]:
     return games
 
 
+@retry_on_timeout(max_attempts=3, delay=10)
 def fetch_nba_schedule(season: str) -> list[dict]:
     """
     Fetch full season schedule including upcoming games.
@@ -149,7 +188,8 @@ def fetch_nba_schedule(season: str) -> list[dict]:
 
     schedule = scheduleleaguev2.ScheduleLeagueV2(
         season=season,
-        league_id='00'  # NBA
+        league_id='00',  # NBA
+        timeout=60  # Increase timeout to 60 seconds
     )
     data = schedule.get_dict()
 
