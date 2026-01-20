@@ -20,8 +20,23 @@ import json
 from pathlib import Path
 from datetime import datetime
 from nba_api.stats.endpoints import leaguegamefinder, scheduleleaguev2
+from nba_api.stats.library.http import NBAStatsHTTP
 import time
 from functools import wraps
+
+# Configure browser-like headers to avoid being blocked by NBA API
+# These headers make the requests look like they're coming from a real browser
+NBAStatsHTTP.headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'application/json, text/plain, */*',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Connection': 'keep-alive',
+    'Referer': 'https://www.nba.com/',
+    'Origin': 'https://www.nba.com',
+    'x-nba-stats-origin': 'stats',
+    'x-nba-stats-token': 'true',
+}
 
 
 def retry_on_timeout(max_attempts=3, delay=5):
@@ -321,8 +336,13 @@ def main():
 
     # Fetch games - use schedule endpoint for current season to get upcoming games
     if is_current_season(season):
-        print(f"Detected current season - using schedule endpoint for full schedule")
-        games = fetch_nba_schedule(season)
+        print(f"Detected current season - trying schedule endpoint for full schedule")
+        try:
+            games = fetch_nba_schedule(season)
+        except Exception as e:
+            print(f"Schedule endpoint failed: {e}")
+            print(f"Falling back to game finder (completed games only)")
+            games = fetch_nba_season(season)
     else:
         print(f"Historical season - using game finder for completed games")
         games = fetch_nba_season(season)
