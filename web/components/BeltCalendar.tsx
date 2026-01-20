@@ -48,42 +48,107 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
   ])).sort()
 
   // Build a map of each day to its belt holder and game status
+  // Use history.changes to properly track belt across seasons (respecting season resets)
   const dayMap = new Map<string, DayData>()
 
-  // Start with initial holder from the first change, or current holder if no changes
-  let currentHolder = history.startingTeam
-
-  // Get date range from all games (already filtered by year range in parent)
   if (allGames.length === 0) return null
-  const gameDates = allGames.map(g => new Date(g.date))
+
+  // Get date range from all games
+  const gameDates = allGames.map(g => {
+    const [y, m, d] = g.date.split('-').map(Number)
+    return new Date(y, m - 1, d)
+  })
   const minDate = new Date(Math.min(...gameDates.map(d => d.getTime())))
   const maxDate = new Date(Math.max(...gameDates.map(d => d.getTime())))
 
-  // Create a map of ALL games by date (sorted)
+  // Create a map of games where belt holder played (from history.changes)
+  const beltGamesByDate = new Map<string, Game>()
+  history.changes.forEach(change => {
+    // Belt changes include 'start' (season start) and 'loss' (belt changed hands)
+    if (change.reason === 'loss') {
+      beltGamesByDate.set(change.game.date, change.game)
+    } else if (change.reason === 'start' && change.game) {
+      // First game of season where champion defended
+      beltGamesByDate.set(change.game.date, change.game)
+    }
+  })
+
+  // Build chronological list of belt holder periods from history.changes
+  const holderPeriods: { start: string; holder: string; franchiseHolder: string }[] = []
+  let currentHolder = history.startingTeam
+  let currentFranchiseHolder = history.startingTeam
+
+  // Add initial period
+  if (history.changes.length > 0) {
+    holderPeriods.push({
+      start: minDate.toISOString().split('T')[0],
+      holder: currentHolder,
+      franchiseHolder: currentFranchiseHolder
+    })
+  }
+
+  // Process changes to build holder periods
+  for (const change of history.changes) {
+    if (change.reason === 'loss') {
+      // Belt changed hands
+      holderPeriods.push({
+        start: change.game.date,
+        holder: change.toTeam,
+        franchiseHolder: change.toTeam
+      })
+      currentHolder = change.toTeam
+      currentFranchiseHolder = change.toTeam
+    } else if (change.reason === 'start') {
+      // New season started - belt reset to champion
+      holderPeriods.push({
+        start: change.game?.date || change.toTeam, // Use game date or fallback
+        holder: change.toTeam,
+        franchiseHolder: change.toTeam
+      })
+      currentHolder = change.toTeam
+      currentFranchiseHolder = change.toTeam
+    }
+  }
+
+  // Helper to find who held belt on a given date
+  const getHolderOnDate = (dateStr: string): { holder: string; franchiseHolder: string } => {
+    // Find the most recent holder period that started before or on this date
+    for (let i = holderPeriods.length - 1; i >= 0; i--) {
+      if (holderPeriods[i].start <= dateStr) {
+        return {
+          holder: holderPeriods[i].holder,
+          franchiseHolder: holderPeriods[i].franchiseHolder
+        }
+      }
+    }
+    return { holder: history.startingTeam, franchiseHolder: history.startingTeam }
+  }
+
+  // Create map of all games by date
   const gamesByDate = new Map<string, Game[]>()
   allGames.forEach(game => {
-    const dateStr = game.date
-    if (!gamesByDate.has(dateStr)) {
-      gamesByDate.set(dateStr, [])
+    if (!gamesByDate.has(game.date)) {
+      gamesByDate.set(game.date, [])
     }
-    gamesByDate.get(dateStr)!.push(game)
+    gamesByDate.get(game.date)!.push(game)
   })
 
   // Fill in every day from min to max
   const currentDate = new Date(minDate)
   while (currentDate <= maxDate) {
     const dateStr = currentDate.toISOString().split('T')[0]
+    const { holder: franchiseHolder } = getHolderOnDate(dateStr)
     const gamesOnDate = gamesByDate.get(dateStr) || []
 
-    // Find if belt holder played on this day
+    // Find if belt holder played on this day (check by franchise)
     const holderGame = gamesOnDate.find(game =>
-      isSameFranchise(game.homeTeam, currentHolder, franchises) ||
-      isSameFranchise(game.awayTeam, currentHolder, franchises)
+      isSameFranchise(game.homeTeam, franchiseHolder, franchises) ||
+      isSameFranchise(game.awayTeam, franchiseHolder, franchises)
     )
 
     if (holderGame && isGameCompleted(holderGame)) {
       // Belt holder played a completed game
-      const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
+      const holderIsHome = isSameFranchise(holderGame.homeTeam, franchiseHolder, franchises)
       const holderWon = holderIsHome
         ? holderGame.homeScore! > holderGame.awayScore!
         : holderGame.awayScore! > holderGame.homeScore!
@@ -93,35 +158,26 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
         : (holderWon ? holderGame.awayTeam : holderGame.homeTeam)
 
       const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
-
-      // Use the actual team code from the game for the holder (shows historical team name)
       const actualHolder = holderIsHome ? holderGame.homeTeam : holderGame.awayTeam
 
       dayMap.set(dateStr, {
         date: dateStr,
-        holder: actualHolder,  // Use actual historical team code
+        holder: actualHolder,
         played: true,
         won: holderWon,
         winner: winner,
         challenger: challenger,
         game: holderGame,
       })
-
-      // Update holder if they lost
-      if (!holderWon) {
-        currentHolder = winner
-      }
     } else if (holderGame && !isGameCompleted(holderGame)) {
       // Belt holder has a scheduled (not yet played) game
-      const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
+      const holderIsHome = isSameFranchise(holderGame.homeTeam, franchiseHolder, franchises)
       const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
-
-      // Use actual team code from the game for scheduled games too
       const actualHolder = holderIsHome ? holderGame.homeTeam : holderGame.awayTeam
 
       dayMap.set(dateStr, {
         date: dateStr,
-        holder: actualHolder,  // Use actual historical team code
+        holder: actualHolder,
         played: false,
         won: null,
         challenger: challenger,
@@ -131,7 +187,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
       // Belt holder didn't play (off day)
       dayMap.set(dateStr, {
         date: dateStr,
-        holder: currentHolder,
+        holder: franchiseHolder,
         played: false,
         won: null,
       })
@@ -143,7 +199,9 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
   // Group days by month
   const monthsData = new Map<string, DayData[]>()
   dayMap.forEach((dayData) => {
-    const date = new Date(dayData.date)
+    // Parse date as local time to avoid timezone issues
+    const [y, m, d] = dayData.date.split('-').map(Number)
+    const date = new Date(y, m - 1, d)
     const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`
     if (!monthsData.has(monthKey)) {
       monthsData.set(monthKey, [])
@@ -238,8 +296,11 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
           const monthName = monthDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
 
           // Build calendar grid (7 columns for days of week)
-          const firstDay = new Date(days[0].date)
-          const lastDay = new Date(days[days.length - 1].date)
+          // Parse dates as local time to avoid timezone issues
+          const [fy, fm, fd] = days[0].date.split('-').map(Number)
+          const firstDay = new Date(fy, fm - 1, fd)
+          const [ly, lm, ld] = days[days.length - 1].date.split('-').map(Number)
+          const lastDay = new Date(ly, lm - 1, ld)
           const startDayOfWeek = firstDay.getDay() // 0 = Sunday
 
           // Calculate weeks needed
