@@ -41,14 +41,17 @@ const NBA_TEAMS_WITH_LOGOS = new Set([
   'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN',
   'NOP', 'NYK', 'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS',
   'TOR', 'UTA', 'WAS',
-  // Historical teams (will likely be PNGs when added)
-  'SEA', 'NJN', 'VAN', 'NOH', 'CHH', 'WSB', 'NOJ', 'KCK', 'SDC', 'BUF', 'NYN', 'NOK'
+  // Old abbreviations (pre-1996) - use current team logos
+  'GOS', 'PHL', 'SAN', 'UTH',
+  // Historical teams with logos
+  'SEA', 'VAN', 'BUF', 'CHH', 'WSB',
+  // Historical teams without logos yet
+  'NJN', 'NOH', 'NOJ', 'KCK', 'SDC', 'NYN', 'NOK'
 ])
 
-// NBA teams that use PNG (historical teams when we add them)
+// NBA teams that use PNG (need white background in dark mode)
 const NBA_PNG_TEAMS = new Set([
-  // Uncomment as PNG logos are added:
-  // 'SEA', 'VAN', 'NJN', 'CHH', 'NOH', 'NOK', 'SDC', 'KCK'
+  'CHH', 'WSB'  // Charlotte Hornets (original), Washington Bullets
 ])
 
 export default function TeamLogo({ teamCode, franchises, league = 'wnba', size = 'md', className = '' }: TeamLogoProps) {
