@@ -7,6 +7,9 @@ import BeltDashboard from '@/components/BeltDashboard'
 export const metadata: Metadata = {
   title: 'WNBA Belt Tracker',
   description: 'Track the WNBA lineal championship belt from 1997 to present. See who holds the belt, upcoming title bouts, and complete history.',
+  alternates: {
+    canonical: 'https://whohasthebelt.com/wnba'
+  },
   openGraph: {
     title: 'WNBA Championship Belt Tracker',
     description: 'The lineal championship belt - every game is a title defense. Track the WNBA belt from 1997 to present.',

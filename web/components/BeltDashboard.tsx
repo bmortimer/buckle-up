@@ -317,7 +317,7 @@ export default function BeltDashboard({
       {/* Stats */}
       {context !== 'TEAM' && (
         <RetroScoreboard
-          totalGames={allGames.length}
+          totalGames={history.summary.totalGames}
           totalChanges={history.summary.totalChanges}
           totalTitleBouts={history.summary.teams.reduce((sum, t) => sum + t.totalGames, 0) / 2}
           isAllTime={isAllTime}
