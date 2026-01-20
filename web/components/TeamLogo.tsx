@@ -41,8 +41,14 @@ const NBA_TEAMS_WITH_LOGOS = new Set([
   'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN',
   'NOP', 'NYK', 'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS',
   'TOR', 'UTA', 'WAS',
-  // Historical teams
-  'SEA', 'NJN', 'VAN', 'NOH', 'CHH', 'WSB', 'NOJ', 'KCK', 'SDC', 'BUF', 'NYN'
+  // Historical teams (will likely be PNGs when added)
+  'SEA', 'NJN', 'VAN', 'NOH', 'CHH', 'WSB', 'NOJ', 'KCK', 'SDC', 'BUF', 'NYN', 'NOK'
+])
+
+// NBA teams that use PNG (historical teams when we add them)
+const NBA_PNG_TEAMS = new Set([
+  // Uncomment as PNG logos are added:
+  // 'SEA', 'VAN', 'NJN', 'CHH', 'NOH', 'NOK', 'SDC', 'KCK'
 ])
 
 export default function TeamLogo({ teamCode, franchises, league = 'wnba', size = 'md', className = '' }: TeamLogoProps) {
@@ -51,7 +57,7 @@ export default function TeamLogo({ teamCode, franchises, league = 'wnba', size =
   const displayName = franchise?.displayName || teamCode
 
   const teamsWithLogos = league === 'nba' ? NBA_TEAMS_WITH_LOGOS : WNBA_TEAMS_WITH_LOGOS
-  const pngTeams = league === 'nba' ? new Set<string>() : WNBA_PNG_TEAMS // NBA has all SVGs
+  const pngTeams = league === 'nba' ? NBA_PNG_TEAMS : WNBA_PNG_TEAMS
 
   const hasLogo = teamsWithLogos.has(teamCode)
   const isPng = pngTeams.has(teamCode)
@@ -60,12 +66,16 @@ export default function TeamLogo({ teamCode, franchises, league = 'wnba', size =
   // If logo exists, render the image
   if (hasLogo) {
     return (
-      <div className={`${sizeMap[size]} relative ${className}`}>
+      <div className={`${sizeMap[size]} relative ${isPng ? 'rounded-full overflow-hidden' : ''} ${className}`}>
+        {/* Add white background circle for PNG logos in dark mode */}
+        {isPng && (
+          <div className="absolute inset-0 bg-white dark:bg-white" />
+        )}
         <Image
           src={`/logos/${league}/${teamCode}.${fileExtension}`}
           alt={`${displayName} logo`}
           fill
-          className="object-contain"
+          className={`object-contain ${isPng ? 'relative z-10 p-0.5' : ''}`}
           unoptimized // SVGs and small PNGs don't need optimization
         />
       </div>
