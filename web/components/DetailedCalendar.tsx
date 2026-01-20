@@ -336,17 +336,10 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                             </div>
                           )}
                           
-                          {/* Belt icon for scheduled title bouts */}
+                          {/* Trophy icon for scheduled title bouts */}
                           {isScheduledBout && (
                             <div className="absolute inset-0 flex items-end justify-center pb-[5%] pointer-events-none">
-                              <svg viewBox="0 0 200 200" className="w-4 h-4 drop-shadow-sm">
-                                <ellipse cx="100" cy="100" rx="45" ry="40" fill="#D4AF37" stroke="#8B7355" strokeWidth="4"/>
-                                <ellipse cx="100" cy="100" rx="25" ry="20" fill="#FFD700" opacity="0.6"/>
-                                <circle cx="100" cy="75" r="4" fill="#FFD700"/>
-                                <circle cx="125" cy="100" r="4" fill="#FFD700"/>
-                                <circle cx="100" cy="125" r="4" fill="#FFD700"/>
-                                <circle cx="75" cy="100" r="4" fill="#FFD700"/>
-                              </svg>
+                              <span className="text-sm">🏆</span>
                             </div>
                           )}
                         </div>

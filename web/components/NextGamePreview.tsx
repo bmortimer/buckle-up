@@ -160,8 +160,7 @@ export default function NextGamePreview({
             {/* @ */}
             <div className="flex flex-col items-center px-2">
               <div
-                className="text-lg sm:text-xl md:text-2xl font-display tracking-wider led-text"
-                style={{ color: 'hsl(var(--led-red))' }}
+                className="text-lg sm:text-xl md:text-2xl font-display tracking-wider text-foreground"
               >
                 @
               </div>

@@ -13,6 +13,7 @@ import BeltCalendar from './BeltCalendar'
 import DetailedCalendar from './DetailedCalendar'
 import RetroScoreboard from './RetroScoreboard'
 import NextGamePreview from './NextGamePreview'
+import Last5BeltChanges from './Last5BeltChanges'
 import SeasonPicker from './SeasonPicker'
 import TeamSelector from './TeamSelector'
 import { ThemeSwitcher } from './ThemeSwitcher'
@@ -342,6 +343,15 @@ export default function BeltDashboard({
             />
           )}
         </div>
+      )}
+
+      {/* Last 5 Belt Changes - show in All Time or Current Year view */}
+      {context !== 'TEAM' && (isAllTime || context === 'THIS_YEAR') && (
+        <Last5BeltChanges
+          league={league}
+          history={history}
+          franchises={franchises}
+        />
       )}
 
       {/* Team Belt Card - show on TEAM context */}
