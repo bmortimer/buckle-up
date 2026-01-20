@@ -18,20 +18,20 @@ export default function NbaGate({ children }: NbaGateProps) {
           <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" />
 
           <div
-            className="text-6xl sm:text-8xl font-mono tracking-[0.2em] led-text mb-4"
-            style={{ color: 'hsl(var(--led-red))' }}
+            className="text-5xl sm:text-7xl font-mono tracking-[0.2em] led-text mb-4"
+            style={{ color: 'hsl(var(--led-amber))' }}
           >
-            404
+            SOON
           </div>
 
           <div className="text-xs sm:text-sm font-orbitron uppercase tracking-[0.2em] text-muted-foreground mb-6">
-            Page Not Found
+            NBA Belt Coming Soon
           </div>
 
           <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-6" />
 
           <p className="text-sm text-muted-foreground mb-6 font-body">
-            The page you&apos;re looking for doesn&apos;t exist or has been moved.
+            We&apos;re currently tracking the WNBA championship belt. NBA belt tracking is in development and will be available soon.
           </p>
 
           <Link

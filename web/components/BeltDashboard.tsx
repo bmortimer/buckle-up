@@ -231,12 +231,18 @@ export default function BeltDashboard({
   if (!history) {
     return (
       <div className="text-center py-20">
-        <h1 className="text-4xl font-bold text-red-600 dark:text-red-400 mb-4">
-          No Data Available
-        </h1>
-        <p className="text-muted-foreground">
-          No data found for {league.toUpperCase()} {season}
-        </p>
+        <div className="scoreboard-panel p-8 max-w-md mx-auto">
+          <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
+          <h1 className="text-3xl font-mono tracking-wider led-text mb-4" style={{ color: 'hsl(var(--led-amber))' }}>
+            Data Not Yet Available
+          </h1>
+          <p className="text-sm text-muted-foreground font-body mb-4">
+            The {season} season data is still being added to the tracker.
+          </p>
+          <p className="text-xs text-muted-foreground font-body">
+            Select a different season from the dropdown above, or check back soon.
+          </p>
+        </div>
       </div>
     )
   }
