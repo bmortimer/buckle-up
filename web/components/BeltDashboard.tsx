@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import type { SeasonData, FranchiseInfo } from '@/lib/types'
 import { trackAllSeasons } from '@/lib/beltTracker'
-import { getCurrentFranchiseAbbr } from '@/lib/franchises'
+import { getCurrentFranchiseAbbr, getAllFranchiseAbbrs } from '@/lib/franchises'
 import { getSeasonConfig } from '@/lib/seasonConfig'
 import BeltHolderCard from './BeltHolderCard'
 import TeamBeltCard from './TeamBeltCard'
@@ -132,7 +132,7 @@ export default function BeltDashboard({
   }, [yearRange, seasons])
 
   // Track belt when data changes (filtered by year range)
-  const history = useMemo(() => {
+  const { history, mergedByFranchise } = useMemo(() => {
     const filteredSeasons = Object.keys(seasons)
       .filter(s => {
         const year = parseInt(s.split('-')[0]) || parseInt(s)
@@ -140,15 +140,21 @@ export default function BeltDashboard({
       })
       .sort()
 
-    if (filteredSeasons.length === 0) return null
+    if (filteredSeasons.length === 0) return { history: null, mergedByFranchise: false }
 
     const seasonsData = filteredSeasons.map(s => ({
       season: s,
       games: seasons[s].games
     }))
 
-    return trackAllSeasons(seasonsData, franchises, champions, { mergeByFranchise: isAllTime })
-  }, [yearRange, seasons, franchises, champions, isAllTime])
+    // Merge by franchise logic:
+    // - No team selected + All Time: merge by franchise (show current teams with full history)
+    // - Current franchise selected + All Time: merge by franchise (show full franchise history)
+    // - Historical team selected + All Time: don't merge (show only that team's era)
+    const shouldMerge = isAllTime && (!selectedTeam || getCurrentFranchiseAbbr(selectedTeam, franchises) === selectedTeam)
+    const history = trackAllSeasons(seasonsData, franchises, champions, { mergeByFranchise: shouldMerge })
+    return { history, mergedByFranchise: shouldMerge }
+  }, [yearRange, seasons, franchises, champions, isAllTime, selectedTeam])
 
   // Get all teams that appear in the selected year range
   const allTeams = useMemo(() => {
@@ -190,11 +196,19 @@ export default function BeltDashboard({
     if (!selectedTeam) return availableYears
 
     const teamYears = new Set<number>()
+
+    // If selecting current franchise in All Time mode, find all historical team codes
+    const currentFranchise = getCurrentFranchiseAbbr(selectedTeam, franchises)
+    const isCurrentFranchise = currentFranchise === selectedTeam
+    const franchiseCodes = isCurrentFranchise && isAllTime
+      ? getAllFranchiseAbbrs(selectedTeam, franchises)
+      : [selectedTeam]
+
     Object.keys(seasons).forEach(seasonKey => {
       const yearNum = parseInt(seasonKey.split('-')[0]) || parseInt(seasonKey)
       const games = seasons[seasonKey].games
       const teamPlayedThisYear = games.some(
-        game => game.homeTeam === selectedTeam || game.awayTeam === selectedTeam
+        game => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
       )
       if (teamPlayedThisYear) {
         teamYears.add(yearNum)
@@ -202,7 +216,7 @@ export default function BeltDashboard({
     })
 
     return Array.from(teamYears).sort((a, b) => a - b)
-  }, [selectedTeam, seasons, availableYears])
+  }, [selectedTeam, seasons, availableYears, franchises, isAllTime])
 
   // Adjust year range when team is selected
   useEffect(() => {
@@ -397,7 +411,7 @@ export default function BeltDashboard({
         {context === 'TEAM' && (
           <BeltCalendar history={history} franchises={franchises} selectedTeam={selectedTeam} allGames={allGames} league={league} />
         )}
-        <BarChartView teams={history.summary.teams} franchises={franchises} allGames={allGames} selectedTeam={selectedTeam} league={league} isAllTime={isAllTime} />
+        <BarChartView teams={history.summary.teams} franchises={franchises} allGames={allGames} selectedTeam={selectedTeam} league={league} isAllTime={mergedByFranchise} />
       </div>
 
       {/* Footer */}

@@ -94,9 +94,12 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
 
       const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
 
+      // Use the actual team code from the game for the holder (shows historical team name)
+      const actualHolder = holderIsHome ? holderGame.homeTeam : holderGame.awayTeam
+
       dayMap.set(dateStr, {
         date: dateStr,
-        holder: currentHolder,
+        holder: actualHolder,  // Use actual historical team code
         played: true,
         won: holderWon,
         winner: winner,
@@ -113,9 +116,12 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
       const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
       const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
 
+      // Use actual team code from the game for scheduled games too
+      const actualHolder = holderIsHome ? holderGame.homeTeam : holderGame.awayTeam
+
       dayMap.set(dateStr, {
         date: dateStr,
-        holder: currentHolder,
+        holder: actualHolder,  // Use actual historical team code
         played: false,
         won: null,
         challenger: challenger,
@@ -160,13 +166,37 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     return `${years[0]}-${years[years.length - 1]}`
   })()
 
+  // Determine which team codes actually appear in the displayed data
+  const displayedTeamCodes = (() => {
+    if (!selectedTeam) return null
+
+    // Get unique team codes from days where belt holder played
+    // and filter to only team codes that match the selected team's franchise
+    const teamCodes = new Set<string>()
+    dayMap.forEach(day => {
+      if (day.played && day.holder && isSameFranchise(day.holder, selectedTeam, franchises)) {
+        teamCodes.add(day.holder)
+      }
+    })
+
+    // Sort chronologically by finding first appearance
+    const codesArray = Array.from(teamCodes)
+    codesArray.sort((a, b) => {
+      const firstA = Array.from(dayMap.values()).find(d => d.holder === a)?.date || ''
+      const firstB = Array.from(dayMap.values()).find(d => d.holder === b)?.date || ''
+      return firstA.localeCompare(firstB)
+    })
+
+    return codesArray.length > 0 ? codesArray.join(' · ') : selectedTeam
+  })()
+
   return (
     <div data-card="calendar" className="scoreboard-panel p-6 relative">
       <div className="flex items-center justify-center mb-6 border-b-2 border-border pb-3">
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
           <span aria-hidden="true">◆ </span>
           <h2 className="inline font-normal">History</h2>
-          <span> · {selectedTeam} · {yearDisplay} </span>
+          <span> · {displayedTeamCodes || 'All Teams'} · {yearDisplay} </span>
           <span aria-hidden="true">◆</span>
         </div>
       </div>
@@ -246,9 +276,10 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                       }
 
                       // Check if selected team is involved: held belt, won belt, OR challenged for belt
-                      const heldBelt = dayData.holder === selectedTeam
-                      const wonBelt = dayData.winner === selectedTeam && !heldBelt
-                      const challengedBelt = dayData.challenger === selectedTeam && !heldBelt && !wonBelt
+                      // Use franchise matching to include historical team codes (UTA/SAS for LVA)
+                      const heldBelt = dayData.holder && isSameFranchise(dayData.holder, selectedTeam, franchises)
+                      const wonBelt = dayData.winner && isSameFranchise(dayData.winner, selectedTeam, franchises) && !heldBelt
+                      const challengedBelt = dayData.challenger && isSameFranchise(dayData.challenger, selectedTeam, franchises) && !heldBelt && !wonBelt
                       const isInvolved = heldBelt || wonBelt || challengedBelt
 
                       // Show empty cell for days team wasn't involved
