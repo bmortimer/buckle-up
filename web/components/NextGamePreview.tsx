@@ -50,6 +50,11 @@ export default function NextGamePreview({
         ? `https://en.wikipedia.org/wiki/${currentYear}_WNBA_season`
         : `https://en.wikipedia.org/wiki/${currentYear}-${(currentYear + 1).toString().slice(2)}_NBA_season`
 
+    // Custom message for WNBA due to CBA negotiations
+    const messageText = league === 'wnba'
+      ? 'Schedule pending a new collective bargaining agreement. Check the 2026 WNBA season for updates.'
+      : `Check the ${seasonYear} ${leagueUpper} season for schedule updates.`
+
     return (
       <div
         data-card="next-game"
@@ -74,16 +79,22 @@ export default function NextGamePreview({
             <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-3 sm:mb-4" />
             <div className="text-center px-2">
               <p className="text-xs sm:text-sm text-muted-foreground font-body leading-relaxed">
-                Check the{' '}
-                <a
-                  href={wikiLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:opacity-80 underline"
-                >
-                  {seasonYear} {leagueUpper} season
-                </a>{' '}
-                for schedule updates.
+                {league === 'wnba' ? (
+                  messageText
+                ) : (
+                  <>
+                    Check the{' '}
+                    <a
+                      href={wikiLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:opacity-80 underline"
+                    >
+                      {seasonYear} {leagueUpper} season
+                    </a>{' '}
+                    for schedule updates.
+                  </>
+                )}
               </p>
             </div>
           </div>

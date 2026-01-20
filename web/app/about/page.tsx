@@ -44,6 +44,14 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
+      name: 'Where does your data come from?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'NBA game data comes from the official NBA Stats website. WNBA data is sourced from Basketball-Reference.com. Current team logos are from the official NBA and WNBA websites. Historical team logos are from Wikimedia Commons, Loodibee.com, and SportsLogos.net. All sources are credited and used under fair use for non-commercial purposes.',
+      },
+    },
+    {
+      '@type': 'Question',
       name: 'Why the WNBA? Will you bring this to other leagues?',
       acceptedAnswer: {
         '@type': 'Answer',
@@ -204,6 +212,24 @@ export default function AboutPage() {
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 We track the belt from the WNBA's inaugural 1997 season to present day. The Houston Comets, as the first champions, started 1998 with the belt. Before that, for 1997, we gave the belt to the winner of the league's very first game (the New York Liberty).
+              </div>
+            </details>
+
+            <details className="group scoreboard-panel">
+              <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
+                Where does your data come from?
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-xs">&#9662;</span>
+              </summary>
+              <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
+                <p className="mb-3">
+                  <strong>Game Data:</strong> NBA scores and schedules come from the official <a href="https://www.nba.com/stats" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">NBA Stats website</a>. WNBA data comes from <a href="https://www.basketball-reference.com/wnba/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Basketball-Reference.com</a>.
+                </p>
+                <p className="mb-3">
+                  <strong>Team Logos:</strong> Current team logos are from the official <a href="https://www.nba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">NBA</a> and <a href="https://www.wnba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">WNBA</a> websites. Historical team logos (like the Seattle SuperSonics and Vancouver Grizzlies) are from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Wikimedia Commons</a>, <a href="https://loodibee.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Loodibee.com</a>, and <a href="https://www.sportslogos.net/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">SportsLogos.net</a>.
+                </p>
+                <p>
+                  All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!
+                </p>
               </div>
             </details>
 
