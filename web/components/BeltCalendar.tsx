@@ -232,7 +232,9 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
 
       <div className="flex flex-wrap gap-4">
         {relevantMonths.map(([monthKey, days]) => {
-          const monthDate = new Date(monthKey + '-01')
+          // Parse month key (YYYY-MM) and create date at noon to avoid timezone issues
+          const [year, month] = monthKey.split('-')
+          const monthDate = new Date(parseInt(year), parseInt(month) - 1, 15) // 15th of month at local time
           const monthName = monthDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
 
           // Build calendar grid (7 columns for days of week)

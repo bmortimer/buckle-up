@@ -59,7 +59,9 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
     // Filter games to this season
     const seasonGames = allGames.filter(g => {
-      const gameDate = new Date(g.date)
+      // Parse date as local time to avoid timezone issues
+      const [y, m, d] = g.date.split('-').map(Number)
+      const gameDate = new Date(y, m - 1, d)
       return gameDate >= seasonStart && gameDate <= seasonEnd
     })
 
@@ -162,7 +164,9 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     const months: Map<string, DayData[]> = new Map()
 
     dayMap.forEach((dayData) => {
-      const date = new Date(dayData.date)
+      // Parse date as local time to avoid timezone issues
+      const [y, m, d] = dayData.date.split('-').map(Number)
+      const date = new Date(y, m - 1, d)
       const yearMonth = `${date.getFullYear()}-${String(date.getMonth()).padStart(2, '0')}`
 
       if (!months.has(yearMonth)) {
@@ -271,7 +275,8 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                         return <div key={dayIdx} className="aspect-square border-r border-b border-border/20" />
                       }
 
-                      const date = new Date(dayData.date)
+                      const [dy, dm, dd] = dayData.date.split('-').map(Number)
+                      const date = new Date(dy, dm - 1, dd)
                       const dayNum = date.getDate()
                       const isSelectedDay = selectedDay?.date === dayData.date
 
