@@ -7,6 +7,21 @@ import type { FranchiseInfo } from './types'
 // Cache for loaded franchise data
 let franchiseCache: Map<string, FranchiseInfo[]> = new Map()
 
+// Memoization caches - keyed by franchises array reference
+const franchiseMapCache = new WeakMap<FranchiseInfo[], Map<string, FranchiseInfo>>()
+const rootFranchiseCache = new WeakMap<FranchiseInfo[], Map<string, string>>()
+const sameFranchiseCache = new WeakMap<FranchiseInfo[], Map<string, boolean>>()
+const allFranchiseAbbrsCache = new WeakMap<FranchiseInfo[], Map<string, string[]>>()
+
+function getFranchiseMap(franchises: FranchiseInfo[]): Map<string, FranchiseInfo> {
+  let map = franchiseMapCache.get(franchises)
+  if (!map) {
+    map = new Map(franchises.map(f => [f.franchiseId, f]))
+    franchiseMapCache.set(franchises, map)
+  }
+  return map
+}
+
 export function parseFranchisesCSV(csvContent: string): FranchiseInfo[] {
   const lines = csvContent.split('\n').filter(line => line.trim() && !line.startsWith('franchise_id'))
 
@@ -38,10 +53,24 @@ export function parseFranchisesCSV(csvContent: string): FranchiseInfo[] {
 }
 
 export function getRootFranchiseId(teamAbbr: string, franchises: FranchiseInfo[]): string {
-  const info = franchises.find(f => f.teamAbbr === teamAbbr)
-  if (!info) return teamAbbr
+  // Check cache first
+  let cache = rootFranchiseCache.get(franchises)
+  if (!cache) {
+    cache = new Map()
+    rootFranchiseCache.set(franchises, cache)
+  }
 
-  const franchiseMap = new Map(franchises.map(f => [f.franchiseId, f]))
+  const cached = cache.get(teamAbbr)
+  if (cached !== undefined) return cached
+
+  // Compute if not cached
+  const info = franchises.find(f => f.teamAbbr === teamAbbr)
+  if (!info) {
+    cache.set(teamAbbr, teamAbbr)
+    return teamAbbr
+  }
+
+  const franchiseMap = getFranchiseMap(franchises)
 
   let current = info
   while (current.successorFranchiseId) {
@@ -50,7 +79,9 @@ export function getRootFranchiseId(teamAbbr: string, franchises: FranchiseInfo[]
     current = next
   }
 
-  return current.franchiseId
+  const result = current.franchiseId
+  cache.set(teamAbbr, result)
+  return result
 }
 
 export function getTeamColor(teamAbbr: string, franchises: FranchiseInfo[]): string {
@@ -62,11 +93,24 @@ export function getTeamColor(teamAbbr: string, franchises: FranchiseInfo[]): str
 export function isSameFranchise(team1: string, team2: string, franchises: FranchiseInfo[]): boolean {
   if (team1 === team2) return true
 
+  // Check cache first
+  const cacheKey = team1 < team2 ? `${team1}:${team2}` : `${team2}:${team1}`
+  let cache = sameFranchiseCache.get(franchises)
+  if (!cache) {
+    cache = new Map()
+    sameFranchiseCache.set(franchises, cache)
+  }
+
+  const cached = cache.get(cacheKey)
+  if (cached !== undefined) return cached
+
   // Use franchise data to check if teams are the same franchise (handles relocations)
   const root1 = getRootFranchiseId(team1, franchises)
   const root2 = getRootFranchiseId(team2, franchises)
 
-  return root1 === root2
+  const result = root1 === root2
+  cache.set(cacheKey, result)
+  return result
 }
 
 export function getTeamDisplayName(teamAbbr: string, franchises: FranchiseInfo[]): string {
@@ -89,10 +133,26 @@ export function getCurrentFranchiseAbbr(teamAbbr: string, franchises: FranchiseI
  * For example, "LVA" returns ["UTA", "SAS", "LVA"].
  */
 export function getAllFranchiseAbbrs(teamAbbr: string, franchises: FranchiseInfo[]): string[] {
+  // Check cache first
+  let cache = allFranchiseAbbrsCache.get(franchises)
+  if (!cache) {
+    cache = new Map()
+    allFranchiseAbbrsCache.set(franchises, cache)
+  }
+
+  const cached = cache.get(teamAbbr)
+  if (cached !== undefined) return cached
+
+  // Compute if not cached
   const rootId = getRootFranchiseId(teamAbbr, franchises)
-  return franchises
+
+  // Build result by filtering franchises that share the same root
+  const result = franchises
     .filter(f => getRootFranchiseId(f.teamAbbr, franchises) === rootId)
     .map(f => f.teamAbbr)
+
+  cache.set(teamAbbr, result)
+  return result
 }
 
 /**
