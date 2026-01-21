@@ -1,0 +1,6612 @@
+{
+  "season": "1980-81",
+  "league": "NBA",
+  "games": [
+    {
+      "date": "1980-10-10",
+      "homeTeam": "BOS",
+      "awayTeam": "CLE",
+      "homeScore": 130,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-10-10",
+      "homeTeam": "DEN",
+      "awayTeam": "SAS",
+      "homeScore": 112,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-10-10",
+      "homeTeam": "DET",
+      "awayTeam": "WSB",
+      "homeScore": 85,
+      "awayScore": 95
+    },
+    {
+      "date": "1980-10-10",
+      "homeTeam": "NJN",
+      "awayTeam": "IND",
+      "homeScore": 91,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-10-10",
+      "homeTeam": "PHI",
+      "awayTeam": "MIL",
+      "homeScore": 103,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-10-10",
+      "homeTeam": "PHX",
+      "awayTeam": "GSW",
+      "homeScore": 121,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-10-10",
+      "homeTeam": "SDC",
+      "awayTeam": "HOU",
+      "homeScore": 120,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-10-10",
+      "homeTeam": "SEA",
+      "awayTeam": "LAL",
+      "homeScore": 98,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-10-10",
+      "homeTeam": "UTA",
+      "awayTeam": "POR",
+      "homeScore": 96,
+      "awayScore": 86
+    },
+    {
+      "date": "1980-10-11",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 101,
+      "awayScore": 93
+    },
+    {
+      "date": "1980-10-11",
+      "homeTeam": "CLE",
+      "awayTeam": "NJN",
+      "homeScore": 96,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-10-11",
+      "homeTeam": "DAL",
+      "awayTeam": "SAS",
+      "homeScore": 103,
+      "awayScore": 92
+    },
+    {
+      "date": "1980-10-11",
+      "homeTeam": "GSW",
+      "awayTeam": "SDC",
+      "homeScore": 104,
+      "awayScore": 91
+    },
+    {
+      "date": "1980-10-11",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": 100,
+      "awayScore": 87
+    },
+    {
+      "date": "1980-10-11",
+      "homeTeam": "KCK",
+      "awayTeam": "UTA",
+      "homeScore": 98,
+      "awayScore": 91
+    },
+    {
+      "date": "1980-10-11",
+      "homeTeam": "NYK",
+      "awayTeam": "MIL",
+      "homeScore": 114,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-10-11",
+      "homeTeam": "WSB",
+      "awayTeam": "PHI",
+      "homeScore": 120,
+      "awayScore": 126
+    },
+    {
+      "date": "1980-10-12",
+      "homeTeam": "DEN",
+      "awayTeam": "UTA",
+      "homeScore": 121,
+      "awayScore": 125
+    },
+    {
+      "date": "1980-10-12",
+      "homeTeam": "LAL",
+      "awayTeam": "HOU",
+      "homeScore": 114,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-10-12",
+      "homeTeam": "PHX",
+      "awayTeam": "KCK",
+      "homeScore": 109,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-10-12",
+      "homeTeam": "POR",
+      "awayTeam": "SEA",
+      "homeScore": 107,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-10-13",
+      "homeTeam": "NJN",
+      "awayTeam": "DET",
+      "homeScore": 108,
+      "awayScore": 92
+    },
+    {
+      "date": "1980-10-14",
+      "homeTeam": "ATL",
+      "awayTeam": "BOS",
+      "homeScore": 122,
+      "awayScore": 116
+    },
+    {
+      "date": "1980-10-14",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 99,
+      "awayScore": 91
+    },
+    {
+      "date": "1980-10-14",
+      "homeTeam": "DAL",
+      "awayTeam": "SEA",
+      "homeScore": 83,
+      "awayScore": 85
+    },
+    {
+      "date": "1980-10-14",
+      "homeTeam": "NYK",
+      "awayTeam": "PHI",
+      "homeScore": 113,
+      "awayScore": 93
+    },
+    {
+      "date": "1980-10-14",
+      "homeTeam": "SAS",
+      "awayTeam": "KCK",
+      "homeScore": 109,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-10-15",
+      "homeTeam": "DEN",
+      "awayTeam": "DAL",
+      "homeScore": 133,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-10-15",
+      "homeTeam": "GSW",
+      "awayTeam": "POR",
+      "homeScore": 95,
+      "awayScore": 92
+    },
+    {
+      "date": "1980-10-15",
+      "homeTeam": "HOU",
+      "awayTeam": "SEA",
+      "homeScore": 103,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-10-15",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 97,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-10-15",
+      "homeTeam": "KCK",
+      "awayTeam": "LAL",
+      "homeScore": 107,
+      "awayScore": 112
+    },
+    {
+      "date": "1980-10-15",
+      "homeTeam": "NJN",
+      "awayTeam": "PHI",
+      "homeScore": 111,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-10-15",
+      "homeTeam": "UTA",
+      "awayTeam": "PHX",
+      "homeScore": 93,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-10-16",
+      "homeTeam": "CLE",
+      "awayTeam": "WSB",
+      "homeScore": 90,
+      "awayScore": 88
+    },
+    {
+      "date": "1980-10-16",
+      "homeTeam": "DET",
+      "awayTeam": "SAS",
+      "homeScore": 99,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-10-16",
+      "homeTeam": "MIL",
+      "awayTeam": "BOS",
+      "homeScore": 103,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-10-17",
+      "homeTeam": "ATL",
+      "awayTeam": "NYK",
+      "homeScore": 113,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-10-17",
+      "homeTeam": "CHI",
+      "awayTeam": "CLE",
+      "homeScore": 98,
+      "awayScore": 79
+    },
+    {
+      "date": "1980-10-17",
+      "homeTeam": "DAL",
+      "awayTeam": "KCK",
+      "homeScore": 91,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-10-17",
+      "homeTeam": "LAL",
+      "awayTeam": "PHX",
+      "homeScore": 116,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-10-17",
+      "homeTeam": "POR",
+      "awayTeam": "HOU",
+      "homeScore": 99,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-10-17",
+      "homeTeam": "SDC",
+      "awayTeam": "DEN",
+      "homeScore": 116,
+      "awayScore": 129
+    },
+    {
+      "date": "1980-10-17",
+      "homeTeam": "WSB",
+      "awayTeam": "NJN",
+      "homeScore": 112,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-10-18",
+      "homeTeam": "CHI",
+      "awayTeam": "NJN",
+      "homeScore": 90,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-10-18",
+      "homeTeam": "CLE",
+      "awayTeam": "MIL",
+      "homeScore": 105,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-10-18",
+      "homeTeam": "DET",
+      "awayTeam": "ATL",
+      "homeScore": 123,
+      "awayScore": 125
+    },
+    {
+      "date": "1980-10-18",
+      "homeTeam": "GSW",
+      "awayTeam": "HOU",
+      "homeScore": 108,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-10-18",
+      "homeTeam": "IND",
+      "awayTeam": "BOS",
+      "homeScore": 103,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-10-18",
+      "homeTeam": "KCK",
+      "awayTeam": "SEA",
+      "homeScore": 122,
+      "awayScore": 127
+    },
+    {
+      "date": "1980-10-18",
+      "homeTeam": "PHI",
+      "awayTeam": "WSB",
+      "homeScore": 117,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-10-18",
+      "homeTeam": "SAS",
+      "awayTeam": "DAL",
+      "homeScore": 110,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-10-18",
+      "homeTeam": "UTA",
+      "awayTeam": "DEN",
+      "homeScore": 117,
+      "awayScore": 115
+    },
+    {
+      "date": "1980-10-19",
+      "homeTeam": "LAL",
+      "awayTeam": "GSW",
+      "homeScore": 125,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-10-19",
+      "homeTeam": "MIL",
+      "awayTeam": "NJN",
+      "homeScore": 105,
+      "awayScore": 93
+    },
+    {
+      "date": "1980-10-19",
+      "homeTeam": "SDC",
+      "awayTeam": "PHX",
+      "homeScore": 84,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-10-20",
+      "homeTeam": "UTA",
+      "awayTeam": "SEA",
+      "homeScore": 92,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-10-21",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 116,
+      "awayScore": 121
+    },
+    {
+      "date": "1980-10-21",
+      "homeTeam": "DEN",
+      "awayTeam": "HOU",
+      "homeScore": 117,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-10-21",
+      "homeTeam": "KCK",
+      "awayTeam": "GSW",
+      "homeScore": 111,
+      "awayScore": 116
+    },
+    {
+      "date": "1980-10-21",
+      "homeTeam": "MIL",
+      "awayTeam": "CLE",
+      "homeScore": 115,
+      "awayScore": 95
+    },
+    {
+      "date": "1980-10-21",
+      "homeTeam": "NYK",
+      "awayTeam": "CHI",
+      "homeScore": 105,
+      "awayScore": 97
+    },
+    {
+      "date": "1980-10-21",
+      "homeTeam": "PHX",
+      "awayTeam": "DAL",
+      "homeScore": 111,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-10-21",
+      "homeTeam": "POR",
+      "awayTeam": "LAL",
+      "homeScore": 107,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-10-21",
+      "homeTeam": "SAS",
+      "awayTeam": "SDC",
+      "homeScore": 123,
+      "awayScore": 120
+    },
+    {
+      "date": "1980-10-22",
+      "homeTeam": "DET",
+      "awayTeam": "PHI",
+      "homeScore": 93,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-10-22",
+      "homeTeam": "IND",
+      "awayTeam": "MIL",
+      "homeScore": 105,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-10-22",
+      "homeTeam": "NJN",
+      "awayTeam": "BOS",
+      "homeScore": 104,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-10-22",
+      "homeTeam": "SEA",
+      "awayTeam": "DAL",
+      "homeScore": 102,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-10-22",
+      "homeTeam": "WSB",
+      "awayTeam": "CLE",
+      "homeScore": 109,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-10-23",
+      "homeTeam": "BOS",
+      "awayTeam": "NYK",
+      "homeScore": 107,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-10-23",
+      "homeTeam": "HOU",
+      "awayTeam": "KCK",
+      "homeScore": 96,
+      "awayScore": 105
+    },
+    {
+      "date": "1980-10-23",
+      "homeTeam": "SAS",
+      "awayTeam": "GSW",
+      "homeScore": 128,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-10-24",
+      "homeTeam": "CHI",
+      "awayTeam": "WSB",
+      "homeScore": 104,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-10-24",
+      "homeTeam": "DEN",
+      "awayTeam": "PHX",
+      "homeScore": 94,
+      "awayScore": 117
+    },
+    {
+      "date": "1980-10-24",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 104,
+      "awayScore": 97
+    },
+    {
+      "date": "1980-10-24",
+      "homeTeam": "LAL",
+      "awayTeam": "SEA",
+      "homeScore": 104,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-10-24",
+      "homeTeam": "NJN",
+      "awayTeam": "CLE",
+      "homeScore": 112,
+      "awayScore": 126
+    },
+    {
+      "date": "1980-10-24",
+      "homeTeam": "POR",
+      "awayTeam": "DAL",
+      "homeScore": 120,
+      "awayScore": 105
+    },
+    {
+      "date": "1980-10-24",
+      "homeTeam": "SDC",
+      "awayTeam": "UTA",
+      "homeScore": 103,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "ATL",
+      "awayTeam": "PHI",
+      "homeScore": 100,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "CLE",
+      "awayTeam": "IND",
+      "homeScore": 118,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "GSW",
+      "awayTeam": "DAL",
+      "homeScore": 86,
+      "awayScore": 79
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "HOU",
+      "awayTeam": "DET",
+      "homeScore": 109,
+      "awayScore": 112
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "KCK",
+      "awayTeam": "DEN",
+      "homeScore": 125,
+      "awayScore": 122
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "MIL",
+      "awayTeam": "CHI",
+      "homeScore": 109,
+      "awayScore": 93
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "NYK",
+      "awayTeam": "NJN",
+      "homeScore": 105,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "SDC",
+      "awayTeam": "SAS",
+      "homeScore": 98,
+      "awayScore": 116
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "SEA",
+      "awayTeam": "PHX",
+      "homeScore": 75,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "UTA",
+      "awayTeam": "LAL",
+      "homeScore": 99,
+      "awayScore": 127
+    },
+    {
+      "date": "1980-10-25",
+      "homeTeam": "WSB",
+      "awayTeam": "BOS",
+      "homeScore": 87,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-10-26",
+      "homeTeam": "LAL",
+      "awayTeam": "SAS",
+      "homeScore": 102,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-10-26",
+      "homeTeam": "MIL",
+      "awayTeam": "WSB",
+      "homeScore": 111,
+      "awayScore": 88
+    },
+    {
+      "date": "1980-10-26",
+      "homeTeam": "SEA",
+      "awayTeam": "POR",
+      "homeScore": 111,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-10-28",
+      "homeTeam": "ATL",
+      "awayTeam": "KCK",
+      "homeScore": 119,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-10-28",
+      "homeTeam": "CHI",
+      "awayTeam": "MIL",
+      "homeScore": 99,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-10-28",
+      "homeTeam": "CLE",
+      "awayTeam": "PHI",
+      "homeScore": 101,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-10-28",
+      "homeTeam": "DAL",
+      "awayTeam": "UTA",
+      "homeScore": 96,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-10-28",
+      "homeTeam": "SAS",
+      "awayTeam": "POR",
+      "homeScore": 120,
+      "awayScore": 112
+    },
+    {
+      "date": "1980-10-28",
+      "homeTeam": "SDC",
+      "awayTeam": "LAL",
+      "homeScore": 101,
+      "awayScore": 131
+    },
+    {
+      "date": "1980-10-28",
+      "homeTeam": "SEA",
+      "awayTeam": "GSW",
+      "homeScore": 119,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-10-29",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 85,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-10-29",
+      "homeTeam": "GSW",
+      "awayTeam": "DEN",
+      "homeScore": 115,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-10-29",
+      "homeTeam": "HOU",
+      "awayTeam": "DAL",
+      "homeScore": 109,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-10-29",
+      "homeTeam": "IND",
+      "awayTeam": "NYK",
+      "homeScore": 102,
+      "awayScore": 95
+    },
+    {
+      "date": "1980-10-29",
+      "homeTeam": "KCK",
+      "awayTeam": "POR",
+      "homeScore": 115,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-10-29",
+      "homeTeam": "NJN",
+      "awayTeam": "MIL",
+      "homeScore": 116,
+      "awayScore": 132
+    },
+    {
+      "date": "1980-10-29",
+      "homeTeam": "PHI",
+      "awayTeam": "CHI",
+      "homeScore": 115,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-10-29",
+      "homeTeam": "PHX",
+      "awayTeam": "SDC",
+      "homeScore": 105,
+      "awayScore": 89
+    },
+    {
+      "date": "1980-10-29",
+      "homeTeam": "UTA",
+      "awayTeam": "SAS",
+      "homeScore": 109,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-10-30",
+      "homeTeam": "NYK",
+      "awayTeam": "ATL",
+      "homeScore": 116,
+      "awayScore": 115
+    },
+    {
+      "date": "1980-10-31",
+      "homeTeam": "BOS",
+      "awayTeam": "KCK",
+      "homeScore": 115,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-10-31",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 114,
+      "awayScore": 121
+    },
+    {
+      "date": "1980-10-31",
+      "homeTeam": "DET",
+      "awayTeam": "PHX",
+      "homeScore": 98,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-10-31",
+      "homeTeam": "LAL",
+      "awayTeam": "CLE",
+      "homeScore": 107,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-10-31",
+      "homeTeam": "NJN",
+      "awayTeam": "WSB",
+      "homeScore": 100,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-10-31",
+      "homeTeam": "PHI",
+      "awayTeam": "ATL",
+      "homeScore": 107,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-10-31",
+      "homeTeam": "SDC",
+      "awayTeam": "GSW",
+      "homeScore": 120,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-10-31",
+      "homeTeam": "SEA",
+      "awayTeam": "SAS",
+      "homeScore": 96,
+      "awayScore": 112
+    },
+    {
+      "date": "1980-10-31",
+      "homeTeam": "UTA",
+      "awayTeam": "DAL",
+      "homeScore": 144,
+      "awayScore": 122
+    },
+    {
+      "date": "1980-11-01",
+      "homeTeam": "ATL",
+      "awayTeam": "MIL",
+      "homeScore": 93,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-11-01",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 122,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-11-01",
+      "homeTeam": "DEN",
+      "awayTeam": "SEA",
+      "homeScore": 123,
+      "awayScore": 118
+    },
+    {
+      "date": "1980-11-01",
+      "homeTeam": "GSW",
+      "awayTeam": "SAS",
+      "homeScore": 123,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-11-01",
+      "homeTeam": "IND",
+      "awayTeam": "NJN",
+      "homeScore": 113,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-11-01",
+      "homeTeam": "KCK",
+      "awayTeam": "PHX",
+      "homeScore": 100,
+      "awayScore": 127
+    },
+    {
+      "date": "1980-11-01",
+      "homeTeam": "NYK",
+      "awayTeam": "WSB",
+      "homeScore": 111,
+      "awayScore": 93
+    },
+    {
+      "date": "1980-11-01",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 117,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-11-01",
+      "homeTeam": "POR",
+      "awayTeam": "UTA",
+      "homeScore": 87,
+      "awayScore": 95
+    },
+    {
+      "date": "1980-11-02",
+      "homeTeam": "LAL",
+      "awayTeam": "DEN",
+      "homeScore": 121,
+      "awayScore": 123
+    },
+    {
+      "date": "1980-11-02",
+      "homeTeam": "MIL",
+      "awayTeam": "IND",
+      "homeScore": 135,
+      "awayScore": 121
+    },
+    {
+      "date": "1980-11-02",
+      "homeTeam": "POR",
+      "awayTeam": "CLE",
+      "homeScore": 102,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-11-03",
+      "homeTeam": "SEA",
+      "awayTeam": "CLE",
+      "homeScore": 118,
+      "awayScore": 83
+    },
+    {
+      "date": "1980-11-04",
+      "homeTeam": "DAL",
+      "awayTeam": "SDC",
+      "homeScore": 102,
+      "awayScore": 116
+    },
+    {
+      "date": "1980-11-04",
+      "homeTeam": "LAL",
+      "awayTeam": "POR",
+      "homeScore": 119,
+      "awayScore": 118
+    },
+    {
+      "date": "1980-11-04",
+      "homeTeam": "MIL",
+      "awayTeam": "DET",
+      "homeScore": 96,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-11-04",
+      "homeTeam": "PHX",
+      "awayTeam": "IND",
+      "homeScore": 109,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-11-04",
+      "homeTeam": "UTA",
+      "awayTeam": "KCK",
+      "homeScore": 107,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-11-04",
+      "homeTeam": "WSB",
+      "awayTeam": "ATL",
+      "homeScore": 122,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-11-05",
+      "homeTeam": "BOS",
+      "awayTeam": "ATL",
+      "homeScore": 104,
+      "awayScore": 87
+    },
+    {
+      "date": "1980-11-05",
+      "homeTeam": "GSW",
+      "awayTeam": "CLE",
+      "homeScore": 106,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-11-05",
+      "homeTeam": "HOU",
+      "awayTeam": "SDC",
+      "homeScore": 104,
+      "awayScore": 111
+    },
+    {
+      "date": "1980-11-05",
+      "homeTeam": "KCK",
+      "awayTeam": "NYK",
+      "homeScore": 111,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-11-05",
+      "homeTeam": "NJN",
+      "awayTeam": "CHI",
+      "homeScore": 105,
+      "awayScore": 120
+    },
+    {
+      "date": "1980-11-05",
+      "homeTeam": "PHI",
+      "awayTeam": "DET",
+      "homeScore": 107,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-11-05",
+      "homeTeam": "SAS",
+      "awayTeam": "PHX",
+      "homeScore": 114,
+      "awayScore": 84
+    },
+    {
+      "date": "1980-11-05",
+      "homeTeam": "SEA",
+      "awayTeam": "DEN",
+      "homeScore": 117,
+      "awayScore": 125
+    },
+    {
+      "date": "1980-11-06",
+      "homeTeam": "UTA",
+      "awayTeam": "CLE",
+      "homeScore": 112,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-11-06",
+      "homeTeam": "WSB",
+      "awayTeam": "DAL",
+      "homeScore": 116,
+      "awayScore": 95
+    },
+    {
+      "date": "1980-11-07",
+      "homeTeam": "BOS",
+      "awayTeam": "MIL",
+      "homeScore": 101,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-11-07",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 103,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-11-07",
+      "homeTeam": "DAL",
+      "awayTeam": "LAL",
+      "homeScore": 102,
+      "awayScore": 126
+    },
+    {
+      "date": "1980-11-07",
+      "homeTeam": "DEN",
+      "awayTeam": "NYK",
+      "homeScore": 115,
+      "awayScore": 124
+    },
+    {
+      "date": "1980-11-07",
+      "homeTeam": "PHI",
+      "awayTeam": "KCK",
+      "homeScore": 117,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-11-07",
+      "homeTeam": "POR",
+      "awayTeam": "GSW",
+      "homeScore": 122,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-11-07",
+      "homeTeam": "SEA",
+      "awayTeam": "SDC",
+      "homeScore": 113,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-11-07",
+      "homeTeam": "WSB",
+      "awayTeam": "DET",
+      "homeScore": 114,
+      "awayScore": 88
+    },
+    {
+      "date": "1980-11-08",
+      "homeTeam": "CHI",
+      "awayTeam": "DEN",
+      "homeScore": 126,
+      "awayScore": 130
+    },
+    {
+      "date": "1980-11-08",
+      "homeTeam": "DET",
+      "awayTeam": "DAL",
+      "homeScore": 101,
+      "awayScore": 73
+    },
+    {
+      "date": "1980-11-08",
+      "homeTeam": "GSW",
+      "awayTeam": "IND",
+      "homeScore": 118,
+      "awayScore": 111
+    },
+    {
+      "date": "1980-11-08",
+      "homeTeam": "HOU",
+      "awayTeam": "PHX",
+      "homeScore": 115,
+      "awayScore": 116
+    },
+    {
+      "date": "1980-11-08",
+      "homeTeam": "KCK",
+      "awayTeam": "CLE",
+      "homeScore": 111,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-11-08",
+      "homeTeam": "NJN",
+      "awayTeam": "ATL",
+      "homeScore": 115,
+      "awayScore": 111
+    },
+    {
+      "date": "1980-11-08",
+      "homeTeam": "POR",
+      "awayTeam": "SDC",
+      "homeScore": 106,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-11-08",
+      "homeTeam": "SAS",
+      "awayTeam": "LAL",
+      "homeScore": 112,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-11-08",
+      "homeTeam": "UTA",
+      "awayTeam": "NYK",
+      "homeScore": 102,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-11-09",
+      "homeTeam": "BOS",
+      "awayTeam": "CHI",
+      "homeScore": 111,
+      "awayScore": 105
+    },
+    {
+      "date": "1980-11-09",
+      "homeTeam": "MIL",
+      "awayTeam": "PHI",
+      "homeScore": 121,
+      "awayScore": 136
+    },
+    {
+      "date": "1980-11-10",
+      "homeTeam": "UTA",
+      "awayTeam": "IND",
+      "homeScore": 108,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-11-11",
+      "homeTeam": "ATL",
+      "awayTeam": "LAL",
+      "homeScore": 97,
+      "awayScore": 126
+    },
+    {
+      "date": "1980-11-11",
+      "homeTeam": "CHI",
+      "awayTeam": "PHI",
+      "homeScore": 80,
+      "awayScore": 121
+    },
+    {
+      "date": "1980-11-11",
+      "homeTeam": "CLE",
+      "awayTeam": "MIL",
+      "homeScore": 96,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-11-11",
+      "homeTeam": "DAL",
+      "awayTeam": "HOU",
+      "homeScore": 94,
+      "awayScore": 105
+    },
+    {
+      "date": "1980-11-11",
+      "homeTeam": "NYK",
+      "awayTeam": "DET",
+      "homeScore": 149,
+      "awayScore": 118
+    },
+    {
+      "date": "1980-11-11",
+      "homeTeam": "POR",
+      "awayTeam": "KCK",
+      "homeScore": 101,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-11-11",
+      "homeTeam": "SAS",
+      "awayTeam": "IND",
+      "homeScore": 113,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-11-11",
+      "homeTeam": "SDC",
+      "awayTeam": "PHX",
+      "homeScore": 107,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-11-11",
+      "homeTeam": "WSB",
+      "awayTeam": "DEN",
+      "homeScore": 107,
+      "awayScore": 92
+    },
+    {
+      "date": "1980-11-12",
+      "homeTeam": "BOS",
+      "awayTeam": "WSB",
+      "homeScore": 93,
+      "awayScore": 86
+    },
+    {
+      "date": "1980-11-12",
+      "homeTeam": "DET",
+      "awayTeam": "MIL",
+      "homeScore": 98,
+      "awayScore": 122
+    },
+    {
+      "date": "1980-11-12",
+      "homeTeam": "GSW",
+      "awayTeam": "KCK",
+      "homeScore": 111,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-11-12",
+      "homeTeam": "HOU",
+      "awayTeam": "LAL",
+      "homeScore": 107,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-11-12",
+      "homeTeam": "NJN",
+      "awayTeam": "DEN",
+      "homeScore": 118,
+      "awayScore": 111
+    },
+    {
+      "date": "1980-11-12",
+      "homeTeam": "PHI",
+      "awayTeam": "NYK",
+      "homeScore": 113,
+      "awayScore": 125
+    },
+    {
+      "date": "1980-11-12",
+      "homeTeam": "PHX",
+      "awayTeam": "SAS",
+      "homeScore": 130,
+      "awayScore": 127
+    },
+    {
+      "date": "1980-11-12",
+      "homeTeam": "SEA",
+      "awayTeam": "UTA",
+      "homeScore": 106,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-11-13",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "homeScore": 114,
+      "awayScore": 111
+    },
+    {
+      "date": "1980-11-13",
+      "homeTeam": "IND",
+      "awayTeam": "PHI",
+      "homeScore": 103,
+      "awayScore": 130
+    },
+    {
+      "date": "1980-11-13",
+      "homeTeam": "SDC",
+      "awayTeam": "SAS",
+      "homeScore": 107,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-11-14",
+      "homeTeam": "BOS",
+      "awayTeam": "NJN",
+      "homeScore": 126,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-11-14",
+      "homeTeam": "DAL",
+      "awayTeam": "POR",
+      "homeScore": 113,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-11-14",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 106,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-11-14",
+      "homeTeam": "IND",
+      "awayTeam": "WSB",
+      "homeScore": 118,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-11-14",
+      "homeTeam": "LAL",
+      "awayTeam": "SDC",
+      "homeScore": 113,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-11-14",
+      "homeTeam": "MIL",
+      "awayTeam": "NYK",
+      "homeScore": 125,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-11-14",
+      "homeTeam": "SEA",
+      "awayTeam": "KCK",
+      "homeScore": 127,
+      "awayScore": 125
+    },
+    {
+      "date": "1980-11-14",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 117,
+      "awayScore": 115
+    },
+    {
+      "date": "1980-11-15",
+      "homeTeam": "ATL",
+      "awayTeam": "WSB",
+      "homeScore": 88,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-11-15",
+      "homeTeam": "DEN",
+      "awayTeam": "POR",
+      "homeScore": 125,
+      "awayScore": 123
+    },
+    {
+      "date": "1980-11-15",
+      "homeTeam": "GSW",
+      "awayTeam": "PHX",
+      "homeScore": 119,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-11-15",
+      "homeTeam": "NYK",
+      "awayTeam": "CLE",
+      "homeScore": 100,
+      "awayScore": 95
+    },
+    {
+      "date": "1980-11-15",
+      "homeTeam": "PHI",
+      "awayTeam": "NJN",
+      "homeScore": 115,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-11-15",
+      "homeTeam": "SAS",
+      "awayTeam": "UTA",
+      "homeScore": 120,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-11-15",
+      "homeTeam": "SDC",
+      "awayTeam": "KCK",
+      "homeScore": 94,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-11-15",
+      "homeTeam": "SEA",
+      "awayTeam": "HOU",
+      "homeScore": 143,
+      "awayScore": 139
+    },
+    {
+      "date": "1980-11-16",
+      "homeTeam": "LAL",
+      "awayTeam": "DAL",
+      "homeScore": 110,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-11-16",
+      "homeTeam": "MIL",
+      "awayTeam": "CHI",
+      "homeScore": 108,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-11-16",
+      "homeTeam": "NJN",
+      "awayTeam": "DET",
+      "homeScore": 89,
+      "awayScore": 80
+    },
+    {
+      "date": "1980-11-16",
+      "homeTeam": "PHX",
+      "awayTeam": "POR",
+      "homeScore": 119,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "ATL",
+      "awayTeam": "SAS",
+      "homeScore": 97,
+      "awayScore": 93
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "CHI",
+      "awayTeam": "BOS",
+      "homeScore": 112,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "CLE",
+      "awayTeam": "SDC",
+      "homeScore": 104,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "DAL",
+      "awayTeam": "PHX",
+      "homeScore": 91,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 97,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "HOU",
+      "awayTeam": "SEA",
+      "homeScore": 138,
+      "awayScore": 118
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "LAL",
+      "awayTeam": "KCK",
+      "homeScore": 107,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "NYK",
+      "awayTeam": "PHI",
+      "homeScore": 99,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "POR",
+      "awayTeam": "DEN",
+      "homeScore": 122,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "UTA",
+      "awayTeam": "MIL",
+      "homeScore": 93,
+      "awayScore": 126
+    },
+    {
+      "date": "1980-11-18",
+      "homeTeam": "WSB",
+      "awayTeam": "GSW",
+      "homeScore": 97,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-11-19",
+      "homeTeam": "IND",
+      "awayTeam": "BOS",
+      "homeScore": 91,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-11-19",
+      "homeTeam": "NJN",
+      "awayTeam": "SAS",
+      "homeScore": 104,
+      "awayScore": 112
+    },
+    {
+      "date": "1980-11-19",
+      "homeTeam": "PHI",
+      "awayTeam": "GSW",
+      "homeScore": 110,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-11-20",
+      "homeTeam": "CLE",
+      "awayTeam": "HOU",
+      "homeScore": 114,
+      "awayScore": 117
+    },
+    {
+      "date": "1980-11-20",
+      "homeTeam": "DET",
+      "awayTeam": "SDC",
+      "homeScore": 97,
+      "awayScore": 90
+    },
+    {
+      "date": "1980-11-20",
+      "homeTeam": "PHX",
+      "awayTeam": "LAL",
+      "homeScore": 102,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-11-20",
+      "homeTeam": "POR",
+      "awayTeam": "MIL",
+      "homeScore": 93,
+      "awayScore": 97
+    },
+    {
+      "date": "1980-11-21",
+      "homeTeam": "BOS",
+      "awayTeam": "GSW",
+      "homeScore": 108,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-11-21",
+      "homeTeam": "CHI",
+      "awayTeam": "NYK",
+      "homeScore": 130,
+      "awayScore": 121
+    },
+    {
+      "date": "1980-11-21",
+      "homeTeam": "DAL",
+      "awayTeam": "SEA",
+      "homeScore": 91,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-11-21",
+      "homeTeam": "DEN",
+      "awayTeam": "KCK",
+      "homeScore": 134,
+      "awayScore": 121
+    },
+    {
+      "date": "1980-11-21",
+      "homeTeam": "LAL",
+      "awayTeam": "PHX",
+      "homeScore": 116,
+      "awayScore": 88
+    },
+    {
+      "date": "1980-11-21",
+      "homeTeam": "NJN",
+      "awayTeam": "HOU",
+      "homeScore": 108,
+      "awayScore": 116
+    },
+    {
+      "date": "1980-11-21",
+      "homeTeam": "PHI",
+      "awayTeam": "IND",
+      "homeScore": 97,
+      "awayScore": 88
+    },
+    {
+      "date": "1980-11-21",
+      "homeTeam": "WSB",
+      "awayTeam": "SDC",
+      "homeScore": 102,
+      "awayScore": 90
+    },
+    {
+      "date": "1980-11-22",
+      "homeTeam": "ATL",
+      "awayTeam": "UTA",
+      "homeScore": 99,
+      "awayScore": 93
+    },
+    {
+      "date": "1980-11-22",
+      "homeTeam": "CHI",
+      "awayTeam": "WSB",
+      "homeScore": 114,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-11-22",
+      "homeTeam": "CLE",
+      "awayTeam": "BOS",
+      "homeScore": 113,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-11-22",
+      "homeTeam": "DET",
+      "awayTeam": "NJN",
+      "homeScore": 117,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-11-22",
+      "homeTeam": "IND",
+      "awayTeam": "HOU",
+      "homeScore": 129,
+      "awayScore": 120
+    },
+    {
+      "date": "1980-11-22",
+      "homeTeam": "NYK",
+      "awayTeam": "GSW",
+      "homeScore": 110,
+      "awayScore": 116
+    },
+    {
+      "date": "1980-11-22",
+      "homeTeam": "SAS",
+      "awayTeam": "PHI",
+      "homeScore": 101,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-11-23",
+      "homeTeam": "LAL",
+      "awayTeam": "MIL",
+      "homeScore": 94,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-11-23",
+      "homeTeam": "PHX",
+      "awayTeam": "DEN",
+      "homeScore": 131,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-11-23",
+      "homeTeam": "POR",
+      "awayTeam": "DAL",
+      "homeScore": 116,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-11-23",
+      "homeTeam": "SDC",
+      "awayTeam": "SEA",
+      "homeScore": 110,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-11-24",
+      "homeTeam": "NYK",
+      "awayTeam": "HOU",
+      "homeScore": 113,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-11-25",
+      "homeTeam": "ATL",
+      "awayTeam": "POR",
+      "homeScore": 112,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-11-25",
+      "homeTeam": "DAL",
+      "awayTeam": "PHI",
+      "homeScore": 92,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-11-25",
+      "homeTeam": "SDC",
+      "awayTeam": "DEN",
+      "homeScore": 108,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-11-26",
+      "homeTeam": "BOS",
+      "awayTeam": "POR",
+      "homeScore": 126,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-11-26",
+      "homeTeam": "CLE",
+      "awayTeam": "NYK",
+      "homeScore": 113,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-11-26",
+      "homeTeam": "DEN",
+      "awayTeam": "SDC",
+      "homeScore": 113,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-11-26",
+      "homeTeam": "DET",
+      "awayTeam": "UTA",
+      "homeScore": 97,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-11-26",
+      "homeTeam": "HOU",
+      "awayTeam": "PHI",
+      "homeScore": 100,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-11-26",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 110,
+      "awayScore": 89
+    },
+    {
+      "date": "1980-11-26",
+      "homeTeam": "KCK",
+      "awayTeam": "NJN",
+      "homeScore": 118,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-11-26",
+      "homeTeam": "PHX",
+      "awayTeam": "SEA",
+      "homeScore": 113,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-11-26",
+      "homeTeam": "SAS",
+      "awayTeam": "CHI",
+      "homeScore": 125,
+      "awayScore": 122
+    },
+    {
+      "date": "1980-11-27",
+      "homeTeam": "GSW",
+      "awayTeam": "LAL",
+      "homeScore": 119,
+      "awayScore": 128
+    },
+    {
+      "date": "1980-11-27",
+      "homeTeam": "WSB",
+      "awayTeam": "IND",
+      "homeScore": 123,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-11-28",
+      "homeTeam": "BOS",
+      "awayTeam": "NYK",
+      "homeScore": 120,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-11-28",
+      "homeTeam": "CLE",
+      "awayTeam": "WSB",
+      "homeScore": 126,
+      "awayScore": 105
+    },
+    {
+      "date": "1980-11-28",
+      "homeTeam": "DAL",
+      "awayTeam": "DEN",
+      "homeScore": 117,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-11-28",
+      "homeTeam": "DET",
+      "awayTeam": "KCK",
+      "homeScore": 104,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-11-28",
+      "homeTeam": "MIL",
+      "awayTeam": "ATL",
+      "homeScore": 113,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-11-28",
+      "homeTeam": "NJN",
+      "awayTeam": "UTA",
+      "homeScore": 122,
+      "awayScore": 95
+    },
+    {
+      "date": "1980-11-28",
+      "homeTeam": "PHI",
+      "awayTeam": "POR",
+      "homeScore": 116,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-11-28",
+      "homeTeam": "PHX",
+      "awayTeam": "CHI",
+      "homeScore": 102,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-11-28",
+      "homeTeam": "SAS",
+      "awayTeam": "HOU",
+      "homeScore": 115,
+      "awayScore": 124
+    },
+    {
+      "date": "1980-11-28",
+      "homeTeam": "SEA",
+      "awayTeam": "SDC",
+      "homeScore": 92,
+      "awayScore": 93
+    },
+    {
+      "date": "1980-11-29",
+      "homeTeam": "ATL",
+      "awayTeam": "DET",
+      "homeScore": 95,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-11-29",
+      "homeTeam": "DEN",
+      "awayTeam": "LAL",
+      "homeScore": 123,
+      "awayScore": 124
+    },
+    {
+      "date": "1980-11-29",
+      "homeTeam": "GSW",
+      "awayTeam": "PHX",
+      "homeScore": 108,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-11-29",
+      "homeTeam": "HOU",
+      "awayTeam": "DAL",
+      "homeScore": 115,
+      "awayScore": 90
+    },
+    {
+      "date": "1980-11-29",
+      "homeTeam": "IND",
+      "awayTeam": "CLE",
+      "homeScore": 117,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-11-29",
+      "homeTeam": "KCK",
+      "awayTeam": "SAS",
+      "homeScore": 104,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-11-29",
+      "homeTeam": "NYK",
+      "awayTeam": "POR",
+      "homeScore": 111,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-11-29",
+      "homeTeam": "PHI",
+      "awayTeam": "UTA",
+      "homeScore": 113,
+      "awayScore": 93
+    },
+    {
+      "date": "1980-11-29",
+      "homeTeam": "WSB",
+      "awayTeam": "MIL",
+      "homeScore": 98,
+      "awayScore": 89
+    },
+    {
+      "date": "1980-11-30",
+      "homeTeam": "LAL",
+      "awayTeam": "CHI",
+      "homeScore": 108,
+      "awayScore": 122
+    },
+    {
+      "date": "1980-11-30",
+      "homeTeam": "MIL",
+      "awayTeam": "BOS",
+      "homeScore": 107,
+      "awayScore": 105
+    },
+    {
+      "date": "1980-11-30",
+      "homeTeam": "PHX",
+      "awayTeam": "HOU",
+      "homeScore": 117,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-11-30",
+      "homeTeam": "SDC",
+      "awayTeam": "GSW",
+      "homeScore": 120,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-11-30",
+      "homeTeam": "SEA",
+      "awayTeam": "NJN",
+      "homeScore": 113,
+      "awayScore": 89
+    },
+    {
+      "date": "1980-12-02",
+      "homeTeam": "ATL",
+      "awayTeam": "PHI",
+      "homeScore": 112,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-12-02",
+      "homeTeam": "DAL",
+      "awayTeam": "CLE",
+      "homeScore": 102,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-12-02",
+      "homeTeam": "DEN",
+      "awayTeam": "CHI",
+      "homeScore": 124,
+      "awayScore": 129
+    },
+    {
+      "date": "1980-12-02",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 85,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-12-02",
+      "homeTeam": "MIL",
+      "awayTeam": "UTA",
+      "homeScore": 119,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-12-02",
+      "homeTeam": "NYK",
+      "awayTeam": "IND",
+      "homeScore": 96,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-12-02",
+      "homeTeam": "POR",
+      "awayTeam": "NJN",
+      "homeScore": 105,
+      "awayScore": 118
+    },
+    {
+      "date": "1980-12-02",
+      "homeTeam": "SAS",
+      "awayTeam": "PHX",
+      "homeScore": 107,
+      "awayScore": 122
+    },
+    {
+      "date": "1980-12-02",
+      "homeTeam": "WSB",
+      "awayTeam": "KCK",
+      "homeScore": 107,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-12-03",
+      "homeTeam": "BOS",
+      "awayTeam": "ATL",
+      "homeScore": 106,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-12-03",
+      "homeTeam": "GSW",
+      "awayTeam": "NJN",
+      "homeScore": 131,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-12-03",
+      "homeTeam": "HOU",
+      "awayTeam": "CLE",
+      "homeScore": 118,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-12-03",
+      "homeTeam": "IND",
+      "awayTeam": "WSB",
+      "homeScore": 128,
+      "awayScore": 115
+    },
+    {
+      "date": "1980-12-03",
+      "homeTeam": "KCK",
+      "awayTeam": "PHX",
+      "homeScore": 103,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-03",
+      "homeTeam": "LAL",
+      "awayTeam": "SDC",
+      "homeScore": 114,
+      "awayScore": 120
+    },
+    {
+      "date": "1980-12-03",
+      "homeTeam": "PHI",
+      "awayTeam": "NYK",
+      "homeScore": 104,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-12-03",
+      "homeTeam": "SEA",
+      "awayTeam": "CHI",
+      "homeScore": 113,
+      "awayScore": 105
+    },
+    {
+      "date": "1980-12-04",
+      "homeTeam": "SAS",
+      "awayTeam": "CLE",
+      "homeScore": 130,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-04",
+      "homeTeam": "SDC",
+      "awayTeam": "POR",
+      "homeScore": 100,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-12-04",
+      "homeTeam": "UTA",
+      "awayTeam": "DEN",
+      "homeScore": 122,
+      "awayScore": 118
+    },
+    {
+      "date": "1980-12-05",
+      "homeTeam": "BOS",
+      "awayTeam": "DAL",
+      "homeScore": 97,
+      "awayScore": 87
+    },
+    {
+      "date": "1980-12-05",
+      "homeTeam": "DEN",
+      "awayTeam": "GSW",
+      "homeScore": 114,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-12-05",
+      "homeTeam": "KCK",
+      "awayTeam": "HOU",
+      "homeScore": 108,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-05",
+      "homeTeam": "MIL",
+      "awayTeam": "IND",
+      "homeScore": 102,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-05",
+      "homeTeam": "PHI",
+      "awayTeam": "ATL",
+      "homeScore": 104,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-05",
+      "homeTeam": "PHX",
+      "awayTeam": "NJN",
+      "homeScore": 88,
+      "awayScore": 90
+    },
+    {
+      "date": "1980-12-05",
+      "homeTeam": "POR",
+      "awayTeam": "CHI",
+      "homeScore": 116,
+      "awayScore": 115
+    },
+    {
+      "date": "1980-12-05",
+      "homeTeam": "WSB",
+      "awayTeam": "DET",
+      "homeScore": 103,
+      "awayScore": 92
+    },
+    {
+      "date": "1980-12-06",
+      "homeTeam": "ATL",
+      "awayTeam": "DAL",
+      "homeScore": 110,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-12-06",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 101,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-06",
+      "homeTeam": "GSW",
+      "awayTeam": "LAL",
+      "homeScore": 119,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-12-06",
+      "homeTeam": "HOU",
+      "awayTeam": "DEN",
+      "homeScore": 111,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-12-06",
+      "homeTeam": "IND",
+      "awayTeam": "KCK",
+      "homeScore": 107,
+      "awayScore": 88
+    },
+    {
+      "date": "1980-12-06",
+      "homeTeam": "NYK",
+      "awayTeam": "MIL",
+      "homeScore": 104,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-12-06",
+      "homeTeam": "UTA",
+      "awayTeam": "SEA",
+      "homeScore": 98,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-12-07",
+      "homeTeam": "BOS",
+      "awayTeam": "WSB",
+      "homeScore": 103,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-12-07",
+      "homeTeam": "LAL",
+      "awayTeam": "UTA",
+      "homeScore": 113,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-07",
+      "homeTeam": "PHX",
+      "awayTeam": "GSW",
+      "homeScore": 106,
+      "awayScore": 88
+    },
+    {
+      "date": "1980-12-07",
+      "homeTeam": "POR",
+      "awayTeam": "SAS",
+      "homeScore": 116,
+      "awayScore": 115
+    },
+    {
+      "date": "1980-12-07",
+      "homeTeam": "SDC",
+      "awayTeam": "NJN",
+      "homeScore": 98,
+      "awayScore": 95
+    },
+    {
+      "date": "1980-12-08",
+      "homeTeam": "SEA",
+      "awayTeam": "SAS",
+      "homeScore": 104,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-12-09",
+      "homeTeam": "ATL",
+      "awayTeam": "SDC",
+      "homeScore": 114,
+      "awayScore": 87
+    },
+    {
+      "date": "1980-12-09",
+      "homeTeam": "BOS",
+      "awayTeam": "MIL",
+      "homeScore": 112,
+      "awayScore": 89
+    },
+    {
+      "date": "1980-12-09",
+      "homeTeam": "CHI",
+      "awayTeam": "PHX",
+      "homeScore": 108,
+      "awayScore": 123
+    },
+    {
+      "date": "1980-12-09",
+      "homeTeam": "CLE",
+      "awayTeam": "PHI",
+      "homeScore": 83,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-12-09",
+      "homeTeam": "DAL",
+      "awayTeam": "LAL",
+      "homeScore": 92,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-12-09",
+      "homeTeam": "NYK",
+      "awayTeam": "WSB",
+      "homeScore": 107,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-12-09",
+      "homeTeam": "POR",
+      "awayTeam": "SEA",
+      "homeScore": 111,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-12-09",
+      "homeTeam": "UTA",
+      "awayTeam": "SAS",
+      "homeScore": 90,
+      "awayScore": 115
+    },
+    {
+      "date": "1980-12-10",
+      "homeTeam": "DEN",
+      "awayTeam": "DAL",
+      "homeScore": 116,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-12-10",
+      "homeTeam": "DET",
+      "awayTeam": "ATL",
+      "homeScore": 92,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-10",
+      "homeTeam": "GSW",
+      "awayTeam": "SEA",
+      "homeScore": 103,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-12-10",
+      "homeTeam": "HOU",
+      "awayTeam": "LAL",
+      "homeScore": 108,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-12-10",
+      "homeTeam": "IND",
+      "awayTeam": "PHX",
+      "homeScore": 102,
+      "awayScore": 90
+    },
+    {
+      "date": "1980-12-10",
+      "homeTeam": "KCK",
+      "awayTeam": "SDC",
+      "homeScore": 112,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-10",
+      "homeTeam": "NJN",
+      "awayTeam": "NYK",
+      "homeScore": 104,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-12-10",
+      "homeTeam": "PHI",
+      "awayTeam": "CHI",
+      "homeScore": 113,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-10",
+      "homeTeam": "WSB",
+      "awayTeam": "BOS",
+      "homeScore": 99,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-12-11",
+      "homeTeam": "CLE",
+      "awayTeam": "IND",
+      "homeScore": 100,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-12-11",
+      "homeTeam": "MIL",
+      "awayTeam": "NYK",
+      "homeScore": 119,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-12-11",
+      "homeTeam": "SAS",
+      "awayTeam": "KCK",
+      "homeScore": 122,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-12-12",
+      "homeTeam": "BOS",
+      "awayTeam": "NJN",
+      "homeScore": 119,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-12-12",
+      "homeTeam": "CHI",
+      "awayTeam": "UTA",
+      "homeScore": 118,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-12-12",
+      "homeTeam": "DAL",
+      "awayTeam": "SDC",
+      "homeScore": 112,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-12-12",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 101,
+      "awayScore": 95
+    },
+    {
+      "date": "1980-12-12",
+      "homeTeam": "PHI",
+      "awayTeam": "WSB",
+      "homeScore": 95,
+      "awayScore": 79
+    },
+    {
+      "date": "1980-12-12",
+      "homeTeam": "POR",
+      "awayTeam": "HOU",
+      "homeScore": 106,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-12",
+      "homeTeam": "SEA",
+      "awayTeam": "LAL",
+      "homeScore": 107,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-12-13",
+      "homeTeam": "ATL",
+      "awayTeam": "MIL",
+      "homeScore": 122,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-12-13",
+      "homeTeam": "CHI",
+      "awayTeam": "BOS",
+      "homeScore": 95,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-12-13",
+      "homeTeam": "CLE",
+      "awayTeam": "UTA",
+      "homeScore": 110,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-12-13",
+      "homeTeam": "GSW",
+      "awayTeam": "HOU",
+      "homeScore": 97,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-12-13",
+      "homeTeam": "KCK",
+      "awayTeam": "DAL",
+      "homeScore": 114,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-12-13",
+      "homeTeam": "NYK",
+      "awayTeam": "DET",
+      "homeScore": 100,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-12-13",
+      "homeTeam": "SAS",
+      "awayTeam": "DEN",
+      "homeScore": 147,
+      "awayScore": 123
+    },
+    {
+      "date": "1980-12-13",
+      "homeTeam": "WSB",
+      "awayTeam": "IND",
+      "homeScore": 114,
+      "awayScore": 105
+    },
+    {
+      "date": "1980-12-14",
+      "homeTeam": "LAL",
+      "awayTeam": "GSW",
+      "homeScore": 122,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-12-14",
+      "homeTeam": "MIL",
+      "awayTeam": "SAS",
+      "homeScore": 115,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-12-14",
+      "homeTeam": "NJN",
+      "awayTeam": "PHI",
+      "homeScore": 107,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-12-14",
+      "homeTeam": "PHX",
+      "awayTeam": "POR",
+      "homeScore": 110,
+      "awayScore": 116
+    },
+    {
+      "date": "1980-12-14",
+      "homeTeam": "SDC",
+      "awayTeam": "SEA",
+      "homeScore": 91,
+      "awayScore": 81
+    },
+    {
+      "date": "1980-12-16",
+      "homeTeam": "ATL",
+      "awayTeam": "NJN",
+      "homeScore": 131,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-12-16",
+      "homeTeam": "DAL",
+      "awayTeam": "SAS",
+      "homeScore": 83,
+      "awayScore": 89
+    },
+    {
+      "date": "1980-12-16",
+      "homeTeam": "DEN",
+      "awayTeam": "KCK",
+      "homeScore": 118,
+      "awayScore": 133
+    },
+    {
+      "date": "1980-12-16",
+      "homeTeam": "IND",
+      "awayTeam": "PHI",
+      "homeScore": 107,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-12-16",
+      "homeTeam": "NYK",
+      "awayTeam": "UTA",
+      "homeScore": 112,
+      "awayScore": 97
+    },
+    {
+      "date": "1980-12-16",
+      "homeTeam": "SDC",
+      "awayTeam": "LAL",
+      "homeScore": 97,
+      "awayScore": 92
+    },
+    {
+      "date": "1980-12-16",
+      "homeTeam": "WSB",
+      "awayTeam": "CHI",
+      "homeScore": 94,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-12-17",
+      "homeTeam": "BOS",
+      "awayTeam": "CHI",
+      "homeScore": 115,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-12-17",
+      "homeTeam": "DET",
+      "awayTeam": "NYK",
+      "homeScore": 103,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-12-17",
+      "homeTeam": "GSW",
+      "awayTeam": "POR",
+      "homeScore": 113,
+      "awayScore": 115
+    },
+    {
+      "date": "1980-12-17",
+      "homeTeam": "HOU",
+      "awayTeam": "SAS",
+      "homeScore": 107,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-12-17",
+      "homeTeam": "NJN",
+      "awayTeam": "MIL",
+      "homeScore": 115,
+      "awayScore": 112
+    },
+    {
+      "date": "1980-12-17",
+      "homeTeam": "PHI",
+      "awayTeam": "CLE",
+      "homeScore": 103,
+      "awayScore": 79
+    },
+    {
+      "date": "1980-12-17",
+      "homeTeam": "PHX",
+      "awayTeam": "DAL",
+      "homeScore": 115,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-12-17",
+      "homeTeam": "SEA",
+      "awayTeam": "KCK",
+      "homeScore": 101,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-12-18",
+      "homeTeam": "CLE",
+      "awayTeam": "DEN",
+      "homeScore": 130,
+      "awayScore": 122
+    },
+    {
+      "date": "1980-12-18",
+      "homeTeam": "MIL",
+      "awayTeam": "DET",
+      "homeScore": 121,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-12-18",
+      "homeTeam": "SDC",
+      "awayTeam": "DAL",
+      "homeScore": 102,
+      "awayScore": 92
+    },
+    {
+      "date": "1980-12-18",
+      "homeTeam": "UTA",
+      "awayTeam": "ATL",
+      "homeScore": 97,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-12-19",
+      "homeTeam": "BOS",
+      "awayTeam": "HOU",
+      "homeScore": 133,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-12-19",
+      "homeTeam": "CHI",
+      "awayTeam": "MIL",
+      "homeScore": 129,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-12-19",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 109,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-12-19",
+      "homeTeam": "LAL",
+      "awayTeam": "POR",
+      "homeScore": 106,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-12-19",
+      "homeTeam": "PHI",
+      "awayTeam": "NJN",
+      "homeScore": 122,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-12-19",
+      "homeTeam": "PHX",
+      "awayTeam": "UTA",
+      "homeScore": 108,
+      "awayScore": 90
+    },
+    {
+      "date": "1980-12-19",
+      "homeTeam": "SAS",
+      "awayTeam": "GSW",
+      "homeScore": 126,
+      "awayScore": 111
+    },
+    {
+      "date": "1980-12-19",
+      "homeTeam": "SEA",
+      "awayTeam": "ATL",
+      "homeScore": 95,
+      "awayScore": 92
+    },
+    {
+      "date": "1980-12-19",
+      "homeTeam": "WSB",
+      "awayTeam": "NYK",
+      "homeScore": 96,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-12-20",
+      "homeTeam": "CHI",
+      "awayTeam": "HOU",
+      "homeScore": 133,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-12-20",
+      "homeTeam": "CLE",
+      "awayTeam": "BOS",
+      "homeScore": 102,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-12-20",
+      "homeTeam": "DAL",
+      "awayTeam": "GSW",
+      "homeScore": 98,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-12-20",
+      "homeTeam": "KCK",
+      "awayTeam": "IND",
+      "homeScore": 103,
+      "awayScore": 107
+    },
+    {
+      "date": "1980-12-20",
+      "homeTeam": "NYK",
+      "awayTeam": "DEN",
+      "homeScore": 120,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-12-20",
+      "homeTeam": "POR",
+      "awayTeam": "ATL",
+      "homeScore": 122,
+      "awayScore": 119
+    },
+    {
+      "date": "1980-12-20",
+      "homeTeam": "UTA",
+      "awayTeam": "SDC",
+      "homeScore": 91,
+      "awayScore": 103
+    },
+    {
+      "date": "1980-12-21",
+      "homeTeam": "LAL",
+      "awayTeam": "SAS",
+      "homeScore": 135,
+      "awayScore": 122
+    },
+    {
+      "date": "1980-12-21",
+      "homeTeam": "MIL",
+      "awayTeam": "HOU",
+      "homeScore": 123,
+      "awayScore": 91
+    },
+    {
+      "date": "1980-12-21",
+      "homeTeam": "POR",
+      "awayTeam": "PHX",
+      "homeScore": 100,
+      "awayScore": 111
+    },
+    {
+      "date": "1980-12-21",
+      "homeTeam": "SDC",
+      "awayTeam": "DET",
+      "homeScore": 117,
+      "awayScore": 97
+    },
+    {
+      "date": "1980-12-22",
+      "homeTeam": "SEA",
+      "awayTeam": "PHX",
+      "homeScore": 98,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-12-23",
+      "homeTeam": "ATL",
+      "awayTeam": "WSB",
+      "homeScore": 100,
+      "awayScore": 83
+    },
+    {
+      "date": "1980-12-23",
+      "homeTeam": "BOS",
+      "awayTeam": "DEN",
+      "homeScore": 136,
+      "awayScore": 128
+    },
+    {
+      "date": "1980-12-23",
+      "homeTeam": "CHI",
+      "awayTeam": "NYK",
+      "homeScore": 117,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-12-23",
+      "homeTeam": "CLE",
+      "awayTeam": "KCK",
+      "homeScore": 100,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-12-23",
+      "homeTeam": "DAL",
+      "awayTeam": "UTA",
+      "homeScore": 96,
+      "awayScore": 101
+    },
+    {
+      "date": "1980-12-23",
+      "homeTeam": "HOU",
+      "awayTeam": "GSW",
+      "homeScore": 99,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-12-23",
+      "homeTeam": "IND",
+      "awayTeam": "NJN",
+      "homeScore": 125,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-12-23",
+      "homeTeam": "PHX",
+      "awayTeam": "DET",
+      "homeScore": 113,
+      "awayScore": 104
+    },
+    {
+      "date": "1980-12-23",
+      "homeTeam": "POR",
+      "awayTeam": "LAL",
+      "homeScore": 108,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-12-25",
+      "homeTeam": "NYK",
+      "awayTeam": "BOS",
+      "homeScore": 108,
+      "awayScore": 117
+    },
+    {
+      "date": "1980-12-25",
+      "homeTeam": "PHX",
+      "awayTeam": "SAS",
+      "homeScore": 131,
+      "awayScore": 111
+    },
+    {
+      "date": "1980-12-25",
+      "homeTeam": "POR",
+      "awayTeam": "GSW",
+      "homeScore": 115,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-12-25",
+      "homeTeam": "WSB",
+      "awayTeam": "NJN",
+      "homeScore": 109,
+      "awayScore": 94
+    },
+    {
+      "date": "1980-12-26",
+      "homeTeam": "CLE",
+      "awayTeam": "CHI",
+      "homeScore": 98,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-26",
+      "homeTeam": "DAL",
+      "awayTeam": "DEN",
+      "homeScore": 119,
+      "awayScore": 111
+    },
+    {
+      "date": "1980-12-26",
+      "homeTeam": "DET",
+      "awayTeam": "HOU",
+      "homeScore": 94,
+      "awayScore": 114
+    },
+    {
+      "date": "1980-12-26",
+      "homeTeam": "KCK",
+      "awayTeam": "PHI",
+      "homeScore": 103,
+      "awayScore": 113
+    },
+    {
+      "date": "1980-12-26",
+      "homeTeam": "LAL",
+      "awayTeam": "IND",
+      "homeScore": 116,
+      "awayScore": 115
+    },
+    {
+      "date": "1980-12-26",
+      "homeTeam": "NJN",
+      "awayTeam": "ATL",
+      "homeScore": 95,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-12-26",
+      "homeTeam": "SEA",
+      "awayTeam": "POR",
+      "homeScore": 90,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-12-26",
+      "homeTeam": "UTA",
+      "awayTeam": "GSW",
+      "homeScore": 109,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-12-27",
+      "homeTeam": "ATL",
+      "awayTeam": "BOS",
+      "homeScore": 107,
+      "awayScore": 112
+    },
+    {
+      "date": "1980-12-27",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 104,
+      "awayScore": 97
+    },
+    {
+      "date": "1980-12-27",
+      "homeTeam": "DEN",
+      "awayTeam": "PHI",
+      "homeScore": 125,
+      "awayScore": 121
+    },
+    {
+      "date": "1980-12-27",
+      "homeTeam": "GSW",
+      "awayTeam": "SEA",
+      "homeScore": 104,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-12-27",
+      "homeTeam": "MIL",
+      "awayTeam": "DAL",
+      "homeScore": 112,
+      "awayScore": 96
+    },
+    {
+      "date": "1980-12-27",
+      "homeTeam": "NYK",
+      "awayTeam": "KCK",
+      "homeScore": 100,
+      "awayScore": 99
+    },
+    {
+      "date": "1980-12-27",
+      "homeTeam": "PHX",
+      "awayTeam": "LAL",
+      "homeScore": 116,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-12-27",
+      "homeTeam": "SAS",
+      "awayTeam": "UTA",
+      "homeScore": 142,
+      "awayScore": 117
+    },
+    {
+      "date": "1980-12-27",
+      "homeTeam": "SDC",
+      "awayTeam": "IND",
+      "homeScore": 121,
+      "awayScore": 109
+    },
+    {
+      "date": "1980-12-27",
+      "homeTeam": "WSB",
+      "awayTeam": "HOU",
+      "homeScore": 115,
+      "awayScore": 97
+    },
+    {
+      "date": "1980-12-28",
+      "homeTeam": "LAL",
+      "awayTeam": "PHI",
+      "homeScore": 122,
+      "awayScore": 116
+    },
+    {
+      "date": "1980-12-28",
+      "homeTeam": "NJN",
+      "awayTeam": "KCK",
+      "homeScore": 99,
+      "awayScore": 102
+    },
+    {
+      "date": "1980-12-29",
+      "homeTeam": "CLE",
+      "awayTeam": "DAL",
+      "homeScore": 112,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "ATL",
+      "awayTeam": "DET",
+      "homeScore": 96,
+      "awayScore": 89
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "CHI",
+      "awayTeam": "NJN",
+      "homeScore": 121,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "DEN",
+      "awayTeam": "IND",
+      "homeScore": 127,
+      "awayScore": 110
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "HOU",
+      "awayTeam": "SDC",
+      "homeScore": 104,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "KCK",
+      "awayTeam": "GSW",
+      "homeScore": 104,
+      "awayScore": 106
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "NYK",
+      "awayTeam": "DAL",
+      "homeScore": 100,
+      "awayScore": 98
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "PHX",
+      "awayTeam": "BOS",
+      "homeScore": 97,
+      "awayScore": 116
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "POR",
+      "awayTeam": "PHI",
+      "homeScore": 109,
+      "awayScore": 108
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "SAS",
+      "awayTeam": "SEA",
+      "homeScore": 102,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "UTA",
+      "awayTeam": "LAL",
+      "homeScore": 110,
+      "awayScore": 100
+    },
+    {
+      "date": "1980-12-30",
+      "homeTeam": "WSB",
+      "awayTeam": "MIL",
+      "homeScore": 94,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-01-01",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 117,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-01-01",
+      "homeTeam": "POR",
+      "awayTeam": "DEN",
+      "homeScore": 122,
+      "awayScore": 119
+    },
+    {
+      "date": "1981-01-01",
+      "homeTeam": "SDC",
+      "awayTeam": "BOS",
+      "homeScore": 85,
+      "awayScore": 88
+    },
+    {
+      "date": "1981-01-02",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 106,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-01-02",
+      "homeTeam": "DAL",
+      "awayTeam": "HOU",
+      "homeScore": 120,
+      "awayScore": 124
+    },
+    {
+      "date": "1981-01-02",
+      "homeTeam": "DEN",
+      "awayTeam": "PHX",
+      "homeScore": 132,
+      "awayScore": 133
+    },
+    {
+      "date": "1981-01-02",
+      "homeTeam": "DET",
+      "awayTeam": "NYK",
+      "homeScore": 102,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-01-02",
+      "homeTeam": "GSW",
+      "awayTeam": "BOS",
+      "homeScore": 121,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-01-02",
+      "homeTeam": "KCK",
+      "awayTeam": "UTA",
+      "homeScore": 101,
+      "awayScore": 95
+    },
+    {
+      "date": "1981-01-02",
+      "homeTeam": "NJN",
+      "awayTeam": "CLE",
+      "homeScore": 105,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-01-02",
+      "homeTeam": "SAS",
+      "awayTeam": "LAL",
+      "homeScore": 118,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-01-02",
+      "homeTeam": "SEA",
+      "awayTeam": "PHI",
+      "homeScore": 117,
+      "awayScore": 120
+    },
+    {
+      "date": "1981-01-02",
+      "homeTeam": "WSB",
+      "awayTeam": "CHI",
+      "homeScore": 82,
+      "awayScore": 92
+    },
+    {
+      "date": "1981-01-03",
+      "homeTeam": "CHI",
+      "awayTeam": "SAS",
+      "homeScore": 111,
+      "awayScore": 119
+    },
+    {
+      "date": "1981-01-03",
+      "homeTeam": "CLE",
+      "awayTeam": "WSB",
+      "homeScore": 132,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-01-03",
+      "homeTeam": "GSW",
+      "awayTeam": "PHI",
+      "homeScore": 105,
+      "awayScore": 119
+    },
+    {
+      "date": "1981-01-03",
+      "homeTeam": "HOU",
+      "awayTeam": "DEN",
+      "homeScore": 132,
+      "awayScore": 134
+    },
+    {
+      "date": "1981-01-03",
+      "homeTeam": "IND",
+      "awayTeam": "SDC",
+      "homeScore": 128,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-01-03",
+      "homeTeam": "NYK",
+      "awayTeam": "ATL",
+      "homeScore": 131,
+      "awayScore": 95
+    },
+    {
+      "date": "1981-01-03",
+      "homeTeam": "UTA",
+      "awayTeam": "POR",
+      "homeScore": 109,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-01-04",
+      "homeTeam": "MIL",
+      "awayTeam": "SDC",
+      "homeScore": 128,
+      "awayScore": 95
+    },
+    {
+      "date": "1981-01-04",
+      "homeTeam": "NJN",
+      "awayTeam": "IND",
+      "homeScore": 104,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-01-04",
+      "homeTeam": "POR",
+      "awayTeam": "BOS",
+      "homeScore": 111,
+      "awayScore": 120
+    },
+    {
+      "date": "1981-01-05",
+      "homeTeam": "SEA",
+      "awayTeam": "DAL",
+      "homeScore": 103,
+      "awayScore": 89
+    },
+    {
+      "date": "1981-01-06",
+      "homeTeam": "ATL",
+      "awayTeam": "PHX",
+      "homeScore": 106,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-01-06",
+      "homeTeam": "CHI",
+      "awayTeam": "SDC",
+      "homeScore": 108,
+      "awayScore": 93
+    },
+    {
+      "date": "1981-01-06",
+      "homeTeam": "LAL",
+      "awayTeam": "WSB",
+      "homeScore": 107,
+      "awayScore": 98
+    },
+    {
+      "date": "1981-01-06",
+      "homeTeam": "MIL",
+      "awayTeam": "NJN",
+      "homeScore": 102,
+      "awayScore": 86
+    },
+    {
+      "date": "1981-01-06",
+      "homeTeam": "NYK",
+      "awayTeam": "SAS",
+      "homeScore": 108,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-01-06",
+      "homeTeam": "POR",
+      "awayTeam": "DET",
+      "homeScore": 110,
+      "awayScore": 90
+    },
+    {
+      "date": "1981-01-07",
+      "homeTeam": "BOS",
+      "awayTeam": "PHX",
+      "homeScore": 108,
+      "awayScore": 90
+    },
+    {
+      "date": "1981-01-07",
+      "homeTeam": "DEN",
+      "awayTeam": "UTA",
+      "homeScore": 117,
+      "awayScore": 121
+    },
+    {
+      "date": "1981-01-07",
+      "homeTeam": "GSW",
+      "awayTeam": "DAL",
+      "homeScore": 109,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-01-07",
+      "homeTeam": "HOU",
+      "awayTeam": "KCK",
+      "homeScore": 108,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-01-07",
+      "homeTeam": "IND",
+      "awayTeam": "NJN",
+      "homeScore": 112,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-01-07",
+      "homeTeam": "PHI",
+      "awayTeam": "SAS",
+      "homeScore": 135,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-01-07",
+      "homeTeam": "SEA",
+      "awayTeam": "DET",
+      "homeScore": 99,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-01-08",
+      "homeTeam": "KCK",
+      "awayTeam": "WSB",
+      "homeScore": 136,
+      "awayScore": 118
+    },
+    {
+      "date": "1981-01-08",
+      "homeTeam": "MIL",
+      "awayTeam": "ATL",
+      "homeScore": 98,
+      "awayScore": 95
+    },
+    {
+      "date": "1981-01-08",
+      "homeTeam": "NYK",
+      "awayTeam": "IND",
+      "homeScore": 115,
+      "awayScore": 116
+    },
+    {
+      "date": "1981-01-08",
+      "homeTeam": "UTA",
+      "awayTeam": "DAL",
+      "homeScore": 99,
+      "awayScore": 97
+    },
+    {
+      "date": "1981-01-09",
+      "homeTeam": "ATL",
+      "awayTeam": "CLE",
+      "homeScore": 107,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-01-09",
+      "homeTeam": "BOS",
+      "awayTeam": "CHI",
+      "homeScore": 117,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-01-09",
+      "homeTeam": "LAL",
+      "awayTeam": "SEA",
+      "homeScore": 92,
+      "awayScore": 87
+    },
+    {
+      "date": "1981-01-09",
+      "homeTeam": "NJN",
+      "awayTeam": "PHX",
+      "homeScore": 95,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-01-09",
+      "homeTeam": "PHI",
+      "awayTeam": "HOU",
+      "homeScore": 107,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-01-09",
+      "homeTeam": "SAS",
+      "awayTeam": "POR",
+      "homeScore": 102,
+      "awayScore": 86
+    },
+    {
+      "date": "1981-01-09",
+      "homeTeam": "SDC",
+      "awayTeam": "DEN",
+      "homeScore": 116,
+      "awayScore": 130
+    },
+    {
+      "date": "1981-01-10",
+      "homeTeam": "CHI",
+      "awayTeam": "PHI",
+      "homeScore": 102,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-01-10",
+      "homeTeam": "CLE",
+      "awayTeam": "NYK",
+      "homeScore": 99,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-01-10",
+      "homeTeam": "DAL",
+      "awayTeam": "WSB",
+      "homeScore": 94,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-01-10",
+      "homeTeam": "GSW",
+      "awayTeam": "DET",
+      "homeScore": 105,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-01-10",
+      "homeTeam": "HOU",
+      "awayTeam": "POR",
+      "homeScore": 106,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-01-10",
+      "homeTeam": "IND",
+      "awayTeam": "MIL",
+      "homeScore": 106,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-01-10",
+      "homeTeam": "NJN",
+      "awayTeam": "BOS",
+      "homeScore": 115,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-01-10",
+      "homeTeam": "SEA",
+      "awayTeam": "DEN",
+      "homeScore": 119,
+      "awayScore": 116
+    },
+    {
+      "date": "1981-01-10",
+      "homeTeam": "UTA",
+      "awayTeam": "KCK",
+      "homeScore": 92,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-01-11",
+      "homeTeam": "KCK",
+      "awayTeam": "SDC",
+      "homeScore": 105,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-01-11",
+      "homeTeam": "LAL",
+      "awayTeam": "DET",
+      "homeScore": 117,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-01-11",
+      "homeTeam": "MIL",
+      "awayTeam": "PHX",
+      "homeScore": 123,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-01-11",
+      "homeTeam": "SAS",
+      "awayTeam": "WSB",
+      "homeScore": 137,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-01-11",
+      "homeTeam": "SEA",
+      "awayTeam": "GSW",
+      "homeScore": 98,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-01-13",
+      "homeTeam": "CLE",
+      "awayTeam": "LAL",
+      "homeScore": 104,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-01-13",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": 112,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-01-13",
+      "homeTeam": "DEN",
+      "awayTeam": "ATL",
+      "homeScore": 135,
+      "awayScore": 132
+    },
+    {
+      "date": "1981-01-13",
+      "homeTeam": "DET",
+      "awayTeam": "MIL",
+      "homeScore": 96,
+      "awayScore": 119
+    },
+    {
+      "date": "1981-01-13",
+      "homeTeam": "NYK",
+      "awayTeam": "BOS",
+      "homeScore": 89,
+      "awayScore": 93
+    },
+    {
+      "date": "1981-01-13",
+      "homeTeam": "PHX",
+      "awayTeam": "SEA",
+      "homeScore": 104,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-01-14",
+      "homeTeam": "BOS",
+      "awayTeam": "CLE",
+      "homeScore": 120,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-01-14",
+      "homeTeam": "GSW",
+      "awayTeam": "UTA",
+      "homeScore": 107,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-01-14",
+      "homeTeam": "HOU",
+      "awayTeam": "CHI",
+      "homeScore": 109,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-01-14",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": 101,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-01-14",
+      "homeTeam": "KCK",
+      "awayTeam": "POR",
+      "homeScore": 91,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-01-14",
+      "homeTeam": "PHI",
+      "awayTeam": "NJN",
+      "homeScore": 110,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-01-14",
+      "homeTeam": "PHX",
+      "awayTeam": "DEN",
+      "homeScore": 128,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-01-14",
+      "homeTeam": "SAS",
+      "awayTeam": "NYK",
+      "homeScore": 116,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-01-14",
+      "homeTeam": "SDC",
+      "awayTeam": "ATL",
+      "homeScore": 106,
+      "awayScore": 85
+    },
+    {
+      "date": "1981-01-14",
+      "homeTeam": "WSB",
+      "awayTeam": "LAL",
+      "homeScore": 114,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-01-15",
+      "homeTeam": "DET",
+      "awayTeam": "WSB",
+      "homeScore": 89,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-01-15",
+      "homeTeam": "MIL",
+      "awayTeam": "PHI",
+      "homeScore": 113,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-01-16",
+      "homeTeam": "BOS",
+      "awayTeam": "SAS",
+      "homeScore": 94,
+      "awayScore": 85
+    },
+    {
+      "date": "1981-01-16",
+      "homeTeam": "CHI",
+      "awayTeam": "POR",
+      "homeScore": 112,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-01-16",
+      "homeTeam": "DAL",
+      "awayTeam": "NYK",
+      "homeScore": 118,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-01-16",
+      "homeTeam": "GSW",
+      "awayTeam": "ATL",
+      "homeScore": 110,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-01-16",
+      "homeTeam": "IND",
+      "awayTeam": "SEA",
+      "homeScore": 94,
+      "awayScore": 95
+    },
+    {
+      "date": "1981-01-16",
+      "homeTeam": "MIL",
+      "awayTeam": "KCK",
+      "homeScore": 118,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-01-16",
+      "homeTeam": "NJN",
+      "awayTeam": "LAL",
+      "homeScore": 111,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-01-16",
+      "homeTeam": "PHI",
+      "awayTeam": "CLE",
+      "homeScore": 137,
+      "awayScore": 119
+    },
+    {
+      "date": "1981-01-16",
+      "homeTeam": "PHX",
+      "awayTeam": "HOU",
+      "homeScore": 92,
+      "awayScore": 89
+    },
+    {
+      "date": "1981-01-16",
+      "homeTeam": "UTA",
+      "awayTeam": "SDC",
+      "homeScore": 112,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-01-17",
+      "homeTeam": "CHI",
+      "awayTeam": "CLE",
+      "homeScore": 98,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-01-17",
+      "homeTeam": "DET",
+      "awayTeam": "NJN",
+      "homeScore": 104,
+      "awayScore": 116
+    },
+    {
+      "date": "1981-01-17",
+      "homeTeam": "HOU",
+      "awayTeam": "NYK",
+      "homeScore": 98,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-01-17",
+      "homeTeam": "KCK",
+      "awayTeam": "DEN",
+      "homeScore": 122,
+      "awayScore": 123
+    },
+    {
+      "date": "1981-01-17",
+      "homeTeam": "WSB",
+      "awayTeam": "SAS",
+      "homeScore": 103,
+      "awayScore": 93
+    },
+    {
+      "date": "1981-01-18",
+      "homeTeam": "BOS",
+      "awayTeam": "LAL",
+      "homeScore": 98,
+      "awayScore": 96
+    },
+    {
+      "date": "1981-01-18",
+      "homeTeam": "DEN",
+      "awayTeam": "HOU",
+      "homeScore": 97,
+      "awayScore": 98
+    },
+    {
+      "date": "1981-01-18",
+      "homeTeam": "IND",
+      "awayTeam": "UTA",
+      "homeScore": 110,
+      "awayScore": 89
+    },
+    {
+      "date": "1981-01-18",
+      "homeTeam": "MIL",
+      "awayTeam": "POR",
+      "homeScore": 110,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-01-18",
+      "homeTeam": "PHI",
+      "awayTeam": "SEA",
+      "homeScore": 113,
+      "awayScore": 92
+    },
+    {
+      "date": "1981-01-18",
+      "homeTeam": "PHX",
+      "awayTeam": "ATL",
+      "homeScore": 120,
+      "awayScore": 86
+    },
+    {
+      "date": "1981-01-18",
+      "homeTeam": "SDC",
+      "awayTeam": "DAL",
+      "homeScore": 115,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-01-18",
+      "homeTeam": "WSB",
+      "awayTeam": "NJN",
+      "homeScore": 110,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-01-19",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 92,
+      "awayScore": 90
+    },
+    {
+      "date": "1981-01-20",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": 121,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-01-20",
+      "homeTeam": "CLE",
+      "awayTeam": "POR",
+      "homeScore": 99,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-01-20",
+      "homeTeam": "DAL",
+      "awayTeam": "KCK",
+      "homeScore": 91,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-01-20",
+      "homeTeam": "DET",
+      "awayTeam": "PHI",
+      "homeScore": 83,
+      "awayScore": 75
+    },
+    {
+      "date": "1981-01-20",
+      "homeTeam": "NYK",
+      "awayTeam": "SEA",
+      "homeScore": 98,
+      "awayScore": 97
+    },
+    {
+      "date": "1981-01-20",
+      "homeTeam": "SAS",
+      "awayTeam": "PHX",
+      "homeScore": 119,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-01-20",
+      "homeTeam": "WSB",
+      "awayTeam": "UTA",
+      "homeScore": 121,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-01-21",
+      "homeTeam": "BOS",
+      "awayTeam": "UTA",
+      "homeScore": 117,
+      "awayScore": 87
+    },
+    {
+      "date": "1981-01-21",
+      "homeTeam": "DEN",
+      "awayTeam": "SDC",
+      "homeScore": 116,
+      "awayScore": 125
+    },
+    {
+      "date": "1981-01-21",
+      "homeTeam": "GSW",
+      "awayTeam": "MIL",
+      "homeScore": 98,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-01-21",
+      "homeTeam": "HOU",
+      "awayTeam": "PHX",
+      "homeScore": 106,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-01-21",
+      "homeTeam": "KCK",
+      "awayTeam": "SAS",
+      "homeScore": 115,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-01-21",
+      "homeTeam": "LAL",
+      "awayTeam": "ATL",
+      "homeScore": 116,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-01-21",
+      "homeTeam": "NJN",
+      "awayTeam": "SEA",
+      "homeScore": 126,
+      "awayScore": 122
+    },
+    {
+      "date": "1981-01-21",
+      "homeTeam": "PHI",
+      "awayTeam": "IND",
+      "homeScore": 118,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-01-22",
+      "homeTeam": "CLE",
+      "awayTeam": "NJN",
+      "homeScore": 108,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-01-22",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 92,
+      "awayScore": 125
+    },
+    {
+      "date": "1981-01-22",
+      "homeTeam": "SDC",
+      "awayTeam": "NYK",
+      "homeScore": 93,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-01-22",
+      "homeTeam": "WSB",
+      "awayTeam": "PHI",
+      "homeScore": 116,
+      "awayScore": 128
+    },
+    {
+      "date": "1981-01-23",
+      "homeTeam": "ATL",
+      "awayTeam": "CLE",
+      "homeScore": 98,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-01-23",
+      "homeTeam": "BOS",
+      "awayTeam": "IND",
+      "homeScore": 104,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-01-23",
+      "homeTeam": "CHI",
+      "awayTeam": "DAL",
+      "homeScore": 106,
+      "awayScore": 98
+    },
+    {
+      "date": "1981-01-23",
+      "homeTeam": "KCK",
+      "awayTeam": "HOU",
+      "homeScore": 113,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-01-23",
+      "homeTeam": "LAL",
+      "awayTeam": "DEN",
+      "homeScore": 110,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-01-23",
+      "homeTeam": "PHX",
+      "awayTeam": "MIL",
+      "homeScore": 131,
+      "awayScore": 122
+    },
+    {
+      "date": "1981-01-23",
+      "homeTeam": "POR",
+      "awayTeam": "NYK",
+      "homeScore": 117,
+      "awayScore": 90
+    },
+    {
+      "date": "1981-01-23",
+      "homeTeam": "UTA",
+      "awayTeam": "GSW",
+      "homeScore": 101,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-01-23",
+      "homeTeam": "WSB",
+      "awayTeam": "SEA",
+      "homeScore": 103,
+      "awayScore": 91
+    },
+    {
+      "date": "1981-01-24",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 102,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-01-24",
+      "homeTeam": "DEN",
+      "awayTeam": "SAS",
+      "homeScore": 129,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-01-24",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 117,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-01-24",
+      "homeTeam": "GSW",
+      "awayTeam": "NYK",
+      "homeScore": 117,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-01-24",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 106,
+      "awayScore": 91
+    },
+    {
+      "date": "1981-01-24",
+      "homeTeam": "IND",
+      "awayTeam": "DAL",
+      "homeScore": 107,
+      "awayScore": 89
+    },
+    {
+      "date": "1981-01-24",
+      "homeTeam": "SDC",
+      "awayTeam": "MIL",
+      "homeScore": 117,
+      "awayScore": 121
+    },
+    {
+      "date": "1981-01-25",
+      "homeTeam": "BOS",
+      "awayTeam": "SEA",
+      "homeScore": 115,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-01-25",
+      "homeTeam": "NJN",
+      "awayTeam": "WSB",
+      "homeScore": 100,
+      "awayScore": 118
+    },
+    {
+      "date": "1981-01-25",
+      "homeTeam": "PHI",
+      "awayTeam": "PHX",
+      "homeScore": 98,
+      "awayScore": 93
+    },
+    {
+      "date": "1981-01-25",
+      "homeTeam": "POR",
+      "awayTeam": "SAS",
+      "homeScore": 118,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-01-26",
+      "homeTeam": "LAL",
+      "awayTeam": "POR",
+      "homeScore": 124,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-01-26",
+      "homeTeam": "NYK",
+      "awayTeam": "PHX",
+      "homeScore": 94,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-01-26",
+      "homeTeam": "UTA",
+      "awayTeam": "DET",
+      "homeScore": 102,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-01-27",
+      "homeTeam": "ATL",
+      "awayTeam": "WSB",
+      "homeScore": 104,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-01-27",
+      "homeTeam": "CHI",
+      "awayTeam": "GSW",
+      "homeScore": 118,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-01-27",
+      "homeTeam": "CLE",
+      "awayTeam": "IND",
+      "homeScore": 114,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-01-27",
+      "homeTeam": "DAL",
+      "awayTeam": "NJN",
+      "homeScore": 100,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-01-27",
+      "homeTeam": "DEN",
+      "awayTeam": "DET",
+      "homeScore": 143,
+      "awayScore": 123
+    },
+    {
+      "date": "1981-01-27",
+      "homeTeam": "LAL",
+      "awayTeam": "UTA",
+      "homeScore": 111,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-01-27",
+      "homeTeam": "SDC",
+      "awayTeam": "KCK",
+      "homeScore": 119,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-01-28",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 104,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-01-28",
+      "homeTeam": "HOU",
+      "awayTeam": "NJN",
+      "homeScore": 111,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-01-28",
+      "homeTeam": "IND",
+      "awayTeam": "GSW",
+      "homeScore": 108,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-01-28",
+      "homeTeam": "SEA",
+      "awayTeam": "MIL",
+      "homeScore": 110,
+      "awayScore": 119
+    },
+    {
+      "date": "1981-01-28",
+      "homeTeam": "WSB",
+      "awayTeam": "PHX",
+      "homeScore": 108,
+      "awayScore": 98
+    },
+    {
+      "date": "1981-01-29",
+      "homeTeam": "ATL",
+      "awayTeam": "NYK",
+      "homeScore": 111,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-01-29",
+      "homeTeam": "CHI",
+      "awayTeam": "BOS",
+      "homeScore": 108,
+      "awayScore": 85
+    },
+    {
+      "date": "1981-01-29",
+      "homeTeam": "CLE",
+      "awayTeam": "PHX",
+      "homeScore": 115,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-01-29",
+      "homeTeam": "DEN",
+      "awayTeam": "MIL",
+      "homeScore": 131,
+      "awayScore": 118
+    },
+    {
+      "date": "1981-01-29",
+      "homeTeam": "DET",
+      "awayTeam": "GSW",
+      "homeScore": 112,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-01-29",
+      "homeTeam": "LAL",
+      "awayTeam": "KCK",
+      "homeScore": 118,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-01-29",
+      "homeTeam": "SAS",
+      "awayTeam": "NJN",
+      "homeScore": 122,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-01-29",
+      "homeTeam": "SDC",
+      "awayTeam": "POR",
+      "homeScore": 106,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-01-29",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 99,
+      "awayScore": 97
+    },
+    {
+      "date": "1981-02-03",
+      "homeTeam": "ATL",
+      "awayTeam": "PHI",
+      "homeScore": 93,
+      "awayScore": 97
+    },
+    {
+      "date": "1981-02-03",
+      "homeTeam": "DAL",
+      "awayTeam": "KCK",
+      "homeScore": 100,
+      "awayScore": 121
+    },
+    {
+      "date": "1981-02-03",
+      "homeTeam": "HOU",
+      "awayTeam": "DEN",
+      "homeScore": 135,
+      "awayScore": 128
+    },
+    {
+      "date": "1981-02-03",
+      "homeTeam": "MIL",
+      "awayTeam": "IND",
+      "homeScore": 99,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-02-03",
+      "homeTeam": "NYK",
+      "awayTeam": "SDC",
+      "homeScore": 101,
+      "awayScore": 98
+    },
+    {
+      "date": "1981-02-03",
+      "homeTeam": "POR",
+      "awayTeam": "WSB",
+      "homeScore": 111,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-02-03",
+      "homeTeam": "SAS",
+      "awayTeam": "DET",
+      "homeScore": 102,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-02-04",
+      "homeTeam": "CLE",
+      "awayTeam": "CHI",
+      "homeScore": 96,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-02-04",
+      "homeTeam": "DEN",
+      "awayTeam": "SAS",
+      "homeScore": 132,
+      "awayScore": 135
+    },
+    {
+      "date": "1981-02-04",
+      "homeTeam": "GSW",
+      "awayTeam": "POR",
+      "homeScore": 115,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-02-04",
+      "homeTeam": "HOU",
+      "awayTeam": "DAL",
+      "homeScore": 116,
+      "awayScore": 68
+    },
+    {
+      "date": "1981-02-04",
+      "homeTeam": "IND",
+      "awayTeam": "LAL",
+      "homeScore": 96,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-02-04",
+      "homeTeam": "KCK",
+      "awayTeam": "DET",
+      "homeScore": 91,
+      "awayScore": 90
+    },
+    {
+      "date": "1981-02-04",
+      "homeTeam": "NJN",
+      "awayTeam": "SDC",
+      "homeScore": 102,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-02-04",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 107,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-02-04",
+      "homeTeam": "PHX",
+      "awayTeam": "UTA",
+      "homeScore": 114,
+      "awayScore": 89
+    },
+    {
+      "date": "1981-02-04",
+      "homeTeam": "SEA",
+      "awayTeam": "WSB",
+      "homeScore": 108,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-02-05",
+      "homeTeam": "MIL",
+      "awayTeam": "BOS",
+      "homeScore": 113,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "BOS",
+      "awayTeam": "IND",
+      "homeScore": 111,
+      "awayScore": 98
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "CHI",
+      "awayTeam": "NYK",
+      "homeScore": 94,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "CLE",
+      "awayTeam": "MIL",
+      "homeScore": 99,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "DAL",
+      "awayTeam": "ATL",
+      "homeScore": 98,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "DET",
+      "awayTeam": "LAL",
+      "homeScore": 102,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "GSW",
+      "awayTeam": "WSB",
+      "homeScore": 110,
+      "awayScore": 116
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "PHI",
+      "awayTeam": "SDC",
+      "homeScore": 129,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "PHX",
+      "awayTeam": "HOU",
+      "homeScore": 112,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "SAS",
+      "awayTeam": "POR",
+      "homeScore": 122,
+      "awayScore": 96
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "SEA",
+      "awayTeam": "KCK",
+      "homeScore": 92,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-02-06",
+      "homeTeam": "UTA",
+      "awayTeam": "DEN",
+      "homeScore": 116,
+      "awayScore": 120
+    },
+    {
+      "date": "1981-02-07",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 98,
+      "awayScore": 90
+    },
+    {
+      "date": "1981-02-07",
+      "homeTeam": "DEN",
+      "awayTeam": "GSW",
+      "homeScore": 135,
+      "awayScore": 125
+    },
+    {
+      "date": "1981-02-07",
+      "homeTeam": "HOU",
+      "awayTeam": "ATL",
+      "homeScore": 87,
+      "awayScore": 81
+    },
+    {
+      "date": "1981-02-07",
+      "homeTeam": "IND",
+      "awayTeam": "CLE",
+      "homeScore": 99,
+      "awayScore": 96
+    },
+    {
+      "date": "1981-02-07",
+      "homeTeam": "NYK",
+      "awayTeam": "NJN",
+      "homeScore": 113,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-02-07",
+      "homeTeam": "SEA",
+      "awayTeam": "UTA",
+      "homeScore": 96,
+      "awayScore": 89
+    },
+    {
+      "date": "1981-02-08",
+      "homeTeam": "BOS",
+      "awayTeam": "SDC",
+      "homeScore": 123,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-02-08",
+      "homeTeam": "DET",
+      "awayTeam": "IND",
+      "homeScore": 101,
+      "awayScore": 124
+    },
+    {
+      "date": "1981-02-08",
+      "homeTeam": "GSW",
+      "awayTeam": "UTA",
+      "homeScore": 107,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-02-08",
+      "homeTeam": "MIL",
+      "awayTeam": "CHI",
+      "homeScore": 128,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-02-08",
+      "homeTeam": "NJN",
+      "awayTeam": "NYK",
+      "homeScore": 102,
+      "awayScore": 116
+    },
+    {
+      "date": "1981-02-08",
+      "homeTeam": "PHI",
+      "awayTeam": "LAL",
+      "homeScore": 102,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-02-08",
+      "homeTeam": "PHX",
+      "awayTeam": "WSB",
+      "homeScore": 113,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-02-08",
+      "homeTeam": "POR",
+      "awayTeam": "KCK",
+      "homeScore": 129,
+      "awayScore": 123
+    },
+    {
+      "date": "1981-02-08",
+      "homeTeam": "SAS",
+      "awayTeam": "DAL",
+      "homeScore": 102,
+      "awayScore": 98
+    },
+    {
+      "date": "1981-02-08",
+      "homeTeam": "SEA",
+      "awayTeam": "DEN",
+      "homeScore": 133,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-02-10",
+      "homeTeam": "ATL",
+      "awayTeam": "GSW",
+      "homeScore": 116,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-02-10",
+      "homeTeam": "CHI",
+      "awayTeam": "KCK",
+      "homeScore": 116,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-02-10",
+      "homeTeam": "DAL",
+      "awayTeam": "DET",
+      "homeScore": 95,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-02-10",
+      "homeTeam": "DEN",
+      "awayTeam": "WSB",
+      "homeScore": 110,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-02-10",
+      "homeTeam": "SDC",
+      "awayTeam": "PHX",
+      "homeScore": 93,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-02-10",
+      "homeTeam": "SEA",
+      "awayTeam": "BOS",
+      "homeScore": 108,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-02-11",
+      "homeTeam": "HOU",
+      "awayTeam": "SAS",
+      "homeScore": 108,
+      "awayScore": 89
+    },
+    {
+      "date": "1981-02-11",
+      "homeTeam": "IND",
+      "awayTeam": "MIL",
+      "homeScore": 101,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-02-11",
+      "homeTeam": "KCK",
+      "awayTeam": "UTA",
+      "homeScore": 99,
+      "awayScore": 87
+    },
+    {
+      "date": "1981-02-11",
+      "homeTeam": "LAL",
+      "awayTeam": "BOS",
+      "homeScore": 91,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-02-11",
+      "homeTeam": "NJN",
+      "awayTeam": "CHI",
+      "homeScore": 135,
+      "awayScore": 133
+    },
+    {
+      "date": "1981-02-11",
+      "homeTeam": "PHI",
+      "awayTeam": "CLE",
+      "homeScore": 122,
+      "awayScore": 120
+    },
+    {
+      "date": "1981-02-11",
+      "homeTeam": "PHX",
+      "awayTeam": "DAL",
+      "homeScore": 119,
+      "awayScore": 97
+    },
+    {
+      "date": "1981-02-12",
+      "homeTeam": "CLE",
+      "awayTeam": "NYK",
+      "homeScore": 111,
+      "awayScore": 122
+    },
+    {
+      "date": "1981-02-12",
+      "homeTeam": "POR",
+      "awayTeam": "SEA",
+      "homeScore": 109,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-02-12",
+      "homeTeam": "SAS",
+      "awayTeam": "ATL",
+      "homeScore": 110,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-02-13",
+      "homeTeam": "DEN",
+      "awayTeam": "POR",
+      "homeScore": 162,
+      "awayScore": 143
+    },
+    {
+      "date": "1981-02-13",
+      "homeTeam": "HOU",
+      "awayTeam": "LAL",
+      "homeScore": 105,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-02-13",
+      "homeTeam": "KCK",
+      "awayTeam": "ATL",
+      "homeScore": 113,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-02-13",
+      "homeTeam": "MIL",
+      "awayTeam": "GSW",
+      "homeScore": 106,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-02-13",
+      "homeTeam": "NJN",
+      "awayTeam": "IND",
+      "homeScore": 103,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-02-13",
+      "homeTeam": "NYK",
+      "awayTeam": "DET",
+      "homeScore": 120,
+      "awayScore": 92
+    },
+    {
+      "date": "1981-02-13",
+      "homeTeam": "PHI",
+      "awayTeam": "WSB",
+      "homeScore": 102,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-02-13",
+      "homeTeam": "PHX",
+      "awayTeam": "SDC",
+      "homeScore": 110,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-02-13",
+      "homeTeam": "UTA",
+      "awayTeam": "BOS",
+      "homeScore": 104,
+      "awayScore": 89
+    },
+    {
+      "date": "1981-02-14",
+      "homeTeam": "CHI",
+      "awayTeam": "SEA",
+      "homeScore": 134,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-02-14",
+      "homeTeam": "CLE",
+      "awayTeam": "GSW",
+      "homeScore": 108,
+      "awayScore": 90
+    },
+    {
+      "date": "1981-02-14",
+      "homeTeam": "DAL",
+      "awayTeam": "SAS",
+      "homeScore": 99,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-02-14",
+      "homeTeam": "DET",
+      "awayTeam": "WSB",
+      "homeScore": 105,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-02-14",
+      "homeTeam": "HOU",
+      "awayTeam": "MIL",
+      "homeScore": 112,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-02-15",
+      "homeTeam": "DEN",
+      "awayTeam": "BOS",
+      "homeScore": 118,
+      "awayScore": 120
+    },
+    {
+      "date": "1981-02-15",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 113,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-02-15",
+      "homeTeam": "KCK",
+      "awayTeam": "SEA",
+      "homeScore": 107,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-02-15",
+      "homeTeam": "LAL",
+      "awayTeam": "DAL",
+      "homeScore": 107,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-02-15",
+      "homeTeam": "NJN",
+      "awayTeam": "GSW",
+      "homeScore": 134,
+      "awayScore": 132
+    },
+    {
+      "date": "1981-02-15",
+      "homeTeam": "PHI",
+      "awayTeam": "ATL",
+      "homeScore": 116,
+      "awayScore": 98
+    },
+    {
+      "date": "1981-02-15",
+      "homeTeam": "PHX",
+      "awayTeam": "NYK",
+      "homeScore": 101,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-02-15",
+      "homeTeam": "POR",
+      "awayTeam": "UTA",
+      "homeScore": 118,
+      "awayScore": 84
+    },
+    {
+      "date": "1981-02-15",
+      "homeTeam": "SAS",
+      "awayTeam": "MIL",
+      "homeScore": 110,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-02-17",
+      "homeTeam": "CLE",
+      "awayTeam": "DET",
+      "homeScore": 109,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-02-17",
+      "homeTeam": "DAL",
+      "awayTeam": "MIL",
+      "homeScore": 106,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-02-17",
+      "homeTeam": "LAL",
+      "awayTeam": "NYK",
+      "homeScore": 96,
+      "awayScore": 87
+    },
+    {
+      "date": "1981-02-17",
+      "homeTeam": "PHX",
+      "awayTeam": "GSW",
+      "homeScore": 118,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-02-17",
+      "homeTeam": "SAS",
+      "awayTeam": "BOS",
+      "homeScore": 116,
+      "awayScore": 128
+    },
+    {
+      "date": "1981-02-17",
+      "homeTeam": "SDC",
+      "awayTeam": "CHI",
+      "homeScore": 128,
+      "awayScore": 95
+    },
+    {
+      "date": "1981-02-17",
+      "homeTeam": "UTA",
+      "awayTeam": "SEA",
+      "homeScore": 98,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-02-17",
+      "homeTeam": "WSB",
+      "awayTeam": "POR",
+      "homeScore": 104,
+      "awayScore": 124
+    },
+    {
+      "date": "1981-02-18",
+      "homeTeam": "GSW",
+      "awayTeam": "CHI",
+      "homeScore": 103,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-02-18",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": 96,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-02-18",
+      "homeTeam": "KCK",
+      "awayTeam": "BOS",
+      "homeScore": 114,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-02-18",
+      "homeTeam": "NJN",
+      "awayTeam": "CLE",
+      "homeScore": 110,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-02-18",
+      "homeTeam": "PHI",
+      "awayTeam": "DET",
+      "homeScore": 111,
+      "awayScore": 97
+    },
+    {
+      "date": "1981-02-18",
+      "homeTeam": "SEA",
+      "awayTeam": "NYK",
+      "homeScore": 103,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-02-19",
+      "homeTeam": "CLE",
+      "awayTeam": "SAS",
+      "homeScore": 118,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-02-19",
+      "homeTeam": "DEN",
+      "awayTeam": "PHX",
+      "homeScore": 127,
+      "awayScore": 126
+    },
+    {
+      "date": "1981-02-19",
+      "homeTeam": "DET",
+      "awayTeam": "POR",
+      "homeScore": 106,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-02-19",
+      "homeTeam": "SDC",
+      "awayTeam": "HOU",
+      "homeScore": 116,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-02-19",
+      "homeTeam": "WSB",
+      "awayTeam": "PHI",
+      "homeScore": 129,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-02-20",
+      "homeTeam": "GSW",
+      "awayTeam": "SDC",
+      "homeScore": 114,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-02-20",
+      "homeTeam": "IND",
+      "awayTeam": "SAS",
+      "homeScore": 109,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-02-20",
+      "homeTeam": "KCK",
+      "awayTeam": "MIL",
+      "homeScore": 112,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-02-20",
+      "homeTeam": "LAL",
+      "awayTeam": "HOU",
+      "homeScore": 107,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-02-20",
+      "homeTeam": "NJN",
+      "awayTeam": "POR",
+      "homeScore": 123,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-02-20",
+      "homeTeam": "NYK",
+      "awayTeam": "WSB",
+      "homeScore": 124,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-02-20",
+      "homeTeam": "PHI",
+      "awayTeam": "DAL",
+      "homeScore": 117,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-02-20",
+      "homeTeam": "SEA",
+      "awayTeam": "PHX",
+      "homeScore": 112,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-02-20",
+      "homeTeam": "UTA",
+      "awayTeam": "CHI",
+      "homeScore": 84,
+      "awayScore": 92
+    },
+    {
+      "date": "1981-02-21",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "homeScore": 105,
+      "awayScore": 118
+    },
+    {
+      "date": "1981-02-21",
+      "homeTeam": "DEN",
+      "awayTeam": "KCK",
+      "homeScore": 129,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-02-21",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 119,
+      "awayScore": 130
+    },
+    {
+      "date": "1981-02-22",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 116,
+      "awayScore": 121
+    },
+    {
+      "date": "1981-02-22",
+      "homeTeam": "GSW",
+      "awayTeam": "KCK",
+      "homeScore": 104,
+      "awayScore": 96
+    },
+    {
+      "date": "1981-02-22",
+      "homeTeam": "IND",
+      "awayTeam": "POR",
+      "homeScore": 109,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-02-22",
+      "homeTeam": "NJN",
+      "awayTeam": "DAL",
+      "homeScore": 109,
+      "awayScore": 132
+    },
+    {
+      "date": "1981-02-22",
+      "homeTeam": "NYK",
+      "awayTeam": "LAL",
+      "homeScore": 93,
+      "awayScore": 96
+    },
+    {
+      "date": "1981-02-22",
+      "homeTeam": "PHX",
+      "awayTeam": "PHI",
+      "homeScore": 116,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-02-22",
+      "homeTeam": "SAS",
+      "awayTeam": "DEN",
+      "homeScore": 133,
+      "awayScore": 129
+    },
+    {
+      "date": "1981-02-22",
+      "homeTeam": "SDC",
+      "awayTeam": "UTA",
+      "homeScore": 108,
+      "awayScore": 93
+    },
+    {
+      "date": "1981-02-22",
+      "homeTeam": "SEA",
+      "awayTeam": "HOU",
+      "homeScore": 96,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-02-22",
+      "homeTeam": "WSB",
+      "awayTeam": "MIL",
+      "homeScore": 93,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-02-23",
+      "homeTeam": "UTA",
+      "awayTeam": "HOU",
+      "homeScore": 102,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-02-24",
+      "homeTeam": "ATL",
+      "awayTeam": "NYK",
+      "homeScore": 117,
+      "awayScore": 120
+    },
+    {
+      "date": "1981-02-24",
+      "homeTeam": "CHI",
+      "awayTeam": "LAL",
+      "homeScore": 97,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-02-24",
+      "homeTeam": "DAL",
+      "awayTeam": "SEA",
+      "homeScore": 84,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-02-24",
+      "homeTeam": "DEN",
+      "awayTeam": "NJN",
+      "homeScore": 140,
+      "awayScore": 123
+    },
+    {
+      "date": "1981-02-24",
+      "homeTeam": "POR",
+      "awayTeam": "SDC",
+      "homeScore": 107,
+      "awayScore": 121
+    },
+    {
+      "date": "1981-02-24",
+      "homeTeam": "SAS",
+      "awayTeam": "GSW",
+      "homeScore": 131,
+      "awayScore": 126
+    },
+    {
+      "date": "1981-02-25",
+      "homeTeam": "BOS",
+      "awayTeam": "CLE",
+      "homeScore": 124,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-02-25",
+      "homeTeam": "HOU",
+      "awayTeam": "IND",
+      "homeScore": 101,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-02-25",
+      "homeTeam": "MIL",
+      "awayTeam": "LAL",
+      "homeScore": 126,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-02-25",
+      "homeTeam": "SDC",
+      "awayTeam": "PHI",
+      "homeScore": 95,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-02-25",
+      "homeTeam": "UTA",
+      "awayTeam": "NJN",
+      "homeScore": 132,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-02-25",
+      "homeTeam": "WSB",
+      "awayTeam": "NYK",
+      "homeScore": 120,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-02-26",
+      "homeTeam": "KCK",
+      "awayTeam": "DAL",
+      "homeScore": 105,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-02-26",
+      "homeTeam": "SAS",
+      "awayTeam": "SEA",
+      "homeScore": 123,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-02-27",
+      "homeTeam": "ATL",
+      "awayTeam": "BOS",
+      "homeScore": 102,
+      "awayScore": 132
+    },
+    {
+      "date": "1981-02-27",
+      "homeTeam": "CHI",
+      "awayTeam": "WSB",
+      "homeScore": 112,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-02-27",
+      "homeTeam": "DAL",
+      "awayTeam": "IND",
+      "homeScore": 111,
+      "awayScore": 118
+    },
+    {
+      "date": "1981-02-27",
+      "homeTeam": "DEN",
+      "awayTeam": "GSW",
+      "homeScore": 137,
+      "awayScore": 130
+    },
+    {
+      "date": "1981-02-27",
+      "homeTeam": "DET",
+      "awayTeam": "CLE",
+      "homeScore": 118,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-02-27",
+      "homeTeam": "HOU",
+      "awayTeam": "SEA",
+      "homeScore": 96,
+      "awayScore": 92
+    },
+    {
+      "date": "1981-02-27",
+      "homeTeam": "LAL",
+      "awayTeam": "NJN",
+      "homeScore": 107,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-02-27",
+      "homeTeam": "POR",
+      "awayTeam": "PHX",
+      "homeScore": 121,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-02-27",
+      "homeTeam": "UTA",
+      "awayTeam": "PHI",
+      "homeScore": 83,
+      "awayScore": 87
+    },
+    {
+      "date": "1981-02-28",
+      "homeTeam": "HOU",
+      "awayTeam": "SDC",
+      "homeScore": 103,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-02-28",
+      "homeTeam": "KCK",
+      "awayTeam": "GSW",
+      "homeScore": 101,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-02-28",
+      "homeTeam": "NYK",
+      "awayTeam": "CHI",
+      "homeScore": 97,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-03-01",
+      "homeTeam": "ATL",
+      "awayTeam": "SEA",
+      "homeScore": 108,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-03-01",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 114,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-03-01",
+      "homeTeam": "DAL",
+      "awayTeam": "SDC",
+      "homeScore": 99,
+      "awayScore": 91
+    },
+    {
+      "date": "1981-03-01",
+      "homeTeam": "DEN",
+      "awayTeam": "CLE",
+      "homeScore": 137,
+      "awayScore": 127
+    },
+    {
+      "date": "1981-03-01",
+      "homeTeam": "LAL",
+      "awayTeam": "PHX",
+      "homeScore": 96,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-03-01",
+      "homeTeam": "MIL",
+      "awayTeam": "WSB",
+      "homeScore": 137,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-03-01",
+      "homeTeam": "NJN",
+      "awayTeam": "DET",
+      "homeScore": 104,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-03-01",
+      "homeTeam": "POR",
+      "awayTeam": "UTA",
+      "homeScore": 108,
+      "awayScore": 97
+    },
+    {
+      "date": "1981-03-01",
+      "homeTeam": "SAS",
+      "awayTeam": "HOU",
+      "homeScore": 102,
+      "awayScore": 86
+    },
+    {
+      "date": "1981-03-03",
+      "homeTeam": "CHI",
+      "awayTeam": "NJN",
+      "homeScore": 128,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-03-03",
+      "homeTeam": "DAL",
+      "awayTeam": "BOS",
+      "homeScore": 105,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-03-03",
+      "homeTeam": "KCK",
+      "awayTeam": "LAL",
+      "homeScore": 98,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-03-03",
+      "homeTeam": "MIL",
+      "awayTeam": "DET",
+      "homeScore": 115,
+      "awayScore": 98
+    },
+    {
+      "date": "1981-03-03",
+      "homeTeam": "NYK",
+      "awayTeam": "ATL",
+      "homeScore": 93,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-03-03",
+      "homeTeam": "POR",
+      "awayTeam": "IND",
+      "homeScore": 117,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-03-03",
+      "homeTeam": "UTA",
+      "awayTeam": "WSB",
+      "homeScore": 93,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-03-04",
+      "homeTeam": "DEN",
+      "awayTeam": "LAL",
+      "homeScore": 123,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-03-04",
+      "homeTeam": "GSW",
+      "awayTeam": "UTA",
+      "homeScore": 107,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-03-04",
+      "homeTeam": "HOU",
+      "awayTeam": "BOS",
+      "homeScore": 101,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-03-04",
+      "homeTeam": "PHI",
+      "awayTeam": "CHI",
+      "homeScore": 100,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-03-04",
+      "homeTeam": "PHX",
+      "awayTeam": "CLE",
+      "homeScore": 126,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-03-04",
+      "homeTeam": "SAS",
+      "awayTeam": "KCK",
+      "homeScore": 97,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-03-04",
+      "homeTeam": "SDC",
+      "awayTeam": "WSB",
+      "homeScore": 103,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-03-04",
+      "homeTeam": "SEA",
+      "awayTeam": "IND",
+      "homeScore": 105,
+      "awayScore": 93
+    },
+    {
+      "date": "1981-03-05",
+      "homeTeam": "DET",
+      "awayTeam": "NYK",
+      "homeScore": 101,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-03-05",
+      "homeTeam": "KCK",
+      "awayTeam": "POR",
+      "homeScore": 106,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-03-05",
+      "homeTeam": "MIL",
+      "awayTeam": "ATL",
+      "homeScore": 107,
+      "awayScore": 91
+    },
+    {
+      "date": "1981-03-05",
+      "homeTeam": "UTA",
+      "awayTeam": "PHX",
+      "homeScore": 100,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-03-06",
+      "homeTeam": "ATL",
+      "awayTeam": "NJN",
+      "homeScore": 109,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-03-06",
+      "homeTeam": "GSW",
+      "awayTeam": "DAL",
+      "homeScore": 115,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-03-06",
+      "homeTeam": "HOU",
+      "awayTeam": "WSB",
+      "homeScore": 104,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-03-06",
+      "homeTeam": "IND",
+      "awayTeam": "BOS",
+      "homeScore": 110,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-03-06",
+      "homeTeam": "NYK",
+      "awayTeam": "MIL",
+      "homeScore": 111,
+      "awayScore": 122
+    },
+    {
+      "date": "1981-03-06",
+      "homeTeam": "PHI",
+      "awayTeam": "DEN",
+      "homeScore": 131,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-03-06",
+      "homeTeam": "PHX",
+      "awayTeam": "POR",
+      "homeScore": 128,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-03-06",
+      "homeTeam": "SDC",
+      "awayTeam": "CLE",
+      "homeScore": 140,
+      "awayScore": 125
+    },
+    {
+      "date": "1981-03-06",
+      "homeTeam": "SEA",
+      "awayTeam": "SAS",
+      "homeScore": 102,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-03-07",
+      "homeTeam": "ATL",
+      "awayTeam": "HOU",
+      "homeScore": 114,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-03-07",
+      "homeTeam": "DET",
+      "awayTeam": "DEN",
+      "homeScore": 109,
+      "awayScore": 121
+    },
+    {
+      "date": "1981-03-07",
+      "homeTeam": "GSW",
+      "awayTeam": "SEA",
+      "homeScore": 106,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-03-07",
+      "homeTeam": "UTA",
+      "awayTeam": "SDC",
+      "homeScore": 97,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-03-08",
+      "homeTeam": "BOS",
+      "awayTeam": "NYK",
+      "homeScore": 115,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-03-08",
+      "homeTeam": "IND",
+      "awayTeam": "DEN",
+      "homeScore": 129,
+      "awayScore": 119
+    },
+    {
+      "date": "1981-03-08",
+      "homeTeam": "KCK",
+      "awayTeam": "PHX",
+      "homeScore": 105,
+      "awayScore": 68
+    },
+    {
+      "date": "1981-03-08",
+      "homeTeam": "PHI",
+      "awayTeam": "MIL",
+      "homeScore": 123,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-03-08",
+      "homeTeam": "POR",
+      "awayTeam": "GSW",
+      "homeScore": 120,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-03-08",
+      "homeTeam": "SAS",
+      "awayTeam": "DAL",
+      "homeScore": 133,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-03-08",
+      "homeTeam": "SEA",
+      "awayTeam": "SDC",
+      "homeScore": 92,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-03-08",
+      "homeTeam": "WSB",
+      "awayTeam": "CHI",
+      "homeScore": 103,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-03-09",
+      "homeTeam": "MIL",
+      "awayTeam": "CLE",
+      "homeScore": 118,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-03-10",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": 116,
+      "awayScore": 118
+    },
+    {
+      "date": "1981-03-10",
+      "homeTeam": "DAL",
+      "awayTeam": "PHX",
+      "homeScore": 107,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-03-10",
+      "homeTeam": "DEN",
+      "awayTeam": "POR",
+      "homeScore": 137,
+      "awayScore": 142
+    },
+    {
+      "date": "1981-03-10",
+      "homeTeam": "IND",
+      "awayTeam": "PHI",
+      "homeScore": 102,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-03-10",
+      "homeTeam": "LAL",
+      "awayTeam": "SAS",
+      "homeScore": 118,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-03-10",
+      "homeTeam": "SDC",
+      "awayTeam": "KCK",
+      "homeScore": 100,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-03-11",
+      "homeTeam": "BOS",
+      "awayTeam": "MIL",
+      "homeScore": 122,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-03-11",
+      "homeTeam": "CLE",
+      "awayTeam": "SEA",
+      "homeScore": 95,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-03-11",
+      "homeTeam": "DET",
+      "awayTeam": "ATL",
+      "homeScore": 100,
+      "awayScore": 97
+    },
+    {
+      "date": "1981-03-11",
+      "homeTeam": "HOU",
+      "awayTeam": "GSW",
+      "homeScore": 109,
+      "awayScore": 92
+    },
+    {
+      "date": "1981-03-11",
+      "homeTeam": "NJN",
+      "awayTeam": "WSB",
+      "homeScore": 109,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-03-11",
+      "homeTeam": "PHI",
+      "awayTeam": "NYK",
+      "homeScore": 115,
+      "awayScore": 95
+    },
+    {
+      "date": "1981-03-12",
+      "homeTeam": "DAL",
+      "awayTeam": "GSW",
+      "homeScore": 120,
+      "awayScore": 118
+    },
+    {
+      "date": "1981-03-12",
+      "homeTeam": "MIL",
+      "awayTeam": "DEN",
+      "homeScore": 131,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-03-12",
+      "homeTeam": "SDC",
+      "awayTeam": "LAL",
+      "homeScore": 116,
+      "awayScore": 122
+    },
+    {
+      "date": "1981-03-12",
+      "homeTeam": "WSB",
+      "awayTeam": "IND",
+      "homeScore": 107,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-03-13",
+      "homeTeam": "ATL",
+      "awayTeam": "DEN",
+      "homeScore": 119,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-03-13",
+      "homeTeam": "BOS",
+      "awayTeam": "IND",
+      "homeScore": 94,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-03-13",
+      "homeTeam": "CLE",
+      "awayTeam": "NJN",
+      "homeScore": 125,
+      "awayScore": 140
+    },
+    {
+      "date": "1981-03-13",
+      "homeTeam": "DET",
+      "awayTeam": "SEA",
+      "homeScore": 100,
+      "awayScore": 102
+    },
+    {
+      "date": "1981-03-13",
+      "homeTeam": "HOU",
+      "awayTeam": "POR",
+      "homeScore": 126,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-03-13",
+      "homeTeam": "LAL",
+      "awayTeam": "KCK",
+      "homeScore": 116,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-03-13",
+      "homeTeam": "MIL",
+      "awayTeam": "PHI",
+      "homeScore": 120,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-03-13",
+      "homeTeam": "NYK",
+      "awayTeam": "CHI",
+      "homeScore": 127,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-03-14",
+      "homeTeam": "ATL",
+      "awayTeam": "CLE",
+      "homeScore": 110,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-03-14",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 101,
+      "awayScore": 82
+    },
+    {
+      "date": "1981-03-14",
+      "homeTeam": "IND",
+      "awayTeam": "DET",
+      "homeScore": 94,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-03-14",
+      "homeTeam": "SDC",
+      "awayTeam": "SAS",
+      "homeScore": 126,
+      "awayScore": 118
+    },
+    {
+      "date": "1981-03-15",
+      "homeTeam": "BOS",
+      "awayTeam": "NJN",
+      "homeScore": 133,
+      "awayScore": 125
+    },
+    {
+      "date": "1981-03-15",
+      "homeTeam": "DEN",
+      "awayTeam": "HOU",
+      "homeScore": 138,
+      "awayScore": 127
+    },
+    {
+      "date": "1981-03-15",
+      "homeTeam": "GSW",
+      "awayTeam": "SAS",
+      "homeScore": 112,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-03-15",
+      "homeTeam": "KCK",
+      "awayTeam": "CHI",
+      "homeScore": 87,
+      "awayScore": 97
+    },
+    {
+      "date": "1981-03-15",
+      "homeTeam": "LAL",
+      "awayTeam": "SDC",
+      "homeScore": 118,
+      "awayScore": 122
+    },
+    {
+      "date": "1981-03-15",
+      "homeTeam": "MIL",
+      "awayTeam": "SEA",
+      "homeScore": 132,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-03-15",
+      "homeTeam": "NYK",
+      "awayTeam": "PHI",
+      "homeScore": 120,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-03-15",
+      "homeTeam": "POR",
+      "awayTeam": "DAL",
+      "homeScore": 135,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-03-15",
+      "homeTeam": "WSB",
+      "awayTeam": "CLE",
+      "homeScore": 100,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-03-17",
+      "homeTeam": "CHI",
+      "awayTeam": "MIL",
+      "homeScore": 116,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-03-17",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "homeScore": 122,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-03-17",
+      "homeTeam": "DAL",
+      "awayTeam": "LAL",
+      "homeScore": 109,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-03-17",
+      "homeTeam": "DEN",
+      "awayTeam": "SEA",
+      "homeScore": 124,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-03-17",
+      "homeTeam": "NJN",
+      "awayTeam": "PHI",
+      "homeScore": 126,
+      "awayScore": 120
+    },
+    {
+      "date": "1981-03-17",
+      "homeTeam": "NYK",
+      "awayTeam": "IND",
+      "homeScore": 114,
+      "awayScore": 89
+    },
+    {
+      "date": "1981-03-17",
+      "homeTeam": "POR",
+      "awayTeam": "SDC",
+      "homeScore": 127,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-03-17",
+      "homeTeam": "SAS",
+      "awayTeam": "UTA",
+      "homeScore": 94,
+      "awayScore": 86
+    },
+    {
+      "date": "1981-03-17",
+      "homeTeam": "WSB",
+      "awayTeam": "BOS",
+      "homeScore": 91,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-03-18",
+      "homeTeam": "BOS",
+      "awayTeam": "ATL",
+      "homeScore": 97,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-03-18",
+      "homeTeam": "DET",
+      "awayTeam": "NJN",
+      "homeScore": 118,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-03-18",
+      "homeTeam": "GSW",
+      "awayTeam": "HOU",
+      "homeScore": 118,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-03-18",
+      "homeTeam": "KCK",
+      "awayTeam": "DEN",
+      "homeScore": 124,
+      "awayScore": 126
+    },
+    {
+      "date": "1981-03-18",
+      "homeTeam": "MIL",
+      "awayTeam": "NYK",
+      "homeScore": 103,
+      "awayScore": 116
+    },
+    {
+      "date": "1981-03-18",
+      "homeTeam": "PHI",
+      "awayTeam": "IND",
+      "homeScore": 107,
+      "awayScore": 95
+    },
+    {
+      "date": "1981-03-18",
+      "homeTeam": "PHX",
+      "awayTeam": "LAL",
+      "homeScore": 126,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-03-18",
+      "homeTeam": "UTA",
+      "awayTeam": "DAL",
+      "homeScore": 120,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-03-19",
+      "homeTeam": "CLE",
+      "awayTeam": "CHI",
+      "homeScore": 111,
+      "awayScore": 116
+    },
+    {
+      "date": "1981-03-19",
+      "homeTeam": "SDC",
+      "awayTeam": "GSW",
+      "homeScore": 139,
+      "awayScore": 113
+    },
+    {
+      "date": "1981-03-20",
+      "homeTeam": "BOS",
+      "awayTeam": "WSB",
+      "homeScore": 128,
+      "awayScore": 116
+    },
+    {
+      "date": "1981-03-20",
+      "homeTeam": "CHI",
+      "awayTeam": "PHI",
+      "homeScore": 120,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-03-20",
+      "homeTeam": "DAL",
+      "awayTeam": "DEN",
+      "homeScore": 126,
+      "awayScore": 125
+    },
+    {
+      "date": "1981-03-20",
+      "homeTeam": "DET",
+      "awayTeam": "MIL",
+      "homeScore": 86,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-03-20",
+      "homeTeam": "IND",
+      "awayTeam": "NYK",
+      "homeScore": 107,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-03-20",
+      "homeTeam": "KCK",
+      "awayTeam": "SAS",
+      "homeScore": 111,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-03-20",
+      "homeTeam": "LAL",
+      "awayTeam": "SEA",
+      "homeScore": 133,
+      "awayScore": 119
+    },
+    {
+      "date": "1981-03-20",
+      "homeTeam": "NJN",
+      "awayTeam": "ATL",
+      "homeScore": 108,
+      "awayScore": 96
+    },
+    {
+      "date": "1981-03-20",
+      "homeTeam": "POR",
+      "awayTeam": "HOU",
+      "homeScore": 107,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-03-21",
+      "homeTeam": "DAL",
+      "awayTeam": "UTA",
+      "homeScore": 105,
+      "awayScore": 95
+    },
+    {
+      "date": "1981-03-21",
+      "homeTeam": "GSW",
+      "awayTeam": "PHX",
+      "homeScore": 114,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-03-21",
+      "homeTeam": "NYK",
+      "awayTeam": "CLE",
+      "homeScore": 119,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-03-21",
+      "homeTeam": "POR",
+      "awayTeam": "LAL",
+      "homeScore": 111,
+      "awayScore": 117
+    },
+    {
+      "date": "1981-03-22",
+      "homeTeam": "DEN",
+      "awayTeam": "UTA",
+      "homeScore": 113,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-03-22",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 103,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-03-22",
+      "homeTeam": "GSW",
+      "awayTeam": "LAL",
+      "homeScore": 118,
+      "awayScore": 120
+    },
+    {
+      "date": "1981-03-22",
+      "homeTeam": "IND",
+      "awayTeam": "CLE",
+      "homeScore": 107,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-03-22",
+      "homeTeam": "KCK",
+      "awayTeam": "HOU",
+      "homeScore": 108,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-03-22",
+      "homeTeam": "NJN",
+      "awayTeam": "MIL",
+      "homeScore": 116,
+      "awayScore": 125
+    },
+    {
+      "date": "1981-03-22",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 126,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-03-22",
+      "homeTeam": "PHX",
+      "awayTeam": "SEA",
+      "homeScore": 107,
+      "awayScore": 91
+    },
+    {
+      "date": "1981-03-22",
+      "homeTeam": "SAS",
+      "awayTeam": "SDC",
+      "homeScore": 107,
+      "awayScore": 99
+    },
+    {
+      "date": "1981-03-22",
+      "homeTeam": "WSB",
+      "awayTeam": "ATL",
+      "homeScore": 121,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-03-24",
+      "homeTeam": "ATL",
+      "awayTeam": "DET",
+      "homeScore": 96,
+      "awayScore": 91
+    },
+    {
+      "date": "1981-03-24",
+      "homeTeam": "CHI",
+      "awayTeam": "CLE",
+      "homeScore": 121,
+      "awayScore": 108
+    },
+    {
+      "date": "1981-03-24",
+      "homeTeam": "DAL",
+      "awayTeam": "HOU",
+      "homeScore": 111,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-03-24",
+      "homeTeam": "LAL",
+      "awayTeam": "GSW",
+      "homeScore": 110,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-03-24",
+      "homeTeam": "MIL",
+      "awayTeam": "NJN",
+      "homeScore": 131,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-03-24",
+      "homeTeam": "NYK",
+      "awayTeam": "BOS",
+      "homeScore": 116,
+      "awayScore": 118
+    },
+    {
+      "date": "1981-03-24",
+      "homeTeam": "POR",
+      "awayTeam": "PHX",
+      "homeScore": 120,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-03-24",
+      "homeTeam": "SAS",
+      "awayTeam": "DEN",
+      "homeScore": 123,
+      "awayScore": 125
+    },
+    {
+      "date": "1981-03-24",
+      "homeTeam": "SDC",
+      "awayTeam": "SEA",
+      "homeScore": 111,
+      "awayScore": 106
+    },
+    {
+      "date": "1981-03-24",
+      "homeTeam": "UTA",
+      "awayTeam": "KCK",
+      "homeScore": 92,
+      "awayScore": 105
+    },
+    {
+      "date": "1981-03-25",
+      "homeTeam": "DEN",
+      "awayTeam": "DAL",
+      "homeScore": 115,
+      "awayScore": 126
+    },
+    {
+      "date": "1981-03-25",
+      "homeTeam": "GSW",
+      "awayTeam": "SDC",
+      "homeScore": 120,
+      "awayScore": 114
+    },
+    {
+      "date": "1981-03-25",
+      "homeTeam": "HOU",
+      "awayTeam": "SAS",
+      "homeScore": 117,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-03-25",
+      "homeTeam": "NJN",
+      "awayTeam": "BOS",
+      "homeScore": 105,
+      "awayScore": 111
+    },
+    {
+      "date": "1981-03-25",
+      "homeTeam": "PHI",
+      "awayTeam": "DET",
+      "homeScore": 114,
+      "awayScore": 75
+    },
+    {
+      "date": "1981-03-25",
+      "homeTeam": "PHX",
+      "awayTeam": "KCK",
+      "homeScore": 101,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-03-25",
+      "homeTeam": "SEA",
+      "awayTeam": "POR",
+      "homeScore": 103,
+      "awayScore": 112
+    },
+    {
+      "date": "1981-03-25",
+      "homeTeam": "WSB",
+      "awayTeam": "NYK",
+      "homeScore": 105,
+      "awayScore": 84
+    },
+    {
+      "date": "1981-03-26",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": 107,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-03-26",
+      "homeTeam": "MIL",
+      "awayTeam": "CLE",
+      "homeScore": 137,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-03-26",
+      "homeTeam": "UTA",
+      "awayTeam": "SAS",
+      "homeScore": 97,
+      "awayScore": 98
+    },
+    {
+      "date": "1981-03-27",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 90,
+      "awayScore": 115
+    },
+    {
+      "date": "1981-03-27",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": 108,
+      "awayScore": 83
+    },
+    {
+      "date": "1981-03-27",
+      "homeTeam": "CLE",
+      "awayTeam": "PHI",
+      "homeScore": 117,
+      "awayScore": 138
+    },
+    {
+      "date": "1981-03-27",
+      "homeTeam": "DAL",
+      "awayTeam": "POR",
+      "homeScore": 109,
+      "awayScore": 123
+    },
+    {
+      "date": "1981-03-27",
+      "homeTeam": "HOU",
+      "awayTeam": "KCK",
+      "homeScore": 91,
+      "awayScore": 84
+    },
+    {
+      "date": "1981-03-27",
+      "homeTeam": "IND",
+      "awayTeam": "WSB",
+      "homeScore": 122,
+      "awayScore": 107
+    },
+    {
+      "date": "1981-03-27",
+      "homeTeam": "PHX",
+      "awayTeam": "SDC",
+      "homeScore": 124,
+      "awayScore": 100
+    },
+    {
+      "date": "1981-03-27",
+      "homeTeam": "SEA",
+      "awayTeam": "LAL",
+      "homeScore": 90,
+      "awayScore": 97
+    },
+    {
+      "date": "1981-03-28",
+      "homeTeam": "GSW",
+      "awayTeam": "DEN",
+      "homeScore": 139,
+      "awayScore": 142
+    },
+    {
+      "date": "1981-03-28",
+      "homeTeam": "NJN",
+      "awayTeam": "NYK",
+      "homeScore": 88,
+      "awayScore": 90
+    },
+    {
+      "date": "1981-03-28",
+      "homeTeam": "UTA",
+      "awayTeam": "LAL",
+      "homeScore": 112,
+      "awayScore": 110
+    },
+    {
+      "date": "1981-03-28",
+      "homeTeam": "WSB",
+      "awayTeam": "DET",
+      "homeScore": 108,
+      "awayScore": 103
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "ATL",
+      "awayTeam": "MIL",
+      "homeScore": 128,
+      "awayScore": 132
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 98,
+      "awayScore": 94
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": 97,
+      "awayScore": 101
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "KCK",
+      "awayTeam": "DAL",
+      "homeScore": 113,
+      "awayScore": 104
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "LAL",
+      "awayTeam": "DEN",
+      "homeScore": 146,
+      "awayScore": 148
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "NYK",
+      "awayTeam": "NJN",
+      "homeScore": 103,
+      "awayScore": 95
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "PHX",
+      "awayTeam": "UTA",
+      "homeScore": 105,
+      "awayScore": 90
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "SAS",
+      "awayTeam": "HOU",
+      "homeScore": 135,
+      "awayScore": 109
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "SDC",
+      "awayTeam": "POR",
+      "homeScore": 129,
+      "awayScore": 144
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "SEA",
+      "awayTeam": "GSW",
+      "homeScore": 96,
+      "awayScore": 92
+    },
+    {
+      "date": "1981-03-29",
+      "homeTeam": "WSB",
+      "awayTeam": "CLE",
+      "homeScore": 138,
+      "awayScore": 103
+    }
+  ],
+  "metadata": {
+    "total_games": 994,
+    "ingested_at": "2026-01-21T06:17:20.431437",
+    "source": "basketball-reference.com"
+  }
+}
