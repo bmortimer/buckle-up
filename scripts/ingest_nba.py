@@ -328,24 +328,57 @@ def main():
         required=True,
         help='NBA season in format YYYY-YY (e.g., 2012-13, 2024-25)'
     )
+    parser.add_argument(
+        '--use-api',
+        action='store_true',
+        help='Use NBA Stats API instead of Basketball-Reference (may be blocked on some networks)'
+    )
 
     args = parser.parse_args()
 
     # Parse and validate season
     season, start_year = parse_season(args.season)
 
-    # Fetch games - use schedule endpoint for current season to get upcoming games
-    if is_current_season(season):
-        print(f"Detected current season - trying schedule endpoint for full schedule")
-        try:
-            games = fetch_nba_schedule(season)
-        except Exception as e:
-            print(f"Schedule endpoint failed: {e}")
-            print(f"Falling back to game finder (completed games only)")
+    # Try NBA Stats API first, fall back to Basketball-Reference if it fails
+    games = None
+
+    try:
+        # Fetch from NBA API
+        if is_current_season(season):
+            print(f"Detected current season - trying schedule endpoint for full schedule")
+            try:
+                games = fetch_nba_schedule(season)
+            except Exception as e:
+                print(f"Schedule endpoint failed: {e}")
+                print(f"Trying game finder (completed games only)")
+                games = fetch_nba_season(season)
+        else:
+            print(f"Historical season - using game finder for completed games")
             games = fetch_nba_season(season)
-    else:
-        print(f"Historical season - using game finder for completed games")
-        games = fetch_nba_season(season)
+    except Exception as e:
+        # NBA API failed - only fall back to Basketball-Reference for current season
+        if is_current_season(season):
+            print(f"\nNBA Stats API failed: {e}")
+            print(f"Falling back to Basketball-Reference (completed games only)...")
+            try:
+                import subprocess
+                result = subprocess.run(
+                    ['python3', 'scripts/ingest_nba_bball_ref.py', '--season', season],
+                    capture_output=True,
+                    text=True,
+                    timeout=300
+                )
+                if result.returncode == 0:
+                    print(f"✓ Successfully fetched from Basketball-Reference")
+                    return
+                else:
+                    raise Exception(f"Basketball-Reference also failed: {result.stderr}")
+            except Exception as fallback_error:
+                print(f"Basketball-Reference fallback failed: {fallback_error}")
+                raise
+        else:
+            # For historical seasons, just fail - we shouldn't scrape unnecessarily
+            raise
 
     # Save to file
     save_season_data('nba', season, games)

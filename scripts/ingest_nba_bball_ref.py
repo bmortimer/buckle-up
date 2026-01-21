@@ -300,8 +300,30 @@ def main():
         print(f"Error: Season must be in format YYYY-YY (e.g., 1976-77)")
         return
 
+    # Known regular season end dates to filter out playoffs
+    # Basketball-Reference doesn't distinguish between regular season and playoffs on monthly pages
+    REGULAR_SEASON_END_DATES = {
+        "1976-77": "1977-04-10",
+        "1977-78": "1978-04-09",
+        "1978-79": "1979-04-08",
+        "1979-80": "1980-03-30",
+        "1980-81": "1981-03-29",
+        "1981-82": "1982-04-18",
+        "1982-83": "1983-04-17",
+    }
+
+    # For modern seasons (1983-84 onwards), regular season typically ends mid-April
+    # We'll use a heuristic: include games through April, stop at May
+    # This works because playoffs never start before mid-April
+    cutoff_date = REGULAR_SEASON_END_DATES.get(season)
+
     # Months of the NBA season
-    months = ['october', 'november', 'december', 'january', 'february', 'march', 'april', 'may', 'june']
+    months = ['october', 'november', 'december', 'january', 'february', 'march', 'april']
+
+    # For seasons with known playoff dates, we can safely fetch May/June
+    # For others, stop at April to be safe
+    if cutoff_date:
+        months.extend(['may', 'june'])
 
     all_games = []
 
@@ -327,6 +349,14 @@ def main():
 
     # Sort all games by date
     all_games.sort(key=lambda g: g["date"])
+
+    # Filter out playoff games if we have a cutoff date
+    if cutoff_date:
+        original_count = len(all_games)
+        all_games = [g for g in all_games if g["date"] <= cutoff_date]
+        filtered_count = original_count - len(all_games)
+        if filtered_count > 0:
+            print(f"\nFiltered out {filtered_count} playoff games (cutoff: {cutoff_date})")
 
     # Save to file
     save_season_data('nba', season, all_games)
