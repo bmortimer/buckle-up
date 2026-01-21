@@ -66,6 +66,14 @@ export default function SeasonPicker({
     setIsOpen(false)
   }
 
+  const handleReset = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    if (!isAllTime) {
+      onAllTimeChange(true)
+      onChange([minYear, maxYear])
+    }
+  }
+
   return (
     <div className="space-y-2">
       {/* Label */}
@@ -73,6 +81,15 @@ export default function SeasonPicker({
         <span id="time-period-label" className="text-[0.65rem] sm:text-xs font-orbitron text-muted-foreground uppercase tracking-wide sm:tracking-wider">
           <span aria-hidden="true">◆ </span>Time Period
         </span>
+        {!isAllTime && (
+          <button
+            onClick={handleReset}
+            className="text-[0.6rem] font-mono text-muted-foreground hover:text-primary transition-colors uppercase tracking-wider"
+            aria-label="Reset to All Time"
+          >
+            Reset ×
+          </button>
+        )}
       </div>
 
       {/* Clickable Year Display */}
