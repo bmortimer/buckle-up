@@ -1,0 +1,2321 @@
+{
+  "season": "2026",
+  "league": "WNBA",
+  "games": [
+    {
+      "date": "2026-05-08",
+      "homeTeam": "NYL",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-08",
+      "homeTeam": "TOR",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-08",
+      "homeTeam": "SEA",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-09",
+      "homeTeam": "IND",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-09",
+      "homeTeam": "LVA",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-09",
+      "homeTeam": "PDX",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-10",
+      "homeTeam": "CON",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-10",
+      "homeTeam": "WAS",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-10",
+      "homeTeam": "LAS",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-10",
+      "homeTeam": "MIN",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-10",
+      "homeTeam": "GSV",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-12",
+      "homeTeam": "DAL",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-12",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-12",
+      "homeTeam": "PDX",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-13",
+      "homeTeam": "TOR",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-13",
+      "homeTeam": "CON",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-13",
+      "homeTeam": "GSV",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-13",
+      "homeTeam": "LAS",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-14",
+      "homeTeam": "DAL",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-14",
+      "homeTeam": "PDX",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-15",
+      "homeTeam": "CON",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-15",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-15",
+      "homeTeam": "LAS",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-15",
+      "homeTeam": "PHO",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-17",
+      "homeTeam": "MIN",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-17",
+      "homeTeam": "ATL",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-17",
+      "homeTeam": "IND",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-17",
+      "homeTeam": "LAS",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-18",
+      "homeTeam": "DAL",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-18",
+      "homeTeam": "PDX",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-19",
+      "homeTeam": "PHO",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-20",
+      "homeTeam": "IND",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-20",
+      "homeTeam": "CHI",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-20",
+      "homeTeam": "SEA",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-21",
+      "homeTeam": "NYL",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-21",
+      "homeTeam": "MIN",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-21",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-22",
+      "homeTeam": "ATL",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-22",
+      "homeTeam": "IND",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-22",
+      "homeTeam": "SEA",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-23",
+      "homeTeam": "CHI",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-23",
+      "homeTeam": "TOR",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-23",
+      "homeTeam": "LVA",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-24",
+      "homeTeam": "ATL",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-24",
+      "homeTeam": "NYL",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-24",
+      "homeTeam": "SEA",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-25",
+      "homeTeam": "NYL",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-25",
+      "homeTeam": "GSV",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-27",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-27",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-27",
+      "homeTeam": "MIN",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-27",
+      "homeTeam": "PDX",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-27",
+      "homeTeam": "SEA",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-28",
+      "homeTeam": "DAL",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-28",
+      "homeTeam": "GSV",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-29",
+      "homeTeam": "NYL",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-29",
+      "homeTeam": "WAS",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-29",
+      "homeTeam": "CHI",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-29",
+      "homeTeam": "PDX",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-30",
+      "homeTeam": "TOR",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-30",
+      "homeTeam": "CON",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-30",
+      "homeTeam": "PDX",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-05-31",
+      "homeTeam": "GSV",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-01",
+      "homeTeam": "DAL",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-01",
+      "homeTeam": "PHO",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-02",
+      "homeTeam": "ATL",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-02",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-02",
+      "homeTeam": "GSV",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-02",
+      "homeTeam": "LAS",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-03",
+      "homeTeam": "NYL",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-03",
+      "homeTeam": "SEA",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-04",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-04",
+      "homeTeam": "MIN",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-05",
+      "homeTeam": "CHI",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-05",
+      "homeTeam": "LAS",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-05",
+      "homeTeam": "PDX",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-06",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-06",
+      "homeTeam": "LVA",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-06",
+      "homeTeam": "ATL",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-06",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-07",
+      "homeTeam": "TOR",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-07",
+      "homeTeam": "LAS",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-08",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-08",
+      "homeTeam": "WAS",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-08",
+      "homeTeam": "LVA",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-09",
+      "homeTeam": "CHI",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-09",
+      "homeTeam": "MIN",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-09",
+      "homeTeam": "GSV",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-10",
+      "homeTeam": "TOR",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-10",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-11",
+      "homeTeam": "IND",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-11",
+      "homeTeam": "ATL",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-11",
+      "homeTeam": "DAL",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-11",
+      "homeTeam": "PDX",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-12",
+      "homeTeam": "WAS",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-12",
+      "homeTeam": "SEA",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-13",
+      "homeTeam": "CON",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-13",
+      "homeTeam": "LVA",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-13",
+      "homeTeam": "PDX",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-13",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-14",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-14",
+      "homeTeam": "TOR",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-15",
+      "homeTeam": "DAL",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-15",
+      "homeTeam": "MIN",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-15",
+      "homeTeam": "GSV",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-16",
+      "homeTeam": "IND",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-17",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-17",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-17",
+      "homeTeam": "GSV",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-17",
+      "homeTeam": "LAS",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-17",
+      "homeTeam": "PHO",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-17",
+      "homeTeam": "PDX",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-18",
+      "homeTeam": "IND",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-19",
+      "homeTeam": "CON",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-19",
+      "homeTeam": "NYL",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-19",
+      "homeTeam": "GSV",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-20",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-20",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-20",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-21",
+      "homeTeam": "LVA",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-21",
+      "homeTeam": "MIN",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-21",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-22",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-22",
+      "homeTeam": "ATL",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-22",
+      "homeTeam": "IND",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-22",
+      "homeTeam": "SEA",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-23",
+      "homeTeam": "LVA",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-24",
+      "homeTeam": "IND",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-24",
+      "homeTeam": "WAS",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-24",
+      "homeTeam": "CHI",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-24",
+      "homeTeam": "GSV",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-25",
+      "homeTeam": "TOR",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-25",
+      "homeTeam": "LVA",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-25",
+      "homeTeam": "SEA",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-26",
+      "homeTeam": "CON",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-26",
+      "homeTeam": "CHI",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-26",
+      "homeTeam": "GSV",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-27",
+      "homeTeam": "TOR",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-27",
+      "homeTeam": "IND",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-27",
+      "homeTeam": "SEA",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-28",
+      "homeTeam": "DAL",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-28",
+      "homeTeam": "WAS",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-28",
+      "homeTeam": "CHI",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-06-28",
+      "homeTeam": "GSV",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-02",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-02",
+      "homeTeam": "CON",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-02",
+      "homeTeam": "PHO",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-03",
+      "homeTeam": "NYL",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-03",
+      "homeTeam": "LVA",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-04",
+      "homeTeam": "ATL",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-04",
+      "homeTeam": "SEA",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-05",
+      "homeTeam": "TOR",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-05",
+      "homeTeam": "LVA",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-06",
+      "homeTeam": "WAS",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-06",
+      "homeTeam": "MIN",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-06",
+      "homeTeam": "LAS",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-07",
+      "homeTeam": "NYL",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-07",
+      "homeTeam": "PHO",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-08",
+      "homeTeam": "TOR",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-08",
+      "homeTeam": "CON",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-08",
+      "homeTeam": "LAS",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-09",
+      "homeTeam": "ATL",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-09",
+      "homeTeam": "PHO",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-09",
+      "homeTeam": "PDX",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-10",
+      "homeTeam": "CON",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-10",
+      "homeTeam": "TOR",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-10",
+      "homeTeam": "LAS",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-11",
+      "homeTeam": "MIN",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-11",
+      "homeTeam": "LVA",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-11",
+      "homeTeam": "ATL",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-12",
+      "homeTeam": "TOR",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-12",
+      "homeTeam": "WAS",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-12",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-12",
+      "homeTeam": "LVA",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-13",
+      "homeTeam": "ATL",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-13",
+      "homeTeam": "MIN",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-14",
+      "homeTeam": "CON",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-14",
+      "homeTeam": "TOR",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-15",
+      "homeTeam": "CHI",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-15",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-15",
+      "homeTeam": "IND",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-16",
+      "homeTeam": "WAS",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-16",
+      "homeTeam": "DAL",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-17",
+      "homeTeam": "IND",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-17",
+      "homeTeam": "TOR",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-17",
+      "homeTeam": "CHI",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-17",
+      "homeTeam": "PHO",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-18",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-18",
+      "homeTeam": "MIN",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-18",
+      "homeTeam": "GSV",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-19",
+      "homeTeam": "DAL",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-19",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-19",
+      "homeTeam": "PHO",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-20",
+      "homeTeam": "TOR",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-20",
+      "homeTeam": "GSV",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-20",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-22",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-22",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-22",
+      "homeTeam": "NYL",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-22",
+      "homeTeam": "WAS",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-22",
+      "homeTeam": "IND",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-22",
+      "homeTeam": "PDX",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-28",
+      "homeTeam": "WAS",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-28",
+      "homeTeam": "MIN",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-28",
+      "homeTeam": "SEA",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-28",
+      "homeTeam": "LVA",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-28",
+      "homeTeam": "LAS",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-29",
+      "homeTeam": "DAL",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-29",
+      "homeTeam": "PHO",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-30",
+      "homeTeam": "TOR",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-30",
+      "homeTeam": "CHI",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-30",
+      "homeTeam": "LVA",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-31",
+      "homeTeam": "ATL",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-31",
+      "homeTeam": "WAS",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-31",
+      "homeTeam": "PDX",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-01",
+      "homeTeam": "CHI",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-01",
+      "homeTeam": "PHO",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-02",
+      "homeTeam": "MIN",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-02",
+      "homeTeam": "PDX",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-02",
+      "homeTeam": "DAL",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-02",
+      "homeTeam": "GSV",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-03",
+      "homeTeam": "ATL",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-03",
+      "homeTeam": "NYL",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-03",
+      "homeTeam": "CHI",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-04",
+      "homeTeam": "GSV",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-05",
+      "homeTeam": "ATL",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-05",
+      "homeTeam": "NYL",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-05",
+      "homeTeam": "WAS",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-05",
+      "homeTeam": "CHI",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-06",
+      "homeTeam": "IND",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-06",
+      "homeTeam": "MIN",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-06",
+      "homeTeam": "PDX",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-07",
+      "homeTeam": "CON",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-07",
+      "homeTeam": "WAS",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-07",
+      "homeTeam": "DAL",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-08",
+      "homeTeam": "MIN",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-08",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-08",
+      "homeTeam": "PDX",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-09",
+      "homeTeam": "NYL",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-09",
+      "homeTeam": "WAS",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-09",
+      "homeTeam": "MIN",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-09",
+      "homeTeam": "LAS",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-10",
+      "homeTeam": "ATL",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-10",
+      "homeTeam": "SEA",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-11",
+      "homeTeam": "IND",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-11",
+      "homeTeam": "LVA",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-11",
+      "homeTeam": "LAS",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-12",
+      "homeTeam": "DAL",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-12",
+      "homeTeam": "GSV",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-12",
+      "homeTeam": "PDX",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-13",
+      "homeTeam": "CON",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-13",
+      "homeTeam": "NYL",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-13",
+      "homeTeam": "LVA",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-14",
+      "homeTeam": "IND",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-14",
+      "homeTeam": "SEA",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-15",
+      "homeTeam": "CON",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-15",
+      "homeTeam": "WAS",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-15",
+      "homeTeam": "LVA",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-16",
+      "homeTeam": "SEA",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-16",
+      "homeTeam": "PHO",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-16",
+      "homeTeam": "ATL",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-17",
+      "homeTeam": "GSV",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-18",
+      "homeTeam": "CON",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-18",
+      "homeTeam": "TOR",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-18",
+      "homeTeam": "CHI",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-18",
+      "homeTeam": "LVA",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-19",
+      "homeTeam": "WAS",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-19",
+      "homeTeam": "GSV",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-20",
+      "homeTeam": "DAL",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-20",
+      "homeTeam": "LVA",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-20",
+      "homeTeam": "LAS",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-21",
+      "homeTeam": "WAS",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-21",
+      "homeTeam": "CHI",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-21",
+      "homeTeam": "TOR",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-22",
+      "homeTeam": "NYL",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-22",
+      "homeTeam": "LAS",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-22",
+      "homeTeam": "PHO",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-23",
+      "homeTeam": "DAL",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-23",
+      "homeTeam": "CHI",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-23",
+      "homeTeam": "PDX",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-23",
+      "homeTeam": "TOR",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-24",
+      "homeTeam": "MIN",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-24",
+      "homeTeam": "LAS",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-25",
+      "homeTeam": "CON",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-25",
+      "homeTeam": "DAL",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-25",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-26",
+      "homeTeam": "CON",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-26",
+      "homeTeam": "SEA",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-27",
+      "homeTeam": "NYL",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-27",
+      "homeTeam": "PHO",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-28",
+      "homeTeam": "ATL",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-28",
+      "homeTeam": "IND",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-28",
+      "homeTeam": "LVA",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-28",
+      "homeTeam": "LAS",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-29",
+      "homeTeam": "NYL",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-29",
+      "homeTeam": "PHO",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-30",
+      "homeTeam": "ATL",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-30",
+      "homeTeam": "SEA",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-30",
+      "homeTeam": "PDX",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-08-30",
+      "homeTeam": "DAL",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-17",
+      "homeTeam": "ATL",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-17",
+      "homeTeam": "CHI",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-17",
+      "homeTeam": "DAL",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-17",
+      "homeTeam": "PDX",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-17",
+      "homeTeam": "SEA",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-18",
+      "homeTeam": "TOR",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-18",
+      "homeTeam": "MIN",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-18",
+      "homeTeam": "GSV",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-19",
+      "homeTeam": "DAL",
+      "awayTeam": "PHO",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-19",
+      "homeTeam": "ATL",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-19",
+      "homeTeam": "GSV",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-20",
+      "homeTeam": "CON",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-20",
+      "homeTeam": "TOR",
+      "awayTeam": "NYL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-20",
+      "homeTeam": "IND",
+      "awayTeam": "WAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-20",
+      "homeTeam": "LAS",
+      "awayTeam": "PDX",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-20",
+      "homeTeam": "LVA",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-21",
+      "homeTeam": "NYL",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-21",
+      "homeTeam": "PHO",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-22",
+      "homeTeam": "WAS",
+      "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-22",
+      "homeTeam": "IND",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-22",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-22",
+      "homeTeam": "LVA",
+      "awayTeam": "LAS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-22",
+      "homeTeam": "PDX",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-23",
+      "homeTeam": "NYL",
+      "awayTeam": "ATL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-23",
+      "homeTeam": "SEA",
+      "awayTeam": "DAL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-24",
+      "homeTeam": "CON",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-24",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-24",
+      "homeTeam": "MIN",
+      "awayTeam": "IND",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-24",
+      "homeTeam": "LAS",
+      "awayTeam": "GSV",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-09-24",
+      "homeTeam": "PHO",
+      "awayTeam": "LVA",
+      "homeScore": null,
+      "awayScore": null
+    }
+  ],
+  "metadata": {
+    "total_games": 330,
+    "ingested_at": "2026-01-21T20:06:39.427038",
+    "note": "Future games - scores are null and will be updated when games are played"
+  }
+}
