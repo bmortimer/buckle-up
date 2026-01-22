@@ -20,13 +20,15 @@ LAS,LAS,Los Angeles Sparks,Los Angeles,1997,,active,,#702F8A
 MIN,MIN,Minnesota Lynx,Minneapolis,1999,,active,,#266092
 NYL,NYL,New York Liberty,New York,1997,,active,,#86CED1
 PHO,PHO,Phoenix Mercury,Phoenix,1997,,active,,#CB6015
+FIRE26,PDX,Portland Fire,Portland,2026,,active,,#C8102E
 SEA,SEA,Seattle Storm,Seattle,2000,,active,,#2C5234
+TEMPO,TOR,Toronto Tempo,Toronto,2026,,active,,#441E36
 WAS,WAS,Washington Mystics,Washington,1998,,active,,#C8102E
 
 CHA,CHA,Charlotte Sting,Charlotte,1997,2006,defunct,,#00788C
 CLE,CLE,Cleveland Rockers,Cleveland,1997,2003,defunct,,#860038
 HOU,HOU,Houston Comets,Houston,1997,2008,defunct,,#CE1141
 MIA,MIA,Miami Sol,Miami,2000,2002,defunct,,#F9A01B
-POR,POR,Portland Fire,Portland,2000,2002,defunct,,#E03A3E
+POR,POR,Portland Fire,Portland,2000,2002,revived,FIRE26,#E03A3E
 SAC,SAC,Sacramento Monarchs,Sacramento,1997,2009,defunct,,#5A2B81
 

@@ -23,7 +23,7 @@ const sizeMap = {
 const WNBA_TEAMS_WITH_LOGOS = new Set([
   // Current teams (SVG)
   'ATL', 'CHI', 'CON', 'DAL', 'GSV', 'IND',
-  'LAS', 'LVA', 'MIN', 'NYL', 'PHO', 'SEA', 'WAS',
+  'LAS', 'LVA', 'MIN', 'NYL', 'PHO', 'SEA', 'WAS', 'TOR', 'PDX',
   // Historical teams (SVG)
   'CHA', 'MIA', 'ORL', 'POR', 'UTA',
   // Historical teams (PNG)
@@ -33,6 +33,11 @@ const WNBA_TEAMS_WITH_LOGOS = new Set([
 // WNBA teams using PNG instead of SVG
 const WNBA_PNG_TEAMS = new Set([
   'DET', 'SAS', 'TUL', 'CLE', 'HOU', 'SAC'
+])
+
+// WNBA SVG teams that need white background in dark mode
+const WNBA_SVG_WHITE_BG = new Set([
+  'TOR' // Toronto Tempo has dark colors
 ])
 
 // NBA teams - all 30 current teams have SVG logos
@@ -61,24 +66,26 @@ export default function TeamLogo({ teamCode, franchises, league = 'wnba', size =
 
   const teamsWithLogos = league === 'nba' ? NBA_TEAMS_WITH_LOGOS : WNBA_TEAMS_WITH_LOGOS
   const pngTeams = league === 'nba' ? NBA_PNG_TEAMS : WNBA_PNG_TEAMS
+  const svgWhiteBg = league === 'wnba' ? WNBA_SVG_WHITE_BG : new Set()
 
   const hasLogo = teamsWithLogos.has(teamCode)
   const isPng = pngTeams.has(teamCode)
+  const needsWhiteBg = isPng || svgWhiteBg.has(teamCode)
   const fileExtension = isPng ? 'png' : 'svg'
 
   // If logo exists, render the image
   if (hasLogo) {
     return (
-      <div className={`${sizeMap[size]} relative ${isPng ? 'rounded-full overflow-hidden' : ''} ${className}`}>
-        {/* Add white background circle for PNG logos in dark mode */}
-        {isPng && (
+      <div className={`${sizeMap[size]} relative ${needsWhiteBg ? 'rounded-full overflow-hidden' : ''} ${className}`}>
+        {/* Add white background circle for logos that need it in dark mode */}
+        {needsWhiteBg && (
           <div className="absolute inset-0 bg-white dark:bg-white" />
         )}
         <Image
           src={`/logos/${league}/${teamCode}.${fileExtension}`}
           alt={`${displayName} logo`}
           fill
-          className={`object-contain ${isPng ? 'relative z-10 p-0.5' : ''}`}
+          className={`object-contain ${needsWhiteBg ? 'relative z-10 p-0.5' : ''}`}
           unoptimized // SVGs and small PNGs don't need optimization
         />
       </div>

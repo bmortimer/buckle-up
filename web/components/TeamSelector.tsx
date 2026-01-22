@@ -14,8 +14,8 @@ interface TeamSelectorProps {
 }
 
 // WNBA Conference organization (current active teams)
-const WNBA_EASTERN_CONFERENCE = ['ATL', 'CHI', 'CON', 'IND', 'NYL', 'WAS']
-const WNBA_WESTERN_CONFERENCE = ['DAL', 'LVA', 'LAS', 'MIN', 'PHO', 'SEA', 'GSV']
+const WNBA_EASTERN_CONFERENCE = ['ATL', 'CHI', 'CON', 'IND', 'NYL', 'WAS', 'TOR']
+const WNBA_WESTERN_CONFERENCE = ['DAL', 'LVA', 'LAS', 'MIN', 'PHO', 'SEA', 'GSV', 'PDX']
 
 // NBA Conference organization (current active teams)
 const NBA_EASTERN_CONFERENCE = [
