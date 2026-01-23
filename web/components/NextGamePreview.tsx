@@ -221,7 +221,7 @@ export default function NextGamePreview({
         {/* Status indicator */}
         <div className="text-center pt-3 sm:pt-4">
           <div className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.6rem] font-mono text-muted-foreground uppercase tracking-wide sm:tracking-wider">
-            ▸ Title Defense #{getCurrentDefenseNumber(games, currentHolder, franchises)} ◂
+            ▸ Current Streak: {getCurrentStreak(games, currentHolder, franchises)} ◂
           </div>
         </div>
       </div>
@@ -236,14 +236,66 @@ export default function NextGamePreview({
 }
 
 /**
- * Count how many title defenses the current holder has had (completed games where they had the belt)
+ * Calculate the current holder's win streak (consecutive wins WITH the belt)
+ * This counts how many games they've won since acquiring the belt, including the acquisition game.
+ *
+ * We need to track the belt through ALL games to know when current holder got it.
  */
-function getCurrentDefenseNumber(
+function getCurrentStreak(
   games: Game[],
   currentHolder: string,
   franchises: FranchiseInfo[]
 ): number {
-  // This is a simplified count - just counting scheduled games would work for display
-  // For now, return a placeholder
-  return 1
+  // Track the belt from the beginning to find when current holder acquired it
+  // Assuming the first game of the season gives the belt to the winner
+  const completedGames = games.filter(
+    (g) => g.homeScore !== null && g.awayScore !== null
+  )
+
+  if (completedGames.length === 0) {
+    return 0
+  }
+
+  // Start with the winner of the first game
+  const firstGame = completedGames[0]
+  let holder = firstGame.homeScore! > firstGame.awayScore! ? firstGame.homeTeam : firstGame.awayTeam
+
+  let streak = 0
+  let currentHolderHasBelt = (holder === currentHolder)
+
+  for (const game of completedGames) {
+    const holderIsHome = game.homeTeam === holder
+    const holderIsAway = game.awayTeam === holder
+
+    if (!holderIsHome && !holderIsAway) {
+      continue // Belt holder not in this game
+    }
+
+    const holderWon = holderIsHome
+      ? game.homeScore! > game.awayScore!
+      : game.awayScore! > game.homeScore!
+
+    if (holderWon) {
+      // Holder defended the belt
+      if (currentHolderHasBelt) {
+        streak++
+      }
+    } else {
+      // Belt changes hands
+      const newHolder = holderIsHome ? game.awayTeam : game.homeTeam
+      holder = newHolder
+
+      if (newHolder === currentHolder) {
+        // Current holder just acquired the belt
+        currentHolderHasBelt = true
+        streak = 1 // This win counts as game #1 of their streak
+      } else {
+        // Someone else has the belt
+        currentHolderHasBelt = false
+        streak = 0
+      }
+    }
+  }
+
+  return streak
 }
