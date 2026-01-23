@@ -11,6 +11,8 @@ interface NextGamePreviewProps {
   currentHolder: string
   games: Game[]
   franchises: FranchiseInfo[]
+  champions: Record<string, string>  // Season champions to determine starting belt holder
+  allGamesUnfiltered: Game[]  // All games across all seasons for accurate streak calculation
 }
 
 export default function NextGamePreview({
@@ -18,6 +20,8 @@ export default function NextGamePreview({
   currentHolder,
   games,
   franchises,
+  champions,
+  allGamesUnfiltered,
 }: NextGamePreviewProps) {
   const nextGame = useMemo(() => {
     return findNextTitleBout(games, currentHolder, franchises)
@@ -221,7 +225,7 @@ export default function NextGamePreview({
         {/* Status indicator */}
         <div className="text-center pt-3 sm:pt-4">
           <div className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.6rem] font-mono text-muted-foreground uppercase tracking-wide sm:tracking-wider">
-            ▸ Current Streak: {getCurrentStreak(games, currentHolder, franchises)} ◂
+            ▸ Current Streak: {getCurrentStreak(allGamesUnfiltered, currentHolder, franchises, champions)} ◂
           </div>
         </div>
       </div>
@@ -239,60 +243,95 @@ export default function NextGamePreview({
  * Calculate the current holder's win streak (consecutive wins WITH the belt)
  * This counts how many games they've won since acquiring the belt, including the acquisition game.
  *
- * We need to track the belt through ALL games to know when current holder got it.
+ * We need to track the belt through ALL games across all seasons to properly handle
+ * the edge case where a team holds the belt at season's end AND wins the championship,
+ * continuing their streak into the next season.
  */
 function getCurrentStreak(
   games: Game[],
   currentHolder: string,
-  franchises: FranchiseInfo[]
+  franchises: FranchiseInfo[],
+  champions: Record<string, string>
 ): number {
   // Track the belt from the beginning to find when current holder acquired it
-  // Assuming the first game of the season gives the belt to the winner
   const completedGames = games.filter(
     (g) => g.homeScore !== null && g.awayScore !== null
-  )
+  ).sort((a, b) => a.date.localeCompare(b.date))
 
   if (completedGames.length === 0) {
     return 0
   }
 
-  // Start with the winner of the first game
-  const firstGame = completedGames[0]
-  let holder = firstGame.homeScore! > firstGame.awayScore! ? firstGame.homeTeam : firstGame.awayTeam
-
-  let streak = 0
-  let currentHolderHasBelt = (holder === currentHolder)
-
+  // Group games by season to handle season transitions
+  const gamesBySeason = new Map<string, Game[]>()
   for (const game of completedGames) {
-    const holderIsHome = game.homeTeam === holder
-    const holderIsAway = game.awayTeam === holder
+    const gameDate = new Date(game.date + 'T12:00:00')
+    const gameYear = gameDate.getFullYear()
+    const seasonKey = gameYear.toString()
 
-    if (!holderIsHome && !holderIsAway) {
-      continue // Belt holder not in this game
+    if (!gamesBySeason.has(seasonKey)) {
+      gamesBySeason.set(seasonKey, [])
+    }
+    gamesBySeason.get(seasonKey)!.push(game)
+  }
+
+  // Track belt across all seasons
+  let holder: string | null = null
+  let streak = 0
+  let currentStreak = 0
+
+  const sortedSeasons = Array.from(gamesBySeason.keys()).sort()
+
+  for (const seasonKey of sortedSeasons) {
+    const seasonGames = gamesBySeason.get(seasonKey)!
+
+    // At the start of each season, reset to the champion
+    // (unless continuing from previous season - handled below)
+    const seasonChampion = champions[seasonKey]
+
+    if (seasonChampion) {
+      // If the previous holder is the same as the new season champion,
+      // the streak continues (edge case: team held belt + won championship)
+      if (holder !== seasonChampion) {
+        holder = seasonChampion
+        currentStreak = 0
+      }
+      // else: streak continues from previous season
+    } else if (!holder && seasonGames.length > 0) {
+      // Fallback: start with winner of first game
+      const firstGame = seasonGames[0]
+      holder = firstGame.homeScore! > firstGame.awayScore! ? firstGame.homeTeam : firstGame.awayTeam
+      currentStreak = 0
     }
 
-    const holderWon = holderIsHome
-      ? game.homeScore! > game.awayScore!
-      : game.awayScore! > game.homeScore!
+    // Process games in this season
+    for (const game of seasonGames) {
+      const holderIsHome = game.homeTeam === holder
+      const holderIsAway = game.awayTeam === holder
 
-    if (holderWon) {
-      // Holder defended the belt
-      if (currentHolderHasBelt) {
-        streak++
+      if (!holderIsHome && !holderIsAway) {
+        continue // Belt holder not in this game
       }
-    } else {
-      // Belt changes hands
-      const newHolder = holderIsHome ? game.awayTeam : game.homeTeam
-      holder = newHolder
 
-      if (newHolder === currentHolder) {
-        // Current holder just acquired the belt
-        currentHolderHasBelt = true
-        streak = 1 // This win counts as game #1 of their streak
+      const holderWon = holderIsHome
+        ? game.homeScore! > game.awayScore!
+        : game.awayScore! > game.homeScore!
+
+      if (holderWon) {
+        // Holder defended the belt
+        currentStreak++
+        if (holder === currentHolder) {
+          streak = currentStreak
+        }
       } else {
-        // Someone else has the belt
-        currentHolderHasBelt = false
-        streak = 0
+        // Belt changes hands
+        const newHolder = holderIsHome ? game.awayTeam : game.homeTeam
+        holder = newHolder
+        currentStreak = 1 // The win that takes the belt counts as game #1
+
+        if (holder === currentHolder) {
+          streak = currentStreak
+        }
       }
     }
   }

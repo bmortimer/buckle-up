@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import { loadSeasonData, loadFranchises, getAvailableSeasons, loadChampions } from '@/lib/dataLoader'
 import type { SeasonData } from '@/lib/types'
 import BeltDashboard from '@/components/BeltDashboard'
-import NbaGate from '@/components/NbaGate'
 
 export const metadata: Metadata = {
   title: 'NBA Belt Tracker',
@@ -30,14 +29,12 @@ export default function NbaPage() {
 
   return (
     <Suspense fallback={<div className="text-center py-20 text-gray-400">Loading...</div>}>
-      <NbaGate>
-        <BeltDashboard
-          league="nba"
-          seasons={seasons}
-          franchises={franchises}
-          champions={champions}
-        />
-      </NbaGate>
+      <BeltDashboard
+        league="nba"
+        seasons={seasons}
+        franchises={franchises}
+        champions={champions}
+      />
     </Suspense>
   )
 }

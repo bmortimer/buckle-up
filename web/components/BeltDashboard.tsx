@@ -39,28 +39,6 @@ export default function BeltDashboard({
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null)
   const [isAllTime, setIsAllTime] = useState(true)
 
-  // Check if league switcher should be visible (NBA requires ?time=dame)
-  const hasAccess = searchParams.get('time') === 'dame'
-  const showLeagueSwitcher = hasAccess
-
-  // NBA requires ?time=dame to access
-  if (league === 'nba' && !hasAccess) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl font-display tracking-wider text-muted-foreground">
-            COMING SOON
-          </h1>
-          <p className="text-muted-foreground">
-            <Link href="/wnba" className="text-primary hover:underline">
-              Check out WNBA Belt Tracker
-            </Link>
-          </p>
-        </div>
-      </div>
-    )
-  }
-
   // Get available years for range slider
   const availableYears = useMemo(() => {
     // For NBA, parse the season format (e.g., "2023-24" -> 2023)
@@ -130,6 +108,13 @@ export default function BeltDashboard({
 
     return filteredSeasons.flatMap(s => seasons[s].games)
   }, [yearRange, seasons])
+
+  // Get ALL games (unfiltered) for accurate streak calculation across seasons
+  const allGamesUnfiltered = useMemo(() => {
+    return Object.keys(seasons)
+      .sort()
+      .flatMap(s => seasons[s].games)
+  }, [seasons])
 
   // Track belt when data changes (filtered by year range)
   const { history, mergedByFranchise } = useMemo(() => {
@@ -265,28 +250,44 @@ export default function BeltDashboard({
     t => t.team === history.summary.currentHolder
   )
 
-  const otherLeague = league === 'wnba' ? 'nba' : 'wnba'
-  const otherLeaguePath = `/${otherLeague}${showLeagueSwitcher ? '?time=dame' : ''}`
-
   return (
     <div className="space-y-4 sm:space-y-6 md:space-y-8">
       {/* Top Navigation Bar */}
-      <div className="flex justify-end items-center gap-2">
-        {showLeagueSwitcher && (
+      <div className="flex justify-between items-center gap-2">
+        {/* League Switcher - Left */}
+        <div className="flex items-center gap-2">
           <Link
-            href={otherLeaguePath}
+            href="/wnba"
+            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-all ${
+              league === 'wnba'
+                ? 'text-amber-500 border-amber-500 bg-amber-500/10'
+                : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
+            }`}
+          >
+            WNBA
+          </Link>
+          <Link
+            href="/nba"
+            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-all ${
+              league === 'nba'
+                ? 'text-amber-500 border-amber-500 bg-amber-500/10'
+                : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
+            }`}
+          >
+            NBA
+          </Link>
+        </div>
+
+        {/* About & Theme - Right */}
+        <div className="flex items-center gap-2">
+          <Link
+            href="/about"
             className="px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider text-muted-foreground hover:text-foreground border border-border hover:border-muted-foreground bg-card transition-all"
           >
-            {otherLeague.toUpperCase()}
+            About
           </Link>
-        )}
-        <Link
-          href="/about"
-          className="px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider text-muted-foreground hover:text-foreground border border-border hover:border-muted-foreground bg-card transition-all"
-        >
-          About
-        </Link>
-        <ThemeSwitcher />
+          <ThemeSwitcher />
+        </div>
       </div>
 
       {/* Header */}
@@ -360,6 +361,8 @@ export default function BeltDashboard({
               currentHolder={history.summary.currentHolder}
               games={allGames}
               franchises={franchises}
+              champions={champions}
+              allGamesUnfiltered={allGamesUnfiltered}
             />
           )}
         </div>

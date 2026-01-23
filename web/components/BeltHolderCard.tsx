@@ -124,9 +124,6 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
                 >
                   {stats.wins}-{stats.losses}
                 </div>
-                <div className="text-[0.6rem] lg:text-[0.65rem] uppercase tracking-widest text-muted-foreground font-orbitron">
-                  W-L RECORD
-                </div>
               </div>
 
               {/* Longest Streak */}
