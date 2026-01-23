@@ -265,24 +265,59 @@ def parse_season_schedule(html: str, season: str) -> list[dict]:
 
 def save_season_data(league: str, season: str, games: list[dict]):
     """
-    Save season data to JSON file.
+    Save season data to JSON file, preserving any scheduled games with null scores.
 
     Args:
         league: League name ('nba')
         season: Season string (e.g., '1976-77')
-        games: List of game dictionaries
+        games: List of game dictionaries (completed games only)
     """
     data_dir = Path(__file__).parent.parent / 'data' / league.lower()
     data_dir.mkdir(parents=True, exist_ok=True)
 
     output_file = data_dir / f'{season}.json'
 
+    # Load existing data to preserve scheduled games
+    scheduled_games = []
+    if output_file.exists():
+        try:
+            with open(output_file, 'r') as f:
+                existing_data = json.load(f)
+                # Keep games with null scores (scheduled games)
+                scheduled_games = [
+                    g for g in existing_data.get('games', [])
+                    if g.get('homeScore') is None
+                ]
+                if scheduled_games:
+                    print(f"Preserving {len(scheduled_games)} scheduled games from existing file")
+        except (json.JSONDecodeError, KeyError) as e:
+            print(f"Warning: Could not load existing file: {e}")
+
+    # Merge completed games with scheduled games
+    # Use a dict to deduplicate by date+teams (completed games override scheduled)
+    games_dict = {}
+
+    # Add completed games first
+    for game in games:
+        key = f"{game['date']}:{game['homeTeam']}:{game['awayTeam']}"
+        games_dict[key] = game
+
+    # Add scheduled games if they don't conflict with completed games
+    for game in scheduled_games:
+        key = f"{game['date']}:{game['homeTeam']}:{game['awayTeam']}"
+        if key not in games_dict:
+            games_dict[key] = game
+
+    # Convert back to list and sort by date
+    all_games = list(games_dict.values())
+    all_games.sort(key=lambda g: g['date'])
+
     season_data = {
         'season': season,
         'league': league.upper(),
-        'games': games,
+        'games': all_games,
         'metadata': {
-            'total_games': len(games),
+            'total_games': len(all_games),
             'ingested_at': datetime.now().isoformat(),
             'source': 'basketball-reference.com'
         }
@@ -291,7 +326,12 @@ def save_season_data(league: str, season: str, games: list[dict]):
     with open(output_file, 'w') as f:
         json.dump(season_data, f, indent=2)
 
-    print(f"Saved {len(games)} games to {output_file}")
+    completed_count = len([g for g in all_games if g.get('homeScore') is not None])
+    scheduled_count = len(all_games) - completed_count
+
+    print(f"Saved {len(all_games)} games to {output_file}")
+    if scheduled_count > 0:
+        print(f"  ({completed_count} completed, {scheduled_count} scheduled)")
 
 
 def main():
