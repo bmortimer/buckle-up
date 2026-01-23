@@ -22,17 +22,10 @@ from bs4 import BeautifulSoup, Comment
 
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Personal NBA stats project; respecting sports-reference.com/bot-traffic.html rate limits)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate, br",
     "Referer": "https://www.basketball-reference.com/",
-    "DNT": "1",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "same-origin",
 }
 
 
@@ -96,13 +89,14 @@ def season_to_year(season_str: str) -> int:
     return int(season_str.split('-')[0]) + 1
 
 
-def fetch_season_html(season: str, month: str = None) -> str:
+def fetch_season_html(season: str, month: str = None, max_retries: int = 3) -> str:
     """
-    Fetch the NBA season schedule page from Basketball-Reference.
+    Fetch the NBA season schedule page from Basketball-Reference with retry logic.
 
     Args:
         season: Season string (e.g., '1976-77')
         month: Optional month name (e.g., 'october', 'november')
+        max_retries: Maximum number of retry attempts (default: 3)
 
     Returns:
         HTML content as string
@@ -116,13 +110,24 @@ def fetch_season_html(season: str, month: str = None) -> str:
 
     print(f"Fetching {url}...")
 
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=30)
-        resp.raise_for_status()
-        return resp.text
-    except requests.RequestException as e:
-        print(f"Error fetching URL: {e}")
-        return ""
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=30)
+            resp.raise_for_status()
+            return resp.text
+        except requests.Timeout:
+            if attempt < max_retries - 1:
+                backoff_time = 2 ** attempt  # 1s, 2s, 4s
+                print(f"  Timeout on attempt {attempt + 1}/{max_retries}. Retrying in {backoff_time}s...")
+                sleep(backoff_time)
+            else:
+                print(f"  Failed after {max_retries} attempts (timeout)")
+                return ""
+        except requests.RequestException as e:
+            print(f"  Error fetching URL: {e}")
+            return ""
+
+    return ""
 
 
 def parse_season_schedule(html: str, season: str) -> list[dict]:
@@ -181,17 +186,25 @@ def parse_season_schedule(html: str, season: str) -> list[dict]:
 
         try:
             # Extract data from cells
-            # Format: Date | Visitor/Neutral | PTS | Home/Neutral | PTS | ...
+            # Format: Date | Time | Visitor/Neutral | PTS | Home/Neutral | PTS | Box Score | ...
+            # Note: Basketball-Reference added a time column around 2025-26
             date_str = cells[0].get_text().strip()
 
             # Skip if no date (header rows, etc.)
             if not date_str or date_str == "Date":
                 continue
 
-            away_team_name = cells[1].get_text().strip()
-            away_score_str = cells[2].get_text().strip()
-            home_team_name = cells[3].get_text().strip()
-            home_score_str = cells[4].get_text().strip()
+            # Check if cells[1] is the time column (format like "6:00p" or empty for older seasons)
+            # If it's a time, shift all indices by 1
+            time_str = cells[1].get_text().strip() if len(cells) > 1 else ""
+            has_time_column = bool(time_str) and (':' in time_str or time_str == '')
+
+            offset = 1 if has_time_column else 0
+
+            away_team_name = cells[1 + offset].get_text().strip()
+            away_score_str = cells[2 + offset].get_text().strip()
+            home_team_name = cells[3 + offset].get_text().strip()
+            home_score_str = cells[4 + offset].get_text().strip()
 
             # Skip if scores are empty (game not played yet)
             if not away_score_str or not home_score_str:

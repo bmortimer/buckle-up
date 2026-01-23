@@ -339,27 +339,47 @@ def main():
     # Parse and validate season
     season, start_year = parse_season(args.season)
 
-    # Try NBA Stats API first, fall back to Basketball-Reference if it fails
+    # For current season: Try Basketball-Reference first (more reliable)
+    # For historical seasons: Try NBA Stats API first, fall back to Basketball-Reference
     games = None
 
-    try:
-        # Fetch from NBA API
-        if is_current_season(season):
-            print(f"Detected current season - trying schedule endpoint for full schedule")
+    if is_current_season(season):
+        print(f"Detected current season - using Basketball-Reference (primary source)")
+        try:
+            import subprocess
+            result = subprocess.run(
+                ['python3', 'scripts/ingest_nba_bball_ref.py', '--season', season],
+                capture_output=True,
+                text=True,
+                timeout=300
+            )
+            if result.returncode == 0:
+                print(f"✓ Successfully fetched from Basketball-Reference")
+                return
+            else:
+                raise Exception(f"Basketball-Reference failed: {result.stderr}")
+        except Exception as e:
+            print(f"\nBasketball-Reference failed: {e}")
+            print(f"Falling back to NBA Stats API...")
             try:
-                games = fetch_nba_schedule(season)
-            except Exception as e:
-                print(f"Schedule endpoint failed: {e}")
-                print(f"Trying game finder (completed games only)")
-                games = fetch_nba_season(season)
-        else:
-            print(f"Historical season - using game finder for completed games")
+                print(f"Trying schedule endpoint for full schedule")
+                try:
+                    games = fetch_nba_schedule(season)
+                except Exception as schedule_error:
+                    print(f"Schedule endpoint failed: {schedule_error}")
+                    print(f"Trying game finder (completed games only)")
+                    games = fetch_nba_season(season)
+            except Exception as nba_api_error:
+                print(f"NBA Stats API also failed: {nba_api_error}")
+                raise Exception("Both Basketball-Reference and NBA Stats API failed")
+    else:
+        # Historical season - try NBA Stats API first
+        print(f"Historical season - trying NBA Stats API first")
+        try:
             games = fetch_nba_season(season)
-    except Exception as e:
-        # NBA API failed - only fall back to Basketball-Reference for current season
-        if is_current_season(season):
+        except Exception as e:
             print(f"\nNBA Stats API failed: {e}")
-            print(f"Falling back to Basketball-Reference (completed games only)...")
+            print(f"Falling back to Basketball-Reference...")
             try:
                 import subprocess
                 result = subprocess.run(
@@ -376,21 +396,19 @@ def main():
             except Exception as fallback_error:
                 print(f"Basketball-Reference fallback failed: {fallback_error}")
                 raise
-        else:
-            # For historical seasons, just fail - we shouldn't scrape unnecessarily
-            raise
 
-    # Save to file
-    save_season_data('nba', season, games)
+    # Save to file (only if we got games from NBA Stats API)
+    if games:
+        save_season_data('nba', season, games)
 
-    completed = sum(1 for g in games if g['homeScore'] is not None)
-    scheduled = len(games) - completed
+        completed = sum(1 for g in games if g['homeScore'] is not None)
+        scheduled = len(games) - completed
 
-    print(f"\n✓ Successfully ingested NBA season {season}")
-    print(f"  - {len(games)} total games")
-    if scheduled > 0:
-        print(f"  - {completed} completed, {scheduled} scheduled")
-    print(f"  - Data saved to data/nba/{season}.json")
+        print(f"\n✓ Successfully ingested NBA season {season}")
+        print(f"  - {len(games)} total games")
+        if scheduled > 0:
+            print(f"  - {completed} completed, {scheduled} scheduled")
+        print(f"  - Data saved to data/nba/{season}.json")
 
 
 if __name__ == '__main__':
