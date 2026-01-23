@@ -254,6 +254,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center">
           <span aria-hidden="true">◆ </span>
           <h2 className="inline font-normal">History</h2>
+          <span> · {displayedTeamCodes || 'All Teams'} · {yearDisplay} </span>
           <span aria-hidden="true"> ◆</span>
         </div>
       </div>
