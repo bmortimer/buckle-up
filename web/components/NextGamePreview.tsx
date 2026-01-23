@@ -58,7 +58,7 @@ export default function NextGamePreview({
     return (
       <div
         data-card="next-game"
-        className="scoreboard-panel p-3 sm:p-4 md:p-6 relative overflow-hidden h-full flex flex-col"
+        className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden h-full flex flex-col"
       >
         <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
         <div className="relative z-10 flex flex-col flex-1 justify-between">
@@ -104,6 +104,12 @@ export default function NextGamePreview({
             </div>
           </div>
         </div>
+
+        {/* Corner rivets for retro hardware look */}
+        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
       </div>
     )
   }
@@ -111,7 +117,7 @@ export default function NextGamePreview({
   return (
     <div
       data-card="next-game"
-      className="scoreboard-panel p-3 sm:p-4 md:p-6 relative overflow-hidden h-full flex flex-col"
+      className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden h-full flex flex-col"
     >
       {/* Top LED status bar */}
       <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
@@ -128,12 +134,12 @@ export default function NextGamePreview({
         <div className="flex-1 flex flex-col justify-center">
           {/* Date */}
           <div className="text-center mb-3 sm:mb-4">
-            <div
+            <h3
               className="text-lg sm:text-xl md:text-2xl font-mono tracking-[0.1em] led-text"
               style={{ color: 'hsl(var(--led-amber))' }}
             >
               {formatDate(nextGame.date)}
-            </div>
+            </h3>
           </div>
 
           {/* Teams - Always Away @ Home */}
@@ -219,6 +225,12 @@ export default function NextGamePreview({
           </div>
         </div>
       </div>
+
+      {/* Corner rivets for retro hardware look */}
+      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
     </div>
   )
 }

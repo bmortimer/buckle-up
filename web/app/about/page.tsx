@@ -90,7 +90,7 @@ export default function AboutPage() {
         </nav>
 
         {/* Header - Scoreboard Style */}
-        <header className="scoreboard-panel p-6 sm:p-8 md:p-10 text-center mb-8 sm:mb-12 relative overflow-hidden">
+        <header className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center mb-8 sm:mb-12 relative overflow-hidden">
           {/* Top LED strip */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" />
 
@@ -107,11 +107,17 @@ export default function AboutPage() {
           <p className="text-base sm:text-lg text-muted-foreground font-body leading-relaxed max-w-2xl mx-auto">
             What if our sports leagues worked a bit more like boxing or wrestling? One belt to rule them all. To become the champion, you have to <em className="text-foreground">beat</em> the champion.
           </p>
+
+          {/* Corner rivets for retro hardware look */}
+          <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+          <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+          <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+          <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
         </header>
 
         {/* The Concept */}
         <section className="mb-8 sm:mb-12">
-          <div className="scoreboard-panel p-5 sm:p-6">
+          <div className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
             <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 text-center border-b border-border pb-3">
               <span aria-hidden="true">◆ </span>
               <h2 className="inline font-normal">The Concept</h2>
@@ -122,12 +128,18 @@ export default function AboutPage() {
                 The lineal championship (a.k.a. Regular-Season Championship Belt) applies the logic of king of the hill to our favorite sports leagues. The result? Hilarity, of course. The Belt adds a little sizzle to meaningless regular season games, where any old Tuesday could be a title bout and bottom-feeding teams have their opportunity to shine.
               </p>
             </div>
+
+            {/* Corner rivets for retro hardware look */}
+            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
           </div>
         </section>
 
         {/* How It Works */}
         <section className="mb-8 sm:mb-12">
-          <div className="scoreboard-panel p-5 sm:p-6">
+          <div className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
             <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center border-b border-border pb-3">
               <span aria-hidden="true">◆ </span>
               <h2 className="inline font-normal">How It Works</h2>
@@ -174,6 +186,12 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
+
+            {/* Corner rivets for retro hardware look */}
+            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
           </div>
         </section>
 
@@ -185,40 +203,58 @@ export default function AboutPage() {
             <span aria-hidden="true"> ◆</span>
           </div>
           <div className="space-y-3">
-            <details className="group scoreboard-panel" open>
+            <details className="group scoreboard-panel relative overflow-hidden" open>
               <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
                 Why only regular season games?
-                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-xs">&#9662;</span>
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-sm">&#9662;</span>
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 The playoffs already determine a champion&mdash;that's their job. The belt tracker asks, and answers, a different question entirely.
               </div>
+
+              {/* Corner rivets for retro hardware look */}
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
             </details>
 
-            <details className="group scoreboard-panel">
+            <details className="group scoreboard-panel relative overflow-hidden">
               <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
                 What happens if the belt holder misses the playoffs?
-                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-xs">&#9662;</span>
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-sm">&#9662;</span>
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 It doesn't matter for the belt! The lineal championship only tracks regular season games. A team could hold the belt at season's end, miss the playoffs entirely, and we'd still reset to the actual Finals champion next season. The belt and the "real" championship are separate things.
               </div>
+
+              {/* Corner rivets for retro hardware look */}
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
             </details>
 
-            <details className="group scoreboard-panel">
+            <details className="group scoreboard-panel relative overflow-hidden">
               <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
                 How far back does the data go?
-                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-xs">&#9662;</span>
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-sm">&#9662;</span>
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 We track the belt from the WNBA's inaugural 1997 season to present day. The Houston Comets, as the first champions, started 1998 with the belt. Before that, for 1997, we gave the belt to the winner of the league's very first game (the New York Liberty).
               </div>
+
+              {/* Corner rivets for retro hardware look */}
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
             </details>
 
-            <details className="group scoreboard-panel">
+            <details className="group scoreboard-panel relative overflow-hidden">
               <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
                 Where does your data come from?
-                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-xs">&#9662;</span>
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-sm">&#9662;</span>
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
@@ -231,12 +267,18 @@ export default function AboutPage() {
                   All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!
                 </p>
               </div>
+
+              {/* Corner rivets for retro hardware look */}
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
             </details>
 
-            <details className="group scoreboard-panel">
+            <details className="group scoreboard-panel relative overflow-hidden">
               <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
                 Why the WNBA? Will you bring this to other leagues?
-                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-xs">&#9662;</span>
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-sm">&#9662;</span>
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
@@ -246,12 +288,18 @@ export default function AboutPage() {
                   If the people demand it, we could bring The Belt to other leagues too but the WNBA felt like a natural place to start.
                 </p>
               </div>
+
+              {/* Corner rivets for retro hardware look */}
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
             </details>
 
-            <details className="group scoreboard-panel">
+            <details className="group scoreboard-panel relative overflow-hidden">
               <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
                 Where did this idea come from?
-                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-xs">&#9662;</span>
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-sm">&#9662;</span>
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
@@ -261,12 +309,18 @@ export default function AboutPage() {
                   When Grantland shut down in 2015, the belt tracker went with it. Occasionally someone pops up and calculates who owns the belt across various leagues but no one has done it consistently...until now.
                 </p>
               </div>
+
+              {/* Corner rivets for retro hardware look */}
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
             </details>
           </div>
         </section>
 
         {/* Footer */}
-        <footer className="scoreboard-panel p-6 text-center relative overflow-hidden">
+        <footer className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
           <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent" />
           <p className="text-xs text-muted-foreground font-mono tracking-wider uppercase mb-3">
             Data updates nightly at 03:00 ET.
@@ -280,6 +334,12 @@ export default function AboutPage() {
               Feedback
             </a>
           </div>
+
+          {/* Corner rivets for retro hardware look */}
+          <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+          <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+          <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+          <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
         </footer>
       </article>
     </>

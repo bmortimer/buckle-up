@@ -10,12 +10,14 @@ interface TimelineProps {
 
 export default function Timeline({ changes, franchises, selectedTeam }: TimelineProps) {
   return (
-    <div data-card="timeline" className="scoreboard-panel p-6">
+    <div data-card="timeline" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
       {/* Header with LED indicators */}
       <div className="flex items-center justify-between mb-6 border-b-2 border-border pb-3">
-        <h3 className="text-base font-orbitron tracking-[0.2em] uppercase">
-          ◆ Belt Changes
-        </h3>
+        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
+          <span aria-hidden="true">◆ </span>
+          <h3 className="inline font-normal">Belt Changes</h3>
+          <span aria-hidden="true"> ◆</span>
+        </div>
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
           <span className="text-xs font-mono tabular-nums text-muted-foreground">
@@ -99,6 +101,12 @@ export default function Timeline({ changes, franchises, selectedTeam }: Timeline
           ▸ CHRONOLOGICAL ORDER
         </div>
       </div>
+
+      {/* Corner rivets for retro hardware look */}
+      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
     </div>
   )
 }

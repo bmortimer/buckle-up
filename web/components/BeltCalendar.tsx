@@ -249,13 +249,12 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
   })()
 
   return (
-    <div data-card="calendar" className="scoreboard-panel p-6 relative">
+    <div data-card="calendar" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
       <div className="flex items-center justify-center mb-6 border-b-2 border-border pb-3">
-        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
+        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center">
           <span aria-hidden="true">◆ </span>
           <h2 className="inline font-normal">History</h2>
-          <span> · {displayedTeamCodes || 'All Teams'} · {yearDisplay} </span>
-          <span aria-hidden="true">◆</span>
+          <span aria-hidden="true"> ◆</span>
         </div>
       </div>
 
@@ -435,6 +434,12 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
           }}
         />
       )}
+
+      {/* Corner rivets for retro hardware look */}
+      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
     </div>
   )
 }

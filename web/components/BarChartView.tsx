@@ -82,7 +82,7 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
     : sortedTeams[0]?.[sortBy === 'wins' ? 'wins' : sortBy === 'streak' ? 'longestReign' : 'totalGames'] || 1
 
   return (
-    <div data-card="team-stats" className="scoreboard-panel px-2 lg:px-6 py-3 sm:py-4 md:py-6">
+    <div data-card="team-stats" className="scoreboard-panel px-2 lg:px-6 py-3 sm:py-4 md:py-6 relative overflow-hidden">
       {/* Header with sort controls */}
       <div className="flex flex-col items-center gap-3 mb-6 border-b-2 border-border pb-3">
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center">
@@ -184,6 +184,12 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
           )
         })}
       </div>
+
+      {/* Corner rivets for retro hardware look */}
+      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
     </div>
   )
 }

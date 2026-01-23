@@ -29,7 +29,7 @@ export default function Last5BeltChanges({
 
   if (last5Changes.length === 0) {
     return (
-      <div data-card="last-5-changes" className="scoreboard-panel panel-rivets p-3 sm:p-4 md:p-6 relative overflow-hidden">
+      <div data-card="last-5-changes" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
         <div className="led-bar-top" />
         <div className="relative z-10">
           <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center">
@@ -42,6 +42,12 @@ export default function Last5BeltChanges({
           </div>
         </div>
         <div className="led-bar-bottom" />
+
+        {/* Corner rivets for retro hardware look */}
+        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
       </div>
     )
   }
@@ -50,7 +56,7 @@ export default function Last5BeltChanges({
   const fullPath = last5Changes.map(c => c.toTeam)
 
   return (
-    <div data-card="last-5-changes" className="scoreboard-panel panel-rivets p-3 sm:p-4 md:p-6 relative overflow-hidden">
+    <div data-card="last-5-changes" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
       {/* Top LED status bar - green */}
       <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-green-500 to-transparent opacity-60" />
       <div className="relative z-10">
@@ -114,6 +120,12 @@ export default function Last5BeltChanges({
           })}
         </div>
       </div>
+
+      {/* Corner rivets for retro hardware look */}
+      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
     </div>
   )
 }

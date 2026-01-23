@@ -415,7 +415,7 @@ export default function BeltDashboard({
       </div>
 
       {/* Footer */}
-      <footer data-card="footer" className="scoreboard-panel panel-rivets p-6 text-center relative overflow-hidden">
+      <footer data-card="footer" className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
         <div className="led-bar-top" />
         <div className="relative z-10">
           <p className="text-xs font-mono text-muted-foreground tracking-wider uppercase mb-2">
@@ -431,6 +431,12 @@ export default function BeltDashboard({
           </p>
         </div>
         <div className="led-bar-bottom" />
+
+        {/* Corner rivets for retro hardware look */}
+        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
       </footer>
 
       {/* Buy Me a Coffee */}
