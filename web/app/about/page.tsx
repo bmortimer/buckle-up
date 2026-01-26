@@ -241,8 +241,16 @@ export default function AboutPage() {
                 <span className="text-muted-foreground group-open:rotate-180 transition-transform text-sm">&#9662;</span>
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
-                We track the belt from the WNBA's inaugural 1997 season to present day. The Houston Comets, as the first champions, started 1998 with the belt. Before that, for 1997, we gave the belt to the winner of the league's very first game (the New York Liberty).
+                <p className="mb-3">
+                  We track the belt from the WNBA's inaugural 1997 season to present day. The Houston Comets, as the first champions, started 1998 with the belt. Before that, for 1997, we gave the belt to the winner of the league's very first game (the New York Liberty).
+                </p>
+                <p>
+                  For the NBA, we track the belt from the NBA-ABA merger in 1976 to present day.  The belt starts with the Boston Celtics, who won the 1975-1976 NBA championship.
+                </p>
+                
               </div>
+
+              
 
               {/* Corner rivets for retro hardware look */}
               <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
@@ -282,10 +290,10 @@ export default function AboutPage() {
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
-                  Why not? The WNBA deserves the same obsessive treatment as every other league and it's a close cousin to the NBA.
+                  Why not? We started with the WNBA because it deserves the same obsessive treatment as every other league and it's a close cousin to the NBA.  We then expanded to the NBA since it was the genesis of the idea in the first place.
                 </p>
                 <p>
-                  If the people demand it, we could bring The Belt to other leagues too but the WNBA felt like a natural place to start.
+                  If the people demand it, we could bring The Belt to other leagues too but the WNBA and NBA felt like the natural place to start.
                 </p>
               </div>
 
