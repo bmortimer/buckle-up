@@ -1,0 +1,169 @@
+franchise_id,team_abbr,display_name,city,start_year,end_year,status,successor_franchise_id,hex_color
+
+# ============================================
+# ORIGINAL SIX (1942-1967)
+# ============================================
+
+# BOSTON BRUINS
+BOS,BOS,Boston Bruins,Boston,1924,,active,,#FFB81C
+
+# CHICAGO BLACKHAWKS
+CHI,CHI,Chicago Blackhawks,Chicago,1926,,active,,#CF0A2C
+
+# DETROIT RED WINGS
+DET,DET,Detroit Red Wings,Detroit,1926,,active,,#CE1126
+
+# MONTREAL CANADIENS
+MTL,MTL,Montreal Canadiens,Montreal,1909,,active,,#AF1E2D
+
+# NEW YORK RANGERS
+NYR,NYR,New York Rangers,New York,1926,,active,,#0038A8
+
+# TORONTO MAPLE LEAFS
+TOR,TOR,Toronto Maple Leafs,Toronto,1917,,active,,#00205B
+
+# ============================================
+# 1967 EXPANSION
+# ============================================
+
+# LOS ANGELES KINGS
+LAK,LAK,Los Angeles Kings,Los Angeles,1967,,active,,#111111
+
+# MINNESOTA NORTH STARS -> DALLAS STARS (1993)
+DAL,DAL,Dallas Stars,Dallas,1993,,active,,#006847
+MNS,MNS,Minnesota North Stars,Bloomington,1967,1993,relocated,DAL,#008053
+
+# PHILADELPHIA FLYERS
+PHI,PHI,Philadelphia Flyers,Philadelphia,1967,,active,,#F74902
+
+# PITTSBURGH PENGUINS
+PIT,PIT,Pittsburgh Penguins,Pittsburgh,1967,,active,,#FCB514
+
+# ST. LOUIS BLUES
+STL,STL,St. Louis Blues,St. Louis,1967,,active,,#002F87
+
+# CALIFORNIA GOLDEN SEALS -> CLEVELAND BARONS (1976, merged with Minnesota 1978)
+CLE,CLE,Cleveland Barons,Richfield,1976,1978,defunct,,#CE1126
+CGS,CGS,California Golden Seals,Oakland,1967,1976,relocated,CLE,#007A5E
+
+# ============================================
+# 1970 EXPANSION
+# ============================================
+
+# BUFFALO SABRES
+BUF,BUF,Buffalo Sabres,Buffalo,1970,,active,,#002654
+
+# VANCOUVER CANUCKS
+VAN,VAN,Vancouver Canucks,Vancouver,1970,,active,,#00205B
+
+# ============================================
+# 1972 EXPANSION
+# ============================================
+
+# NEW YORK ISLANDERS
+NYI,NYI,New York Islanders,Elmont,1972,,active,,#00539B
+
+# ATLANTA FLAMES -> CALGARY FLAMES (1980)
+CGY,CGY,Calgary Flames,Calgary,1980,,active,,#D2001C
+AFM,AFM,Atlanta Flames,Atlanta,1972,1980,relocated,CGY,#D2001C
+
+# ============================================
+# 1974 EXPANSION
+# ============================================
+
+# WASHINGTON CAPITALS
+WSH,WSH,Washington Capitals,Washington,1974,,active,,#041E42
+
+# KANSAS CITY SCOUTS -> COLORADO ROCKIES (1976) -> NEW JERSEY DEVILS (1982)
+NJD,NJD,New Jersey Devils,Newark,1982,,active,,#CE1126
+CLR,CLR,Colorado Rockies,Denver,1976,1982,relocated,NJD,#003366
+KCS,KCS,Kansas City Scouts,Kansas City,1974,1976,relocated,CLR,#C8102E
+
+# ============================================
+# 1979 WHA MERGER
+# ============================================
+
+# EDMONTON OILERS
+EDM,EDM,Edmonton Oilers,Edmonton,1979,,active,,#041E42
+
+# HARTFORD WHALERS -> CAROLINA HURRICANES (1997)
+CAR,CAR,Carolina Hurricanes,Raleigh,1997,,active,,#CC0000
+HFD,HFD,Hartford Whalers,Hartford,1979,1997,relocated,CAR,#00703C
+
+# QUEBEC NORDIQUES -> COLORADO AVALANCHE (1995)
+COL,COL,Colorado Avalanche,Denver,1995,,active,,#6F263D
+QUE,QUE,Quebec Nordiques,Quebec City,1979,1995,relocated,COL,#295491
+
+# WINNIPEG JETS (ORIGINAL) -> PHOENIX COYOTES (1996) -> ARIZONA COYOTES (2014) -> UTAH HOCKEY CLUB (2024)
+UTA,UTA,Utah Hockey Club,Salt Lake City,2024,,active,,#6CACE4
+ARI,ARI,Arizona Coyotes,Glendale,2014,2024,relocated,UTA,#8C2633
+PHX,PHX,Phoenix Coyotes,Glendale,1996,2014,rebranded,ARI,#8C2633
+WPG1,WPG,Winnipeg Jets,Winnipeg,1979,1996,relocated,PHX,#041E42
+
+# ============================================
+# 1991 EXPANSION
+# ============================================
+
+# SAN JOSE SHARKS
+SJS,SJS,San Jose Sharks,San Jose,1991,,active,,#006D75
+
+# ============================================
+# 1992 EXPANSION
+# ============================================
+
+# OTTAWA SENATORS
+OTT,OTT,Ottawa Senators,Ottawa,1992,,active,,#C52032
+
+# TAMPA BAY LIGHTNING
+TBL,TBL,Tampa Bay Lightning,Tampa,1992,,active,,#002868
+
+# ============================================
+# 1993 EXPANSION
+# ============================================
+
+# FLORIDA PANTHERS
+FLA,FLA,Florida Panthers,Sunrise,1993,,active,,#041E42
+
+# MIGHTY DUCKS OF ANAHEIM -> ANAHEIM DUCKS (2006)
+ANA,ANA,Anaheim Ducks,Anaheim,2006,,active,,#F47A38
+MDA,ANA,Mighty Ducks of Anaheim,Anaheim,1993,2006,rebranded,ANA,#9F792C
+
+# ============================================
+# 1998 EXPANSION
+# ============================================
+
+# NASHVILLE PREDATORS
+NSH,NSH,Nashville Predators,Nashville,1998,,active,,#FFB81C
+
+# ============================================
+# 1999 EXPANSION
+# ============================================
+
+# ATLANTA THRASHERS -> WINNIPEG JETS (2011, new franchise, NOT same as original Jets)
+WPG,WPG,Winnipeg Jets,Winnipeg,2011,,active,,#041E42
+ATL,ATL,Atlanta Thrashers,Atlanta,1999,2011,relocated,WPG,#5C88DA
+
+# ============================================
+# 2000 EXPANSION
+# ============================================
+
+# COLUMBUS BLUE JACKETS
+CBJ,CBJ,Columbus Blue Jackets,Columbus,2000,,active,,#002654
+
+# MINNESOTA WILD
+MIN,MIN,Minnesota Wild,Saint Paul,2000,,active,,#154734
+
+# ============================================
+# 2017 EXPANSION
+# ============================================
+
+# VEGAS GOLDEN KNIGHTS
+VGK,VGK,Vegas Golden Knights,Las Vegas,2017,,active,,#B4975A
+
+# ============================================
+# 2021 EXPANSION
+# ============================================
+
+# SEATTLE KRAKEN
+SEA,SEA,Seattle Kraken,Seattle,2021,,active,,#001628
+
