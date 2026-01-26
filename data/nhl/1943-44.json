@@ -1,0 +1,1060 @@
+{
+  "season": "1943-44",
+  "league": "NHL",
+  "games": [
+    {
+      "date": "1943-10-30",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-10-30",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-10-31",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-10-31",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1943-11-02",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1943-11-04",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-11-04",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-11-06",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-11-06",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-11-07",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-11-07",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1943-11-07",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1943-11-11",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-11-11",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-11-13",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1943-11-13",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1943-11-13",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-11-14",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 10,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-11-14",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-11-16",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-11-18",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1943-11-18",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-11-18",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1943-11-20",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1943-11-21",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-11-21",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 13,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-11-21",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-11-23",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 8,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-11-25",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-11-25",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1943-11-27",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1943-11-27",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-11-28",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-11-28",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-11-28",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-11-30",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-12-02",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-12-02",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-12-04",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-12-04",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 11,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-12-05",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-12-05",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 7,
+      "awayScore": 6
+    },
+    {
+      "date": "1943-12-07",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 6
+    },
+    {
+      "date": "1943-12-11",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 9,
+      "awayScore": 6
+    },
+    {
+      "date": "1943-12-11",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-12-12",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-12-12",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-12-12",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-12-14",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1943-12-16",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-12-18",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 8,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-12-19",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-12-19",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1943-12-19",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-12-21",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 8,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-12-22",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "1943-12-23",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1943-12-25",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1943-12-25",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1943-12-26",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1943-12-26",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 7,
+      "awayScore": 6
+    },
+    {
+      "date": "1943-12-28",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1943-12-30",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1943-12-31",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-01-01",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-01-01",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-01-02",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-01-02",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 13
+    },
+    {
+      "date": "1944-01-04",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-01-04",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-01-06",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-01-06",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1944-01-08",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-01-08",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 12,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-01-09",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-01-09",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1944-01-11",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1944-01-13",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-01-13",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-01-15",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-01-15",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1944-01-16",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1944-01-16",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1944-01-16",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 8,
+      "awayScore": 6
+    },
+    {
+      "date": "1944-01-18",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1944-01-20",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-01-22",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-01-22",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-01-23",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-01-23",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-01-23",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 15,
+      "awayScore": 0
+    },
+    {
+      "date": "1944-01-25",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1944-01-27",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-01-27",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-01-29",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1944-01-29",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-01-30",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-01-30",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-02-01",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-02-03",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 12,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-02-05",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-02-05",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1944-02-05",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1944-02-06",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-02-06",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-02-08",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1944-02-10",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-02-10",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 8
+    },
+    {
+      "date": "1944-02-12",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-02-13",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-02-13",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-02-13",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1944-02-17",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-02-19",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-02-19",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 10,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-02-20",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 0
+    },
+    {
+      "date": "1944-02-20",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-02-20",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1944-02-22",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1944-02-24",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1944-02-24",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-02-26",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 10,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-02-26",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-02-27",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-02-27",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-02-29",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "1944-03-02",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-03-02",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-03-04",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 10,
+      "awayScore": 9
+    },
+    {
+      "date": "1944-03-04",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-03-04",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-03-05",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1944-03-05",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-03-05",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-03-07",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1944-03-09",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-03-09",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 8
+    },
+    {
+      "date": "1944-03-11",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-03-11",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1944-03-12",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1944-03-12",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-03-12",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1944-03-14",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1944-03-16",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 10,
+      "awayScore": 9
+    },
+    {
+      "date": "1944-03-16",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-03-18",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1944-03-18",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 11,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-03-18",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 10,
+      "awayScore": 2
+    },
+    {
+      "date": "1944-03-19",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1944-03-19",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 6
+    }
+  ],
+  "metadata": {
+    "total_games": 150,
+    "ingested_at": "2026-01-26T08:19:05.816378"
+  }
+}

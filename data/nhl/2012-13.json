@@ -1,0 +1,5050 @@
+{
+  "season": "2012-13",
+  "league": "NHL",
+  "games": [
+    {
+      "date": "2013-01-19",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "DAL",
+      "awayTeam": "PHX",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "FLA",
+      "awayTeam": "CAR",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "LAK",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "MIN",
+      "awayTeam": "COL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "NSH",
+      "awayTeam": "CBJ",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "NYI",
+      "awayTeam": "NJD",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "PHI",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "TBL",
+      "awayTeam": "WSH",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "VAN",
+      "awayTeam": "ANA",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "2013-01-19",
+      "homeTeam": "WPG",
+      "awayTeam": "OTT",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-20",
+      "homeTeam": "BUF",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-20",
+      "homeTeam": "CGY",
+      "awayTeam": "SJS",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-20",
+      "homeTeam": "MIN",
+      "awayTeam": "DAL",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-01-20",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-01-20",
+      "homeTeam": "PHX",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-01-20",
+      "homeTeam": "VAN",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-21",
+      "homeTeam": "BOS",
+      "awayTeam": "WPG",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-21",
+      "homeTeam": "CBJ",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-21",
+      "homeTeam": "CGY",
+      "awayTeam": "ANA",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-01-21",
+      "homeTeam": "NSH",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-21",
+      "homeTeam": "NYI",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-21",
+      "homeTeam": "OTT",
+      "awayTeam": "FLA",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-01-21",
+      "homeTeam": "TOR",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-22",
+      "homeTeam": "CAR",
+      "awayTeam": "TBL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-22",
+      "homeTeam": "CHI",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-22",
+      "homeTeam": "COL",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-22",
+      "homeTeam": "DET",
+      "awayTeam": "DAL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-22",
+      "homeTeam": "EDM",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-01-22",
+      "homeTeam": "MIN",
+      "awayTeam": "NSH",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-22",
+      "homeTeam": "MTL",
+      "awayTeam": "FLA",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-22",
+      "homeTeam": "NJD",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-01-22",
+      "homeTeam": "WSH",
+      "awayTeam": "WPG",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-23",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-23",
+      "homeTeam": "PHX",
+      "awayTeam": "CBJ",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-23",
+      "homeTeam": "PIT",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-01-23",
+      "homeTeam": "VAN",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-24",
+      "homeTeam": "CAR",
+      "awayTeam": "BUF",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-24",
+      "homeTeam": "COL",
+      "awayTeam": "CBJ",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-01-24",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-24",
+      "homeTeam": "EDM",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-24",
+      "homeTeam": "FLA",
+      "awayTeam": "OTT",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-24",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-24",
+      "homeTeam": "SJS",
+      "awayTeam": "PHX",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-24",
+      "homeTeam": "STL",
+      "awayTeam": "NSH",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-01-24",
+      "homeTeam": "TOR",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "2013-01-24",
+      "homeTeam": "WSH",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-25",
+      "homeTeam": "ANA",
+      "awayTeam": "VAN",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-01-25",
+      "homeTeam": "BOS",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-25",
+      "homeTeam": "BUF",
+      "awayTeam": "CAR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-25",
+      "homeTeam": "DET",
+      "awayTeam": "MIN",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-25",
+      "homeTeam": "NJD",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-25",
+      "homeTeam": "TBL",
+      "awayTeam": "OTT",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-25",
+      "homeTeam": "WPG",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-26",
+      "homeTeam": "ANA",
+      "awayTeam": "NSH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-26",
+      "homeTeam": "CBJ",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-26",
+      "homeTeam": "CGY",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-26",
+      "homeTeam": "DAL",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-26",
+      "homeTeam": "FLA",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 7
+    },
+    {
+      "date": "2013-01-26",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-26",
+      "homeTeam": "PHX",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-26",
+      "homeTeam": "SJS",
+      "awayTeam": "COL",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-01-27",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-27",
+      "homeTeam": "MTL",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-27",
+      "homeTeam": "OTT",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-27",
+      "homeTeam": "SJS",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-27",
+      "homeTeam": "STL",
+      "awayTeam": "MIN",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-27",
+      "homeTeam": "TBL",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-27",
+      "homeTeam": "WPG",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-27",
+      "homeTeam": "WSH",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-28",
+      "homeTeam": "CAR",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-01-28",
+      "homeTeam": "CBJ",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-28",
+      "homeTeam": "EDM",
+      "awayTeam": "COL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-28",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-28",
+      "homeTeam": "PHX",
+      "awayTeam": "NSH",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-01-29",
+      "homeTeam": "BOS",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-29",
+      "homeTeam": "BUF",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-29",
+      "homeTeam": "DET",
+      "awayTeam": "DAL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-29",
+      "homeTeam": "MIN",
+      "awayTeam": "CBJ",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-29",
+      "homeTeam": "MTL",
+      "awayTeam": "WPG",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-29",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-29",
+      "homeTeam": "OTT",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-29",
+      "homeTeam": "PIT",
+      "awayTeam": "NYI",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-29",
+      "homeTeam": "SJS",
+      "awayTeam": "ANA",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-29",
+      "homeTeam": "TBL",
+      "awayTeam": "FLA",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-30",
+      "homeTeam": "MIN",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-30",
+      "homeTeam": "OTT",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-01-30",
+      "homeTeam": "PHX",
+      "awayTeam": "EDM",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-30",
+      "homeTeam": "VAN",
+      "awayTeam": "COL",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-01-31",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "2013-01-31",
+      "homeTeam": "CBJ",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-01-31",
+      "homeTeam": "CGY",
+      "awayTeam": "COL",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-01-31",
+      "homeTeam": "FLA",
+      "awayTeam": "WPG",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-31",
+      "homeTeam": "LAK",
+      "awayTeam": "NSH",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-31",
+      "homeTeam": "NJD",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-01-31",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-01-31",
+      "homeTeam": "SJS",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-01-31",
+      "homeTeam": "TOR",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-01",
+      "homeTeam": "ANA",
+      "awayTeam": "MIN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-01",
+      "homeTeam": "CAR",
+      "awayTeam": "OTT",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-01",
+      "homeTeam": "DAL",
+      "awayTeam": "PHX",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-01",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-01",
+      "homeTeam": "TBL",
+      "awayTeam": "WPG",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-01",
+      "homeTeam": "VAN",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-01",
+      "homeTeam": "WSH",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "ANA",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "CBJ",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "CGY",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "COL",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "PHI",
+      "awayTeam": "CAR",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "PHX",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "PIT",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "SJS",
+      "awayTeam": "NSH",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "TBL",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-02",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-03",
+      "homeTeam": "BUF",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-03",
+      "homeTeam": "MTL",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-03",
+      "homeTeam": "NYI",
+      "awayTeam": "NJD",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-03",
+      "homeTeam": "WSH",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-02-04",
+      "homeTeam": "ANA",
+      "awayTeam": "SJS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-04",
+      "homeTeam": "COL",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-04",
+      "homeTeam": "EDM",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-04",
+      "homeTeam": "PHX",
+      "awayTeam": "MIN",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-04",
+      "homeTeam": "TOR",
+      "awayTeam": "CAR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-05",
+      "homeTeam": "CBJ",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-05",
+      "homeTeam": "DET",
+      "awayTeam": "CGY",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-05",
+      "homeTeam": "NJD",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-05",
+      "homeTeam": "NYI",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-05",
+      "homeTeam": "OTT",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-05",
+      "homeTeam": "PHI",
+      "awayTeam": "TBL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-05",
+      "homeTeam": "SJS",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-05",
+      "homeTeam": "STL",
+      "awayTeam": "NSH",
+      "homeScore": 1,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-02-05",
+      "homeTeam": "WPG",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-05",
+      "homeTeam": "WSH",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-06",
+      "homeTeam": "COL",
+      "awayTeam": "ANA",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-06",
+      "homeTeam": "EDM",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-06",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "CBJ",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "MIN",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "NJD",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "NSH",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "NYR",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "OTT",
+      "awayTeam": "CAR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "PHI",
+      "awayTeam": "FLA",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "PHX",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "PIT",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-07",
+      "homeTeam": "WPG",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-08",
+      "homeTeam": "DAL",
+      "awayTeam": "ANA",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "DET",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "MIN",
+      "awayTeam": "NSH",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "NJD",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "NYI",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "OTT",
+      "awayTeam": "WPG",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "PHI",
+      "awayTeam": "CAR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "SJS",
+      "awayTeam": "PHX",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "STL",
+      "awayTeam": "ANA",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "VAN",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-09",
+      "homeTeam": "WSH",
+      "awayTeam": "FLA",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-10",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-10",
+      "homeTeam": "CBJ",
+      "awayTeam": "EDM",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-10",
+      "homeTeam": "DET",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-10",
+      "homeTeam": "NSH",
+      "awayTeam": "CHI",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-10",
+      "homeTeam": "NYR",
+      "awayTeam": "TBL",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-10",
+      "homeTeam": "PIT",
+      "awayTeam": "NJD",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-11",
+      "homeTeam": "CBJ",
+      "awayTeam": "SJS",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-11",
+      "homeTeam": "CGY",
+      "awayTeam": "MIN",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-11",
+      "homeTeam": "COL",
+      "awayTeam": "PHX",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-11",
+      "homeTeam": "NYI",
+      "awayTeam": "CAR",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-02-11",
+      "homeTeam": "STL",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-11",
+      "homeTeam": "TOR",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-12",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-12",
+      "homeTeam": "CHI",
+      "awayTeam": "ANA",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-12",
+      "homeTeam": "EDM",
+      "awayTeam": "DAL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-12",
+      "homeTeam": "FLA",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-02-12",
+      "homeTeam": "NJD",
+      "awayTeam": "CAR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-12",
+      "homeTeam": "NSH",
+      "awayTeam": "SJS",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-12",
+      "homeTeam": "OTT",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-12",
+      "homeTeam": "TBL",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-12",
+      "homeTeam": "VAN",
+      "awayTeam": "MIN",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-12",
+      "homeTeam": "WPG",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-13",
+      "homeTeam": "CGY",
+      "awayTeam": "DAL",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-13",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-13",
+      "homeTeam": "PIT",
+      "awayTeam": "OTT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-14",
+      "homeTeam": "CAR",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-14",
+      "homeTeam": "FLA",
+      "awayTeam": "MTL",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-14",
+      "homeTeam": "MIN",
+      "awayTeam": "COL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-14",
+      "homeTeam": "NSH",
+      "awayTeam": "PHX",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-14",
+      "homeTeam": "NYR",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-14",
+      "homeTeam": "TBL",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-15",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-15",
+      "homeTeam": "CGY",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-15",
+      "homeTeam": "CHI",
+      "awayTeam": "SJS",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-15",
+      "homeTeam": "DET",
+      "awayTeam": "ANA",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-15",
+      "homeTeam": "LAK",
+      "awayTeam": "CBJ",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-15",
+      "homeTeam": "NJD",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-15",
+      "homeTeam": "VAN",
+      "awayTeam": "DAL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-15",
+      "homeTeam": "WPG",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-16",
+      "homeTeam": "EDM",
+      "awayTeam": "COL",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-16",
+      "homeTeam": "FLA",
+      "awayTeam": "TBL",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-02-16",
+      "homeTeam": "MTL",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-16",
+      "homeTeam": "NSH",
+      "awayTeam": "ANA",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-16",
+      "homeTeam": "NYI",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-16",
+      "homeTeam": "PHX",
+      "awayTeam": "CBJ",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-16",
+      "homeTeam": "TOR",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-17",
+      "homeTeam": "BUF",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-17",
+      "homeTeam": "CHI",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-17",
+      "homeTeam": "DAL",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-17",
+      "homeTeam": "MIN",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-17",
+      "homeTeam": "NYR",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-17",
+      "homeTeam": "VAN",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-17",
+      "homeTeam": "WPG",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-18",
+      "homeTeam": "ANA",
+      "awayTeam": "CBJ",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-18",
+      "homeTeam": "COL",
+      "awayTeam": "NSH",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-18",
+      "homeTeam": "FLA",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-18",
+      "homeTeam": "MTL",
+      "awayTeam": "CAR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-18",
+      "homeTeam": "NJD",
+      "awayTeam": "OTT",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-18",
+      "homeTeam": "NYI",
+      "awayTeam": "PHI",
+      "homeScore": 0,
+      "awayScore": 7
+    },
+    {
+      "date": "2013-02-18",
+      "homeTeam": "PHX",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-19",
+      "homeTeam": "BUF",
+      "awayTeam": "WPG",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-19",
+      "homeTeam": "CHI",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-19",
+      "homeTeam": "EDM",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-19",
+      "homeTeam": "NSH",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-19",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-19",
+      "homeTeam": "OTT",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-19",
+      "homeTeam": "STL",
+      "awayTeam": "SJS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-19",
+      "homeTeam": "TBL",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-20",
+      "homeTeam": "CGY",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-20",
+      "homeTeam": "COL",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-20",
+      "homeTeam": "PIT",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-02-21",
+      "homeTeam": "CAR",
+      "awayTeam": "WPG",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-21",
+      "homeTeam": "DAL",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-21",
+      "homeTeam": "DET",
+      "awayTeam": "CBJ",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-21",
+      "homeTeam": "EDM",
+      "awayTeam": "MIN",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-21",
+      "homeTeam": "MTL",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-21",
+      "homeTeam": "OTT",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-21",
+      "homeTeam": "PHI",
+      "awayTeam": "FLA",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-21",
+      "homeTeam": "TBL",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-21",
+      "homeTeam": "TOR",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-21",
+      "homeTeam": "WSH",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-22",
+      "homeTeam": "CHI",
+      "awayTeam": "SJS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-22",
+      "homeTeam": "NSH",
+      "awayTeam": "VAN",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-22",
+      "homeTeam": "PIT",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "BUF",
+      "awayTeam": "NYI",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "CAR",
+      "awayTeam": "TBL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "CGY",
+      "awayTeam": "MIN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "DAL",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "DET",
+      "awayTeam": "NSH",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "EDM",
+      "awayTeam": "PHX",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "LAK",
+      "awayTeam": "COL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "OTT",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "PHI",
+      "awayTeam": "WPG",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "STL",
+      "awayTeam": "CBJ",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-23",
+      "homeTeam": "WSH",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-24",
+      "homeTeam": "ANA",
+      "awayTeam": "COL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-24",
+      "homeTeam": "CGY",
+      "awayTeam": "PHX",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-24",
+      "homeTeam": "CHI",
+      "awayTeam": "CBJ",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-24",
+      "homeTeam": "DET",
+      "awayTeam": "VAN",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-24",
+      "homeTeam": "FLA",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-24",
+      "homeTeam": "NJD",
+      "awayTeam": "WPG",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-24",
+      "homeTeam": "NYI",
+      "awayTeam": "CAR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-24",
+      "homeTeam": "PIT",
+      "awayTeam": "TBL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-25",
+      "homeTeam": "CHI",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-25",
+      "homeTeam": "LAK",
+      "awayTeam": "ANA",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-25",
+      "homeTeam": "NSH",
+      "awayTeam": "DAL",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-25",
+      "homeTeam": "OTT",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-25",
+      "homeTeam": "PHI",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-26",
+      "homeTeam": "CBJ",
+      "awayTeam": "DAL",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-26",
+      "homeTeam": "FLA",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-26",
+      "homeTeam": "MIN",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-26",
+      "homeTeam": "NYI",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-26",
+      "homeTeam": "NYR",
+      "awayTeam": "WPG",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-26",
+      "homeTeam": "SJS",
+      "awayTeam": "COL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-26",
+      "homeTeam": "TBL",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-26",
+      "homeTeam": "VAN",
+      "awayTeam": "PHX",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-26",
+      "homeTeam": "WSH",
+      "awayTeam": "CAR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-02-27",
+      "homeTeam": "ANA",
+      "awayTeam": "NSH",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-27",
+      "homeTeam": "LAK",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-27",
+      "homeTeam": "PHI",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-27",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "BOS",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "CAR",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "COL",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "DAL",
+      "awayTeam": "EDM",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "FLA",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "NYI",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "NYR",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "PHX",
+      "awayTeam": "MIN",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "SJS",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "STL",
+      "awayTeam": "CHI",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-02-28",
+      "homeTeam": "WPG",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-01",
+      "homeTeam": "ANA",
+      "awayTeam": "MIN",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-01",
+      "homeTeam": "CHI",
+      "awayTeam": "CBJ",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-01",
+      "homeTeam": "STL",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-02",
+      "homeTeam": "BOS",
+      "awayTeam": "TBL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-02",
+      "homeTeam": "BUF",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-02",
+      "homeTeam": "CAR",
+      "awayTeam": "FLA",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-02",
+      "homeTeam": "MTL",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 7
+    },
+    {
+      "date": "2013-03-02",
+      "homeTeam": "PHI",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-02",
+      "homeTeam": "PHX",
+      "awayTeam": "ANA",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-02",
+      "homeTeam": "SJS",
+      "awayTeam": "NSH",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-02",
+      "homeTeam": "VAN",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-02",
+      "homeTeam": "WPG",
+      "awayTeam": "WSH",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-03",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-03",
+      "homeTeam": "CBJ",
+      "awayTeam": "COL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-03",
+      "homeTeam": "CGY",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-03",
+      "homeTeam": "DAL",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-03",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-03",
+      "homeTeam": "FLA",
+      "awayTeam": "CAR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-03",
+      "homeTeam": "MIN",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-03",
+      "homeTeam": "NYI",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-03",
+      "homeTeam": "NYR",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-04",
+      "homeTeam": "LAK",
+      "awayTeam": "NSH",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-04",
+      "homeTeam": "PHX",
+      "awayTeam": "ANA",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-04",
+      "homeTeam": "PIT",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-04",
+      "homeTeam": "TOR",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "CAR",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "CBJ",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "CHI",
+      "awayTeam": "MIN",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "DET",
+      "awayTeam": "COL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "FLA",
+      "awayTeam": "WPG",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "LAK",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "NJD",
+      "awayTeam": "TBL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "NYI",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "VAN",
+      "awayTeam": "SJS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-05",
+      "homeTeam": "WSH",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-06",
+      "homeTeam": "ANA",
+      "awayTeam": "PHX",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-06",
+      "homeTeam": "CGY",
+      "awayTeam": "SJS",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-06",
+      "homeTeam": "CHI",
+      "awayTeam": "COL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-06",
+      "homeTeam": "TOR",
+      "awayTeam": "OTT",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "CAR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "CBJ",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "DET",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "LAK",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "NJD",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "NYI",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "PHI",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "PHX",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "TBL",
+      "awayTeam": "WPG",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-07",
+      "homeTeam": "WSH",
+      "awayTeam": "FLA",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-08",
+      "homeTeam": "ANA",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-08",
+      "homeTeam": "COL",
+      "awayTeam": "CHI",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-08",
+      "homeTeam": "FLA",
+      "awayTeam": "WPG",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-08",
+      "homeTeam": "NSH",
+      "awayTeam": "EDM",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-08",
+      "homeTeam": "NYR",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-09",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-09",
+      "homeTeam": "CAR",
+      "awayTeam": "NJD",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-09",
+      "homeTeam": "CBJ",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-09",
+      "homeTeam": "LAK",
+      "awayTeam": "CGY",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-09",
+      "homeTeam": "NSH",
+      "awayTeam": "MIN",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-09",
+      "homeTeam": "NYI",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-09",
+      "homeTeam": "PHX",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-09",
+      "homeTeam": "SJS",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-09",
+      "homeTeam": "TBL",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-09",
+      "homeTeam": "TOR",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-10",
+      "homeTeam": "ANA",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-10",
+      "homeTeam": "CHI",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-03-10",
+      "homeTeam": "COL",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-10",
+      "homeTeam": "DET",
+      "awayTeam": "CBJ",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-10",
+      "homeTeam": "FLA",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-10",
+      "homeTeam": "MIN",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-10",
+      "homeTeam": "NJD",
+      "awayTeam": "WPG",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-10",
+      "homeTeam": "PHI",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-10",
+      "homeTeam": "PIT",
+      "awayTeam": "NYI",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-10",
+      "homeTeam": "WSH",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-11",
+      "homeTeam": "LAK",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-11",
+      "homeTeam": "OTT",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "BUF",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "CBJ",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "COL",
+      "awayTeam": "EDM",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "DAL",
+      "awayTeam": "NSH",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "FLA",
+      "awayTeam": "TBL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "MIN",
+      "awayTeam": "ANA",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "PHX",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "PIT",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "STL",
+      "awayTeam": "SJS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "WPG",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-12",
+      "homeTeam": "WSH",
+      "awayTeam": "CAR",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-13",
+      "homeTeam": "CGY",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-13",
+      "homeTeam": "MTL",
+      "awayTeam": "OTT",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-13",
+      "homeTeam": "NJD",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "BOS",
+      "awayTeam": "FLA",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "CAR",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "CBJ",
+      "awayTeam": "CHI",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "DAL",
+      "awayTeam": "ANA",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "MIN",
+      "awayTeam": "COL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "SJS",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "STL",
+      "awayTeam": "PHX",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "TBL",
+      "awayTeam": "NYI",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "TOR",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "VAN",
+      "awayTeam": "NSH",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-14",
+      "homeTeam": "WPG",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-15",
+      "homeTeam": "CGY",
+      "awayTeam": "NSH",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-15",
+      "homeTeam": "EDM",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-15",
+      "homeTeam": "PHI",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "BOS",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "BUF",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "CBJ",
+      "awayTeam": "PHX",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "COL",
+      "awayTeam": "MIN",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": 1,
+      "awayScore": 8
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "FLA",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "LAK",
+      "awayTeam": "SJS",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "NJD",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "PIT",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "STL",
+      "awayTeam": "ANA",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "TBL",
+      "awayTeam": "CAR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "TOR",
+      "awayTeam": "WPG",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-16",
+      "homeTeam": "VAN",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-17",
+      "homeTeam": "EDM",
+      "awayTeam": "NSH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-17",
+      "homeTeam": "OTT",
+      "awayTeam": "WPG",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-17",
+      "homeTeam": "PIT",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-17",
+      "homeTeam": "WSH",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-18",
+      "homeTeam": "ANA",
+      "awayTeam": "SJS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-18",
+      "homeTeam": "COL",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-18",
+      "homeTeam": "DAL",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-18",
+      "homeTeam": "LAK",
+      "awayTeam": "PHX",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-18",
+      "homeTeam": "NYR",
+      "awayTeam": "CAR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-18",
+      "homeTeam": "TBL",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-18",
+      "homeTeam": "VAN",
+      "awayTeam": "MIN",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-19",
+      "homeTeam": "CAR",
+      "awayTeam": "FLA",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-19",
+      "homeTeam": "CBJ",
+      "awayTeam": "NSH",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-19",
+      "homeTeam": "LAK",
+      "awayTeam": "PHX",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-19",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-19",
+      "homeTeam": "NJD",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-19",
+      "homeTeam": "NYI",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-19",
+      "homeTeam": "PIT",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-19",
+      "homeTeam": "VAN",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-19",
+      "homeTeam": "WPG",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-20",
+      "homeTeam": "ANA",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-20",
+      "homeTeam": "COL",
+      "awayTeam": "DAL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-20",
+      "homeTeam": "DET",
+      "awayTeam": "MIN",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-20",
+      "homeTeam": "EDM",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-20",
+      "homeTeam": "TOR",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-21",
+      "homeTeam": "BUF",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-21",
+      "homeTeam": "CAR",
+      "awayTeam": "NJD",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-21",
+      "homeTeam": "LAK",
+      "awayTeam": "DAL",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-21",
+      "homeTeam": "NSH",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-21",
+      "homeTeam": "NYI",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-21",
+      "homeTeam": "NYR",
+      "awayTeam": "FLA",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-21",
+      "homeTeam": "OTT",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-21",
+      "homeTeam": "PHX",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-21",
+      "homeTeam": "WPG",
+      "awayTeam": "WSH",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-22",
+      "homeTeam": "ANA",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-22",
+      "homeTeam": "CBJ",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-22",
+      "homeTeam": "NYI",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-22",
+      "homeTeam": "WPG",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-03-23",
+      "homeTeam": "DAL",
+      "awayTeam": "COL",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-23",
+      "homeTeam": "EDM",
+      "awayTeam": "STL",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-23",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-23",
+      "homeTeam": "MIN",
+      "awayTeam": "SJS",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-23",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-23",
+      "homeTeam": "NJD",
+      "awayTeam": "FLA",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-23",
+      "homeTeam": "NSH",
+      "awayTeam": "CBJ",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-23",
+      "homeTeam": "OTT",
+      "awayTeam": "TBL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-23",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-24",
+      "homeTeam": "ANA",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-24",
+      "homeTeam": "CGY",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-24",
+      "homeTeam": "COL",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-24",
+      "homeTeam": "NYI",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-24",
+      "homeTeam": "NYR",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-24",
+      "homeTeam": "PIT",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-24",
+      "homeTeam": "WPG",
+      "awayTeam": "TBL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-25",
+      "homeTeam": "ANA",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-25",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-25",
+      "homeTeam": "CHI",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-25",
+      "homeTeam": "DAL",
+      "awayTeam": "MIN",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "2013-03-25",
+      "homeTeam": "NSH",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-25",
+      "homeTeam": "OTT",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-25",
+      "homeTeam": "PHX",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-26",
+      "homeTeam": "CAR",
+      "awayTeam": "WPG",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-26",
+      "homeTeam": "CHI",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-26",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-03-26",
+      "homeTeam": "PIT",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-26",
+      "homeTeam": "STL",
+      "awayTeam": "EDM",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-26",
+      "homeTeam": "TBL",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-26",
+      "homeTeam": "TOR",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-26",
+      "homeTeam": "VAN",
+      "awayTeam": "CBJ",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-26",
+      "homeTeam": "WSH",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-27",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-03-27",
+      "homeTeam": "CGY",
+      "awayTeam": "COL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-27",
+      "homeTeam": "MIN",
+      "awayTeam": "PHX",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-27",
+      "homeTeam": "SJS",
+      "awayTeam": "ANA",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-28",
+      "homeTeam": "EDM",
+      "awayTeam": "CBJ",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-28",
+      "homeTeam": "FLA",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-28",
+      "homeTeam": "NSH",
+      "awayTeam": "PHX",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "2013-03-28",
+      "homeTeam": "OTT",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-28",
+      "homeTeam": "PHI",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-28",
+      "homeTeam": "PIT",
+      "awayTeam": "WPG",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-28",
+      "homeTeam": "SJS",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-28",
+      "homeTeam": "STL",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-28",
+      "homeTeam": "TOR",
+      "awayTeam": "CAR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-28",
+      "homeTeam": "VAN",
+      "awayTeam": "COL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-29",
+      "homeTeam": "CGY",
+      "awayTeam": "CBJ",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-03-29",
+      "homeTeam": "CHI",
+      "awayTeam": "ANA",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-29",
+      "homeTeam": "DAL",
+      "awayTeam": "MIN",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-29",
+      "homeTeam": "TBL",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "BUF",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "COL",
+      "awayTeam": "NSH",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "EDM",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "FLA",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "MIN",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "OTT",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "PIT",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "SJS",
+      "awayTeam": "PHX",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-30",
+      "homeTeam": "WPG",
+      "awayTeam": "CAR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-31",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-03-31",
+      "homeTeam": "CBJ",
+      "awayTeam": "ANA",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-03-31",
+      "homeTeam": "DAL",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-03-31",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 1,
+      "awayScore": 7
+    },
+    {
+      "date": "2013-03-31",
+      "homeTeam": "PHI",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-01",
+      "homeTeam": "CHI",
+      "awayTeam": "NSH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-01",
+      "homeTeam": "DAL",
+      "awayTeam": "ANA",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-01",
+      "homeTeam": "DET",
+      "awayTeam": "COL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-01",
+      "homeTeam": "EDM",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-01",
+      "homeTeam": "MIN",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-01",
+      "homeTeam": "MTL",
+      "awayTeam": "CAR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-01",
+      "homeTeam": "NJD",
+      "awayTeam": "NYI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-01",
+      "homeTeam": "NYR",
+      "awayTeam": "WPG",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-01",
+      "homeTeam": "SJS",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-02",
+      "homeTeam": "BOS",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-02",
+      "homeTeam": "CAR",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-02",
+      "homeTeam": "NSH",
+      "awayTeam": "COL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-02",
+      "homeTeam": "NYI",
+      "awayTeam": "WPG",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-02",
+      "homeTeam": "PHX",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-02",
+      "homeTeam": "PIT",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-02",
+      "homeTeam": "TBL",
+      "awayTeam": "FLA",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-03",
+      "homeTeam": "ANA",
+      "awayTeam": "DAL",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-03",
+      "homeTeam": "CGY",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 8
+    },
+    {
+      "date": "2013-04-03",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-03",
+      "homeTeam": "PHI",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-03",
+      "homeTeam": "SJS",
+      "awayTeam": "MIN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-04",
+      "homeTeam": "BOS",
+      "awayTeam": "NJD",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-04",
+      "homeTeam": "CAR",
+      "awayTeam": "TBL",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-04",
+      "homeTeam": "CHI",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-04",
+      "homeTeam": "LAK",
+      "awayTeam": "MIN",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-04",
+      "homeTeam": "MTL",
+      "awayTeam": "WPG",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-04",
+      "homeTeam": "NSH",
+      "awayTeam": "CBJ",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-04",
+      "homeTeam": "PHX",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-04",
+      "homeTeam": "TOR",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-04",
+      "homeTeam": "VAN",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-04",
+      "homeTeam": "WSH",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-05",
+      "homeTeam": "ANA",
+      "awayTeam": "DAL",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-05",
+      "homeTeam": "BUF",
+      "awayTeam": "OTT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-05",
+      "homeTeam": "COL",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-05",
+      "homeTeam": "PIT",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-05",
+      "homeTeam": "SJS",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-05",
+      "homeTeam": "STL",
+      "awayTeam": "CBJ",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-06",
+      "homeTeam": "CAR",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-06",
+      "homeTeam": "FLA",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-06",
+      "homeTeam": "LAK",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-06",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-06",
+      "homeTeam": "NJD",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-06",
+      "homeTeam": "NSH",
+      "awayTeam": "CHI",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-06",
+      "homeTeam": "NYI",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-06",
+      "homeTeam": "PHX",
+      "awayTeam": "COL",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-06",
+      "homeTeam": "VAN",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-06",
+      "homeTeam": "WPG",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-07",
+      "homeTeam": "ANA",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-07",
+      "homeTeam": "BUF",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-07",
+      "homeTeam": "CBJ",
+      "awayTeam": "MIN",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-07",
+      "homeTeam": "CHI",
+      "awayTeam": "NSH",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-07",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-07",
+      "homeTeam": "FLA",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-07",
+      "homeTeam": "SJS",
+      "awayTeam": "DAL",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-07",
+      "homeTeam": "WSH",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-08",
+      "homeTeam": "ANA",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-08",
+      "homeTeam": "BOS",
+      "awayTeam": "CAR",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-08",
+      "homeTeam": "COL",
+      "awayTeam": "CGY",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-08",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-08",
+      "homeTeam": "VAN",
+      "awayTeam": "PHX",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-09",
+      "homeTeam": "CAR",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-09",
+      "homeTeam": "CBJ",
+      "awayTeam": "SJS",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-09",
+      "homeTeam": "DAL",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-09",
+      "homeTeam": "MIN",
+      "awayTeam": "CHI",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-09",
+      "homeTeam": "MTL",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-09",
+      "homeTeam": "NSH",
+      "awayTeam": "STL",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-09",
+      "homeTeam": "NYI",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-09",
+      "homeTeam": "TBL",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-09",
+      "homeTeam": "WPG",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-10",
+      "homeTeam": "ANA",
+      "awayTeam": "COL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-10",
+      "homeTeam": "CGY",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-10",
+      "homeTeam": "EDM",
+      "awayTeam": "PHX",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-10",
+      "homeTeam": "NJD",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-10",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-11",
+      "homeTeam": "BOS",
+      "awayTeam": "NYI",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-11",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-11",
+      "homeTeam": "DET",
+      "awayTeam": "SJS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-11",
+      "homeTeam": "LAK",
+      "awayTeam": "COL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-11",
+      "homeTeam": "MIN",
+      "awayTeam": "STL",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-11",
+      "homeTeam": "PHI",
+      "awayTeam": "OTT",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-11",
+      "homeTeam": "TBL",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-04-11",
+      "homeTeam": "WPG",
+      "awayTeam": "FLA",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-11",
+      "homeTeam": "WSH",
+      "awayTeam": "CAR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-12",
+      "homeTeam": "CBJ",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-12",
+      "homeTeam": "CGY",
+      "awayTeam": "PHX",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-12",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-12",
+      "homeTeam": "NJD",
+      "awayTeam": "OTT",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-12",
+      "homeTeam": "NSH",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "BUF",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "CAR",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "COL",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "DAL",
+      "awayTeam": "SJS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "EDM",
+      "awayTeam": "CGY",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "FLA",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "LAK",
+      "awayTeam": "ANA",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "MIN",
+      "awayTeam": "CBJ",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "NYI",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-13",
+      "homeTeam": "WSH",
+      "awayTeam": "TBL",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-14",
+      "homeTeam": "BUF",
+      "awayTeam": "TBL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-14",
+      "homeTeam": "NSH",
+      "awayTeam": "DET",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-14",
+      "homeTeam": "STL",
+      "awayTeam": "CHI",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-15",
+      "homeTeam": "CGY",
+      "awayTeam": "MIN",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-15",
+      "homeTeam": "CHI",
+      "awayTeam": "DAL",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-15",
+      "homeTeam": "COL",
+      "awayTeam": "CBJ",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-15",
+      "homeTeam": "MTL",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "2013-04-15",
+      "homeTeam": "NSH",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-15",
+      "homeTeam": "PHX",
+      "awayTeam": "SJS",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-15",
+      "homeTeam": "TOR",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-16",
+      "homeTeam": "EDM",
+      "awayTeam": "MIN",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-16",
+      "homeTeam": "NYI",
+      "awayTeam": "FLA",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-16",
+      "homeTeam": "OTT",
+      "awayTeam": "CAR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-16",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-16",
+      "homeTeam": "SJS",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-16",
+      "homeTeam": "STL",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-16",
+      "homeTeam": "WPG",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-16",
+      "homeTeam": "WSH",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-17",
+      "homeTeam": "ANA",
+      "awayTeam": "CBJ",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-17",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-17",
+      "homeTeam": "CGY",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-17",
+      "homeTeam": "PIT",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-18",
+      "homeTeam": "DAL",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-18",
+      "homeTeam": "LAK",
+      "awayTeam": "CBJ",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-18",
+      "homeTeam": "MTL",
+      "awayTeam": "TBL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-18",
+      "homeTeam": "NYR",
+      "awayTeam": "FLA",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-18",
+      "homeTeam": "OTT",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-18",
+      "homeTeam": "PHI",
+      "awayTeam": "NJD",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-18",
+      "homeTeam": "SJS",
+      "awayTeam": "MIN",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-18",
+      "homeTeam": "STL",
+      "awayTeam": "PHX",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-18",
+      "homeTeam": "TOR",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-18",
+      "homeTeam": "WPG",
+      "awayTeam": "CAR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-19",
+      "homeTeam": "BUF",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "2013-04-19",
+      "homeTeam": "CGY",
+      "awayTeam": "ANA",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-19",
+      "homeTeam": "CHI",
+      "awayTeam": "NSH",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-19",
+      "homeTeam": "COL",
+      "awayTeam": "EDM",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-19",
+      "homeTeam": "STL",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-20",
+      "homeTeam": "BOS",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-20",
+      "homeTeam": "CAR",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-20",
+      "homeTeam": "CHI",
+      "awayTeam": "PHX",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-20",
+      "homeTeam": "MTL",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-20",
+      "homeTeam": "NJD",
+      "awayTeam": "FLA",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-20",
+      "homeTeam": "OTT",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-20",
+      "homeTeam": "VAN",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-20",
+      "homeTeam": "WPG",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-21",
+      "homeTeam": "BOS",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-21",
+      "homeTeam": "COL",
+      "awayTeam": "STL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-21",
+      "homeTeam": "EDM",
+      "awayTeam": "ANA",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-21",
+      "homeTeam": "LAK",
+      "awayTeam": "DAL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-21",
+      "homeTeam": "MIN",
+      "awayTeam": "CGY",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-21",
+      "homeTeam": "NYR",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-21",
+      "homeTeam": "SJS",
+      "awayTeam": "CBJ",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-21",
+      "homeTeam": "TBL",
+      "awayTeam": "CAR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-22",
+      "homeTeam": "BUF",
+      "awayTeam": "WPG",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-22",
+      "homeTeam": "DET",
+      "awayTeam": "PHX",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-22",
+      "homeTeam": "EDM",
+      "awayTeam": "ANA",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-22",
+      "homeTeam": "OTT",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-22",
+      "homeTeam": "VAN",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-23",
+      "homeTeam": "CAR",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-23",
+      "homeTeam": "FLA",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-23",
+      "homeTeam": "MIN",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-23",
+      "homeTeam": "NJD",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-23",
+      "homeTeam": "NSH",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-23",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-23",
+      "homeTeam": "PIT",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-23",
+      "homeTeam": "SJS",
+      "awayTeam": "DAL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-23",
+      "homeTeam": "STL",
+      "awayTeam": "COL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-23",
+      "homeTeam": "WSH",
+      "awayTeam": "WPG",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-24",
+      "homeTeam": "DET",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-24",
+      "homeTeam": "EDM",
+      "awayTeam": "CHI",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-24",
+      "homeTeam": "PHX",
+      "awayTeam": "SJS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-24",
+      "homeTeam": "TBL",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "BOS",
+      "awayTeam": "TBL",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "CAR",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "DAL",
+      "awayTeam": "CBJ",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "DET",
+      "awayTeam": "NSH",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "FLA",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "NJD",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "PHI",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "STL",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "VAN",
+      "awayTeam": "ANA",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "WPG",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-25",
+      "homeTeam": "WSH",
+      "awayTeam": "OTT",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-26",
+      "homeTeam": "BUF",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-26",
+      "homeTeam": "CHI",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-26",
+      "homeTeam": "MIN",
+      "awayTeam": "EDM",
+      "homeScore": 1,
+      "awayScore": 6
+    },
+    {
+      "date": "2013-04-26",
+      "homeTeam": "PHX",
+      "awayTeam": "COL",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "ANA",
+      "awayTeam": "PHX",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "CBJ",
+      "awayTeam": "NSH",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "COL",
+      "awayTeam": "MIN",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "DAL",
+      "awayTeam": "DET",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "EDM",
+      "awayTeam": "VAN",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "LAK",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "NYR",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "OTT",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "PIT",
+      "awayTeam": "CAR",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "STL",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "TBL",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "2013-04-27",
+      "homeTeam": "WSH",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2013-04-28",
+      "homeTeam": "BOS",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 4
+    }
+  ],
+  "metadata": {
+    "total_games": 720,
+    "ingested_at": "2026-01-26T09:23:34.791742"
+  }
+}

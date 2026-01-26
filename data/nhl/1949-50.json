@@ -1,0 +1,1480 @@
+{
+  "season": "1949-50",
+  "league": "NHL",
+  "games": [
+    {
+      "date": "1949-10-12",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-10-13",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-10-15",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-10-15",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-10-16",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-10-16",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1949-10-19",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-10-19",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-10-19",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-10-22",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-10-22",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-10-23",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 0,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-10-23",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-10-25",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-10-26",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-10-27",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-10-27",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-10-29",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-10-29",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-10-29",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 8,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-10-30",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 10,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-10-30",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-10-30",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-11-02",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-11-02",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-11-02",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-11-05",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-11-05",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-11-06",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-11-06",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 7,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-11-09",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-11-09",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-11-10",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-11-12",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 7
+    },
+    {
+      "date": "1949-11-12",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1949-11-12",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-11-13",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-11-13",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 0,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-11-13",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-11-16",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-11-16",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-11-16",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-11-17",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-11-19",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1949-11-20",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-11-20",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1949-11-20",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-11-23",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-11-23",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-11-24",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-11-24",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-11-26",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1949-11-26",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-11-26",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-11-27",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-11-27",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-11-27",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1949-11-30",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-11-30",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-01",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-12-01",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-03",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-12-03",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1949-12-03",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-12-04",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-04",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-04",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-12-07",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-07",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-08",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-12-08",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-10",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-10",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-10",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-11",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-12-11",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-12-11",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-14",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1949-12-14",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-12-14",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-15",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-17",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-12-17",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1949-12-17",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 7
+    },
+    {
+      "date": "1949-12-18",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-18",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1949-12-18",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-21",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-12-21",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-21",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-24",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 0
+    },
+    {
+      "date": "1949-12-24",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1949-12-25",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1949-12-25",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-25",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-28",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-28",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-28",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-31",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1949-12-31",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1949-12-31",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1950-01-01",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-01-01",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-01",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-01-04",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-04",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-01-05",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-01-07",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-01-07",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-01-08",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-01-08",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-10",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "1950-01-11",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-11",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-01-14",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-01-14",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-01-14",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-01-15",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1950-01-15",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-18",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1950-01-18",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-01-18",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-19",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-01-21",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-01-21",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-21",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-22",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1950-01-22",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-01-22",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-25",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-01-25",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-26",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-26",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-28",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-01-28",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-28",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 9,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-29",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-01-29",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-01-29",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-02-01",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-02-01",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-02-01",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-02-02",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-02-04",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1950-02-04",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-02-05",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-02-05",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-02-05",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1950-02-08",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-02-08",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 9,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-02-09",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1950-02-11",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 9
+    },
+    {
+      "date": "1950-02-11",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-02-12",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-02-12",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-02-12",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-02-15",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-02-15",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-02-16",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-02-18",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-02-18",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-02-19",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-02-19",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-02-20",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-02-22",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-02-22",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-02-23",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "1950-02-23",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-02-25",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-02-25",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-02-26",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-02-26",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-03-01",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-03-01",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1950-03-02",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-03-04",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-03-04",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-03-04",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-03-05",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 11,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-03-05",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-03-06",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-03-08",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1950-03-08",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-03-09",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-03-09",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-03-11",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-03-11",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-03-11",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-03-12",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-03-12",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-03-12",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1950-03-15",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-03-15",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-03-15",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-03-16",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-03-18",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-03-18",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-03-18",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1950-03-19",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-03-19",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-03-19",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1950-03-21",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1950-03-22",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 7
+    },
+    {
+      "date": "1950-03-22",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 8,
+      "awayScore": 7
+    },
+    {
+      "date": "1950-03-22",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1950-03-25",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-03-25",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 8,
+      "awayScore": 0
+    },
+    {
+      "date": "1950-03-26",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1950-03-26",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1950-03-26",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 3
+    }
+  ],
+  "metadata": {
+    "total_games": 210,
+    "ingested_at": "2026-01-26T08:19:34.699926"
+  }
+}

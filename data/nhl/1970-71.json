@@ -1,0 +1,3832 @@
+{
+  "season": "1970-71",
+  "league": "NHL",
+  "games": [
+    {
+      "date": "1970-10-09",
+      "homeTeam": "VAN",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-10",
+      "homeTeam": "DET",
+      "awayTeam": "CGS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-10",
+      "homeTeam": "PHI",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-10",
+      "homeTeam": "PIT",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-10",
+      "homeTeam": "STL",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-11",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-11",
+      "homeTeam": "CBH",
+      "awayTeam": "CGS",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-11",
+      "homeTeam": "PHI",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-11",
+      "homeTeam": "VAN",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-12",
+      "homeTeam": "STL",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-13",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-14",
+      "homeTeam": "CBH",
+      "awayTeam": "VAN",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-14",
+      "homeTeam": "LAK",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 8
+    },
+    {
+      "date": "1970-10-14",
+      "homeTeam": "NYR",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-10-14",
+      "homeTeam": "TOR",
+      "awayTeam": "STL",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-15",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-15",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-15",
+      "homeTeam": "MNS",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-15",
+      "homeTeam": "PHI",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-10-16",
+      "homeTeam": "CGS",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-10-17",
+      "homeTeam": "LAK",
+      "awayTeam": "CGS",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-17",
+      "homeTeam": "MNS",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-17",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-17",
+      "homeTeam": "PIT",
+      "awayTeam": "PHI",
+      "homeScore": 0,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-10-17",
+      "homeTeam": "STL",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-17",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1970-10-18",
+      "homeTeam": "BUF",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-18",
+      "homeTeam": "CBH",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-18",
+      "homeTeam": "DET",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-18",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-10-18",
+      "homeTeam": "PHI",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-18",
+      "homeTeam": "VAN",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-10-20",
+      "homeTeam": "VAN",
+      "awayTeam": "CGS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-21",
+      "homeTeam": "CGS",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-21",
+      "homeTeam": "LAK",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-21",
+      "homeTeam": "MTL",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-21",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-22",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-22",
+      "homeTeam": "PHI",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-23",
+      "homeTeam": "BUF",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-23",
+      "homeTeam": "CGS",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-23",
+      "homeTeam": "VAN",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-24",
+      "homeTeam": "LAK",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-24",
+      "homeTeam": "MNS",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-10-24",
+      "homeTeam": "MTL",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-24",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-25",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-25",
+      "homeTeam": "BUF",
+      "awayTeam": "CBH",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-10-25",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-25",
+      "homeTeam": "NYR",
+      "awayTeam": "CGS",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-25",
+      "homeTeam": "VAN",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-27",
+      "homeTeam": "VAN",
+      "awayTeam": "BUF",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-28",
+      "homeTeam": "MNS",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-28",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-28",
+      "homeTeam": "PIT",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-28",
+      "homeTeam": "STL",
+      "awayTeam": "CGS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-28",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-10-29",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-29",
+      "homeTeam": "PHI",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-30",
+      "homeTeam": "CGS",
+      "awayTeam": "BUF",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-10-31",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-10-31",
+      "homeTeam": "MTL",
+      "awayTeam": "VAN",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-10-31",
+      "homeTeam": "PIT",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-10-31",
+      "homeTeam": "STL",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-10-31",
+      "homeTeam": "TOR",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-01",
+      "homeTeam": "BOS",
+      "awayTeam": "MNS",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-11-01",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-11-01",
+      "homeTeam": "LAK",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-01",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-01",
+      "homeTeam": "PHI",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-04",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-04",
+      "homeTeam": "CGS",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-04",
+      "homeTeam": "LAK",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-04",
+      "homeTeam": "MNS",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-11-04",
+      "homeTeam": "PIT",
+      "awayTeam": "VAN",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-05",
+      "homeTeam": "BOS",
+      "awayTeam": "STL",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-05",
+      "homeTeam": "BUF",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-11-05",
+      "homeTeam": "DET",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-06",
+      "homeTeam": "CGS",
+      "awayTeam": "TOR",
+      "homeScore": 8,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-11-07",
+      "homeTeam": "LAK",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1970-11-07",
+      "homeTeam": "MNS",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-07",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 11,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-07",
+      "homeTeam": "PHI",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-07",
+      "homeTeam": "PIT",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-07",
+      "homeTeam": "VAN",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-08",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-08",
+      "homeTeam": "BUF",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-08",
+      "homeTeam": "CBH",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-08",
+      "homeTeam": "DET",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-10",
+      "homeTeam": "BOS",
+      "awayTeam": "VAN",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-10",
+      "homeTeam": "PIT",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-11-11",
+      "homeTeam": "CBH",
+      "awayTeam": "PHI",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-11",
+      "homeTeam": "CGS",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-11-11",
+      "homeTeam": "MNS",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-11",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-11",
+      "homeTeam": "TOR",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-11-12",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-13",
+      "homeTeam": "BUF",
+      "awayTeam": "CGS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-14",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-14",
+      "homeTeam": "MNS",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-14",
+      "homeTeam": "PIT",
+      "awayTeam": "CGS",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-14",
+      "homeTeam": "STL",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-14",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-15",
+      "homeTeam": "BOS",
+      "awayTeam": "CGS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-15",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-15",
+      "homeTeam": "CBH",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-15",
+      "homeTeam": "LAK",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-11-15",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-15",
+      "homeTeam": "PHI",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-17",
+      "homeTeam": "MTL",
+      "awayTeam": "CGS",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-17",
+      "homeTeam": "STL",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-11-17",
+      "homeTeam": "VAN",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-11-18",
+      "homeTeam": "LAK",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-11-18",
+      "homeTeam": "MNS",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1970-11-18",
+      "homeTeam": "TOR",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1970-11-19",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-19",
+      "homeTeam": "PHI",
+      "awayTeam": "CGS",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-19",
+      "homeTeam": "PIT",
+      "awayTeam": "STL",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-20",
+      "homeTeam": "VAN",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-21",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-21",
+      "homeTeam": "MNS",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-11-21",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-11-21",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-11-21",
+      "homeTeam": "PIT",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-21",
+      "homeTeam": "STL",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-21",
+      "homeTeam": "TOR",
+      "awayTeam": "CGS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-22",
+      "homeTeam": "BOS",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-22",
+      "homeTeam": "CBH",
+      "awayTeam": "CGS",
+      "homeScore": 9,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-11-22",
+      "homeTeam": "NYR",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-11-22",
+      "homeTeam": "PHI",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-11-24",
+      "homeTeam": "STL",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-11-24",
+      "homeTeam": "TOR",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-11-24",
+      "homeTeam": "VAN",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-25",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-25",
+      "homeTeam": "CGS",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-25",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-25",
+      "homeTeam": "PIT",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-11-26",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-26",
+      "homeTeam": "BUF",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-26",
+      "homeTeam": "DET",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-26",
+      "homeTeam": "STL",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-11-27",
+      "homeTeam": "CGS",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-28",
+      "homeTeam": "CBH",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-28",
+      "homeTeam": "LAK",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-28",
+      "homeTeam": "MTL",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-28",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-28",
+      "homeTeam": "STL",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-11-28",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 9,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-11-29",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-29",
+      "homeTeam": "BUF",
+      "awayTeam": "CGS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-29",
+      "homeTeam": "CBH",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-29",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-11-29",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-11-29",
+      "homeTeam": "PHI",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-01",
+      "homeTeam": "VAN",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-02",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-12-02",
+      "homeTeam": "MNS",
+      "awayTeam": "CGS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-02",
+      "homeTeam": "NYR",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-02",
+      "homeTeam": "PIT",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-12-02",
+      "homeTeam": "TOR",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-12-03",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-03",
+      "homeTeam": "DET",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-03",
+      "homeTeam": "MTL",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-12-04",
+      "homeTeam": "CGS",
+      "awayTeam": "PHI",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-05",
+      "homeTeam": "LAK",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-05",
+      "homeTeam": "MNS",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-05",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-05",
+      "homeTeam": "PIT",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-05",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-12-05",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-06",
+      "homeTeam": "BOS",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-12-06",
+      "homeTeam": "BUF",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-12-06",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-06",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-06",
+      "homeTeam": "NYR",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-08",
+      "homeTeam": "PIT",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-12-08",
+      "homeTeam": "VAN",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-09",
+      "homeTeam": "CBH",
+      "awayTeam": "BUF",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-09",
+      "homeTeam": "CGS",
+      "awayTeam": "VAN",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-09",
+      "homeTeam": "LAK",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-09",
+      "homeTeam": "MNS",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-09",
+      "homeTeam": "STL",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-12-09",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-12-10",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-10",
+      "homeTeam": "DET",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-10",
+      "homeTeam": "MTL",
+      "awayTeam": "MNS",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-11",
+      "homeTeam": "CGS",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-11",
+      "homeTeam": "STL",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-12",
+      "homeTeam": "DET",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-12-12",
+      "homeTeam": "MTL",
+      "awayTeam": "LAK",
+      "homeScore": 8,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-12",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-12",
+      "homeTeam": "PIT",
+      "awayTeam": "MNS",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-12",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-12",
+      "homeTeam": "VAN",
+      "awayTeam": "CGS",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-13",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-13",
+      "homeTeam": "BUF",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-13",
+      "homeTeam": "CBH",
+      "awayTeam": "MNS",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-13",
+      "homeTeam": "NYR",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-12-13",
+      "homeTeam": "PHI",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-15",
+      "homeTeam": "STL",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-15",
+      "homeTeam": "VAN",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-16",
+      "homeTeam": "BOS",
+      "awayTeam": "LAK",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-16",
+      "homeTeam": "CBH",
+      "awayTeam": "STL",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-12-16",
+      "homeTeam": "CGS",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-16",
+      "homeTeam": "MNS",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-16",
+      "homeTeam": "NYR",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-12-16",
+      "homeTeam": "PIT",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-17",
+      "homeTeam": "BUF",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-12-18",
+      "homeTeam": "CGS",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-12-18",
+      "homeTeam": "VAN",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-19",
+      "homeTeam": "LAK",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-19",
+      "homeTeam": "MNS",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1970-12-19",
+      "homeTeam": "PIT",
+      "awayTeam": "DET",
+      "homeScore": 9,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-19",
+      "homeTeam": "STL",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 7
+    },
+    {
+      "date": "1970-12-19",
+      "homeTeam": "TOR",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1970-12-20",
+      "homeTeam": "BOS",
+      "awayTeam": "MNS",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-20",
+      "homeTeam": "BUF",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-20",
+      "homeTeam": "CBH",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-20",
+      "homeTeam": "DET",
+      "awayTeam": "CGS",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "1970-12-20",
+      "homeTeam": "LAK",
+      "awayTeam": "MTL",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-20",
+      "homeTeam": "NYR",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-22",
+      "homeTeam": "BUF",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1970-12-22",
+      "homeTeam": "CGS",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-23",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-23",
+      "homeTeam": "LAK",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1970-12-23",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-23",
+      "homeTeam": "STL",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-23",
+      "homeTeam": "TOR",
+      "awayTeam": "VAN",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-25",
+      "homeTeam": "BOS",
+      "awayTeam": "PIT",
+      "homeScore": 8,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-25",
+      "homeTeam": "MNS",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-12-26",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-26",
+      "homeTeam": "LAK",
+      "awayTeam": "CGS",
+      "homeScore": 9,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-12-26",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-26",
+      "homeTeam": "PIT",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-26",
+      "homeTeam": "STL",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-26",
+      "homeTeam": "TOR",
+      "awayTeam": "PHI",
+      "homeScore": 9,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-26",
+      "homeTeam": "VAN",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-27",
+      "homeTeam": "BUF",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-27",
+      "homeTeam": "NYR",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-27",
+      "homeTeam": "PHI",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-29",
+      "homeTeam": "NYR",
+      "awayTeam": "CGS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-30",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1970-12-30",
+      "homeTeam": "MNS",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1970-12-30",
+      "homeTeam": "MTL",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1970-12-30",
+      "homeTeam": "STL",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1970-12-30",
+      "homeTeam": "TOR",
+      "awayTeam": "CGS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1970-12-31",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 8
+    },
+    {
+      "date": "1970-12-31",
+      "homeTeam": "PIT",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-01",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 9
+    },
+    {
+      "date": "1971-01-02",
+      "homeTeam": "LAK",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-02",
+      "homeTeam": "MTL",
+      "awayTeam": "CGS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-02",
+      "homeTeam": "PHI",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-02",
+      "homeTeam": "PIT",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-02",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 13,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-01-02",
+      "homeTeam": "VAN",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-03",
+      "homeTeam": "BUF",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-01-03",
+      "homeTeam": "DET",
+      "awayTeam": "CGS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-03",
+      "homeTeam": "LAK",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "1971-01-03",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-01-03",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-01-05",
+      "homeTeam": "MNS",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-06",
+      "homeTeam": "CBH",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-06",
+      "homeTeam": "CGS",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-06",
+      "homeTeam": "MTL",
+      "awayTeam": "VAN",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-06",
+      "homeTeam": "PHI",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-06",
+      "homeTeam": "TOR",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-07",
+      "homeTeam": "BOS",
+      "awayTeam": "VAN",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-07",
+      "homeTeam": "BUF",
+      "awayTeam": "DET",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-07",
+      "homeTeam": "PHI",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-01-09",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-09",
+      "homeTeam": "DET",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-09",
+      "homeTeam": "MNS",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-09",
+      "homeTeam": "MTL",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-01-09",
+      "homeTeam": "PHI",
+      "awayTeam": "CGS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-09",
+      "homeTeam": "STL",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-09",
+      "homeTeam": "TOR",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-10",
+      "homeTeam": "BOS",
+      "awayTeam": "CGS",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-10",
+      "homeTeam": "BUF",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-10",
+      "homeTeam": "CBH",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-10",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-10",
+      "homeTeam": "MTL",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-10",
+      "homeTeam": "STL",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-12",
+      "homeTeam": "STL",
+      "awayTeam": "CGS",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-12",
+      "homeTeam": "VAN",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-13",
+      "homeTeam": "CBH",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-13",
+      "homeTeam": "PIT",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-13",
+      "homeTeam": "TOR",
+      "awayTeam": "CGS",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-14",
+      "homeTeam": "BOS",
+      "awayTeam": "LAK",
+      "homeScore": 9,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-01-14",
+      "homeTeam": "BUF",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-14",
+      "homeTeam": "DET",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-14",
+      "homeTeam": "MNS",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-14",
+      "homeTeam": "PHI",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-01-15",
+      "homeTeam": "CGS",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-16",
+      "homeTeam": "DET",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-16",
+      "homeTeam": "MNS",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-16",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-16",
+      "homeTeam": "STL",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-16",
+      "homeTeam": "TOR",
+      "awayTeam": "LAK",
+      "homeScore": 8,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-16",
+      "homeTeam": "VAN",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-17",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 9,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-17",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-17",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-17",
+      "homeTeam": "CGS",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-17",
+      "homeTeam": "DET",
+      "awayTeam": "MNS",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-17",
+      "homeTeam": "PHI",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-20",
+      "homeTeam": "CGS",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-20",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-20",
+      "homeTeam": "VAN",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-01-21",
+      "homeTeam": "BUF",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-01-21",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-01-21",
+      "homeTeam": "LAK",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-21",
+      "homeTeam": "MNS",
+      "awayTeam": "STL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-21",
+      "homeTeam": "PHI",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-01-22",
+      "homeTeam": "CGS",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-23",
+      "homeTeam": "BOS",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-23",
+      "homeTeam": "LAK",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-23",
+      "homeTeam": "MNS",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-23",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-23",
+      "homeTeam": "PIT",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-23",
+      "homeTeam": "STL",
+      "awayTeam": "BUF",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-24",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-24",
+      "homeTeam": "BUF",
+      "awayTeam": "PHI",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-24",
+      "homeTeam": "CBH",
+      "awayTeam": "CGS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-24",
+      "homeTeam": "DET",
+      "awayTeam": "VAN",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-24",
+      "homeTeam": "NYR",
+      "awayTeam": "MNS",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-26",
+      "homeTeam": "VAN",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-27",
+      "homeTeam": "CGS",
+      "awayTeam": "MNS",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-27",
+      "homeTeam": "LAK",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-27",
+      "homeTeam": "MTL",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-27",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-27",
+      "homeTeam": "PIT",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-28",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-28",
+      "homeTeam": "CBH",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-28",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-29",
+      "homeTeam": "CGS",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-01-29",
+      "homeTeam": "VAN",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-30",
+      "homeTeam": "DET",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-01-30",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-01-30",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-30",
+      "homeTeam": "PIT",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-31",
+      "homeTeam": "BOS",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-01-31",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-31",
+      "homeTeam": "MNS",
+      "awayTeam": "CGS",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-31",
+      "homeTeam": "NYR",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-01-31",
+      "homeTeam": "PHI",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-01-31",
+      "homeTeam": "VAN",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-02-02",
+      "homeTeam": "VAN",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-03",
+      "homeTeam": "BOS",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-03",
+      "homeTeam": "MNS",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-03",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-03",
+      "homeTeam": "PIT",
+      "awayTeam": "CGS",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-03",
+      "homeTeam": "TOR",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-04",
+      "homeTeam": "BUF",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-04",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-04",
+      "homeTeam": "PHI",
+      "awayTeam": "CBH",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-05",
+      "homeTeam": "CGS",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-05",
+      "homeTeam": "STL",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-06",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-06",
+      "homeTeam": "LAK",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-06",
+      "homeTeam": "MNS",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-02-06",
+      "homeTeam": "TOR",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-06",
+      "homeTeam": "VAN",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-07",
+      "homeTeam": "BOS",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-07",
+      "homeTeam": "BUF",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-07",
+      "homeTeam": "CBH",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-02-07",
+      "homeTeam": "CGS",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-07",
+      "homeTeam": "PHI",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-02-09",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-09",
+      "homeTeam": "MTL",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-09",
+      "homeTeam": "STL",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-09",
+      "homeTeam": "VAN",
+      "awayTeam": "BUF",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-10",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-10",
+      "homeTeam": "CGS",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-10",
+      "homeTeam": "LAK",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-10",
+      "homeTeam": "NYR",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-10",
+      "homeTeam": "PIT",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-11",
+      "homeTeam": "MTL",
+      "awayTeam": "MNS",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-11",
+      "homeTeam": "STL",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-12",
+      "homeTeam": "BUF",
+      "awayTeam": "CGS",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-02-12",
+      "homeTeam": "VAN",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-13",
+      "homeTeam": "MNS",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-13",
+      "homeTeam": "MTL",
+      "awayTeam": "CGS",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-13",
+      "homeTeam": "PIT",
+      "awayTeam": "CBH",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-13",
+      "homeTeam": "STL",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-13",
+      "homeTeam": "TOR",
+      "awayTeam": "LAK",
+      "homeScore": 8,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-14",
+      "homeTeam": "BUF",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-14",
+      "homeTeam": "CBH",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-14",
+      "homeTeam": "DET",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-02-14",
+      "homeTeam": "MNS",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-14",
+      "homeTeam": "NYR",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-14",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-16",
+      "homeTeam": "STL",
+      "awayTeam": "CGS",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-16",
+      "homeTeam": "VAN",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-17",
+      "homeTeam": "CBH",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-17",
+      "homeTeam": "LAK",
+      "awayTeam": "PHI",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-17",
+      "homeTeam": "MNS",
+      "awayTeam": "CGS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-17",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-02-17",
+      "homeTeam": "TOR",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-18",
+      "homeTeam": "BUF",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-02-18",
+      "homeTeam": "DET",
+      "awayTeam": "MNS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-19",
+      "homeTeam": "CGS",
+      "awayTeam": "BOS",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-19",
+      "homeTeam": "VAN",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-20",
+      "homeTeam": "CGS",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-20",
+      "homeTeam": "DET",
+      "awayTeam": "BUF",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-20",
+      "homeTeam": "LAK",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-20",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-20",
+      "homeTeam": "PIT",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-20",
+      "homeTeam": "TOR",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-21",
+      "homeTeam": "BUF",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-21",
+      "homeTeam": "CBH",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-21",
+      "homeTeam": "MNS",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-21",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-22",
+      "homeTeam": "VAN",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-23",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-02-24",
+      "homeTeam": "CGS",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-24",
+      "homeTeam": "MNS",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-24",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-24",
+      "homeTeam": "PIT",
+      "awayTeam": "STL",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-25",
+      "homeTeam": "BOS",
+      "awayTeam": "VAN",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-25",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-25",
+      "homeTeam": "LAK",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-02-25",
+      "homeTeam": "PHI",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-25",
+      "homeTeam": "TOR",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-26",
+      "homeTeam": "CGS",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-27",
+      "homeTeam": "LAK",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-27",
+      "homeTeam": "MNS",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-27",
+      "homeTeam": "MTL",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-27",
+      "homeTeam": "PHI",
+      "awayTeam": "VAN",
+      "homeScore": 8,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-02-27",
+      "homeTeam": "PIT",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-02-27",
+      "homeTeam": "TOR",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-02-28",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-02-28",
+      "homeTeam": "BUF",
+      "awayTeam": "MNS",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-28",
+      "homeTeam": "CGS",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 8
+    },
+    {
+      "date": "1971-02-28",
+      "homeTeam": "DET",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-02-28",
+      "homeTeam": "NYR",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-02",
+      "homeTeam": "MNS",
+      "awayTeam": "BOS",
+      "homeScore": 0,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-03-03",
+      "homeTeam": "LAK",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-03",
+      "homeTeam": "NYR",
+      "awayTeam": "CGS",
+      "homeScore": 8,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-03",
+      "homeTeam": "PIT",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-03-03",
+      "homeTeam": "STL",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-03-03",
+      "homeTeam": "TOR",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-04",
+      "homeTeam": "BOS",
+      "awayTeam": "CGS",
+      "homeScore": 7,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-03-04",
+      "homeTeam": "PHI",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-05",
+      "homeTeam": "BUF",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-05",
+      "homeTeam": "STL",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-06",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-06",
+      "homeTeam": "MNS",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-06",
+      "homeTeam": "MTL",
+      "awayTeam": "LAK",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-06",
+      "homeTeam": "PHI",
+      "awayTeam": "CGS",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-03-06",
+      "homeTeam": "PIT",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-03-06",
+      "homeTeam": "TOR",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-07",
+      "homeTeam": "BOS",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-07",
+      "homeTeam": "BUF",
+      "awayTeam": "VAN",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-07",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-03-07",
+      "homeTeam": "MNS",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-07",
+      "homeTeam": "NYR",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-07",
+      "homeTeam": "PIT",
+      "awayTeam": "CGS",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-09",
+      "homeTeam": "MTL",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-09",
+      "homeTeam": "STL",
+      "awayTeam": "LAK",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-03-10",
+      "homeTeam": "CBH",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-03-10",
+      "homeTeam": "CGS",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 8
+    },
+    {
+      "date": "1971-03-10",
+      "homeTeam": "MNS",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-03-10",
+      "homeTeam": "PIT",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-10",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-11",
+      "homeTeam": "LAK",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1971-03-11",
+      "homeTeam": "VAN",
+      "awayTeam": "DET",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-12",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-13",
+      "homeTeam": "LAK",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-13",
+      "homeTeam": "MTL",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-03-13",
+      "homeTeam": "PIT",
+      "awayTeam": "MNS",
+      "homeScore": 0,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-03-13",
+      "homeTeam": "STL",
+      "awayTeam": "BUF",
+      "homeScore": 9,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-03-13",
+      "homeTeam": "TOR",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-13",
+      "homeTeam": "VAN",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-03-14",
+      "homeTeam": "CBH",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-03-14",
+      "homeTeam": "CGS",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 8
+    },
+    {
+      "date": "1971-03-14",
+      "homeTeam": "MNS",
+      "awayTeam": "BUF",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-03-14",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-03-14",
+      "homeTeam": "PIT",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-03-16",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 11
+    },
+    {
+      "date": "1971-03-16",
+      "homeTeam": "LAK",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1971-03-16",
+      "homeTeam": "STL",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-16",
+      "homeTeam": "VAN",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1971-03-17",
+      "homeTeam": "CGS",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-18",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-18",
+      "homeTeam": "BUF",
+      "awayTeam": "STL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-18",
+      "homeTeam": "LAK",
+      "awayTeam": "CBH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-18",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-18",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-19",
+      "homeTeam": "CGS",
+      "awayTeam": "CBH",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-03-19",
+      "homeTeam": "VAN",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-03-20",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-20",
+      "homeTeam": "LAK",
+      "awayTeam": "PIT",
+      "homeScore": 8,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-03-20",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-20",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-20",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-21",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 7
+    },
+    {
+      "date": "1971-03-21",
+      "homeTeam": "CBH",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-03-21",
+      "homeTeam": "CGS",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-21",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-03-21",
+      "homeTeam": "PHI",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-21",
+      "homeTeam": "VAN",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-03-23",
+      "homeTeam": "MNS",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-23",
+      "homeTeam": "NYR",
+      "awayTeam": "BUF",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-23",
+      "homeTeam": "VAN",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-24",
+      "homeTeam": "CBH",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-24",
+      "homeTeam": "CGS",
+      "awayTeam": "TOR",
+      "homeScore": 0,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-03-24",
+      "homeTeam": "MTL",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-24",
+      "homeTeam": "PIT",
+      "awayTeam": "DET",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-25",
+      "homeTeam": "DET",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-25",
+      "homeTeam": "LAK",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-25",
+      "homeTeam": "PHI",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-26",
+      "homeTeam": "BUF",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-26",
+      "homeTeam": "CGS",
+      "awayTeam": "STL",
+      "homeScore": 5,
+      "awayScore": 8
+    },
+    {
+      "date": "1971-03-27",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-03-27",
+      "homeTeam": "CBH",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-27",
+      "homeTeam": "LAK",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-03-27",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 9,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-28",
+      "homeTeam": "BUF",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-28",
+      "homeTeam": "CBH",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-28",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-28",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-28",
+      "homeTeam": "PHI",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-28",
+      "homeTeam": "VAN",
+      "awayTeam": "CGS",
+      "homeScore": 11,
+      "awayScore": 5
+    },
+    {
+      "date": "1971-03-30",
+      "homeTeam": "MNS",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-30",
+      "homeTeam": "STL",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-03-31",
+      "homeTeam": "CGS",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-03-31",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-31",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-03-31",
+      "homeTeam": "NYR",
+      "awayTeam": "CBH",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-03-31",
+      "homeTeam": "PIT",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1971-03-31",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-04-01",
+      "homeTeam": "BUF",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-04-01",
+      "homeTeam": "STL",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-04-02",
+      "homeTeam": "CGS",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1971-04-03",
+      "homeTeam": "DET",
+      "awayTeam": "CBH",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-04-03",
+      "homeTeam": "LAK",
+      "awayTeam": "CGS",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1971-04-03",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-04-03",
+      "homeTeam": "PHI",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-04-03",
+      "homeTeam": "STL",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-04-03",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 8
+    },
+    {
+      "date": "1971-04-04",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1971-04-04",
+      "homeTeam": "CBH",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-04-04",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "1971-04-04",
+      "homeTeam": "PHI",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1971-04-04",
+      "homeTeam": "PIT",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1971-04-04",
+      "homeTeam": "VAN",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 4
+    }
+  ],
+  "metadata": {
+    "total_games": 546,
+    "ingested_at": "2026-01-26T09:05:08.836637"
+  }
+}

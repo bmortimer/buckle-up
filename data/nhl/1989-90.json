@@ -1,0 +1,5890 @@
+{
+  "season": "1989-90",
+  "league": "NHL",
+  "games": [
+    {
+      "date": "1989-10-05",
+      "homeTeam": "BOS",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-05",
+      "homeTeam": "BUF",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-05",
+      "homeTeam": "CGY",
+      "awayTeam": "DET",
+      "homeScore": 10,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-10-05",
+      "homeTeam": "CHI",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 8
+    },
+    {
+      "date": "1989-10-05",
+      "homeTeam": "HAR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-05",
+      "homeTeam": "LAK",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-05",
+      "homeTeam": "MNS",
+      "awayTeam": "NYI",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-05",
+      "homeTeam": "PHI",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-10-05",
+      "homeTeam": "VAN",
+      "awayTeam": "EDM",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-06",
+      "homeTeam": "WIN",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-06",
+      "homeTeam": "WSH",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-07",
+      "homeTeam": "CGY",
+      "awayTeam": "NYI",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-07",
+      "homeTeam": "HAR",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-10-07",
+      "homeTeam": "LAK",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-10-07",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-07",
+      "homeTeam": "NJD",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-07",
+      "homeTeam": "QUE",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-07",
+      "homeTeam": "STL",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 8
+    },
+    {
+      "date": "1989-10-07",
+      "homeTeam": "VAN",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-07",
+      "homeTeam": "WSH",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-08",
+      "homeTeam": "BUF",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-08",
+      "homeTeam": "CHI",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-08",
+      "homeTeam": "LAK",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-10-08",
+      "homeTeam": "QUE",
+      "awayTeam": "HAR",
+      "homeScore": 6,
+      "awayScore": 9
+    },
+    {
+      "date": "1989-10-08",
+      "homeTeam": "WIN",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-09",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-10-09",
+      "homeTeam": "VAN",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-10",
+      "homeTeam": "NJD",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-10",
+      "homeTeam": "PIT",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-11",
+      "homeTeam": "EDM",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-11",
+      "homeTeam": "HAR",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-11",
+      "homeTeam": "LAK",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-10-11",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-11",
+      "homeTeam": "NYR",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-11",
+      "homeTeam": "TOR",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-10-12",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": 9,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-10-12",
+      "homeTeam": "DET",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-12",
+      "homeTeam": "MNS",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-10-12",
+      "homeTeam": "PHI",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-13",
+      "homeTeam": "BUF",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-13",
+      "homeTeam": "EDM",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-13",
+      "homeTeam": "NJD",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-13",
+      "homeTeam": "VAN",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-10-13",
+      "homeTeam": "WSH",
+      "awayTeam": "NYR",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-14",
+      "homeTeam": "DET",
+      "awayTeam": "BUF",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-14",
+      "homeTeam": "HAR",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-14",
+      "homeTeam": "MNS",
+      "awayTeam": "QUE",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-14",
+      "homeTeam": "NYI",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-14",
+      "homeTeam": "PIT",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-14",
+      "homeTeam": "STL",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-14",
+      "homeTeam": "TOR",
+      "awayTeam": "WIN",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-14",
+      "homeTeam": "WSH",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-15",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-10-15",
+      "homeTeam": "EDM",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-15",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-15",
+      "homeTeam": "PHI",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-15",
+      "homeTeam": "VAN",
+      "awayTeam": "BOS",
+      "homeScore": 7,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-10-16",
+      "homeTeam": "MTL",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-17",
+      "homeTeam": "LAK",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-17",
+      "homeTeam": "NYI",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-10-17",
+      "homeTeam": "NYR",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-17",
+      "homeTeam": "PIT",
+      "awayTeam": "TOR",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-17",
+      "homeTeam": "QUE",
+      "awayTeam": "CGY",
+      "homeScore": 8,
+      "awayScore": 8
+    },
+    {
+      "date": "1989-10-18",
+      "homeTeam": "DET",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-18",
+      "homeTeam": "EDM",
+      "awayTeam": "WIN",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-18",
+      "homeTeam": "HAR",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-18",
+      "homeTeam": "MTL",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-18",
+      "homeTeam": "NJD",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-18",
+      "homeTeam": "PIT",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 9
+    },
+    {
+      "date": "1989-10-18",
+      "homeTeam": "TOR",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-19",
+      "homeTeam": "CHI",
+      "awayTeam": "QUE",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-19",
+      "homeTeam": "NYR",
+      "awayTeam": "HAR",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-19",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-20",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-20",
+      "homeTeam": "EDM",
+      "awayTeam": "BOS",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-20",
+      "homeTeam": "NJD",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-20",
+      "homeTeam": "WIN",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-20",
+      "homeTeam": "WSH",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-21",
+      "homeTeam": "CGY",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-21",
+      "homeTeam": "HAR",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-21",
+      "homeTeam": "MTL",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-21",
+      "homeTeam": "NYI",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-21",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-21",
+      "homeTeam": "PIT",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-21",
+      "homeTeam": "QUE",
+      "awayTeam": "MNS",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-21",
+      "homeTeam": "STL",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-10-21",
+      "homeTeam": "TOR",
+      "awayTeam": "WSH",
+      "homeScore": 8,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-22",
+      "homeTeam": "CHI",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-22",
+      "homeTeam": "WIN",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-23",
+      "homeTeam": "CGY",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-23",
+      "homeTeam": "MTL",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-23",
+      "homeTeam": "NYR",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-23",
+      "homeTeam": "TOR",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-24",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-24",
+      "homeTeam": "NYI",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-24",
+      "homeTeam": "PHI",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-25",
+      "homeTeam": "HAR",
+      "awayTeam": "QUE",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-10-25",
+      "homeTeam": "LAK",
+      "awayTeam": "CGY",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-25",
+      "homeTeam": "MNS",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-25",
+      "homeTeam": "NYR",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-25",
+      "homeTeam": "PIT",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 8
+    },
+    {
+      "date": "1989-10-25",
+      "homeTeam": "WIN",
+      "awayTeam": "WSH",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-26",
+      "homeTeam": "BOS",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-26",
+      "homeTeam": "CHI",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-26",
+      "homeTeam": "DET",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-26",
+      "homeTeam": "NJD",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-10-26",
+      "homeTeam": "STL",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-27",
+      "homeTeam": "BUF",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-27",
+      "homeTeam": "CGY",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-27",
+      "homeTeam": "NYR",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-27",
+      "homeTeam": "WIN",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-28",
+      "homeTeam": "BOS",
+      "awayTeam": "HAR",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-28",
+      "homeTeam": "MNS",
+      "awayTeam": "PHI",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-28",
+      "homeTeam": "MTL",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-28",
+      "homeTeam": "NJD",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-10-28",
+      "homeTeam": "NYI",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-28",
+      "homeTeam": "QUE",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-10-28",
+      "homeTeam": "STL",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-10-28",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-28",
+      "homeTeam": "VAN",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-29",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-29",
+      "homeTeam": "CHI",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-10-29",
+      "homeTeam": "MTL",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-10-29",
+      "homeTeam": "WIN",
+      "awayTeam": "LAK",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-10-30",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-31",
+      "homeTeam": "MNS",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-10-31",
+      "homeTeam": "NYI",
+      "awayTeam": "MTL",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-31",
+      "homeTeam": "PIT",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1989-10-31",
+      "homeTeam": "QUE",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-10-31",
+      "homeTeam": "VAN",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-10-31",
+      "homeTeam": "WSH",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-01",
+      "homeTeam": "CGY",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-01",
+      "homeTeam": "DET",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-01",
+      "homeTeam": "EDM",
+      "awayTeam": "NJD",
+      "homeScore": 6,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-11-01",
+      "homeTeam": "HAR",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-02",
+      "homeTeam": "BOS",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-02",
+      "homeTeam": "CHI",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-02",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-02",
+      "homeTeam": "NYR",
+      "awayTeam": "QUE",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-02",
+      "homeTeam": "PIT",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-03",
+      "homeTeam": "DET",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-03",
+      "homeTeam": "EDM",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-03",
+      "homeTeam": "VAN",
+      "awayTeam": "WIN",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-03",
+      "homeTeam": "WSH",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-04",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-04",
+      "homeTeam": "CGY",
+      "awayTeam": "NJD",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-04",
+      "homeTeam": "EDM",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-04",
+      "homeTeam": "HAR",
+      "awayTeam": "LAK",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-04",
+      "homeTeam": "MNS",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-11-04",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-04",
+      "homeTeam": "NYI",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-04",
+      "homeTeam": "QUE",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-04",
+      "homeTeam": "TOR",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-11-05",
+      "homeTeam": "BUF",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-05",
+      "homeTeam": "CHI",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-05",
+      "homeTeam": "PHI",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-05",
+      "homeTeam": "QUE",
+      "awayTeam": "WSH",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-05",
+      "homeTeam": "VAN",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-06",
+      "homeTeam": "CGY",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-06",
+      "homeTeam": "MTL",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-06",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-06",
+      "homeTeam": "TOR",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-07",
+      "homeTeam": "NYI",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-08",
+      "homeTeam": "HAR",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-11-08",
+      "homeTeam": "LAK",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-08",
+      "homeTeam": "NJD",
+      "awayTeam": "QUE",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-08",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-08",
+      "homeTeam": "WIN",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-09",
+      "homeTeam": "BOS",
+      "awayTeam": "EDM",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-09",
+      "homeTeam": "CHI",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-09",
+      "homeTeam": "MNS",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-09",
+      "homeTeam": "NYI",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-11-09",
+      "homeTeam": "PHI",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-09",
+      "homeTeam": "STL",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-10",
+      "homeTeam": "BUF",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-10",
+      "homeTeam": "WIN",
+      "awayTeam": "HAR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-10",
+      "homeTeam": "WSH",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-11",
+      "homeTeam": "LAK",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-11",
+      "homeTeam": "MNS",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-11",
+      "homeTeam": "NJD",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-11-11",
+      "homeTeam": "NYI",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-11",
+      "homeTeam": "QUE",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-11",
+      "homeTeam": "STL",
+      "awayTeam": "PIT",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-11",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-11",
+      "homeTeam": "WSH",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-12",
+      "homeTeam": "BUF",
+      "awayTeam": "EDM",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-12",
+      "homeTeam": "CHI",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-12",
+      "homeTeam": "MNS",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-12",
+      "homeTeam": "NYR",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-12",
+      "homeTeam": "PHI",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-12",
+      "homeTeam": "WIN",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-14",
+      "homeTeam": "CGY",
+      "awayTeam": "LAK",
+      "homeScore": 6,
+      "awayScore": 8
+    },
+    {
+      "date": "1989-11-14",
+      "homeTeam": "DET",
+      "awayTeam": "HAR",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-14",
+      "homeTeam": "NYI",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-14",
+      "homeTeam": "PIT",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-11-14",
+      "homeTeam": "QUE",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-14",
+      "homeTeam": "VAN",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-15",
+      "homeTeam": "EDM",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-15",
+      "homeTeam": "HAR",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-15",
+      "homeTeam": "MTL",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-15",
+      "homeTeam": "NJD",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-15",
+      "homeTeam": "TOR",
+      "awayTeam": "STL",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-16",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-16",
+      "homeTeam": "CGY",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-16",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-11-16",
+      "homeTeam": "NYI",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-16",
+      "homeTeam": "PHI",
+      "awayTeam": "MNS",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-16",
+      "homeTeam": "PIT",
+      "awayTeam": "QUE",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-16",
+      "homeTeam": "VAN",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-17",
+      "homeTeam": "EDM",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-11-17",
+      "homeTeam": "NJD",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-18",
+      "homeTeam": "BOS",
+      "awayTeam": "NJD",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-18",
+      "homeTeam": "CGY",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-18",
+      "homeTeam": "HAR",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-18",
+      "homeTeam": "LAK",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-18",
+      "homeTeam": "MNS",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-11-18",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-18",
+      "homeTeam": "PHI",
+      "awayTeam": "WIN",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-18",
+      "homeTeam": "PIT",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-18",
+      "homeTeam": "QUE",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 8
+    },
+    {
+      "date": "1989-11-19",
+      "homeTeam": "EDM",
+      "awayTeam": "CHI",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-19",
+      "homeTeam": "VAN",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-20",
+      "homeTeam": "MTL",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-20",
+      "homeTeam": "NYR",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-21",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-21",
+      "homeTeam": "EDM",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-21",
+      "homeTeam": "NYI",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-21",
+      "homeTeam": "QUE",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-21",
+      "homeTeam": "STL",
+      "awayTeam": "MNS",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-22",
+      "homeTeam": "BUF",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-22",
+      "homeTeam": "HAR",
+      "awayTeam": "QUE",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-22",
+      "homeTeam": "LAK",
+      "awayTeam": "CHI",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-22",
+      "homeTeam": "MNS",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-22",
+      "homeTeam": "PHI",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-22",
+      "homeTeam": "PIT",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-11-22",
+      "homeTeam": "WSH",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-23",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-11-23",
+      "homeTeam": "WIN",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-24",
+      "homeTeam": "DET",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-24",
+      "homeTeam": "MNS",
+      "awayTeam": "NJD",
+      "homeScore": 7,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-11-24",
+      "homeTeam": "PHI",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-24",
+      "homeTeam": "WSH",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-11-25",
+      "homeTeam": "HAR",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-25",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-25",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-25",
+      "homeTeam": "NYI",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-11-25",
+      "homeTeam": "PIT",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-25",
+      "homeTeam": "QUE",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-25",
+      "homeTeam": "STL",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-25",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-25",
+      "homeTeam": "WIN",
+      "awayTeam": "NJD",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-26",
+      "homeTeam": "BUF",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-26",
+      "homeTeam": "MNS",
+      "awayTeam": "CHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-26",
+      "homeTeam": "NYR",
+      "awayTeam": "QUE",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-26",
+      "homeTeam": "VAN",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-27",
+      "homeTeam": "DET",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-11-28",
+      "homeTeam": "HAR",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-28",
+      "homeTeam": "NJD",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-28",
+      "homeTeam": "PIT",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-11-28",
+      "homeTeam": "STL",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-29",
+      "homeTeam": "DET",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-11-29",
+      "homeTeam": "MTL",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-29",
+      "homeTeam": "VAN",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-11-29",
+      "homeTeam": "WIN",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-11-30",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-30",
+      "homeTeam": "CGY",
+      "awayTeam": "MNS",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-30",
+      "homeTeam": "CHI",
+      "awayTeam": "NYI",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-11-30",
+      "homeTeam": "LAK",
+      "awayTeam": "EDM",
+      "homeScore": 6,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-11-30",
+      "homeTeam": "PHI",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-11-30",
+      "homeTeam": "QUE",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-11-30",
+      "homeTeam": "STL",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-01",
+      "homeTeam": "BUF",
+      "awayTeam": "NJD",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-01",
+      "homeTeam": "VAN",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-01",
+      "homeTeam": "WIN",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-01",
+      "homeTeam": "WSH",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-02",
+      "homeTeam": "BOS",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-02",
+      "homeTeam": "CGY",
+      "awayTeam": "TOR",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-02",
+      "homeTeam": "EDM",
+      "awayTeam": "MNS",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-02",
+      "homeTeam": "LAK",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-12-02",
+      "homeTeam": "MTL",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-02",
+      "homeTeam": "NJD",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-02",
+      "homeTeam": "QUE",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-12-02",
+      "homeTeam": "WIN",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-12-03",
+      "homeTeam": "BUF",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-03",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-03",
+      "homeTeam": "EDM",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-03",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-03",
+      "homeTeam": "VAN",
+      "awayTeam": "MNS",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-05",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-05",
+      "homeTeam": "NYI",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-12-05",
+      "homeTeam": "PHI",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-05",
+      "homeTeam": "QUE",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-06",
+      "homeTeam": "CGY",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-06",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-06",
+      "homeTeam": "HAR",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-06",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-06",
+      "homeTeam": "MNS",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-06",
+      "homeTeam": "NYR",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-06",
+      "homeTeam": "PIT",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-07",
+      "homeTeam": "BOS",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-07",
+      "homeTeam": "PHI",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-07",
+      "homeTeam": "STL",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-08",
+      "homeTeam": "DET",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-08",
+      "homeTeam": "EDM",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-08",
+      "homeTeam": "NJD",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-08",
+      "homeTeam": "WIN",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-12-09",
+      "homeTeam": "BOS",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-12-09",
+      "homeTeam": "HAR",
+      "awayTeam": "NJD",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-09",
+      "homeTeam": "MNS",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-09",
+      "homeTeam": "NYI",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 0
+    },
+    {
+      "date": "1989-12-09",
+      "homeTeam": "PIT",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-12-09",
+      "homeTeam": "QUE",
+      "awayTeam": "PHI",
+      "homeScore": 6,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-12-09",
+      "homeTeam": "STL",
+      "awayTeam": "VAN",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-09",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-10",
+      "homeTeam": "BUF",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-10",
+      "homeTeam": "CHI",
+      "awayTeam": "VAN",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-10",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-10",
+      "homeTeam": "QUE",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1989-12-10",
+      "homeTeam": "WIN",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-11",
+      "homeTeam": "EDM",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-11",
+      "homeTeam": "MTL",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-11",
+      "homeTeam": "TOR",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-12",
+      "homeTeam": "MNS",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-12",
+      "homeTeam": "NYI",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-12-12",
+      "homeTeam": "PIT",
+      "awayTeam": "BOS",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-13",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-13",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-13",
+      "homeTeam": "EDM",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-13",
+      "homeTeam": "HAR",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-13",
+      "homeTeam": "MTL",
+      "awayTeam": "CHI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-13",
+      "homeTeam": "NJD",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-13",
+      "homeTeam": "NYR",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-13",
+      "homeTeam": "WIN",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-14",
+      "homeTeam": "CGY",
+      "awayTeam": "QUE",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-14",
+      "homeTeam": "MNS",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-14",
+      "homeTeam": "PHI",
+      "awayTeam": "HAR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-15",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 8,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-15",
+      "homeTeam": "NJD",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-15",
+      "homeTeam": "VAN",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-15",
+      "homeTeam": "WSH",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-16",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-16",
+      "homeTeam": "CGY",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-16",
+      "homeTeam": "HAR",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-16",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-16",
+      "homeTeam": "NYI",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-16",
+      "homeTeam": "PHI",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-16",
+      "homeTeam": "STL",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-16",
+      "homeTeam": "TOR",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-17",
+      "homeTeam": "BUF",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-17",
+      "homeTeam": "CHI",
+      "awayTeam": "EDM",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-17",
+      "homeTeam": "NJD",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-17",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-17",
+      "homeTeam": "VAN",
+      "awayTeam": "QUE",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-18",
+      "homeTeam": "TOR",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-19",
+      "homeTeam": "LAK",
+      "awayTeam": "WIN",
+      "homeScore": 9,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-19",
+      "homeTeam": "MNS",
+      "awayTeam": "EDM",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-19",
+      "homeTeam": "NYI",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-19",
+      "homeTeam": "PHI",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-19",
+      "homeTeam": "PIT",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1989-12-19",
+      "homeTeam": "VAN",
+      "awayTeam": "CGY",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-20",
+      "homeTeam": "CGY",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-20",
+      "homeTeam": "CHI",
+      "awayTeam": "STL",
+      "homeScore": 9,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-12-20",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-20",
+      "homeTeam": "HAR",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-20",
+      "homeTeam": "NYR",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-21",
+      "homeTeam": "BOS",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-21",
+      "homeTeam": "EDM",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-21",
+      "homeTeam": "LAK",
+      "awayTeam": "QUE",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-21",
+      "homeTeam": "PIT",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-22",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-22",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-22",
+      "homeTeam": "PHI",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-23",
+      "homeTeam": "BOS",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-23",
+      "homeTeam": "EDM",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-23",
+      "homeTeam": "HAR",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-23",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-23",
+      "homeTeam": "MTL",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-23",
+      "homeTeam": "NJD",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-23",
+      "homeTeam": "NYI",
+      "awayTeam": "PIT",
+      "homeScore": 8,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-12-23",
+      "homeTeam": "QUE",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-12-23",
+      "homeTeam": "TOR",
+      "awayTeam": "CHI",
+      "homeScore": 5,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-12-23",
+      "homeTeam": "WSH",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-26",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-26",
+      "homeTeam": "BUF",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-26",
+      "homeTeam": "NYR",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-26",
+      "homeTeam": "QUE",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-26",
+      "homeTeam": "STL",
+      "awayTeam": "CHI",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-26",
+      "homeTeam": "WIN",
+      "awayTeam": "MNS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-26",
+      "homeTeam": "WSH",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-27",
+      "homeTeam": "EDM",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-27",
+      "homeTeam": "LAK",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-27",
+      "homeTeam": "NJD",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-27",
+      "homeTeam": "PIT",
+      "awayTeam": "NYR",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-27",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 7,
+      "awayScore": 7
+    },
+    {
+      "date": "1989-12-27",
+      "homeTeam": "VAN",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-28",
+      "homeTeam": "CHI",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-28",
+      "homeTeam": "NYI",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-29",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-29",
+      "homeTeam": "CGY",
+      "awayTeam": "WIN",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-29",
+      "homeTeam": "EDM",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-29",
+      "homeTeam": "NJD",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-29",
+      "homeTeam": "WSH",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-30",
+      "homeTeam": "CGY",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-30",
+      "homeTeam": "CHI",
+      "awayTeam": "HAR",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-30",
+      "homeTeam": "LAK",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-12-30",
+      "homeTeam": "QUE",
+      "awayTeam": "NYI",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1989-12-30",
+      "homeTeam": "STL",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-30",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 7,
+      "awayScore": 6
+    },
+    {
+      "date": "1989-12-31",
+      "homeTeam": "BUF",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-31",
+      "homeTeam": "DET",
+      "awayTeam": "NJD",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1989-12-31",
+      "homeTeam": "MNS",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1989-12-31",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1989-12-31",
+      "homeTeam": "VAN",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1989-12-31",
+      "homeTeam": "WIN",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-01",
+      "homeTeam": "WSH",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-01-02",
+      "homeTeam": "CGY",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-02",
+      "homeTeam": "DET",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-01-02",
+      "homeTeam": "NJD",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-02",
+      "homeTeam": "NYI",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-02",
+      "homeTeam": "PIT",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-02",
+      "homeTeam": "STL",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-03",
+      "homeTeam": "CHI",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-03",
+      "homeTeam": "HAR",
+      "awayTeam": "WIN",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-03",
+      "homeTeam": "NYR",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-01-03",
+      "homeTeam": "TOR",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-04",
+      "homeTeam": "BOS",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-04",
+      "homeTeam": "DET",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-01-04",
+      "homeTeam": "MNS",
+      "awayTeam": "NYR",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-04",
+      "homeTeam": "NJD",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-04",
+      "homeTeam": "PIT",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-04",
+      "homeTeam": "STL",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-05",
+      "homeTeam": "CGY",
+      "awayTeam": "HAR",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-05",
+      "homeTeam": "WSH",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-06",
+      "homeTeam": "BOS",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-06",
+      "homeTeam": "CHI",
+      "awayTeam": "PHI",
+      "homeScore": 8,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-06",
+      "homeTeam": "EDM",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-06",
+      "homeTeam": "MNS",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-06",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-06",
+      "homeTeam": "NYI",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-06",
+      "homeTeam": "PIT",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-06",
+      "homeTeam": "STL",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-06",
+      "homeTeam": "TOR",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-07",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-07",
+      "homeTeam": "EDM",
+      "awayTeam": "CGY",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-07",
+      "homeTeam": "MTL",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-08",
+      "homeTeam": "NJD",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-08",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-01-08",
+      "homeTeam": "TOR",
+      "awayTeam": "WSH",
+      "homeScore": 8,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-09",
+      "homeTeam": "CGY",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-09",
+      "homeTeam": "DET",
+      "awayTeam": "MNS",
+      "homeScore": 9,
+      "awayScore": 0
+    },
+    {
+      "date": "1990-01-09",
+      "homeTeam": "LAK",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-09",
+      "homeTeam": "QUE",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-10",
+      "homeTeam": "NJD",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-10",
+      "homeTeam": "NYR",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-10",
+      "homeTeam": "TOR",
+      "awayTeam": "NYI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-10",
+      "homeTeam": "VAN",
+      "awayTeam": "HAR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-10",
+      "homeTeam": "WIN",
+      "awayTeam": "WSH",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-01-11",
+      "homeTeam": "BOS",
+      "awayTeam": "QUE",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-01-11",
+      "homeTeam": "CGY",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-11",
+      "homeTeam": "LAK",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-11",
+      "homeTeam": "MNS",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1990-01-11",
+      "homeTeam": "PHI",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-12",
+      "homeTeam": "NJD",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-12",
+      "homeTeam": "VAN",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-12",
+      "homeTeam": "WIN",
+      "awayTeam": "DET",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-12",
+      "homeTeam": "WSH",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-13",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-13",
+      "homeTeam": "LAK",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-13",
+      "homeTeam": "MNS",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-13",
+      "homeTeam": "MTL",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-13",
+      "homeTeam": "NYI",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-13",
+      "homeTeam": "QUE",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-13",
+      "homeTeam": "TOR",
+      "awayTeam": "CGY",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-13",
+      "homeTeam": "VAN",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-14",
+      "homeTeam": "CHI",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-14",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-14",
+      "homeTeam": "WIN",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-15",
+      "homeTeam": "BOS",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-01-15",
+      "homeTeam": "MTL",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-15",
+      "homeTeam": "TOR",
+      "awayTeam": "CHI",
+      "homeScore": 7,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-16",
+      "homeTeam": "EDM",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-16",
+      "homeTeam": "LAK",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-16",
+      "homeTeam": "NYI",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1990-01-16",
+      "homeTeam": "PIT",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-16",
+      "homeTeam": "STL",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-16",
+      "homeTeam": "WIN",
+      "awayTeam": "QUE",
+      "homeScore": 6,
+      "awayScore": 8
+    },
+    {
+      "date": "1990-01-16",
+      "homeTeam": "WSH",
+      "awayTeam": "NJD",
+      "homeScore": 9,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-17",
+      "homeTeam": "CHI",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-01-17",
+      "homeTeam": "EDM",
+      "awayTeam": "WIN",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-17",
+      "homeTeam": "HAR",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-17",
+      "homeTeam": "MTL",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-18",
+      "homeTeam": "BOS",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-18",
+      "homeTeam": "LAK",
+      "awayTeam": "DET",
+      "homeScore": 9,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-18",
+      "homeTeam": "MNS",
+      "awayTeam": "QUE",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-18",
+      "homeTeam": "PHI",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-18",
+      "homeTeam": "PIT",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-18",
+      "homeTeam": "STL",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-19",
+      "homeTeam": "BUF",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-19",
+      "homeTeam": "CHI",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-19",
+      "homeTeam": "HAR",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-19",
+      "homeTeam": "WIN",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-23",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-23",
+      "homeTeam": "EDM",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-23",
+      "homeTeam": "HAR",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-23",
+      "homeTeam": "PHI",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-23",
+      "homeTeam": "PIT",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-23",
+      "homeTeam": "QUE",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 9
+    },
+    {
+      "date": "1990-01-23",
+      "homeTeam": "VAN",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-23",
+      "homeTeam": "WSH",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-24",
+      "homeTeam": "CHI",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-24",
+      "homeTeam": "MTL",
+      "awayTeam": "QUE",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-24",
+      "homeTeam": "NJD",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-24",
+      "homeTeam": "TOR",
+      "awayTeam": "MNS",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-25",
+      "homeTeam": "BOS",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-25",
+      "homeTeam": "CGY",
+      "awayTeam": "NYR",
+      "homeScore": 8,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-25",
+      "homeTeam": "DET",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-25",
+      "homeTeam": "EDM",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-25",
+      "homeTeam": "PHI",
+      "awayTeam": "WIN",
+      "homeScore": 8,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-25",
+      "homeTeam": "STL",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-26",
+      "homeTeam": "BUF",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-26",
+      "homeTeam": "NJD",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-26",
+      "homeTeam": "VAN",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-26",
+      "homeTeam": "WSH",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-27",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-01-27",
+      "homeTeam": "CGY",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-01-27",
+      "homeTeam": "EDM",
+      "awayTeam": "VAN",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-27",
+      "homeTeam": "HAR",
+      "awayTeam": "CHI",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-27",
+      "homeTeam": "LAK",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-27",
+      "homeTeam": "NYI",
+      "awayTeam": "PIT",
+      "homeScore": 9,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-27",
+      "homeTeam": "QUE",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 8
+    },
+    {
+      "date": "1990-01-27",
+      "homeTeam": "STL",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-27",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-28",
+      "homeTeam": "BUF",
+      "awayTeam": "PIT",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-28",
+      "homeTeam": "NYI",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-28",
+      "homeTeam": "WSH",
+      "awayTeam": "PHI",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-29",
+      "homeTeam": "MNS",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-29",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-30",
+      "homeTeam": "HAR",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-30",
+      "homeTeam": "LAK",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-30",
+      "homeTeam": "NYI",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-30",
+      "homeTeam": "PIT",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-01-30",
+      "homeTeam": "QUE",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-30",
+      "homeTeam": "VAN",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-01-31",
+      "homeTeam": "BUF",
+      "awayTeam": "QUE",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-01-31",
+      "homeTeam": "DET",
+      "awayTeam": "EDM",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-01-31",
+      "homeTeam": "MNS",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-01-31",
+      "homeTeam": "NYR",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-01-31",
+      "homeTeam": "WIN",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-01",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-01",
+      "homeTeam": "CGY",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-01",
+      "homeTeam": "LAK",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-02-01",
+      "homeTeam": "PHI",
+      "awayTeam": "HAR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-02",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-02",
+      "homeTeam": "NYI",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-02",
+      "homeTeam": "PIT",
+      "awayTeam": "EDM",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-02",
+      "homeTeam": "WIN",
+      "awayTeam": "VAN",
+      "homeScore": 8,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-03",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-03",
+      "homeTeam": "LAK",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-03",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1990-02-03",
+      "homeTeam": "PHI",
+      "awayTeam": "MNS",
+      "homeScore": 7,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-03",
+      "homeTeam": "QUE",
+      "awayTeam": "HAR",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-03",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-03",
+      "homeTeam": "TOR",
+      "awayTeam": "PIT",
+      "homeScore": 8,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-04",
+      "homeTeam": "BUF",
+      "awayTeam": "NYI",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-04",
+      "homeTeam": "MTL",
+      "awayTeam": "HAR",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1990-02-04",
+      "homeTeam": "NYR",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-04",
+      "homeTeam": "QUE",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-04",
+      "homeTeam": "VAN",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-04",
+      "homeTeam": "WIN",
+      "awayTeam": "CHI",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-04",
+      "homeTeam": "WSH",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-06",
+      "homeTeam": "CGY",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-06",
+      "homeTeam": "DET",
+      "awayTeam": "BOS",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-06",
+      "homeTeam": "NJD",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-06",
+      "homeTeam": "PIT",
+      "awayTeam": "NYI",
+      "homeScore": 7,
+      "awayScore": 8
+    },
+    {
+      "date": "1990-02-06",
+      "homeTeam": "STL",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-06",
+      "homeTeam": "VAN",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-06",
+      "homeTeam": "WSH",
+      "awayTeam": "QUE",
+      "homeScore": 12,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-07",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-07",
+      "homeTeam": "MNS",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-07",
+      "homeTeam": "NYR",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-07",
+      "homeTeam": "TOR",
+      "awayTeam": "STL",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-08",
+      "homeTeam": "BOS",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-08",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 6,
+      "awayScore": 8
+    },
+    {
+      "date": "1990-02-08",
+      "homeTeam": "LAK",
+      "awayTeam": "WIN",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-08",
+      "homeTeam": "PHI",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-08",
+      "homeTeam": "PIT",
+      "awayTeam": "WSH",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-09",
+      "homeTeam": "BUF",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-09",
+      "homeTeam": "HAR",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-09",
+      "homeTeam": "WSH",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-10",
+      "homeTeam": "BOS",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-10",
+      "homeTeam": "DET",
+      "awayTeam": "CGY",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-10",
+      "homeTeam": "HAR",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-10",
+      "homeTeam": "MNS",
+      "awayTeam": "CHI",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-10",
+      "homeTeam": "MTL",
+      "awayTeam": "QUE",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-10",
+      "homeTeam": "PIT",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-10",
+      "homeTeam": "STL",
+      "awayTeam": "NJD",
+      "homeScore": 7,
+      "awayScore": 0
+    },
+    {
+      "date": "1990-02-11",
+      "homeTeam": "BOS",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-11",
+      "homeTeam": "EDM",
+      "awayTeam": "WIN",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-11",
+      "homeTeam": "NYR",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-11",
+      "homeTeam": "PHI",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-11",
+      "homeTeam": "STL",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-11",
+      "homeTeam": "WSH",
+      "awayTeam": "MNS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-12",
+      "homeTeam": "NJD",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-12",
+      "homeTeam": "TOR",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-13",
+      "homeTeam": "CHI",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-13",
+      "homeTeam": "MNS",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-13",
+      "homeTeam": "NYI",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-13",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-13",
+      "homeTeam": "QUE",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-14",
+      "homeTeam": "DET",
+      "awayTeam": "LAK",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-14",
+      "homeTeam": "EDM",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-14",
+      "homeTeam": "MTL",
+      "awayTeam": "VAN",
+      "homeScore": 10,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-14",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-14",
+      "homeTeam": "TOR",
+      "awayTeam": "HAR",
+      "homeScore": 6,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-14",
+      "homeTeam": "WIN",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-15",
+      "homeTeam": "CHI",
+      "awayTeam": "CGY",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-15",
+      "homeTeam": "MNS",
+      "awayTeam": "LAK",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-15",
+      "homeTeam": "PHI",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1990-02-15",
+      "homeTeam": "STL",
+      "awayTeam": "QUE",
+      "homeScore": 9,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-16",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-16",
+      "homeTeam": "DET",
+      "awayTeam": "PHI",
+      "homeScore": 9,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-16",
+      "homeTeam": "NJD",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-16",
+      "homeTeam": "VAN",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-16",
+      "homeTeam": "WIN",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-17",
+      "homeTeam": "LAK",
+      "awayTeam": "QUE",
+      "homeScore": 7,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-17",
+      "homeTeam": "MTL",
+      "awayTeam": "HAR",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-17",
+      "homeTeam": "NYI",
+      "awayTeam": "CHI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-17",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-17",
+      "homeTeam": "TOR",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-18",
+      "homeTeam": "BUF",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-18",
+      "homeTeam": "CHI",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-18",
+      "homeTeam": "EDM",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-18",
+      "homeTeam": "PHI",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-18",
+      "homeTeam": "VAN",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-02-18",
+      "homeTeam": "WIN",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-19",
+      "homeTeam": "DET",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-19",
+      "homeTeam": "LAK",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-19",
+      "homeTeam": "NYR",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-20",
+      "homeTeam": "CGY",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-20",
+      "homeTeam": "PIT",
+      "awayTeam": "PHI",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-20",
+      "homeTeam": "STL",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 8
+    },
+    {
+      "date": "1990-02-20",
+      "homeTeam": "VAN",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-20",
+      "homeTeam": "WIN",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-21",
+      "homeTeam": "DET",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-21",
+      "homeTeam": "EDM",
+      "awayTeam": "BUF",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-21",
+      "homeTeam": "HAR",
+      "awayTeam": "QUE",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-21",
+      "homeTeam": "LAK",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-22",
+      "homeTeam": "CGY",
+      "awayTeam": "TOR",
+      "homeScore": 12,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-22",
+      "homeTeam": "CHI",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-22",
+      "homeTeam": "NJD",
+      "awayTeam": "WIN",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-22",
+      "homeTeam": "PIT",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-22",
+      "homeTeam": "QUE",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-22",
+      "homeTeam": "STL",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-02-23",
+      "homeTeam": "BUF",
+      "awayTeam": "HAR",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-23",
+      "homeTeam": "EDM",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-23",
+      "homeTeam": "WSH",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-24",
+      "homeTeam": "HAR",
+      "awayTeam": "WIN",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-24",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-24",
+      "homeTeam": "MNS",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-24",
+      "homeTeam": "MTL",
+      "awayTeam": "PIT",
+      "homeScore": 11,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-24",
+      "homeTeam": "NJD",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-24",
+      "homeTeam": "NYI",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-24",
+      "homeTeam": "QUE",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-02-25",
+      "homeTeam": "BUF",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-25",
+      "homeTeam": "CGY",
+      "awayTeam": "EDM",
+      "homeScore": 10,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-25",
+      "homeTeam": "CHI",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-25",
+      "homeTeam": "MTL",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-02-25",
+      "homeTeam": "NYI",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-25",
+      "homeTeam": "WSH",
+      "awayTeam": "DET",
+      "homeScore": 9,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-26",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-26",
+      "homeTeam": "QUE",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-26",
+      "homeTeam": "VAN",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-27",
+      "homeTeam": "MNS",
+      "awayTeam": "WIN",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-27",
+      "homeTeam": "STL",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-27",
+      "homeTeam": "WSH",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1990-02-28",
+      "homeTeam": "DET",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-02-28",
+      "homeTeam": "HAR",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-28",
+      "homeTeam": "LAK",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-28",
+      "homeTeam": "NYR",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-02-28",
+      "homeTeam": "PIT",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-02-28",
+      "homeTeam": "TOR",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-02-28",
+      "homeTeam": "VAN",
+      "awayTeam": "PHI",
+      "homeScore": 7,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-03-01",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-01",
+      "homeTeam": "CGY",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-01",
+      "homeTeam": "CHI",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-02",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-02",
+      "homeTeam": "NJD",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-02",
+      "homeTeam": "NYR",
+      "awayTeam": "NYI",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-02",
+      "homeTeam": "WIN",
+      "awayTeam": "LAK",
+      "homeScore": 9,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-02",
+      "homeTeam": "WSH",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-03",
+      "homeTeam": "BOS",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-03",
+      "homeTeam": "CGY",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-03",
+      "homeTeam": "EDM",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-03",
+      "homeTeam": "HAR",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-03",
+      "homeTeam": "MNS",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-03",
+      "homeTeam": "QUE",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-03",
+      "homeTeam": "STL",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-03",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-04",
+      "homeTeam": "BUF",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-04",
+      "homeTeam": "CHI",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-04",
+      "homeTeam": "EDM",
+      "awayTeam": "VAN",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-04",
+      "homeTeam": "PIT",
+      "awayTeam": "MNS",
+      "homeScore": 8,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-04",
+      "homeTeam": "WIN",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-04",
+      "homeTeam": "WSH",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-05",
+      "homeTeam": "CGY",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1990-03-05",
+      "homeTeam": "NYR",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-06",
+      "homeTeam": "EDM",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-06",
+      "homeTeam": "NJD",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-06",
+      "homeTeam": "NYI",
+      "awayTeam": "HAR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-06",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-06",
+      "homeTeam": "WSH",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-07",
+      "homeTeam": "CGY",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-07",
+      "homeTeam": "LAK",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-07",
+      "homeTeam": "MNS",
+      "awayTeam": "CHI",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-07",
+      "homeTeam": "WIN",
+      "awayTeam": "QUE",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-08",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 10
+    },
+    {
+      "date": "1990-03-08",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-08",
+      "homeTeam": "HAR",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-03-08",
+      "homeTeam": "NJD",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-08",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-03-09",
+      "homeTeam": "VAN",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-09",
+      "homeTeam": "WIN",
+      "awayTeam": "EDM",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-09",
+      "homeTeam": "WSH",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-10",
+      "homeTeam": "HAR",
+      "awayTeam": "BUF",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-10",
+      "homeTeam": "LAK",
+      "awayTeam": "PIT",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-10",
+      "homeTeam": "MNS",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-10",
+      "homeTeam": "MTL",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-10",
+      "homeTeam": "NJD",
+      "awayTeam": "QUE",
+      "homeScore": 9,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-10",
+      "homeTeam": "NYI",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-10",
+      "homeTeam": "PHI",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-10",
+      "homeTeam": "STL",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-10",
+      "homeTeam": "TOR",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-11",
+      "homeTeam": "CHI",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-11",
+      "homeTeam": "HAR",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-11",
+      "homeTeam": "VAN",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-11",
+      "homeTeam": "WIN",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-12",
+      "homeTeam": "CGY",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-12",
+      "homeTeam": "NYR",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-12",
+      "homeTeam": "TOR",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-13",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-13",
+      "homeTeam": "MNS",
+      "awayTeam": "NJD",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-13",
+      "homeTeam": "NYI",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-13",
+      "homeTeam": "QUE",
+      "awayTeam": "EDM",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-13",
+      "homeTeam": "VAN",
+      "awayTeam": "HAR",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-13",
+      "homeTeam": "WSH",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-14",
+      "homeTeam": "BUF",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-14",
+      "homeTeam": "MTL",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-14",
+      "homeTeam": "TOR",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 8
+    },
+    {
+      "date": "1990-03-15",
+      "homeTeam": "BOS",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-15",
+      "homeTeam": "CGY",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-15",
+      "homeTeam": "PHI",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-15",
+      "homeTeam": "PIT",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-15",
+      "homeTeam": "QUE",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-15",
+      "homeTeam": "STL",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-16",
+      "homeTeam": "BUF",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-17",
+      "homeTeam": "BOS",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-17",
+      "homeTeam": "CGY",
+      "awayTeam": "HAR",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-17",
+      "homeTeam": "EDM",
+      "awayTeam": "NJD",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-17",
+      "homeTeam": "MTL",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-17",
+      "homeTeam": "NYI",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-17",
+      "homeTeam": "PIT",
+      "awayTeam": "MNS",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-17",
+      "homeTeam": "QUE",
+      "awayTeam": "PHI",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-17",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-17",
+      "homeTeam": "TOR",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-17",
+      "homeTeam": "WSH",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-18",
+      "homeTeam": "BUF",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-18",
+      "homeTeam": "EDM",
+      "awayTeam": "HAR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-18",
+      "homeTeam": "MNS",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-18",
+      "homeTeam": "MTL",
+      "awayTeam": "QUE",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-18",
+      "homeTeam": "NYI",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-18",
+      "homeTeam": "NYR",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-18",
+      "homeTeam": "PHI",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-19",
+      "homeTeam": "CGY",
+      "awayTeam": "STL",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-19",
+      "homeTeam": "TOR",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-20",
+      "homeTeam": "DET",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-20",
+      "homeTeam": "MNS",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-20",
+      "homeTeam": "NJD",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-20",
+      "homeTeam": "WSH",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1990-03-21",
+      "homeTeam": "BUF",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-21",
+      "homeTeam": "EDM",
+      "awayTeam": "STL",
+      "homeScore": 8,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-21",
+      "homeTeam": "HAR",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-21",
+      "homeTeam": "NYR",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-21",
+      "homeTeam": "WIN",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-22",
+      "homeTeam": "BOS",
+      "awayTeam": "QUE",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-22",
+      "homeTeam": "CHI",
+      "awayTeam": "NJD",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-22",
+      "homeTeam": "DET",
+      "awayTeam": "MNS",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-22",
+      "homeTeam": "LAK",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-22",
+      "homeTeam": "PHI",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-23",
+      "homeTeam": "WIN",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-23",
+      "homeTeam": "WSH",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-24",
+      "homeTeam": "BOS",
+      "awayTeam": "MNS",
+      "homeScore": 6,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-03-24",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-24",
+      "homeTeam": "EDM",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-24",
+      "homeTeam": "HAR",
+      "awayTeam": "MTL",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-24",
+      "homeTeam": "LAK",
+      "awayTeam": "STL",
+      "homeScore": 9,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-24",
+      "homeTeam": "PHI",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-24",
+      "homeTeam": "PIT",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-24",
+      "homeTeam": "QUE",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-25",
+      "homeTeam": "BUF",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-25",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-25",
+      "homeTeam": "HAR",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-25",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-25",
+      "homeTeam": "VAN",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-25",
+      "homeTeam": "WSH",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-26",
+      "homeTeam": "MNS",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-27",
+      "homeTeam": "DET",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-27",
+      "homeTeam": "LAK",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-27",
+      "homeTeam": "NJD",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-27",
+      "homeTeam": "NYI",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-27",
+      "homeTeam": "PIT",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-27",
+      "homeTeam": "QUE",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1990-03-27",
+      "homeTeam": "STL",
+      "awayTeam": "BOS",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-27",
+      "homeTeam": "VAN",
+      "awayTeam": "EDM",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-28",
+      "homeTeam": "TOR",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-29",
+      "homeTeam": "BOS",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-29",
+      "homeTeam": "BUF",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-29",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-29",
+      "homeTeam": "LAK",
+      "awayTeam": "WIN",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-29",
+      "homeTeam": "NJD",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-29",
+      "homeTeam": "PHI",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-29",
+      "homeTeam": "QUE",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1990-03-29",
+      "homeTeam": "STL",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-30",
+      "homeTeam": "CGY",
+      "awayTeam": "EDM",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-31",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-31",
+      "homeTeam": "NJD",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-03-31",
+      "homeTeam": "NYI",
+      "awayTeam": "PHI",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-03-31",
+      "homeTeam": "PIT",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-31",
+      "homeTeam": "QUE",
+      "awayTeam": "HAR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-31",
+      "homeTeam": "STL",
+      "awayTeam": "MNS",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1990-03-31",
+      "homeTeam": "TOR",
+      "awayTeam": "CHI",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-03-31",
+      "homeTeam": "VAN",
+      "awayTeam": "LAK",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-03-31",
+      "homeTeam": "WSH",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-04-01",
+      "homeTeam": "BOS",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-04-01",
+      "homeTeam": "BUF",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1990-04-01",
+      "homeTeam": "CGY",
+      "awayTeam": "LAK",
+      "homeScore": 8,
+      "awayScore": 4
+    },
+    {
+      "date": "1990-04-01",
+      "homeTeam": "CHI",
+      "awayTeam": "MNS",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-04-01",
+      "homeTeam": "HAR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1990-04-01",
+      "homeTeam": "NYR",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-04-01",
+      "homeTeam": "PHI",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1990-04-01",
+      "homeTeam": "WIN",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 4
+    }
+  ],
+  "metadata": {
+    "total_games": 840,
+    "ingested_at": "2026-01-26T09:09:07.213437"
+  }
+}

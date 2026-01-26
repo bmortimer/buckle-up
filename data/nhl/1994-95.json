@@ -1,0 +1,4378 @@
+{
+  "season": "1994-95",
+  "league": "NHL",
+  "games": [
+    {
+      "date": "1995-01-20",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-20",
+      "homeTeam": "EDM",
+      "awayTeam": "MDA",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-20",
+      "homeTeam": "LAK",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-01-20",
+      "homeTeam": "NYR",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-20",
+      "homeTeam": "SJS",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-01-20",
+      "homeTeam": "TBL",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-01-20",
+      "homeTeam": "VAN",
+      "awayTeam": "DAL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-20",
+      "homeTeam": "WIN",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-01-21",
+      "homeTeam": "HAR",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-21",
+      "homeTeam": "NYI",
+      "awayTeam": "FLA",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-21",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-21",
+      "homeTeam": "PHI",
+      "awayTeam": "QUE",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-01-21",
+      "homeTeam": "SJS",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-21",
+      "homeTeam": "VAN",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 7
+    },
+    {
+      "date": "1995-01-21",
+      "homeTeam": "WIN",
+      "awayTeam": "MDA",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-22",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-22",
+      "homeTeam": "DET",
+      "awayTeam": "CGY",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-22",
+      "homeTeam": "HAR",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-22",
+      "homeTeam": "LAK",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-22",
+      "homeTeam": "NYI",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-01-22",
+      "homeTeam": "TBL",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-01-23",
+      "homeTeam": "FLA",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-01-23",
+      "homeTeam": "MDA",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-23",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-23",
+      "homeTeam": "WIN",
+      "awayTeam": "CHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-01-24",
+      "homeTeam": "CGY",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-24",
+      "homeTeam": "DET",
+      "awayTeam": "VAN",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-01-24",
+      "homeTeam": "LAK",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-24",
+      "homeTeam": "NYI",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-01-24",
+      "homeTeam": "QUE",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-25",
+      "homeTeam": "BUF",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-25",
+      "homeTeam": "CHI",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-25",
+      "homeTeam": "HAR",
+      "awayTeam": "OTT",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-25",
+      "homeTeam": "MDA",
+      "awayTeam": "DAL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-25",
+      "homeTeam": "MTL",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-01-25",
+      "homeTeam": "NYR",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-01-25",
+      "homeTeam": "SJS",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-01-25",
+      "homeTeam": "TBL",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-25",
+      "homeTeam": "TOR",
+      "awayTeam": "VAN",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-26",
+      "homeTeam": "BOS",
+      "awayTeam": "NJD",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-01-26",
+      "homeTeam": "DET",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-26",
+      "homeTeam": "FLA",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-26",
+      "homeTeam": "PHI",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-26",
+      "homeTeam": "STL",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-27",
+      "homeTeam": "BUF",
+      "awayTeam": "QUE",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "1995-01-27",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-27",
+      "homeTeam": "MDA",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-27",
+      "homeTeam": "PIT",
+      "awayTeam": "OTT",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-27",
+      "homeTeam": "WSH",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "DET",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "HAR",
+      "awayTeam": "FLA",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "LAK",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "MTL",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "NYI",
+      "awayTeam": "TBL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "OTT",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "QUE",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "SJS",
+      "awayTeam": "DAL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "STL",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-01-28",
+      "homeTeam": "TOR",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-29",
+      "homeTeam": "LAK",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-01-29",
+      "homeTeam": "MTL",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-29",
+      "homeTeam": "WSH",
+      "awayTeam": "PIT",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-30",
+      "homeTeam": "BOS",
+      "awayTeam": "FLA",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-30",
+      "homeTeam": "DAL",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-30",
+      "homeTeam": "EDM",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-01-30",
+      "homeTeam": "NYR",
+      "awayTeam": "OTT",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-30",
+      "homeTeam": "SJS",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-31",
+      "homeTeam": "FLA",
+      "awayTeam": "NYI",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-01-31",
+      "homeTeam": "NJD",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-01-31",
+      "homeTeam": "QUE",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-31",
+      "homeTeam": "STL",
+      "awayTeam": "MDA",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-01-31",
+      "homeTeam": "TBL",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-01",
+      "homeTeam": "CGY",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-01",
+      "homeTeam": "DAL",
+      "awayTeam": "MDA",
+      "homeScore": 9,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-01",
+      "homeTeam": "EDM",
+      "awayTeam": "CHI",
+      "homeScore": 0,
+      "awayScore": 7
+    },
+    {
+      "date": "1995-02-01",
+      "homeTeam": "OTT",
+      "awayTeam": "HAR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-01",
+      "homeTeam": "PIT",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-01",
+      "homeTeam": "VAN",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-02",
+      "homeTeam": "BOS",
+      "awayTeam": "OTT",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-02",
+      "homeTeam": "DAL",
+      "awayTeam": "SJS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-02",
+      "homeTeam": "FLA",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-02",
+      "homeTeam": "NJD",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-02",
+      "homeTeam": "NYR",
+      "awayTeam": "TBL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-02",
+      "homeTeam": "PHI",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-02",
+      "homeTeam": "WIN",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-02",
+      "homeTeam": "WSH",
+      "awayTeam": "BUF",
+      "homeScore": 0,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-03",
+      "homeTeam": "CGY",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-03",
+      "homeTeam": "EDM",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-03",
+      "homeTeam": "MDA",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "BOS",
+      "awayTeam": "HAR",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "CGY",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "LAK",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "MTL",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "OTT",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "PHI",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "PIT",
+      "awayTeam": "TBL",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "QUE",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "STL",
+      "awayTeam": "DAL",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "WIN",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-04",
+      "homeTeam": "WSH",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-05",
+      "homeTeam": "BUF",
+      "awayTeam": "TBL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-05",
+      "homeTeam": "LAK",
+      "awayTeam": "MDA",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-05",
+      "homeTeam": "NJD",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-05",
+      "homeTeam": "QUE",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-05",
+      "homeTeam": "VAN",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 9
+    },
+    {
+      "date": "1995-02-06",
+      "homeTeam": "CGY",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-06",
+      "homeTeam": "OTT",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-02-06",
+      "homeTeam": "TOR",
+      "awayTeam": "SJS",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-07",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-07",
+      "homeTeam": "BUF",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-07",
+      "homeTeam": "DET",
+      "awayTeam": "SJS",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-02-07",
+      "homeTeam": "MDA",
+      "awayTeam": "CHI",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-07",
+      "homeTeam": "PIT",
+      "awayTeam": "FLA",
+      "homeScore": 7,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-07",
+      "homeTeam": "STL",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-07",
+      "homeTeam": "TBL",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-07",
+      "homeTeam": "VAN",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-08",
+      "homeTeam": "EDM",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-08",
+      "homeTeam": "HAR",
+      "awayTeam": "QUE",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-08",
+      "homeTeam": "NYR",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-08",
+      "homeTeam": "OTT",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-08",
+      "homeTeam": "TOR",
+      "awayTeam": "DAL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-09",
+      "homeTeam": "BOS",
+      "awayTeam": "QUE",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-09",
+      "homeTeam": "CGY",
+      "awayTeam": "MDA",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-09",
+      "homeTeam": "NJD",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-09",
+      "homeTeam": "NYI",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-09",
+      "homeTeam": "PHI",
+      "awayTeam": "FLA",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-09",
+      "homeTeam": "STL",
+      "awayTeam": "CHI",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-09",
+      "homeTeam": "VAN",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-10",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-10",
+      "homeTeam": "EDM",
+      "awayTeam": "SJS",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-10",
+      "homeTeam": "TBL",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "BOS",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "DAL",
+      "awayTeam": "CGY",
+      "homeScore": 0,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "FLA",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "NJD",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "NYI",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "PIT",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "QUE",
+      "awayTeam": "OTT",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "STL",
+      "awayTeam": "WIN",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "TBL",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "TOR",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-11",
+      "homeTeam": "VAN",
+      "awayTeam": "SJS",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-12",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-12",
+      "homeTeam": "DET",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-12",
+      "homeTeam": "EDM",
+      "awayTeam": "MDA",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-02-12",
+      "homeTeam": "FLA",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-13",
+      "homeTeam": "DAL",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 7
+    },
+    {
+      "date": "1995-02-13",
+      "homeTeam": "MTL",
+      "awayTeam": "HAR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-13",
+      "homeTeam": "PHI",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-13",
+      "homeTeam": "STL",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-13",
+      "homeTeam": "TOR",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-14",
+      "homeTeam": "NYI",
+      "awayTeam": "QUE",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-14",
+      "homeTeam": "PIT",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-14",
+      "homeTeam": "TBL",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-15",
+      "homeTeam": "BUF",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-15",
+      "homeTeam": "DAL",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-15",
+      "homeTeam": "FLA",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-02-15",
+      "homeTeam": "HAR",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-15",
+      "homeTeam": "NJD",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-15",
+      "homeTeam": "SJS",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-15",
+      "homeTeam": "TOR",
+      "awayTeam": "EDM",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-15",
+      "homeTeam": "WIN",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-16",
+      "homeTeam": "CHI",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-16",
+      "homeTeam": "NYR",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-16",
+      "homeTeam": "PHI",
+      "awayTeam": "QUE",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-16",
+      "homeTeam": "PIT",
+      "awayTeam": "HAR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-17",
+      "homeTeam": "DET",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-17",
+      "homeTeam": "FLA",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-17",
+      "homeTeam": "LAK",
+      "awayTeam": "SJS",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-17",
+      "homeTeam": "MDA",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-17",
+      "homeTeam": "NJD",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-17",
+      "homeTeam": "TBL",
+      "awayTeam": "OTT",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-17",
+      "homeTeam": "WIN",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-18",
+      "homeTeam": "CGY",
+      "awayTeam": "DAL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-18",
+      "homeTeam": "HAR",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-18",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-02-18",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-18",
+      "homeTeam": "NYI",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-18",
+      "homeTeam": "SJS",
+      "awayTeam": "MDA",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-02-18",
+      "homeTeam": "TBL",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-18",
+      "homeTeam": "TOR",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-18",
+      "homeTeam": "WSH",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-19",
+      "homeTeam": "CHI",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-19",
+      "homeTeam": "FLA",
+      "awayTeam": "QUE",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-19",
+      "homeTeam": "PIT",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-20",
+      "homeTeam": "CGY",
+      "awayTeam": "DAL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-20",
+      "homeTeam": "CHI",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-20",
+      "homeTeam": "MTL",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-20",
+      "homeTeam": "STL",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-02-20",
+      "homeTeam": "TBL",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-20",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-20",
+      "homeTeam": "VAN",
+      "awayTeam": "LAK",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-20",
+      "homeTeam": "WSH",
+      "awayTeam": "NJD",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-21",
+      "homeTeam": "FLA",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-21",
+      "homeTeam": "PIT",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-22",
+      "homeTeam": "BUF",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-22",
+      "homeTeam": "DET",
+      "awayTeam": "TOR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-22",
+      "homeTeam": "EDM",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-22",
+      "homeTeam": "HAR",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-22",
+      "homeTeam": "STL",
+      "awayTeam": "SJS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-22",
+      "homeTeam": "VAN",
+      "awayTeam": "WIN",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-23",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-23",
+      "homeTeam": "FLA",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-23",
+      "homeTeam": "LAK",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-23",
+      "homeTeam": "NJD",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-23",
+      "homeTeam": "NYI",
+      "awayTeam": "TBL",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-23",
+      "homeTeam": "OTT",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-23",
+      "homeTeam": "QUE",
+      "awayTeam": "PHI",
+      "homeScore": 6,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-02-23",
+      "homeTeam": "TOR",
+      "awayTeam": "MDA",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-24",
+      "homeTeam": "DAL",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-24",
+      "homeTeam": "NYR",
+      "awayTeam": "HAR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-24",
+      "homeTeam": "PIT",
+      "awayTeam": "TBL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-24",
+      "homeTeam": "SJS",
+      "awayTeam": "CGY",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-24",
+      "homeTeam": "WIN",
+      "awayTeam": "MDA",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-25",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-25",
+      "homeTeam": "EDM",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-25",
+      "homeTeam": "HAR",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-25",
+      "homeTeam": "MTL",
+      "awayTeam": "PHI",
+      "homeScore": 0,
+      "awayScore": 7
+    },
+    {
+      "date": "1995-02-25",
+      "homeTeam": "NJD",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-02-25",
+      "homeTeam": "NYI",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-25",
+      "homeTeam": "OTT",
+      "awayTeam": "FLA",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-25",
+      "homeTeam": "QUE",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-25",
+      "homeTeam": "TOR",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-26",
+      "homeTeam": "BUF",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-26",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-26",
+      "homeTeam": "MDA",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-26",
+      "homeTeam": "SJS",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-02-26",
+      "homeTeam": "WSH",
+      "awayTeam": "TBL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-27",
+      "homeTeam": "NJD",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-27",
+      "homeTeam": "OTT",
+      "awayTeam": "BOS",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-27",
+      "homeTeam": "QUE",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 7
+    },
+    {
+      "date": "1995-02-27",
+      "homeTeam": "STL",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-28",
+      "homeTeam": "CGY",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-28",
+      "homeTeam": "LAK",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1995-02-28",
+      "homeTeam": "NYI",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-02-28",
+      "homeTeam": "NYR",
+      "awayTeam": "FLA",
+      "homeScore": 0,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-02-28",
+      "homeTeam": "OTT",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-02-28",
+      "homeTeam": "PHI",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-02-28",
+      "homeTeam": "VAN",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-02-28",
+      "homeTeam": "WIN",
+      "awayTeam": "DAL",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-01",
+      "homeTeam": "EDM",
+      "awayTeam": "DAL",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-01",
+      "homeTeam": "HAR",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-01",
+      "homeTeam": "MDA",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-01",
+      "homeTeam": "QUE",
+      "awayTeam": "TBL",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-02",
+      "homeTeam": "BOS",
+      "awayTeam": "NJD",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-02",
+      "homeTeam": "BUF",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-02",
+      "homeTeam": "CGY",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-02",
+      "homeTeam": "DET",
+      "awayTeam": "WIN",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-02",
+      "homeTeam": "NYI",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-02",
+      "homeTeam": "OTT",
+      "awayTeam": "TBL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-02",
+      "homeTeam": "PHI",
+      "awayTeam": "FLA",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-02",
+      "homeTeam": "TOR",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-03",
+      "homeTeam": "DAL",
+      "awayTeam": "MDA",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-03-03",
+      "homeTeam": "EDM",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-03",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-04",
+      "homeTeam": "BOS",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-04",
+      "homeTeam": "HAR",
+      "awayTeam": "TBL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-04",
+      "homeTeam": "LAK",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-04",
+      "homeTeam": "NJD",
+      "awayTeam": "FLA",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-04",
+      "homeTeam": "QUE",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-04",
+      "homeTeam": "TOR",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-04",
+      "homeTeam": "WIN",
+      "awayTeam": "SJS",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-04",
+      "homeTeam": "WSH",
+      "awayTeam": "MTL",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-05",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-05",
+      "homeTeam": "CHI",
+      "awayTeam": "MDA",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-03-05",
+      "homeTeam": "DAL",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-05",
+      "homeTeam": "EDM",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-05",
+      "homeTeam": "HAR",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-05",
+      "homeTeam": "OTT",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-05",
+      "homeTeam": "PHI",
+      "awayTeam": "PIT",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-05",
+      "homeTeam": "WIN",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-05",
+      "homeTeam": "WSH",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-06",
+      "homeTeam": "DAL",
+      "awayTeam": "LAK",
+      "homeScore": 8,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-06",
+      "homeTeam": "NYR",
+      "awayTeam": "OTT",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-06",
+      "homeTeam": "QUE",
+      "awayTeam": "NJD",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-06",
+      "homeTeam": "VAN",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-07",
+      "homeTeam": "BOS",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-07",
+      "homeTeam": "CHI",
+      "awayTeam": "CGY",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-03-07",
+      "homeTeam": "NYI",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-07",
+      "homeTeam": "PIT",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-07",
+      "homeTeam": "STL",
+      "awayTeam": "MDA",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-07",
+      "homeTeam": "TBL",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-08",
+      "homeTeam": "FLA",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-08",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-08",
+      "homeTeam": "NYR",
+      "awayTeam": "NJD",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-08",
+      "homeTeam": "SJS",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-08",
+      "homeTeam": "TOR",
+      "awayTeam": "DAL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-09",
+      "homeTeam": "CHI",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-09",
+      "homeTeam": "HAR",
+      "awayTeam": "QUE",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-09",
+      "homeTeam": "MDA",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-09",
+      "homeTeam": "PHI",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-09",
+      "homeTeam": "PIT",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-09",
+      "homeTeam": "STL",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-10",
+      "homeTeam": "TBL",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-10",
+      "homeTeam": "WIN",
+      "awayTeam": "DAL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-10",
+      "homeTeam": "WSH",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-11",
+      "homeTeam": "BOS",
+      "awayTeam": "FLA",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-11",
+      "homeTeam": "MTL",
+      "awayTeam": "NYR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-11",
+      "homeTeam": "PIT",
+      "awayTeam": "BUF",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-11",
+      "homeTeam": "QUE",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-11",
+      "homeTeam": "TOR",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-11",
+      "homeTeam": "VAN",
+      "awayTeam": "MDA",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-11",
+      "homeTeam": "WIN",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-12",
+      "homeTeam": "DAL",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-12",
+      "homeTeam": "EDM",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-12",
+      "homeTeam": "HAR",
+      "awayTeam": "FLA",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-12",
+      "homeTeam": "PHI",
+      "awayTeam": "NJD",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-12",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-12",
+      "homeTeam": "WSH",
+      "awayTeam": "TBL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-13",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-13",
+      "homeTeam": "PIT",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-13",
+      "homeTeam": "TBL",
+      "awayTeam": "WSH",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-13",
+      "homeTeam": "TOR",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-14",
+      "homeTeam": "DET",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-14",
+      "homeTeam": "EDM",
+      "awayTeam": "STL",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-14",
+      "homeTeam": "FLA",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-14",
+      "homeTeam": "HAR",
+      "awayTeam": "NYI",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-14",
+      "homeTeam": "NJD",
+      "awayTeam": "OTT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-14",
+      "homeTeam": "WIN",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-15",
+      "homeTeam": "CGY",
+      "awayTeam": "MDA",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-15",
+      "homeTeam": "MTL",
+      "awayTeam": "PIT",
+      "homeScore": 8,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-15",
+      "homeTeam": "NYR",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-15",
+      "homeTeam": "SJS",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-16",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 6,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-03-16",
+      "homeTeam": "BUF",
+      "awayTeam": "NYI",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-16",
+      "homeTeam": "CHI",
+      "awayTeam": "VAN",
+      "homeScore": 9,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-16",
+      "homeTeam": "DET",
+      "awayTeam": "DAL",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-16",
+      "homeTeam": "FLA",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-16",
+      "homeTeam": "LAK",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-16",
+      "homeTeam": "NJD",
+      "awayTeam": "HAR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-16",
+      "homeTeam": "OTT",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-16",
+      "homeTeam": "QUE",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-17",
+      "homeTeam": "CGY",
+      "awayTeam": "WIN",
+      "homeScore": 8,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-17",
+      "homeTeam": "DET",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-17",
+      "homeTeam": "EDM",
+      "awayTeam": "SJS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-17",
+      "homeTeam": "MDA",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-18",
+      "homeTeam": "BOS",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-18",
+      "homeTeam": "FLA",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-18",
+      "homeTeam": "LAK",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-18",
+      "homeTeam": "MTL",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-18",
+      "homeTeam": "NJD",
+      "awayTeam": "TBL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-18",
+      "homeTeam": "OTT",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-18",
+      "homeTeam": "WSH",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-19",
+      "homeTeam": "BUF",
+      "awayTeam": "TBL",
+      "homeScore": 1,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-03-19",
+      "homeTeam": "CGY",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-19",
+      "homeTeam": "MDA",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-19",
+      "homeTeam": "NJD",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-19",
+      "homeTeam": "OTT",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-19",
+      "homeTeam": "WIN",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-20",
+      "homeTeam": "EDM",
+      "awayTeam": "CGY",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-20",
+      "homeTeam": "HAR",
+      "awayTeam": "WSH",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-20",
+      "homeTeam": "LAK",
+      "awayTeam": "STL",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-20",
+      "homeTeam": "PHI",
+      "awayTeam": "MTL",
+      "homeScore": 8,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-20",
+      "homeTeam": "QUE",
+      "awayTeam": "FLA",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-21",
+      "homeTeam": "BUF",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-21",
+      "homeTeam": "MDA",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-21",
+      "homeTeam": "SJS",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "1995-03-21",
+      "homeTeam": "VAN",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-21",
+      "homeTeam": "WSH",
+      "awayTeam": "OTT",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-03-22",
+      "homeTeam": "CGY",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-22",
+      "homeTeam": "DAL",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-22",
+      "homeTeam": "DET",
+      "awayTeam": "WIN",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-22",
+      "homeTeam": "HAR",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-22",
+      "homeTeam": "MTL",
+      "awayTeam": "FLA",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-22",
+      "homeTeam": "NYR",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-22",
+      "homeTeam": "QUE",
+      "awayTeam": "BOS",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-23",
+      "homeTeam": "DAL",
+      "awayTeam": "EDM",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-23",
+      "homeTeam": "NYI",
+      "awayTeam": "NYR",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-03-23",
+      "homeTeam": "SJS",
+      "awayTeam": "MDA",
+      "homeScore": 3,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-03-23",
+      "homeTeam": "VAN",
+      "awayTeam": "CHI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-24",
+      "homeTeam": "BUF",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-03-24",
+      "homeTeam": "CGY",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-24",
+      "homeTeam": "PIT",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-24",
+      "homeTeam": "TBL",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-24",
+      "homeTeam": "TOR",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-25",
+      "homeTeam": "HAR",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-25",
+      "homeTeam": "LAK",
+      "awayTeam": "SJS",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-25",
+      "homeTeam": "MTL",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-25",
+      "homeTeam": "QUE",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-25",
+      "homeTeam": "VAN",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-25",
+      "homeTeam": "WIN",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-25",
+      "homeTeam": "WSH",
+      "awayTeam": "PHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-26",
+      "homeTeam": "CGY",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-03-26",
+      "homeTeam": "CHI",
+      "awayTeam": "MDA",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-26",
+      "homeTeam": "FLA",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-03-26",
+      "homeTeam": "NYI",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-26",
+      "homeTeam": "OTT",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 11
+    },
+    {
+      "date": "1995-03-26",
+      "homeTeam": "PHI",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-26",
+      "homeTeam": "SJS",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 7
+    },
+    {
+      "date": "1995-03-26",
+      "homeTeam": "STL",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-26",
+      "homeTeam": "WSH",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-27",
+      "homeTeam": "DAL",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-27",
+      "homeTeam": "TBL",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-27",
+      "homeTeam": "TOR",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-28",
+      "homeTeam": "BOS",
+      "awayTeam": "PHI",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-28",
+      "homeTeam": "BUF",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-28",
+      "homeTeam": "CGY",
+      "awayTeam": "LAK",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-28",
+      "homeTeam": "DET",
+      "awayTeam": "MDA",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-28",
+      "homeTeam": "PIT",
+      "awayTeam": "NYI",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-28",
+      "homeTeam": "SJS",
+      "awayTeam": "WIN",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-29",
+      "homeTeam": "CHI",
+      "awayTeam": "STL",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-29",
+      "homeTeam": "FLA",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-29",
+      "homeTeam": "OTT",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-29",
+      "homeTeam": "TBL",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-29",
+      "homeTeam": "VAN",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-30",
+      "homeTeam": "BUF",
+      "awayTeam": "OTT",
+      "homeScore": 7,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-03-30",
+      "homeTeam": "DET",
+      "awayTeam": "DAL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-03-30",
+      "homeTeam": "MDA",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-30",
+      "homeTeam": "NYI",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-30",
+      "homeTeam": "NYR",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-03-30",
+      "homeTeam": "PHI",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-03-31",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-03-31",
+      "homeTeam": "EDM",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-03-31",
+      "homeTeam": "STL",
+      "awayTeam": "SJS",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-31",
+      "homeTeam": "TBL",
+      "awayTeam": "HAR",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-03-31",
+      "homeTeam": "VAN",
+      "awayTeam": "MDA",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-03-31",
+      "homeTeam": "WSH",
+      "awayTeam": "QUE",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-01",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-01",
+      "homeTeam": "DAL",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-01",
+      "homeTeam": "EDM",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-01",
+      "homeTeam": "LAK",
+      "awayTeam": "WIN",
+      "homeScore": 7,
+      "awayScore": 7
+    },
+    {
+      "date": "1995-04-01",
+      "homeTeam": "NJD",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-01",
+      "homeTeam": "NYI",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-01",
+      "homeTeam": "PIT",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-02",
+      "homeTeam": "CHI",
+      "awayTeam": "DAL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-02",
+      "homeTeam": "DET",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-02",
+      "homeTeam": "MDA",
+      "awayTeam": "SJS",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-02",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-02",
+      "homeTeam": "QUE",
+      "awayTeam": "OTT",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-02",
+      "homeTeam": "TBL",
+      "awayTeam": "FLA",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-02",
+      "homeTeam": "WSH",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-03",
+      "homeTeam": "LAK",
+      "awayTeam": "EDM",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-03",
+      "homeTeam": "OTT",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-03",
+      "homeTeam": "STL",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-04",
+      "homeTeam": "BUF",
+      "awayTeam": "HAR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-04",
+      "homeTeam": "CGY",
+      "awayTeam": "CHI",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-04",
+      "homeTeam": "NJD",
+      "awayTeam": "TBL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-04",
+      "homeTeam": "NYI",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-04",
+      "homeTeam": "VAN",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-05",
+      "homeTeam": "FLA",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-05",
+      "homeTeam": "MDA",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-05",
+      "homeTeam": "MTL",
+      "awayTeam": "QUE",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-05",
+      "homeTeam": "OTT",
+      "awayTeam": "NJD",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-05",
+      "homeTeam": "PIT",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1995-04-05",
+      "homeTeam": "SJS",
+      "awayTeam": "DET",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-05",
+      "homeTeam": "TOR",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-04-05",
+      "homeTeam": "WIN",
+      "awayTeam": "CHI",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-06",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-06",
+      "homeTeam": "LAK",
+      "awayTeam": "DAL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-06",
+      "homeTeam": "PHI",
+      "awayTeam": "TBL",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-06",
+      "homeTeam": "QUE",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-07",
+      "homeTeam": "CGY",
+      "awayTeam": "LAK",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-07",
+      "homeTeam": "MDA",
+      "awayTeam": "DAL",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-07",
+      "homeTeam": "NYR",
+      "awayTeam": "NYI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-07",
+      "homeTeam": "SJS",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-07",
+      "homeTeam": "TOR",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-07",
+      "homeTeam": "WIN",
+      "awayTeam": "VAN",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-08",
+      "homeTeam": "BOS",
+      "awayTeam": "TBL",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-08",
+      "homeTeam": "CGY",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-08",
+      "homeTeam": "HAR",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-08",
+      "homeTeam": "MTL",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-08",
+      "homeTeam": "NYI",
+      "awayTeam": "FLA",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-08",
+      "homeTeam": "OTT",
+      "awayTeam": "QUE",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-08",
+      "homeTeam": "TOR",
+      "awayTeam": "WIN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-08",
+      "homeTeam": "WSH",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-09",
+      "homeTeam": "BUF",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-04-09",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-09",
+      "homeTeam": "EDM",
+      "awayTeam": "SJS",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-09",
+      "homeTeam": "HAR",
+      "awayTeam": "TBL",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-09",
+      "homeTeam": "MDA",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-09",
+      "homeTeam": "NJD",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-09",
+      "homeTeam": "STL",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-10",
+      "homeTeam": "CGY",
+      "awayTeam": "SJS",
+      "homeScore": 8,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-10",
+      "homeTeam": "MTL",
+      "awayTeam": "NJD",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-10",
+      "homeTeam": "OTT",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-11",
+      "homeTeam": "DAL",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-11",
+      "homeTeam": "PIT",
+      "awayTeam": "WSH",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-11",
+      "homeTeam": "STL",
+      "awayTeam": "WIN",
+      "homeScore": 7,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-11",
+      "homeTeam": "TBL",
+      "awayTeam": "NYI",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-11",
+      "homeTeam": "VAN",
+      "awayTeam": "MDA",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-12",
+      "homeTeam": "BOS",
+      "awayTeam": "QUE",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-12",
+      "homeTeam": "CHI",
+      "awayTeam": "SJS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-12",
+      "homeTeam": "FLA",
+      "awayTeam": "NYI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-12",
+      "homeTeam": "HAR",
+      "awayTeam": "OTT",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-12",
+      "homeTeam": "LAK",
+      "awayTeam": "CGY",
+      "homeScore": 1,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-12",
+      "homeTeam": "NYR",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-12",
+      "homeTeam": "PHI",
+      "awayTeam": "MTL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-12",
+      "homeTeam": "WSH",
+      "awayTeam": "NJD",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-13",
+      "homeTeam": "DET",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-13",
+      "homeTeam": "MDA",
+      "awayTeam": "CGY",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-13",
+      "homeTeam": "VAN",
+      "awayTeam": "EDM",
+      "homeScore": 4,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-04-13",
+      "homeTeam": "WIN",
+      "awayTeam": "STL",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-14",
+      "homeTeam": "CHI",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-14",
+      "homeTeam": "HAR",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-14",
+      "homeTeam": "NJD",
+      "awayTeam": "NYI",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-14",
+      "homeTeam": "NYR",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-14",
+      "homeTeam": "PHI",
+      "awayTeam": "TBL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-14",
+      "homeTeam": "QUE",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-14",
+      "homeTeam": "TOR",
+      "awayTeam": "DAL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-14",
+      "homeTeam": "WSH",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-15",
+      "homeTeam": "EDM",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-15",
+      "homeTeam": "MDA",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-15",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-15",
+      "homeTeam": "PIT",
+      "awayTeam": "OTT",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-15",
+      "homeTeam": "WIN",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-16",
+      "homeTeam": "BUF",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-16",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-16",
+      "homeTeam": "FLA",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-16",
+      "homeTeam": "NJD",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-16",
+      "homeTeam": "NYI",
+      "awayTeam": "NYR",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-16",
+      "homeTeam": "PHI",
+      "awayTeam": "PIT",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-16",
+      "homeTeam": "QUE",
+      "awayTeam": "WSH",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-16",
+      "homeTeam": "SJS",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-16",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-17",
+      "homeTeam": "CGY",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-17",
+      "homeTeam": "CHI",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-17",
+      "homeTeam": "DAL",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-17",
+      "homeTeam": "MDA",
+      "awayTeam": "SJS",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-17",
+      "homeTeam": "MTL",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-17",
+      "homeTeam": "WIN",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-04-18",
+      "homeTeam": "BUF",
+      "awayTeam": "HAR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-18",
+      "homeTeam": "FLA",
+      "awayTeam": "PHI",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-18",
+      "homeTeam": "NYI",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-18",
+      "homeTeam": "PIT",
+      "awayTeam": "NYR",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-18",
+      "homeTeam": "STL",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-18",
+      "homeTeam": "TBL",
+      "awayTeam": "NJD",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-19",
+      "homeTeam": "BOS",
+      "awayTeam": "BUF",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-19",
+      "homeTeam": "CHI",
+      "awayTeam": "STL",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-19",
+      "homeTeam": "DAL",
+      "awayTeam": "SJS",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-19",
+      "homeTeam": "DET",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-19",
+      "homeTeam": "EDM",
+      "awayTeam": "LAK",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-19",
+      "homeTeam": "MTL",
+      "awayTeam": "OTT",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-19",
+      "homeTeam": "TOR",
+      "awayTeam": "MDA",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-20",
+      "homeTeam": "FLA",
+      "awayTeam": "NJD",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-20",
+      "homeTeam": "NYR",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-20",
+      "homeTeam": "OTT",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-04-20",
+      "homeTeam": "PHI",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-20",
+      "homeTeam": "TBL",
+      "awayTeam": "QUE",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-20",
+      "homeTeam": "VAN",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-21",
+      "homeTeam": "CHI",
+      "awayTeam": "WIN",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-21",
+      "homeTeam": "DET",
+      "awayTeam": "MDA",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-21",
+      "homeTeam": "LAK",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-21",
+      "homeTeam": "STL",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-21",
+      "homeTeam": "WSH",
+      "awayTeam": "HAR",
+      "homeScore": 6,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-22",
+      "homeTeam": "DAL",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-22",
+      "homeTeam": "FLA",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-22",
+      "homeTeam": "MTL",
+      "awayTeam": "TBL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-22",
+      "homeTeam": "NJD",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-22",
+      "homeTeam": "NYI",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-22",
+      "homeTeam": "PIT",
+      "awayTeam": "WSH",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-22",
+      "homeTeam": "VAN",
+      "awayTeam": "EDM",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-23",
+      "homeTeam": "BOS",
+      "awayTeam": "NYR",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-23",
+      "homeTeam": "BUF",
+      "awayTeam": "PHI",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-23",
+      "homeTeam": "DAL",
+      "awayTeam": "WIN",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-23",
+      "homeTeam": "HAR",
+      "awayTeam": "PIT",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-23",
+      "homeTeam": "LAK",
+      "awayTeam": "MDA",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-23",
+      "homeTeam": "SJS",
+      "awayTeam": "DET",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-23",
+      "homeTeam": "STL",
+      "awayTeam": "CHI",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-24",
+      "homeTeam": "MDA",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-24",
+      "homeTeam": "MTL",
+      "awayTeam": "HAR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-24",
+      "homeTeam": "NYI",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-24",
+      "homeTeam": "NYR",
+      "awayTeam": "WSH",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-24",
+      "homeTeam": "OTT",
+      "awayTeam": "FLA",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-24",
+      "homeTeam": "TBL",
+      "awayTeam": "BUF",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-25",
+      "homeTeam": "CHI",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-25",
+      "homeTeam": "DAL",
+      "awayTeam": "STL",
+      "homeScore": 4,
+      "awayScore": 8
+    },
+    {
+      "date": "1995-04-25",
+      "homeTeam": "LAK",
+      "awayTeam": "DET",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-25",
+      "homeTeam": "SJS",
+      "awayTeam": "CGY",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-25",
+      "homeTeam": "WIN",
+      "awayTeam": "EDM",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-26",
+      "homeTeam": "BOS",
+      "awayTeam": "HAR",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-26",
+      "homeTeam": "BUF",
+      "awayTeam": "FLA",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-26",
+      "homeTeam": "MDA",
+      "awayTeam": "SJS",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-26",
+      "homeTeam": "NJD",
+      "awayTeam": "PIT",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-26",
+      "homeTeam": "NYR",
+      "awayTeam": "TBL",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-26",
+      "homeTeam": "PHI",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-26",
+      "homeTeam": "QUE",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-26",
+      "homeTeam": "TOR",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-26",
+      "homeTeam": "WSH",
+      "awayTeam": "NYI",
+      "homeScore": 6,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-27",
+      "homeTeam": "CHI",
+      "awayTeam": "DAL",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-27",
+      "homeTeam": "EDM",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-27",
+      "homeTeam": "OTT",
+      "awayTeam": "TBL",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-27",
+      "homeTeam": "WIN",
+      "awayTeam": "DET",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-28",
+      "homeTeam": "HAR",
+      "awayTeam": "PHI",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-28",
+      "homeTeam": "NJD",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-28",
+      "homeTeam": "NYR",
+      "awayTeam": "NYI",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-28",
+      "homeTeam": "PIT",
+      "awayTeam": "BOS",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-28",
+      "homeTeam": "SJS",
+      "awayTeam": "LAK",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-04-28",
+      "homeTeam": "VAN",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-28",
+      "homeTeam": "WSH",
+      "awayTeam": "BUF",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-29",
+      "homeTeam": "CGY",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-29",
+      "homeTeam": "DET",
+      "awayTeam": "DAL",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-29",
+      "homeTeam": "EDM",
+      "awayTeam": "WIN",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-04-29",
+      "homeTeam": "MTL",
+      "awayTeam": "BUF",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-29",
+      "homeTeam": "OTT",
+      "awayTeam": "NYI",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-04-29",
+      "homeTeam": "QUE",
+      "awayTeam": "TBL",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-30",
+      "homeTeam": "BOS",
+      "awayTeam": "PIT",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-30",
+      "homeTeam": "DET",
+      "awayTeam": "CHI",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-30",
+      "homeTeam": "FLA",
+      "awayTeam": "WSH",
+      "homeScore": 2,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-30",
+      "homeTeam": "LAK",
+      "awayTeam": "MDA",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-04-30",
+      "homeTeam": "NJD",
+      "awayTeam": "QUE",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-30",
+      "homeTeam": "PHI",
+      "awayTeam": "NYR",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-04-30",
+      "homeTeam": "SJS",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-04-30",
+      "homeTeam": "VAN",
+      "awayTeam": "CGY",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-05-01",
+      "homeTeam": "BOS",
+      "awayTeam": "OTT",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-05-01",
+      "homeTeam": "BUF",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "1995-05-01",
+      "homeTeam": "CHI",
+      "awayTeam": "WIN",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-05-01",
+      "homeTeam": "EDM",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 6
+    },
+    {
+      "date": "1995-05-01",
+      "homeTeam": "MDA",
+      "awayTeam": "STL",
+      "homeScore": 3,
+      "awayScore": 5
+    },
+    {
+      "date": "1995-05-01",
+      "homeTeam": "SJS",
+      "awayTeam": "DAL",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-05-02",
+      "homeTeam": "NYI",
+      "awayTeam": "PHI",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-05-02",
+      "homeTeam": "NYR",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-05-02",
+      "homeTeam": "WIN",
+      "awayTeam": "LAK",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-05-02",
+      "homeTeam": "WSH",
+      "awayTeam": "PIT",
+      "homeScore": 7,
+      "awayScore": 2
+    },
+    {
+      "date": "1995-05-03",
+      "homeTeam": "BUF",
+      "awayTeam": "NJD",
+      "homeScore": 5,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-05-03",
+      "homeTeam": "CGY",
+      "awayTeam": "EDM",
+      "homeScore": 5,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-05-03",
+      "homeTeam": "CHI",
+      "awayTeam": "LAK",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-05-03",
+      "homeTeam": "MDA",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-05-03",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-05-03",
+      "homeTeam": "PIT",
+      "awayTeam": "FLA",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "1995-05-03",
+      "homeTeam": "QUE",
+      "awayTeam": "HAR",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "1995-05-03",
+      "homeTeam": "SJS",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-05-03",
+      "homeTeam": "STL",
+      "awayTeam": "DET",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "1995-05-03",
+      "homeTeam": "TBL",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 4
+    }
+  ],
+  "metadata": {
+    "total_games": 624,
+    "ingested_at": "2026-01-26T09:10:00.667375"
+  }
+}
