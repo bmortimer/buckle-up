@@ -49,3 +49,4 @@ coverage/
 *.pem
 .vercel
 tsconfig.tsbuildinfo
+.DS_Store

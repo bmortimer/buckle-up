@@ -195,9 +195,20 @@ def parse_season_schedule(html: str, season: str) -> list[dict]:
                 continue
 
             # Check if cells[1] is the time column (format like "6:00p" or empty for older seasons)
-            # If it's a time, shift all indices by 1
+            # If it's a time column, shift all indices by 1
+            # The time column exists if:
+            # 1) It has a colon (actual time like "6:00p"), OR
+            # 2) It's empty AND cells[2] is NOT a number (because if cells[2] is a number,
+            #    then cells[1] would be the team name, not a time column)
             time_str = cells[1].get_text().strip() if len(cells) > 1 else ""
-            has_time_column = bool(time_str) and (':' in time_str or time_str == '')
+
+            # Check if this looks like the time column by looking at cells[2]
+            # If cells[2] is text (team name), then cells[1] is a time column (even if empty)
+            # If cells[2] is a number (score), then cells[1] is the team name
+            cells_2_text = cells[2].get_text().strip() if len(cells) > 2 else ""
+            cells_2_is_score = cells_2_text.isdigit()
+
+            has_time_column = ':' in time_str or (not cells_2_is_score and time_str == '')
 
             offset = 1 if has_time_column else 0
 
