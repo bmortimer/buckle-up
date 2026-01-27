@@ -31,9 +31,9 @@ jobs:
             exit 0
           fi
 
-          # NBA season runs October through June - always update during these months
+          # NBA/NHL seasons run October through June - always update during these months
           if [ "$CURRENT_MONTH" -ge 10 ] || [ "$CURRENT_MONTH" -le 6 ]; then
-            echo "NBA season months (Oct-Jun) - running update"
+            echo "NBA/NHL season months (Oct-Jun) - running update"
             echo "run=true" >> $GITHUB_OUTPUT
             exit 0
           fi
@@ -82,6 +82,17 @@ jobs:
           SEASON="${START_YEAR}-$(echo $END_YEAR | cut -c 3-4)"
           echo "Ingesting NBA season: $SEASON"
           python scripts/ingest_nba.py --season $SEASON || echo "NBA ingestion failed or season not started"
+
+      - name: Ingest current NHL season
+        if: steps.should-run.outputs.run == 'true'
+        run: |
+          # Add delay before NHL fetch to be respectful to hockey-reference.com
+          # (similar domain to basketball-reference used by WNBA script)
+          echo "Waiting 10s before NHL fetch to respect rate limits..."
+          sleep 10
+
+          # Run the update script (auto-detects current season)
+          python scripts/update_nhl.py || echo "NHL ingestion failed or season not started"
 
       - name: Check for changes
         if: steps.should-run.outputs.run == 'true'

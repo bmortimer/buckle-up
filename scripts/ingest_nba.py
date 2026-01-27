@@ -344,20 +344,9 @@ def main():
     games = None
 
     if is_current_season(season):
-        print(f"Detected current season - using Basketball-Reference for completed games")
+        print(f"Detected current season - using Basketball-Reference as primary source")
 
-        # First, try to get the schedule (including future games) from NBA Stats API
-        # This may fail due to timeouts, but we'll use it if available
-        try:
-            print(f"Attempting to fetch schedule from NBA Stats API...")
-            games = fetch_nba_schedule(season)
-            print(f"✓ Got schedule with {len(games)} games from NBA Stats API")
-        except Exception as e:
-            print(f"NBA Stats API schedule failed (expected): {e}")
-            print(f"Will use Basketball-Reference for completed games only")
-
-        # Now fetch completed games from Basketball-Reference
-        # This will merge with any scheduled games we got above
+        # First, try Basketball-Reference (most reliable for current season data)
         try:
             import subprocess
             result = subprocess.run(
@@ -373,15 +362,22 @@ def main():
                 raise Exception(f"Basketball-Reference failed: {result.stderr}")
         except Exception as e:
             print(f"\nBasketball-Reference failed: {e}")
-            # If we got games from NBA Stats API earlier, use those
-            if games:
-                print(f"Using NBA Stats API data as fallback")
-            else:
-                print(f"Falling back to NBA Stats API game finder...")
+            print(f"Falling back to NBA Stats API...")
+
+            # Fallback: Try to get the schedule from NBA Stats API
+            # This may fail due to timeouts, but we'll use it if available
+            try:
+                print(f"Attempting to fetch schedule from NBA Stats API...")
+                games = fetch_nba_schedule(season)
+                print(f"✓ Got schedule with {len(games)} games from NBA Stats API")
+            except Exception as api_error:
+                print(f"NBA Stats API schedule also failed: {api_error}")
+                # Last resort: Try LeagueGameFinder
+                print(f"Trying NBA Stats API game finder as last resort...")
                 try:
                     games = fetch_nba_season(season)
-                except Exception as nba_api_error:
-                    print(f"NBA Stats API also failed: {nba_api_error}")
+                except Exception as finder_error:
+                    print(f"NBA Stats API game finder also failed: {finder_error}")
                     raise Exception("All data sources failed")
     else:
         # Historical season - try NBA Stats API first
