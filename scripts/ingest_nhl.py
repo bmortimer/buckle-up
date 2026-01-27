@@ -215,23 +215,11 @@ def parse_season_schedule(html: str, season_str: str) -> list[dict]:
             home_team_cell = cells[4]
             home_goals_str = cells[5].get_text().strip()
 
-            # Skip if scores are empty (game not played yet)
-            if not visitor_goals_str or not home_goals_str:
-                continue
-
             # Parse date (format like "1942-10-31")
             try:
                 game_date = datetime.strptime(date_str, "%Y-%m-%d")
             except ValueError:
                 print(f"Warning: Could not parse date: {date_str}")
-                continue
-
-            # Convert scores to integers
-            try:
-                away_score = int(visitor_goals_str)
-                home_score = int(home_goals_str)
-            except ValueError:
-                print(f"Warning: Could not parse scores: {visitor_goals_str}, {home_goals_str}")
                 continue
 
             # Extract team codes from links
@@ -252,13 +240,33 @@ def parse_season_schedule(html: str, season_str: str) -> list[dict]:
                     print(f"Warning: Unknown home team: {home_team_name}")
                     continue
 
-            games.append({
-                "date": game_date.strftime("%Y-%m-%d"),
-                "homeTeam": home_code,
-                "awayTeam": away_code,
-                "homeScore": home_score,
-                "awayScore": away_score,
-            })
+            # Determine if scores are available (game has been played)
+            # If scores are empty, this is a scheduled future game
+            if visitor_goals_str and home_goals_str:
+                # Game has been played - parse scores
+                try:
+                    away_score = int(visitor_goals_str)
+                    home_score = int(home_goals_str)
+                except ValueError:
+                    print(f"Warning: Could not parse scores: {visitor_goals_str}, {home_goals_str}")
+                    continue
+
+                games.append({
+                    "date": game_date.strftime("%Y-%m-%d"),
+                    "homeTeam": home_code,
+                    "awayTeam": away_code,
+                    "homeScore": home_score,
+                    "awayScore": away_score,
+                })
+            else:
+                # Scheduled future game - include with null scores
+                games.append({
+                    "date": game_date.strftime("%Y-%m-%d"),
+                    "homeTeam": home_code,
+                    "awayTeam": away_code,
+                    "homeScore": None,
+                    "awayScore": None,
+                })
 
         except Exception as e:
             print(f"Warning: Failed to parse row: {e}")
@@ -267,7 +275,11 @@ def parse_season_schedule(html: str, season_str: str) -> list[dict]:
     # Sort by date
     games.sort(key=lambda g: g["date"])
 
-    print(f"Parsed {len(games)} regular season games")
+    # Count completed vs scheduled games
+    completed_games = sum(1 for g in games if g["homeScore"] is not None)
+    scheduled_games = len(games) - completed_games
+
+    print(f"Parsed {len(games)} regular season games ({completed_games} completed, {scheduled_games} scheduled)")
 
     return games
 

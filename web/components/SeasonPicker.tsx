@@ -13,13 +13,13 @@ interface SeasonPickerProps {
 }
 
 // Format year for display based on league
-// NBA: "2024-25" format (season spans two calendar years)
+// NBA/NHL: "2024-25" format (season spans two calendar years)
 // WNBA: "2024" format (single calendar year)
 function formatSeasonDisplay(year: number, league: 'nba' | 'wnba' | 'nhl'): string {
   if (league === 'wnba') {
     return year.toString()
   }
-  // NBA uses YYYY-YY format
+  // NBA/NHL uses YYYY-YY format
   const nextYear = (year + 1) % 100
   return `${year}-${nextYear.toString().padStart(2, '0')}`
 }
@@ -130,7 +130,7 @@ export default function SeasonPicker({
             <div className="bg-muted/20 border-b-2 border-border p-4 sm:p-5 flex items-center justify-between">
               <div>
                 <h3 id="time-period-dialog-title" className="text-base sm:text-lg font-orbitron uppercase tracking-wider">
-                  <span aria-hidden="true">◆ </span>Select {league === 'nba' ? 'Season' : 'Year'}
+                  <span aria-hidden="true">◆ </span>Select {(league === 'nba' || league === 'nhl') ? 'Season' : 'Year'}
                 </h3>
                 <div className="text-[0.6rem] text-muted-foreground/60 font-mono mt-1">
                   {formatSeasonDisplay(minYear, league)} — {formatSeasonDisplay(maxYear, league)}

@@ -42,13 +42,13 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     const map = new Map<string, DayData>()
     let currentHolder = history.startingTeam
 
-    // For NBA, seasons span two calendar years (Oct to Apr/Jun)
+    // For NBA/NHL, seasons span two calendar years (Oct to Apr/Jun)
     // For WNBA, seasons are within a single calendar year (May to Oct)
     let seasonStart: Date
     let seasonEnd: Date
 
-    if (league === 'nba') {
-      // NBA season: October of year to June of year+1
+    if (league === 'nba' || league === 'nhl') {
+      // NBA/NHL season: October of year to June of year+1
       seasonStart = new Date(year, 9, 1)  // October 1st
       seasonEnd = new Date(year + 1, 5, 30)  // June 30th
     } else {
@@ -205,7 +205,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
           <span aria-hidden="true">◆ </span>
           <h2 className="inline font-normal">
-            {league === 'nba' ? `${year}-${String((year + 1) % 100).padStart(2, '0')}` : year} Calendar
+            {(league === 'nba' || league === 'nhl') ? `${year}-${String((year + 1) % 100).padStart(2, '0')}` : year} Calendar
           </h2>
           <span aria-hidden="true"> ◆</span>
         </div>
