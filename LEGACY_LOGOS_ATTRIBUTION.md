@@ -4,46 +4,79 @@ This document credits the sources for historical/legacy team logos used in this 
 
 ## Legal Notice
 
-All team logos are trademarks of their respective teams and leagues (NBA, WNBA).
+All team logos are trademarks of their respective teams and leagues (NBA, WNBA, NHL).
 This project uses them under fair use for non-commercial, educational purposes.
 
 ## WNBA Legacy Teams
 
-### Logos Successfully Downloaded
+All WNBA legacy teams have logos, but some are PNG instead of SVG.
 
-| Code | Team | Years | Source | License |
-|------|------|-------|--------|---------|
-| CHA | Charlotte Sting | 1997-2006 | Loodibee / Wikipedia | Public Domain / Fair Use |
-| MIA | Miami Sol | 2000-2002 | Loodibee / Wikipedia | Public Domain / Fair Use |
-| ORL | Orlando Miracle | 1999-2002 | Loodibee / Wikipedia | Public Domain / Fair Use |
-| POR | Portland Fire | 2000-2002 | Loodibee / Wikipedia | Public Domain / Fair Use |
-| UTA | Utah Starzz | 1997-2002 | Loodibee / Wikipedia | Public Domain / Fair Use |
-
-### Logos Needed (Currently PNG)
+### Logos as PNG (Need SVG)
 
 | Code | Team | Years | Current Source |
 |------|------|-------|----------------|
+| CHA | Charlotte Sting | 1997-2006 | Loodibee.com (PNG, 300x300) |
 | CLE | Cleveland Rockers | 1997-2003 | Loodibee.com (PNG, 300x300) |
 | DET | Detroit Shock | 1998-2009 | Loodibee.com (PNG, 300x300) |
 | HOU | Houston Comets | 1997-2008 | Loodibee.com (PNG, 300x300) |
+| MIA | Miami Sol | 2000-2002 | Loodibee.com (PNG, 300x300) |
+| ORL | Orlando Miracle | 1999-2002 | Loodibee.com (PNG, 300x300) |
 | SAC | Sacramento Monarchs | 1997-2009 | Loodibee.com (PNG, 300x300) |
-| SAS | San Antonio Stars | 2003-2017 | Loodibee.com (PNG, 300x300) |
+| SAS | San Antonio Stars | 2014-2017 | Loodibee.com (PNG, 300x300) |
 | TUL | Tulsa Shock | 2010-2015 | Loodibee.com (PNG, 300x300) |
+| UTA | Utah Starzz | 1997-2002 | Loodibee.com (PNG, 300x300) |
+
+### SVG Logos Available
+
+All current WNBA teams have SVG logos.
 
 ## NBA Legacy Teams
 
-### Teams Needed
+All NBA legacy teams have logos, but many are PNG instead of SVG.
 
-| Code | Team | Years | Status |
-|------|------|-------|--------|
-| SEA | Seattle SuperSonics | 1967-2008 | Need SVG - relocated to OKC |
-| VAN | Vancouver Grizzlies | 1995-2001 | Need SVG - relocated to Memphis |
-| NJN | New Jersey Nets | 1977-2012 | Need SVG - relocated to Brooklyn |
-| CHH | Charlotte Hornets (original) | 1988-2002 | Need SVG - relocated to New Orleans |
-| NOH | New Orleans Hornets | 2002-2013 | Need SVG - became Pelicans |
-| NOK | New Orleans/OKC Hornets | 2005-2007 | Need SVG - Hurricane Katrina era |
-| SDC | San Diego Clippers | 1978-1984 | Need SVG - relocated to LA |
-| KCK | Kansas City Kings | 1972-1985 | Need SVG - relocated to Sacramento |
+### Logos as PNG (Need SVG)
+
+| Code | Team | Years | Current Source |
+|------|------|-------|----------------|
+| CHH | Charlotte Hornets (original) | 1988-2002 | Loodibee.com (PNG) - relocated to NOH |
+| KCK | Kansas City Kings | 1975-1985 | Loodibee.com (PNG) - relocated to Sacramento |
+| NJN | New Jersey Nets | 1977-2012 | Loodibee.com (PNG) - relocated to Brooklyn |
+| NOH | New Orleans Hornets | 2002-2013 | Loodibee.com (PNG) - became Pelicans |
+| NOJ | New Orleans Jazz | 1974-1979 | Loodibee.com (PNG) - relocated to Utah |
+| NOK | New Orleans/OKC Hornets | 2005-2007 | Loodibee.com (PNG) - Hurricane Katrina era |
+| NYN | New York Nets (ABA) | 1968-1977 | Loodibee.com (PNG) - relocated to New Jersey |
+| SDC | San Diego Clippers | 1978-1984 | Loodibee.com (PNG) - relocated to LA |
+| WSB | Washington Bullets | 1974-1997 | Loodibee.com (PNG) - renamed to Wizards |
+
+### SVG Logos Available
+
+All current NBA teams have SVG logos.
+
+## NHL Legacy Teams
+
+All NHL legacy teams have logos, but many are PNG instead of SVG.
+
+### Logos as PNG (Need SVG)
+
+| Code | Team | Years | Current Source |
+|------|------|-------|----------------|
+| AFM | Atlanta Flames | 1972-1980 | Loodibee.com (PNG) - relocated to Calgary |
+| ARI | Arizona Coyotes | 2014-2024 | Loodibee.com (PNG) - relocated to Utah |
+| ATL | Atlanta Thrashers | 1999-2011 | Loodibee.com (PNG) - relocated to Winnipeg |
+| CGS | California Golden Seals | 1967-1976 | SportsLogos.net (PNG) - relocated to Cleveland |
+| CLE | Cleveland Barons | 1976-1978 | SportsLogos.net (PNG) - merged with Minnesota |
+| CLR | Colorado Rockies | 1976-1982 | Loodibee.com (PNG) - relocated to New Jersey |
+| HFD | Hartford Whalers | 1979-1997 | Loodibee.com (PNG) - relocated to Carolina |
+| KCS | Kansas City Scouts | 1974-1976 | Loodibee.com (PNG) - relocated to Colorado |
+| MDA | Mighty Ducks of Anaheim | 1993-2006 | Loodibee.com (PNG) - rebranded to Anaheim Ducks |
+| MNS | Minnesota North Stars | 1967-1993 | Loodibee.com (PNG) - relocated to Dallas |
+| PHX | Phoenix Coyotes | 1996-2014 | Loodibee.com (PNG) - rebranded to Arizona |
+| QUE | Quebec Nordiques | 1979-1995 | Loodibee.com (PNG) - relocated to Colorado |
+| WPG1 | Winnipeg Jets (original) | 1979-1996 | Loodibee.com (PNG) - relocated to Phoenix |
+
+### SVG Logos Available
+
+All current NHL teams have SVG logos.
 
 ## Recommended Sources
 
@@ -53,23 +86,18 @@ This project uses them under fair use for non-commercial, educational purposes.
 - Public domain or CC-licensed
 - **Preferred source** when available
 
-### 2. Loodibee.com (Current Fallback)
+### 2. Loodibee.com (Primary PNG Source)
 - URL: https://loodibee.com/
 - High-quality PNG files (300x300)
-- Used for WNBA legacy teams
+- Used for most NBA, WNBA, and NHL legacy teams
 - Credit required: "Logos courtesy of Loodibee.com"
 
-### 3. SportsLogos.net (Reference Only)
+### 3. SportsLogos.net
 - URL: https://www.sportslogos.net/
-- Comprehensive logo database
-- **Images are watermarked - for reference only**
-- Would need permission for actual use
-- Credit: "Logo research via SportsLogos.net"
-
-### 4. Chris Creamer's SportsLogos.net
-- Has historical logos with evolution timeline
-- Great for reference and research
-- Watermarked images (reference only)
+- Comprehensive logo database with historical logos
+- Used for California Golden Seals and Cleveland Barons (NHL)
+- Credit: "Logo research and images via SportsLogos.net"
+- Has complete evolution timeline for all teams
 
 ## How to Download SVG Logos
 
@@ -124,10 +152,11 @@ All logos displayed in this project are used under fair use for:
 
 ### Credits
 
-- **WNBA Legacy Team PNGs**: Courtesy of [Loodibee.com](https://loodibee.com/)
+- **Most Legacy Team PNGs**: Courtesy of [Loodibee.com](https://loodibee.com/)
+- **California Golden Seals & Cleveland Barons**: From [SportsLogos.net](https://www.sportslogos.net/)
 - **Logo Research**: Referenced from [SportsLogos.net](https://www.sportslogos.net/)
 - **SVG Sources**: Where available, from Wikimedia Commons (Public Domain / CC-BY-SA)
-- **Team Trademarks**: All team names and logos are trademarks of the WNBA, NBA, and their respective teams
+- **Team Trademarks**: All team names and logos are trademarks of the NBA, WNBA, NHL, and their respective teams
 
 ## Need Help?
 
@@ -140,6 +169,8 @@ If you find high-quality SVG versions of any legacy team logos:
 
 ## Status Summary
 
-- ✅ Current teams (NBA & WNBA): All have SVG logos
-- ⚠️ WNBA legacy teams: 5/11 have SVG, 6/11 are PNG
-- ❌ NBA legacy teams: 0/8 have logos (need to download)
+- ✅ **Current teams**: All NBA, WNBA, and NHL active teams have SVG logos
+- ✅ **All teams have logos**: All legacy/defunct teams now have logo files
+- ⚠️ **NBA legacy teams**: 37 SVG, 9 PNG (needs SVG conversion)
+- ⚠️ **WNBA legacy teams**: 20 SVG, 10 PNG (needs SVG conversion)
+- ⚠️ **NHL legacy teams**: 32 SVG, 13 PNG (needs SVG conversion)
