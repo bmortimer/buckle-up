@@ -56,7 +56,7 @@ The site will auto-deploy on every commit to `main`.
 ## How It Works
 
 1. **Data Ingestion** (Python scripts)
-   - Runs nightly via GitHub Actions at 3 AM ET
+   - Runs nightly via GitHub Actions at 5 AM ET
    - Fetches latest games for current NBA/WNBA seasons
    - Saves to `data/` directory as JSON
 

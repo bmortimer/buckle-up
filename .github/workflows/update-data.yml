@@ -2,8 +2,8 @@ name: Update Belt Data
 
 on:
   schedule:
-    # Run every night at 3 AM ET (8 AM UTC)
-    - cron: '0 8 * * *'
+    # Run every morning at 5 AM ET (10 AM UTC) to ensure previous night's scores are posted
+    - cron: '0 10 * * *'
   workflow_dispatch: # Allow manual trigger
 
 permissions:
