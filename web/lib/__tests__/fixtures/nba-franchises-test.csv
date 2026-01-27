@@ -1,0 +1,23 @@
+franchise_id,team_abbr,display_name,city,start_year,end_year,status,successor_franchise_id,hex_color
+
+# Golden State Warriors - rebranding chain
+GSW,GSW,Golden State Warriors,San Francisco,1996,,active,,#1D428A
+GOS,GOS,Golden State Warriors,Oakland,1971,1996,rebranded,GSW,#1D428A
+
+# Charlotte Hornets - complex relocation and name reclamation
+CHA,CHA,Charlotte Hornets,Charlotte,2014,,active,,#1D1160
+CHH,CHH,Charlotte Hornets,Charlotte,1988,2002,relocated,NOP,#1D1160
+NOP,NOP,New Orleans Pelicans,New Orleans,2013,,active,,#0C2340
+NOH,NOH,New Orleans Hornets,New Orleans,2002,2013,rebranded,NOP,#0C2340
+
+# Brooklyn Nets - relocation chain
+BKN,BKN,Brooklyn Nets,Brooklyn,2012,,active,,#000000
+NJN,NJN,New Jersey Nets,East Rutherford,1977,2012,relocated,BKN,#000000
+
+# Washington Wizards - rebranding only
+WAS,WAS,Washington Wizards,Washington,1997,,active,,#002B5C
+WSB,WSB,Washington Bullets,Washington,1974,1997,rebranded,WAS,#002B5C
+
+# Teams that never relocated/rebranded
+BOS,BOS,Boston Celtics,Boston,1946,,active,,#007A33
+LAL,LAL,Los Angeles Lakers,Los Angeles,1960,,active,,#552583

@@ -30,11 +30,13 @@ export class BeltTracker {
       return
     }
 
-    const holderWon = holderIsHome
+    const isTie = game.homeScore === game.awayScore
+    const holderWon = !isTie && (holderIsHome
       ? game.homeScore! > game.awayScore!
-      : game.awayScore! > game.homeScore!
+      : game.awayScore! > game.homeScore!)
 
-    if (!holderWon) {
+    // On a tie, belt stays with holder (no change)
+    if (!isTie && !holderWon) {
       const newHolder = holderIsHome ? game.awayTeam : game.homeTeam
 
       this.changes.push({
@@ -113,11 +115,17 @@ export class BeltTracker {
       challengerStats.totalGames++
 
       // Since we filtered for completed games, scores are guaranteed to be non-null
-      const holderWon = holderIsHome
+      const isTie = game.homeScore === game.awayScore
+      const holderWon = !isTie && (holderIsHome
         ? game.homeScore! > game.awayScore!
-        : game.awayScore! > game.homeScore!
+        : game.awayScore! > game.homeScore!)
 
-      if (holderWon) {
+      if (isTie) {
+        // Tie: belt holder retains the belt, both teams get a tie
+        holderStats.ties = (holderStats.ties || 0) + 1
+        challengerStats.ties = (challengerStats.ties || 0) + 1
+        // Ties don't break the win streak
+      } else if (holderWon) {
         holderStats.wins++
         challengerStats.losses++
         currentWinStreak++
@@ -168,16 +176,12 @@ export function findNextGameForTeam(
   team: string,
   franchises: FranchiseInfo[]
 ): Game | null {
-  const today = new Date().toISOString().split('T')[0]
+  // Sort games by date to find the next one
+  const sortedGames = [...games].sort((a, b) => a.date.localeCompare(b.date))
 
-  for (const game of games) {
+  for (const game of sortedGames) {
     // Skip completed games
     if (isGameCompleted(game)) {
-      continue
-    }
-
-    // Only consider games from today onwards
-    if (game.date < today) {
       continue
     }
 

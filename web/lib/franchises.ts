@@ -23,7 +23,10 @@ function getFranchiseMap(franchises: FranchiseInfo[]): Map<string, FranchiseInfo
 }
 
 export function parseFranchisesCSV(csvContent: string): FranchiseInfo[] {
-  const lines = csvContent.split('\n').filter(line => line.trim() && !line.startsWith('franchise_id'))
+  const lines = csvContent.split('\n').filter(line => {
+    const trimmed = line.trim()
+    return trimmed && !trimmed.startsWith('franchise_id') && !trimmed.startsWith('#')
+  })
 
   return lines.map(line => {
     const [

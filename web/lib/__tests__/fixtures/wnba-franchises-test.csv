@@ -1,0 +1,14 @@
+franchise_id,team_abbr,display_name,city,start_year,end_year,status,successor_franchise_id,hex_color
+
+# Las Vegas Aces - multi-city relocation chain
+LVA,LVA,Las Vegas Aces,Las Vegas,2018,,active,,#000000
+SAS,SAS,San Antonio Stars,San Antonio,2003,2017,relocated,LVA,#C4CED4
+UTA,UTA,Utah Starzz,Salt Lake City,1997,2002,relocated,SAS,#C4CED4
+
+# Connecticut Sun - relocation only
+CON,CON,Connecticut Sun,Uncasville,2003,,active,,#C8102E
+ORL,ORL,Orlando Miracle,Orlando,1999,2002,relocated,CON,#C8102E
+
+# Teams that never relocated
+NYL,NYL,New York Liberty,New York,1997,,active,,#86CEBC
+MIN,MIN,Minnesota Lynx,Minneapolis,1999,,active,,#266092
