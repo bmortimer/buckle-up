@@ -8,7 +8,7 @@ interface BarChartViewProps {
   franchises: FranchiseInfo[]
   allGames: Game[]
   selectedTeam?: string | null
-  league?: 'nba' | 'wnba'
+  league: 'nba' | 'wnba' | 'nhl'
   isAllTime?: boolean
 }
 

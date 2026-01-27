@@ -5,7 +5,7 @@ import Image from 'next/image'
 interface TeamLogoProps {
   teamCode: string
   franchises: FranchiseInfo[]
-  league?: 'nba' | 'wnba'
+  league?: 'nba' | 'wnba' | 'nhl'
   size?: 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   className?: string
 }

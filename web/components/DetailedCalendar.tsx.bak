@@ -13,7 +13,7 @@ interface DetailedCalendarProps {
   franchises: FranchiseInfo[]
   allGames: Game[]
   year: number
-  league: 'nba' | 'wnba' | 'nhl'
+  league?: 'nba' | 'wnba'
 }
 
 interface PopupPosition {

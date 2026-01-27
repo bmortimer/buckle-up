@@ -6,7 +6,7 @@ import { getTeamColor } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 
 interface Last5BeltChangesProps {
-  league: 'nba' | 'wnba' | 'nhl'
+  league: 'nba' | 'wnba'
   history: BeltHistory
   franchises: FranchiseInfo[]
 }

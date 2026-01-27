@@ -9,7 +9,7 @@ interface TeamBeltCardProps {
   isCurrentHolder: boolean
   isSeasonChampion?: boolean
   year?: number
-  league?: 'nba' | 'wnba'
+  league: 'nba' | 'wnba' | 'nhl'
 }
 
 export default function TeamBeltCard({

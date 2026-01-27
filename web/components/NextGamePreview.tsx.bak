@@ -7,7 +7,7 @@ import { getTeamColor } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 
 interface NextGamePreviewProps {
-  league: 'nba' | 'wnba' | 'nhl'
+  league: 'nba' | 'wnba'
   currentHolder: string
   games: Game[]
   franchises: FranchiseInfo[]

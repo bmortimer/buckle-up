@@ -13,7 +13,7 @@ interface BeltCalendarProps {
   franchises: FranchiseInfo[]
   selectedTeam?: string | null
   allGames: Game[]
-  league: 'nba' | 'wnba' | 'nhl'
+  league?: 'nba' | 'wnba'
 }
 
 interface DayData {

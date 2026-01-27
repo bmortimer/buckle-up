@@ -5,7 +5,7 @@ import type { FranchiseInfo } from '@/lib/types'
 import TeamLogo from './TeamLogo'
 
 interface TeamSelectorProps {
-  league: 'nba' | 'wnba'
+  league: 'nba' | 'wnba' | 'nhl'
   teams: string[]
   franchises: FranchiseInfo[]
   selectedTeam: string | null

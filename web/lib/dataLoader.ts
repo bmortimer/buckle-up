@@ -9,7 +9,7 @@ import { parseFranchisesCSV } from './franchises'
 
 const DATA_DIR = join(process.cwd(), '..', 'data')
 
-export function loadSeasonData(league: 'nba' | 'wnba', season: string): SeasonData | null {
+export function loadSeasonData(league: 'nba' | 'wnba' | 'nhl' | 'nhl', season: string): SeasonData | null {
   try {
     const filePath = join(DATA_DIR, league, `${season}.json`)
     const content = readFileSync(filePath, 'utf-8')
@@ -23,7 +23,7 @@ export function loadSeasonData(league: 'nba' | 'wnba', season: string): SeasonDa
   }
 }
 
-export function loadFranchises(league: 'nba' | 'wnba'): FranchiseInfo[] {
+export function loadFranchises(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): FranchiseInfo[] {
   try {
     const filePath = join(DATA_DIR, league, 'franchises.csv')
     const content = readFileSync(filePath, 'utf-8')
@@ -37,7 +37,7 @@ export function loadFranchises(league: 'nba' | 'wnba'): FranchiseInfo[] {
   }
 }
 
-export function getAvailableSeasons(league: 'nba' | 'wnba'): string[] {
+export function getAvailableSeasons(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): string[] {
   try {
     const { readdirSync } = require('fs')
     const leagueDir = join(DATA_DIR, league)
@@ -54,12 +54,15 @@ export function getAvailableSeasons(league: 'nba' | 'wnba'): string[] {
   }
 }
 
-export function getCurrentSeason(league: 'nba' | 'wnba'): string {
+export function getCurrentSeason(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): string {
   const seasons = getAvailableSeasons(league)
-  return seasons[0] || (league === 'wnba' ? '2024' : '2024-25')
+  if (seasons[0]) return seasons[0]
+  if (league === 'wnba') return '2024'
+  if (league === 'nhl') return '2024-25'
+  return '2024-25'
 }
 
-export function loadChampions(league: 'nba' | 'wnba'): Record<string, string> {
+export function loadChampions(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): Record<string, string> {
   try {
     const filePath = join(DATA_DIR, league, 'champions.json')
     const content = readFileSync(filePath, 'utf-8')
@@ -73,7 +76,10 @@ export function loadChampions(league: 'nba' | 'wnba'): Record<string, string> {
   }
 }
 
-export function getDefendingChampion(league: 'nba' | 'wnba', season: string): string {
+export function getDefendingChampion(league: 'nba' | 'wnba' | 'nhl' | 'nhl', season: string): string {
   const champions = loadChampions(league)
-  return champions[season] || (league === 'wnba' ? 'LVA' : 'BOS')
+  if (champions[season]) return champions[season]
+  if (league === 'wnba') return 'LVA'
+  if (league === 'nhl') return 'FLA'
+  return 'BOS'
 }

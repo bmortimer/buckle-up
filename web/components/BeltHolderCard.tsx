@@ -7,7 +7,7 @@ interface BeltHolderCardProps {
   stats: TeamBeltStats | undefined
   franchises: FranchiseInfo[]
   isPastSeason?: boolean
-  league?: 'nba' | 'wnba'
+  league: 'nba' | 'wnba' | 'nhl'
 }
 
 export default function BeltHolderCard({ currentHolder, stats, franchises, isPastSeason = false, league = 'wnba' }: BeltHolderCardProps) {

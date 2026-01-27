@@ -21,7 +21,7 @@ import BuyMeCoffee from './BuyMeCoffee'
 import Link from 'next/link'
 
 interface BeltDashboardProps {
-  league: 'nba' | 'wnba'
+  league: 'nba' | 'wnba' | 'nhl' | 'nhl'
   seasons: Record<string, SeasonData>
   franchises: FranchiseInfo[]
   champions: Record<string, string>

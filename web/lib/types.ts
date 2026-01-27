@@ -2,6 +2,8 @@
  * Core data types for belt tracking
  */
 
+export type League = 'nba' | 'wnba' | 'nhl'
+
 export interface Game {
   date: string
   homeTeam: string
@@ -56,6 +58,7 @@ export interface TeamBeltStats {
   longestReign: number
   wins: number
   losses: number
+  ties?: number
 }
 
 export interface FranchiseInfo {

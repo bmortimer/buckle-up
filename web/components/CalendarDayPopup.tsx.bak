@@ -30,7 +30,7 @@ interface CalendarDayPopupProps {
   position: PopupPosition | null
   franchises: FranchiseInfo[]
   selectedTeam?: string | null
-  league: 'nba' | 'wnba' | 'nhl'
+  league?: 'nba' | 'wnba'
   onClose: () => void
 }
 
