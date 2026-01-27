@@ -25,11 +25,33 @@ const NBA_WESTERN_CONFERENCE = [
   'DAL', 'DEN', 'GSW', 'HOU', 'LAC', 'LAL', 'MEM', 'MIN', 'NOP', 'OKC', 'PHX', 'POR', 'SAC', 'SAS', 'UTA'
 ]
 
+// NHL Conference organization (current active teams)
+const NHL_EASTERN_CONFERENCE = [
+  // Metropolitan Division
+  'CAR', 'CBJ', 'NJD', 'NYI', 'NYR', 'PHI', 'PIT', 'WSH',
+  // Atlantic Division
+  'BOS', 'BUF', 'DET', 'FLA', 'MTL', 'OTT', 'TBL', 'TOR'
+]
+const NHL_WESTERN_CONFERENCE = [
+  // Central Division
+  'UTA', 'CHI', 'COL', 'DAL', 'MIN', 'NSH', 'STL', 'WPG',
+  // Pacific Division
+  'ANA', 'CGY', 'EDM', 'LAK', 'SJS', 'SEA', 'VAN', 'VEG'
+]
+
 export default function TeamSelector({ league, teams, franchises, selectedTeam, onTeamChange, isAllTime = false }: TeamSelectorProps) {
   const [isOpen, setIsOpen] = useState(false)
 
-  const easternConference = league === 'nba' ? NBA_EASTERN_CONFERENCE : WNBA_EASTERN_CONFERENCE
-  const westernConference = league === 'nba' ? NBA_WESTERN_CONFERENCE : WNBA_WESTERN_CONFERENCE
+  const easternConference = league === 'nba' 
+    ? NBA_EASTERN_CONFERENCE 
+    : league === 'nhl' 
+      ? NHL_EASTERN_CONFERENCE 
+      : WNBA_EASTERN_CONFERENCE
+  const westernConference = league === 'nba' 
+    ? NBA_WESTERN_CONFERENCE 
+    : league === 'nhl' 
+      ? NHL_WESTERN_CONFERENCE 
+      : WNBA_WESTERN_CONFERENCE
 
   // Organize teams by status and conference
   const activeEast = teams.filter(t => easternConference.includes(t))

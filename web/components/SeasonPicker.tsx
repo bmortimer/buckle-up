@@ -173,13 +173,13 @@ export default function SeasonPicker({
                   return (
                     <div key={decade}>
                       {/* Decade Label */}
-                      <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
+                      <div className="text-xs sm:text-sm font-orbitron tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                         <span>{decadeLabel}</span>
                         <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" />
                       </div>
 
                       {/* Year Grid */}
-                      <div className={`grid gap-2 ${league === 'nba' ? 'grid-cols-3 sm:grid-cols-4 md:grid-cols-5' : 'grid-cols-4 sm:grid-cols-6 md:grid-cols-8'}`}>
+                      <div className={`grid gap-2 ${league === 'wnba' ? 'grid-cols-4 sm:grid-cols-6 md:grid-cols-8' : 'grid-cols-3 sm:grid-cols-4 md:grid-cols-5'}`}>
                         {years.map(year => {
                           const isSelected = currentYear === year
 
