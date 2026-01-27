@@ -17,23 +17,27 @@ export interface FranchiseInfo {
   hexColor: string;
 }
 
-let franchiseCache: FranchiseInfo[] | null = null;
-let franchiseMapCache: Map<string, FranchiseInfo> | null = null;
-let franchiseColorCache: Map<string, string> | null = null;
+// League-specific caches to avoid cross-contamination
+const franchiseCacheByLeague: Map<string, FranchiseInfo[]> = new Map();
+const franchiseMapCacheByLeague: Map<string, Map<string, FranchiseInfo>> = new Map();
+const franchiseColorCacheByLeague: Map<string, Map<string, string>> = new Map();
 
 /**
  * Load franchise data from CSV
  */
 export function loadFranchises(league: string): FranchiseInfo[] {
-  if (franchiseCache) return franchiseCache;
+  // Check league-specific cache
+  if (franchiseCacheByLeague.has(league)) {
+    return franchiseCacheByLeague.get(league)!;
+  }
 
   const csvPath = resolve(process.cwd(), 'data', league, 'franchises.csv');
 
   try {
     const content = readFileSync(csvPath, 'utf-8');
-    const lines = content.split('\n').filter(line => line.trim() && !line.startsWith('franchise_id'));
+    const lines = content.split('\n').filter(line => line.trim() && !line.startsWith('franchise_id') && !line.startsWith('#'));
 
-    franchiseCache = lines.map(line => {
+    const franchises = lines.map(line => {
       const [
         franchiseId,
         teamAbbr,
@@ -59,7 +63,8 @@ export function loadFranchises(league: string): FranchiseInfo[] {
       };
     }).filter(f => f.franchiseId);
 
-    return franchiseCache;
+    franchiseCacheByLeague.set(league, franchises);
+    return franchises;
   } catch (error) {
     console.warn(`Could not load franchises.csv: ${error}`);
     return [];
@@ -70,11 +75,11 @@ export function loadFranchises(league: string): FranchiseInfo[] {
  * Get franchise info for a team abbreviation
  */
 export function getFranchiseInfo(teamAbbr: string, league: string = 'wnba'): FranchiseInfo | undefined {
-  if (!franchiseMapCache) {
+  if (!franchiseMapCacheByLeague.has(league)) {
     const franchises = loadFranchises(league);
-    franchiseMapCache = new Map(franchises.map(f => [f.teamAbbr, f]));
+    franchiseMapCacheByLeague.set(league, new Map(franchises.map(f => [f.teamAbbr, f])));
   }
-  return franchiseMapCache.get(teamAbbr);
+  return franchiseMapCacheByLeague.get(league)!.get(teamAbbr);
 }
 
 /**
@@ -101,12 +106,13 @@ export function getRootFranchiseId(teamAbbr: string, league: string = 'wnba'): s
  * Get hex color for a team (from root franchise)
  */
 export function getTeamColor(teamAbbr: string, league: string = 'wnba'): string {
-  if (!franchiseColorCache) {
-    franchiseColorCache = new Map();
+  if (!franchiseColorCacheByLeague.has(league)) {
+    franchiseColorCacheByLeague.set(league, new Map());
   }
+  const colorCache = franchiseColorCacheByLeague.get(league)!;
 
-  if (franchiseColorCache.has(teamAbbr)) {
-    return franchiseColorCache.get(teamAbbr)!;
+  if (colorCache.has(teamAbbr)) {
+    return colorCache.get(teamAbbr)!;
   }
 
   const rootFranchiseId = getRootFranchiseId(teamAbbr, league);
@@ -114,7 +120,7 @@ export function getTeamColor(teamAbbr: string, league: string = 'wnba'): string 
   const rootFranchise = franchises.find(f => f.franchiseId === rootFranchiseId);
 
   const color = rootFranchise?.hexColor || '#8b949e'; // Default gray if not found
-  franchiseColorCache.set(teamAbbr, color);
+  colorCache.set(teamAbbr, color);
 
   return color;
 }

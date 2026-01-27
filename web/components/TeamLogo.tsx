@@ -59,22 +59,86 @@ const NBA_PNG_TEAMS = new Set([
   'CHH', 'WSB', 'NJN', 'NOH', 'NOJ', 'SDC', 'KCK', 'NYN', 'NOK'
 ])
 
+// NHL teams with logos available
+const NHL_TEAMS_WITH_LOGOS = new Set([
+  // Current teams (PNG from ESPN - square 500x500)
+  'ANA', 'BOS', 'BUF', 'CAR', 'CBJ', 'CGY', 'CHI', 'COL', 'DAL', 'DET',
+  'EDM', 'FLA', 'LAK', 'MIN', 'MTL', 'NJD', 'NSH', 'NYI', 'NYR', 'OTT',
+  'PHI', 'PIT', 'SEA', 'SJS', 'STL', 'TBL', 'TOR', 'UTA', 'VAN', 'VEG',
+  'WPG', 'WSH',
+  // Historical teams available from ESPN (PNG)
+  'ARI', 'ATL', 'PHX',
+  // Historical teams with SVG
+  'CBH', 'WIN',
+  // Historical teams with PNG (legacy)
+  'AFM', 'ATF', 'CLE', 'CLR', 'HAR', 'HFD', 'KCS',
+  'MDA', 'MNS', 'OAK', 'QUE', 'WPG1'
+])
+
+// NHL teams that use PNG
+const NHL_PNG_TEAMS = new Set([
+  // Current teams (ESPN square logos)
+  'ANA', 'BOS', 'BUF', 'CAR', 'CBJ', 'CGY', 'CHI', 'COL', 'DAL', 'DET',
+  'EDM', 'FLA', 'LAK', 'MIN', 'MTL', 'NJD', 'NSH', 'NYI', 'NYR', 'OTT',
+  'PHI', 'PIT', 'SEA', 'SJS', 'STL', 'TBL', 'TOR', 'UTA', 'VAN', 'VEG',
+  'WPG', 'WSH',
+  // Historical teams (ESPN)
+  'ARI', 'ATL', 'PHX',
+  // Historical teams (legacy PNGs)
+  'AFM', 'ATF', 'CLE', 'CLR', 'HFD', 'HAR', 'KCS',
+  'MDA', 'MNS', 'OAK', 'QUE', 'WPG1'
+])
+
+// NHL PNG teams that need white background in dark mode
+const NHL_PNG_WHITE_BG = new Set([
+  // ESPN logos with dark colors that don't show on dark backgrounds
+  'TBL', 'TOR', 'WSH',
+  // Legacy PNGs with artifacts
+  'AFM', 'ATF', 'CLE', 'CLR', 'HFD', 'HAR', 'KCS',
+  'MDA', 'MNS', 'OAK', 'QUE', 'WPG1'
+])
+
+// NHL SVG teams with white logos that need colored background in light mode
+// Note: TOR/TBL now use ESPN PNGs which handle this properly
+const NHL_SVG_COLORED_BG = new Set<string>([])
+
 export default function TeamLogo({ teamCode, franchises, league = 'wnba', size = 'md', className = '' }: TeamLogoProps) {
   const color = getTeamColor(teamCode, franchises)
   const franchise = franchises.find(f => f.teamAbbr === teamCode)
   const displayName = franchise?.displayName || teamCode
 
-  const teamsWithLogos = league === 'nba' ? NBA_TEAMS_WITH_LOGOS : WNBA_TEAMS_WITH_LOGOS
-  const pngTeams = league === 'nba' ? NBA_PNG_TEAMS : WNBA_PNG_TEAMS
-  const svgWhiteBg = league === 'wnba' ? WNBA_SVG_WHITE_BG : new Set()
+  const teamsWithLogos = league === 'nba' ? NBA_TEAMS_WITH_LOGOS : league === 'nhl' ? NHL_TEAMS_WITH_LOGOS : WNBA_TEAMS_WITH_LOGOS
+  const pngTeams = league === 'nba' ? NBA_PNG_TEAMS : league === 'nhl' ? NHL_PNG_TEAMS : WNBA_PNG_TEAMS
+  const svgWhiteBg = league === 'wnba' ? WNBA_SVG_WHITE_BG : new Set<string>()
+  const svgColoredBg = league === 'nhl' ? NHL_SVG_COLORED_BG : new Set<string>()
+  const pngWhiteBg = league === 'nba' ? NBA_PNG_TEAMS : league === 'nhl' ? NHL_PNG_WHITE_BG : WNBA_PNG_TEAMS
 
   const hasLogo = teamsWithLogos.has(teamCode)
   const isPng = pngTeams.has(teamCode)
-  const needsWhiteBg = isPng || svgWhiteBg.has(teamCode)
+  const needsWhiteBg = pngWhiteBg.has(teamCode) || svgWhiteBg.has(teamCode)
+  const needsColoredBg = svgColoredBg.has(teamCode)
   const fileExtension = isPng ? 'png' : 'svg'
 
   // If logo exists, render the image
   if (hasLogo) {
+    // Teams with white logos need colored background in light mode
+    if (needsColoredBg) {
+      return (
+        <div 
+          className={`${sizeMap[size]} relative rounded-full overflow-hidden ${className}`}
+          style={{ backgroundColor: color }}
+        >
+          <Image
+            src={`/logos/${league}/${teamCode}.${fileExtension}`}
+            alt={`${displayName} logo`}
+            fill
+            className="object-contain p-1"
+            unoptimized
+          />
+        </div>
+      )
+    }
+    
     return (
       <div className={`${sizeMap[size]} relative ${needsWhiteBg ? 'rounded-full overflow-hidden' : ''} ${className}`}>
         {/* Add white background circle for logos that need it in dark mode */}
