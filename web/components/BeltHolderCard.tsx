@@ -117,14 +117,14 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
               </div>
 
               {/* Record */}
-              <div className="scoreboard-panel p-3 lg:p-4 flex items-center gap-4">
+              <div className="scoreboard-panel p-3 lg:p-4 flex items-center gap-4 min-w-0">
                 <div
-                  className="text-2xl lg:text-4xl xl:text-5xl font-mono tabular-nums led-text whitespace-nowrap"
+                  className="text-2xl lg:text-3xl xl:text-4xl font-mono tabular-nums led-text whitespace-nowrap shrink"
                   style={{ color: 'hsl(var(--led-amber))' }}
                 >
                   {stats.wins}-{stats.losses}{stats.ties ? `-${stats.ties}` : ''}
                 </div>
-                <div className="text-[0.6rem] lg:text-[0.65rem] uppercase tracking-widest text-muted-foreground font-orbitron">
+                <div className="text-[0.6rem] lg:text-[0.65rem] uppercase tracking-widest text-muted-foreground font-orbitron shrink-0">
                   W-L{stats.ties ? '-T' : ''} RECORD
                 </div>
               </div>
