@@ -29,6 +29,7 @@ interface DayData {
   holderWon: boolean | null
   winner?: string
   challenger?: string
+  isTie?: boolean                 // Game ended in a tie
   isScheduledTitleBout?: boolean  // Has an unplayed title bout
   isUncertainFuture?: boolean     // After an unplayed title bout - outcome unknown
 }
@@ -104,23 +105,26 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
       } else if (holderGame && isGameCompleted(holderGame)) {
         // Belt holder played a completed game
         const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
-        const holderWon = holderIsHome
+        const isTie = holderGame.homeScore === holderGame.awayScore
+        const holderWon = !isTie && (holderIsHome
           ? holderGame.homeScore! > holderGame.awayScore!
-          : holderGame.awayScore! > holderGame.homeScore!
+          : holderGame.awayScore! > holderGame.homeScore!)
 
         const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
-        const winner = holderWon ? currentHolder : challenger
-        const newHolder = holderWon ? currentHolder : challenger
-        const beltChanged = !holderWon
+        // For ties, there's no winner but the belt stays with holder
+        const winner = isTie ? undefined : (holderWon ? currentHolder : challenger)
+        const newHolder = isTie ? currentHolder : (holderWon ? currentHolder : challenger)
+        const beltChanged = !isTie && !holderWon
 
         map.set(dateStr, {
           date: dateStr,
           holder: currentHolder,
           game: holderGame,
           beltChanged,
-          holderWon,
+          holderWon: isTie ? null : holderWon,
           winner,
           challenger,
+          isTie,
         })
 
         currentHolder = newHolder
@@ -286,8 +290,9 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                       const isUncertain = dayData.isUncertainFuture
                       
                       // Background color logic:
-                      // - Completed game: winner's color
-                      // - Known holder (no game): holder's color  
+                      // - Completed game with winner: winner's color
+                      // - Completed game with tie: holder's color (belt stays with holder)
+                      // - Known holder (no game): holder's color
                       // - Scheduled title bout: no color (transparent)
                       // - Uncertain future: neutral gray
                       let bgStyle: React.CSSProperties = {}
@@ -296,6 +301,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                       } else if (isScheduledBout) {
                         bgStyle = {} // No team color for scheduled bouts
                       } else {
+                        // For ties, show the holder's color (winner will be undefined)
                         const displayColor = winner ? getTeamColor(winner, franchises) : getTeamColor(dayData.holder, franchises)
                         bgStyle = { backgroundColor: `${displayColor}15` }
                       }
@@ -334,13 +340,25 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                             </div>
                           )}
 
-                          {/* Game indicator - show the winner for completed games */}
-                          {winner && (
-                            <div className="absolute inset-0 flex items-end justify-center pb-[10%] pointer-events-none">
-                              <TeamLogo teamCode={winner} franchises={franchises} league={league} size="xs" />
+                          {/* Tie indicator - in same position as belt change indicator */}
+                          {dayData.isTie && (
+                            <div className="absolute top-0 right-2 text-[0.5rem] font-bold opacity-70 pointer-events-none">
+                              T
                             </div>
                           )}
-                          
+
+                          {/* Game indicator - show the winner for completed games, or holder for ties */}
+                          {(winner || dayData.isTie) && (
+                            <div className={`absolute inset-0 flex items-end justify-center pb-[10%] pointer-events-none ${dayData.isTie ? 'opacity-50' : ''}`}>
+                              <TeamLogo
+                                teamCode={winner || dayData.holder}
+                                franchises={franchises}
+                                league={league}
+                                size="xs"
+                              />
+                            </div>
+                          )}
+
                           {/* Trophy icon for scheduled title bouts */}
                           {isScheduledBout && (
                             <div className="absolute inset-0 flex items-end justify-center pb-[5%] pointer-events-none">

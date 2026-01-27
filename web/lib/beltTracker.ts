@@ -226,6 +226,7 @@ function mergeStatsByFranchise(
       existing.totalGames += stats.totalGames
       existing.wins += stats.wins
       existing.losses += stats.losses
+      existing.ties = (existing.ties || 0) + (stats.ties || 0)
       existing.longestReign = Math.max(existing.longestReign, stats.longestReign)
     } else {
       merged.set(currentAbbr, { ...stats, team: currentAbbr })
@@ -288,6 +289,7 @@ export function trackAllSeasons(
         existing.totalGames += teamStats.totalGames
         existing.wins += teamStats.wins
         existing.losses += teamStats.losses
+        existing.ties = (existing.ties || 0) + (teamStats.ties || 0)
         existing.longestReign = Math.max(existing.longestReign, teamStats.longestReign)
       } else {
         teamStatsMap.set(teamStats.team, { ...teamStats })

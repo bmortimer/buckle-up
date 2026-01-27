@@ -172,9 +172,9 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
                     }}
                   >
                     {sortBy === 'winpct'
-                      ? `${(winPct * 100).toFixed(1)}% (${team.wins}-${team.losses})`
+                      ? `${(winPct * 100).toFixed(1)}% (${team.wins}-${team.losses}${team.ties ? `-${team.ties}` : ''})`
                       : sortBy === 'games'
-                        ? `${value} (${team.wins}-${team.losses})`
+                        ? `${value} (${team.wins}-${team.losses}${team.ties ? `-${team.ties}` : ''})`
                         : `${value}`
                     }
                   </span>

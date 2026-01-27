@@ -23,6 +23,7 @@ interface DayData {
   won: boolean | null
   winner?: string // Team that won this game (if played)
   challenger?: string // Team that challenged for the belt (if played)
+  isTie?: boolean // Game ended in a tie
   game?: Game // The actual game that was played (if any)
 }
 
@@ -90,9 +91,14 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
   // Process changes to build holder periods
   for (const change of history.changes) {
     if (change.reason === 'loss') {
-      // Belt changed hands
+      // Belt changed hands - new holder's period starts the NEXT day
+      // (because they won it during the game on this day)
+      const gameDate = new Date(change.game.date)
+      gameDate.setDate(gameDate.getDate() + 1)
+      const nextDay = gameDate.toISOString().split('T')[0]
+
       holderPeriods.push({
-        start: change.game.date,
+        start: nextDay,
         holder: change.toTeam,
         franchiseHolder: change.toTeam
       })
@@ -110,7 +116,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     }
   }
 
-  // Helper to find who held belt on a given date
+  // Helper to find who held belt on a given date (at the START of the day)
   const getHolderOnDate = (dateStr: string): { holder: string; franchiseHolder: string } => {
     // Find the most recent holder period that started before or on this date
     for (let i = holderPeriods.length - 1; i >= 0; i--) {
@@ -149,13 +155,14 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     if (holderGame && isGameCompleted(holderGame)) {
       // Belt holder played a completed game
       const holderIsHome = isSameFranchise(holderGame.homeTeam, franchiseHolder, franchises)
-      const holderWon = holderIsHome
+      const isTie = holderGame.homeScore === holderGame.awayScore
+      const holderWon = !isTie && (holderIsHome
         ? holderGame.homeScore! > holderGame.awayScore!
-        : holderGame.awayScore! > holderGame.homeScore!
+        : holderGame.awayScore! > holderGame.homeScore!)
 
-      const winner = holderIsHome
+      const winner = isTie ? null : (holderIsHome
         ? (holderWon ? holderGame.homeTeam : holderGame.awayTeam)
-        : (holderWon ? holderGame.awayTeam : holderGame.homeTeam)
+        : (holderWon ? holderGame.awayTeam : holderGame.homeTeam))
 
       const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
       const actualHolder = holderIsHome ? holderGame.homeTeam : holderGame.awayTeam
@@ -164,10 +171,11 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
         date: dateStr,
         holder: actualHolder,
         played: true,
-        won: holderWon,
-        winner: winner,
+        won: isTie ? null : holderWon,
+        winner: winner || undefined,
         challenger: challenger,
         game: holderGame,
+        isTie: isTie,
       })
     } else if (holderGame && !isGameCompleted(holderGame)) {
       // Belt holder has a scheduled (not yet played) game
@@ -360,26 +368,47 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                       // Determine what happened:
                       // 1. Won belt from another team (bright team color)
                       // 2. Defended belt successfully (bright team color)
-                      // 3. Lost belt (grey with X)
-                      // 4. Off day while holding (dim team color)
-                      // 5. Failed title challenge (darker tan/muted)
+                      // 3. Tied while holding belt (dim team color - same as off day, belt stays with holder)
+                      // 4. Lost belt (transparent with border and X)
+                      // 5. Off day while holding (dim team color)
+                      // 6. Failed title challenge - lost or tied (darker tan)
 
                       const wonBeltThisDay = wonBelt && dayData.played
                       const defendedBelt = heldBelt && dayData.played && dayData.won === true
+                      const tiedWhileHolding = heldBelt && dayData.played && dayData.isTie
                       const lostBelt = heldBelt && dayData.played && dayData.won === false
                       const offDay = heldBelt && !dayData.played
-                      const failedChallenge = challengedBelt && dayData.played
+                      const failedChallenge = challengedBelt && dayData.played  // Both tie and loss when challenging
 
                       const isWinOrDefense = wonBeltThisDay || defendedBelt
                       const isLoss = lostBelt
 
-                      // Color logic: team color for wins/defenses/off days, transparent for losses, tan for failed challenges
-                      const cellColor = isLoss
-                        ? 'transparent'
-                        : failedChallenge
-                          ? 'hsl(30, 40%, 50%)' // Darker tan/brown
-                          : color
-                      const opacity = isWinOrDefense ? 1 : isLoss ? 1 : failedChallenge ? 0.6 : 0.25
+                      // Color logic with opacity baked into the color:
+                      // - Wins/defenses: full team color
+                      // - Ties while holding: dim team color (25% opacity)
+                      // - Losses while holding: transparent with border and X
+                      // - Failed challenges (tie or loss): tan with 60% opacity
+                      // - Off days: dim team color (25% opacity)
+
+                      // Helper to convert hex to rgba with opacity
+                      const hexToRgba = (hex: string, alpha: number) => {
+                        const r = parseInt(hex.slice(1, 3), 16)
+                        const g = parseInt(hex.slice(3, 5), 16)
+                        const b = parseInt(hex.slice(5, 7), 16)
+                        return `rgba(${r}, ${g}, ${b}, ${alpha})`
+                      }
+
+                      let cellColor: string
+                      // IMPORTANT: Check isLoss first to ensure lost belt shows transparent (not tan)
+                      if (isLoss) {
+                        cellColor = 'transparent'
+                      } else if (isWinOrDefense) {
+                        cellColor = color // Full opacity
+                      } else if (failedChallenge) {
+                        cellColor = 'rgba(153, 102, 76, 0.6)' // Tan with 60% opacity for failed challenges
+                      } else {
+                        cellColor = hexToRgba(color, 0.25) // Dim (off day or tie while holding)
+                      }
 
                       const isSelected = clickedDay?.date === dayData.date
 
@@ -389,7 +418,6 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                           className={`w-2.5 h-2.5 cursor-pointer transition-all hover:scale-[2] active:scale-[2.2] hover:z-10 active:z-10 relative flex items-center justify-center ${isSelected ? 'scale-[2] z-10 ring-1 ring-amber-500' : ''} ${isLoss ? 'border border-muted-foreground' : ''}`}
                           style={{
                             backgroundColor: cellColor,
-                            opacity: opacity,
                             boxShadow: isWinOrDefense ? `0 0 4px ${color}60` : 'none',
                             border: isLoss ? undefined : '1px solid rgba(255,255,255,0.3)'
                           }}
@@ -406,6 +434,11 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                           {isLoss && (
                             <span className="text-[7px] font-bold leading-none text-muted-foreground pointer-events-none">
                               ×
+                            </span>
+                          )}
+                          {tiedWhileHolding && (
+                            <span className="text-[6px] font-bold leading-none pointer-events-none">
+                              T
                             </span>
                           )}
                         </div>

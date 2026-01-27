@@ -62,10 +62,10 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
                   className="text-2xl sm:text-3xl font-mono tabular-nums led-text mb-1 sm:mb-2"
                   style={{ color: 'hsl(var(--led-amber))' }}
                 >
-                  {stats.wins}-{stats.losses}
+                  {stats.wins}-{stats.losses}{stats.ties ? `-${stats.ties}` : ''}
                 </div>
                 <div className="text-[0.5rem] sm:text-[0.6rem] uppercase tracking-wider sm:tracking-widest text-muted-foreground font-orbitron">
-                  W-L<br/>RECORD
+                  W-L{stats.ties ? '-T' : ''}<br/>RECORD
                 </div>
               </div>
 
@@ -122,7 +122,10 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
                   className="text-2xl lg:text-4xl xl:text-5xl font-mono tabular-nums led-text whitespace-nowrap"
                   style={{ color: 'hsl(var(--led-amber))' }}
                 >
-                  {stats.wins}-{stats.losses}
+                  {stats.wins}-{stats.losses}{stats.ties ? `-${stats.ties}` : ''}
+                </div>
+                <div className="text-[0.6rem] lg:text-[0.65rem] uppercase tracking-widest text-muted-foreground font-orbitron">
+                  W-L{stats.ties ? '-T' : ''} RECORD
                 </div>
               </div>
 

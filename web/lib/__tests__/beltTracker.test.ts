@@ -211,12 +211,42 @@ describe('BeltTracker', () => {
   })
 
   describe('Tie handling', () => {
-    it('should not transfer belt on tie', () => {
+    it('should not transfer belt on tie when holder is home', () => {
       const tracker = new BeltTracker('BOS')
       const history = tracker.trackSeason(gamesWithTie, nbaFranchises)
 
       // Belt should stay with BOS despite tie
       expect(history.summary.currentHolder).toBe('BOS')
+      expect(history.changes).toHaveLength(0)
+    })
+
+    it('should not transfer belt on tie when holder is away', () => {
+      const gamesAwayTie: Game[] = [
+        // MTL starts with belt, wins on the road
+        {
+          date: '1969-10-11',
+          homeTeam: 'LAK',
+          awayTeam: 'MTL',
+          homeScore: 1,
+          awayScore: 5,
+          isPlayoffs: false,
+        },
+        // MTL ties on the road (belt should stay with MTL)
+        {
+          date: '1969-10-15',
+          homeTeam: 'TOR',
+          awayTeam: 'MTL',
+          homeScore: 2,
+          awayScore: 2,
+          isPlayoffs: false,
+        },
+      ]
+
+      const tracker = new BeltTracker('MTL')
+      const history = tracker.trackSeason(gamesAwayTie, nbaFranchises)
+
+      // Belt should stay with MTL despite tie
+      expect(history.summary.currentHolder).toBe('MTL')
       expect(history.changes).toHaveLength(0)
     })
 
