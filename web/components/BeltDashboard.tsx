@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import { useSearchParams } from 'next/navigation'
 import type { SeasonData, FranchiseInfo, League } from '@/lib/types'
 import { trackAllSeasons } from '@/lib/beltTracker'
-import { getCurrentFranchiseAbbr, getAllFranchiseAbbrs } from '@/lib/franchises'
+import { getCurrentFranchiseAbbr, getAllFranchiseAbbrs, getTeamCodeForYear } from '@/lib/franchises'
 import { getSeasonConfig } from '@/lib/seasonConfig'
 import BeltHolderCard from './BeltHolderCard'
 import TeamBeltCard from './TeamBeltCard'
@@ -38,6 +38,9 @@ export default function BeltDashboard({
   const [season, setSeason] = useState<string>('all')
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null)
   const [isAllTime, setIsAllTime] = useState(true)
+
+  // Track whether we're updating team due to historical year selection
+  const isHistoricalTeamUpdate = useRef(false)
 
   // Get available years for range slider
   const availableYears = useMemo(() => {
@@ -203,8 +206,32 @@ export default function BeltDashboard({
     return Array.from(teamYears).sort((a, b) => a - b)
   }, [selectedTeam, seasons, availableYears, franchises, isAllTime])
 
+  // Update selected team to historical code when year changes
+  useEffect(() => {
+    // Only update if:
+    // 1. A team is selected
+    // 2. Not in All Time mode (specific year selected)
+    // 3. It's a single year selection
+    if (selectedTeam && !isAllTime && yearRange[0] === yearRange[1]) {
+      const year = yearRange[0]
+      const correctTeamCode = getTeamCodeForYear(selectedTeam, year, franchises)
+
+      // Only update if the team code actually needs to change
+      if (correctTeamCode !== selectedTeam) {
+        isHistoricalTeamUpdate.current = true
+        setSelectedTeam(correctTeamCode)
+      }
+    }
+  }, [yearRange, selectedTeam, isAllTime, franchises])
+
   // Adjust year range when team is selected
   useEffect(() => {
+    // Skip year range adjustment if this team change was due to historical year selection
+    if (isHistoricalTeamUpdate.current) {
+      isHistoricalTeamUpdate.current = false
+      return
+    }
+
     if (selectedTeam && availableYearsForTeam.length > 0) {
       const teamMin = availableYearsForTeam[0]
       const teamMax = availableYearsForTeam[availableYearsForTeam.length - 1]
@@ -225,6 +252,7 @@ export default function BeltDashboard({
     } else if (!selectedTeam && isAllTime) {
       setYearRange([minYear, maxYear])
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTeam, availableYearsForTeam, isAllTime, minYear, maxYear])
 
   if (!history) {

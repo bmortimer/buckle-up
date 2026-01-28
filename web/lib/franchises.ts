@@ -166,3 +166,30 @@ export function getCurrentFranchiseName(teamAbbr: string, franchises: FranchiseI
   const currentAbbr = getCurrentFranchiseAbbr(teamAbbr, franchises)
   return getTeamDisplayName(currentAbbr, franchises)
 }
+
+/**
+ * Get the team code that was active during a specific year.
+ * For example, getTeamCodeForYear("WAS", 1979, franchises) returns "WSB" (Washington Bullets).
+ * Returns the input teamAbbr if no historical code is found for that year.
+ */
+export function getTeamCodeForYear(teamAbbr: string, year: number, franchises: FranchiseInfo[]): string {
+  // Get all team codes in the franchise lineage
+  const allAbbrs = getAllFranchiseAbbrs(teamAbbr, franchises)
+
+  // Find which team code was active in the given year
+  for (const abbr of allAbbrs) {
+    const info = franchises.find(f => f.teamAbbr === abbr)
+    if (!info) continue
+
+    const startYear = info.startYear ? parseInt(info.startYear) : -Infinity
+    const endYear = info.endYear ? parseInt(info.endYear) : Infinity
+
+    // Check if this team was active during the given year
+    if (year >= startYear && year <= endYear) {
+      return abbr
+    }
+  }
+
+  // If no match found, return the original team abbreviation
+  return teamAbbr
+}
