@@ -174,6 +174,22 @@ def main():
         # Save the data
         save_season_data('nhl', season, games)
 
+        # Update sitemap lastmod date since we changed NHL data
+        try:
+            import subprocess
+            result = subprocess.run(
+                ['python3', str(Path(__file__).parent / 'update_sitemap.py'), '--league', 'nhl'],
+                capture_output=True,
+                text=True,
+                timeout=10
+            )
+            if result.returncode == 0:
+                print(f"  {result.stdout.strip()}")
+            else:
+                print(f"  Warning: Failed to update sitemap: {result.stderr}")
+        except Exception as e:
+            print(f"  Warning: Failed to update sitemap: {e}")
+
         print("\n" + "=" * 60)
         print("✓ Update completed successfully")
         print("=" * 60)

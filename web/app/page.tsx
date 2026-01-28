@@ -3,14 +3,28 @@ import Link from 'next/link'
 import { ThemeSwitcher } from '@/components/ThemeSwitcher'
 
 export const metadata: Metadata = {
-  title: 'Championship Belt Tracker | WNBA & NBA Lineal Title',
-  description: 'Track lineal championship belts for WNBA and NBA. Boxing-style title tracking for basketball. Every game is a title defense.',
+  title: 'Championship Belt Tracker | WNBA, NBA & NHL Lineal Title',
+  description: 'Track lineal championship belts for WNBA, NBA, and NHL. Boxing-style title tracking for basketball and hockey. Every game is a title defense.',
   alternates: {
     canonical: 'https://whohasthebelt.com'
   },
   openGraph: {
-    title: 'Championship Belt Tracker',
-    description: 'The lineal championship belt - every game is a title defense. Track WNBA and NBA belts.',
+    title: 'Championship Belt Tracker | WNBA, NBA & NHL',
+    description: 'The lineal championship belt - every game is a title defense. Track WNBA, NBA, and NHL belts.',
+    url: 'https://whohasthebelt.com',
+    siteName: 'Championship Belt Tracker',
+    images: [{
+      url: 'https://whohasthebelt.com/og-image.png',
+      width: 1200,
+      height: 630,
+      alt: 'Championship Belt Tracker - Lineal Title History'
+    }]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Championship Belt Tracker | WNBA, NBA & NHL',
+    description: 'Track lineal championship belts across WNBA, NBA, and NHL. Every game is a title defense.',
+    images: ['https://whohasthebelt.com/og-image.png']
   },
 }
 

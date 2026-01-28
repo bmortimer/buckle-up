@@ -1,7 +1,7 @@
 {
   "name": "Championship Belt Tracker",
   "short_name": "Belt Tracker",
-  "description": "Track the lineal championship belt across WNBA and NBA seasons",
+  "description": "Track the lineal championship belt across WNBA, NBA, and NHL seasons",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",

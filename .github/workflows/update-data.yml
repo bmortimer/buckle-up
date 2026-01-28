@@ -60,30 +60,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Ingest current WNBA season
+      - name: Update WNBA data
         if: steps.should-run.outputs.run == 'true'
         run: |
-          CURRENT_YEAR=$(date +%Y)
-          python scripts/ingest_wnba.py --season $CURRENT_YEAR || echo "WNBA ingestion failed or season not started"
+          # Run the update script (auto-detects current season and updates sitemap if changed)
+          python scripts/update_wnba.py || echo "WNBA update failed or season not started"
 
-      - name: Ingest current NBA season
+      - name: Update NBA data
         if: steps.should-run.outputs.run == 'true'
         run: |
-          # NBA season spans Oct-June across two calendar years
-          # In Oct-Dec, season started this year (e.g., Oct 2025 = 2025-26)
-          # In Jan-Sept, season started last year (e.g., Jan 2026 = 2025-26)
-          CURRENT_MONTH=$(date +%-m)
-          if [ "$CURRENT_MONTH" -ge 10 ]; then
-            START_YEAR=$(date +%Y)
-          else
-            START_YEAR=$(($(date +%Y) - 1))
-          fi
-          END_YEAR=$((START_YEAR + 1))
-          SEASON="${START_YEAR}-$(echo $END_YEAR | cut -c 3-4)"
-          echo "Ingesting NBA season: $SEASON"
-          python scripts/ingest_nba.py --season $SEASON || echo "NBA ingestion failed or season not started"
+          # Run the update script (auto-detects current season and updates sitemap if changed)
+          python scripts/update_nba.py || echo "NBA update failed or season not started"
 
-      - name: Ingest current NHL season
+      - name: Update NHL data
         if: steps.should-run.outputs.run == 'true'
         run: |
           # Add delay before NHL fetch to be respectful to hockey-reference.com
@@ -91,20 +80,21 @@ jobs:
           echo "Waiting 10s before NHL fetch to respect rate limits..."
           sleep 10
 
-          # Run the update script (auto-detects current season)
-          python scripts/update_nhl.py || echo "NHL ingestion failed or season not started"
+          # Run the update script (auto-detects current season and updates sitemap if changed)
+          python scripts/update_nhl.py || echo "NHL update failed or season not started"
 
       - name: Check for changes
         if: steps.should-run.outputs.run == 'true'
         id: git-check
         run: |
-          git diff --quiet data/ || echo "changes=true" >> $GITHUB_OUTPUT
+          # Check both data files and sitemap for changes
+          git diff --quiet data/ web/public/sitemap.xml || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push if changes
         if: steps.should-run.outputs.run == 'true' && steps.git-check.outputs.changes == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/
+          git add data/ web/public/sitemap.xml
           git commit -m "Update belt data - $(date '+%Y-%m-%d')"
           git push

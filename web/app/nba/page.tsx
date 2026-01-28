@@ -6,13 +6,27 @@ import BeltDashboard from '@/components/BeltDashboard'
 
 export const metadata: Metadata = {
   title: 'NBA Belt Tracker',
-  description: 'Track the NBA lineal championship belt. See who holds the belt, upcoming title bouts, and complete history.',
+  description: 'Track the NBA lineal championship belt from 1976 to present. See who holds the belt, upcoming title bouts, and complete history.',
   alternates: {
     canonical: 'https://whohasthebelt.com/nba'
   },
   openGraph: {
     title: 'NBA Championship Belt Tracker',
-    description: 'The lineal championship belt - every game is a title defense. Track the NBA belt.',
+    description: 'The lineal championship belt - every game is a title defense. Track the NBA belt from 1976 to present.',
+    url: 'https://whohasthebelt.com/nba',
+    siteName: 'Championship Belt Tracker',
+    images: [{
+      url: 'https://whohasthebelt.com/og-image.png',
+      width: 1200,
+      height: 630,
+      alt: 'NBA Championship Belt Tracker - Lineal Title History'
+    }]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NBA Championship Belt Tracker',
+    description: 'Track the NBA lineal championship belt from 1976 to present. Every game is a title defense.',
+    images: ['https://whohasthebelt.com/og-image.png']
   },
 }
 
