@@ -148,18 +148,28 @@ def main():
             with open(output_file, 'r') as f:
                 existing_data = json.load(f)
 
-            existing_games = len(existing_data.get('games', []))
-            new_games = len(games)
+            existing_games = existing_data.get('games', [])
+            new_games_count = len(games)
+            existing_games_count = len(existing_games)
 
-            if existing_games == new_games:
-                print(f"\nNo changes detected ({existing_games} games)")
+            # Compare actual game data to detect score updates
+            # Convert to JSON strings for comparison (excluding metadata)
+            existing_json = json.dumps(existing_games, sort_keys=True)
+            new_json = json.dumps(games, sort_keys=True)
+
+            if existing_json == new_json:
+                print(f"\nNo changes detected ({existing_games_count} games)")
                 print("Data is already up to date")
                 return 0
             else:
+                # Count score changes
+                existing_completed = sum(1 for g in existing_games if g.get('homeScore') is not None)
+                new_completed = sum(1 for g in games if g.get('homeScore') is not None)
+
                 print(f"\nChanges detected:")
-                print(f"  Existing: {existing_games} games")
-                print(f"  New:      {new_games} games")
-                print(f"  Delta:    {new_games - existing_games:+d} games")
+                print(f"  Total games:      {existing_games_count} -> {new_games_count} ({new_games_count - existing_games_count:+d})")
+                print(f"  Completed games:  {existing_completed} -> {new_completed} ({new_completed - existing_completed:+d})")
+                print(f"  Scheduled games:  {existing_games_count - existing_completed} -> {new_games_count - new_completed}")
 
         # Save the data
         save_season_data('nhl', season, games)
