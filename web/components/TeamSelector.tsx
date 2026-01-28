@@ -1,11 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import type { FranchiseInfo } from '@/lib/types'
+import type { FranchiseInfo, League } from '@/lib/types'
 import TeamLogo from './TeamLogo'
 
 interface TeamSelectorProps {
-  league: 'nba' | 'wnba' | 'nhl'
+  league: League
   teams: string[]
   franchises: FranchiseInfo[]
   selectedTeam: string | null

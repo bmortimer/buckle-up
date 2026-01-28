@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import type { FranchiseInfo, Game } from '@/lib/types'
+import type { FranchiseInfo, Game, League } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
 import { getTeamDisplayName } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
@@ -30,7 +30,7 @@ interface CalendarDayPopupProps {
   position: PopupPosition | null
   franchises: FranchiseInfo[]
   selectedTeam?: string | null
-  league: 'nba' | 'wnba' | 'nhl'
+  league: League
   onClose: () => void
 }
 

@@ -1,12 +1,12 @@
 'use client'
 
 import { useMemo } from 'react'
-import type { BeltHistory, FranchiseInfo } from '@/lib/types'
+import type { BeltHistory, FranchiseInfo, League } from '@/lib/types'
 import { getTeamColor } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 
 interface Last5BeltChangesProps {
-  league: 'nba' | 'wnba' | 'nhl'
+  league: League
   history: BeltHistory
   franchises: FranchiseInfo[]
 }

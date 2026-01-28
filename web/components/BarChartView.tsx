@@ -1,4 +1,4 @@
-import type { TeamBeltStats, FranchiseInfo, Game } from '@/lib/types'
+import type { TeamBeltStats, FranchiseInfo, Game, League } from '@/lib/types'
 import { getTeamColor, getTeamDisplayName, getCurrentFranchiseAbbr } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 import { useState } from 'react'
@@ -8,7 +8,7 @@ interface BarChartViewProps {
   franchises: FranchiseInfo[]
   allGames: Game[]
   selectedTeam?: string | null
-  league: 'nba' | 'wnba' | 'nhl'
+  league: League
   isAllTime?: boolean
 }
 

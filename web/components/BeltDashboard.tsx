@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
-import type { SeasonData, FranchiseInfo } from '@/lib/types'
+import type { SeasonData, FranchiseInfo, League } from '@/lib/types'
 import { trackAllSeasons } from '@/lib/beltTracker'
 import { getCurrentFranchiseAbbr, getAllFranchiseAbbrs } from '@/lib/franchises'
 import { getSeasonConfig } from '@/lib/seasonConfig'
@@ -21,7 +21,7 @@ import BuyMeCoffee from './BuyMeCoffee'
 import Link from 'next/link'
 
 interface BeltDashboardProps {
-  league: 'nba' | 'wnba' | 'nhl' | 'nhl'
+  league: League
   seasons: Record<string, SeasonData>
   franchises: FranchiseInfo[]
   champions: Record<string, string>

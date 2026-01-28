@@ -4,12 +4,12 @@
 
 import { readFileSync } from 'fs'
 import { join } from 'path'
-import type { SeasonData, FranchiseInfo } from './types'
+import type { SeasonData, FranchiseInfo, League } from './types'
 import { parseFranchisesCSV } from './franchises'
 
 const DATA_DIR = join(process.cwd(), '..', 'data')
 
-export function loadSeasonData(league: 'nba' | 'wnba' | 'nhl' | 'nhl', season: string): SeasonData | null {
+export function loadSeasonData(league: League, season: string): SeasonData | null {
   try {
     const filePath = join(DATA_DIR, league, `${season}.json`)
     const content = readFileSync(filePath, 'utf-8')
@@ -23,7 +23,7 @@ export function loadSeasonData(league: 'nba' | 'wnba' | 'nhl' | 'nhl', season: s
   }
 }
 
-export function loadFranchises(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): FranchiseInfo[] {
+export function loadFranchises(league: League): FranchiseInfo[] {
   try {
     const filePath = join(DATA_DIR, league, 'franchises.csv')
     const content = readFileSync(filePath, 'utf-8')
@@ -37,7 +37,7 @@ export function loadFranchises(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): Franchis
   }
 }
 
-export function getAvailableSeasons(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): string[] {
+export function getAvailableSeasons(league: League): string[] {
   try {
     const { readdirSync } = require('fs')
     const leagueDir = join(DATA_DIR, league)
@@ -54,7 +54,7 @@ export function getAvailableSeasons(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): str
   }
 }
 
-export function getCurrentSeason(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): string {
+export function getCurrentSeason(league: League): string {
   const seasons = getAvailableSeasons(league)
   if (seasons[0]) return seasons[0]
   if (league === 'wnba') return '2024'
@@ -62,7 +62,7 @@ export function getCurrentSeason(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): string
   return '2024-25'
 }
 
-export function loadChampions(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): Record<string, string> {
+export function loadChampions(league: League): Record<string, string> {
   try {
     const filePath = join(DATA_DIR, league, 'champions.json')
     const content = readFileSync(filePath, 'utf-8')
@@ -76,7 +76,7 @@ export function loadChampions(league: 'nba' | 'wnba' | 'nhl' | 'nhl'): Record<st
   }
 }
 
-export function getDefendingChampion(league: 'nba' | 'wnba' | 'nhl' | 'nhl', season: string): string {
+export function getDefendingChampion(league: League, season: string): string {
   const champions = loadChampions(league)
   if (champions[season]) return champions[season]
   if (league === 'wnba') return 'LVA'

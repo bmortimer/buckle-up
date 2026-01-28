@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import type { BeltHistory, FranchiseInfo, Game } from '@/lib/types'
+import type { BeltHistory, FranchiseInfo, Game, League } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
 import { getTeamColor } from '@/lib/franchises'
 import { isSameFranchise } from '@/lib/franchises'

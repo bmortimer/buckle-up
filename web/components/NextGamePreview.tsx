@@ -1,13 +1,13 @@
 'use client'
 
 import { useMemo } from 'react'
-import type { Game, FranchiseInfo } from '@/lib/types'
+import type { Game, FranchiseInfo, League } from '@/lib/types'
 import { findNextTitleBout } from '@/lib/beltTracker'
 import { getTeamColor } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 
 interface NextGamePreviewProps {
-  league: 'nba' | 'wnba' | 'nhl'
+  league: League
   currentHolder: string
   games: Game[]
   franchises: FranchiseInfo[]

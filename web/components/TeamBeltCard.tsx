@@ -1,4 +1,4 @@
-import type { TeamBeltStats, FranchiseInfo } from '@/lib/types'
+import type { TeamBeltStats, FranchiseInfo, League } from '@/lib/types'
 import { getTeamColor, getTeamDisplayName } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 
@@ -9,7 +9,7 @@ interface TeamBeltCardProps {
   isCurrentHolder: boolean
   isSeasonChampion?: boolean
   year?: number
-  league: 'nba' | 'wnba' | 'nhl'
+  league: League
 }
 
 export default function TeamBeltCard({

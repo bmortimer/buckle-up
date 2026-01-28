@@ -1,11 +1,11 @@
-import type { FranchiseInfo } from '@/lib/types'
+import type { FranchiseInfo, League } from '@/lib/types'
 import { getTeamColor } from '@/lib/franchises'
 import Image from 'next/image'
 
 interface TeamLogoProps {
   teamCode: string
   franchises: FranchiseInfo[]
-  league?: 'nba' | 'wnba' | 'nhl'
+  league?: League
   size?: 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   className?: string
 }

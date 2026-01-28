@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import type { BeltHistory, FranchiseInfo, Game } from '@/lib/types'
+import type { BeltHistory, FranchiseInfo, Game, League } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
 import { getTeamColor, getTeamDisplayName } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import type { League } from '@/lib/types'
 
 interface SeasonPickerProps {
   minYear: number
@@ -9,13 +10,13 @@ interface SeasonPickerProps {
   onChange: (range: [number, number]) => void
   isAllTime: boolean
   onAllTimeChange: (isAllTime: boolean) => void
-  league: 'nba' | 'wnba' | 'nhl'
+  league: League
 }
 
 // Format year for display based on league
 // NBA/NHL: "2024-25" format (season spans two calendar years)
 // WNBA: "2024" format (single calendar year)
-function formatSeasonDisplay(year: number, league: 'nba' | 'wnba' | 'nhl'): string {
+function formatSeasonDisplay(year: number, league: League): string {
   if (league === 'wnba') {
     return year.toString()
   }
