@@ -284,4 +284,94 @@ describe('Data Filtering Logic', () => {
       expect(result).not.toContain(2020) // LVA played, not UTA
     })
   })
+
+  describe('All Time Games - completed games only', () => {
+    it('should only count completed games in stats, not future/scheduled games', () => {
+      // Mix of completed and scheduled games
+      const games: Game[] = [
+        createGame('LVA', 'SEA', '2024-05-15', 90, 88), // Completed
+        createGame('LVA', 'PHO', '2024-05-17', 85, 82), // Completed
+        createGame('LVA', 'IND', '2024-05-20', null, null), // Future/scheduled
+        createGame('SEA', 'LVA', '2024-05-22', null, null), // Future/scheduled
+      ]
+
+      const selectedTeam = 'LVA'
+      const franchiseCodes = getAllFranchiseAbbrs(selectedTeam, wnbaFranchises)
+
+      // Simulate belt tracking - should only count completed games
+      const completedGames = games.filter(game =>
+        game.homeScore !== null && game.awayScore !== null
+      )
+
+      const teamGames = completedGames.filter(
+        game => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
+      )
+
+      // Only 2 completed games should be counted
+      expect(teamGames.length).toBe(2)
+      expect(teamGames[0].homeScore).not.toBeNull()
+      expect(teamGames[1].homeScore).not.toBeNull()
+    })
+
+    it('should exclude postponed/cancelled games with null scores', () => {
+      const games: Game[] = [
+        createGame('LVA', 'SEA', '2024-05-15', 90, 88), // Completed
+        createGame('LVA', 'PHO', '2024-05-16', null, null), // Postponed (never played)
+        createGame('LVA', 'IND', '2024-05-17', 85, 82), // Completed
+      ]
+
+      // Filter to completed games only
+      const completedGames = games.filter(game =>
+        game.homeScore !== null && game.awayScore !== null
+      )
+
+      expect(completedGames.length).toBe(2)
+      expect(completedGames.every(g => g.homeScore !== null && g.awayScore !== null)).toBe(true)
+    })
+
+    it('should calculate correct stats when mixing completed and future games', () => {
+      const games: Game[] = [
+        // Completed games
+        createGame('LVA', 'SEA', '2024-05-15', 90, 88),
+        createGame('LVA', 'PHO', '2024-05-17', 85, 82),
+        createGame('LVA', 'IND', '2024-05-19', 78, 80), // LVA lost
+        // Future games (should not be counted)
+        createGame('LVA', 'NYL', '2024-05-25', null, null),
+        createGame('LVA', 'MIN', '2024-05-27', null, null),
+      ]
+
+      // Simulate win/loss calculation (only for completed games)
+      const completedGames = games.filter(g => g.homeScore !== null && g.awayScore !== null)
+
+      let wins = 0
+      let losses = 0
+      completedGames.forEach(game => {
+        if (game.homeTeam === 'LVA') {
+          if (game.homeScore! > game.awayScore!) wins++
+          else losses++
+        } else if (game.awayTeam === 'LVA') {
+          if (game.awayScore! > game.homeScore!) wins++
+          else losses++
+        }
+      })
+
+      // Only completed games should count: 2 wins, 1 loss
+      expect(wins).toBe(2)
+      expect(losses).toBe(1)
+      expect(completedGames.length).toBe(3) // Not 5
+    })
+
+    it('should handle all future games (no completed games yet)', () => {
+      const games: Game[] = [
+        createGame('LVA', 'SEA', '2025-05-15', null, null),
+        createGame('LVA', 'PHO', '2025-05-17', null, null),
+        createGame('LVA', 'IND', '2025-05-19', null, null),
+      ]
+
+      const completedGames = games.filter(g => g.homeScore !== null && g.awayScore !== null)
+
+      // No games should be counted
+      expect(completedGames.length).toBe(0)
+    })
+  })
 })

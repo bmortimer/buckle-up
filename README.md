@@ -1,6 +1,8 @@
 # Buckle Up - Championship Belt Tracker
 
-Track the lineal championship belt across NBA and WNBA seasons.
+Track the lineal championship belt across NBA, WNBA, and NHL seasons.
+
+Live at: **[buckle-up.vercel.app](https://buckle-up.vercel.app)**
 
 ## Concept
 
@@ -8,11 +10,38 @@ The lineal championship belt starts with the defending champion at the beginning
 
 ## Architecture
 
-**Hybrid Python + TypeScript:**
-- **Python scripts** - Data ingestion only (run once per season)
-- **TypeScript** - Belt tracking, visualization, and analysis
+**Next.js Web App + Python Data Ingestion:**
+- **Python scripts** - Data ingestion from sports APIs (scheduled via GitHub Actions)
+- **Next.js (TypeScript)** - Static web app with client-side belt tracking and visualization
+- **Deployment** - Vercel (auto-deploys on data updates)
+
+## Project Structure
+
+```
+buckle-up/
+├── web/                    # Next.js web application
+│   ├── app/               # Next.js app router pages
+│   ├── components/        # React components
+│   ├── lib/               # Belt tracking logic, types, utilities
+│   └── public/            # Static assets (logos, favicons)
+├── data/                  # Game data (JSON files)
+│   ├── nba/              # NBA seasons (2012-13 to present)
+│   ├── wnba/             # WNBA seasons (1997 to present)
+│   └── nhl/              # NHL seasons (1969-70 to present)
+├── scripts/              # Python data ingestion scripts
+└── docs/                 # Documentation
+```
 
 ## Setup
+
+### Web App Development
+```bash
+cd web
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
 
 ### Python (for data ingestion)
 ```bash
@@ -21,33 +50,22 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### TypeScript (for tracking and visualization)
+## Data Ingestion
+
+### Manual Update
 ```bash
-npm install
+# Fetch current NBA season
+python scripts/ingest_nba.py
+
+# Fetch current WNBA season
+python scripts/ingest_wnba.py
+
+# Fetch current NHL season
+python scripts/ingest_nhl.py
 ```
 
-## Usage
-
-### 1. Ingest season data
-```bash
-# Fetch 2012-13 NBA season
-python scripts/ingest_nba.py --season 2012-13
-
-# Fetch 2024 WNBA season
-python scripts/ingest_wnba.py --season 2024
-```
-
-### 2. Track the belt
-```bash
-# Track belt for a season
-npm run track -- --league nba --season 2012-13 --champion MIA
-```
-
-### 3. Visualize
-```bash
-# Generate visualizations
-npm run track -- --league nba --season 2012-13 --champion MIA --visualize
-```
+### Automated Updates
+Data is automatically updated nightly at 05:00 ET via GitHub Actions. See `.github/workflows/update-data.yml`.
 
 ## Data Format
 
@@ -55,23 +73,52 @@ Season data is stored as JSON in `data/{league}/{season}.json`:
 
 ```json
 {
-  "season": "2012-13",
+  "season": "2024-25",
   "league": "NBA",
   "games": [
     {
-      "date": "2012-10-30",
+      "date": "2024-10-30",
       "homeTeam": "BOS",
       "awayTeam": "MIA",
       "homeScore": 107,
-      "awayScore": 120
+      "awayScore": 120,
+      "isPlayoffs": false
     }
   ]
 }
 ```
 
+Team franchise data (for handling relocations/rebranding) is in `data/{league}/franchises.csv`.
+
 ## Development
 
-- Old code archived in `old_code/`
-- Python virtual environment: `.venv/`
-- TypeScript source: `src/`
-- Ingested data: `data/`
+### Running Tests
+```bash
+cd web
+npm test              # Run tests in watch mode
+npm run test:run      # Run tests once
+```
+
+The project has 86 tests covering:
+- Belt tracking logic (ties, streaks, franchise lineage)
+- Data filtering (All Time mode, year ranges, team selection)
+- Franchise handling (relocations, historical teams)
+- League health checks (data validation)
+
+### Tech Stack
+- **Frontend**: Next.js 15, React, TypeScript, Tailwind CSS
+- **Data Viz**: Recharts, D3
+- **Testing**: Vitest
+- **Deployment**: Vercel (static export)
+- **CI/CD**: GitHub Actions
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Add tests for any new functionality
+4. Submit a pull request
+
+## License
+
+MIT

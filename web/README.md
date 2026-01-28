@@ -1,18 +1,25 @@
 # Championship Belt Tracker - Web App
 
-Auto-updating web dashboard for tracking lineal championship belts across NBA and WNBA seasons.
+Auto-updating web dashboard for tracking lineal championship belts across NBA, WNBA, and NHL seasons.
 
 ## Features
 
-- 🏀 **Both NBA and WNBA** support
-- 📊 **Real-time visualizations**
-  - Current belt holder card
-  - Bar chart (games held by team)
-  - Belt changes timeline
-  - Calendar heatmap (coming soon)
-- 🌙 **Nightly auto-updates** via GitHub Actions
-- ⚡ **Static site** - fast, free hosting on Vercel
-- 🎨 **Team colors** from franchise data
+- 🏀 🏒 **NBA, WNBA, and NHL** support
+- 📊 **Interactive visualizations**
+  - Current belt holder card with live stats
+  - Next game preview (for current seasons)
+  - Bar chart (games/wins/streaks by team)
+  - Last 5 belt changes timeline
+  - Detailed calendar view (monthly breakdown)
+  - Team-specific belt calendars
+- 🎯 **Powerful filtering**
+  - All Time view or single season
+  - Team selection with franchise lineage support
+  - Year range slider
+- 🌙 **Nightly auto-updates** via GitHub Actions (05:00 ET)
+- ⚡ **Static site** - blazing fast, free hosting on Vercel
+- 🎨 **Official team colors and logos**
+- 🌓 **Dark/light mode** with retro LED scoreboard aesthetic
 
 ## Development
 
@@ -34,24 +41,15 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Deployment to Vercel
 
-### One-Click Deploy
+See [DEPLOY.md](../DEPLOY.md) in the root directory for full deployment instructions.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/buckle-up)
+**Quick summary:**
+- Framework: Next.js (static export)
+- Root Directory: `./` (project root, not `web`)
+- Build Command: `cd web && npm run build`
+- Output Directory: `web/out`
 
-### Manual Deploy
-
-1. Push code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Click "New Project"
-4. Import your GitHub repository
-5. Configure:
-   - **Framework Preset:** Next.js
-   - **Root Directory:** `web`
-   - **Build Command:** `npm run build`
-   - **Output Directory:** (leave default)
-6. Deploy!
-
-The site will auto-deploy on every commit to `main`.
+The site auto-deploys on every commit to `main`.
 
 ## How It Works
 
@@ -75,20 +73,49 @@ The site will auto-deploy on every commit to `main`.
 ```
 web/
 ├── app/
-│   ├── layout.tsx        # Root layout
-│   └── page.tsx          # Landing page
+│   ├── layout.tsx           # Root layout with metadata
+│   ├── page.tsx             # Landing page (league selector)
+│   ├── about/               # About page
+│   ├── nba/                 # NBA belt tracker
+│   ├── wnba/                # WNBA belt tracker
+│   └── nhl/                 # NHL belt tracker
 ├── components/
-│   ├── BeltHolderCard.tsx
-│   ├── BarChartView.tsx
-│   ├── Timeline.tsx
-│   └── CalendarHeatmap.tsx
+│   ├── BeltDashboard.tsx    # Main dashboard orchestrator
+│   ├── BeltHolderCard.tsx   # Current belt holder display
+│   ├── TeamBeltCard.tsx     # Team-specific view
+│   ├── BarChartView.tsx     # Games/wins/streaks chart
+│   ├── Last5BeltChanges.tsx # Recent belt changes
+│   ├── DetailedCalendar.tsx # Monthly calendar view
+│   ├── BeltCalendar.tsx     # Team-specific calendar
+│   ├── NextGamePreview.tsx  # Upcoming game info
+│   ├── TeamLogo.tsx         # Logo component
+│   └── ThemeSwitcher.tsx    # Dark/light mode toggle
 ├── lib/
-│   ├── types.ts          # TypeScript types
-│   ├── beltTracker.ts    # Belt tracking logic
-│   ├── dataLoader.ts     # Load JSON files
-│   └── franchises.ts     # Team colors & relocations
+│   ├── types.ts             # TypeScript types
+│   ├── beltTracker.ts       # Belt tracking algorithm
+│   ├── dataLoader.ts        # Load season JSON files
+│   ├── franchises.ts        # Team colors & lineage
+│   ├── seasonConfig.ts      # Season-specific configs
+│   └── __tests__/           # Vitest test suite (86 tests)
+├── public/
+│   ├── logos/               # Team logos (NBA/WNBA/NHL)
+│   └── *.png                # Favicons
 └── package.json
 ```
+
+## Testing
+
+```bash
+npm test              # Run tests in watch mode
+npm run test:run      # Run all tests once
+```
+
+**Test Coverage:**
+- 86 tests across 4 test suites
+- Belt tracking (ties, streaks, franchise handling)
+- Data filtering (All Time mode, team selection)
+- Franchise lineage (relocations, rebranding)
+- League health checks
 
 ## Environment Variables
 

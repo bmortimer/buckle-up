@@ -1,7 +1,7 @@
 # Vercel Deployment Guide
 
 ## Overview
-This project is a Next.js static site (`output: 'export'`) that loads WNBA/NBA game data at build time from the `/data` directory. No environment variables or API keys are required.
+This project is a Next.js static site (`output: 'export'`) that loads NBA, WNBA, and NHL game data at build time from the `/data` directory. No environment variables or API keys are required.
 
 ## Quick Start
 
@@ -30,39 +30,53 @@ The app loads game data from the `/data` directory during build time. To update 
 
 1. Run data ingestion scripts locally:
    ```bash
+   # For NBA
+   python scripts/ingest_nba.py
+
    # For WNBA
    python scripts/ingest_wnba.py
 
-   # For NBA (if implemented)
-   python scripts/ingest_nba.py
+   # For NHL
+   python scripts/ingest_nhl.py
    ```
 
 2. Commit and push changes:
    ```bash
    git add data/
-   git commit -m "Update game data"
+   git commit -m "Update game data - YYYY-MM-DD"
    git push
    ```
 
 3. Vercel will automatically rebuild and deploy
+
+**Note:** Data updates happen automatically via GitHub Actions nightly at 05:00 ET (see `.github/workflows/update-data.yml`)
 
 ## Project Structure
 
 ```
 buckle-up/
 ├── data/                    # Game data (loaded at build time)
-│   ├── wnba/
-│   │   ├── 1997.json
-│   │   ├── 2024.json
+│   ├── nba/
+│   │   ├── 2012-13.json ... 2024-25.json
 │   │   └── franchises.csv
-│   └── nba/
-│       └── 2012-13.json
+│   ├── wnba/
+│   │   ├── 1997.json ... 2026.json
+│   │   └── franchises.csv
+│   └── nhl/
+│       ├── 1969-70.json ... 2024-25.json
+│       └── franchises.csv
 ├── web/                     # Next.js app
 │   ├── app/
+│   │   ├── nba/
+│   │   ├── wnba/
+│   │   └── nhl/
 │   ├── components/
 │   ├── lib/
 │   └── package.json
-├── scripts/                 # Data ingestion scripts
+├── scripts/                 # Python data ingestion scripts
+│   ├── ingest_nba.py
+│   ├── ingest_wnba.py
+│   └── ingest_nhl.py
 └── vercel.json             # Vercel configuration
 ```
 

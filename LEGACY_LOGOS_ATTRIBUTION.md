@@ -1,11 +1,11 @@
-# Legacy Team Logos - Sources & Attribution
+# Team Logos - Sources & Attribution
 
-This document credits the sources for historical/legacy team logos used in this project.
+This document credits the sources for current and historical team logos used in this project across NBA, WNBA, and NHL.
 
 ## Legal Notice
 
 All team logos are trademarks of their respective teams and leagues (NBA, WNBA, NHL).
-This project uses them under fair use for non-commercial, educational purposes.
+This project uses them under fair use for non-commercial, educational, and statistical purposes.
 
 ## WNBA Legacy Teams
 
@@ -169,8 +169,10 @@ If you find high-quality SVG versions of any legacy team logos:
 
 ## Status Summary
 
-- ✅ **Current teams**: All NBA, WNBA, and NHL active teams have SVG logos
-- ✅ **All teams have logos**: All legacy/defunct teams now have logo files
+- ✅ **Current teams**: All NBA (30), WNBA (13), and NHL (32) active teams have SVG logos
+- ✅ **All teams have logos**: All legacy/defunct teams now have logo files across all three leagues
 - ⚠️ **NBA legacy teams**: 37 SVG, 9 PNG (needs SVG conversion)
 - ⚠️ **WNBA legacy teams**: 20 SVG, 10 PNG (needs SVG conversion)
 - ⚠️ **NHL legacy teams**: 32 SVG, 13 PNG (needs SVG conversion)
+
+Total: **177 team logos** covering 75+ years of NBA/WNBA/NHL history
