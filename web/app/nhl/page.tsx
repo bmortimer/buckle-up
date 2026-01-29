@@ -4,7 +4,7 @@ import type { SeasonData, FranchiseInfo } from '@/lib/types'
 import NhlClient from './NhlClient'
 
 export const metadata: Metadata = {
-  title: 'NHL Belt Tracker',
+  title: 'NHL Championship Belt Tracker | Lineal Title Since 1942',
   description: 'Track the NHL lineal championship belt from 1942 to present. See who holds the belt, upcoming title bouts, and complete history.',
   alternates: {
     canonical: 'https://whohasthebelt.com/nhl'

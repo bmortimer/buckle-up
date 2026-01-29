@@ -5,7 +5,7 @@ import type { SeasonData } from '@/lib/types'
 import BeltDashboard from '@/components/BeltDashboard'
 
 export const metadata: Metadata = {
-  title: 'WNBA Belt Tracker',
+  title: 'WNBA Championship Belt Tracker | Lineal Title Since 1997',
   description: 'Track the WNBA lineal championship belt from 1997 to present. See who holds the belt, upcoming title bouts, and complete history.',
   alternates: {
     canonical: 'https://whohasthebelt.com/wnba'

@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'About | WNBA Belt Tracker',
-  description: 'Learn how the WNBA lineal championship belt works. Inspired by Grantland\'s NBA belt tracker, we follow who would hold the title if championships worked like boxing.',
+  title: 'About | Championship Belt Tracker',
+  description: 'Learn how the lineal championship belt works for WNBA, NBA, and NHL. Track boxing-style titles across basketball and hockey leagues.',
   alternates: {
     canonical: 'https://whohasthebelt.com/about'
   },
   openGraph: {
-    title: 'About the WNBA Belt Tracker',
+    title: 'About the Championship Belt Tracker',
     description: 'The lineal championship belt works like a boxing title. The defending champion starts each season with the belt. Lose a game? Lose the belt.',
   },
 }
