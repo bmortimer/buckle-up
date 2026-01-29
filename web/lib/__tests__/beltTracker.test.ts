@@ -478,8 +478,15 @@ describe('trackAllSeasons', () => {
     const history = trackAllSeasons(seasonsData, wnbaFranchises, champions)
 
     expect(history.season).toBe('All-Time')
-    expect(history.changes).toHaveLength(1) // Only 1 change in season1
+    // Changes: season1 start + 1 belt loss in season1 + season2 start = 3
+    expect(history.changes).toHaveLength(3)
     expect(history.summary.currentHolder).toBe('CON')
+
+    // Verify season start markers are present
+    const seasonStarts = history.changes.filter(c => c.reason === 'start')
+    expect(seasonStarts).toHaveLength(2)
+    expect(seasonStarts[0].toTeam).toBe('NYL') // 2023 champion
+    expect(seasonStarts[1].toTeam).toBe('CON') // 2024 champion
   })
 
   it('should merge stats across seasons', () => {

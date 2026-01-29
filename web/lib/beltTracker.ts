@@ -278,6 +278,30 @@ export function trackAllSeasons(
     const tracker = new BeltTracker(startingChampion)
     const seasonHistory = tracker.trackSeason(seasonData.games, franchises)
 
+    // Add a season start marker before this season's changes
+    // This helps the calendar know when the belt was reset to a new champion
+    // We set the date to be the first day of the month of the first game
+    // This ensures off-days before the season show the correct champion
+    if (seasonData.games.length > 0) {
+      const firstGame = seasonData.games[0]
+      // Extract year-month from first game date and set to 1st of that month
+      const [year, month] = firstGame.date.split('-')
+      const seasonStartDate = `${year}-${month}-01`
+
+      // Create a pseudo-game object for the season start marker
+      const seasonStartGame = {
+        ...firstGame,
+        date: seasonStartDate
+      }
+
+      allChanges.push({
+        game: seasonStartGame,
+        fromTeam: finalHolder || startingChampion, // Previous season's final holder
+        toTeam: startingChampion,
+        reason: 'start' as const,
+      })
+    }
+
     // Merge changes
     allChanges.push(...seasonHistory.changes)
 
@@ -296,7 +320,8 @@ export function trackAllSeasons(
       }
     }
 
-    // Track the final holder (from the last season processed)
+    // Update finalHolder to this season's ending belt holder
+    // This will be used as the "fromTeam" for the next season's start marker
     finalHolder = seasonHistory.summary.currentHolder
   }
 
