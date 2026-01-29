@@ -30,6 +30,26 @@ export const metadata: Metadata = {
   },
 }
 
+// Breadcrumb structured data for search engines
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://whohasthebelt.com'
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'NBA',
+      item: 'https://whohasthebelt.com/nba'
+    }
+  ]
+}
+
 export default function NbaPage() {
   const seasonsList = getAvailableSeasons('nba')
   const seasons: Record<string, SeasonData> = {}
@@ -42,13 +62,21 @@ export default function NbaPage() {
   const champions = loadChampions('nba')
 
   return (
-    <Suspense fallback={<div className="text-center py-20 text-gray-400">Loading...</div>}>
-      <BeltDashboard
-        league="nba"
-        seasons={seasons}
-        franchises={franchises}
-        champions={champions}
+    <>
+      {/* Breadcrumb JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-    </Suspense>
+
+      <Suspense fallback={<div className="text-center py-20 text-gray-400">Loading...</div>}>
+        <BeltDashboard
+          league="nba"
+          seasons={seasons}
+          franchises={franchises}
+          champions={champions}
+        />
+      </Suspense>
+    </>
   )
 }

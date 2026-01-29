@@ -14,6 +14,26 @@ export const metadata: Metadata = {
   },
 }
 
+// Breadcrumb structured data for search engines
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://whohasthebelt.com'
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'About',
+      item: 'https://whohasthebelt.com/about'
+    }
+  ]
+}
+
 // FAQ Schema for rich snippets
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -82,6 +102,10 @@ export default function AboutPage() {
   return (
     <>
       {/* JSON-LD structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
