@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import BackButton from '@/components/BackButton'
 
 export const metadata: Metadata = {
   title: 'About | Championship Belt Tracker',
@@ -89,12 +90,11 @@ export default function AboutPage() {
       <article className="max-w-3xl mx-auto">
         {/* Back link */}
         <nav className="mb-8">
-          <Link
-            href="/"
+          <BackButton
             className="text-xs font-mono uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors"
           >
             &larr; Back to Belt Tracker
-          </Link>
+          </BackButton>
         </nav>
 
         {/* Header - Scoreboard Style */}
@@ -365,9 +365,9 @@ export default function AboutPage() {
             Data updates nightly at 05:00 ET.
           </p>
           <div className="flex items-center justify-center gap-3 text-xs font-mono uppercase tracking-wider">
-            <Link href="/" className="text-primary hover:opacity-80 transition-colors">
+            <BackButton className="text-primary hover:opacity-80 transition-colors">
               &larr; Back to the Belt Tracker
-            </Link>
+            </BackButton>
             <span className="text-muted-foreground">•</span>
             <a href="https://forms.gle/LPBtZDxih1HQT53E9" target="_blank" rel="noopener noreferrer" className="text-amber-500 hover:text-amber-400 underline decoration-1 underline-offset-2 transition-colors">
               Feedback
