@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import type { FranchiseInfo, Game, League } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
 import { getTeamDisplayName } from '@/lib/franchises'
@@ -36,6 +36,8 @@ interface CalendarDayPopupProps {
 
 export default function CalendarDayPopup({ dayData, position, franchises, selectedTeam, league = 'wnba', onClose }: CalendarDayPopupProps) {
   const [isDesktop, setIsDesktop] = useState(false)
+  const modalRef = useRef<HTMLDivElement>(null)
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     const checkDesktop = () => setIsDesktop(window.innerWidth >= 640)
@@ -44,16 +46,57 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
     return () => window.removeEventListener('resize', checkDesktop)
   }, [])
 
+  // Focus trap and Escape key handler
+  useEffect(() => {
+    // Focus the close button when modal opens
+    closeButtonRef.current?.focus()
+
+    // Handle Escape key
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose()
+      }
+
+      // Focus trap
+      if (e.key === 'Tab') {
+        const modal = modalRef.current
+        if (!modal) return
+
+        const focusableElements = modal.querySelectorAll<HTMLElement>(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        )
+        const firstElement = focusableElements[0]
+        const lastElement = focusableElements[focusableElements.length - 1]
+
+        if (e.shiftKey && document.activeElement === firstElement) {
+          e.preventDefault()
+          lastElement?.focus()
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+          e.preventDefault()
+          firstElement?.focus()
+        }
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [onClose])
+
   return (
     <>
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/50 z-40"
         onClick={onClose}
+        aria-hidden="true"
       />
 
       {/* Modal - positioned near click on desktop, bottom sheet on mobile */}
       <div
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="popup-date"
         className={`fixed bg-card border-2 border-amber-500 p-4 shadow-[0_0_20px_rgba(251,191,36,0.3)] z-50 ${
           isDesktop && position ? 'w-72' : 'bottom-4 left-4 right-4'
         }`}
@@ -64,6 +107,7 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
       >
         {/* Close button */}
         <button
+          ref={closeButtonRef}
           onClick={onClose}
           className="absolute top-2 right-2 w-6 h-6 flex items-center justify-center text-muted-foreground hover:text-foreground active:text-amber-500 transition-colors"
           aria-label="Close"
@@ -72,7 +116,7 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
         </button>
 
         {/* Date */}
-        <div className="text-xs sm:text-sm font-mono text-muted-foreground mb-3 uppercase">
+        <div id="popup-date" className="text-xs sm:text-sm font-mono text-muted-foreground mb-3 uppercase">
           {new Date(dayData.date).toLocaleDateString('en-US', {
             weekday: 'short',
             month: 'short',
@@ -114,24 +158,24 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
               {(() => {
                 // Handle scheduled title bout (unplayed game where belt is on the line)
                 if (dayData.isScheduledTitleBout) {
-                  return <span>🏆 Upcoming Title Bout</span>
+                  return <span><span aria-hidden="true">🏆 </span>Upcoming Title Bout</span>
                 }
-                
+
                 if (selectedTeam) {
                   const heldBelt = dayData.holder === selectedTeam
                   const wonBelt = dayData.winner === selectedTeam && !heldBelt
                   const challengedBelt = dayData.challenger === selectedTeam && !heldBelt && !wonBelt
 
-                  if (wonBelt) return <span>⚡ Won The Belt</span>
+                  if (wonBelt) return <span><span aria-hidden="true">⚡ </span>Won The Belt</span>
                   if (challengedBelt) return <span>Failed Challenge</span>
-                  if (heldBelt && (dayData.holderWon || dayData.won)) return <span>🏆 Defended Belt</span>
-                  if (heldBelt && (dayData.holderWon === false || dayData.won === false)) return <span>⚡ Lost Belt</span>
+                  if (heldBelt && (dayData.holderWon || dayData.won)) return <span><span aria-hidden="true">🏆 </span>Defended Belt</span>
+                  if (heldBelt && (dayData.holderWon === false || dayData.won === false)) return <span><span aria-hidden="true">⚡ </span>Lost Belt</span>
                   return null
                 }
 
                 // Default mode
-                if (dayData.beltChanged) return <span>⚡ Belt Changed Hands</span>
-                if (dayData.holderWon) return <span>🏆 Defended Belt</span>
+                if (dayData.beltChanged) return <span><span aria-hidden="true">⚡ </span>Belt Changed Hands</span>
+                if (dayData.holderWon) return <span><span aria-hidden="true">🏆 </span>Defended Belt</span>
                 return <span>Belt Not On The Line</span>
               })()}
             </div>
@@ -139,7 +183,7 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
         ) : dayData.isUncertainFuture ? (
           /* Uncertain Future - after an unplayed title bout */
           <div className="text-center">
-            <div className="text-amber-500 text-2xl mb-2">🏆</div>
+            <div className="text-amber-500 text-2xl mb-2" aria-hidden="true">🏆</div>
             <div className="text-xs text-muted-foreground uppercase">Belt Holder Unknown</div>
             <div className="text-xs text-muted-foreground/60 mt-1">Waiting for title bout result</div>
           </div>

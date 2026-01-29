@@ -100,27 +100,27 @@ export default function AboutPage() {
         {/* Header - Scoreboard Style */}
         <header className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center mb-8 sm:mb-12 relative overflow-hidden">
           {/* Top LED strip */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" />
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" aria-hidden="true" />
 
           <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4">
-            ◆ About ◆
+            <span aria-hidden="true">◆ </span>About<span aria-hidden="true"> ◆</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display tracking-wide uppercase mb-4 sm:mb-6 led-text" style={{ color: 'hsl(var(--led-amber))' }}>
             The Belt
           </h1>
 
-          <div className="h-0.5 bg-gradient-to-r from-transparent via-border to-transparent mb-4 sm:mb-6" />
+          <div className="h-0.5 bg-gradient-to-r from-transparent via-border to-transparent mb-4 sm:mb-6" aria-hidden="true" />
 
           <p className="text-base sm:text-lg text-muted-foreground font-body leading-relaxed max-w-2xl mx-auto">
             What if our sports leagues worked a bit more like boxing or wrestling? One belt to rule them all. To become the champion, you have to <em className="text-foreground">beat</em> the champion.
           </p>
 
           {/* Corner rivets for retro hardware look */}
-          <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-          <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-          <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-          <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+          <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+          <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+          <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+          <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
         </header>
 
         {/* The Concept */}
@@ -163,7 +163,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div className="h-px bg-gradient-to-r from-border/50 via-border to-border/50" />
+              <div className="h-px bg-gradient-to-r from-border/50 via-border to-border/50" aria-hidden="true" />
               <div className="flex gap-4 items-start">
                 <div className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center" style={{ color: 'hsl(var(--led-amber))' }}>2</div>
                 <div>
@@ -173,7 +173,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div className="h-px bg-gradient-to-r from-border/50 via-border to-border/50" />
+              <div className="h-px bg-gradient-to-r from-border/50 via-border to-border/50" aria-hidden="true" />
               <div className="flex gap-4 items-start">
                 <div className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center" style={{ color: 'hsl(var(--led-red))' }}>3</div>
                 <div>
@@ -183,7 +183,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div className="h-px bg-gradient-to-r from-border/50 via-border to-border/50" />
+              <div className="h-px bg-gradient-to-r from-border/50 via-border to-border/50" aria-hidden="true" />
               <div className="flex gap-4 items-start">
                 <div className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center" style={{ color: 'hsl(var(--led-green))' }}>4</div>
                 <div>
@@ -360,7 +360,7 @@ export default function AboutPage() {
 
         {/* Footer */}
         <footer className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
-          <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent" aria-hidden="true" />
           <p className="text-xs text-muted-foreground font-mono tracking-wider uppercase mb-3">
             Data updates nightly at 05:00 ET.
           </p>
@@ -375,10 +375,10 @@ export default function AboutPage() {
           </div>
 
           {/* Corner rivets for retro hardware look */}
-          <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-          <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-          <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-          <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+          <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+          <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+          <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+          <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
         </footer>
       </article>
     </>

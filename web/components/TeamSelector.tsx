@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import type { FranchiseInfo, League } from '@/lib/types'
 import TeamLogo from './TeamLogo'
 
@@ -41,6 +41,46 @@ const NHL_WESTERN_CONFERENCE = [
 
 export default function TeamSelector({ league, teams, franchises, selectedTeam, onTeamChange, isAllTime = false }: TeamSelectorProps) {
   const [isOpen, setIsOpen] = useState(false)
+  const modalRef = useRef<HTMLDivElement>(null)
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
+
+  // Focus trap and Escape key handler
+  useEffect(() => {
+    if (!isOpen) return
+
+    // Focus the close button when modal opens
+    closeButtonRef.current?.focus()
+
+    // Handle Escape key
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsOpen(false)
+      }
+
+      // Focus trap
+      if (e.key === 'Tab') {
+        const modal = modalRef.current
+        if (!modal) return
+
+        const focusableElements = modal.querySelectorAll<HTMLElement>(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        )
+        const firstElement = focusableElements[0]
+        const lastElement = focusableElements[focusableElements.length - 1]
+
+        if (e.shiftKey && document.activeElement === firstElement) {
+          e.preventDefault()
+          lastElement?.focus()
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+          e.preventDefault()
+          firstElement?.focus()
+        }
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [isOpen])
 
   const easternConference = league === 'nba' 
     ? NBA_EASTERN_CONFERENCE 
@@ -138,10 +178,12 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
           <div
             className="fixed inset-0 bg-black/60 z-40 backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
+            aria-hidden="true"
           />
 
           {/* Modal */}
           <div
+            ref={modalRef}
             role="dialog"
             aria-modal="true"
             aria-labelledby="team-select-dialog-title"
@@ -155,6 +197,7 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                 </h3>
               </div>
               <button
+                ref={closeButtonRef}
                 onClick={() => setIsOpen(false)}
                 className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border-2 border-border bg-card text-muted-foreground hover:border-primary hover:text-primary active:scale-95 transition-all"
                 aria-label="Close"
@@ -189,7 +232,7 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Eastern Conference</span>
-                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" />
+                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" aria-hidden="true" />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                       {activeEast.map(team => {
@@ -226,7 +269,7 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Western Conference</span>
-                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" />
+                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" aria-hidden="true" />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                       {activeWest.map(team => {
@@ -263,7 +306,7 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Former Teams</span>
-                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" />
+                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" aria-hidden="true" />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                       {former.map(team => {
