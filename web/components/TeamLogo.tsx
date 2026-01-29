@@ -1,6 +1,7 @@
 import type { FranchiseInfo, League } from '@/lib/types'
 import { getTeamColor } from '@/lib/franchises'
 import Image from 'next/image'
+import { memo } from 'react'
 
 interface TeamLogoProps {
   teamCode: string
@@ -102,7 +103,7 @@ const NHL_PNG_WHITE_BG = new Set([
 // Note: TOR/TBL now use ESPN PNGs which handle this properly
 const NHL_SVG_COLORED_BG = new Set<string>([])
 
-export default function TeamLogo({ teamCode, franchises, league = 'wnba', size = 'md', className = '' }: TeamLogoProps) {
+const TeamLogo = memo(function TeamLogo({ teamCode, franchises, league = 'wnba', size = 'md', className = '' }: TeamLogoProps) {
   const color = getTeamColor(teamCode, franchises)
   const franchise = franchises.find(f => f.teamAbbr === teamCode)
   const displayName = franchise?.displayName || teamCode
@@ -172,4 +173,6 @@ export default function TeamLogo({ teamCode, franchises, league = 'wnba', size =
       </span>
     </div>
   )
-}
+})
+
+export default TeamLogo
