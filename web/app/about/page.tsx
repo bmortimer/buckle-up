@@ -39,7 +39,7 @@ const faqSchema = {
       name: 'How far back does the data go?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We track the belt from the WNBA\'s inaugural 1997 season to present day. The Houston Comets, as the first champions, started 1998 with the belt. Before that, for 1997, we gave the belt to the winner of the league\'s very first game (the New York Liberty).',
+        text: 'We track the belt from the WNBA\'s inaugural 1997 season to present day. For 1997 we gave the belt to the winner of the league\'s very first game (the New York Liberty). As the winner of the league\'s first championship, the Houston Comets started the 1998 season with the belt. For the NBA, we track the belt from the NBA-ABA merger in 1976 to present day. The belt starts with the Boston Celtics, who won the 1975-1976 NBA championship. For the NHL, we track the belt beginning with the beginning of the Original Six era, the 1942-1943 season. As the winner of the 1942 Stanley Cup Final, the Toronto Maple Leafs start with the belt.',
       },
     },
     {
@@ -47,7 +47,7 @@ const faqSchema = {
       name: 'Where does your data come from?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'NBA game data comes from the official NBA Stats website. WNBA data is sourced from Basketball-Reference.com. Current team logos are from the official NBA and WNBA websites. Historical team logos are from Wikimedia Commons, Loodibee.com, and SportsLogos.net. All sources are credited and used under fair use for non-commercial purposes.',
+        text: 'Game Data: NBA scores and schedules come from the official NBA Stats API. WNBA and NHL data come from Sports-Reference.com. Team Logos: Current team logos are from the official NBA, WNBA, and NHL websites. Historical team logos are from Wikimedia Commons, Loodibee.com, and SportsLogos.net. All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!',
       },
     },
     {
@@ -55,7 +55,15 @@ const faqSchema = {
       name: 'Why the WNBA? Will you bring this to other leagues?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Why not? The WNBA deserves the same obsessive treatment as every other league and it\'s a close cousin to the NBA. If the people demand it, we could bring The Belt to other leagues too but the WNBA felt like a natural place to start.',
+        text: 'Why not? We started with the WNBA because it deserves the same obsessive treatment as every other league and it\'s a close cousin to the NBA. We then expanded to the NBA since it was the genesis of the idea in the first place and then to the NHL because its schedule and game frequency felt like a natural fit. For now we intend to stick to just these three leagues but if the people demand it we could expand The Belt to further reaches of the sports universe.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What happens if there\'s a tie?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ties only apply to the NHL, where games can end in overtime or shootout ties (though shootout losses are recorded as regulation ties in some eras). We go by however the NHL decided to record wins vs. losses vs. ties for the era. For eras with ties, if the belt holder ties a game, they retain the belt—you have to actually beat the champion to take it. For stats tracking purposes we do include ties from belt bouts as ties, regardless of whether or not the team held the belt or was the challenger. If it sounds confusing, that\'s because it is. Blame Canada.',
       },
     },
     {
@@ -63,7 +71,7 @@ const faqSchema = {
       name: 'Where did this idea come from?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The lineal championship concept was popularized by Grantland, the late, great sports and pop culture website founded by Bill Simmons. They tracked an NBA lineal championship (https://grantland.com/the-triangle/introducing-the-nba-regular-season-championship-belt/) that made random regular season games feel important. When Grantland shut down in 2015, the belt tracker went with it. The original idea came from a Reddit thread (https://www.reddit.com/r/nba/comments/1pn9t2/can_we_keep_track_of_the_owner_of_the/).',
+        text: 'The lineal championship concept was conceived in a Reddit thread (https://www.reddit.com/r/nba/comments/1pn9t2/can_we_keep_track_of_the_owner_of_the/) and popularized by Grantland (https://grantland.com/the-triangle/introducing-the-nba-regular-season-championship-belt/), the late, great sports and pop culture website founded by Bill Simmons. When Grantland shut down in 2015, the belt tracker went with it. Occasionally someone pops up and calculates who owns the belt across various leagues but no one has done it consistently...until now.',
       },
     },
   ],
@@ -242,12 +250,14 @@ export default function AboutPage() {
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
-                  We track the belt from the WNBA's inaugural 1997 season to present day. The Houston Comets, as the first champions, started 1998 with the belt. Before that, for 1997, we gave the belt to the winner of the league's very first game (the New York Liberty).
+                  We track the belt from the WNBA's inaugural 1997 season to present day. For 1997 we gave the belt to the winner of the league's very first game (the New York Liberty). As the winner of the league's first championship, the Houston Comets started the 1998 season with the belt.
+                </p>
+                <p className="mb-3">
+                  For the NBA, we track the belt from the NBA-ABA merger in 1976 to present day. The belt starts with the Boston Celtics, who won the 1975-1976 NBA championship.
                 </p>
                 <p>
-                  For the NBA, we track the belt from the NBA-ABA merger in 1976 to present day.  The belt starts with the Boston Celtics, who won the 1975-1976 NBA championship.
+                  For the NHL, we track the belt beginning with the beginning of the Original Six era, the 1942-1943 season. As the winner of the 1942 Stanley Cup Final, the Toronto Maple Leafs start with the belt.
                 </p>
-                
               </div>
 
               
@@ -266,10 +276,10 @@ export default function AboutPage() {
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
-                  <strong>Game Data:</strong> NBA scores and schedules come from the official <a href="https://www.nba.com/stats" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">NBA Stats website</a>. WNBA data comes from <a href="https://www.basketball-reference.com/wnba/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Basketball-Reference.com</a>.
+                  <strong>Game Data:</strong> NBA scores and schedules come from the official <a href="https://www.nba.com/stats" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">NBA Stats API</a>. WNBA and NHL data come from <a href="https://www.sports-reference.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Sports-Reference.com</a>.
                 </p>
                 <p className="mb-3">
-                  <strong>Team Logos:</strong> Current team logos are from the official <a href="https://www.nba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">NBA</a> and <a href="https://www.wnba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">WNBA</a> websites. Historical team logos (like the Seattle SuperSonics and Vancouver Grizzlies) are from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Wikimedia Commons</a>, <a href="https://loodibee.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Loodibee.com</a>, and <a href="https://www.sportslogos.net/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">SportsLogos.net</a>.
+                  <strong>Team Logos:</strong> Current team logos are from the official <a href="https://www.nba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">NBA</a>, <a href="https://www.wnba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">WNBA</a>, and <a href="https://www.nhl.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">NHL</a> websites. Historical team logos are from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Wikimedia Commons</a>, <a href="https://loodibee.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Loodibee.com</a>, and <a href="https://www.sportslogos.net/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">SportsLogos.net</a>.
                 </p>
                 <p>
                   All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!
@@ -290,10 +300,31 @@ export default function AboutPage() {
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
-                  Why not? We started with the WNBA because it deserves the same obsessive treatment as every other league and it's a close cousin to the NBA.  We then expanded to the NBA since it was the genesis of the idea in the first place.
+                  Why not? We started with the WNBA because it deserves the same obsessive treatment as every other league and it's a close cousin to the NBA. We then expanded to the NBA since it was the genesis of the idea in the first place and then to the NHL because its schedule and game frequency felt like a natural fit.
                 </p>
                 <p>
-                  If the people demand it, we could bring The Belt to other leagues too but the WNBA and NBA felt like the natural place to start.
+                  For now we intend to stick to just these three leagues but if the people demand it we could expand The Belt to further reaches of the sports universe.
+                </p>
+              </div>
+
+              {/* Corner rivets for retro hardware look */}
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            </details>
+
+            <details className="group scoreboard-panel relative overflow-hidden">
+              <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
+                What happens if there's a tie?
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-sm">&#9662;</span>
+              </summary>
+              <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
+                <p className="mb-3">
+                  Ties only apply to the NHL, where games can end in overtime or shootout ties (though shootout losses are recorded as regulation ties in some eras). We go by however the NHL decided to record wins vs. losses vs. ties for the era. For eras with ties, if the belt holder ties a game, they retain the belt—you have to actually beat the champion to take it.  For stats tracking purposes we do include ties from belt bouts as ties, regardless of whether or not the team held the belt or was the challenger.
+                </p>
+                <p>
+                  If it sounds confusing, that's because it is. Blame Canada.
                 </p>
               </div>
 

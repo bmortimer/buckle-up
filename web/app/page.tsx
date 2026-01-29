@@ -87,7 +87,7 @@ export default function Home() {
           <span aria-hidden="true"> ◆</span>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {/* WNBA Card */}
           <Link
             href="/wnba"
@@ -108,11 +108,11 @@ export default function Home() {
               <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
               <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                Track the lineal championship from 1997 to present. See who holds the belt, upcoming title bouts, and complete history.
+                Track the lineal championship from 1997 to present. See who holds the belt, upcoming title bouts, and a complete history of the WNBA.
               </p>
 
               <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-amber-500 transition-colors">
-                <span>Enter Arena</span>
+                <span>Enter</span>
                 <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
               </div>
             </div>
@@ -144,11 +144,47 @@ export default function Home() {
               <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
               <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                Track the lineal championship from 1976 to present. See who holds the belt, upcoming title bouts, and complete history.
+                Track the lineal championship from 1976 to present. See who holds the belt, upcoming title bouts, and a complete history of the NBA.
               </p>
 
               <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-red-500 transition-colors">
-                <span>Enter Arena</span>
+                <span>Enter</span>
+                <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+              </div>
+            </div>
+
+            {/* Corner rivets */}
+            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+          </Link>
+
+          {/* NHL Card */}
+          <Link
+            href="/nhl"
+            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+          >
+            {/* Top LED strip - green for NHL */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+            <div className="text-center space-y-4">
+              <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
+                Ice Hockey
+              </div>
+
+              <h3 className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text" style={{ color: 'hsl(var(--led-green))' }}>
+                NHL
+              </h3>
+
+              <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+              <p className="text-sm text-muted-foreground font-body leading-relaxed">
+                Track the lineal championship from 1942 to present. See who holds the belt, upcoming title bouts, and a complete history of the NHL.
+              </p>
+
+              <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-green-500 transition-colors">
+                <span>Enter</span>
                 <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
               </div>
             </div>

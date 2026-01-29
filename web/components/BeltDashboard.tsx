@@ -304,6 +304,16 @@ export default function BeltDashboard({
           >
             NBA
           </Link>
+          <Link
+            href="/nhl"
+            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-all ${
+              league === 'nhl'
+                ? 'text-amber-500 border-amber-500 bg-amber-500/10'
+                : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
+            }`}
+          >
+            NHL
+          </Link>
         </div>
 
         {/* About & Theme - Right */}
