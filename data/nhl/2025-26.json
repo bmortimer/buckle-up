@@ -5872,22 +5872,22 @@
       "date": "2026-01-28",
       "homeTeam": "CBJ",
       "awayTeam": "PHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 3
     },
     {
       "date": "2026-01-28",
       "homeTeam": "NYI",
       "awayTeam": "NYR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 2
     },
     {
       "date": "2026-01-28",
       "homeTeam": "OTT",
       "awayTeam": "COL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 2
     },
     {
       "date": "2026-01-29",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-01-28T05:54:17.188118"
+    "ingested_at": "2026-01-29T10:46:58.772073"
   }
 }
