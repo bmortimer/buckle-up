@@ -64,13 +64,21 @@ jobs:
         if: steps.should-run.outputs.run == 'true'
         run: |
           # Run the update script (auto-detects current season and updates sitemap if changed)
-          python scripts/update_wnba.py || echo "WNBA update failed or season not started"
+          # Note: Script exits with 0 on success or no changes, 1 on error
+          if ! python scripts/update_wnba.py; then
+            echo "⚠️  WNBA update failed - please check logs"
+            exit 1
+          fi
 
       - name: Update NBA data
         if: steps.should-run.outputs.run == 'true'
         run: |
           # Run the update script (auto-detects current season and updates sitemap if changed)
-          python scripts/update_nba.py || echo "NBA update failed or season not started"
+          # Note: Script exits with 0 on success or no changes, 1 on error
+          if ! python scripts/update_nba.py; then
+            echo "⚠️  NBA update failed - please check logs"
+            exit 1
+          fi
 
       - name: Update NHL data
         if: steps.should-run.outputs.run == 'true'
@@ -81,7 +89,11 @@ jobs:
           sleep 10
 
           # Run the update script (auto-detects current season and updates sitemap if changed)
-          python scripts/update_nhl.py || echo "NHL update failed or season not started"
+          # Note: Script exits with 0 on success or no changes, 1 on error
+          if ! python scripts/update_nhl.py; then
+            echo "⚠️  NHL update failed - please check logs"
+            exit 1
+          fi
 
       - name: Check for changes
         if: steps.should-run.outputs.run == 'true'
