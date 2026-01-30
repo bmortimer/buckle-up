@@ -45,7 +45,7 @@ export default function Home() {
       {/* Header - Scoreboard Style */}
       <header className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center mb-8 sm:mb-12 relative overflow-hidden">
         {/* Top LED strip */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" />
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" aria-hidden="true" />
 
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4">
           ◆ Championship Belt Tracker ◆
@@ -73,14 +73,14 @@ export default function Home() {
         </Link>
 
         {/* Corner rivets for retro hardware look */}
-        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
       </header>
 
       {/* League Selection */}
-      <section className="mb-8 sm:mb-12">
+      <nav className="mb-8 sm:mb-12" aria-label="League selection">
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center">
           <span aria-hidden="true">◆ </span>
           <h2 className="inline font-normal">Select League</h2>
@@ -118,10 +118,10 @@ export default function Home() {
             </div>
 
             {/* Corner rivets */}
-            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
           </Link>
 
           {/* NBA Card */}
@@ -154,10 +154,10 @@ export default function Home() {
             </div>
 
             {/* Corner rivets */}
-            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
           </Link>
 
           {/* NHL Card */}
@@ -190,13 +190,13 @@ export default function Home() {
             </div>
 
             {/* Corner rivets */}
-            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
           </Link>
         </div>
-      </section>
+      </nav>
 
       {/* Footer */}
       <footer className="scoreboard-panel p-4 sm:p-6 text-center relative overflow-hidden">
@@ -207,10 +207,10 @@ export default function Home() {
         </p>
 
         {/* Corner rivets */}
-        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
       </footer>
     </article>
   )

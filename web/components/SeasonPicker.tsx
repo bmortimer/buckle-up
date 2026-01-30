@@ -38,6 +38,14 @@ export default function SeasonPicker({
   const currentYear = isAllTime ? null : value[0]
   const modalRef = useRef<HTMLDivElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const triggerButtonRef = useRef<HTMLButtonElement>(null)
+
+  // Return focus to trigger button when modal closes
+  useEffect(() => {
+    if (!isOpen) {
+      triggerButtonRef.current?.focus()
+    }
+  }, [isOpen])
 
   // Focus trap and Escape key handler
   useEffect(() => {
@@ -135,6 +143,7 @@ export default function SeasonPicker({
 
       {/* Clickable Year Display */}
       <button
+        ref={triggerButtonRef}
         onClick={() => setIsOpen(true)}
         aria-labelledby="time-period-label"
         aria-haspopup="dialog"

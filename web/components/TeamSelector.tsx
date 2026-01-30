@@ -43,6 +43,14 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
   const [isOpen, setIsOpen] = useState(false)
   const modalRef = useRef<HTMLDivElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const triggerButtonRef = useRef<HTMLButtonElement>(null)
+
+  // Return focus to trigger button when modal closes
+  useEffect(() => {
+    if (!isOpen) {
+      triggerButtonRef.current?.focus()
+    }
+  }, [isOpen])
 
   // Focus trap and Escape key handler
   useEffect(() => {
@@ -155,6 +163,7 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
 
       {/* Clickable Team Display */}
       <button
+        ref={triggerButtonRef}
         onClick={() => setIsOpen(true)}
         aria-labelledby="team-filter-label"
         aria-haspopup="dialog"

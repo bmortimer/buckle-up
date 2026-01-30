@@ -162,10 +162,10 @@ export default function AboutPage() {
             </div>
 
             {/* Corner rivets for retro hardware look */}
-            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
           </div>
         </section>
 
@@ -220,10 +220,10 @@ export default function AboutPage() {
             </div>
 
             {/* Corner rivets for retro hardware look */}
-            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
           </div>
         </section>
 
@@ -245,10 +245,10 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -261,10 +261,10 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -287,10 +287,10 @@ export default function AboutPage() {
               
 
               {/* Corner rivets for retro hardware look */}
-              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -311,10 +311,10 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -332,10 +332,10 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -353,10 +353,10 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -374,10 +374,10 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
             </details>
           </div>
         </section>

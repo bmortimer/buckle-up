@@ -64,7 +64,7 @@ export default function NextGamePreview({
         data-card="next-game"
         className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden h-full flex flex-col"
       >
-        <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
+        <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" aria-hidden="true" />
         <div className="relative z-10 flex flex-col flex-1 justify-between">
           <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center">
             <span aria-hidden="true">◆ </span>
@@ -110,10 +110,10 @@ export default function NextGamePreview({
         </div>
 
         {/* Corner rivets for retro hardware look */}
-        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
       </div>
     )
   }
@@ -231,10 +231,10 @@ export default function NextGamePreview({
       </div>
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
     </div>
   )
 }

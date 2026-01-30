@@ -3,8 +3,7 @@
 import { useMemo, useState } from 'react'
 import type { BeltHistory, FranchiseInfo, Game, League } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
-import { getTeamColor } from '@/lib/franchises'
-import { isSameFranchise } from '@/lib/franchises'
+import { getTeamColor, getTeamDisplayName, isSameFranchise } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 import CalendarDayPopup from './CalendarDayPopup'
 
@@ -37,6 +36,44 @@ interface DayData {
 export default function DetailedCalendar({ history, franchises, allGames, year, league = 'wnba' }: DetailedCalendarProps) {
   const [selectedDay, setSelectedDay] = useState<DayData | null>(null)
   const [popupPosition, setPopupPosition] = useState<PopupPosition | null>(null)
+  const [announcement, setAnnouncement] = useState('')
+
+  // Helper to build accessible description for a day
+  const buildDayDescription = (dayData: DayData, monthName: string, dayNum: number): string => {
+    const dateStr = `${monthName} ${dayNum}`
+    const holderName = getTeamDisplayName(dayData.holder, franchises)
+    
+    if (dayData.isUncertainFuture) {
+      return `${dateStr}. Belt holder unknown, waiting for title bout result.`
+    }
+    
+    if (dayData.isScheduledTitleBout) {
+      const challengerName = dayData.challenger ? getTeamDisplayName(dayData.challenger, franchises) : 'opponent'
+      return `${dateStr}. Upcoming title bout: ${holderName} vs ${challengerName}.`
+    }
+    
+    if (dayData.game) {
+      const game = dayData.game
+      const homeTeam = getTeamDisplayName(game.homeTeam, franchises)
+      const awayTeam = getTeamDisplayName(game.awayTeam, franchises)
+      
+      if (dayData.isTie) {
+        return `${dateStr}. ${awayTeam} at ${homeTeam}, tied ${game.homeScore}-${game.awayScore}. ${holderName} retains belt.`
+      }
+      
+      const winnerName = dayData.winner ? getTeamDisplayName(dayData.winner, franchises) : holderName
+      const score = `${game.awayScore}-${game.homeScore}`
+      
+      if (dayData.beltChanged) {
+        return `${dateStr}. ${awayTeam} at ${homeTeam}, ${score}. Belt changed hands to ${winnerName}.`
+      } else {
+        return `${dateStr}. ${awayTeam} at ${homeTeam}, ${score}. ${holderName} defended the belt.`
+      }
+    }
+    
+    // Off day
+    return `${dateStr}. No game. ${holderName} holds the belt.`
+  }
 
   // Build day-by-day data for the season
   const dayMap = useMemo(() => {
@@ -306,17 +343,38 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                         bgStyle = { backgroundColor: `${displayColor}15` }
                       }
 
+                      // Build aria-label for this cell
+                      const cellDescription = buildDayDescription(dayData, monthName, dayNum)
+
                       return (
                         <div
                           key={dayIdx}
-                          className="aspect-square border-r border-b border-border/20 p-0.5 relative group transition-colors cursor-pointer hover:bg-muted/30 active:bg-muted/40"
+                          role="button"
+                          tabIndex={0}
+                          aria-label={cellDescription}
+                          aria-pressed={isSelectedDay}
+                          className="aspect-square border-r border-b border-border/20 p-0.5 relative group transition-colors cursor-pointer hover:bg-muted/30 active:bg-muted/40 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:outline-none"
                           style={bgStyle}
                           onClick={(e) => {
                             if (isSelectedDay) {
                               handleClose()
+                              setAnnouncement('')
                             } else {
                               setSelectedDay(dayData)
                               setPopupPosition({ x: e.clientX, y: e.clientY })
+                              setAnnouncement(`Selected: ${cellDescription}`)
+                            }
+                          }}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                              e.preventDefault()
+                              if (isSelectedDay) {
+                                handleClose()
+                                setAnnouncement('')
+                              } else {
+                                setSelectedDay(dayData)
+                                setAnnouncement(`Selected: ${cellDescription}`)
+                              }
                             }
                           }}
                         >
@@ -335,7 +393,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
                           {/* Belt change indicator */}
                           {dayData.beltChanged && (
-                            <div className="absolute top-0 right-2 text-[0.6rem] font-bold pointer-events-none" style={{ textShadow: '0 0 2px rgba(0,0,0,0.5)' }}>
+                            <div className="absolute top-0 right-2 text-[0.6rem] font-bold pointer-events-none" style={{ textShadow: '0 0 2px rgba(0,0,0,0.5)' }} aria-hidden="true">
                               ⚡
                             </div>
                           )}
@@ -361,7 +419,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
                           {/* Trophy icon for scheduled title bouts */}
                           {isScheduledBout && (
-                            <div className="absolute inset-0 flex items-end justify-center pb-[5%] pointer-events-none">
+                            <div className="absolute inset-0 flex items-end justify-center pb-[5%] pointer-events-none" aria-hidden="true">
                               <span className="text-sm">🏆</span>
                             </div>
                           )}
@@ -376,6 +434,11 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
         })}
       </div>
 
+      {/* Aria-live region for screen reader announcements */}
+      <div aria-live="polite" aria-atomic="true" className="sr-only">
+        {announcement}
+      </div>
+
       {/* Shared popup component */}
       {selectedDay && (
         <CalendarDayPopup
@@ -388,10 +451,10 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
       )}
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
     </div>
   )
 }

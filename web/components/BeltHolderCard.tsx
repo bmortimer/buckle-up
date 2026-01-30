@@ -17,7 +17,7 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
   return (
     <div data-card="current-holder" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
       {/* LED status bar at top */}
-      <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" />
+      <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" aria-hidden="true" />
 
       <div className="relative z-10">
         {/* Header - always centered */}
@@ -147,10 +147,10 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
       </div>
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
     </div>
   )
 }
