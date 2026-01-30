@@ -259,12 +259,12 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
   return (
     <div data-card="calendar" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
       <div className="flex items-center justify-center mb-6 border-b-2 border-border pb-3">
-        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center">
+        <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center font-normal">
           <span aria-hidden="true">◆ </span>
-          <h2 className="inline font-normal">History</h2>
+          History
           <span> · {displayedTeamCodes || 'All Teams'} · {yearDisplay} </span>
           <span aria-hidden="true"> ◆</span>
-        </div>
+        </h2>
       </div>
 
       {/* Team selector */}

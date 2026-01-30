@@ -81,11 +81,11 @@ export default function Home() {
 
       {/* League Selection */}
       <nav className="mb-8 sm:mb-12" aria-label="League selection">
-        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center">
+        <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center font-normal">
           <span aria-hidden="true">◆ </span>
-          <h2 className="inline font-normal">Select League</h2>
+          Select League
           <span aria-hidden="true"> ◆</span>
-        </div>
+        </h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {/* WNBA Card */}

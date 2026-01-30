@@ -20,10 +20,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://whohasthebelt.com'),
-  title: {
-    default: 'Championship Belt Tracker | WNBA, NBA & NHL Lineal Title',
-    template: '%s | Belt Tracker'
-  },
+  title: 'Championship Belt Tracker | WNBA, NBA & NHL Lineal Title',
   description: 'Track lineal championship belts for WNBA, NBA, and NHL. Boxing-style title tracking for basketball and hockey. Every game is a title defense.',
   keywords: ['championship belt', 'lineal title', 'basketball', 'hockey', 'belt tracker', 'WNBA', 'NBA', 'NHL', 'sports stats'],
   openGraph: {

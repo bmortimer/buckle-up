@@ -13,11 +13,11 @@ export default function RetroScoreboard({ totalGames, totalChanges, totalTitleBo
 
       <div className="relative z-10">
         {/* Header */}
-        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-2 sm:mb-3 md:mb-4 text-center">
+        <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-2 sm:mb-3 md:mb-4 text-center font-normal">
           <span aria-hidden="true">◆ </span>
-          <h2 className="inline font-normal">{isAllTime ? 'All Time Stats' : 'Season Stats'}</h2>
+          {isAllTime ? 'All Time Stats' : 'Season Stats'}
           <span aria-hidden="true"> ◆</span>
-        </div>
+        </h2>
 
         {/* Stats Grid */}
         <div className="flex items-center justify-center gap-3 sm:gap-5 md:gap-8">

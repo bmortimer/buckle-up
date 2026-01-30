@@ -3,7 +3,7 @@ import Link from 'next/link'
 import BackButton from '@/components/BackButton'
 
 export const metadata: Metadata = {
-  title: 'About | Championship Belt Tracker',
+  title: 'About the Championship Belt Tracker',
   description: 'Learn how the lineal championship belt works for WNBA, NBA, and NHL. Track boxing-style titles across basketball and hockey leagues.',
   alternates: {
     canonical: 'https://whohasthebelt.com/about'
@@ -150,11 +150,11 @@ export default function AboutPage() {
         {/* The Concept */}
         <section className="mb-8 sm:mb-12">
           <div className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
-            <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 text-center border-b border-border pb-3">
+            <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 text-center border-b border-border pb-3 font-normal">
               <span aria-hidden="true">◆ </span>
-              <h2 className="inline font-normal">The Concept</h2>
+              The Concept
               <span aria-hidden="true"> ◆</span>
-            </div>
+            </h2>
             <div className="text-muted-foreground font-body text-sm sm:text-base leading-relaxed">
               <p>
                 The lineal championship (a.k.a. Regular-Season Championship Belt) applies the logic of king of the hill to our favorite sports leagues. The result? Hilarity, of course. The Belt adds a little sizzle to meaningless regular season games, where any old Tuesday could be a title bout and bottom-feeding teams have their opportunity to shine.
@@ -172,11 +172,11 @@ export default function AboutPage() {
         {/* How It Works */}
         <section className="mb-8 sm:mb-12">
           <div className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
-            <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center border-b border-border pb-3">
+            <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center border-b border-border pb-3 font-normal">
               <span aria-hidden="true">◆ </span>
-              <h2 className="inline font-normal">How It Works</h2>
+              How It Works
               <span aria-hidden="true"> ◆</span>
-            </div>
+            </h2>
             <div className="space-y-4">
               <div className="flex gap-4 items-start">
                 <div className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center" style={{ color: 'hsl(var(--led-green))' }}>1</div>
@@ -229,11 +229,11 @@ export default function AboutPage() {
 
         {/* FAQ Section */}
         <section className="mb-8 sm:mb-12">
-          <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center">
+          <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-6 text-center font-normal">
             <span aria-hidden="true">◆ </span>
-            <h2 className="inline font-normal">Questions</h2>
+            Questions
             <span aria-hidden="true"> ◆</span>
-          </div>
+          </h2>
           <div className="space-y-3">
             <details className="group scoreboard-panel relative overflow-hidden" open>
               <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
@@ -300,10 +300,10 @@ export default function AboutPage() {
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
-                  <strong>Game Data:</strong> NBA scores and schedules come from the official <a href="https://www.nba.com/stats" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">NBA Stats API</a>. WNBA and NHL data come from <a href="https://www.sports-reference.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Sports-Reference.com</a>.
+                  <strong>Game Data:</strong> NBA scores and schedules come from the official <a href="https://www.nba.com/stats" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">NBA Stats API</a>. WNBA and NHL data come from <a href="https://www.sports-reference.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Sports-Reference.com</a>.
                 </p>
                 <p className="mb-3">
-                  <strong>Team Logos:</strong> Current team logos are from the official <a href="https://www.nba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">NBA</a>, <a href="https://www.wnba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">WNBA</a>, and <a href="https://www.nhl.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">NHL</a> websites. Historical team logos are from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Wikimedia Commons</a>, <a href="https://loodibee.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Loodibee.com</a>, and <a href="https://www.sportslogos.net/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">SportsLogos.net</a>.
+                  <strong>Team Logos:</strong> Current team logos are from the official <a href="https://www.nba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">NBA</a>, <a href="https://www.wnba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">WNBA</a>, and <a href="https://www.nhl.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">NHL</a> websites. Historical team logos are from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Wikimedia Commons</a>, <a href="https://loodibee.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Loodibee.com</a>, and <a href="https://www.sportslogos.net/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">SportsLogos.net</a>.
                 </p>
                 <p>
                   All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!
@@ -366,7 +366,7 @@ export default function AboutPage() {
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
-                  The lineal championship concept was conceived in a <a href="https://www.reddit.com/r/nba/comments/1pn9t2/can_we_keep_track_of_the_owner_of_the/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline">Reddit thread</a> and popularized by <a href="https://grantland.com/the-triangle/introducing-the-nba-regular-season-championship-belt/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline"><strong>Grantland</strong></a>, the late, great sports and pop culture website founded by Bill Simmons.
+                  The lineal championship concept was conceived in a <a href="https://www.reddit.com/r/nba/comments/1pn9t2/can_we_keep_track_of_the_owner_of_the/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Reddit thread</a> and popularized by <a href="https://grantland.com/the-triangle/introducing-the-nba-regular-season-championship-belt/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded"><strong>Grantland</strong></a>, the late, great sports and pop culture website founded by Bill Simmons.
                 </p>
                 <p>
                   When Grantland shut down in 2015, the belt tracker went with it. Occasionally someone pops up and calculates who owns the belt across various leagues but no one has done it consistently...until now.

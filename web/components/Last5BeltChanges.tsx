@@ -32,11 +32,11 @@ export default function Last5BeltChanges({
       <div data-card="last-5-changes" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
         <div className="led-bar-top" />
         <div className="relative z-10">
-          <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center">
+          <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center font-normal">
             <span aria-hidden="true">◆ </span>
-            <h2 className="inline font-normal">Last 5 Belt Changes</h2>
+            Last 5 Belt Changes
             <span aria-hidden="true"> ◆</span>
-          </div>
+          </h2>
           <div className="text-center py-4">
             <p className="text-[0.6rem] sm:text-xs text-muted-foreground font-mono">No changes yet</p>
           </div>
@@ -61,11 +61,11 @@ export default function Last5BeltChanges({
       <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-green-500 to-transparent opacity-60" />
       <div className="relative z-10">
         {/* Header */}
-        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center">
+        <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center font-normal">
           <span aria-hidden="true">◆ </span>
-          <h2 className="inline font-normal">Last 5 Belt Changes</h2>
+          Last 5 Belt Changes
           <span aria-hidden="true"> ◆</span>
-        </div>
+        </h2>
 
         {/* Horizontal flow showing belt path */}
         <div className="flex items-center justify-center gap-2 sm:gap-3">

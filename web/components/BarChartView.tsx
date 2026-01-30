@@ -85,11 +85,11 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
     <div data-card="team-stats" className="scoreboard-panel px-2 lg:px-6 py-3 sm:py-4 md:py-6 relative overflow-hidden">
       {/* Header with sort controls */}
       <div className="flex flex-col items-center gap-3 mb-6 border-b-2 border-border pb-3">
-        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center">
+        <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center font-normal">
           <span aria-hidden="true">◆ </span>
-          <h2 className="inline font-normal">Bouts By Team</h2>
+          Bouts By Team
           <span aria-hidden="true"> ◆</span>
-        </div>
+        </h2>
 
         <div className="flex flex-wrap gap-1.5 justify-center" role="group" aria-label="Sort options">
           {[

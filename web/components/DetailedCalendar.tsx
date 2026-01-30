@@ -243,13 +243,11 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
   return (
     <div data-card="detailed-calendar" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
       <div className="flex items-center justify-center mb-4 sm:mb-6 border-b-2 border-border pb-2 sm:pb-3">
-        <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
+        <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground font-normal">
           <span aria-hidden="true">◆ </span>
-          <h2 className="inline font-normal">
-            {(league === 'nba' || league === 'nhl') ? `${year}-${String((year + 1) % 100).padStart(2, '0')}` : year} Calendar
-          </h2>
+          {(league === 'nba' || league === 'nhl') ? `${year}-${String((year + 1) % 100).padStart(2, '0')}` : year} Calendar
           <span aria-hidden="true"> ◆</span>
-        </div>
+        </h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">

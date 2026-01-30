@@ -223,9 +223,11 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                   <button
                     onClick={() => handleTeamChange(null)}
                     aria-current={!selectedTeam ? 'true' : undefined}
+                    aria-label="Select all teams"
                     className={`
                       w-full px-4 py-3 text-base sm:text-lg font-mono font-bold uppercase
                       border-2 transition-all
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
                       ${!selectedTeam
                         ? 'bg-primary/10 text-primary border-primary'
                         : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-[0.98]'
@@ -253,9 +255,11 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                             key={team}
                             onClick={() => handleTeamChange(team)}
                             aria-current={isSelected ? 'true' : undefined}
+                            aria-label={`Select ${displayName}`}
                             className={`
                               p-3 flex flex-col items-center gap-2
                               border-2 transition-all
+                              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
                               ${isSelected
                                 ? 'bg-primary/10 text-primary border-primary scale-105'
                                 : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
@@ -290,9 +294,11 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                             key={team}
                             onClick={() => handleTeamChange(team)}
                             aria-current={isSelected ? 'true' : undefined}
+                            aria-label={`Select ${displayName}`}
                             className={`
                               p-3 flex flex-col items-center gap-2
                               border-2 transition-all
+                              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
                               ${isSelected
                                 ? 'bg-primary/10 text-primary border-primary scale-105'
                                 : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'

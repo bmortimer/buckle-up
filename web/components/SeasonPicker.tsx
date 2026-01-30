@@ -206,9 +206,11 @@ export default function SeasonPicker({
                   <button
                     onClick={() => handleYearChange(null)}
                     aria-current={isAllTime ? 'true' : undefined}
+                    aria-label="Select all time"
                     className={`
                       w-full px-4 py-3 text-base sm:text-lg font-mono font-bold uppercase
                       border-2 transition-all
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
                       ${isAllTime
                         ? 'bg-primary/10 text-primary border-primary'
                         : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-[0.98]'
@@ -241,9 +243,11 @@ export default function SeasonPicker({
                               key={year}
                               onClick={() => handleYearChange(year)}
                               aria-current={isSelected ? 'true' : undefined}
+                              aria-label={`Select ${formatSeasonDisplay(year, league)}`}
                               className={`
                                 px-3 py-2 text-sm sm:text-base font-mono font-bold tabular-nums
                                 border-2 transition-all
+                                focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
                                 ${isSelected
                                   ? 'bg-primary/10 text-primary border-primary scale-105'
                                   : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'

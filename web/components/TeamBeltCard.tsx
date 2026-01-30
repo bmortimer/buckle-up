@@ -31,11 +31,11 @@ export default function TeamBeltCard({
 
       <div className="relative z-10">
         {/* Header - always centered */}
-        <div className="text-[0.6rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 font-orbitron text-center">
+        <h2 className="text-[0.6rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 font-orbitron text-center font-normal">
           <span aria-hidden="true">◆ </span>
-          <h2 className="inline font-normal">{isCurrentHolder ? 'Current Belt Holder' : isSeasonChampion ? `${year} Champion` : 'Team Belt Stats'}</h2>
+          {isCurrentHolder ? 'Current Belt Holder' : isSeasonChampion ? `${year} Champion` : 'Team Belt Stats'}
           <span aria-hidden="true"> ◆</span>
-        </div>
+        </h2>
 
         {/* Mobile Layout: Stacked */}
         <div className="md:hidden text-center">
