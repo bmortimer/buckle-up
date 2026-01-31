@@ -5998,8 +5998,8 @@
       "date": "2026-01-30",
       "homeTeam": "CHI",
       "awayTeam": "CBJ",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 4
     },
     {
       "date": "2026-01-31",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-01-30T06:21:37.977819"
+    "ingested_at": "2026-01-31T08:01:40.856559"
   }
 }

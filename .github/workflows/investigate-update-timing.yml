@@ -1,0 +1,189 @@
+name: Investigate Score Update Timing
+
+on:
+  schedule:
+    # Run hourly from 3 AM to 9 AM ET (8 AM to 2 PM UTC) on Feb 1, 2026
+    - cron: '0 8 1 2 *'   # 3 AM ET
+    - cron: '0 9 1 2 *'   # 4 AM ET
+    - cron: '0 10 1 2 *'  # 5 AM ET
+    - cron: '0 11 1 2 *'  # 6 AM ET
+    - cron: '0 12 1 2 *'  # 7 AM ET
+    - cron: '0 13 1 2 *'  # 8 AM ET
+    - cron: '0 14 1 2 *'  # 9 AM ET
+  workflow_dispatch: # Allow manual trigger for testing
+
+jobs:
+  check-scores:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: Check NBA scores
+        run: |
+          echo "============================================================"
+          echo "NBA Score Check"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC') / $(TZ='America/New_York' date '+%Y-%m-%d %H:%M:%S ET')"
+          echo "============================================================"
+
+          python3 << 'EOF'
+          import requests
+          from bs4 import BeautifulSoup
+          from datetime import datetime, timedelta
+
+          HEADERS = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          }
+
+          # Check yesterday's games (Jan 31, 2026)
+          url = "https://www.basketball-reference.com/leagues/NBA_2026_games-january.html"
+          print(f"Fetching {url}")
+
+          resp = requests.get(url, headers=HEADERS, timeout=30)
+          resp.raise_for_status()
+
+          soup = BeautifulSoup(resp.text, "html.parser")
+          table = soup.find("table", id="schedule")
+
+          if not table:
+              print("ERROR: Could not find schedule table")
+              exit(1)
+
+          tbody = table.find("tbody")
+          rows = tbody.find_all("tr") if tbody else []
+
+          # Find Jan 31 games
+          jan31_games = []
+          for row in rows:
+              date_cell = row.find("th", {"data-stat": "date_game"})
+              if not date_cell:
+                  continue
+              date_text = date_cell.get_text().strip()
+              if "Sat, Jan 31, 2026" in date_text:
+                  visitor = row.find("td", {"data-stat": "visitor_team_name"})
+                  visitor_pts = row.find("td", {"data-stat": "visitor_pts"})
+                  home = row.find("td", {"data-stat": "home_team_name"})
+                  home_pts = row.find("td", {"data-stat": "home_pts"})
+
+                  v_name = visitor.get_text().strip() if visitor else "?"
+                  v_score = visitor_pts.get_text().strip() if visitor_pts else ""
+                  h_name = home.get_text().strip() if home else "?"
+                  h_score = home_pts.get_text().strip() if home_pts else ""
+
+                  has_score = bool(v_score and h_score)
+                  jan31_games.append({
+                      "away": v_name,
+                      "away_score": v_score or "N/A",
+                      "home": h_name,
+                      "home_score": h_score or "N/A",
+                      "completed": has_score
+                  })
+
+          print(f"\nFound {len(jan31_games)} games on Jan 31, 2026:")
+          completed = sum(1 for g in jan31_games if g["completed"])
+          print(f"Completed: {completed}/{len(jan31_games)}")
+          print()
+          for g in jan31_games:
+              status = "✓" if g["completed"] else "⏳"
+              print(f"  {status} {g['away']} ({g['away_score']}) @ {g['home']} ({g['home_score']})")
+          EOF
+
+      - name: Check NHL scores
+        run: |
+          echo ""
+          echo "============================================================"
+          echo "NHL Score Check"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC') / $(TZ='America/New_York' date '+%Y-%m-%d %H:%M:%S ET')"
+          echo "============================================================"
+
+          python3 << 'EOF'
+          import requests
+          from bs4 import BeautifulSoup
+          import re
+
+          HEADERS = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          }
+
+          # Check yesterday's games (Jan 31, 2026)
+          url = "https://www.hockey-reference.com/leagues/NHL_2026_games.html"
+          print(f"Fetching {url}")
+
+          resp = requests.get(url, headers=HEADERS, timeout=30)
+          resp.raise_for_status()
+
+          soup = BeautifulSoup(resp.text, "html.parser")
+          table = soup.find("table", id="games")
+
+          if not table:
+              print("ERROR: Could not find games table")
+              exit(1)
+
+          tbody = table.find("tbody")
+          rows = tbody.find_all("tr") if tbody else []
+
+          # Find Jan 31 games
+          jan31_games = []
+          for row in rows:
+              cells = row.find_all(["th", "td"])
+              if len(cells) < 6:
+                  continue
+
+              date_str = cells[0].get_text().strip()
+              if date_str != "2026-01-31":
+                  continue
+
+              visitor_cell = cells[2]
+              visitor_goals = cells[3].get_text().strip()
+              home_cell = cells[4]
+              home_goals = cells[5].get_text().strip()
+
+              # Extract team codes from links
+              def get_team_code(cell):
+                  link = cell.find('a')
+                  if link and link.get('href'):
+                      match = re.search(r'/teams/([A-Z]{3})/', link.get('href'))
+                      if match:
+                          return match.group(1)
+                  return cell.get_text().strip()[:3].upper()
+
+              away_code = get_team_code(visitor_cell)
+              home_code = get_team_code(home_cell)
+              has_score = bool(visitor_goals and home_goals)
+
+              jan31_games.append({
+                  "away": away_code,
+                  "away_score": visitor_goals or "N/A",
+                  "home": home_code,
+                  "home_score": home_goals or "N/A",
+                  "completed": has_score
+              })
+
+          print(f"\nFound {len(jan31_games)} games on Jan 31, 2026:")
+          completed = sum(1 for g in jan31_games if g["completed"])
+          print(f"Completed: {completed}/{len(jan31_games)}")
+          print()
+          for g in jan31_games:
+              status = "✓" if g["completed"] else "⏳"
+              print(f"  {status} {g['away']} ({g['away_score']}) @ {g['home']} ({g['home_score']})")
+          EOF
+
+      - name: Summary
+        run: |
+          echo ""
+          echo "============================================================"
+          echo "Check complete at $(TZ='America/New_York' date '+%Y-%m-%d %H:%M:%S ET')"
+          echo "============================================================"
