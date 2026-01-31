@@ -93,15 +93,15 @@ export default function Home() {
             href="/wnba"
             className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
           >
-            {/* Top LED strip - amber for WNBA */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            {/* Top LED strip - red for WNBA */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             <div className="text-center space-y-4">
               <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
                 Women's Basketball
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text" style={{ color: 'hsl(var(--led-amber))' }}>
+              <h3 className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text" style={{ color: 'hsl(var(--led-red))' }}>
                 WNBA
               </h3>
 
@@ -111,7 +111,7 @@ export default function Home() {
                 Track the lineal championship from 1997 to present. See who holds the belt, upcoming title bouts, and a complete history of the WNBA.
               </p>
 
-              <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-amber-500 transition-colors">
+              <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-red-500 transition-colors">
                 <span>Enter</span>
                 <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
               </div>
@@ -129,15 +129,15 @@ export default function Home() {
             href="/nba"
             className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
           >
-            {/* Top LED strip - red for NBA */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            {/* Top LED strip - amber for NBA */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             <div className="text-center space-y-4">
               <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
                 Men's Basketball
               </div>
 
-              <h3 className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text" style={{ color: 'hsl(var(--led-red))' }}>
+              <h3 className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text" style={{ color: 'hsl(var(--led-amber))' }}>
                 NBA
               </h3>
 
@@ -147,7 +147,7 @@ export default function Home() {
                 Track the lineal championship from 1976 to present. See who holds the belt, upcoming title bouts, and a complete history of the NBA.
               </p>
 
-              <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-red-500 transition-colors">
+              <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-amber-500 transition-colors">
                 <span>Enter</span>
                 <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
               </div>

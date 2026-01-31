@@ -2,7 +2,7 @@
  * Streak Calculator - Utility for calculating current belt holder's streak
  */
 
-import type { Game, FranchiseInfo } from './types'
+import type { Game, FranchiseInfo, League } from './types'
 
 /**
  * Calculate the current holder's win streak (consecutive wins WITH the belt)
@@ -11,12 +11,17 @@ import type { Game, FranchiseInfo } from './types'
  * We need to track the belt through ALL games across all seasons to properly handle
  * the edge case where a team holds the belt at season's end AND wins the championship,
  * continuing their streak into the next season.
+ *
+ * @param league - The league type affects season key format:
+ *   - 'wnba': Summer league, uses single year format (e.g., "2026")
+ *   - 'nba', 'nhl': Fall/winter leagues, use spanning format (e.g., "2025-26")
  */
 export function getCurrentStreak(
   games: Game[],
   currentHolder: string,
   franchises: FranchiseInfo[],
-  champions: Record<string, string>
+  champions: Record<string, string>,
+  league: League = 'nhl'
 ): number {
   // Track the belt from the beginning to find when current holder acquired it
   const completedGames = games.filter(
@@ -36,17 +41,26 @@ export function getCurrentStreak(
     const gameYear = gameDate.getFullYear()
     const gameMonth = gameDate.getMonth() + 1 // 1-12
 
-    // NHL/NBA seasons run Oct-Jun
-    // Oct-Dec: game is in season that started this year (e.g., Oct 2025 = 2025-26)
-    // Jan-Sep: game is in season that started last year (e.g., Jan 2026 = 2025-26)
-    let seasonStartYear: number
-    if (gameMonth >= 10) {
-      seasonStartYear = gameYear
+    // Season key format depends on league type:
+    // - WNBA: Summer league, single year (e.g., "2026" for games May-Oct 2026)
+    // - NBA/NHL: Fall/winter leagues, spanning format (e.g., "2025-26" for Oct 2025 - Jun 2026)
+    let seasonKey: string
+    if (league === 'wnba') {
+      // WNBA runs May-Oct within a single calendar year
+      seasonKey = gameYear.toString()
     } else {
-      seasonStartYear = gameYear - 1
+      // NHL/NBA seasons run Oct-Jun
+      // Oct-Dec: game is in season that started this year (e.g., Oct 2025 = 2025-26)
+      // Jan-Sep: game is in season that started last year (e.g., Jan 2026 = 2025-26)
+      let seasonStartYear: number
+      if (gameMonth >= 10) {
+        seasonStartYear = gameYear
+      } else {
+        seasonStartYear = gameYear - 1
+      }
+      const seasonEndYear = seasonStartYear + 1
+      seasonKey = `${seasonStartYear}-${seasonEndYear.toString().slice(-2)}`
     }
-    const seasonEndYear = seasonStartYear + 1
-    const seasonKey = `${seasonStartYear}-${seasonEndYear.toString().slice(-2)}`
 
     if (!gamesBySeason.has(seasonKey)) {
       gamesBySeason.set(seasonKey, [])

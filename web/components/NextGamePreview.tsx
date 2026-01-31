@@ -226,7 +226,7 @@ export default function NextGamePreview({
         {/* Status indicator */}
         <div className="text-center pt-3 sm:pt-4">
           <div className="text-[0.5rem] sm:text-[0.55rem] md:text-[0.6rem] font-mono text-muted-foreground uppercase tracking-wide sm:tracking-wider">
-            ▸ Current Streak: {getCurrentStreak(allGamesUnfiltered, currentHolder, franchises, champions)} ◂
+            ▸ Current Streak: {getCurrentStreak(allGamesUnfiltered, currentHolder, franchises, champions, league)} ◂
           </div>
         </div>
       </div>

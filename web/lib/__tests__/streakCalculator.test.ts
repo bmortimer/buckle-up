@@ -1,9 +1,12 @@
 import { describe, it, expect } from 'vitest'
 import { getCurrentStreak } from '../streakCalculator'
-import type { Game, FranchiseInfo } from '../types'
+import type { Game, FranchiseInfo, League } from '../types'
 
 describe('getCurrentStreak', () => {
   const emptyFranchises: FranchiseInfo[] = []
+  const nhl: League = 'nhl'
+  const nba: League = 'nba'
+  const wnba: League = 'wnba'
 
   describe('Basic streak calculation', () => {
     it('should return 0 when no completed games', () => {
@@ -410,8 +413,203 @@ describe('getCurrentStreak', () => {
       ]
       const champions = { '2025-26': 'FLA' }
 
-      const streak = getCurrentStreak(games, 'TBL', emptyFranchises, champions)
+      const streak = getCurrentStreak(games, 'TBL', emptyFranchises, champions, nhl)
       expect(streak).toBe(2)
+    })
+  })
+
+  describe('WNBA season key format (single year)', () => {
+    it('should use single year format for WNBA seasons', () => {
+      // WNBA uses "2026" not "2025-26" format
+      const games: Game[] = [
+        // LVA is 2026 champion, defends the belt
+        {
+          date: '2026-05-20',
+          homeTeam: 'LVA',
+          awayTeam: 'NYL',
+          homeScore: 85,
+          awayScore: 78,
+          isPlayoffs: false,
+        },
+        {
+          date: '2026-05-24',
+          homeTeam: 'SEA',
+          awayTeam: 'LVA',
+          homeScore: 72,
+          awayScore: 80,
+          isPlayoffs: false,
+        },
+      ]
+      const champions = { '2026': 'LVA' }
+
+      const streak = getCurrentStreak(games, 'LVA', emptyFranchises, champions, wnba)
+      expect(streak).toBe(2)
+    })
+
+    it('should reset streak when WNBA champion differs from previous belt holder', () => {
+      // Common case: team won championship but didn't hold belt at end of regular season
+      const games: Game[] = [
+        // End of 2025 season - NYL holds the belt
+        {
+          date: '2025-09-10',
+          homeTeam: 'NYL',
+          awayTeam: 'CHI',
+          homeScore: 90,
+          awayScore: 82,
+          isPlayoffs: false,
+        },
+        {
+          date: '2025-09-14',
+          homeTeam: 'NYL',
+          awayTeam: 'LVA',
+          homeScore: 88,
+          awayScore: 85,
+          isPlayoffs: false,
+        },
+        // Start of 2026 season - LVA is champion (won 2025 championship)
+        // but NYL had the belt at end of 2025 regular season
+        {
+          date: '2026-05-16',
+          homeTeam: 'LVA',
+          awayTeam: 'PHO',
+          homeScore: 92,
+          awayScore: 84,
+          isPlayoffs: false,
+        },
+        {
+          date: '2026-05-20',
+          homeTeam: 'LVA',
+          awayTeam: 'SEA',
+          homeScore: 88,
+          awayScore: 79,
+          isPlayoffs: false,
+        },
+      ]
+      const champions = {
+        '2025': 'NYL',  // NYL was 2024 champion, started 2025 with belt
+        '2026': 'LVA',  // LVA won 2025 championship, starts 2026 with belt
+      }
+
+      // LVA's streak should be 2 (new season, they're champion)
+      // NYL's belt streak from 2025 doesn't carry over because they didn't win championship
+      const streakLVA = getCurrentStreak(games, 'LVA', emptyFranchises, champions, wnba)
+      expect(streakLVA).toBe(2)
+    })
+
+    it('should continue streak when WNBA champion also held belt at season end', () => {
+      // Edge case (~10% of time): team both held belt AND won championship
+      // This is the LVA 2026 scenario - they held belt at end of 2025 AND won championship
+      const games: Game[] = [
+        // End of 2025 season - LVA holds the belt and wins championship
+        {
+          date: '2025-08-25',
+          homeTeam: 'LVA',
+          awayTeam: 'NYL',
+          homeScore: 95,
+          awayScore: 88,
+          isPlayoffs: false,
+        },
+        {
+          date: '2025-08-28',
+          homeTeam: 'SEA',
+          awayTeam: 'LVA',
+          homeScore: 78,
+          awayScore: 85,
+          isPlayoffs: false,
+        },
+        {
+          date: '2025-09-01',
+          homeTeam: 'LVA',
+          awayTeam: 'CHI',
+          homeScore: 92,
+          awayScore: 84,
+          isPlayoffs: false,
+        },
+        // ... LVA wins championship (playoffs happen, they win)
+        // Start of 2026 season - LVA is champion again, streak should continue
+        {
+          date: '2026-05-16',
+          homeTeam: 'LVA',
+          awayTeam: 'PHO',
+          homeScore: 88,
+          awayScore: 80,
+          isPlayoffs: false,
+        },
+        {
+          date: '2026-05-20',
+          homeTeam: 'CON',
+          awayTeam: 'LVA',
+          homeScore: 75,
+          awayScore: 82,
+          isPlayoffs: false,
+        },
+      ]
+      const champions = {
+        '2025': 'LVA',  // LVA was 2024 champion, started 2025 with belt
+        '2026': 'LVA',  // LVA won 2025 championship too, starts 2026 with belt
+      }
+
+      // LVA's streak should be 5 (3 from end of 2025 + 2 in 2026)
+      // because they held the belt at end of 2025 AND won the championship
+      const streak = getCurrentStreak(games, 'LVA', emptyFranchises, champions, wnba)
+      expect(streak).toBe(5)
+    })
+
+    it('should handle multi-season WNBA streak with championship continuity', () => {
+      // Real-world LVA scenario: won 2023, 2024 championships
+      // Held belt going into 2024, kept it, won championship again
+      const games: Game[] = [
+        // Late 2024 season - LVA defending
+        {
+          date: '2024-09-05',
+          homeTeam: 'LVA',
+          awayTeam: 'NYL',
+          homeScore: 88,
+          awayScore: 80,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-09-08',
+          homeTeam: 'LVA',
+          awayTeam: 'MIN',
+          homeScore: 92,
+          awayScore: 85,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-09-12',
+          homeTeam: 'SEA',
+          awayTeam: 'LVA',
+          homeScore: 79,
+          awayScore: 86,
+          isPlayoffs: false,
+        },
+        // 2025 season starts - LVA is 2024 champion
+        {
+          date: '2025-05-17',
+          homeTeam: 'LVA',
+          awayTeam: 'PHO',
+          homeScore: 90,
+          awayScore: 82,
+          isPlayoffs: false,
+        },
+        {
+          date: '2025-05-21',
+          homeTeam: 'DAL',
+          awayTeam: 'LVA',
+          homeScore: 75,
+          awayScore: 88,
+          isPlayoffs: false,
+        },
+      ]
+      const champions = {
+        '2024': 'LVA',  // LVA was 2023 champion
+        '2025': 'LVA',  // LVA won 2024 championship
+      }
+
+      // Streak should continue: 3 from 2024 + 2 from 2025 = 5
+      const streak = getCurrentStreak(games, 'LVA', emptyFranchises, champions, wnba)
+      expect(streak).toBe(5)
     })
   })
 })
