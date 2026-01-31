@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react'
 import type { BeltHistory, FranchiseInfo, Game, League } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
-import { getTeamColor, getTeamDisplayName } from '@/lib/franchises'
+import { getTeamColor, getTeamDisplayName, isSameFranchise } from '@/lib/franchises'
+import { classifyDayForTeam } from '@/lib/calendarDayClassifier'
 import TeamLogo from './TeamLogo'
-import { isSameFranchise } from '@/lib/franchises'
 import CalendarDayPopup from './CalendarDayPopup'
 
 interface BeltCalendarProps {
@@ -346,15 +346,11 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                         return <div key={dayIdx} className="w-2.5 h-2.5" />
                       }
 
-                      // Check if selected team is involved: held belt, won belt, OR challenged for belt
-                      // Use franchise matching to include historical team codes (UTA/SAS for LVA)
-                      const heldBelt = dayData.holder && isSameFranchise(dayData.holder, selectedTeam, franchises)
-                      const wonBelt = dayData.winner && isSameFranchise(dayData.winner, selectedTeam, franchises) && !heldBelt
-                      const challengedBelt = dayData.challenger && isSameFranchise(dayData.challenger, selectedTeam, franchises) && !heldBelt && !wonBelt
-                      const isInvolved = heldBelt || wonBelt || challengedBelt
+                      // Classify this day for the selected team
+                      const classification = classifyDayForTeam(dayData, selectedTeam!, franchises)
 
                       // Show empty cell for days team wasn't involved
-                      if (!isInvolved) {
+                      if (!classification.isInvolved) {
                         return (
                           <div
                             key={dayIdx}
@@ -365,23 +361,8 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
 
                       const color = getTeamColor(selectedTeam!, franchises)
 
-                      // Determine what happened:
-                      // 1. Won belt from another team (bright team color)
-                      // 2. Defended belt successfully (bright team color)
-                      // 3. Tied while holding belt (dim team color - same as off day, belt stays with holder)
-                      // 4. Lost belt (transparent with border and X)
-                      // 5. Off day while holding (dim team color)
-                      // 6. Failed title challenge - lost or tied (darker tan)
-
-                      const wonBeltThisDay = wonBelt && dayData.played
-                      const defendedBelt = heldBelt && dayData.played && dayData.won === true
-                      const tiedWhileHolding = heldBelt && dayData.played && dayData.isTie
-                      const lostBelt = heldBelt && dayData.played && dayData.won === false
-                      const offDay = heldBelt && !dayData.played
-                      const failedChallenge = challengedBelt && dayData.played  // Both tie and loss when challenging
-
-                      const isWinOrDefense = wonBeltThisDay || defendedBelt
-                      const isLoss = lostBelt
+                      // Extract classification results for styling
+                      const { tiedWhileHolding, failedChallenge, isWinOrDefense, isLoss } = classification
 
                       // Color logic with opacity baked into the color:
                       // - Wins/defenses: full team color
