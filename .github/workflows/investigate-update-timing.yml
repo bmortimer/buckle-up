@@ -1,15 +1,8 @@
 name: Investigate Score Update Timing
 
 on:
-  schedule:
-    # Run hourly from 3 AM to 9 AM ET (8 AM to 2 PM UTC) on Feb 1, 2026
-    - cron: '0 8 1 2 *'   # 3 AM ET
-    - cron: '0 9 1 2 *'   # 4 AM ET
-    - cron: '0 10 1 2 *'  # 5 AM ET
-    - cron: '0 11 1 2 *'  # 6 AM ET
-    - cron: '0 12 1 2 *'  # 7 AM ET
-    - cron: '0 13 1 2 *'  # 8 AM ET
-    - cron: '0 14 1 2 *'  # 9 AM ET
+  # Schedule triggers removed after investigation completed 2026-02-01
+  # Keep workflow for future debugging if needed
   workflow_dispatch: # Allow manual trigger for testing
 
 jobs:

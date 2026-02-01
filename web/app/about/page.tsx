@@ -386,7 +386,7 @@ export default function AboutPage() {
         <footer className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
           <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent" aria-hidden="true" />
           <p className="text-xs text-muted-foreground font-mono tracking-wider uppercase mb-3">
-            Data updates nightly at 05:00 ET.
+            Data updates nightly ~3:30 AM Pacific.
           </p>
           <div className="flex items-center justify-center gap-3 text-xs font-mono uppercase tracking-wider">
             <BackButton className="text-primary hover:opacity-80 transition-colors">
