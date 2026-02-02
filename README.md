@@ -25,9 +25,9 @@ buckle-up/
 │   ├── lib/               # Belt tracking logic, types, utilities
 │   └── public/            # Static assets (logos, favicons)
 ├── data/                  # Game data (JSON files)
-│   ├── nba/              # NBA seasons (2012-13 to present)
+│   ├── nba/              # NBA seasons (1976-77 to present)
 │   ├── wnba/             # WNBA seasons (1997 to present)
-│   └── nhl/              # NHL seasons (1969-70 to present)
+│   └── nhl/              # NHL seasons (1942-43 to present)
 └── scripts/              # Python data ingestion scripts
 ```
 
@@ -106,7 +106,6 @@ The project has 137 tests covering:
 
 ### Tech Stack
 - **Frontend**: Next.js 15, React, TypeScript, Tailwind CSS
-- **Data Viz**: Recharts, D3
 - **Testing**: Vitest
 - **Deployment**: Vercel (static export)
 - **CI/CD**: GitHub Actions
