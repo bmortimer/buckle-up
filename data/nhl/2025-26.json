@@ -6103,22 +6103,22 @@
       "date": "2026-02-01",
       "homeTeam": "ANA",
       "awayTeam": "VEG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 3
     },
     {
       "date": "2026-02-01",
       "homeTeam": "CAR",
       "awayTeam": "LAK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-02-01",
       "homeTeam": "TBL",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 6,
+      "awayScore": 5
     },
     {
       "date": "2026-02-02",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-02-01T08:55:01.778825"
+    "ingested_at": "2026-02-02T11:11:49.911402"
   }
 }
