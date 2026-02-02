@@ -2,7 +2,7 @@
 
 Track the lineal championship belt across NBA, WNBA, and NHL seasons.
 
-Live at: **[buckle-up.vercel.app](https://buckle-up.vercel.app)**
+Live at: **[whohasthebelt.com](https://whohasthebelt.com)** (also [buckle-up.vercel.app](https://buckle-up.vercel.app))
 
 ## Concept
 
@@ -28,8 +28,7 @@ buckle-up/
 │   ├── nba/              # NBA seasons (2012-13 to present)
 │   ├── wnba/             # WNBA seasons (1997 to present)
 │   └── nhl/              # NHL seasons (1969-70 to present)
-├── scripts/              # Python data ingestion scripts
-└── docs/                 # Documentation
+└── scripts/              # Python data ingestion scripts
 ```
 
 ## Setup
@@ -65,7 +64,7 @@ python scripts/ingest_nhl.py
 ```
 
 ### Automated Updates
-Data is automatically updated nightly at 05:00 ET via GitHub Actions. See `.github/workflows/update-data.yml`.
+Data is automatically updated nightly at 6:30 AM ET via GitHub Actions. See `.github/workflows/update-data.yml`.
 
 ## Data Format
 
@@ -99,7 +98,7 @@ npm test              # Run tests in watch mode
 npm run test:run      # Run tests once
 ```
 
-The project has 86 tests covering:
+The project has 137 tests covering:
 - Belt tracking logic (ties, streaks, franchise lineage)
 - Data filtering (All Time mode, year ranges, team selection)
 - Franchise handling (relocations, historical teams)

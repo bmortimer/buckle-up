@@ -49,7 +49,7 @@ The app loads game data from the `/data` directory during build time. To update 
 
 3. Vercel will automatically rebuild and deploy
 
-**Note:** Data updates happen automatically via GitHub Actions nightly at 05:00 ET (see `.github/workflows/update-data.yml`)
+**Note:** Data updates happen automatically via GitHub Actions nightly at 6:30 AM ET (see `.github/workflows/update-data.yml`)
 
 ## Project Structure
 

@@ -16,7 +16,7 @@ Auto-updating web dashboard for tracking lineal championship belts across NBA, W
   - All Time view or single season
   - Team selection with franchise lineage support
   - Year range slider
-- 🌙 **Nightly auto-updates** via GitHub Actions (05:00 ET)
+- 🌙 **Nightly auto-updates** via GitHub Actions (6:30 AM ET)
 - ⚡ **Static site** - blazing fast, free hosting on Vercel
 - 🎨 **Official team colors and logos**
 - 🌓 **Dark/light mode** with retro LED scoreboard aesthetic
@@ -54,7 +54,7 @@ The site auto-deploys on every commit to `main`.
 ## How It Works
 
 1. **Data Ingestion** (Python scripts)
-   - Runs nightly via GitHub Actions at 5 AM ET
+   - Runs nightly via GitHub Actions at 6:30 AM ET
    - Fetches latest games for current NBA/WNBA seasons
    - Saves to `data/` directory as JSON
 
@@ -96,7 +96,7 @@ web/
 │   ├── dataLoader.ts        # Load season JSON files
 │   ├── franchises.ts        # Team colors & lineage
 │   ├── seasonConfig.ts      # Season-specific configs
-│   └── __tests__/           # Vitest test suite (86 tests)
+│   └── __tests__/           # Vitest test suite (137 tests)
 ├── public/
 │   ├── logos/               # Team logos (NBA/WNBA/NHL)
 │   └── *.png                # Favicons
@@ -111,7 +111,7 @@ npm run test:run      # Run all tests once
 ```
 
 **Test Coverage:**
-- 86 tests across 4 test suites
+- 137 tests across 7 test suites
 - Belt tracking (ties, streaks, franchise handling)
 - Data filtering (All Time mode, team selection)
 - Franchise lineage (relocations, rebranding)
