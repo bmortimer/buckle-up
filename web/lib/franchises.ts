@@ -193,3 +193,72 @@ export function getTeamCodeForYear(teamAbbr: string, year: number, franchises: F
   // If no match found, return the original team abbreviation
   return teamAbbr
 }
+
+export interface FranchiseEra {
+  startYear: number
+  endYear: number
+}
+
+/**
+ * Get the distinct eras when a franchise was active, accounting for gaps.
+ * For example, Portland Fire (2000-2002, 2026+) would return two eras.
+ * An era is defined as a contiguous period of activity. A gap of >1 year
+ * between franchise periods creates separate eras.
+ */
+export function getFranchiseEras(teamAbbr: string, franchises: FranchiseInfo[]): FranchiseEra[] {
+  const allAbbrs = getAllFranchiseAbbrs(teamAbbr, franchises)
+
+  // Collect all periods from franchise info
+  const periods: { start: number; end: number | null }[] = []
+
+  for (const abbr of allAbbrs) {
+    const info = franchises.find(f => f.teamAbbr === abbr)
+    if (!info) continue
+
+    const startYear = info.startYear ? parseInt(info.startYear) : null
+    const endYear = info.endYear ? parseInt(info.endYear) : null
+
+    if (startYear !== null) {
+      periods.push({ start: startYear, end: endYear })
+    }
+  }
+
+  if (periods.length === 0) return []
+
+  // Sort by start year
+  periods.sort((a, b) => a.start - b.start)
+
+  // Merge contiguous periods (gap <= 1 year)
+  const eras: FranchiseEra[] = []
+  let currentEra: { start: number; end: number | null } = { ...periods[0] }
+
+  for (let i = 1; i < periods.length; i++) {
+    const period = periods[i]
+    const currentEnd = currentEra.end ?? new Date().getFullYear()
+
+    // Check for gap > 1 year
+    if (period.start - currentEnd > 1) {
+      // Close current era and start new one
+      eras.push({
+        startYear: currentEra.start,
+        endYear: currentEnd
+      })
+      currentEra = { ...period }
+    } else {
+      // Extend current era
+      if (period.end === null) {
+        currentEra.end = null
+      } else if (currentEra.end !== null) {
+        currentEra.end = Math.max(currentEra.end, period.end)
+      }
+    }
+  }
+
+  // Add final era
+  eras.push({
+    startYear: currentEra.start,
+    endYear: currentEra.end ?? new Date().getFullYear()
+  })
+
+  return eras
+}

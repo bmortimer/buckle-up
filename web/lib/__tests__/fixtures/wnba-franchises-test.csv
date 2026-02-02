@@ -12,3 +12,7 @@ ORL,ORL,Orlando Miracle,Orlando,1999,2002,relocated,CON,#C8102E
 # Teams that never relocated
 NYL,NYL,New York Liberty,New York,1997,,active,,#86CEBC
 MIN,MIN,Minnesota Lynx,Minneapolis,1999,,active,,#266092
+
+# Portland Fire - revival with gap (2000-2002, then 2026+)
+FIRE26,PDX,Portland Fire,Portland,2026,,active,,#C8102E
+POR,POR,Portland Fire,Portland,2000,2002,revived,FIRE26,#E03A3E

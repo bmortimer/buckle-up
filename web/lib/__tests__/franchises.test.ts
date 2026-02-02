@@ -10,6 +10,7 @@ import {
   getAllFranchiseAbbrs,
   getCurrentFranchiseName,
   getTeamDisplayName,
+  getFranchiseEras,
 } from '../franchises'
 import type { FranchiseInfo } from '../types'
 
@@ -210,5 +211,45 @@ describe('Caching behavior', () => {
     expect(getRootFranchiseId('GOS', nbaFranchises)).toBe(result1)
     expect(isSameFranchise('GOS', 'GSW', nbaFranchises)).toBe(result2)
     expect(getAllFranchiseAbbrs('LVA', wnbaFranchises)).toEqual(result3)
+  })
+})
+
+describe('getFranchiseEras', () => {
+  it('should return single era for teams with continuous history', () => {
+    const eras = getFranchiseEras('NYL', wnbaFranchises)
+    expect(eras).toHaveLength(1)
+    expect(eras[0].startYear).toBe(1997)
+    // endYear should be current year since team is still active
+    expect(eras[0].endYear).toBeGreaterThanOrEqual(2024)
+  })
+
+  it('should return single era for franchise with continuous relocations', () => {
+    // Las Vegas Aces: UTA (1997-2002) -> SAS (2003-2017) -> LVA (2018+)
+    // These are contiguous (no gap > 1 year)
+    const eras = getFranchiseEras('LVA', wnbaFranchises)
+    expect(eras).toHaveLength(1)
+    expect(eras[0].startYear).toBe(1997) // Utah Starzz start
+    expect(eras[0].endYear).toBeGreaterThanOrEqual(2024)
+  })
+
+  it('should return multiple eras for teams with gaps in history', () => {
+    // Portland Fire: 2000-2002, then revived 2026+
+    const eras = getFranchiseEras('FIRE26', wnbaFranchises)
+    expect(eras).toHaveLength(2)
+    expect(eras[0]).toEqual({ startYear: 2000, endYear: 2002 })
+    expect(eras[1].startYear).toBe(2026)
+    expect(eras[1].endYear).toBeGreaterThanOrEqual(2026)
+  })
+
+  it('should work with historical team code as input', () => {
+    // Using POR (historical) should give same result as FIRE26 (current)
+    const erasFromHistorical = getFranchiseEras('POR', wnbaFranchises)
+    const erasFromCurrent = getFranchiseEras('FIRE26', wnbaFranchises)
+    expect(erasFromHistorical).toEqual(erasFromCurrent)
+  })
+
+  it('should return empty array for unknown team', () => {
+    const eras = getFranchiseEras('UNKNOWN', wnbaFranchises)
+    expect(eras).toHaveLength(0)
   })
 })
