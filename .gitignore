@@ -13,6 +13,7 @@ ENV/
 
 # Next.js
 web/.next/
+web/next-env.d.ts
 web/out/
 web/build/
 web/dist/
