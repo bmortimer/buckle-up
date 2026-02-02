@@ -25,6 +25,8 @@ interface DayData {
   challenger?: string // Team that challenged for the belt (if played)
   isTie?: boolean // Game ended in a tie
   game?: Game // The actual game that was played (if any)
+  isUpcomingTitleBout?: boolean // This day has the next unplayed title bout
+  isUncertain?: boolean // Day is after an unplayed title bout - outcome unknown
 }
 
 interface PopupPosition {
@@ -204,6 +206,29 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     currentDate.setDate(currentDate.getDate() + 1)
   }
 
+  // Mark uncertain days for team calendar view
+  // Find the first unplayed title bout and mark subsequent days as uncertain
+  const markUncertainDays = (teamCode: string) => {
+    // Sort days chronologically
+    const sortedDates = Array.from(dayMap.keys()).sort()
+    let foundUpcomingBout = false
+
+    for (const dateStr of sortedDates) {
+      const dayData = dayMap.get(dateStr)!
+
+      if (foundUpcomingBout) {
+        // All days after the upcoming bout are uncertain for this team
+        if (isSameFranchise(dayData.holder, teamCode, franchises)) {
+          dayData.isUncertain = true
+        }
+      } else if (!dayData.played && dayData.game && isSameFranchise(dayData.holder, teamCode, franchises)) {
+        // This is the first unplayed game where the team holds the belt
+        dayData.isUpcomingTitleBout = true
+        foundUpcomingBout = true
+      }
+    }
+  }
+
   // Group days by month
   const monthsData = new Map<string, DayData[]>()
   dayMap.forEach((dayData) => {
@@ -216,6 +241,11 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     }
     monthsData.get(monthKey)!.push(dayData)
   })
+
+  // Mark uncertain days if a team is selected
+  if (selectedTeam) {
+    markUncertainDays(selectedTeam)
+  }
 
   // Only show months where the selected team was involved in belt activity
   const relevantMonths = Array.from(monthsData.entries())
@@ -394,8 +424,8 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                           // Classify this day for the selected team
                           const classification = classifyDayForTeam(dayData, selectedTeam!, franchises)
 
-                          // Show empty cell for days team wasn't involved
-                          if (!classification.isInvolved) {
+                          // Show empty cell for days team wasn't involved or uncertain future days
+                          if (!classification.isInvolved || classification.isUncertain) {
                             return (
                               <div
                                 key={dayIdx}
@@ -407,7 +437,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                           const color = getTeamColor(selectedTeam!, franchises)
 
                           // Extract classification results for styling
-                          const { tiedWhileHolding, failedChallenge, isWinOrDefense, isLoss } = classification
+                          const { tiedWhileHolding, failedChallenge, isWinOrDefense, isLoss, isUpcomingTitleBout } = classification
 
                           // Color logic with opacity baked into the color:
                           // - Wins/defenses: full team color
@@ -415,6 +445,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                           // - Losses while holding: transparent with border and X
                           // - Failed challenges (tie or loss): tan with 60% opacity
                           // - Off days: dim team color (25% opacity)
+                          // - Upcoming title bout: dim team color with "?"
 
                           // Helper to convert hex to rgba with opacity
                           const hexToRgba = (hex: string, alpha: number) => {
@@ -428,6 +459,8 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                           // IMPORTANT: Check isLoss first to ensure lost belt shows transparent (not tan)
                           if (isLoss) {
                             cellColor = 'transparent'
+                          } else if (isUpcomingTitleBout) {
+                            cellColor = hexToRgba(color, 0.25) // Dim for upcoming bout
                           } else if (isWinOrDefense) {
                             cellColor = color // Full opacity
                           } else if (failedChallenge) {
@@ -465,6 +498,11 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
                               {tiedWhileHolding && (
                                 <span className="text-[6px] font-bold leading-none pointer-events-none">
                                   T
+                                </span>
+                              )}
+                              {isUpcomingTitleBout && (
+                                <span className="text-[7px] font-bold leading-none pointer-events-none">
+                                  ?
                                 </span>
                               )}
                             </div>

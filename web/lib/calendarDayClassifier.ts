@@ -16,6 +16,8 @@ export interface DayData {
   winner?: string
   challenger?: string
   isTie?: boolean
+  isUncertain?: boolean  // Day is after an unplayed title bout - outcome unknown
+  isUpcomingTitleBout?: boolean  // This day has the next unplayed title bout
 }
 
 export interface DayClassification {
@@ -34,6 +36,8 @@ export interface DayClassification {
   lostBelt: boolean          // Held belt and lost (transparent with X)
   offDay: boolean            // Held belt, no game (dim color)
   failedChallenge: boolean   // Challenged and lost or tied (tan color)
+  isUpcomingTitleBout: boolean  // Has upcoming unplayed game as belt holder (show "?")
+  isUncertain: boolean       // Day is after an unplayed title bout - outcome unknown
 
   // Aggregates for styling
   isWinOrDefense: boolean    // Bright team color
@@ -75,8 +79,10 @@ export function classifyDayForTeam(
   const defendedBelt = heldBelt && dayData.played && dayData.won === true
   const tiedWhileHolding = heldBelt && dayData.played && Boolean(dayData.isTie)
   const lostBelt = heldBelt && dayData.played && dayData.won === false
-  const offDay = heldBelt && !dayData.played
+  const offDay = heldBelt && !dayData.played && !dayData.isUpcomingTitleBout && !dayData.isUncertain
   const failedChallenge = challengedBelt && dayData.played  // Both tie and loss when challenging
+  const isUpcomingTitleBout = Boolean(heldBelt && dayData.isUpcomingTitleBout)
+  const isUncertain = Boolean(dayData.isUncertain)
 
   // Aggregates
   const isWinOrDefense = wonBeltThisDay || defendedBelt
@@ -93,6 +99,8 @@ export function classifyDayForTeam(
     lostBelt,
     offDay,
     failedChallenge,
+    isUpcomingTitleBout,
+    isUncertain,
     isWinOrDefense,
     isLoss,
   }
