@@ -7,6 +7,7 @@ import BeltDashboard from '@/components/BeltDashboard'
 export const metadata: Metadata = {
   title: 'WNBA Championship Belt Tracker | Lineal Title Since 1997',
   description: 'Track the WNBA lineal championship belt from 1997 to present. See who holds the belt, upcoming title bouts, and complete history.',
+  keywords: ['WNBA', 'championship belt', 'lineal title', 'basketball', 'belt tracker', 'WNBA stats', 'women\'s basketball'],
   alternates: {
     canonical: 'https://whohasthebelt.com/wnba'
   },

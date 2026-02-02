@@ -5,6 +5,7 @@ import BackButton from '@/components/BackButton'
 export const metadata: Metadata = {
   title: 'About the Championship Belt Tracker',
   description: 'Learn how the lineal championship belt works for WNBA, NBA, and NHL. Track boxing-style titles across basketball and hockey leagues.',
+  keywords: ['championship belt', 'lineal title', 'how it works', 'belt tracker', 'WNBA', 'NBA', 'NHL', 'sports stats'],
   alternates: {
     canonical: 'https://whohasthebelt.com/about'
   },
@@ -69,6 +70,14 @@ const faqSchema = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Game Data: NBA scores and schedules come from the official NBA Stats API. WNBA and NHL data come from Sports-Reference.com. Team Logos: Current team logos are from the official NBA, WNBA, and NHL websites. Historical team logos are from Wikimedia Commons, Loodibee.com, and SportsLogos.net. All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'When do you update the data?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We automatically update our data every night between 3:30 and 4:00 AM Pacific time (6:30–7:00 AM Eastern). This timing ensures we capture all of the previous night\'s games, even when there are delays or overtimes, while still being early enough for most users. Occasionally, the nightly update fails to capture a game—it will usually catch up the following night, but if you notice an issue, please reach out via our Feedback link.',
       },
     },
     {
@@ -307,6 +316,24 @@ export default function AboutPage() {
                 </p>
                 <p>
                   All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!
+                </p>
+              </div>
+
+              {/* Corner rivets for retro hardware look */}
+              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            </details>
+
+            <details className="group scoreboard-panel relative overflow-hidden">
+              <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
+                When do you update the data?
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform text-sm">&#9662;</span>
+              </summary>
+              <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
+                <p>
+                  We automatically update our data every night between 3:30 and 4:00 AM Pacific time (6:30–7:00 AM Eastern). This timing ensures we capture all of the previous night's games, even when there are delays or overtimes, while still being early enough for most users. Occasionally, the nightly update fails to capture a game—it will usually catch up the following night, but if you notice an issue, please reach out via our <a href="https://forms.gle/LPBtZDxih1HQT53E9" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Feedback</a> link.
                 </p>
               </div>
 

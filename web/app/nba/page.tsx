@@ -7,6 +7,7 @@ import BeltDashboard from '@/components/BeltDashboard'
 export const metadata: Metadata = {
   title: 'NBA Championship Belt Tracker | Lineal Title Since 1976',
   description: 'Track the NBA lineal championship belt from 1976 to present. See who holds the belt, upcoming title bouts, and complete history.',
+  keywords: ['NBA', 'championship belt', 'lineal title', 'basketball', 'belt tracker', 'NBA stats', 'pro basketball'],
   alternates: {
     canonical: 'https://whohasthebelt.com/nba'
   },
