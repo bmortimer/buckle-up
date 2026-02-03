@@ -6124,71 +6124,71 @@
       "date": "2026-02-02",
       "homeTeam": "CGY",
       "awayTeam": "TOR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 4
     },
     {
       "date": "2026-02-02",
       "homeTeam": "CHI",
       "awayTeam": "SJS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 6,
+      "awayScore": 3
     },
     {
       "date": "2026-02-02",
       "homeTeam": "COL",
       "awayTeam": "DET",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 2
     },
     {
       "date": "2026-02-02",
       "homeTeam": "DAL",
       "awayTeam": "WPG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 3
     },
     {
       "date": "2026-02-02",
       "homeTeam": "FLA",
       "awayTeam": "BUF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 5
     },
     {
       "date": "2026-02-02",
       "homeTeam": "MIN",
       "awayTeam": "MTL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 3
     },
     {
       "date": "2026-02-02",
       "homeTeam": "NSH",
       "awayTeam": "STL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 6,
+      "awayScore": 5
     },
     {
       "date": "2026-02-02",
       "homeTeam": "PIT",
       "awayTeam": "OTT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-02-02",
       "homeTeam": "UTA",
       "awayTeam": "VAN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 6,
+      "awayScore": 2
     },
     {
       "date": "2026-02-02",
       "homeTeam": "WSH",
       "awayTeam": "NYI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "date": "2026-02-03",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-02-02T11:11:49.911402"
+    "ingested_at": "2026-02-03T06:22:50.790977"
   }
 }
