@@ -455,7 +455,7 @@ export default function BeltDashboard({
         <div className="led-bar-top" />
         <div className="relative z-10">
           <p className="text-xs font-mono text-muted-foreground tracking-wider uppercase mb-2">
-            Data updates nightly ~3:30 AM Pacific
+            Data updates nightly ~3:30 AM Pacific (winter) / 4:30 AM (summer)
           </p>
           <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider mb-2">
             {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1]

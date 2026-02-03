@@ -203,7 +203,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent" />
 
         <p className="text-xs text-muted-foreground font-mono tracking-wider uppercase">
-          Data updates nightly ~3:30 AM Pacific
+          Data updates nightly ~3:30 AM Pacific (winter) / 4:30 AM (summer)
         </p>
 
         {/* Corner rivets */}

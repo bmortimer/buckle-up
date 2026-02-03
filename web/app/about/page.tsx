@@ -77,7 +77,7 @@ const faqSchema = {
       name: 'When do you update the data?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We automatically update our data every night between 3:30 and 4:00 AM Pacific time (6:30–7:00 AM Eastern). This timing ensures we capture all of the previous night\'s games, even when there are delays or overtimes, while still being early enough for most users. Occasionally, the nightly update fails to capture a game—it will usually catch up the following night, but if you notice an issue, please reach out via our Feedback link.',
+        text: 'We automatically update our data every night around 3:30 AM Pacific in winter (4:30 AM Pacific during summer). This timing ensures we capture all of the previous night\'s games, even when there are delays or overtimes, while still being early enough for most users. Occasionally, the nightly update fails to capture a game—it will usually catch up the following night, but if you notice an issue, please reach out via our Feedback link.',
       },
     },
     {
@@ -333,7 +333,7 @@ export default function AboutPage() {
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p>
-                  We automatically update our data every night between 3:30 and 4:00 AM Pacific time (6:30–7:00 AM Eastern). This timing ensures we capture all of the previous night's games, even when there are delays or overtimes, while still being early enough for most users. Occasionally, the nightly update fails to capture a game—it will usually catch up the following night, but if you notice an issue, please reach out via our <a href="https://forms.gle/LPBtZDxih1HQT53E9" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Feedback</a> link.
+                  We automatically update our data every night around 3:30 AM Pacific in winter (4:30 AM Pacific during summer). This timing ensures we capture all of the previous night's games, even when there are delays or overtimes, while still being early enough for most users. Occasionally, the nightly update fails to capture a game—it will usually catch up the following night, but if you notice an issue, please reach out via our <a href="https://forms.gle/LPBtZDxih1HQT53E9" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Feedback</a> link.
                 </p>
               </div>
 
@@ -413,7 +413,7 @@ export default function AboutPage() {
         <footer className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
           <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent" aria-hidden="true" />
           <p className="text-xs text-muted-foreground font-mono tracking-wider uppercase mb-3">
-            Data updates nightly ~3:30 AM Pacific.
+            Data updates nightly ~3:30 AM Pacific (winter) / 4:30 AM (summer).
           </p>
           <div className="flex items-center justify-center gap-3 text-xs font-mono uppercase tracking-wider">
             <BackButton className="text-primary hover:opacity-80 transition-colors">
