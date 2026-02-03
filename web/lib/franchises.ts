@@ -4,9 +4,6 @@
 
 import type { FranchiseInfo } from './types'
 
-// Cache for loaded franchise data
-let franchiseCache: Map<string, FranchiseInfo[]> = new Map()
-
 // Memoization caches - keyed by franchises array reference
 const franchiseMapCache = new WeakMap<FranchiseInfo[], Map<string, FranchiseInfo>>()
 const rootFranchiseCache = new WeakMap<FranchiseInfo[], Map<string, string>>()
@@ -205,6 +202,19 @@ export interface FranchiseEra {
  * An era is defined as a contiguous period of activity. A gap of >1 year
  * between franchise periods creates separate eras.
  */
+/**
+ * Dedupe a set of team codes by franchise, returning only current franchise abbreviations.
+ * For example, ["UTA", "SAS", "LVA", "NYL"] becomes ["LVA", "NYL"] (Utah Starzz and San Antonio Stars map to Las Vegas Aces).
+ */
+export function dedupeByFranchise(teams: Set<string> | string[], franchises: FranchiseInfo[]): string[] {
+  const teamArray = teams instanceof Set ? Array.from(teams) : teams
+  const franchiseSet = new Set<string>()
+  teamArray.forEach(team => {
+    franchiseSet.add(getCurrentFranchiseAbbr(team, franchises))
+  })
+  return Array.from(franchiseSet).sort()
+}
+
 export function getFranchiseEras(teamAbbr: string, franchises: FranchiseInfo[]): FranchiseEra[] {
   const allAbbrs = getAllFranchiseAbbrs(teamAbbr, franchises)
 

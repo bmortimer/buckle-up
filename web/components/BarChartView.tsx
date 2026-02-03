@@ -1,5 +1,5 @@
 import type { TeamBeltStats, FranchiseInfo, Game, League } from '@/lib/types'
-import { getTeamColor, getTeamDisplayName, getCurrentFranchiseAbbr } from '@/lib/franchises'
+import { getTeamColor, getTeamDisplayName, dedupeByFranchise } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 import { useState } from 'react'
 
@@ -31,13 +31,10 @@ export default function BarChartView({ teams, franchises, allGames, selectedTeam
   let allTeamsStats: TeamBeltStats[]
 
   if (isAllTime) {
-    // First, dedupe teams by franchise
-    const franchiseSet = new Set<string>()
-    allTeams.forEach(team => {
-      franchiseSet.add(getCurrentFranchiseAbbr(team, franchises))
-    })
+    // Dedupe teams by franchise
+    const franchiseAbbrs = dedupeByFranchise(allTeams, franchises)
 
-    allTeamsStats = Array.from(franchiseSet).map(franchiseAbbr => {
+    allTeamsStats = franchiseAbbrs.map(franchiseAbbr => {
       return beltStatsMap.get(franchiseAbbr) || {
         team: franchiseAbbr,
         timesHeld: 0,

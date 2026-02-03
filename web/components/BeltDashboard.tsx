@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect, useRef } from 'react'
 import { useSearchParams } from 'next/navigation'
 import type { SeasonData, FranchiseInfo, League } from '@/lib/types'
 import { trackAllSeasons } from '@/lib/beltTracker'
-import { getCurrentFranchiseAbbr, getAllFranchiseAbbrs, getTeamCodeForYear } from '@/lib/franchises'
+import { getCurrentFranchiseAbbr, getAllFranchiseAbbrs, getTeamCodeForYear, dedupeByFranchise } from '@/lib/franchises'
 import { getSeasonConfig } from '@/lib/seasonConfig'
 import BeltHolderCard from './BeltHolderCard'
 import TeamBeltCard from './TeamBeltCard'
@@ -168,12 +168,7 @@ export default function BeltDashboard({
     })
 
     if (isAllTime) {
-      // Dedupe by franchise - only keep current franchise abbreviation
-      const franchiseSet = new Set<string>()
-      teamSet.forEach(team => {
-        franchiseSet.add(getCurrentFranchiseAbbr(team, franchises))
-      })
-      return Array.from(franchiseSet).sort()
+      return dedupeByFranchise(teamSet, franchises)
     }
 
     return Array.from(teamSet).sort()

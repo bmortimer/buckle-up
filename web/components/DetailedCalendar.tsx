@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import type { BeltHistory, FranchiseInfo, Game, League } from '@/lib/types'
+import type { BeltHistory, FranchiseInfo, Game, League, CalendarDayData } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
 import { getTeamColor, getTeamDisplayName, isSameFranchise } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
@@ -20,18 +20,8 @@ interface PopupPosition {
   y: number
 }
 
-interface DayData {
-  date: string
-  holder: string
-  game?: Game
-  beltChanged: boolean
-  holderWon: boolean | null
-  winner?: string
-  challenger?: string
-  isTie?: boolean                 // Game ended in a tie
-  isScheduledTitleBout?: boolean  // Has an unplayed title bout
-  isUncertainFuture?: boolean     // After an unplayed title bout - outcome unknown
-}
+// Use shared CalendarDayData type, but keep local alias for compatibility
+type DayData = CalendarDayData
 
 export default function DetailedCalendar({ history, franchises, allGames, year, league = 'wnba' }: DetailedCalendarProps) {
   const [selectedDay, setSelectedDay] = useState<DayData | null>(null)

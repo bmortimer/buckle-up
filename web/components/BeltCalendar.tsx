@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import type { BeltHistory, FranchiseInfo, Game, League } from '@/lib/types'
+import { useState, useEffect, useMemo } from 'react'
+import type { BeltHistory, FranchiseInfo, Game, League, CalendarDayData } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
 import { getTeamColor, getTeamDisplayName, isSameFranchise, getFranchiseEras } from '@/lib/franchises'
-import { classifyDayForTeam } from '@/lib/calendarDayClassifier'
+import { classifyDayForTeam, getActiveMonthsForTeam } from '@/lib/calendarDayClassifier'
 import TeamLogo from './TeamLogo'
 import CalendarDayPopup from './CalendarDayPopup'
 
@@ -16,18 +16,8 @@ interface BeltCalendarProps {
   league: 'nba' | 'wnba' | 'nhl'
 }
 
-interface DayData {
-  date: string
-  holder: string
-  played: boolean
-  won: boolean | null
-  winner?: string // Team that won this game (if played)
-  challenger?: string // Team that challenged for the belt (if played)
-  isTie?: boolean // Game ended in a tie
-  game?: Game // The actual game that was played (if any)
-  isUpcomingTitleBout?: boolean // This day has the next unplayed title bout
-  isUncertain?: boolean // Day is after an unplayed title bout - outcome unknown
-}
+// Use shared CalendarDayData type, but keep local alias for compatibility
+type DayData = CalendarDayData
 
 interface PopupPosition {
   x: number
@@ -247,18 +237,22 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     markUncertainDays(selectedTeam)
   }
 
-  // Only show months where the selected team was involved in belt activity
+  // Get months where the selected team played any game (not just belt games)
+  // Memoize to avoid recalculating on every render
+  const teamActiveMonths = useMemo(() => {
+    if (!selectedTeam) return new Set<string>()
+    return getActiveMonthsForTeam(allGames, selectedTeam, franchises)
+  }, [allGames, selectedTeam, franchises])
+
+  // Show months where the selected team was active (played any game), or belt games occurred
   const relevantMonths = Array.from(monthsData.entries())
-    .filter(([_, days]) => {
+    .filter(([monthKey, days]) => {
       if (!selectedTeam) {
         // No team selected - show all months with belt games
         return days.some(d => d.played)
       }
-      // Team selected - only show months where that team was involved
-      return days.some(d => {
-        const classification = classifyDayForTeam(d, selectedTeam, franchises)
-        return classification.isInvolved && d.played
-      })
+      // Team selected - show months where team played any game
+      return teamActiveMonths.has(monthKey)
     })
     .sort((a, b) => a[0].localeCompare(b[0]))
 

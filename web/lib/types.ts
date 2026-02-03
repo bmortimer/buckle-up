@@ -72,3 +72,23 @@ export interface FranchiseInfo {
   successorFranchiseId: string
   hexColor: string
 }
+
+/**
+ * Day data for calendar views (BeltCalendar and DetailedCalendar)
+ */
+export interface CalendarDayData {
+  date: string
+  holder: string
+  game?: Game
+  played?: boolean              // BeltCalendar: whether holder played
+  won?: boolean | null          // BeltCalendar: whether holder won (null for ties/unplayed)
+  beltChanged?: boolean         // DetailedCalendar: belt changed hands
+  holderWon?: boolean | null    // DetailedCalendar: whether holder won (null for ties/unplayed)
+  winner?: string               // Team that won this game (if played)
+  challenger?: string           // Team that challenged for the belt
+  isTie?: boolean               // Game ended in a tie
+  isUpcomingTitleBout?: boolean // BeltCalendar: next unplayed title bout
+  isScheduledTitleBout?: boolean // DetailedCalendar: has an unplayed title bout
+  isUncertain?: boolean         // BeltCalendar: day is after an unplayed title bout
+  isUncertainFuture?: boolean   // DetailedCalendar: after an unplayed title bout
+}

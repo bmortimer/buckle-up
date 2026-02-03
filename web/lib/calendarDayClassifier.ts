@@ -5,20 +5,15 @@
  * Extracted from BeltCalendar component for testability.
  */
 
-import type { FranchiseInfo } from './types'
-import { isSameFranchise } from './franchises'
+import type { FranchiseInfo, CalendarDayData, Game } from './types'
+import { isGameCompleted } from './types'
+import { isSameFranchise, getAllFranchiseAbbrs } from './franchises'
 
-export interface DayData {
-  date: string
-  holder: string
-  played: boolean
-  won: boolean | null
-  winner?: string
-  challenger?: string
-  isTie?: boolean
-  isUncertain?: boolean  // Day is after an unplayed title bout - outcome unknown
-  isUpcomingTitleBout?: boolean  // This day has the next unplayed title bout
-}
+// Cache for getActiveMonthsForTeam - keyed by games array, then by team code
+const activeMonthsCache = new WeakMap<Game[], Map<string, Set<string>>>()
+
+// Re-export CalendarDayData as DayData for backwards compatibility
+export type DayData = CalendarDayData
 
 export interface DayClassification {
   // Is the selected team involved in this day at all?
@@ -57,6 +52,9 @@ export function classifyDayForTeam(
   selectedTeam: string,
   franchises: FranchiseInfo[]
 ): DayClassification {
+  // Normalize optional played field (default to false if undefined)
+  const played = dayData.played ?? false
+
   // Check if selected team is involved: held belt, won belt, OR challenged for belt
   // Use franchise matching to include historical team codes (UTA/SAS for LVA)
   const heldBelt = Boolean(dayData.holder && isSameFranchise(dayData.holder, selectedTeam, franchises))
@@ -69,18 +67,18 @@ export function classifyDayForTeam(
     isSameFranchise(dayData.challenger, selectedTeam, franchises) &&
     !heldBelt &&
     !wonBelt &&
-    dayData.played
+    played
   )
 
   const isInvolved = heldBelt || wonBelt || challengedBelt
 
   // Detailed outcomes
-  const wonBeltThisDay = wonBelt && dayData.played
-  const defendedBelt = heldBelt && dayData.played && dayData.won === true
-  const tiedWhileHolding = heldBelt && dayData.played && Boolean(dayData.isTie)
-  const lostBelt = heldBelt && dayData.played && dayData.won === false
-  const offDay = heldBelt && !dayData.played && !dayData.isUpcomingTitleBout && !dayData.isUncertain
-  const failedChallenge = challengedBelt && dayData.played  // Both tie and loss when challenging
+  const wonBeltThisDay = wonBelt && played
+  const defendedBelt = heldBelt && played && dayData.won === true
+  const tiedWhileHolding = heldBelt && played && Boolean(dayData.isTie)
+  const lostBelt = heldBelt && played && dayData.won === false
+  const offDay = heldBelt && !played && !dayData.isUpcomingTitleBout && !dayData.isUncertain
+  const failedChallenge = challengedBelt && played  // Both tie and loss when challenging
   const isUpcomingTitleBout = Boolean(heldBelt && dayData.isUpcomingTitleBout)
   const isUncertain = Boolean(dayData.isUncertain)
 
@@ -104,4 +102,49 @@ export function classifyDayForTeam(
     isWinOrDefense,
     isLoss,
   }
+}
+
+/**
+ * Get the set of months (YYYY-MM format) where a team played any completed game.
+ * This is used to show all months a team was active, not just months with belt activity.
+ * Results are cached by games array and team code for performance.
+ *
+ * @param games - All games to search through
+ * @param teamCode - The team code to find active months for
+ * @param franchises - Franchise info for matching team codes across relocations
+ * @returns Set of month keys in YYYY-MM format
+ */
+export function getActiveMonthsForTeam(
+  games: Game[],
+  teamCode: string,
+  franchises: FranchiseInfo[]
+): Set<string> {
+  // Check cache first
+  let teamCache = activeMonthsCache.get(games)
+  if (!teamCache) {
+    teamCache = new Map()
+    activeMonthsCache.set(games, teamCache)
+  }
+
+  const cached = teamCache.get(teamCode)
+  if (cached) return cached
+
+  // Build set of all team codes in the franchise lineage for faster lookup
+  const franchiseCodes = new Set(getAllFranchiseAbbrs(teamCode, franchises))
+
+  const activeMonths = new Set<string>()
+
+  games.forEach(game => {
+    // Use direct Set lookup instead of isSameFranchise for each game
+    const teamPlayed = franchiseCodes.has(game.homeTeam) || franchiseCodes.has(game.awayTeam)
+    if (teamPlayed && isGameCompleted(game)) {
+      const [y, m] = game.date.split('-').map(Number)
+      const monthKey = `${y}-${String(m).padStart(2, '0')}`
+      activeMonths.add(monthKey)
+    }
+  })
+
+  // Cache the result
+  teamCache.set(teamCode, activeMonths)
+  return activeMonths
 }
