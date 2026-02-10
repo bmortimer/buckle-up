@@ -5550,71 +5550,71 @@
       "date": "2026-02-09",
       "homeTeam": "CHA",
       "awayTeam": "DET",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 104,
+      "awayScore": 110
     },
     {
       "date": "2026-02-09",
       "homeTeam": "BKN",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 123,
+      "awayScore": 115
     },
     {
       "date": "2026-02-09",
       "homeTeam": "MIA",
       "awayTeam": "UTA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 111,
+      "awayScore": 115
     },
     {
       "date": "2026-02-09",
       "homeTeam": "ORL",
       "awayTeam": "MIL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 118,
+      "awayScore": 99
     },
     {
       "date": "2026-02-09",
       "homeTeam": "MIN",
       "awayTeam": "ATL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 138,
+      "awayScore": 116
     },
     {
       "date": "2026-02-09",
       "homeTeam": "NOP",
       "awayTeam": "SAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 120,
+      "awayScore": 94
     },
     {
       "date": "2026-02-09",
       "homeTeam": "DEN",
       "awayTeam": "CLE",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 117,
+      "awayScore": 119
     },
     {
       "date": "2026-02-09",
       "homeTeam": "GSW",
       "awayTeam": "MEM",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 114,
+      "awayScore": 113
     },
     {
       "date": "2026-02-09",
       "homeTeam": "LAL",
       "awayTeam": "OKC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 110,
+      "awayScore": 119
     },
     {
       "date": "2026-02-09",
       "homeTeam": "POR",
       "awayTeam": "PHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 135,
+      "awayScore": 118
     },
     {
       "date": "2026-02-10",
@@ -8629,7 +8629,7 @@
   ],
   "metadata": {
     "total_games": 1232,
-    "ingested_at": "2026-02-09T12:01:41.321113",
+    "ingested_at": "2026-02-10T12:05:04.870734",
     "source": "basketball-reference.com"
   }
 }
