@@ -5648,99 +5648,99 @@
       "date": "2026-02-11",
       "homeTeam": "CHA",
       "awayTeam": "ATL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 110,
+      "awayScore": 107
     },
     {
       "date": "2026-02-11",
       "homeTeam": "CLE",
       "awayTeam": "WAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 138,
+      "awayScore": 113
     },
     {
       "date": "2026-02-11",
       "homeTeam": "ORL",
       "awayTeam": "MIL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 108,
+      "awayScore": 116
     },
     {
       "date": "2026-02-11",
       "homeTeam": "BOS",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 124,
+      "awayScore": 105
     },
     {
       "date": "2026-02-11",
       "homeTeam": "BKN",
       "awayTeam": "IND",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 110,
+      "awayScore": 115
     },
     {
       "date": "2026-02-11",
       "homeTeam": "PHI",
       "awayTeam": "NYK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 89,
+      "awayScore": 138
     },
     {
       "date": "2026-02-11",
       "homeTeam": "TOR",
       "awayTeam": "DET",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 95,
+      "awayScore": 113
     },
     {
       "date": "2026-02-11",
       "homeTeam": "HOU",
       "awayTeam": "LAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 102,
+      "awayScore": 105
     },
     {
       "date": "2026-02-11",
       "homeTeam": "MIN",
       "awayTeam": "POR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 133,
+      "awayScore": 109
     },
     {
       "date": "2026-02-11",
       "homeTeam": "NOP",
       "awayTeam": "MIA",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "date": "2026-02-11",
-      "homeTeam": "PHX",
-      "awayTeam": "OKC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "date": "2026-02-11",
-      "homeTeam": "UTA",
-      "awayTeam": "SAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 111,
+      "awayScore": 123
     },
     {
       "date": "2026-02-11",
       "homeTeam": "DEN",
       "awayTeam": "MEM",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 122,
+      "awayScore": 116
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "PHX",
+      "awayTeam": "OKC",
+      "homeScore": 109,
+      "awayScore": 136
+    },
+    {
+      "date": "2026-02-11",
+      "homeTeam": "UTA",
+      "awayTeam": "SAC",
+      "homeScore": 121,
+      "awayScore": 93
     },
     {
       "date": "2026-02-11",
       "homeTeam": "GSW",
       "awayTeam": "SAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 113,
+      "awayScore": 126
     },
     {
       "date": "2026-02-12",
@@ -8629,7 +8629,7 @@
   ],
   "metadata": {
     "total_games": 1232,
-    "ingested_at": "2026-02-11T12:02:57.912172",
+    "ingested_at": "2026-02-12T12:00:38.109890",
     "source": "basketball-reference.com"
   }
 }
