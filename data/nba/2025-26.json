@@ -5746,22 +5746,22 @@
       "date": "2026-02-12",
       "homeTeam": "OKC",
       "awayTeam": "MIL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 93,
+      "awayScore": 110
     },
     {
       "date": "2026-02-12",
       "homeTeam": "UTA",
       "awayTeam": "POR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 119,
+      "awayScore": 135
     },
     {
       "date": "2026-02-12",
       "homeTeam": "LAL",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 124,
+      "awayScore": 104
     },
     {
       "date": "2026-02-19",
@@ -8629,7 +8629,7 @@
   ],
   "metadata": {
     "total_games": 1232,
-    "ingested_at": "2026-02-12T12:00:38.109890",
+    "ingested_at": "2026-02-13T11:52:14.424712",
     "source": "basketball-reference.com"
   }
 }
