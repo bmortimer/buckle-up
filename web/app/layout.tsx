@@ -20,16 +20,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://whohasthebelt.com'),
-  title: 'Championship Belt Tracker | WNBA, NBA & NHL Lineal Title',
-  description: 'Track lineal championship belts for WNBA, NBA, and NHL. Boxing-style title tracking for basketball and hockey. Every game is a title defense.',
-  keywords: ['championship belt', 'lineal title', 'basketball', 'hockey', 'belt tracker', 'WNBA', 'NBA', 'NHL', 'sports stats'],
+  title: 'Championship Belt Tracker | WNBA, NBA, NHL & PWHL Lineal Title',
+  description: 'Track lineal championship belts for WNBA, NBA, NHL, and PWHL. Boxing-style title tracking for basketball and hockey. Every game is a title defense.',
+  keywords: ['championship belt', 'lineal title', 'basketball', 'hockey', 'belt tracker', 'WNBA', 'NBA', 'NHL', 'PWHL', 'sports stats'],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://whohasthebelt.com',
     siteName: 'Championship Belt Tracker',
-    title: 'Championship Belt Tracker | WNBA, NBA & NHL',
-    description: 'Track the lineal championship belt across WNBA, NBA, and NHL seasons. See current champions and complete history.',
+    title: 'Championship Belt Tracker | WNBA, NBA, NHL & PWHL',
+    description: 'Track the lineal championship belt across WNBA, NBA, NHL, and PWHL seasons. See current champions and complete history.',
     images: [{
       url: 'https://whohasthebelt.com/og-image.png',
       width: 1200,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Championship Belt Tracker | WNBA, NBA & NHL',
+    title: 'Championship Belt Tracker | WNBA, NBA, NHL & PWHL',
     description: 'Track the lineal championship belt across basketball and hockey. Every game is a title defense.',
     images: ['https://whohasthebelt.com/og-image.png']
   },
@@ -68,7 +68,7 @@ const jsonLd = {
       '@id': 'https://whohasthebelt.com/#webapp',
       name: 'Championship Belt Tracker',
       url: 'https://whohasthebelt.com',
-      description: 'Interactive tracker for lineal championship belts in basketball and hockey. Track which team holds the belt across WNBA, NBA, and NHL, view historical data, and see upcoming title bouts.',
+      description: 'Interactive tracker for lineal championship belts in basketball and hockey. Track which team holds the belt across WNBA, NBA, NHL, and PWHL, view historical data, and see upcoming title bouts.',
       applicationCategory: 'SportsApplication',
       operatingSystem: 'Web Browser',
       offers: {
@@ -80,6 +80,7 @@ const jsonLd = {
         'WNBA lineal championship belt tracking (1997-present)',
         'NBA lineal championship belt tracking (1976-present)',
         'NHL lineal championship belt tracking (1942-present)',
+        'PWHL lineal championship belt tracking (2024-present)',
         'Real-time belt holder information',
         'Historical championship statistics',
         'Team performance analytics',
@@ -92,7 +93,7 @@ const jsonLd = {
       '@id': 'https://whohasthebelt.com/#website',
       url: 'https://whohasthebelt.com',
       name: 'Championship Belt Tracker',
-      description: 'Track the lineal championship belt across WNBA, NBA, and NHL seasons',
+      description: 'Track the lineal championship belt across WNBA, NBA, NHL, and PWHL seasons',
       inLanguage: 'en-US'
     }
   ]

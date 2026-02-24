@@ -4,8 +4,8 @@ import BackButton from '@/components/BackButton'
 
 export const metadata: Metadata = {
   title: 'About the Championship Belt Tracker',
-  description: 'Learn how the lineal championship belt works for WNBA, NBA, and NHL. Track boxing-style titles across basketball and hockey leagues.',
-  keywords: ['championship belt', 'lineal title', 'how it works', 'belt tracker', 'WNBA', 'NBA', 'NHL', 'sports stats'],
+  description: 'Learn how the lineal championship belt works for WNBA, NBA, NHL, and PWHL. Track boxing-style titles across basketball and hockey leagues.',
+  keywords: ['championship belt', 'lineal title', 'how it works', 'belt tracker', 'WNBA', 'NBA', 'NHL', 'PWHL', 'sports stats'],
   alternates: {
     canonical: 'https://whohasthebelt.com/about'
   },
@@ -61,7 +61,7 @@ const faqSchema = {
       name: 'How far back does the data go?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We track the belt from the WNBA\'s inaugural 1997 season to present day. For 1997 we gave the belt to the winner of the league\'s very first game (the New York Liberty). As the winner of the league\'s first championship, the Houston Comets started the 1998 season with the belt. For the NBA, we track the belt from the NBA-ABA merger in 1976 to present day. The belt starts with the Boston Celtics, who won the 1975-1976 NBA championship. For the NHL, we track the belt beginning with the beginning of the Original Six era, the 1942-1943 season. As the winner of the 1942 Stanley Cup Final, the Toronto Maple Leafs start with the belt.',
+        text: 'We track the belt from the WNBA\'s inaugural 1997 season to present day. For 1997 we gave the belt to the winner of the league\'s very first game (the New York Liberty). As the winner of the league\'s first championship, the Houston Comets started the 1998 season with the belt. For the NBA, we track the belt from the NBA-ABA merger in 1976 to present day. The belt starts with the Boston Celtics, who won the 1975-1976 NBA championship. For the NHL, we track the belt beginning with the beginning of the Original Six era, the 1942-1943 season. As the winner of the 1942 Stanley Cup Final, the Toronto Maple Leafs start with the belt. For the PWHL, we track the belt from the league\'s inaugural 2024 season to present day. The belt starts with the Minnesota Frost, who won the 2024 Walter Cup.',
       },
     },
     {
@@ -69,7 +69,7 @@ const faqSchema = {
       name: 'Where does your data come from?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Game Data: NBA scores and schedules come from the official NBA Stats API. WNBA and NHL data come from Sports-Reference.com. Team Logos: Current team logos are from the official NBA, WNBA, and NHL websites. Historical team logos are from Wikimedia Commons, Loodibee.com, and SportsLogos.net. All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!',
+        text: 'Game Data: NBA scores and schedules come from the official NBA Stats API. WNBA, NHL, and PWHL data come from Sports-Reference.com. Team Logos: Current team logos are from the official NBA, WNBA, NHL, and PWHL websites. Historical team logos are from Wikimedia Commons, Loodibee.com, and SportsLogos.net. All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!',
       },
     },
     {
@@ -82,10 +82,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Why the WNBA? Will you bring this to other leagues?',
+      name: 'Which leagues are covered? Will you bring this to other leagues?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Why not? We started with the WNBA because it deserves the same obsessive treatment as every other league and it\'s a close cousin to the NBA. We then expanded to the NBA since it was the genesis of the idea in the first place and then to the NHL because its schedule and game frequency felt like a natural fit. For now we intend to stick to just these three leagues but if the people demand it we could expand The Belt to further reaches of the sports universe.',
+        text: 'We started with the WNBA because it deserves the same obsessive treatment as every other league and it\'s a close cousin to the NBA. We then expanded to the NBA since it was the genesis of the idea in the first place, and finally to Ice Hockey (NHL, PWHL) because the schedule and game frequency felt like a natural fit. For now we intend to stick to just these four leagues but if the people demand it we could expand The Belt to further reaches of the sports universe.',
       },
     },
     {
@@ -218,7 +218,7 @@ export default function AboutPage() {
               </div>
               <div className="h-px bg-gradient-to-r from-border/50 via-border to-border/50" aria-hidden="true" />
               <div className="flex gap-4 items-start">
-                <div className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center" style={{ color: 'hsl(var(--led-green))' }}>4</div>
+                <div className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center" style={{ color: 'hsl(270 60% 60%)' }}>4</div>
                 <div>
                   <h3 className="font-display text-sm uppercase tracking-wide mb-1">Season Reset</h3>
                   <p className="text-muted-foreground font-body text-sm">
@@ -288,8 +288,11 @@ export default function AboutPage() {
                 <p className="mb-3">
                   For the NBA, we track the belt from the NBA-ABA merger in 1976 to present day. The belt starts with the Boston Celtics, who won the 1975-1976 NBA championship.
                 </p>
-                <p>
+                <p className="mb-3">
                   For the NHL, we track the belt beginning with the beginning of the Original Six era, the 1942-1943 season. As the winner of the 1942 Stanley Cup Final, the Toronto Maple Leafs start with the belt.
+                </p>
+                <p>
+                  For the PWHL, we track the belt from the league's inaugural 2024 season to present day. As the winner of the 2024 Walter Cup, the Minnesota Frost start with the belt.
                 </p>
               </div>
 
@@ -309,10 +312,10 @@ export default function AboutPage() {
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
-                  <strong>Game Data:</strong> NBA scores and schedules come from the official <a href="https://www.nba.com/stats" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">NBA Stats API</a>. WNBA and NHL data come from <a href="https://www.sports-reference.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Sports-Reference.com</a>.
+                  <strong>Game Data:</strong> NBA scores and schedules come from the official <a href="https://www.nba.com/stats" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">NBA Stats API</a>. WNBA, NHL, and PWHL data come from <a href="https://www.sports-reference.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Sports-Reference.com</a>.
                 </p>
                 <p className="mb-3">
-                  <strong>Team Logos:</strong> Current team logos are from the official <a href="https://www.nba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">NBA</a>, <a href="https://www.wnba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">WNBA</a>, and <a href="https://www.nhl.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">NHL</a> websites. Historical team logos are from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Wikimedia Commons</a>, <a href="https://loodibee.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Loodibee.com</a>, and <a href="https://www.sportslogos.net/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">SportsLogos.net</a>.
+                  <strong>Team Logos:</strong> Current team logos are from the official <a href="https://www.nba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">NBA</a>, <a href="https://www.wnba.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">WNBA</a>, <a href="https://www.nhl.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">NHL</a>, and <a href="https://www.thepwhl.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">PWHL</a> websites. Historical team logos are from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Wikimedia Commons</a>, <a href="https://loodibee.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">Loodibee.com</a>, and <a href="https://www.sportslogos.net/" target="_blank" rel="noopener noreferrer" className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded">SportsLogos.net</a>.
                 </p>
                 <p>
                   All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!
@@ -346,15 +349,15 @@ export default function AboutPage() {
 
             <details className="group scoreboard-panel relative overflow-hidden">
               <summary className="font-display text-sm uppercase tracking-wide cursor-pointer list-none flex justify-between items-center p-4 hover:bg-muted/20 transition-colors">
-                Why the WNBA? Will you bring this to other leagues?
+                Which leagues are covered? Will you bring this to other leagues?
                 <span className="text-muted-foreground group-open:rotate-180 transition-transform text-sm">&#9662;</span>
               </summary>
               <div className="px-4 pb-4 text-muted-foreground font-body text-sm border-t border-border/40 pt-4 mx-4 mb-0">
                 <p className="mb-3">
-                  Why not? We started with the WNBA because it deserves the same obsessive treatment as every other league and it's a close cousin to the NBA. We then expanded to the NBA since it was the genesis of the idea in the first place and then to the NHL because its schedule and game frequency felt like a natural fit.
+                  We started with the WNBA because it deserves the same obsessive treatment as every other league and it's a close cousin to the NBA. We then expanded to the NBA since it was the genesis of the idea in the first place, and finally to Ice Hockey (NHL, PWHL) because the schedule and game frequency felt like a natural fit.
                 </p>
                 <p>
-                  For now we intend to stick to just these three leagues but if the people demand it we could expand The Belt to further reaches of the sports universe.
+                  For now we intend to stick to just these four leagues but if the people demand it we could expand The Belt to further reaches of the sports universe.
                 </p>
               </div>
 

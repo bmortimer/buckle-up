@@ -1,13 +1,9 @@
 'use client'
 
-import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { ThemeSwitcher } from '@/components/ThemeSwitcher'
 
 export default function HomeClient() {
-  const searchParams = useSearchParams()
-  const showPwhl = searchParams?.get('time') === 'dame'
-
   return (
     <article className="max-w-4xl mx-auto">
       {/* Top navigation - About & Theme */}
@@ -66,7 +62,7 @@ export default function HomeClient() {
           <span aria-hidden="true"> ◆</span>
         </h2>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {/* WNBA Card */}
           <Link
             href="/wnba"
@@ -149,7 +145,7 @@ export default function HomeClient() {
 
             <div className="text-center space-y-4">
               <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
-                Ice Hockey
+                Men's Ice Hockey
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text" style={{ color: 'hsl(var(--led-green))' }}>
@@ -175,43 +171,41 @@ export default function HomeClient() {
             <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
           </Link>
 
-          {/* PWHL Card - Only shown when ?time=dame */}
-          {showPwhl && (
-            <Link
-              href="/pwhl"
-              className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
-            >
-              {/* Top LED strip - purple for PWHL */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          {/* PWHL Card */}
+          <Link
+            href="/pwhl"
+            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+          >
+            {/* Top LED strip - purple for PWHL */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              <div className="text-center space-y-4">
-                <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
-                  Women's Ice Hockey
-                </div>
-
-                <h3 className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text" style={{ color: 'hsl(270 60% 60%)' }}>
-                  PWHL
-                </h3>
-
-                <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-
-                <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                  Track the lineal championship from 2024 to present. See who holds the belt, upcoming title bouts, and a complete history of the PWHL.
-                </p>
-
-                <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-purple-500 transition-colors">
-                  <span>Enter</span>
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
-                </div>
+            <div className="text-center space-y-4">
+              <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
+                Women's Ice Hockey
               </div>
 
-              {/* Corner rivets */}
-              <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
-              <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
-              <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
-              <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
-            </Link>
-          )}
+              <h3 className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text" style={{ color: 'hsl(270 60% 60%)' }}>
+                PWHL
+              </h3>
+
+              <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+              <p className="text-sm text-muted-foreground font-body leading-relaxed">
+                Track the lineal championship from 2024 to present. See who holds the belt, upcoming title bouts, and a complete history of the PWHL.
+              </p>
+
+              <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-purple-500 transition-colors">
+                <span>Enter</span>
+                <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+              </div>
+            </div>
+
+            {/* Corner rivets */}
+            <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+            <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+          </Link>
         </div>
       </nav>
 

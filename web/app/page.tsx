@@ -3,14 +3,14 @@ import { Suspense } from 'react'
 import HomeClient from './HomeClient'
 
 export const metadata: Metadata = {
-  title: 'Championship Belt Tracker | WNBA, NBA & NHL Lineal Title',
-  description: 'Track lineal championship belts for WNBA, NBA, and NHL. Boxing-style title tracking for basketball and hockey. Every game is a title defense.',
+  title: 'Championship Belt Tracker | WNBA, NBA, NHL & PWHL Lineal Title',
+  description: 'Track lineal championship belts for WNBA, NBA, NHL, and PWHL. Boxing-style title tracking for basketball and hockey. Every game is a title defense.',
   alternates: {
     canonical: 'https://whohasthebelt.com'
   },
   openGraph: {
-    title: 'Championship Belt Tracker | WNBA, NBA & NHL',
-    description: 'The lineal championship belt - every game is a title defense. Track WNBA, NBA, and NHL belts.',
+    title: 'Championship Belt Tracker | WNBA, NBA, NHL & PWHL',
+    description: 'The lineal championship belt - every game is a title defense. Track WNBA, NBA, NHL, and PWHL belts.',
     url: 'https://whohasthebelt.com',
     siteName: 'Championship Belt Tracker',
     images: [{
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Championship Belt Tracker | WNBA, NBA & NHL',
-    description: 'Track lineal championship belts across WNBA, NBA, and NHL. Every game is a title defense.',
+    title: 'Championship Belt Tracker | WNBA, NBA, NHL & PWHL',
+    description: 'Track lineal championship belts across WNBA, NBA, NHL, and PWHL. Every game is a title defense.',
     images: ['https://whohasthebelt.com/og-image.png']
   },
 }

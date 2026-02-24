@@ -358,6 +358,16 @@ export default function BeltDashboard({
           >
             NHL
           </Link>
+          <Link
+            href="/pwhl"
+            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-all ${
+              league === 'pwhl'
+                ? 'text-amber-500 border-amber-500 bg-amber-500/10'
+                : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
+            }`}
+          >
+            PWHL
+          </Link>
         </div>
 
         {/* About & Theme - Right */}

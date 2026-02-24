@@ -1,6 +1,6 @@
 # Buckle Up - Championship Belt Tracker
 
-Track the lineal championship belt across NBA, WNBA, and NHL seasons.
+Track the lineal championship belt across NBA, WNBA, NHL, and PWHL seasons.
 
 Live at: **[whohasthebelt.com](https://whohasthebelt.com)** (also [buckle-up.vercel.app](https://buckle-up.vercel.app))
 
@@ -27,7 +27,8 @@ buckle-up/
 ├── data/                  # Game data (JSON files)
 │   ├── nba/              # NBA seasons (1976-77 to present)
 │   ├── wnba/             # WNBA seasons (1997 to present)
-│   └── nhl/              # NHL seasons (1942-43 to present)
+│   ├── nhl/              # NHL seasons (1942-43 to present)
+│   └── pwhl/             # PWHL seasons (2023-24 to present)
 └── scripts/              # Python data ingestion scripts
 ```
 
@@ -61,6 +62,9 @@ python scripts/ingest_wnba.py
 
 # Fetch current NHL season
 python scripts/ingest_nhl.py
+
+# Fetch current PWHL season
+python scripts/ingest_pwhl.py
 ```
 
 ### Automated Updates
@@ -98,7 +102,7 @@ npm test              # Run tests in watch mode
 npm run test:run      # Run tests once
 ```
 
-The project has 137 tests covering:
+The project has 174 tests covering:
 - Belt tracking logic (ties, streaks, franchise lineage)
 - Data filtering (All Time mode, year ranges, team selection)
 - Franchise handling (relocations, historical teams)
