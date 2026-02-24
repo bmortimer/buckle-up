@@ -48,7 +48,6 @@ export const PWHL_BREAKS: Record<string, ScheduleBreak[]> = {
 
 /**
  * NBA schedule breaks
- * NBA has All-Star Break in February
  */
 export const NBA_BREAKS: Record<string, ScheduleBreak[]> = {
   '2019-20': [
@@ -58,24 +57,6 @@ export const NBA_BREAKS: Record<string, ScheduleBreak[]> = {
       reason: 'COVID-19 Pandemic Pause',
       emoji: '🦠',
       minimumGapDays: 14,
-    },
-  ],
-  '2024-25': [
-    {
-      startDate: '2025-02-14',
-      endDate: '2025-02-20',
-      reason: 'NBA All-Star Break',
-      emoji: '⭐',
-      minimumGapDays: 5,
-    },
-  ],
-  '2025-26': [
-    {
-      startDate: '2026-02-13',
-      endDate: '2026-02-19',
-      reason: 'NBA All-Star Break',
-      emoji: '⭐',
-      minimumGapDays: 5,
     },
   ],
 }
@@ -128,15 +109,6 @@ export const NHL_BREAKS: Record<string, ScheduleBreak[]> = {
       reason: '2014 Sochi Winter Olympics',
       emoji: '🏅',
       minimumGapDays: 14,
-    },
-  ],
-  '2024-25': [
-    {
-      startDate: '2025-01-31',
-      endDate: '2025-02-03',
-      reason: 'NHL All-Star Weekend',
-      emoji: '⭐',
-      minimumGapDays: 3,
     },
   ],
   '2025-26': [
@@ -207,15 +179,6 @@ export const WNBA_BREAKS: Record<string, ScheduleBreak[]> = {
       reason: '2024 Paris Summer Olympics',
       emoji: '🏅',
       minimumGapDays: 14,
-    },
-  ],
-  '2025': [
-    {
-      startDate: '2025-07-11',
-      endDate: '2025-07-13',
-      reason: 'WNBA All-Star Weekend',
-      emoji: '⭐',
-      minimumGapDays: 2,
     },
   ],
   '2026': [

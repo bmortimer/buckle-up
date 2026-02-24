@@ -35,9 +35,11 @@ export default function BeltDashboard({
 }: BeltDashboardProps) {
   const searchParams = useSearchParams()
 
+  // Get season config for current league
+  const seasonConfig = getSeasonConfig(league)
+
   const [season, setSeason] = useState<string>('all')
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null)
-  const [isAllTime, setIsAllTime] = useState(true)
 
   // Track whether we're updating team due to historical year selection
   const isHistoricalTeamUpdate = useRef(false)
@@ -54,7 +56,14 @@ export default function BeltDashboard({
   const minYear = availableYears[0] || (league === 'wnba' ? 1997 : 2012)
   const maxYear = availableYears[availableYears.length - 1] || new Date().getFullYear()
 
-  const [yearRange, setYearRange] = useState<[number, number]>([minYear, maxYear])
+  // Default to current year if in season, All Time if off-season
+  const defaultYearRange: [number, number] = seasonConfig.isInSeason
+    ? [seasonConfig.currentYear, seasonConfig.currentYear]
+    : [minYear, maxYear]
+  const defaultIsAllTime = !seasonConfig.isInSeason
+
+  const [yearRange, setYearRange] = useState<[number, number]>(defaultYearRange)
+  const [isAllTime, setIsAllTime] = useState(defaultIsAllTime)
 
   // Read season from URL on mount
   useEffect(() => {
@@ -66,13 +75,13 @@ export default function BeltDashboard({
 
   // Reset year range when component mounts with new league
   useEffect(() => {
-    setYearRange([minYear, maxYear])
-    setIsAllTime(true)
+    const newDefaultRange: [number, number] = seasonConfig.isInSeason
+      ? [seasonConfig.currentYear, seasonConfig.currentYear]
+      : [minYear, maxYear]
+    setYearRange(newDefaultRange)
+    setIsAllTime(!seasonConfig.isInSeason)
     setSelectedTeam(null)
-  }, [league, minYear, maxYear])
-
-  // Get season config for current league
-  const seasonConfig = getSeasonConfig(league)
+  }, [league, minYear, maxYear, seasonConfig])
 
   // Detect current context
   const context = useMemo(() => {
