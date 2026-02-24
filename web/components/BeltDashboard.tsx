@@ -527,8 +527,8 @@ export default function BeltDashboard({
           </p>
           <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider mb-2">
             {league.toUpperCase()} {isAllTime ? 'ALL-TIME' : yearRange[0] === yearRange[1]
-              ? ((league === 'nba' || league === 'nhl') ? `${yearRange[0]}-${String((yearRange[0] + 1) % 100).padStart(2, '0')}` : yearRange[0])
-              : ((league === 'nba' || league === 'nhl') ? `${yearRange[0]}-${String((yearRange[1] + 1) % 100).padStart(2, '0')}` : `${yearRange[0]}-${yearRange[1]}`)}
+              ? ((league === 'nba' || league === 'nhl' || league === 'pwhl') ? `${yearRange[0]}-${String((yearRange[0] + 1) % 100).padStart(2, '0')}` : yearRange[0])
+              : ((league === 'nba' || league === 'nhl' || league === 'pwhl') ? `${yearRange[0]}-${String((yearRange[1] + 1) % 100).padStart(2, '0')}` : `${yearRange[0]}-${yearRange[1]}`)}
           </p>
           <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider">
             Created by Avid Squid LLC • <a href="https://buymeacoffee.com/bmortimer" target="_blank" rel="noopener noreferrer" className="text-emerald-500 hover:text-emerald-400 underline decoration-1 underline-offset-2 transition-colors">DONATE</a> • <a href="https://forms.gle/LPBtZDxih1HQT53E9" target="_blank" rel="noopener noreferrer" className="text-amber-500 hover:text-amber-400 underline decoration-1 underline-offset-2 transition-colors">FEEDBACK</a>
