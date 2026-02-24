@@ -251,18 +251,67 @@ export default function BeltDashboard({
   }, [selectedTeam, availableYearsForTeam, isAllTime, minYear, maxYear])
 
   if (!history) {
+    // Check if this is the NHL 2004-05 lockout season
+    const isNHL200405Lockout = league === 'nhl' && yearRange[0] === 2004 && yearRange[1] === 2004
+
+    // Find previous and next years (logically, not just from available data)
+    const currentYear = yearRange[0]
+    // For missing data, show the immediately adjacent years, not the closest available data
+    const previousYear = currentYear - 1 >= minYear ? currentYear - 1 : null
+    const nextYear = currentYear + 1 <= maxYear ? currentYear + 1 : null
+
     return (
       <div className="text-center py-20">
-        <div className="scoreboard-panel p-8 max-w-md mx-auto">
+        <div className="scoreboard-panel p-8 max-w-md mx-auto relative">
           <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
+
           <h1 className="text-3xl font-mono tracking-wider led-text mb-4" style={{ color: 'hsl(var(--led-amber))' }}>
-            Data Not Yet Available
+            {isNHL200405Lockout ? 'Season Cancelled' : 'Data Not Yet Available'}
           </h1>
-          <p className="text-sm text-muted-foreground font-body mb-4">
-            The {season} season data is still being added to the tracker.
-          </p>
-          <p className="text-xs text-muted-foreground font-body">
-            Select a different season from the dropdown above, or check back soon.
+
+          {isNHL200405Lockout ? (
+            <>
+              <p className="text-sm text-muted-foreground font-body mb-2">
+                The entire 2004-05 NHL season was cancelled due to a labor dispute.
+              </p>
+              <p className="text-xs text-muted-foreground font-body mb-6">
+                This was the first time since 1919 that the Stanley Cup was not awarded.
+              </p>
+            </>
+          ) : (
+            <p className="text-sm text-muted-foreground font-body mb-6">
+              The {league === 'wnba' ? yearRange[0] : `${yearRange[0]}-${String((yearRange[0] + 1) % 100).padStart(2, '0')}`} season data is still being added to the tracker.
+            </p>
+          )}
+
+          {/* Navigation Buttons */}
+          <div className="flex gap-3 justify-center">
+            {previousYear && (
+              <button
+                onClick={() => {
+                  setYearRange([previousYear, previousYear])
+                  setIsAllTime(false)
+                }}
+                className="px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:text-amber-500 border border-border hover:border-amber-500 bg-card transition-all"
+              >
+                ← {league === 'wnba' ? previousYear : `${previousYear}-${String((previousYear + 1) % 100).padStart(2, '0')}`}
+              </button>
+            )}
+            {nextYear && (
+              <button
+                onClick={() => {
+                  setYearRange([nextYear, nextYear])
+                  setIsAllTime(false)
+                }}
+                className="px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:text-amber-500 border border-border hover:border-amber-500 bg-card transition-all"
+              >
+                {league === 'wnba' ? nextYear : `${nextYear}-${String((nextYear + 1) % 100).padStart(2, '0')}`} →
+              </button>
+            )}
+          </div>
+
+          <p className="text-xs text-muted-foreground font-body mt-6">
+            Or select a different season from the filters above
           </p>
         </div>
       </div>
