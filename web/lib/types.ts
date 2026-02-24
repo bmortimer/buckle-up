@@ -2,7 +2,7 @@
  * Core data types for belt tracking
  */
 
-export type League = 'nba' | 'wnba' | 'nhl'
+export type League = 'nba' | 'wnba' | 'nhl' | 'pwhl'
 
 export interface Game {
   date: string
@@ -21,7 +21,7 @@ export function isGameCompleted(game: Game): boolean {
 
 export interface SeasonData {
   season: string
-  league: 'NBA' | 'WNBA'
+  league: 'NBA' | 'WNBA' | 'NHL' | 'PWHL'
   games: Game[]
   metadata?: {
     total_games: number

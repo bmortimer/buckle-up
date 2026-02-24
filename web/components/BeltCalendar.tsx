@@ -13,7 +13,7 @@ interface BeltCalendarProps {
   franchises: FranchiseInfo[]
   selectedTeam?: string | null
   allGames: Game[]
-  league: 'nba' | 'wnba' | 'nhl'
+  league: League
 }
 
 // Use shared CalendarDayData type, but keep local alias for compatibility

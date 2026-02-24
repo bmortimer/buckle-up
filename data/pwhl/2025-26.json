@@ -1,0 +1,850 @@
+{
+  "season": "2025-26",
+  "league": "PWHL",
+  "games": [
+    {
+      "date": "2025-11-21",
+      "homeTeam": "MIN",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2025-11-21",
+      "homeTeam": "VAN",
+      "awayTeam": "SEA",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2025-11-22",
+      "homeTeam": "OTT",
+      "awayTeam": "NYS",
+      "homeScore": 0,
+      "awayScore": 4
+    },
+    {
+      "date": "2025-11-23",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2025-11-25",
+      "homeTeam": "MTL",
+      "awayTeam": "NYS",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2025-11-26",
+      "homeTeam": "OTT",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2025-11-28",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": 0,
+      "awayScore": 3
+    },
+    {
+      "date": "2025-11-29",
+      "homeTeam": "NYS",
+      "awayTeam": "VAN",
+      "homeScore": 5,
+      "awayScore": 1
+    },
+    {
+      "date": "2025-11-29",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2025-12-02",
+      "homeTeam": "OTT",
+      "awayTeam": "MIN",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "BOS",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2025-12-03",
+      "homeTeam": "SEA",
+      "awayTeam": "NYS",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2025-12-04",
+      "homeTeam": "TOR",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2025-12-06",
+      "homeTeam": "VAN",
+      "awayTeam": "NYS",
+      "homeScore": 4,
+      "awayScore": 0
+    },
+    {
+      "date": "2025-12-07",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2025-12-07",
+      "homeTeam": "BOS",
+      "awayTeam": "MIN",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2025-12-16",
+      "homeTeam": "VAN",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2025-12-17",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2025-12-17",
+      "homeTeam": "NYS",
+      "awayTeam": "BOS",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "2025-12-17",
+      "homeTeam": "SEA",
+      "awayTeam": "OTT",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2025-12-19",
+      "homeTeam": "MIN",
+      "awayTeam": "BOS",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2025-12-20",
+      "homeTeam": "VAN",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 4
+    },
+    {
+      "date": "2025-12-21",
+      "homeTeam": "NYS",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2025-12-21",
+      "homeTeam": "MIN",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2025-12-21",
+      "homeTeam": "SEA",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "TOR",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2025-12-23",
+      "homeTeam": "SEA",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "OTT",
+      "awayTeam": "BOS",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2025-12-27",
+      "homeTeam": "VAN",
+      "awayTeam": "MIN",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2025-12-28",
+      "homeTeam": "NYS",
+      "awayTeam": "SEA",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2025-12-30",
+      "homeTeam": "TOR",
+      "awayTeam": "MIN",
+      "homeScore": 1,
+      "awayScore": 5
+    },
+    {
+      "date": "2025-12-31",
+      "homeTeam": "NYS",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 0
+    },
+    {
+      "date": "2026-01-02",
+      "homeTeam": "NYS",
+      "awayTeam": "MTL",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "OTT",
+      "awayTeam": "MIN",
+      "homeScore": 5,
+      "awayScore": 2
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "TOR",
+      "awayTeam": "SEA",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2026-01-03",
+      "homeTeam": "BOS",
+      "awayTeam": "VAN",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2026-01-04",
+      "homeTeam": "MTL",
+      "awayTeam": "MIN",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "2026-01-06",
+      "homeTeam": "TOR",
+      "awayTeam": "NYS",
+      "homeScore": 0,
+      "awayScore": 2
+    },
+    {
+      "date": "2026-01-07",
+      "homeTeam": "BOS",
+      "awayTeam": "SEA",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2026-01-09",
+      "homeTeam": "OTT",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "BOS",
+      "awayTeam": "OTT",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "2026-01-11",
+      "homeTeam": "MTL",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 0
+    },
+    {
+      "date": "2026-01-13",
+      "homeTeam": "MTL",
+      "awayTeam": "OTT",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2026-01-14",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2026-01-16",
+      "homeTeam": "NYS",
+      "awayTeam": "MIN",
+      "homeScore": 2,
+      "awayScore": 3
+    },
+    {
+      "date": "2026-01-17",
+      "homeTeam": "TOR",
+      "awayTeam": "VAN",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2026-01-18",
+      "homeTeam": "NYS",
+      "awayTeam": "MTL",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "2026-01-18",
+      "homeTeam": "SEA",
+      "awayTeam": "BOS",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2026-01-20",
+      "homeTeam": "NYS",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 4
+    },
+    {
+      "date": "2026-01-20",
+      "homeTeam": "SEA",
+      "awayTeam": "TOR",
+      "homeScore": 6,
+      "awayScore": 4
+    },
+    {
+      "date": "2026-01-21",
+      "homeTeam": "MIN",
+      "awayTeam": "MTL",
+      "homeScore": 1,
+      "awayScore": 2
+    },
+    {
+      "date": "2026-01-22",
+      "homeTeam": "VAN",
+      "awayTeam": "TOR",
+      "homeScore": 5,
+      "awayScore": 0
+    },
+    {
+      "date": "2026-01-24",
+      "homeTeam": "MTL",
+      "awayTeam": "OTT",
+      "homeScore": 3,
+      "awayScore": 1
+    },
+    {
+      "date": "2026-01-25",
+      "homeTeam": "MIN",
+      "awayTeam": "NYS",
+      "homeScore": 6,
+      "awayScore": 2
+    },
+    {
+      "date": "2026-01-25",
+      "homeTeam": "SEA",
+      "awayTeam": "VAN",
+      "homeScore": 1,
+      "awayScore": 3
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "MTL",
+      "awayTeam": "TOR",
+      "homeScore": 3,
+      "awayScore": 0
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "OTT",
+      "awayTeam": "SEA",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "BOS",
+      "awayTeam": "NYS",
+      "homeScore": 4,
+      "awayScore": 3
+    },
+    {
+      "date": "2026-01-28",
+      "homeTeam": "MIN",
+      "awayTeam": "VAN",
+      "homeScore": 4,
+      "awayScore": 1
+    },
+    {
+      "date": "2026-02-26",
+      "homeTeam": "NYS",
+      "awayTeam": "MTL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-27",
+      "homeTeam": "SEA",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-02-28",
+      "homeTeam": "OTT",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "MTL",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-01",
+      "homeTeam": "VAN",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-03",
+      "homeTeam": "TOR",
+      "awayTeam": "MTL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-04",
+      "homeTeam": "OTT",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-05",
+      "homeTeam": "NYS",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "NYS",
+      "awayTeam": "OTT",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-08",
+      "homeTeam": "TOR",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-10",
+      "homeTeam": "VAN",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-11",
+      "homeTeam": "SEA",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-13",
+      "homeTeam": "MIN",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-14",
+      "homeTeam": "VAN",
+      "awayTeam": "OTT",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-15",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-15",
+      "homeTeam": "TOR",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-15",
+      "homeTeam": "MIN",
+      "awayTeam": "NYS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-17",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "MIN",
+      "awayTeam": "OTT",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-18",
+      "homeTeam": "VAN",
+      "awayTeam": "NYS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-19",
+      "homeTeam": "MTL",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "VAN",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "BOS",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-22",
+      "homeTeam": "OTT",
+      "awayTeam": "MTL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-24",
+      "homeTeam": "BOS",
+      "awayTeam": "VAN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "MIN",
+      "awayTeam": "MTL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-25",
+      "homeTeam": "SEA",
+      "awayTeam": "NYS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-27",
+      "homeTeam": "TOR",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-28",
+      "homeTeam": "MTL",
+      "awayTeam": "NYS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "TOR",
+      "awayTeam": "VAN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "MIN",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "SEA",
+      "awayTeam": "OTT",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "NYS",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "MTL",
+      "awayTeam": "VAN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-01",
+      "homeTeam": "OTT",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "OTT",
+      "awayTeam": "MTL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-04",
+      "homeTeam": "MIN",
+      "awayTeam": "VAN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-04",
+      "homeTeam": "NYS",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "MTL",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "VAN",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-08",
+      "homeTeam": "OTT",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-11",
+      "homeTeam": "MIN",
+      "awayTeam": "NYS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-11",
+      "homeTeam": "TOR",
+      "awayTeam": "OTT",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-11",
+      "homeTeam": "BOS",
+      "awayTeam": "MTL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-14",
+      "homeTeam": "VAN",
+      "awayTeam": "SEA",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-15",
+      "homeTeam": "NYS",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-15",
+      "homeTeam": "BOS",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-17",
+      "homeTeam": "MTL",
+      "awayTeam": "BOS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-18",
+      "homeTeam": "SEA",
+      "awayTeam": "VAN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-18",
+      "homeTeam": "OTT",
+      "awayTeam": "NYS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-19",
+      "homeTeam": "MIN",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-21",
+      "homeTeam": "TOR",
+      "awayTeam": "NYS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-21",
+      "homeTeam": "VAN",
+      "awayTeam": "MTL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-22",
+      "homeTeam": "BOS",
+      "awayTeam": "OTT",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-22",
+      "homeTeam": "SEA",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-25",
+      "homeTeam": "OTT",
+      "awayTeam": "TOR",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-25",
+      "homeTeam": "BOS",
+      "awayTeam": "NYS",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-25",
+      "homeTeam": "SEA",
+      "awayTeam": "MTL",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-04-25",
+      "homeTeam": "VAN",
+      "awayTeam": "MIN",
+      "homeScore": null,
+      "awayScore": null
+    }
+  ],
+  "metadata": {
+    "total_games": 120,
+    "ingested_at": "2026-02-23T12:32:46.247803"
+  }
+}

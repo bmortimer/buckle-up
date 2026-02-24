@@ -6,13 +6,14 @@ import { isGameCompleted } from '@/lib/types'
 import { getTeamColor, getTeamDisplayName, isSameFranchise } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 import CalendarDayPopup from './CalendarDayPopup'
+import { getScheduleBreaks, type ScheduleBreak } from '@/lib/scheduleBreaks'
 
 interface DetailedCalendarProps {
   history: BeltHistory
   franchises: FranchiseInfo[]
   allGames: Game[]
   year: number
-  league: 'nba' | 'wnba' | 'nhl'
+  league: League
 }
 
 interface PopupPosition {
@@ -70,8 +71,8 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     const map = new Map<string, DayData>()
     let currentHolder = history.startingTeam
 
-    // For NBA/NHL, seasons span two calendar years (Oct to Apr/Jun)
-    // For WNBA, seasons are within a single calendar year (May to Oct)
+    // For NBA/NHL/PWHL, seasons span two calendar years
+    // For WNBA, seasons are within a single calendar year
     let seasonStart: Date
     let seasonEnd: Date
 
@@ -79,6 +80,17 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
       // NBA/NHL season: October of year to June of year+1
       seasonStart = new Date(year, 9, 1)  // October 1st
       seasonEnd = new Date(year + 1, 5, 30)  // June 30th
+    } else if (league === 'pwhl') {
+      // PWHL season: November of year to May of year+1
+      // 2023-24 started Jan 2024 (shortened inaugural season)
+      // 2024-25 and beyond: Nov to May
+      if (year === 2023) {
+        seasonStart = new Date(2024, 0, 1)  // January 1, 2024
+        seasonEnd = new Date(2024, 4, 31)    // May 31, 2024
+      } else {
+        seasonStart = new Date(year, 10, 1)  // November 1st
+        seasonEnd = new Date(year + 1, 4, 31)  // May 31st of next year
+      }
     } else {
       // WNBA season: January to December of same year
       seasonStart = new Date(year, 0, 1)
@@ -198,7 +210,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
       // Parse date as local time to avoid timezone issues
       const [y, m, d] = dayData.date.split('-').map(Number)
       const date = new Date(y, m - 1, d)
-      const yearMonth = `${date.getFullYear()}-${String(date.getMonth()).padStart(2, '0')}`
+      const yearMonth = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`
 
       if (!months.has(yearMonth)) {
         months.set(yearMonth, [])
@@ -225,6 +237,73 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     return sortedMonths
   }, [dayMap])
 
+  // Detect schedule breaks and attach them to the first month they affect
+  const monthsWithBreaks = useMemo(() => {
+    const seasonKey = league === 'wnba'
+      ? String(year)
+      : `${year}-${String((year + 1) % 100).padStart(2, '0')}`
+
+    const breaks = getScheduleBreaks(league, seasonKey)
+    const monthsArray = Array.from(monthsData.entries())
+
+    return monthsArray.map(([yearMonth, days], i) => {
+      let breakInfo: ScheduleBreak | null = null
+
+      // Check if a break starts in or affects this month
+      for (const potentialBreak of breaks) {
+        const breakStartMonth = potentialBreak.startDate.substring(0, 7) // YYYY-MM
+
+        // Show the break under the month where it starts
+        if (breakStartMonth === yearMonth) {
+          // Find last game BEFORE the break starts (search backwards from current month)
+          let lastGameBeforeBreak: string | undefined
+          for (let j = i; j >= 0; j--) {
+            const earlierDays = monthsArray[j][1]
+            const earlierGames = earlierDays
+              .filter(d => d.game && d.date < potentialBreak.startDate)
+              .sort((a, b) => b.date.localeCompare(a.date))
+
+            if (earlierGames.length > 0) {
+              lastGameBeforeBreak = earlierGames[0].date
+              break
+            }
+          }
+
+          // Get first game date after the break from any subsequent month
+          let firstGameAfterBreak: string | undefined
+          for (let j = i; j < monthsArray.length; j++) {
+            const laterDays = monthsArray[j][1]
+            const laterGames = laterDays
+              .filter(d => d.game && d.date > potentialBreak.endDate)
+              .sort((a, b) => a.date.localeCompare(b.date))
+
+            if (laterGames.length > 0) {
+              firstGameAfterBreak = laterGames[0].date
+              break
+            }
+          }
+
+          if (lastGameBeforeBreak && firstGameAfterBreak) {
+            // Calculate gap in days
+            const gap = Math.floor(
+              (new Date(firstGameAfterBreak).getTime() - new Date(lastGameBeforeBreak).getTime())
+              / (1000 * 60 * 60 * 24)
+            )
+
+            // Only show if gap meets minimum
+            const minGap = potentialBreak.minimumGapDays || 7
+            if (gap >= minGap) {
+              breakInfo = potentialBreak
+              break
+            }
+          }
+        }
+      }
+
+      return { yearMonth, days, breakInfo }
+    })
+  }, [monthsData, league, year])
+
   const handleClose = () => {
     setSelectedDay(null)
     setPopupPosition(null)
@@ -235,21 +314,22 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
       <div className="flex items-center justify-center mb-4 sm:mb-6 border-b-2 border-border pb-2 sm:pb-3">
         <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground font-normal">
           <span aria-hidden="true">◆ </span>
-          {(league === 'nba' || league === 'nhl') ? `${year}-${String((year + 1) % 100).padStart(2, '0')}` : year} Calendar
+          {(league === 'nba' || league === 'nhl' || league === 'pwhl') ? `${year}-${String((year + 1) % 100).padStart(2, '0')}` : year} Calendar
           <span aria-hidden="true"> ◆</span>
         </h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
-        {Array.from(monthsData.entries()).map(([yearMonth, days]) => {
+        {monthsWithBreaks.map((monthData) => {
+          const { yearMonth, days, breakInfo } = monthData
           // Parse the YYYY-MM key
           const [calendarYear, monthNum] = yearMonth.split('-').map(Number)
-          const monthDate = new Date(calendarYear, monthNum, 1)
+          const monthDate = new Date(calendarYear, monthNum - 1, 1)
           const monthName = monthDate.toLocaleDateString('en-US', { month: 'long' })
           const firstDayOfWeek = monthDate.getDay() // 0 = Sunday
 
           // Build calendar grid
-          const daysInMonth = new Date(calendarYear, monthNum + 1, 0).getDate()
+          const daysInMonth = new Date(calendarYear, monthNum, 0).getDate()
           const weeks: (DayData | null)[][] = []
           let currentWeek: (DayData | null)[] = []
 
@@ -260,7 +340,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
           // Add all days in month
           for (let day = 1; day <= daysInMonth; day++) {
-            const dateStr = `${calendarYear}-${String(monthNum + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+            const dateStr = `${calendarYear}-${String(monthNum).padStart(2, '0')}-${String(day).padStart(2, '0')}`
             currentWeek.push(dayMap.get(dateStr) || null)
 
             if (currentWeek.length === 7) {
@@ -417,6 +497,35 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                   </div>
                 ))}
               </div>
+
+              {/* Schedule break banner if present */}
+              {breakInfo && (() => {
+                // Format dates for display
+                const formatDate = (dateStr: string) => {
+                  const date = new Date(dateStr + 'T12:00:00')
+                  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+                }
+                const startFormatted = formatDate(breakInfo.startDate)
+                const endFormatted = formatDate(breakInfo.endDate)
+
+                return (
+                  <div className="border-t border-border/40 bg-muted/10 px-2 py-2">
+                    <div className="flex items-center justify-center gap-1.5">
+                      {breakInfo.emoji && (
+                        <span className="text-xs" aria-hidden="true">{breakInfo.emoji}</span>
+                      )}
+                      <div className="text-center">
+                        <div className="text-[0.55rem] sm:text-[0.6rem] font-orbitron text-muted-foreground leading-tight">
+                          {breakInfo.reason}
+                        </div>
+                        <div className="text-[0.5rem] sm:text-[0.55rem] text-muted-foreground/70 font-mono mt-0.5">
+                          {startFormatted} – {endFormatted}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })()}
             </div>
           )
         })}

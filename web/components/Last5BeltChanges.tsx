@@ -76,24 +76,22 @@ export default function Last5BeltChanges({
             return (
               <div key={`${team}-${idx}`} className="flex items-center gap-2 sm:gap-3">
                 {/* Team */}
-                <div className="flex flex-col items-center gap-1 sm:gap-1.5">
-                  <div className="relative w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10">
+                <div
+                  className={`flex flex-col items-center gap-1 sm:gap-1.5 px-2 py-1.5 rounded ${
+                    isEnd ? 'border-2' : ''
+                  }`}
+                  style={isEnd ? {
+                    borderColor: 'hsl(var(--led-green))',
+                    boxShadow: '0 0 6px hsl(var(--led-green) / 0.4)',
+                  } : undefined}
+                >
+                  <div className="relative">
                     <TeamLogo
                       teamCode={team}
                       franchises={franchises}
                       league={league}
-                      size="md"
-                      className="w-full h-full"
+                      size="sm"
                     />
-                    {isEnd && (
-                      <div
-                        className="absolute inset-0 rounded-full border-2"
-                        style={{
-                          borderColor: 'hsl(var(--led-green))',
-                          boxShadow: '0 0 4px hsl(var(--led-green) / 0.5)',
-                        }}
-                      />
-                    )}
                   </div>
                   <div
                     className={`text-xs sm:text-sm font-mono tracking-wide ${isEnd ? 'font-bold' : ''} led-text`}

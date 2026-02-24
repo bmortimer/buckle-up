@@ -31,9 +31,9 @@ jobs:
             exit 0
           fi
 
-          # NBA/NHL seasons run October through June - always update during these months
+          # NBA/NHL/PWHL seasons run October through June - always update during these months
           if [ "$CURRENT_MONTH" -ge 10 ] || [ "$CURRENT_MONTH" -le 6 ]; then
-            echo "NBA/NHL season months (Oct-Jun) - running update"
+            echo "NBA/NHL/PWHL season months (Oct-Jun) - running update"
             echo "run=true" >> $GITHUB_OUTPUT
             exit 0
           fi
@@ -93,6 +93,29 @@ jobs:
           if ! python scripts/update_nhl.py; then
             echo "⚠️  NHL update failed - please check logs"
             exit 1
+          fi
+
+      - name: Update PWHL data
+        if: steps.should-run.outputs.run == 'true'
+        run: |
+          # PWHL season runs Nov-May - check if we should run
+          CURRENT_MONTH=$(date +%-m)
+          if [ "$CURRENT_MONTH" -ge 11 ] || [ "$CURRENT_MONTH" -le 5 ]; then
+            echo "PWHL season months (Nov-May) - running update"
+
+            # Add delay to be respectful to HockeyTech API
+            echo "Waiting 10s before PWHL fetch..."
+            sleep 10
+
+            # Run the update script (auto-detects current season, NO sitemap update during dark launch)
+            # Note: Script exits with 0 on success or no changes, 1 on error
+            if ! python scripts/update_pwhl.py; then
+              echo "⚠️  PWHL update failed - please check logs"
+              # Don't exit 1 - allow workflow to continue with other leagues
+              echo "Continuing with other updates..."
+            fi
+          else
+            echo "Not PWHL season - skipping"
           fi
 
       - name: Check for changes

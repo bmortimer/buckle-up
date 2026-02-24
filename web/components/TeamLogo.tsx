@@ -103,16 +103,43 @@ const NHL_PNG_WHITE_BG = new Set([
 // Note: TOR/TBL now use ESPN PNGs which handle this properly
 const NHL_SVG_COLORED_BG = new Set<string>([])
 
+// PWHL teams with logos available (all PNG from SportsLogos.Net)
+const PWHL_TEAMS_WITH_LOGOS = new Set([
+  // Inaugural teams (2024-25)
+  'BOS', 'MIN', 'MTL', 'NYS', 'OTT', 'TOR',
+  // Expansion teams (2025-26)
+  'SEA', 'VAN'
+])
+
+// PWHL teams using PNG
+const PWHL_PNG_TEAMS = new Set([
+  'BOS', 'MIN', 'MTL', 'NYS', 'OTT', 'TOR', 'SEA', 'VAN'
+])
+
+// PWHL PNG teams that need white background in dark mode
+const PWHL_PNG_WHITE_BG = new Set([
+  'SEA', 'VAN' // Dark colored logos that need white background
+])
+
 const TeamLogo = memo(function TeamLogo({ teamCode, franchises, league = 'wnba', size = 'md', className = '' }: TeamLogoProps) {
   const color = getTeamColor(teamCode, franchises)
   const franchise = franchises.find(f => f.teamAbbr === teamCode)
   const displayName = franchise?.displayName || teamCode
 
-  const teamsWithLogos = league === 'nba' ? NBA_TEAMS_WITH_LOGOS : league === 'nhl' ? NHL_TEAMS_WITH_LOGOS : WNBA_TEAMS_WITH_LOGOS
-  const pngTeams = league === 'nba' ? NBA_PNG_TEAMS : league === 'nhl' ? NHL_PNG_TEAMS : WNBA_PNG_TEAMS
+  const teamsWithLogos = league === 'nba' ? NBA_TEAMS_WITH_LOGOS
+    : league === 'nhl' ? NHL_TEAMS_WITH_LOGOS
+    : league === 'pwhl' ? PWHL_TEAMS_WITH_LOGOS
+    : WNBA_TEAMS_WITH_LOGOS
+  const pngTeams = league === 'nba' ? NBA_PNG_TEAMS
+    : league === 'nhl' ? NHL_PNG_TEAMS
+    : league === 'pwhl' ? PWHL_PNG_TEAMS
+    : WNBA_PNG_TEAMS
   const svgWhiteBg = league === 'wnba' ? WNBA_SVG_WHITE_BG : new Set<string>()
   const svgColoredBg = league === 'nhl' ? NHL_SVG_COLORED_BG : new Set<string>()
-  const pngWhiteBg = league === 'nba' ? NBA_PNG_TEAMS : league === 'nhl' ? NHL_PNG_WHITE_BG : WNBA_PNG_TEAMS
+  const pngWhiteBg = league === 'nba' ? NBA_PNG_TEAMS
+    : league === 'nhl' ? NHL_PNG_WHITE_BG
+    : league === 'pwhl' ? PWHL_PNG_WHITE_BG
+    : WNBA_PNG_TEAMS
 
   const hasLogo = teamsWithLogos.has(teamCode)
   const isPng = pngTeams.has(teamCode)
@@ -150,7 +177,7 @@ const TeamLogo = memo(function TeamLogo({ teamCode, franchises, league = 'wnba',
           src={`/logos/${league}/${teamCode}.${fileExtension}`}
           alt={`${displayName} logo`}
           fill
-          className={`object-contain ${needsWhiteBg ? 'relative z-10 p-0.5' : ''}`}
+          className={`object-contain ${needsWhiteBg ? 'relative z-10 p-0.5' : ''} ${league === 'pwhl' && (size === 'lg' || size === 'xl') ? 'p-2' : ''}`}
           unoptimized // SVGs and small PNGs don't need optimization
         />
       </div>

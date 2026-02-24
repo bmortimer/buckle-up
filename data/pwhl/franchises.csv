@@ -1,0 +1,33 @@
+franchise_id,team_abbr,display_name,city,start_year,end_year,status,successor_franchise_id,hex_color
+
+# ============================================
+# PWHL INAUGURAL TEAMS (2024)
+# ============================================
+
+# BOSTON FLEET
+BOS,BOS,Boston Fleet,Boston,2024,,active,,#154734
+
+# MINNESOTA FROST
+MIN,MIN,Minnesota Frost,Minneapolis,2024,,active,,#862633
+
+# MONTRÉAL VICTOIRE
+MTL,MTL,Montréal Victoire,Montreal,2024,,active,,#862633
+
+# NEW YORK SIRENS
+NYS,NYS,New York Sirens,New York,2024,,active,,#154734
+
+# OTTAWA CHARGE
+OTT,OTT,Ottawa Charge,Ottawa,2024,,active,,#C8102E
+
+# TORONTO SCEPTRES
+TOR,TOR,Toronto Sceptres,Toronto,2024,,active,,#0077C8
+
+# ============================================
+# PWHL EXPANSION TEAMS (2025)
+# ============================================
+
+# SEATTLE TORRENT
+SEA,SEA,Seattle Torrent,Seattle,2025,,active,,#001628
+
+# VANCOUVER GOLDENEYES
+VAN,VAN,Vancouver Goldeneyes,Vancouver,2025,,active,,#00205B

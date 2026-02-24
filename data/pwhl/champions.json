@@ -1,0 +1,8 @@
+{
+  "description": "PWHL Walter Cup champions by season - value is the team that starts the belt for that season (previous year's champion). For 2023-24 inaugural season, belt starts with New York (winner of first regular season game on 2024-01-01, 4-0 at Toronto). Note: Preseason games not tracked.",
+  "champions": {
+    "2023-24": "NYS",
+    "2024-25": "MIN",
+    "2025-26": "MIN"
+  }
+}

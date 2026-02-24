@@ -59,6 +59,7 @@ export function getCurrentSeason(league: League): string {
   if (seasons[0]) return seasons[0]
   if (league === 'wnba') return '2024'
   if (league === 'nhl') return '2024-25'
+  if (league === 'pwhl') return '2025-26'
   return '2024-25'
 }
 
@@ -81,5 +82,6 @@ export function getDefendingChampion(league: League, season: string): string {
   if (champions[season]) return champions[season]
   if (league === 'wnba') return 'LVA'
   if (league === 'nhl') return 'FLA'
+  if (league === 'pwhl') return 'MTL'
   return 'BOS'
 }

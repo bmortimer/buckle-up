@@ -90,20 +90,31 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [isOpen])
 
-  const easternConference = league === 'nba' 
-    ? NBA_EASTERN_CONFERENCE 
-    : league === 'nhl' 
-      ? NHL_EASTERN_CONFERENCE 
+  const easternConference = league === 'nba'
+    ? NBA_EASTERN_CONFERENCE
+    : league === 'nhl'
+      ? NHL_EASTERN_CONFERENCE
       : WNBA_EASTERN_CONFERENCE
-  const westernConference = league === 'nba' 
-    ? NBA_WESTERN_CONFERENCE 
-    : league === 'nhl' 
-      ? NHL_WESTERN_CONFERENCE 
+  const westernConference = league === 'nba'
+    ? NBA_WESTERN_CONFERENCE
+    : league === 'nhl'
+      ? NHL_WESTERN_CONFERENCE
       : WNBA_WESTERN_CONFERENCE
 
+  // For PWHL, show all active teams in one section (no divisions)
+  const isPwhl = league === 'pwhl'
+
   // Organize teams by status and conference
-  const activeEast = teams.filter(t => easternConference.includes(t))
-  const activeWest = teams.filter(t => westernConference.includes(t))
+  const activeEast = isPwhl ? [] : teams.filter(t => easternConference.includes(t))
+  const activeWest = isPwhl ? [] : teams.filter(t => westernConference.includes(t))
+
+  // PWHL: all active teams (not defunct/relocated/rebranded)
+  const pwhlActiveTeams = isPwhl
+    ? teams.filter(t => {
+        const franchise = franchises.find(f => f.teamAbbr === t)
+        return franchise?.status === 'active'
+      })
+    : []
 
   // In All Time mode, only show truly defunct teams (no successor)
   // Relocated/rebranded teams are merged into their current franchise
@@ -238,8 +249,47 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                   </button>
                 </div>
 
+                {/* PWHL Teams (No Divisions) */}
+                {isPwhl && pwhlActiveTeams.length > 0 && (
+                  <div>
+                    <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
+                      <span>Teams</span>
+                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" aria-hidden="true" />
+                    </div>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+                      {pwhlActiveTeams.map(team => {
+                        const isSelected = selectedTeam === team
+                        const displayName = getTeamDisplayName(team)
+
+                        return (
+                          <button
+                            key={team}
+                            onClick={() => handleTeamChange(team)}
+                            aria-current={isSelected ? 'true' : undefined}
+                            aria-label={`Select ${displayName}`}
+                            className={`
+                              p-3 flex flex-col items-center gap-2
+                              border-2 transition-all
+                              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+                              ${isSelected
+                                ? 'bg-primary/10 text-primary border-primary scale-105'
+                                : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
+                              }
+                            `}
+                          >
+                            <TeamLogo teamCode={team} franchises={franchises} league={league} size="md" />
+                            <span className="text-xs sm:text-sm font-mono font-bold text-center leading-tight">
+                              {displayName}
+                            </span>
+                          </button>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+
                 {/* Eastern Conference */}
-                {activeEast.length > 0 && (
+                {!isPwhl && activeEast.length > 0 && (
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Eastern Conference</span>
@@ -278,7 +328,7 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                 )}
 
                 {/* Western Conference */}
-                {activeWest.length > 0 && (
+                {!isPwhl && activeWest.length > 0 && (
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Western Conference</span>
