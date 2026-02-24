@@ -78,8 +78,13 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
     if (league === 'nba' || league === 'nhl') {
       // NBA/NHL season: October of year to June of year+1
+      // Exception: 2019-20 NBA season extended to August due to COVID
       seasonStart = new Date(year, 9, 1)  // October 1st
-      seasonEnd = new Date(year + 1, 5, 30)  // June 30th
+      if (league === 'nba' && year === 2019) {
+        seasonEnd = new Date(2020, 9, 31)  // October 31, 2020 (extended for COVID bubble)
+      } else {
+        seasonEnd = new Date(year + 1, 5, 30)  // June 30th
+      }
     } else if (league === 'pwhl') {
       // PWHL season: November of year to May of year+1
       // 2023-24 started Jan 2024 (shortened inaugural season)
@@ -92,9 +97,30 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
         seasonEnd = new Date(year + 1, 4, 31)  // May 31st of next year
       }
     } else {
-      // WNBA season: January to December of same year
-      seasonStart = new Date(year, 0, 1)
-      seasonEnd = new Date(year, 11, 31)
+      // WNBA season: Dynamically determine from actual game dates
+      // This handles variations in season length (e.g., Olympic years)
+      if (allGames.length > 0) {
+        const yearGames = allGames.filter(g => {
+          const gameYear = parseInt(g.date.split('-')[0])
+          return gameYear === year
+        })
+        if (yearGames.length > 0) {
+          const dates = yearGames.map(g => new Date(g.date + 'T12:00:00'))
+          const minDate = new Date(Math.min(...dates.map(d => d.getTime())))
+          const maxDate = new Date(Math.max(...dates.map(d => d.getTime())))
+          // Expand to start/end of month for cleaner calendar display
+          seasonStart = new Date(minDate.getFullYear(), minDate.getMonth(), 1)
+          seasonEnd = new Date(maxDate.getFullYear(), maxDate.getMonth() + 1, 0)
+        } else {
+          // Fallback if no games found
+          seasonStart = new Date(year, 0, 1)
+          seasonEnd = new Date(year, 11, 31)
+        }
+      } else {
+        // Fallback if no games at all
+        seasonStart = new Date(year, 0, 1)
+        seasonEnd = new Date(year, 11, 31)
+      }
     }
 
     // Filter games to this season
@@ -218,11 +244,33 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
       months.get(yearMonth)!.push(dayData)
     })
 
-    // Filter to only months that have at least one game
+    // Only show months between the first and last actual games
+    // This ensures Olympic break months are shown, but not months after season ends
+
+    // Find first and last game dates
+    let firstGameDate: string | null = null
+    let lastGameDate: string | null = null
+
+    dayMap.forEach((dayData) => {
+      if (dayData.game) {
+        if (!firstGameDate || dayData.date < firstGameDate) {
+          firstGameDate = dayData.date
+        }
+        if (!lastGameDate || dayData.date > lastGameDate) {
+          lastGameDate = dayData.date
+        }
+      }
+    })
+
     const monthsWithGames = new Map<string, DayData[]>()
     months.forEach((days, yearMonth) => {
-      if (days.some(day => day.game)) {
-        monthsWithGames.set(yearMonth, days)
+      // Include month if it falls between first and last game (inclusive)
+      if (firstGameDate && lastGameDate) {
+        const firstGameMonth = firstGameDate.substring(0, 7)
+        const lastGameMonth = lastGameDate.substring(0, 7)
+        if (yearMonth >= firstGameMonth && yearMonth <= lastGameMonth) {
+          monthsWithGames.set(yearMonth, days)
+        }
       }
     })
 

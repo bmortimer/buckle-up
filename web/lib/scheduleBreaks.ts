@@ -37,8 +37,8 @@ export const PWHL_BREAKS: Record<string, ScheduleBreak[]> = {
   ],
   '2025-26': [
     {
-      startDate: '2026-01-29',
-      endDate: '2026-02-26',
+      startDate: '2026-02-06',
+      endDate: '2026-02-22',
       reason: '2026 Milano Cortina Winter Olympics',
       emoji: '🏅',
       minimumGapDays: 14,
@@ -51,6 +51,15 @@ export const PWHL_BREAKS: Record<string, ScheduleBreak[]> = {
  * NBA has All-Star Break in February
  */
 export const NBA_BREAKS: Record<string, ScheduleBreak[]> = {
+  '2019-20': [
+    {
+      startDate: '2020-03-11',
+      endDate: '2020-07-30',
+      reason: 'COVID-19 Pandemic Pause',
+      emoji: '🦠',
+      minimumGapDays: 14,
+    },
+  ],
   '2024-25': [
     {
       startDate: '2025-02-14',
@@ -76,6 +85,51 @@ export const NBA_BREAKS: Record<string, ScheduleBreak[]> = {
  * NHL has All-Star Break and Olympic breaks in Olympic years
  */
 export const NHL_BREAKS: Record<string, ScheduleBreak[]> = {
+  '2019-20': [
+    {
+      startDate: '2020-03-12',
+      endDate: '2020-08-01',
+      reason: 'COVID-19 Pandemic - Season Cancelled',
+      emoji: '🦠',
+      minimumGapDays: 14,
+    },
+  ],
+  '1997-98': [
+    {
+      startDate: '1998-02-07',
+      endDate: '1998-02-22',
+      reason: '1998 Nagano Winter Olympics',
+      emoji: '🏅',
+      minimumGapDays: 14,
+    },
+  ],
+  '2005-06': [
+    {
+      startDate: '2006-02-10',
+      endDate: '2006-02-26',
+      reason: '2006 Torino Winter Olympics',
+      emoji: '🏅',
+      minimumGapDays: 14,
+    },
+  ],
+  '2009-10': [
+    {
+      startDate: '2010-02-12',
+      endDate: '2010-02-28',
+      reason: '2010 Vancouver Winter Olympics',
+      emoji: '🏅',
+      minimumGapDays: 14,
+    },
+  ],
+  '2013-14': [
+    {
+      startDate: '2014-02-07',
+      endDate: '2014-02-23',
+      reason: '2014 Sochi Winter Olympics',
+      emoji: '🏅',
+      minimumGapDays: 14,
+    },
+  ],
   '2024-25': [
     {
       startDate: '2025-01-31',
@@ -101,10 +155,55 @@ export const NHL_BREAKS: Record<string, ScheduleBreak[]> = {
  * WNBA has Olympic breaks and All-Star break
  */
 export const WNBA_BREAKS: Record<string, ScheduleBreak[]> = {
+  '2004': [
+    {
+      startDate: '2004-08-13',
+      endDate: '2004-08-29',
+      reason: '2004 Athens Summer Olympics',
+      emoji: '🏅',
+      minimumGapDays: 14,
+    },
+  ],
+  '2008': [
+    {
+      startDate: '2008-08-08',
+      endDate: '2008-08-24',
+      reason: '2008 Beijing Summer Olympics',
+      emoji: '🏅',
+      minimumGapDays: 14,
+    },
+  ],
+  '2012': [
+    {
+      startDate: '2012-07-27',
+      endDate: '2012-08-12',
+      reason: '2012 London Summer Olympics',
+      emoji: '🏅',
+      minimumGapDays: 14,
+    },
+  ],
+  '2016': [
+    {
+      startDate: '2016-08-05',
+      endDate: '2016-08-21',
+      reason: '2016 Rio Summer Olympics',
+      emoji: '🏅',
+      minimumGapDays: 14,
+    },
+  ],
+  '2021': [
+    {
+      startDate: '2021-07-23',
+      endDate: '2021-08-08',
+      reason: '2020 Tokyo Summer Olympics',
+      emoji: '🏅',
+      minimumGapDays: 14,
+    },
+  ],
   '2024': [
     {
-      startDate: '2024-07-15',
-      endDate: '2024-08-15',
+      startDate: '2024-07-26',
+      endDate: '2024-08-11',
       reason: '2024 Paris Summer Olympics',
       emoji: '🏅',
       minimumGapDays: 14,
@@ -117,6 +216,15 @@ export const WNBA_BREAKS: Record<string, ScheduleBreak[]> = {
       reason: 'WNBA All-Star Weekend',
       emoji: '⭐',
       minimumGapDays: 2,
+    },
+  ],
+  '2026': [
+    {
+      startDate: '2026-09-04',
+      endDate: '2026-09-13',
+      reason: '2026 FIBA Women\'s Basketball World Cup',
+      emoji: '🏀',
+      minimumGapDays: 14,
     },
   ],
 }
