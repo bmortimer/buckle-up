@@ -78,11 +78,10 @@ export default function Last5BeltChanges({
                 {/* Team */}
                 <div
                   className={`flex flex-col items-center gap-1 sm:gap-1.5 px-2 py-1.5 rounded ${
-                    isEnd ? 'border-2' : ''
+                    isEnd ? 'border-2 border-green-500' : ''
                   }`}
                   style={isEnd ? {
-                    borderColor: 'hsl(var(--led-green))',
-                    boxShadow: '0 0 6px hsl(var(--led-green) / 0.4)',
+                    boxShadow: '0 0 6px rgba(34, 197, 94, 0.4)',
                   } : undefined}
                 >
                   <div className="relative">
