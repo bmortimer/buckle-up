@@ -6019,22 +6019,22 @@
       "date": "2026-02-23",
       "homeTeam": "DET",
       "awayTeam": "SAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 103,
+      "awayScore": 114
     },
     {
       "date": "2026-02-23",
       "homeTeam": "MEM",
       "awayTeam": "SAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 114,
+      "awayScore": 123
     },
     {
       "date": "2026-02-23",
       "homeTeam": "HOU",
       "awayTeam": "UTA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 125,
+      "awayScore": 105
     },
     {
       "date": "2026-02-24",
@@ -8629,7 +8629,7 @@
   ],
   "metadata": {
     "total_games": 1232,
-    "ingested_at": "2026-02-23T11:58:28.750437",
+    "ingested_at": "2026-02-24T12:00:15.381148",
     "source": "basketball-reference.com"
   }
 }
