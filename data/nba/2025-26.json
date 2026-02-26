@@ -6117,43 +6117,43 @@
       "date": "2026-02-25",
       "homeTeam": "DET",
       "awayTeam": "OKC",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "date": "2026-02-25",
-      "homeTeam": "TOR",
-      "awayTeam": "SAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 124,
+      "awayScore": 116
     },
     {
       "date": "2026-02-25",
       "homeTeam": "MEM",
       "awayTeam": "GSW",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 112,
+      "awayScore": 133
+    },
+    {
+      "date": "2026-02-25",
+      "homeTeam": "TOR",
+      "awayTeam": "SAS",
+      "homeScore": 107,
+      "awayScore": 110
     },
     {
       "date": "2026-02-25",
       "homeTeam": "HOU",
       "awayTeam": "SAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 128,
+      "awayScore": 97
     },
     {
       "date": "2026-02-25",
       "homeTeam": "MIL",
       "awayTeam": "CLE",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 118,
+      "awayScore": 116
     },
     {
       "date": "2026-02-25",
       "homeTeam": "DEN",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 103,
+      "awayScore": 84
     },
     {
       "date": "2026-02-26",
@@ -8629,7 +8629,7 @@
   ],
   "metadata": {
     "total_games": 1232,
-    "ingested_at": "2026-02-25T11:58:31.198021",
+    "ingested_at": "2026-02-26T11:59:20.601013",
     "source": "basketball-reference.com"
   }
 }
