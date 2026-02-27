@@ -433,8 +433,8 @@
       "date": "2026-02-26",
       "homeTeam": "NYS",
       "awayTeam": "MTL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 4
     },
     {
       "date": "2026-02-27",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-02-23T12:32:46.247803"
+    "ingested_at": "2026-02-27T11:52:00.975818"
   }
 }
