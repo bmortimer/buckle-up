@@ -6502,29 +6502,29 @@
       "date": "2026-02-27",
       "homeTeam": "ANA",
       "awayTeam": "WPG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 4
     },
     {
       "date": "2026-02-27",
       "homeTeam": "FLA",
       "awayTeam": "BUF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-02-27",
       "homeTeam": "UTA",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 2
     },
     {
       "date": "2026-02-27",
       "homeTeam": "WSH",
       "awayTeam": "VEG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-02-28",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-02-27T11:51:48.306037"
+    "ingested_at": "2026-02-28T11:39:54.770232"
   }
 }
