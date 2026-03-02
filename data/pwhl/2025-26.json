@@ -454,15 +454,15 @@
       "date": "2026-03-01",
       "homeTeam": "MTL",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 0
     },
     {
       "date": "2026-03-01",
       "homeTeam": "VAN",
       "awayTeam": "TOR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "date": "2026-03-03",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-03-01T11:41:25.603298"
+    "ingested_at": "2026-03-02T11:51:21.540339"
   }
 }
