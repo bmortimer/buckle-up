@@ -6376,29 +6376,29 @@
       "date": "2026-03-02",
       "homeTeam": "WAS",
       "awayTeam": "HOU",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 118,
+      "awayScore": 123
     },
     {
       "date": "2026-03-02",
       "homeTeam": "MIL",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 81,
+      "awayScore": 108
     },
     {
       "date": "2026-03-02",
       "homeTeam": "UTA",
       "awayTeam": "DEN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 125,
+      "awayScore": 128
     },
     {
       "date": "2026-03-02",
       "homeTeam": "GSW",
       "awayTeam": "LAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 101,
+      "awayScore": 114
     },
     {
       "date": "2026-03-03",
@@ -8629,7 +8629,7 @@
   ],
   "metadata": {
     "total_games": 1232,
-    "ingested_at": "2026-03-02T11:50:56.301305",
+    "ingested_at": "2026-03-03T11:52:45.835711",
     "source": "basketball-reference.com"
   }
 }
