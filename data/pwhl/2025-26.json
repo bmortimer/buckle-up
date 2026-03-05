@@ -475,8 +475,8 @@
       "date": "2026-03-04",
       "homeTeam": "OTT",
       "awayTeam": "SEA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 3
     },
     {
       "date": "2026-03-05",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-03-04T11:51:15.806374"
+    "ingested_at": "2026-03-05T11:54:28.569741"
   }
 }
