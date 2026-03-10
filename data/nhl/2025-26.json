@@ -7048,36 +7048,36 @@
       "date": "2026-03-09",
       "homeTeam": "CBJ",
       "awayTeam": "LAK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 5
     },
     {
       "date": "2026-03-09",
       "homeTeam": "CHI",
       "awayTeam": "UTA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-03-09",
       "homeTeam": "PHI",
       "awayTeam": "NYR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 6
     },
     {
       "date": "2026-03-09",
       "homeTeam": "VAN",
       "awayTeam": "OTT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 2
     },
     {
       "date": "2026-03-09",
       "homeTeam": "WSH",
       "awayTeam": "CGY",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 7,
+      "awayScore": 3
     },
     {
       "date": "2026-03-10",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-03-09T11:54:35.029208"
+    "ingested_at": "2026-03-10T11:53:27.018723"
   }
 }
