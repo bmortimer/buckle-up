@@ -503,8 +503,8 @@
       "date": "2026-03-10",
       "homeTeam": "VAN",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "date": "2026-03-11",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-03-09T11:54:47.894270"
+    "ingested_at": "2026-03-11T11:53:29.000758"
   }
 }
