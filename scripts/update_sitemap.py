@@ -30,8 +30,8 @@ def update_sitemap_lastmod(league: str) -> bool:
     """
     # Validate league
     league = league.lower()
-    if league not in ['nba', 'wnba', 'nhl']:
-        print(f"Error: Invalid league '{league}'. Must be 'nba', 'wnba', or 'nhl'")
+    if league not in ['nba', 'wnba', 'nhl', 'pwhl']:
+        print(f"Error: Invalid league '{league}'. Must be 'nba', 'wnba', 'nhl', or 'pwhl'")
         return False
 
     # Find sitemap file
@@ -89,8 +89,8 @@ def main():
     parser.add_argument(
         '--league',
         required=True,
-        choices=['nba', 'wnba', 'nhl'],
-        help='League to update (nba, wnba, or nhl)'
+        choices=['nba', 'wnba', 'nhl', 'pwhl'],
+        help='League to update (nba, wnba, nhl, or pwhl)'
     )
 
     args = parser.parse_args()

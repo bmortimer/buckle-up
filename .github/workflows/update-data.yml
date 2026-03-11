@@ -107,7 +107,7 @@ jobs:
             echo "Waiting 10s before PWHL fetch..."
             sleep 10
 
-            # Run the update script (auto-detects current season, NO sitemap update during dark launch)
+            # Run the update script (auto-detects current season and updates sitemap if changed)
             # Note: Script exits with 0 on success or no changes, 1 on error
             if ! python scripts/update_pwhl.py; then
               echo "⚠️  PWHL update failed - please check logs"

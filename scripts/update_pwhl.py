@@ -10,7 +10,7 @@ The script includes:
 - Exponential backoff retry logic for reliability
 - Rate limiting to be a responsible citizen when hitting HockeyTech API
 - Proper error handling for CI/CD environments
-- NO sitemap updates during dark launch phase
+- Sitemap lastmod updates when data changes
 
 Usage:
     python scripts/update_pwhl.py
@@ -175,26 +175,24 @@ def main():
         # Save the data
         save_season_data('pwhl', season, games)
 
-        # NOTE: During dark launch, we do NOT update the sitemap
-        # Uncomment this section when ready for public launch:
-        #
-        # try:
-        #     import subprocess
-        #     result = subprocess.run(
-        #         ['python3', str(Path(__file__).parent / 'update_sitemap.py'), '--league', 'pwhl'],
-        #         capture_output=True,
-        #         text=True,
-        #         timeout=10
-        #     )
-        #     if result.returncode == 0:
-        #         print(f"  {result.stdout.strip()}")
-        #     else:
-        #         print(f"  Warning: Failed to update sitemap: {result.stderr}")
-        # except Exception as e:
-        #     print(f"  Warning: Failed to update sitemap: {e}")
+        # Update sitemap lastmod date
+        try:
+            import subprocess
+            result = subprocess.run(
+                ['python3', str(Path(__file__).parent / 'update_sitemap.py'), '--league', 'pwhl'],
+                capture_output=True,
+                text=True,
+                timeout=10
+            )
+            if result.returncode == 0:
+                print(f"  {result.stdout.strip()}")
+            else:
+                print(f"  Warning: Failed to update sitemap: {result.stderr}")
+        except Exception as e:
+            print(f"  Warning: Failed to update sitemap: {e}")
 
         print("\n" + "=" * 60)
-        print("✓ Update completed successfully (dark launch - no sitemap update)")
+        print("✓ Update completed successfully")
         print("=" * 60)
 
         return 0
