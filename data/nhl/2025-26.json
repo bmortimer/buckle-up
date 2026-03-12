@@ -7174,15 +7174,15 @@
       "date": "2026-03-11",
       "homeTeam": "OTT",
       "awayTeam": "MTL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-03-11",
       "homeTeam": "PHI",
       "awayTeam": "WSH",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "date": "2026-03-12",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-03-11T11:53:16.005371"
+    "ingested_at": "2026-03-12T11:48:51.758484"
   }
 }
