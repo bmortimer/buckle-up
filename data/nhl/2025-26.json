@@ -7286,15 +7286,15 @@
       "date": "2026-03-13",
       "homeTeam": "NYI",
       "awayTeam": "LAK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-03-13",
       "homeTeam": "STL",
       "awayTeam": "EDM",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-03-14",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-03-13T11:51:20.184802"
+    "ingested_at": "2026-03-14T11:44:58.159483"
   }
 }
