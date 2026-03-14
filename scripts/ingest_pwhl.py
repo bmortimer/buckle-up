@@ -21,6 +21,8 @@ import requests
 
 
 # HockeyTech API configuration for PWHL
+# This key is a publicly shared key embedded in PWHL's own web infrastructure,
+# not a private credential. It is used by all third-party PWHL data consumers.
 API_BASE_URL = "https://lscluster.hockeytech.com/feed/"
 API_PARAMS = {
     "key": "446521baf8c38984",
