@@ -88,8 +88,8 @@ def fetch_season_games(season_str: str) -> list[dict]:
         **API_PARAMS,
         "feed": "modulekit",
         "view": "scorebar",
-        "numberofdaysback": "1000",  # Look back far enough to get all games
-        "numberofdaysahead": "1000",  # Look ahead for scheduled games
+        "numberofdaysback": "200",  # Covers a full season
+        "numberofdaysahead": "200",  # Look ahead for scheduled games
     }
 
     url = API_BASE_URL
@@ -99,7 +99,7 @@ def fetch_season_games(season_str: str) -> list[dict]:
     sleep(2)
 
     try:
-        resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
+        resp = requests.get(url, params=params, headers=HEADERS, timeout=60)
         resp.raise_for_status()
         data = resp.json()
 
