@@ -559,15 +559,15 @@
       "date": "2026-03-18",
       "homeTeam": "MIN",
       "awayTeam": "OTT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 0
     },
     {
       "date": "2026-03-18",
       "homeTeam": "VAN",
       "awayTeam": "NYS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 2
     },
     {
       "date": "2026-03-19",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-03-18T12:04:22.712706"
+    "ingested_at": "2026-03-19T11:57:04.386013"
   }
 }
