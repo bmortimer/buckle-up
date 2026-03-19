@@ -12,9 +12,7 @@ export function ThemeSwitcher() {
   }, [])
 
   if (!mounted) {
-    return (
-      <div className="w-9 h-9 rounded-md border border-border bg-card" aria-hidden="true" />
-    )
+    return <div className="w-9 h-9 rounded-md border border-border bg-card" aria-hidden="true" />
   }
 
   const isDark = theme === 'dark'

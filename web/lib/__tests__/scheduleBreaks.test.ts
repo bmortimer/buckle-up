@@ -42,7 +42,7 @@ describe('getScheduleBreaks', () => {
   it('should return PWHL breaks for World Championship years', () => {
     const breaks2024 = getScheduleBreaks('pwhl', '2023-24')
     expect(breaks2024).toHaveLength(1)
-    expect(breaks2024[0].reason).toBe('2024 IIHF Women\'s World Championship')
+    expect(breaks2024[0].reason).toBe("2024 IIHF Women's World Championship")
     expect(breaks2024[0].startDate).toBe('2024-04-03')
     expect(breaks2024[0].endDate).toBe('2024-04-14')
 

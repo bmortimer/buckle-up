@@ -1,19 +1,18 @@
 import { describe, it, expect } from 'vitest'
 import { readFileSync } from 'fs'
 import { join } from 'path'
-import { BeltTracker, trackAllSeasons, findNextTitleBout, findNextGameForTeam } from '../beltTracker'
+import {
+  BeltTracker,
+  trackAllSeasons,
+  findNextTitleBout,
+  findNextGameForTeam,
+} from '../beltTracker'
 import { parseFranchisesCSV } from '../franchises'
 import type { Game, FranchiseInfo } from '../types'
 
 // Load test fixtures
-const nbaFixture = readFileSync(
-  join(__dirname, 'fixtures/nba-franchises-test.csv'),
-  'utf-8'
-)
-const wnbaFixture = readFileSync(
-  join(__dirname, 'fixtures/wnba-franchises-test.csv'),
-  'utf-8'
-)
+const nbaFixture = readFileSync(join(__dirname, 'fixtures/nba-franchises-test.csv'), 'utf-8')
+const wnbaFixture = readFileSync(join(__dirname, 'fixtures/wnba-franchises-test.csv'), 'utf-8')
 const nbaFranchises = parseFranchisesCSV(nbaFixture)
 const wnbaFranchises = parseFranchisesCSV(wnbaFixture)
 
@@ -161,10 +160,10 @@ describe('BeltTracker', () => {
       const tracker = new BeltTracker('NYL')
       const history = tracker.trackSeason(sampleGames, wnbaFranchises)
 
-      const nylStats = history.summary.teams.find(t => t.team === 'NYL')
-      const lvaStats = history.summary.teams.find(t => t.team === 'LVA')
-      const minStats = history.summary.teams.find(t => t.team === 'MIN')
-      const conStats = history.summary.teams.find(t => t.team === 'CON')
+      const nylStats = history.summary.teams.find((t) => t.team === 'NYL')
+      const lvaStats = history.summary.teams.find((t) => t.team === 'LVA')
+      const minStats = history.summary.teams.find((t) => t.team === 'MIN')
+      const conStats = history.summary.teams.find((t) => t.team === 'CON')
 
       // NYL: 2 wins, 1 loss
       expect(nylStats?.wins).toBe(2)
@@ -191,7 +190,7 @@ describe('BeltTracker', () => {
       const tracker = new BeltTracker('NYL')
       const history = tracker.trackSeason(sampleGames, wnbaFranchises)
 
-      const nylStats = history.summary.teams.find(t => t.team === 'NYL')
+      const nylStats = history.summary.teams.find((t) => t.team === 'NYL')
       // NYL won 2 consecutive games before losing
       expect(nylStats?.longestReign).toBe(2)
     })
@@ -200,9 +199,9 @@ describe('BeltTracker', () => {
       const tracker = new BeltTracker('NYL')
       const history = tracker.trackSeason(sampleGames, wnbaFranchises)
 
-      const nylStats = history.summary.teams.find(t => t.team === 'NYL')
-      const lvaStats = history.summary.teams.find(t => t.team === 'LVA')
-      const conStats = history.summary.teams.find(t => t.team === 'CON')
+      const nylStats = history.summary.teams.find((t) => t.team === 'NYL')
+      const lvaStats = history.summary.teams.find((t) => t.team === 'LVA')
+      const conStats = history.summary.teams.find((t) => t.team === 'CON')
 
       expect(nylStats?.timesHeld).toBe(1) // Started with belt
       expect(lvaStats?.timesHeld).toBe(1) // Won it once
@@ -212,23 +211,72 @@ describe('BeltTracker', () => {
     it('should track multiple separate streaks and return longest', () => {
       const gamesMultipleStreaks: Game[] = [
         // NYL starts with belt, wins 2 games (streak = 2)
-        { date: '2024-05-14', homeTeam: 'NYL', awayTeam: 'MIN', homeScore: 95, awayScore: 87, isPlayoffs: false },
-        { date: '2024-05-15', homeTeam: 'NYL', awayTeam: 'LVA', homeScore: 88, awayScore: 85, isPlayoffs: false },
+        {
+          date: '2024-05-14',
+          homeTeam: 'NYL',
+          awayTeam: 'MIN',
+          homeScore: 95,
+          awayScore: 87,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-05-15',
+          homeTeam: 'NYL',
+          awayTeam: 'LVA',
+          homeScore: 88,
+          awayScore: 85,
+          isPlayoffs: false,
+        },
         // NYL loses to CON (streak ends at 2)
-        { date: '2024-05-17', homeTeam: 'NYL', awayTeam: 'CON', homeScore: 85, awayScore: 89, isPlayoffs: false },
+        {
+          date: '2024-05-17',
+          homeTeam: 'NYL',
+          awayTeam: 'CON',
+          homeScore: 85,
+          awayScore: 89,
+          isPlayoffs: false,
+        },
         // CON wins once then loses (streak = 1)
-        { date: '2024-05-18', homeTeam: 'CON', awayTeam: 'MIN', homeScore: 92, awayScore: 88, isPlayoffs: false },
-        { date: '2024-05-20', homeTeam: 'CON', awayTeam: 'NYL', homeScore: 78, awayScore: 82, isPlayoffs: false },
+        {
+          date: '2024-05-18',
+          homeTeam: 'CON',
+          awayTeam: 'MIN',
+          homeScore: 92,
+          awayScore: 88,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-05-20',
+          homeTeam: 'CON',
+          awayTeam: 'NYL',
+          homeScore: 78,
+          awayScore: 82,
+          isPlayoffs: false,
+        },
         // NYL gets belt back (win that takes belt = 1), then wins 2 more (total streak = 3 for second reign)
-        { date: '2024-05-22', homeTeam: 'NYL', awayTeam: 'MIN', homeScore: 90, awayScore: 85, isPlayoffs: false },
-        { date: '2024-05-24', homeTeam: 'NYL', awayTeam: 'LVA', homeScore: 88, awayScore: 80, isPlayoffs: false },
+        {
+          date: '2024-05-22',
+          homeTeam: 'NYL',
+          awayTeam: 'MIN',
+          homeScore: 90,
+          awayScore: 85,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-05-24',
+          homeTeam: 'NYL',
+          awayTeam: 'LVA',
+          homeScore: 88,
+          awayScore: 80,
+          isPlayoffs: false,
+        },
       ]
 
       const tracker = new BeltTracker('NYL')
       const history = tracker.trackSeason(gamesMultipleStreaks, wnbaFranchises)
 
-      const nylStats = history.summary.teams.find(t => t.team === 'NYL')
-      const conStats = history.summary.teams.find(t => t.team === 'CON')
+      const nylStats = history.summary.teams.find((t) => t.team === 'NYL')
+      const conStats = history.summary.teams.find((t) => t.team === 'CON')
 
       // NYL had two separate streaks: 2 and 3. Longest should be 3
       expect(nylStats?.longestReign).toBe(3)
@@ -242,19 +290,54 @@ describe('BeltTracker', () => {
     it('should count the winning game that takes the belt toward new holder streak', () => {
       const gamesStreakTransfer: Game[] = [
         // NYL starts with belt, wins 2
-        { date: '2024-05-14', homeTeam: 'NYL', awayTeam: 'MIN', homeScore: 95, awayScore: 87, isPlayoffs: false },
-        { date: '2024-05-15', homeTeam: 'NYL', awayTeam: 'LVA', homeScore: 88, awayScore: 85, isPlayoffs: false },
+        {
+          date: '2024-05-14',
+          homeTeam: 'NYL',
+          awayTeam: 'MIN',
+          homeScore: 95,
+          awayScore: 87,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-05-15',
+          homeTeam: 'NYL',
+          awayTeam: 'LVA',
+          homeScore: 88,
+          awayScore: 85,
+          isPlayoffs: false,
+        },
         // LVA takes belt (this win should count toward LVA's streak)
-        { date: '2024-05-17', homeTeam: 'NYL', awayTeam: 'LVA', homeScore: 85, awayScore: 89, isPlayoffs: false },
+        {
+          date: '2024-05-17',
+          homeTeam: 'NYL',
+          awayTeam: 'LVA',
+          homeScore: 85,
+          awayScore: 89,
+          isPlayoffs: false,
+        },
         // LVA wins 2 more (total streak = 3 including the win that took the belt)
-        { date: '2024-05-18', homeTeam: 'LVA', awayTeam: 'MIN', homeScore: 92, awayScore: 88, isPlayoffs: false },
-        { date: '2024-05-20', homeTeam: 'LVA', awayTeam: 'CON', homeScore: 90, awayScore: 85, isPlayoffs: false },
+        {
+          date: '2024-05-18',
+          homeTeam: 'LVA',
+          awayTeam: 'MIN',
+          homeScore: 92,
+          awayScore: 88,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-05-20',
+          homeTeam: 'LVA',
+          awayTeam: 'CON',
+          homeScore: 90,
+          awayScore: 85,
+          isPlayoffs: false,
+        },
       ]
 
       const tracker = new BeltTracker('NYL')
       const history = tracker.trackSeason(gamesStreakTransfer, wnbaFranchises)
 
-      const lvaStats = history.summary.teams.find(t => t.team === 'LVA')
+      const lvaStats = history.summary.teams.find((t) => t.team === 'LVA')
 
       // LVA's streak should be 3: the win that took the belt + 2 more wins
       expect(lvaStats?.longestReign).toBe(3)
@@ -306,8 +389,8 @@ describe('BeltTracker', () => {
       const tracker = new BeltTracker('BOS')
       const history = tracker.trackSeason(gamesWithTie, nbaFranchises)
 
-      const bosStats = history.summary.teams.find(t => t.team === 'BOS')
-      const mtlStats = history.summary.teams.find(t => t.team === 'MTL')
+      const bosStats = history.summary.teams.find((t) => t.team === 'BOS')
+      const mtlStats = history.summary.teams.find((t) => t.team === 'MTL')
 
       // BOS: 2 wins, 0 losses, 1 tie
       expect(bosStats?.wins).toBe(2)
@@ -324,7 +407,7 @@ describe('BeltTracker', () => {
       const tracker = new BeltTracker('BOS')
       const history = tracker.trackSeason(gamesWithTie, nbaFranchises)
 
-      const bosStats = history.summary.teams.find(t => t.team === 'BOS')
+      const bosStats = history.summary.teams.find((t) => t.team === 'BOS')
       // BOS won twice with a tie in between - ties don't break streaks
       // Note: longestReign tracks consecutive WINS, not games
       expect(bosStats?.longestReign).toBe(2)
@@ -333,20 +416,62 @@ describe('BeltTracker', () => {
     it('should not add ties to streak count', () => {
       const gamesWithMultipleTies: Game[] = [
         // BOS starts with belt, wins 3 times
-        { date: '2024-10-10', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 3, awayScore: 2, isPlayoffs: false },
-        { date: '2024-10-12', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 4, awayScore: 1, isPlayoffs: false },
-        { date: '2024-10-14', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 3, awayScore: 1, isPlayoffs: false },
+        {
+          date: '2024-10-10',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 3,
+          awayScore: 2,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-10-12',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 4,
+          awayScore: 1,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-10-14',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 3,
+          awayScore: 1,
+          isPlayoffs: false,
+        },
         // Then ties twice
-        { date: '2024-10-16', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 2, awayScore: 2, isPlayoffs: false },
-        { date: '2024-10-18', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 1, awayScore: 1, isPlayoffs: false },
+        {
+          date: '2024-10-16',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 2,
+          awayScore: 2,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-10-18',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 1,
+          awayScore: 1,
+          isPlayoffs: false,
+        },
         // Then wins again
-        { date: '2024-10-20', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 5, awayScore: 3, isPlayoffs: false },
+        {
+          date: '2024-10-20',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 5,
+          awayScore: 3,
+          isPlayoffs: false,
+        },
       ]
 
       const tracker = new BeltTracker('BOS')
       const history = tracker.trackSeason(gamesWithMultipleTies, nbaFranchises)
 
-      const bosStats = history.summary.teams.find(t => t.team === 'BOS')
+      const bosStats = history.summary.teams.find((t) => t.team === 'BOS')
       // BOS won 4 times total (3 + 1 after ties), ties don't count toward streak
       // Streak should be 4 consecutive WINS (ties don't reset or increment)
       expect(bosStats?.wins).toBe(4)
@@ -359,16 +484,37 @@ describe('BeltTracker', () => {
     it('should handle ties at start of belt holding period', () => {
       const gamesStartWithTie: Game[] = [
         // BOS starts with belt, immediately ties
-        { date: '2024-10-10', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 2, awayScore: 2, isPlayoffs: false },
+        {
+          date: '2024-10-10',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 2,
+          awayScore: 2,
+          isPlayoffs: false,
+        },
         // Then wins twice
-        { date: '2024-10-12', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 3, awayScore: 1, isPlayoffs: false },
-        { date: '2024-10-14', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 4, awayScore: 2, isPlayoffs: false },
+        {
+          date: '2024-10-12',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 3,
+          awayScore: 1,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-10-14',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 4,
+          awayScore: 2,
+          isPlayoffs: false,
+        },
       ]
 
       const tracker = new BeltTracker('BOS')
       const history = tracker.trackSeason(gamesStartWithTie, nbaFranchises)
 
-      const bosStats = history.summary.teams.find(t => t.team === 'BOS')
+      const bosStats = history.summary.teams.find((t) => t.team === 'BOS')
       // Streak should be 2 (only the wins count)
       expect(bosStats?.wins).toBe(2)
       expect(bosStats?.ties).toBe(1)
@@ -378,17 +524,45 @@ describe('BeltTracker', () => {
     it('should handle ties at end of belt holding period', () => {
       const gamesEndWithTie: Game[] = [
         // BOS starts with belt, wins 3 times
-        { date: '2024-10-10', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 3, awayScore: 2, isPlayoffs: false },
-        { date: '2024-10-12', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 4, awayScore: 1, isPlayoffs: false },
-        { date: '2024-10-14', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 3, awayScore: 1, isPlayoffs: false },
+        {
+          date: '2024-10-10',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 3,
+          awayScore: 2,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-10-12',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 4,
+          awayScore: 1,
+          isPlayoffs: false,
+        },
+        {
+          date: '2024-10-14',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 3,
+          awayScore: 1,
+          isPlayoffs: false,
+        },
         // Ends with tie (season ends)
-        { date: '2024-10-16', homeTeam: 'BOS', awayTeam: 'MTL', homeScore: 2, awayScore: 2, isPlayoffs: false },
+        {
+          date: '2024-10-16',
+          homeTeam: 'BOS',
+          awayTeam: 'MTL',
+          homeScore: 2,
+          awayScore: 2,
+          isPlayoffs: false,
+        },
       ]
 
       const tracker = new BeltTracker('BOS')
       const history = tracker.trackSeason(gamesEndWithTie, nbaFranchises)
 
-      const bosStats = history.summary.teams.find(t => t.team === 'BOS')
+      const bosStats = history.summary.teams.find((t) => t.team === 'BOS')
       // Final streak should be recorded as 3 wins (tie at end doesn't add to it)
       expect(bosStats?.wins).toBe(3)
       expect(bosStats?.ties).toBe(1)
@@ -483,7 +657,7 @@ describe('trackAllSeasons', () => {
     expect(history.summary.currentHolder).toBe('CON')
 
     // Verify season start markers are present
-    const seasonStarts = history.changes.filter(c => c.reason === 'start')
+    const seasonStarts = history.changes.filter((c) => c.reason === 'start')
     expect(seasonStarts).toHaveLength(2)
     expect(seasonStarts[0].toTeam).toBe('NYL') // 2023 champion
     expect(seasonStarts[1].toTeam).toBe('CON') // 2024 champion
@@ -524,8 +698,8 @@ describe('trackAllSeasons', () => {
 
     const history = trackAllSeasons(seasonsData, wnbaFranchises, champions)
 
-    const nylStats = history.summary.teams.find(t => t.team === 'NYL')
-    const minStats = history.summary.teams.find(t => t.team === 'MIN')
+    const nylStats = history.summary.teams.find((t) => t.team === 'NYL')
+    const minStats = history.summary.teams.find((t) => t.team === 'MIN')
 
     // NYL should have 2 wins total
     expect(nylStats?.wins).toBe(2)
@@ -574,8 +748,8 @@ describe('trackAllSeasons', () => {
     })
 
     // Should have stats for LVA (current franchise), not separate UTA and LVA
-    const lvaStats = history.summary.teams.find(t => t.team === 'LVA')
-    const utaStats = history.summary.teams.find(t => t.team === 'UTA')
+    const lvaStats = history.summary.teams.find((t) => t.team === 'LVA')
+    const utaStats = history.summary.teams.find((t) => t.team === 'UTA')
 
     expect(lvaStats).toBeDefined()
     expect(utaStats).toBeUndefined() // Should be merged into LVA

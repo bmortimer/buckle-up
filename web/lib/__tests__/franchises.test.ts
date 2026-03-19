@@ -15,14 +15,8 @@ import {
 import type { FranchiseInfo } from '../types'
 
 // Load test fixtures
-const nbaFixture = readFileSync(
-  join(__dirname, 'fixtures/nba-franchises-test.csv'),
-  'utf-8'
-)
-const wnbaFixture = readFileSync(
-  join(__dirname, 'fixtures/wnba-franchises-test.csv'),
-  'utf-8'
-)
+const nbaFixture = readFileSync(join(__dirname, 'fixtures/nba-franchises-test.csv'), 'utf-8')
+const wnbaFixture = readFileSync(join(__dirname, 'fixtures/wnba-franchises-test.csv'), 'utf-8')
 
 const nbaFranchises = parseFranchisesCSV(nbaFixture)
 const wnbaFranchises = parseFranchisesCSV(wnbaFixture)
@@ -32,7 +26,7 @@ describe('parseFranchisesCSV', () => {
     expect(nbaFranchises).toBeInstanceOf(Array)
     expect(nbaFranchises.length).toBeGreaterThan(0)
 
-    const gsw = nbaFranchises.find(f => f.franchiseId === 'GSW')
+    const gsw = nbaFranchises.find((f) => f.franchiseId === 'GSW')
     expect(gsw).toBeDefined()
     expect(gsw?.teamAbbr).toBe('GSW')
     expect(gsw?.displayName).toBe('Golden State Warriors')
@@ -40,7 +34,7 @@ describe('parseFranchisesCSV', () => {
   })
 
   it('should filter out empty lines and header', () => {
-    const allIds = nbaFranchises.map(f => f.franchiseId)
+    const allIds = nbaFranchises.map((f) => f.franchiseId)
     expect(allIds).not.toContain('')
     expect(allIds).not.toContain('franchise_id')
   })
@@ -92,7 +86,6 @@ describe('getRootFranchiseId', () => {
       expect(getRootFranchiseId('CON', wnbaFranchises)).toBe('CON')
     })
   })
-
 
   it('should return original team abbr if not found in franchises', () => {
     expect(getRootFranchiseId('UNKNOWN', nbaFranchises)).toBe('UNKNOWN')

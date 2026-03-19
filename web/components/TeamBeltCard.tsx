@@ -19,13 +19,16 @@ export default function TeamBeltCard({
   isCurrentHolder,
   isSeasonChampion = false,
   year,
-  league = 'wnba'
+  league = 'wnba',
 }: TeamBeltCardProps) {
   const color = getTeamColor(team, franchises)
   const displayName = getTeamDisplayName(team, franchises)
 
   return (
-    <div data-card="team-belt-stats" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
+    <div
+      data-card="team-belt-stats"
+      className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden"
+    >
       {/* LED status bar at top */}
       <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
 
@@ -33,7 +36,11 @@ export default function TeamBeltCard({
         {/* Header - always centered */}
         <h2 className="text-[0.6rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 font-orbitron text-center font-normal">
           <span aria-hidden="true">◆ </span>
-          {isCurrentHolder ? 'Current Belt Holder' : isSeasonChampion ? `${year} Champion` : 'Team Belt Stats'}
+          {isCurrentHolder
+            ? 'Current Belt Holder'
+            : isSeasonChampion
+              ? `${year} Champion`
+              : 'Team Belt Stats'}
           <span aria-hidden="true"> ◆</span>
         </h2>
 
@@ -62,7 +69,9 @@ export default function TeamBeltCard({
                   {stats.totalGames}
                 </div>
                 <div className="text-[0.5rem] sm:text-[0.6rem] uppercase tracking-wider sm:tracking-widest text-muted-foreground font-orbitron">
-                  BELT<br/>GAMES
+                  BELT
+                  <br />
+                  GAMES
                 </div>
               </div>
 
@@ -72,10 +81,13 @@ export default function TeamBeltCard({
                   className="text-2xl sm:text-3xl font-mono tabular-nums led-text mb-1 sm:mb-2"
                   style={{ color: 'hsl(var(--led-amber))' }}
                 >
-                  {stats.wins}-{stats.losses}{stats.ties ? `-${stats.ties}` : ''}
+                  {stats.wins}-{stats.losses}
+                  {stats.ties ? `-${stats.ties}` : ''}
                 </div>
                 <div className="text-[0.5rem] sm:text-[0.6rem] uppercase tracking-wider sm:tracking-widest text-muted-foreground font-orbitron">
-                  W-L{stats.ties ? '-T' : ''}<br/>RECORD
+                  W-L{stats.ties ? '-T' : ''}
+                  <br />
+                  RECORD
                 </div>
               </div>
 
@@ -88,7 +100,9 @@ export default function TeamBeltCard({
                   {stats.longestReign}
                 </div>
                 <div className="text-[0.5rem] sm:text-[0.6rem] uppercase tracking-wider sm:tracking-widest text-muted-foreground font-orbitron">
-                  LONGEST<br/>STREAK
+                  LONGEST
+                  <br />
+                  STREAK
                 </div>
               </div>
             </div>
@@ -108,7 +122,10 @@ export default function TeamBeltCard({
             <div className="mb-4">
               <TeamLogo teamCode={team} franchises={franchises} league={league} size="xl" />
             </div>
-            <div aria-hidden="true" className="text-base lg:text-lg text-foreground font-orbitron tracking-wider uppercase text-center">
+            <div
+              aria-hidden="true"
+              className="text-base lg:text-lg text-foreground font-orbitron tracking-wider uppercase text-center"
+            >
               {displayName}
             </div>
           </div>
@@ -138,7 +155,8 @@ export default function TeamBeltCard({
                   className="text-2xl lg:text-4xl xl:text-5xl font-mono tabular-nums led-text whitespace-nowrap"
                   style={{ color: 'hsl(var(--led-amber))' }}
                 >
-                  {stats.wins}-{stats.losses}{stats.ties ? `-${stats.ties}` : ''}
+                  {stats.wins}-{stats.losses}
+                  {stats.ties ? `-${stats.ties}` : ''}
                 </div>
                 <div className="text-[0.6rem] lg:text-[0.65rem] uppercase tracking-widest text-muted-foreground font-orbitron">
                   W-L{stats.ties ? '-T' : ''} RECORD

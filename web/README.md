@@ -44,6 +44,7 @@ Open [http://localhost:3000](http://localhost:3000)
 See [DEPLOY.md](../DEPLOY.md) in the root directory for full deployment instructions.
 
 **Quick summary:**
+
 - Framework: Next.js (static export)
 - Root Directory: `./` (project root, not `web`)
 - Build Command: `cd web && npm run build`
@@ -111,6 +112,7 @@ npm run test:run      # Run all tests once
 ```
 
 **Test Coverage:**
+
 - 137 tests across 7 test suites
 - Belt tracking (ties, streaks, franchise handling)
 - Data filtering (All Time mode, team selection)

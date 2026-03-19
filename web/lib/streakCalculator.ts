@@ -24,9 +24,9 @@ export function getCurrentStreak(
   league: League = 'nhl'
 ): number {
   // Track the belt from the beginning to find when current holder acquired it
-  const completedGames = games.filter(
-    (g) => g.homeScore !== null && g.awayScore !== null
-  ).sort((a, b) => a.date.localeCompare(b.date))
+  const completedGames = games
+    .filter((g) => g.homeScore !== null && g.awayScore !== null)
+    .sort((a, b) => a.date.localeCompare(b.date))
 
   if (completedGames.length === 0) {
     return 0

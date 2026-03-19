@@ -84,14 +84,21 @@ body {
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
-    font-feature-settings: "tnum" 1;
+    font-feature-settings: 'tnum' 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -117,12 +124,16 @@ body {
     overflow: hidden;
     transition: all 0.3s ease;
     border-color: transparent;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.05),
+      0 8px 24px rgba(0, 0, 0, 0.08);
   }
 
   .dark .scoreboard-panel {
     border-color: hsl(var(--border));
-    box-shadow: 0 0 0 1px hsl(var(--accent) / 0.2), 0 8px 32px rgba(0, 0, 0, 0.4);
+    box-shadow:
+      0 0 0 1px hsl(var(--accent) / 0.2),
+      0 8px 32px rgba(0, 0, 0, 0.4);
   }
 
   /* ---- LED TEXT EFFECTS ---- */
@@ -158,9 +169,15 @@ body {
    ===================================================== */
 
 @keyframes flip {
-  0% { transform: rotateX(0deg); }
-  50% { transform: rotateX(90deg); }
-  100% { transform: rotateX(0deg); }
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
 }
 
 .flip-animation {
@@ -168,8 +185,12 @@ body {
 }
 
 @keyframes ticker {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .ticker-scroll {
@@ -177,8 +198,12 @@ body {
 }
 
 @keyframes shimmer {
-  0% { background-position: 200% center; }
-  100% { background-position: -200% center; }
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
 }
 
 .animate-shimmer {
@@ -186,8 +211,14 @@ body {
 }
 
 @keyframes fade-in {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {

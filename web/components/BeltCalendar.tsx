@@ -3,7 +3,12 @@
 import { useState, useEffect, useMemo } from 'react'
 import type { BeltHistory, FranchiseInfo, Game, League, CalendarDayData } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
-import { getTeamColor, getTeamDisplayName, isSameFranchise, getFranchiseEras } from '@/lib/franchises'
+import {
+  getTeamColor,
+  getTeamDisplayName,
+  isSameFranchise,
+  getFranchiseEras,
+} from '@/lib/franchises'
 import { classifyDayForTeam, getActiveMonthsForTeam } from '@/lib/calendarDayClassifier'
 import TeamLogo from './TeamLogo'
 import CalendarDayPopup from './CalendarDayPopup'
@@ -24,7 +29,13 @@ interface PopupPosition {
   y: number
 }
 
-export default function BeltCalendar({ history, franchises, selectedTeam: externalSelectedTeam, allGames, league = 'wnba' }: BeltCalendarProps) {
+export default function BeltCalendar({
+  history,
+  franchises,
+  selectedTeam: externalSelectedTeam,
+  allGames,
+  league = 'wnba',
+}: BeltCalendarProps) {
   const [clickedDay, setClickedDay] = useState<DayData | null>(null)
   const [popupPosition, setPopupPosition] = useState<PopupPosition | null>(null)
   const [selectedTeam, setSelectedTeam] = useState<string | null>(externalSelectedTeam || null)
@@ -34,11 +45,17 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     setSelectedTeam(externalSelectedTeam || null)
   }, [externalSelectedTeam])
 
+  // Get months where the selected team played any game (not just belt games)
+  // Must be before any early returns to satisfy rules-of-hooks
+  const teamActiveMonths = useMemo(() => {
+    if (!selectedTeam) return new Set<string>()
+    return getActiveMonthsForTeam(allGames, selectedTeam, franchises)
+  }, [allGames, selectedTeam, franchises])
+
   // Get list of teams that held the belt
-  const teamsWithBelt = Array.from(new Set([
-    ...history.changes.map(c => c.fromTeam),
-    ...history.changes.map(c => c.toTeam),
-  ])).sort()
+  const teamsWithBelt = Array.from(
+    new Set([...history.changes.map((c) => c.fromTeam), ...history.changes.map((c) => c.toTeam)])
+  ).sort()
 
   // Build a map of each day to its belt holder and game status
   // Use history.changes to properly track belt across seasons (respecting season resets)
@@ -47,16 +64,16 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
   if (allGames.length === 0) return null
 
   // Get date range from all games
-  const gameDates = allGames.map(g => {
+  const gameDates = allGames.map((g) => {
     const [y, m, d] = g.date.split('-').map(Number)
     return new Date(y, m - 1, d)
   })
-  const minDate = new Date(Math.min(...gameDates.map(d => d.getTime())))
-  const maxDate = new Date(Math.max(...gameDates.map(d => d.getTime())))
+  const minDate = new Date(Math.min(...gameDates.map((d) => d.getTime())))
+  const maxDate = new Date(Math.max(...gameDates.map((d) => d.getTime())))
 
   // Create a map of games where belt holder played (from history.changes)
   const beltGamesByDate = new Map<string, Game>()
-  history.changes.forEach(change => {
+  history.changes.forEach((change) => {
     // Belt changes include 'start' (season start) and 'loss' (belt changed hands)
     if (change.reason === 'loss') {
       beltGamesByDate.set(change.game.date, change.game)
@@ -76,7 +93,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     holderPeriods.push({
       start: minDate.toISOString().split('T')[0],
       holder: currentHolder,
-      franchiseHolder: currentFranchiseHolder
+      franchiseHolder: currentFranchiseHolder,
     })
   }
 
@@ -92,7 +109,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
       holderPeriods.push({
         start: nextDay,
         holder: change.toTeam,
-        franchiseHolder: change.toTeam
+        franchiseHolder: change.toTeam,
       })
       currentHolder = change.toTeam
       currentFranchiseHolder = change.toTeam
@@ -101,7 +118,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
       holderPeriods.push({
         start: change.game?.date || change.toTeam, // Use game date or fallback
         holder: change.toTeam,
-        franchiseHolder: change.toTeam
+        franchiseHolder: change.toTeam,
       })
       currentHolder = change.toTeam
       currentFranchiseHolder = change.toTeam
@@ -115,7 +132,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
       if (holderPeriods[i].start <= dateStr) {
         return {
           holder: holderPeriods[i].holder,
-          franchiseHolder: holderPeriods[i].franchiseHolder
+          franchiseHolder: holderPeriods[i].franchiseHolder,
         }
       }
     }
@@ -124,7 +141,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
 
   // Create map of all games by date
   const gamesByDate = new Map<string, Game[]>()
-  allGames.forEach(game => {
+  allGames.forEach((game) => {
     if (!gamesByDate.has(game.date)) {
       gamesByDate.set(game.date, [])
     }
@@ -139,22 +156,31 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     const gamesOnDate = gamesByDate.get(dateStr) || []
 
     // Find if belt holder played on this day (check by franchise)
-    const holderGame = gamesOnDate.find(game =>
-      isSameFranchise(game.homeTeam, franchiseHolder, franchises) ||
-      isSameFranchise(game.awayTeam, franchiseHolder, franchises)
+    const holderGame = gamesOnDate.find(
+      (game) =>
+        isSameFranchise(game.homeTeam, franchiseHolder, franchises) ||
+        isSameFranchise(game.awayTeam, franchiseHolder, franchises)
     )
 
     if (holderGame && isGameCompleted(holderGame)) {
       // Belt holder played a completed game
       const holderIsHome = isSameFranchise(holderGame.homeTeam, franchiseHolder, franchises)
       const isTie = holderGame.homeScore === holderGame.awayScore
-      const holderWon = !isTie && (holderIsHome
-        ? holderGame.homeScore! > holderGame.awayScore!
-        : holderGame.awayScore! > holderGame.homeScore!)
+      const holderWon =
+        !isTie &&
+        (holderIsHome
+          ? holderGame.homeScore! > holderGame.awayScore!
+          : holderGame.awayScore! > holderGame.homeScore!)
 
-      const winner = isTie ? null : (holderIsHome
-        ? (holderWon ? holderGame.homeTeam : holderGame.awayTeam)
-        : (holderWon ? holderGame.awayTeam : holderGame.homeTeam))
+      const winner = isTie
+        ? null
+        : holderIsHome
+          ? holderWon
+            ? holderGame.homeTeam
+            : holderGame.awayTeam
+          : holderWon
+            ? holderGame.awayTeam
+            : holderGame.homeTeam
 
       const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
       const actualHolder = holderIsHome ? holderGame.homeTeam : holderGame.awayTeam
@@ -211,7 +237,11 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
         if (isSameFranchise(dayData.holder, teamCode, franchises)) {
           dayData.isUncertain = true
         }
-      } else if (!dayData.played && dayData.game && isSameFranchise(dayData.holder, teamCode, franchises)) {
+      } else if (
+        !dayData.played &&
+        dayData.game &&
+        isSameFranchise(dayData.holder, teamCode, franchises)
+      ) {
         // This is the first unplayed game where the team holds the belt
         dayData.isUpcomingTitleBout = true
         foundUpcomingBout = true
@@ -237,19 +267,12 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     markUncertainDays(selectedTeam)
   }
 
-  // Get months where the selected team played any game (not just belt games)
-  // Memoize to avoid recalculating on every render
-  const teamActiveMonths = useMemo(() => {
-    if (!selectedTeam) return new Set<string>()
-    return getActiveMonthsForTeam(allGames, selectedTeam, franchises)
-  }, [allGames, selectedTeam, franchises])
-
   // Show months where the selected team was active (played any game), or belt games occurred
   const relevantMonths = Array.from(monthsData.entries())
     .filter(([monthKey, days]) => {
       if (!selectedTeam) {
         // No team selected - show all months with belt games
-        return days.some(d => d.played)
+        return days.some((d) => d.played)
       }
       // Team selected - show months where team played any game
       return teamActiveMonths.has(monthKey)
@@ -286,7 +309,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
 
   // Determine year display for title
   const yearDisplay = (() => {
-    const uniqueYears = new Set(allGames.map(g => g.date.substring(0, 4)))
+    const uniqueYears = new Set(allGames.map((g) => g.date.substring(0, 4)))
     if (uniqueYears.size === 1) {
       return Array.from(uniqueYears)[0]
     }
@@ -301,7 +324,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     // Get unique team codes from days where belt holder played
     // and filter to only team codes that match the selected team's franchise
     const teamCodes = new Set<string>()
-    dayMap.forEach(day => {
+    dayMap.forEach((day) => {
       if (day.played && day.holder && isSameFranchise(day.holder, selectedTeam, franchises)) {
         teamCodes.add(day.holder)
       }
@@ -310,8 +333,8 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
     // Sort chronologically by finding first appearance
     const codesArray = Array.from(teamCodes)
     codesArray.sort((a, b) => {
-      const firstA = Array.from(dayMap.values()).find(d => d.holder === a)?.date || ''
-      const firstB = Array.from(dayMap.values()).find(d => d.holder === b)?.date || ''
+      const firstA = Array.from(dayMap.values()).find((d) => d.holder === a)?.date || ''
+      const firstB = Array.from(dayMap.values()).find((d) => d.holder === b)?.date || ''
       return firstA.localeCompare(firstB)
     })
 
@@ -319,12 +342,18 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
   })()
 
   return (
-    <div data-card="calendar" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
+    <div
+      data-card="calendar"
+      className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden"
+    >
       <div className="flex items-center justify-center mb-6 border-b-2 border-border pb-3">
         <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground text-center font-normal">
           <span aria-hidden="true">◆ </span>
           History
-          <span> · {displayedTeamCodes || 'All Teams'} · {yearDisplay} </span>
+          <span>
+            {' '}
+            · {displayedTeamCodes || 'All Teams'} · {yearDisplay}{' '}
+          </span>
           <span aria-hidden="true"> ◆</span>
         </h2>
       </div>
@@ -336,7 +365,7 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
             ▸ Select Team
           </p>
           <div className="flex flex-wrap gap-2">
-            {teamsWithBelt.map(team => (
+            {teamsWithBelt.map((team) => (
               <button
                 key={team}
                 onClick={() => setSelectedTeam(team)}
@@ -358,159 +387,175 @@ export default function BeltCalendar({ history, franchises, selectedTeam: extern
             ▸ BRIGHT = WON/DEFENDED • TAN = FAILED CHALLENGE
           </p>
 
-      <div className="flex flex-wrap gap-4 items-start">
-        {monthsByEra.map((eraGroup, eraGroupIndex) => (
-          <div key={eraGroupIndex} className="contents">
-            {/* Era divider - show between eras when there are multiple */}
-            {eraGroupIndex > 0 && (
-              <div className="flex items-center justify-center self-stretch px-2">
-                <span className="text-muted-foreground text-lg" aria-label="gap in team history">◆</span>
-              </div>
-            )}
-            {eraGroup.months.map(([monthKey, days]) => {
-              // Parse month key (YYYY-MM) and create date at noon to avoid timezone issues
-              const [year, month] = monthKey.split('-')
-              const monthDate = new Date(parseInt(year), parseInt(month) - 1, 15) // 15th of month at local time
+          <div className="flex flex-wrap gap-4 items-start">
+            {monthsByEra.map((eraGroup, eraGroupIndex) => (
+              <div key={eraGroupIndex} className="contents">
+                {/* Era divider - show between eras when there are multiple */}
+                {eraGroupIndex > 0 && (
+                  <div className="flex items-center justify-center self-stretch px-2">
+                    <span
+                      className="text-muted-foreground text-lg"
+                      aria-label="gap in team history"
+                    >
+                      ◆
+                    </span>
+                  </div>
+                )}
+                {eraGroup.months.map(([monthKey, days]) => {
+                  // Parse month key (YYYY-MM) and create date at noon to avoid timezone issues
+                  const [year, month] = monthKey.split('-')
+                  const monthDate = new Date(parseInt(year), parseInt(month) - 1, 15) // 15th of month at local time
 
-              // Build calendar grid (7 columns for days of week)
-              // Parse dates as local time to avoid timezone issues
-              const [fy, fm, fd] = days[0].date.split('-').map(Number)
-              const firstDay = new Date(fy, fm - 1, fd)
-              const [ly, lm, ld] = days[days.length - 1].date.split('-').map(Number)
-              const lastDay = new Date(ly, lm - 1, ld)
-              const startDayOfWeek = firstDay.getDay() // 0 = Sunday
+                  // Build calendar grid (7 columns for days of week)
+                  // Parse dates as local time to avoid timezone issues
+                  const [fy, fm, fd] = days[0].date.split('-').map(Number)
+                  const firstDay = new Date(fy, fm - 1, fd)
+                  const [ly, lm, ld] = days[days.length - 1].date.split('-').map(Number)
+                  const lastDay = new Date(ly, lm - 1, ld)
+                  const startDayOfWeek = firstDay.getDay() // 0 = Sunday
 
-              // Calculate weeks needed
-              const totalDays = Math.ceil((lastDay.getTime() - firstDay.getTime()) / (1000 * 60 * 60 * 24)) + 1
-              const weeksNeeded = Math.ceil((startDayOfWeek + totalDays) / 7)
+                  // Calculate weeks needed
+                  const totalDays =
+                    Math.ceil((lastDay.getTime() - firstDay.getTime()) / (1000 * 60 * 60 * 24)) + 1
+                  const weeksNeeded = Math.ceil((startDayOfWeek + totalDays) / 7)
 
-              const grid: (DayData | null)[][] = []
-              for (let week = 0; week < weeksNeeded; week++) {
-                grid[week] = []
-                for (let day = 0; day < 7; day++) {
-                  const dayIndex = week * 7 + day - startDayOfWeek
-                  if (dayIndex >= 0 && dayIndex < totalDays) {
-                    const targetDate = new Date(firstDay)
-                    targetDate.setDate(firstDay.getDate() + dayIndex)
-                    const dateStr = targetDate.toISOString().split('T')[0]
-                    grid[week][day] = dayMap.get(dateStr) || null
-                  } else {
-                    grid[week][day] = null
+                  const grid: (DayData | null)[][] = []
+                  for (let week = 0; week < weeksNeeded; week++) {
+                    grid[week] = []
+                    for (let day = 0; day < 7; day++) {
+                      const dayIndex = week * 7 + day - startDayOfWeek
+                      if (dayIndex >= 0 && dayIndex < totalDays) {
+                        const targetDate = new Date(firstDay)
+                        targetDate.setDate(firstDay.getDate() + dayIndex)
+                        const dateStr = targetDate.toISOString().split('T')[0]
+                        grid[week][day] = dayMap.get(dateStr) || null
+                      } else {
+                        grid[week][day] = null
+                      }
+                    }
                   }
-                }
-              }
 
-              return (
-                <div key={monthKey} className="flex-shrink-0">
-                  <div className="text-[0.65rem] font-mono text-muted-foreground mb-1.5 uppercase tracking-wider">
-                    {monthDate.toLocaleDateString('en-US', { month: 'short', year: '2-digit' })}
-                  </div>
-
-                  {/* Calendar grid - no day labels, more compact */}
-                  <div className="space-y-0.5">
-                    {grid.map((week, weekIdx) => (
-                      <div key={weekIdx} className="grid grid-cols-7 gap-0.5">
-                        {week.map((dayData, dayIdx) => {
-                          if (!dayData) {
-                            return <div key={dayIdx} className="w-2.5 h-2.5" />
-                          }
-
-                          // Classify this day for the selected team
-                          const classification = classifyDayForTeam(dayData, selectedTeam!, franchises)
-
-                          // Show empty cell for days team wasn't involved or uncertain future days
-                          if (!classification.isInvolved || classification.isUncertain) {
-                            return (
-                              <div
-                                key={dayIdx}
-                                className="w-2.5 h-2.5 bg-muted/40 border border-border/50"
-                              />
-                            )
-                          }
-
-                          const color = getTeamColor(selectedTeam!, franchises)
-
-                          // Extract classification results for styling
-                          const { tiedWhileHolding, failedChallenge, isWinOrDefense, isLoss, isUpcomingTitleBout } = classification
-
-                          // Color logic with opacity baked into the color:
-                          // - Wins/defenses: full team color
-                          // - Ties while holding: dim team color (25% opacity)
-                          // - Losses while holding: transparent with border and X
-                          // - Failed challenges (tie or loss): tan with 60% opacity
-                          // - Off days: dim team color (25% opacity)
-                          // - Upcoming title bout: dim team color with "?"
-
-                          // Helper to convert hex to rgba with opacity
-                          const hexToRgba = (hex: string, alpha: number) => {
-                            const r = parseInt(hex.slice(1, 3), 16)
-                            const g = parseInt(hex.slice(3, 5), 16)
-                            const b = parseInt(hex.slice(5, 7), 16)
-                            return `rgba(${r}, ${g}, ${b}, ${alpha})`
-                          }
-
-                          let cellColor: string
-                          // IMPORTANT: Check isLoss first to ensure lost belt shows transparent (not tan)
-                          if (isLoss) {
-                            cellColor = 'transparent'
-                          } else if (isUpcomingTitleBout) {
-                            cellColor = hexToRgba(color, 0.25) // Dim for upcoming bout
-                          } else if (isWinOrDefense) {
-                            cellColor = color // Full opacity
-                          } else if (failedChallenge) {
-                            cellColor = 'rgba(153, 102, 76, 0.6)' // Tan with 60% opacity for failed challenges
-                          } else {
-                            cellColor = hexToRgba(color, 0.25) // Dim (off day or tie while holding)
-                          }
-
-                          const isSelected = clickedDay?.date === dayData.date
-
-                          return (
-                            <div
-                              key={dayIdx}
-                              className={`w-2.5 h-2.5 cursor-pointer transition-all hover:scale-[2] active:scale-[2.2] hover:z-10 active:z-10 relative flex items-center justify-center ${isSelected ? 'scale-[2] z-10 ring-1 ring-amber-500' : ''} ${isLoss ? 'border border-muted-foreground' : ''}`}
-                              style={{
-                                backgroundColor: cellColor,
-                                boxShadow: isWinOrDefense ? `0 0 4px ${color}60` : 'none',
-                                border: isLoss ? undefined : '1px solid rgba(255,255,255,0.3)'
-                              }}
-                              onClick={(e) => {
-                                if (isSelected) {
-                                  setClickedDay(null)
-                                  setPopupPosition(null)
-                                } else {
-                                  setClickedDay(dayData)
-                                  setPopupPosition({ x: e.clientX, y: e.clientY })
-                                }
-                              }}
-                            >
-                              {isLoss && (
-                                <span className="text-[7px] font-bold leading-none text-muted-foreground pointer-events-none">
-                                  ×
-                                </span>
-                              )}
-                              {tiedWhileHolding && (
-                                <span className="text-[6px] font-bold leading-none pointer-events-none">
-                                  T
-                                </span>
-                              )}
-                              {isUpcomingTitleBout && (
-                                <span className="text-[7px] font-bold leading-none pointer-events-none">
-                                  ?
-                                </span>
-                              )}
-                            </div>
-                          )
-                        })}
+                  return (
+                    <div key={monthKey} className="flex-shrink-0">
+                      <div className="text-[0.65rem] font-mono text-muted-foreground mb-1.5 uppercase tracking-wider">
+                        {monthDate.toLocaleDateString('en-US', { month: 'short', year: '2-digit' })}
                       </div>
-                    ))}
-                  </div>
-                </div>
-              )
-            })}
+
+                      {/* Calendar grid - no day labels, more compact */}
+                      <div className="space-y-0.5">
+                        {grid.map((week, weekIdx) => (
+                          <div key={weekIdx} className="grid grid-cols-7 gap-0.5">
+                            {week.map((dayData, dayIdx) => {
+                              if (!dayData) {
+                                return <div key={dayIdx} className="w-2.5 h-2.5" />
+                              }
+
+                              // Classify this day for the selected team
+                              const classification = classifyDayForTeam(
+                                dayData,
+                                selectedTeam!,
+                                franchises
+                              )
+
+                              // Show empty cell for days team wasn't involved or uncertain future days
+                              if (!classification.isInvolved || classification.isUncertain) {
+                                return (
+                                  <div
+                                    key={dayIdx}
+                                    className="w-2.5 h-2.5 bg-muted/40 border border-border/50"
+                                  />
+                                )
+                              }
+
+                              const color = getTeamColor(selectedTeam!, franchises)
+
+                              // Extract classification results for styling
+                              const {
+                                tiedWhileHolding,
+                                failedChallenge,
+                                isWinOrDefense,
+                                isLoss,
+                                isUpcomingTitleBout,
+                              } = classification
+
+                              // Color logic with opacity baked into the color:
+                              // - Wins/defenses: full team color
+                              // - Ties while holding: dim team color (25% opacity)
+                              // - Losses while holding: transparent with border and X
+                              // - Failed challenges (tie or loss): tan with 60% opacity
+                              // - Off days: dim team color (25% opacity)
+                              // - Upcoming title bout: dim team color with "?"
+
+                              // Helper to convert hex to rgba with opacity
+                              const hexToRgba = (hex: string, alpha: number) => {
+                                const r = parseInt(hex.slice(1, 3), 16)
+                                const g = parseInt(hex.slice(3, 5), 16)
+                                const b = parseInt(hex.slice(5, 7), 16)
+                                return `rgba(${r}, ${g}, ${b}, ${alpha})`
+                              }
+
+                              let cellColor: string
+                              // IMPORTANT: Check isLoss first to ensure lost belt shows transparent (not tan)
+                              if (isLoss) {
+                                cellColor = 'transparent'
+                              } else if (isUpcomingTitleBout) {
+                                cellColor = hexToRgba(color, 0.25) // Dim for upcoming bout
+                              } else if (isWinOrDefense) {
+                                cellColor = color // Full opacity
+                              } else if (failedChallenge) {
+                                cellColor = 'rgba(153, 102, 76, 0.6)' // Tan with 60% opacity for failed challenges
+                              } else {
+                                cellColor = hexToRgba(color, 0.25) // Dim (off day or tie while holding)
+                              }
+
+                              const isSelected = clickedDay?.date === dayData.date
+
+                              return (
+                                <div
+                                  key={dayIdx}
+                                  className={`w-2.5 h-2.5 cursor-pointer transition-all hover:scale-[2] active:scale-[2.2] hover:z-10 active:z-10 relative flex items-center justify-center ${isSelected ? 'scale-[2] z-10 ring-1 ring-amber-500' : ''} ${isLoss ? 'border border-muted-foreground' : ''}`}
+                                  style={{
+                                    backgroundColor: cellColor,
+                                    boxShadow: isWinOrDefense ? `0 0 4px ${color}60` : 'none',
+                                    border: isLoss ? undefined : '1px solid rgba(255,255,255,0.3)',
+                                  }}
+                                  onClick={(e) => {
+                                    if (isSelected) {
+                                      setClickedDay(null)
+                                      setPopupPosition(null)
+                                    } else {
+                                      setClickedDay(dayData)
+                                      setPopupPosition({ x: e.clientX, y: e.clientY })
+                                    }
+                                  }}
+                                >
+                                  {isLoss && (
+                                    <span className="text-[7px] font-bold leading-none text-muted-foreground pointer-events-none">
+                                      ×
+                                    </span>
+                                  )}
+                                  {tiedWhileHolding && (
+                                    <span className="text-[6px] font-bold leading-none pointer-events-none">
+                                      T
+                                    </span>
+                                  )}
+                                  {isUpcomingTitleBout && (
+                                    <span className="text-[7px] font-bold leading-none pointer-events-none">
+                                      ?
+                                    </span>
+                                  )}
+                                </div>
+                              )
+                            })}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
         </>
       )}
 

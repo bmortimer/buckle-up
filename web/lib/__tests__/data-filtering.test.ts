@@ -5,10 +5,7 @@ import { parseFranchisesCSV, getAllFranchiseAbbrs, getCurrentFranchiseAbbr } fro
 import type { Game, FranchiseInfo } from '../types'
 
 // Load WNBA franchises for testing
-const wnbaFixture = readFileSync(
-  join(__dirname, 'fixtures/wnba-franchises-test.csv'),
-  'utf-8'
-)
+const wnbaFixture = readFileSync(join(__dirname, 'fixtures/wnba-franchises-test.csv'), 'utf-8')
 const wnbaFranchises = parseFranchisesCSV(wnbaFixture)
 
 // Helper to create a game
@@ -37,9 +34,10 @@ describe('Data Filtering Logic', () => {
       // should get all franchises in the lineage (UTA, SAS, LVA)
       const currentFranchise = getCurrentFranchiseAbbr(selectedTeam, wnbaFranchises)
       const isCurrentFranchise = currentFranchise === selectedTeam
-      const franchiseCodes = isCurrentFranchise && isAllTime
-        ? getAllFranchiseAbbrs(selectedTeam, wnbaFranchises)
-        : [selectedTeam]
+      const franchiseCodes =
+        isCurrentFranchise && isAllTime
+          ? getAllFranchiseAbbrs(selectedTeam, wnbaFranchises)
+          : [selectedTeam]
 
       expect(isCurrentFranchise).toBe(true)
       expect(franchiseCodes).toContain('UTA') // Utah Starzz
@@ -57,9 +55,10 @@ describe('Data Filtering Logic', () => {
       // Only show games from that specific era
       const currentFranchise = getCurrentFranchiseAbbr(selectedTeam, wnbaFranchises)
       const isCurrentFranchise = currentFranchise === selectedTeam
-      const franchiseCodes = isCurrentFranchise && isAllTime
-        ? getAllFranchiseAbbrs(selectedTeam, wnbaFranchises)
-        : [selectedTeam]
+      const franchiseCodes =
+        isCurrentFranchise && isAllTime
+          ? getAllFranchiseAbbrs(selectedTeam, wnbaFranchises)
+          : [selectedTeam]
 
       expect(isCurrentFranchise).toBe(false) // UTA is historical, current is LVA
       expect(franchiseCodes).toEqual(['UTA']) // Only UTA games
@@ -80,7 +79,7 @@ describe('Data Filtering Logic', () => {
 
       // Filter games that include any franchise in the lineage
       const teamGames = games.filter(
-        game => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
+        (game) => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
       )
 
       expect(teamGames.length).toBe(3)
@@ -103,7 +102,7 @@ describe('Data Filtering Logic', () => {
 
       // Filter games for just the Utah Starzz era
       const teamGames = games.filter(
-        game => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
+        (game) => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
       )
 
       expect(teamGames.length).toBe(2)
@@ -127,14 +126,14 @@ describe('Data Filtering Logic', () => {
 
       // Get teams that played in 1997
       const teams1997 = new Set<string>()
-      games1997.forEach(game => {
+      games1997.forEach((game) => {
         teams1997.add(game.homeTeam)
         teams1997.add(game.awayTeam)
       })
 
       // Get teams that played in 2020
       const teams2020 = new Set<string>()
-      games2020.forEach(game => {
+      games2020.forEach((game) => {
         teams2020.add(game.homeTeam)
         teams2020.add(game.awayTeam)
       })
@@ -143,7 +142,7 @@ describe('Data Filtering Logic', () => {
       expect(Array.from(teams2020).sort()).toEqual(['IND', 'LVA', 'PHO', 'SEA'])
 
       // No overlap between years
-      expect([...teams1997].some(t => teams2020.has(t))).toBe(false)
+      expect([...teams1997].some((t) => teams2020.has(t))).toBe(false)
     })
 
     it('should dedupe by franchise when All Time is selected', () => {
@@ -153,7 +152,7 @@ describe('Data Filtering Logic', () => {
 
       // When All Time is selected, dedupe to current franchises only
       const franchiseSet = new Set<string>()
-      allTeams.forEach(team => {
+      allTeams.forEach((team) => {
         franchiseSet.add(getCurrentFranchiseAbbr(team, wnbaFranchises))
       })
 
@@ -188,12 +187,14 @@ describe('Data Filtering Logic', () => {
       // Logic used for calendar filtering
       const currentFranchise = getCurrentFranchiseAbbr(selectedTeam, wnbaFranchises)
       const isCurrentFranchise = currentFranchise === selectedTeam
-      const calendarFranchiseCodes = isCurrentFranchise && isAllTime
-        ? getAllFranchiseAbbrs(selectedTeam, wnbaFranchises)
-        : [selectedTeam]
+      const calendarFranchiseCodes =
+        isCurrentFranchise && isAllTime
+          ? getAllFranchiseAbbrs(selectedTeam, wnbaFranchises)
+          : [selectedTeam]
 
       // Logic used for team stats should be the same
-      const shouldMergeByFranchise = isAllTime && (!selectedTeam || currentFranchise === selectedTeam)
+      const shouldMergeByFranchise =
+        isAllTime && (!selectedTeam || currentFranchise === selectedTeam)
 
       // Both should include full lineage when current franchise + All Time
       expect(shouldMergeByFranchise).toBe(true)
@@ -210,7 +211,8 @@ describe('Data Filtering Logic', () => {
       const isCurrentFranchise = currentFranchise === selectedTeam
 
       // Logic for mergeByFranchise in trackAllSeasons
-      const shouldMergeByFranchise = isAllTime && (!selectedTeam || currentFranchise === selectedTeam)
+      const shouldMergeByFranchise =
+        isAllTime && (!selectedTeam || currentFranchise === selectedTeam)
 
       // Should NOT merge because UTA is not the current franchise
       expect(shouldMergeByFranchise).toBe(false)
@@ -234,11 +236,11 @@ describe('Data Filtering Logic', () => {
       }
 
       const teamYears = new Set<number>()
-      Object.keys(seasons).forEach(seasonKey => {
+      Object.keys(seasons).forEach((seasonKey) => {
         const year = parseInt(seasonKey)
         const games = seasons[seasonKey]
         const teamPlayedThisYear = games.some(
-          game => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
+          (game) => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
         )
         if (teamPlayedThisYear) {
           teamYears.add(year)
@@ -265,11 +267,11 @@ describe('Data Filtering Logic', () => {
       }
 
       const teamYears = new Set<number>()
-      Object.keys(seasons).forEach(seasonKey => {
+      Object.keys(seasons).forEach((seasonKey) => {
         const year = parseInt(seasonKey)
         const games = seasons[seasonKey]
         const teamPlayedThisYear = games.some(
-          game => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
+          (game) => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
         )
         if (teamPlayedThisYear) {
           teamYears.add(year)
@@ -299,12 +301,12 @@ describe('Data Filtering Logic', () => {
       const franchiseCodes = getAllFranchiseAbbrs(selectedTeam, wnbaFranchises)
 
       // Simulate belt tracking - should only count completed games
-      const completedGames = games.filter(game =>
-        game.homeScore !== null && game.awayScore !== null
+      const completedGames = games.filter(
+        (game) => game.homeScore !== null && game.awayScore !== null
       )
 
       const teamGames = completedGames.filter(
-        game => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
+        (game) => franchiseCodes.includes(game.homeTeam) || franchiseCodes.includes(game.awayTeam)
       )
 
       // Only 2 completed games should be counted
@@ -321,12 +323,12 @@ describe('Data Filtering Logic', () => {
       ]
 
       // Filter to completed games only
-      const completedGames = games.filter(game =>
-        game.homeScore !== null && game.awayScore !== null
+      const completedGames = games.filter(
+        (game) => game.homeScore !== null && game.awayScore !== null
       )
 
       expect(completedGames.length).toBe(2)
-      expect(completedGames.every(g => g.homeScore !== null && g.awayScore !== null)).toBe(true)
+      expect(completedGames.every((g) => g.homeScore !== null && g.awayScore !== null)).toBe(true)
     })
 
     it('should calculate correct stats when mixing completed and future games', () => {
@@ -341,11 +343,11 @@ describe('Data Filtering Logic', () => {
       ]
 
       // Simulate win/loss calculation (only for completed games)
-      const completedGames = games.filter(g => g.homeScore !== null && g.awayScore !== null)
+      const completedGames = games.filter((g) => g.homeScore !== null && g.awayScore !== null)
 
       let wins = 0
       let losses = 0
-      completedGames.forEach(game => {
+      completedGames.forEach((game) => {
         if (game.homeTeam === 'LVA') {
           if (game.homeScore! > game.awayScore!) wins++
           else losses++
@@ -368,7 +370,7 @@ describe('Data Filtering Logic', () => {
         createGame('LVA', 'IND', '2025-05-19', null, null),
       ]
 
-      const completedGames = games.filter(g => g.homeScore !== null && g.awayScore !== null)
+      const completedGames = games.filter((g) => g.homeScore !== null && g.awayScore !== null)
 
       // No games should be counted
       expect(completedGames.length).toBe(0)

@@ -11,15 +11,9 @@ interface Last5BeltChangesProps {
   franchises: FranchiseInfo[]
 }
 
-export default function Last5BeltChanges({
-  league,
-  history,
-  franchises,
-}: Last5BeltChangesProps) {
+export default function Last5BeltChanges({ league, history, franchises }: Last5BeltChangesProps) {
   const last5Changes = useMemo(() => {
-    return history.changes
-      .filter(change => change.reason === 'loss')
-      .slice(-5) // Get last 5 changes, chronologically oldest to newest
+    return history.changes.filter((change) => change.reason === 'loss').slice(-5) // Get last 5 changes, chronologically oldest to newest
   }, [history.changes])
 
   const formatDateShort = (dateStr: string) => {
@@ -29,7 +23,10 @@ export default function Last5BeltChanges({
 
   if (last5Changes.length === 0) {
     return (
-      <div data-card="last-5-changes" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
+      <div
+        data-card="last-5-changes"
+        className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden"
+      >
         <div className="led-bar-top" />
         <div className="relative z-10">
           <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center font-normal">
@@ -38,7 +35,9 @@ export default function Last5BeltChanges({
             <span aria-hidden="true"> ◆</span>
           </h2>
           <div className="text-center py-4">
-            <p className="text-[0.6rem] sm:text-xs text-muted-foreground font-mono">No changes yet</p>
+            <p className="text-[0.6rem] sm:text-xs text-muted-foreground font-mono">
+              No changes yet
+            </p>
           </div>
         </div>
         <div className="led-bar-bottom" />
@@ -53,10 +52,13 @@ export default function Last5BeltChanges({
   }
 
   // Just show the 5 winners in chronological order (left to right = old to new)
-  const fullPath = last5Changes.map(c => c.toTeam)
+  const fullPath = last5Changes.map((c) => c.toTeam)
 
   return (
-    <div data-card="last-5-changes" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
+    <div
+      data-card="last-5-changes"
+      className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden"
+    >
       {/* Top LED status bar - green */}
       <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-green-500 to-transparent opacity-60" />
       <div className="relative z-10">
@@ -80,17 +82,16 @@ export default function Last5BeltChanges({
                   className={`flex flex-col items-center gap-1 sm:gap-1.5 px-2 py-1.5 rounded ${
                     isEnd ? 'border-2 border-green-500' : ''
                   }`}
-                  style={isEnd ? {
-                    boxShadow: '0 0 6px rgba(34, 197, 94, 0.4)',
-                  } : undefined}
+                  style={
+                    isEnd
+                      ? {
+                          boxShadow: '0 0 6px rgba(34, 197, 94, 0.4)',
+                        }
+                      : undefined
+                  }
                 >
                   <div className="relative">
-                    <TeamLogo
-                      teamCode={team}
-                      franchises={franchises}
-                      league={league}
-                      size="sm"
-                    />
+                    <TeamLogo teamCode={team} franchises={franchises} league={league} size="sm" />
                   </div>
                   <div
                     className={`text-xs sm:text-sm font-mono tracking-wide ${isEnd ? 'font-bold' : ''} led-text`}

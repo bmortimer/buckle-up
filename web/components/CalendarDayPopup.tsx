@@ -16,8 +16,8 @@ interface DayData {
   challenger?: string
   played?: boolean
   won?: boolean | null
-  isScheduledTitleBout?: boolean  // Has an unplayed title bout
-  isUncertainFuture?: boolean     // After an unplayed title bout - outcome unknown
+  isScheduledTitleBout?: boolean // Has an unplayed title bout
+  isUncertainFuture?: boolean // After an unplayed title bout - outcome unknown
 }
 
 interface PopupPosition {
@@ -34,7 +34,14 @@ interface CalendarDayPopupProps {
   onClose: () => void
 }
 
-export default function CalendarDayPopup({ dayData, position, franchises, selectedTeam, league = 'wnba', onClose }: CalendarDayPopupProps) {
+export default function CalendarDayPopup({
+  dayData,
+  position,
+  franchises,
+  selectedTeam,
+  league = 'wnba',
+  onClose,
+}: CalendarDayPopupProps) {
   const [isDesktop, setIsDesktop] = useState(false)
   const modalRef = useRef<HTMLDivElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
@@ -85,11 +92,7 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
   return (
     <>
       {/* Backdrop */}
-      <div
-        className="fixed inset-0 bg-black/50 z-40"
-        onClick={onClose}
-        aria-hidden="true"
-      />
+      <div className="fixed inset-0 bg-black/50 z-40" onClick={onClose} aria-hidden="true" />
 
       {/* Modal - positioned near click on desktop, bottom sheet on mobile */}
       <div
@@ -100,10 +103,14 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
         className={`fixed bg-card border-2 border-amber-500 p-4 shadow-[0_0_20px_rgba(251,191,36,0.3)] z-50 ${
           isDesktop && position ? 'w-72' : 'bottom-4 left-4 right-4'
         }`}
-        style={isDesktop && position ? {
-          left: Math.min(position.x, window.innerWidth - 300),
-          top: Math.min(position.y + 10, window.innerHeight - 250),
-        } : {}}
+        style={
+          isDesktop && position
+            ? {
+                left: Math.min(position.x, window.innerWidth - 300),
+                top: Math.min(position.y + 10, window.innerHeight - 250),
+              }
+            : {}
+        }
       >
         {/* Close button */}
         <button
@@ -116,7 +123,10 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
         </button>
 
         {/* Date */}
-        <div id="popup-date" className="text-xs sm:text-sm font-mono text-muted-foreground mb-3 uppercase">
+        <div
+          id="popup-date"
+          className="text-xs sm:text-sm font-mono text-muted-foreground mb-3 uppercase"
+        >
           {new Date(dayData.date).toLocaleDateString('en-US', {
             weekday: 'short',
             month: 'short',
@@ -139,13 +149,23 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
               return (
                 <div className="text-sm font-mono mb-3">
                   <div className={`flex items-center gap-2 ${awayWon ? 'font-bold' : ''}`}>
-                    <TeamLogo teamCode={game.awayTeam} franchises={franchises} league={league} size="xs" />
+                    <TeamLogo
+                      teamCode={game.awayTeam}
+                      franchises={franchises}
+                      league={league}
+                      size="xs"
+                    />
                     <span className="flex-1">{awayName}</span>
                     <span className="tabular-nums">{completed ? game.awayScore : '—'}</span>
                   </div>
                   <div className="text-muted-foreground text-xs my-1 pl-6">@</div>
                   <div className={`flex items-center gap-2 ${homeWon ? 'font-bold' : ''}`}>
-                    <TeamLogo teamCode={game.homeTeam} franchises={franchises} league={league} size="xs" />
+                    <TeamLogo
+                      teamCode={game.homeTeam}
+                      franchises={franchises}
+                      league={league}
+                      size="xs"
+                    />
                     <span className="flex-1">{homeName}</span>
                     <span className="tabular-nums">{completed ? game.homeScore : '—'}</span>
                   </div>
@@ -158,24 +178,54 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
               {(() => {
                 // Handle scheduled title bout (unplayed game where belt is on the line)
                 if (dayData.isScheduledTitleBout) {
-                  return <span><span aria-hidden="true">🏆 </span>Upcoming Title Bout</span>
+                  return (
+                    <span>
+                      <span aria-hidden="true">🏆 </span>Upcoming Title Bout
+                    </span>
+                  )
                 }
 
                 if (selectedTeam) {
                   const heldBelt = dayData.holder === selectedTeam
                   const wonBelt = dayData.winner === selectedTeam && !heldBelt
-                  const challengedBelt = dayData.challenger === selectedTeam && !heldBelt && !wonBelt
+                  const challengedBelt =
+                    dayData.challenger === selectedTeam && !heldBelt && !wonBelt
 
-                  if (wonBelt) return <span><span aria-hidden="true">⚡ </span>Won The Belt</span>
+                  if (wonBelt)
+                    return (
+                      <span>
+                        <span aria-hidden="true">⚡ </span>Won The Belt
+                      </span>
+                    )
                   if (challengedBelt) return <span>Failed Challenge</span>
-                  if (heldBelt && (dayData.holderWon || dayData.won)) return <span><span aria-hidden="true">🏆 </span>Defended Belt</span>
-                  if (heldBelt && (dayData.holderWon === false || dayData.won === false)) return <span><span aria-hidden="true">⚡ </span>Lost Belt</span>
+                  if (heldBelt && (dayData.holderWon || dayData.won))
+                    return (
+                      <span>
+                        <span aria-hidden="true">🏆 </span>Defended Belt
+                      </span>
+                    )
+                  if (heldBelt && (dayData.holderWon === false || dayData.won === false))
+                    return (
+                      <span>
+                        <span aria-hidden="true">⚡ </span>Lost Belt
+                      </span>
+                    )
                   return null
                 }
 
                 // Default mode
-                if (dayData.beltChanged) return <span><span aria-hidden="true">⚡ </span>Belt Changed Hands</span>
-                if (dayData.holderWon) return <span><span aria-hidden="true">🏆 </span>Defended Belt</span>
+                if (dayData.beltChanged)
+                  return (
+                    <span>
+                      <span aria-hidden="true">⚡ </span>Belt Changed Hands
+                    </span>
+                  )
+                if (dayData.holderWon)
+                  return (
+                    <span>
+                      <span aria-hidden="true">🏆 </span>Defended Belt
+                    </span>
+                  )
                 return <span>Belt Not On The Line</span>
               })()}
             </div>
@@ -183,9 +233,13 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
         ) : dayData.isUncertainFuture ? (
           /* Uncertain Future - after an unplayed title bout */
           <div className="text-center">
-            <div className="text-amber-500 text-2xl mb-2" aria-hidden="true">🏆</div>
+            <div className="text-amber-500 text-2xl mb-2" aria-hidden="true">
+              🏆
+            </div>
             <div className="text-xs text-muted-foreground uppercase">Belt Holder Unknown</div>
-            <div className="text-xs text-muted-foreground/60 mt-1">Waiting for title bout result</div>
+            <div className="text-xs text-muted-foreground/60 mt-1">
+              Waiting for title bout result
+            </div>
           </div>
         ) : (
           /* Off Day - show belt holder */
@@ -193,7 +247,9 @@ export default function CalendarDayPopup({ dayData, position, franchises, select
             <TeamLogo teamCode={dayData.holder} franchises={franchises} league={league} size="sm" />
             <div>
               <div className="text-xs text-muted-foreground uppercase mb-1">Belt Holder</div>
-              <div className="text-sm font-mono">{getTeamDisplayName(dayData.holder, franchises)}</div>
+              <div className="text-sm font-mono">
+                {getTeamDisplayName(dayData.holder, franchises)}
+              </div>
             </div>
           </div>
         )}

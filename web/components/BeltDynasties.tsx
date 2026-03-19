@@ -84,9 +84,15 @@ export default function BeltDynasties({ changes, franchises }: BeltDynastiesProp
                   {displayName}
                 </div>
                 <div className="text-xs text-muted-foreground">
-                  {new Date(dynasty.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                  {new Date(dynasty.startDate).toLocaleDateString('en-US', {
+                    month: 'short',
+                    year: 'numeric',
+                  })}
                   {' - '}
-                  {new Date(dynasty.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                  {new Date(dynasty.endDate).toLocaleDateString('en-US', {
+                    month: 'short',
+                    year: 'numeric',
+                  })}
                 </div>
               </div>
 

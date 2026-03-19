@@ -5,7 +5,7 @@ import { parseFranchisesCSV, getRootFranchiseId } from '../franchises'
 
 // Get all franchise CSVs from the data directory (one level up from web/)
 const dataDir = join(process.cwd(), '../data')
-const leagues = readdirSync(dataDir).filter(name => {
+const leagues = readdirSync(dataDir).filter((name) => {
   // Skip NHL for now - it has known issues being worked on
   if (name === 'nhl') return false
 
@@ -39,7 +39,9 @@ describe('League Health Checks', () => {
         }
 
         // Status must be valid
-        expect(['active', 'relocated', 'rebranded', 'defunct', 'revived']).toContain(franchise.status)
+        expect(['active', 'relocated', 'rebranded', 'defunct', 'revived']).toContain(
+          franchise.status
+        )
       })
     })
 
@@ -59,9 +61,7 @@ describe('League Health Checks', () => {
             }
             visited.add(current.franchiseId)
 
-            const successor = franchises.find(
-              f => f.franchiseId === current.successorFranchiseId
-            )
+            const successor = franchises.find((f) => f.franchiseId === current.successorFranchiseId)
             if (!successor) break
             current = successor
             safetyCounter++
@@ -75,9 +75,7 @@ describe('League Health Checks', () => {
     it('should have valid successor chains', () => {
       franchises.forEach((franchise) => {
         if (franchise.successorFranchiseId) {
-          const successor = franchises.find(
-            f => f.franchiseId === franchise.successorFranchiseId
-          )
+          const successor = franchises.find((f) => f.franchiseId === franchise.successorFranchiseId)
           expect(successor).toBeDefined()
           expect(successor?.franchiseId).toBe(franchise.successorFranchiseId)
         }
@@ -85,7 +83,7 @@ describe('League Health Checks', () => {
     })
 
     it('should have unique franchise IDs', () => {
-      const ids = franchises.map(f => f.franchiseId)
+      const ids = franchises.map((f) => f.franchiseId)
       const uniqueIds = new Set(ids)
       expect(uniqueIds.size).toBe(ids.length)
     })
@@ -148,7 +146,7 @@ describe('League Health Checks', () => {
         const rootId = getRootFranchiseId(franchise.teamAbbr, franchises)
         expect(rootId).toBeTruthy()
 
-        const rootFranchise = franchises.find(f => f.franchiseId === rootId)
+        const rootFranchise = franchises.find((f) => f.franchiseId === rootId)
         expect(rootFranchise).toBeDefined()
       })
     })

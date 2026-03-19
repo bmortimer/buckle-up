@@ -2,7 +2,14 @@
  * Belt Tracker - Client-side belt tracking logic
  */
 
-import type { Game, BeltHistory, BeltSummary, TeamBeltStats, BeltChange, FranchiseInfo } from './types'
+import type {
+  Game,
+  BeltHistory,
+  BeltSummary,
+  TeamBeltStats,
+  BeltChange,
+  FranchiseInfo,
+} from './types'
 import { isGameCompleted } from './types'
 import { isSameFranchise, getCurrentFranchiseAbbr } from './franchises'
 
@@ -31,9 +38,9 @@ export class BeltTracker {
     }
 
     const isTie = game.homeScore === game.awayScore
-    const holderWon = !isTie && (holderIsHome
-      ? game.homeScore! > game.awayScore!
-      : game.awayScore! > game.homeScore!)
+    const holderWon =
+      !isTie &&
+      (holderIsHome ? game.homeScore! > game.awayScore! : game.awayScore! > game.homeScore!)
 
     // On a tie, belt stays with holder (no change)
     if (!isTie && !holderWon) {
@@ -116,9 +123,9 @@ export class BeltTracker {
 
       // Since we filtered for completed games, scores are guaranteed to be non-null
       const isTie = game.homeScore === game.awayScore
-      const holderWon = !isTie && (holderIsHome
-        ? game.homeScore! > game.awayScore!
-        : game.awayScore! > game.homeScore!)
+      const holderWon =
+        !isTie &&
+        (holderIsHome ? game.homeScore! > game.awayScore! : game.awayScore! > game.homeScore!)
 
       if (isTie) {
         // Tie: belt holder retains the belt, both teams get a tie
@@ -151,9 +158,7 @@ export class BeltTracker {
       finalStats.longestReign = currentWinStreak
     }
 
-    const teams = Array.from(teamStats.values()).sort(
-      (a, b) => b.totalGames - a.totalGames
-    )
+    const teams = Array.from(teamStats.values()).sort((a, b) => b.totalGames - a.totalGames)
 
     return {
       totalGames: completedGames.length,
@@ -291,7 +296,7 @@ export function trackAllSeasons(
       // Create a pseudo-game object for the season start marker
       const seasonStartGame = {
         ...firstGame,
-        date: seasonStartDate
+        date: seasonStartDate,
       }
 
       allChanges.push({
@@ -334,9 +339,7 @@ export function trackAllSeasons(
   }
 
   // Convert team stats map to sorted array
-  const teams = Array.from(finalStatsMap.values()).sort(
-    (a, b) => b.totalGames - a.totalGames
-  )
+  const teams = Array.from(finalStatsMap.values()).sort((a, b) => b.totalGames - a.totalGames)
 
   // Calculate total completed games from all seasons
   const totalGames = seasonsData.reduce(

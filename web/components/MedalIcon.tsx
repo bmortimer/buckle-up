@@ -18,31 +18,13 @@ export default function MedalIcon({ rank, size = 'sm' }: MedalIconProps) {
     <div className={`${sizeClass} relative`} style={{ filter: `drop-shadow(0 2px 4px ${shadow})` }}>
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         {/* Ribbon */}
-        <path
-          d="M8 2L10 8L12 2L14 8L16 2V10L12 12L8 10V2Z"
-          fill={fill}
-          opacity="0.7"
-        />
+        <path d="M8 2L10 8L12 2L14 8L16 2V10L12 12L8 10V2Z" fill={fill} opacity="0.7" />
 
         {/* Medal circle */}
-        <circle
-          cx="12"
-          cy="16"
-          r="6"
-          fill={fill}
-          stroke="rgba(0,0,0,0.2)"
-          strokeWidth="0.5"
-        />
+        <circle cx="12" cy="16" r="6" fill={fill} stroke="rgba(0,0,0,0.2)" strokeWidth="0.5" />
 
         {/* Inner circle */}
-        <circle
-          cx="12"
-          cy="16"
-          r="4.5"
-          fill="none"
-          stroke="rgba(0,0,0,0.15)"
-          strokeWidth="0.5"
-        />
+        <circle cx="12" cy="16" r="4.5" fill="none" stroke="rgba(0,0,0,0.15)" strokeWidth="0.5" />
 
         {/* Rank number */}
         <text
@@ -58,13 +40,7 @@ export default function MedalIcon({ rank, size = 'sm' }: MedalIconProps) {
         </text>
 
         {/* Shine effect */}
-        <circle
-          cx="10"
-          cy="14"
-          r="1.5"
-          fill="white"
-          opacity="0.4"
-        />
+        <circle cx="10" cy="14" r="1.5" fill="white" opacity="0.4" />
       </svg>
     </div>
   )

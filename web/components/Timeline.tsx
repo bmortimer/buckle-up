@@ -10,7 +10,10 @@ interface TimelineProps {
 
 export default function Timeline({ changes, franchises, selectedTeam }: TimelineProps) {
   return (
-    <div data-card="timeline" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
+    <div
+      data-card="timeline"
+      className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden"
+    >
       {/* Header with LED indicators */}
       <div className="flex items-center justify-between mb-6 border-b-2 border-border pb-3">
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground">
@@ -35,25 +38,29 @@ export default function Timeline({ changes, franchises, selectedTeam }: Timeline
           changes.map((change, idx) => {
             const { game } = change
 
-            const score = game.homeTeam === change.toTeam
-              ? `${game.homeScore}-${game.awayScore}`
-              : `${game.awayScore}-${game.homeScore}`
+            const score =
+              game.homeTeam === change.toTeam
+                ? `${game.homeScore}-${game.awayScore}`
+                : `${game.awayScore}-${game.homeScore}`
 
-            const involvesSelectedTeam = selectedTeam && (change.fromTeam === selectedTeam || change.toTeam === selectedTeam)
+            const involvesSelectedTeam =
+              selectedTeam && (change.fromTeam === selectedTeam || change.toTeam === selectedTeam)
             const isGreyedOut = selectedTeam && !involvesSelectedTeam
 
             return (
               <div
                 key={idx}
                 className={`flex items-center gap-3 p-2.5 border border-border/40 transition-all duration-200 group cursor-pointer ${
-                  isGreyedOut ? 'bg-muted/20 opacity-40' : 'bg-card hover:bg-muted/30 hover:border-amber-500/50'
+                  isGreyedOut
+                    ? 'bg-muted/20 opacity-40'
+                    : 'bg-card hover:bg-muted/30 hover:border-amber-500/50'
                 }`}
               >
                 {/* Date display - LED style */}
                 <div className="text-xs text-muted-foreground w-16 tabular-nums font-mono">
                   {new Date(game.date).toLocaleDateString('en-US', {
                     month: '2-digit',
-                    day: '2-digit'
+                    day: '2-digit',
                   })}
                 </div>
 
@@ -66,7 +73,9 @@ export default function Timeline({ changes, franchises, selectedTeam }: Timeline
                   {/* Arrow with LED styling */}
                   <div className="flex items-center gap-0.5">
                     <div className="w-1 h-px bg-gradient-to-r from-muted-foreground to-transparent group-hover:from-amber-500" />
-                    <div className="text-muted-foreground group-hover:text-amber-500 transition-colors text-xs">▸</div>
+                    <div className="text-muted-foreground group-hover:text-amber-500 transition-colors text-xs">
+                      ▸
+                    </div>
                   </div>
 
                   {/* To team */}

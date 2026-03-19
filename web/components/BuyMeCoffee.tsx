@@ -38,7 +38,9 @@ export default function BuyMeCoffee() {
       } ${isExpanded ? 'gap-2 px-4 py-3' : 'p-3'}`}
     >
       <span className="text-2xl leading-none">☕</span>
-      <div className={`flex flex-col overflow-hidden transition-all duration-300 ${isExpanded ? 'w-auto opacity-100' : 'w-0 opacity-0'}`}>
+      <div
+        className={`flex flex-col overflow-hidden transition-all duration-300 ${isExpanded ? 'w-auto opacity-100' : 'w-0 opacity-0'}`}
+      >
         <span className="text-[0.6rem] font-orbitron uppercase tracking-wider text-muted-foreground whitespace-nowrap">
           Support
         </span>

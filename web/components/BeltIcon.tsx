@@ -11,7 +11,11 @@ const sizeMap = {
   xl: 'w-32 h-32',
 }
 
-export default function BeltIcon({ teamColor = '#D4AF37', size = 'lg', className = '' }: BeltIconProps) {
+export default function BeltIcon({
+  teamColor = '#D4AF37',
+  size = 'lg',
+  className = '',
+}: BeltIconProps) {
   return (
     <div className={`${sizeMap[size]} ${className} relative`}>
       <svg
@@ -21,12 +25,7 @@ export default function BeltIcon({ teamColor = '#D4AF37', size = 'lg', className
         className="w-full h-full drop-shadow-lg"
       >
         {/* Belt strap */}
-        <path
-          d="M20 80 L60 80 L60 120 L20 120 Z"
-          fill="#2C2C2C"
-          stroke="#1a1a1a"
-          strokeWidth="2"
-        />
+        <path d="M20 80 L60 80 L60 120 L20 120 Z" fill="#2C2C2C" stroke="#1a1a1a" strokeWidth="2" />
         <path
           d="M140 80 L180 80 L180 120 L140 120 Z"
           fill="#2C2C2C"
@@ -46,14 +45,7 @@ export default function BeltIcon({ teamColor = '#D4AF37', size = 'lg', className
         />
 
         {/* Center team color accent */}
-        <ellipse
-          cx="100"
-          cy="100"
-          rx="30"
-          ry="25"
-          fill={teamColor}
-          opacity="0.9"
-        />
+        <ellipse cx="100" cy="100" rx="30" ry="25" fill={teamColor} opacity="0.9" />
 
         {/* Inner detail ring */}
         <ellipse
@@ -96,8 +88,13 @@ export default function BeltIcon({ teamColor = '#D4AF37', size = 'lg', className
 
       <style jsx>{`
         @keyframes shine {
-          0%, 100% { opacity: 0.3; }
-          50% { opacity: 0.6; }
+          0%,
+          100% {
+            opacity: 0.3;
+          }
+          50% {
+            opacity: 0.6;
+          }
         }
       `}</style>
     </div>

@@ -32,7 +32,7 @@ export default function SeasonPicker({
   onChange,
   isAllTime,
   onAllTimeChange,
-  league = 'wnba'
+  league = 'wnba',
 }: SeasonPickerProps) {
   const [isOpen, setIsOpen] = useState(false)
   const currentYear = isAllTime ? null : value[0]
@@ -88,19 +88,17 @@ export default function SeasonPicker({
   // Get unique decades with data
   const decades = Array.from(
     new Set(
-      Array.from(
-        { length: maxYear - minYear + 1 },
-        (_, i) => minYear + i
-      ).map(year => Math.floor(year / 10) * 10)
+      Array.from({ length: maxYear - minYear + 1 }, (_, i) => minYear + i).map(
+        (year) => Math.floor(year / 10) * 10
+      )
     )
   ).sort((a, b) => b - a) // Newest first
 
   // Group years by decade for organized display
-  const yearsByDecade = decades.map(decade => {
-    const years = Array.from(
-      { length: maxYear - minYear + 1 },
-      (_, i) => minYear + i
-    ).filter(year => Math.floor(year / 10) * 10 === decade)
+  const yearsByDecade = decades.map((decade) => {
+    const years = Array.from({ length: maxYear - minYear + 1 }, (_, i) => minYear + i).filter(
+      (year) => Math.floor(year / 10) * 10 === decade
+    )
     return { decade, years: years.sort((a, b) => b - a) } // Newest first within decade
   })
 
@@ -127,7 +125,10 @@ export default function SeasonPicker({
     <div className="space-y-2">
       {/* Label */}
       <div className="flex items-center justify-between">
-        <span id="time-period-label" className="text-[0.65rem] sm:text-xs font-orbitron text-muted-foreground uppercase tracking-wide sm:tracking-wider">
+        <span
+          id="time-period-label"
+          className="text-[0.65rem] sm:text-xs font-orbitron text-muted-foreground uppercase tracking-wide sm:tracking-wider"
+        >
           <span aria-hidden="true">◆ </span>Time Period
         </span>
         {!isAllTime && (
@@ -151,7 +152,10 @@ export default function SeasonPicker({
       >
         {/* Year Display */}
         <div className="text-center">
-          <div className="text-lg sm:text-xl md:text-lg lg:text-xl font-mono font-bold tabular-nums tracking-wider transition-all group-hover:scale-105" style={{ color: 'hsl(var(--primary))' }}>
+          <div
+            className="text-lg sm:text-xl md:text-lg lg:text-xl font-mono font-bold tabular-nums tracking-wider transition-all group-hover:scale-105"
+            style={{ color: 'hsl(var(--primary))' }}
+          >
             {isAllTime ? 'ALL TIME' : formatSeasonDisplay(currentYear!, league)}
           </div>
           <div className="text-[0.55rem] text-muted-foreground/60 font-mono mt-1 uppercase tracking-wider">
@@ -181,8 +185,12 @@ export default function SeasonPicker({
             {/* Header */}
             <div className="bg-muted/20 border-b-2 border-border p-4 sm:p-5 flex items-center justify-between">
               <div>
-                <h3 id="time-period-dialog-title" className="text-base sm:text-lg font-orbitron uppercase tracking-wider">
-                  <span aria-hidden="true">◆ </span>Select {(league === 'nba' || league === 'nhl') ? 'Season' : 'Year'}
+                <h3
+                  id="time-period-dialog-title"
+                  className="text-base sm:text-lg font-orbitron uppercase tracking-wider"
+                >
+                  <span aria-hidden="true">◆ </span>Select{' '}
+                  {league === 'nba' || league === 'nhl' ? 'Season' : 'Year'}
                 </h3>
                 <div className="text-[0.6rem] text-muted-foreground/60 font-mono mt-1">
                   {formatSeasonDisplay(minYear, league)} — {formatSeasonDisplay(maxYear, league)}
@@ -211,9 +219,10 @@ export default function SeasonPicker({
                       w-full px-4 py-3 text-base sm:text-lg font-mono font-bold uppercase
                       border-2 transition-all
                       focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
-                      ${isAllTime
-                        ? 'bg-primary/10 text-primary border-primary'
-                        : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-[0.98]'
+                      ${
+                        isAllTime
+                          ? 'bg-primary/10 text-primary border-primary'
+                          : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-[0.98]'
                       }
                     `}
                   >
@@ -230,12 +239,17 @@ export default function SeasonPicker({
                       {/* Decade Label */}
                       <div className="text-xs sm:text-sm font-orbitron tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                         <span>{decadeLabel}</span>
-                        <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" aria-hidden="true" />
+                        <div
+                          className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent"
+                          aria-hidden="true"
+                        />
                       </div>
 
                       {/* Year Grid */}
-                      <div className={`grid gap-2 ${league === 'wnba' ? 'grid-cols-4 sm:grid-cols-6 md:grid-cols-8' : 'grid-cols-3 sm:grid-cols-4 md:grid-cols-5'}`}>
-                        {years.map(year => {
+                      <div
+                        className={`grid gap-2 ${league === 'wnba' ? 'grid-cols-4 sm:grid-cols-6 md:grid-cols-8' : 'grid-cols-3 sm:grid-cols-4 md:grid-cols-5'}`}
+                      >
+                        {years.map((year) => {
                           const isSelected = currentYear === year
 
                           return (
@@ -248,9 +262,10 @@ export default function SeasonPicker({
                                 px-3 py-2 text-sm sm:text-base font-mono font-bold tabular-nums
                                 border-2 transition-all
                                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
-                                ${isSelected
-                                  ? 'bg-primary/10 text-primary border-primary scale-105'
-                                  : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
+                                ${
+                                  isSelected
+                                    ? 'bg-primary/10 text-primary border-primary scale-105'
+                                    : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
                                 }
                               `}
                             >
@@ -270,4 +285,3 @@ export default function SeasonPicker({
     </div>
   )
 }
-

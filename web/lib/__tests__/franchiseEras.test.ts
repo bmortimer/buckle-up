@@ -4,10 +4,7 @@ import { join } from 'path'
 import { parseFranchisesCSV, getFranchiseEras, type FranchiseEra } from '../franchises'
 
 // Load WNBA fixture which includes Portland Fire with gap
-const wnbaFixture = readFileSync(
-  join(__dirname, 'fixtures/wnba-franchises-test.csv'),
-  'utf-8'
-)
+const wnbaFixture = readFileSync(join(__dirname, 'fixtures/wnba-franchises-test.csv'), 'utf-8')
 const wnbaFranchises = parseFranchisesCSV(wnbaFixture)
 
 describe('getFranchiseEras - gap detection for calendar display', () => {
@@ -129,14 +126,17 @@ describe('calendar era grouping helper logic', () => {
     const eras = getFranchiseEras('FIRE26', wnbaFranchises)
 
     const months = ['2000-05', '2000-06', '2000-07', '2026-05', '2026-06']
-    const eraGroups = months.reduce((acc, month) => {
-      const eraIdx = getEraIndex(month, eras)
-      if (acc.length === 0 || acc[acc.length - 1].eraIndex !== eraIdx) {
-        acc.push({ eraIndex: eraIdx, months: [] })
-      }
-      acc[acc.length - 1].months.push(month)
-      return acc
-    }, [] as { eraIndex: number; months: string[] }[])
+    const eraGroups = months.reduce(
+      (acc, month) => {
+        const eraIdx = getEraIndex(month, eras)
+        if (acc.length === 0 || acc[acc.length - 1].eraIndex !== eraIdx) {
+          acc.push({ eraIndex: eraIdx, months: [] })
+        }
+        acc[acc.length - 1].months.push(month)
+        return acc
+      },
+      [] as { eraIndex: number; months: string[] }[]
+    )
 
     expect(eraGroups).toHaveLength(2)
     expect(eraGroups[0].months).toEqual(['2000-05', '2000-06', '2000-07'])

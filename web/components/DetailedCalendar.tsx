@@ -24,7 +24,13 @@ interface PopupPosition {
 // Use shared CalendarDayData type, but keep local alias for compatibility
 type DayData = CalendarDayData
 
-export default function DetailedCalendar({ history, franchises, allGames, year, league = 'wnba' }: DetailedCalendarProps) {
+export default function DetailedCalendar({
+  history,
+  franchises,
+  allGames,
+  year,
+  league = 'wnba',
+}: DetailedCalendarProps) {
   const [selectedDay, setSelectedDay] = useState<DayData | null>(null)
   const [popupPosition, setPopupPosition] = useState<PopupPosition | null>(null)
   const [announcement, setAnnouncement] = useState('')
@@ -33,35 +39,39 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
   const buildDayDescription = (dayData: DayData, monthName: string, dayNum: number): string => {
     const dateStr = `${monthName} ${dayNum}`
     const holderName = getTeamDisplayName(dayData.holder, franchises)
-    
+
     if (dayData.isUncertainFuture) {
       return `${dateStr}. Belt holder unknown, waiting for title bout result.`
     }
-    
+
     if (dayData.isScheduledTitleBout) {
-      const challengerName = dayData.challenger ? getTeamDisplayName(dayData.challenger, franchises) : 'opponent'
+      const challengerName = dayData.challenger
+        ? getTeamDisplayName(dayData.challenger, franchises)
+        : 'opponent'
       return `${dateStr}. Upcoming title bout: ${holderName} vs ${challengerName}.`
     }
-    
+
     if (dayData.game) {
       const game = dayData.game
       const homeTeam = getTeamDisplayName(game.homeTeam, franchises)
       const awayTeam = getTeamDisplayName(game.awayTeam, franchises)
-      
+
       if (dayData.isTie) {
         return `${dateStr}. ${awayTeam} at ${homeTeam}, tied ${game.homeScore}-${game.awayScore}. ${holderName} retains belt.`
       }
-      
-      const winnerName = dayData.winner ? getTeamDisplayName(dayData.winner, franchises) : holderName
+
+      const winnerName = dayData.winner
+        ? getTeamDisplayName(dayData.winner, franchises)
+        : holderName
       const score = `${game.awayScore}-${game.homeScore}`
-      
+
       if (dayData.beltChanged) {
         return `${dateStr}. ${awayTeam} at ${homeTeam}, ${score}. Belt changed hands to ${winnerName}.`
       } else {
         return `${dateStr}. ${awayTeam} at ${homeTeam}, ${score}. ${holderName} defended the belt.`
       }
     }
-    
+
     // Off day
     return `${dateStr}. No game. ${holderName} holds the belt.`
   }
@@ -79,35 +89,35 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     if (league === 'nba' || league === 'nhl') {
       // NBA/NHL season: October of year to June of year+1
       // Exception: 2019-20 NBA season extended to August due to COVID
-      seasonStart = new Date(year, 9, 1)  // October 1st
+      seasonStart = new Date(year, 9, 1) // October 1st
       if (league === 'nba' && year === 2019) {
-        seasonEnd = new Date(2020, 9, 31)  // October 31, 2020 (extended for COVID bubble)
+        seasonEnd = new Date(2020, 9, 31) // October 31, 2020 (extended for COVID bubble)
       } else {
-        seasonEnd = new Date(year + 1, 5, 30)  // June 30th
+        seasonEnd = new Date(year + 1, 5, 30) // June 30th
       }
     } else if (league === 'pwhl') {
       // PWHL season: November of year to May of year+1
       // 2023-24 started Jan 2024 (shortened inaugural season)
       // 2024-25 and beyond: Nov to May
       if (year === 2023) {
-        seasonStart = new Date(2024, 0, 1)  // January 1, 2024
-        seasonEnd = new Date(2024, 4, 31)    // May 31, 2024
+        seasonStart = new Date(2024, 0, 1) // January 1, 2024
+        seasonEnd = new Date(2024, 4, 31) // May 31, 2024
       } else {
-        seasonStart = new Date(year, 10, 1)  // November 1st
-        seasonEnd = new Date(year + 1, 4, 31)  // May 31st of next year
+        seasonStart = new Date(year, 10, 1) // November 1st
+        seasonEnd = new Date(year + 1, 4, 31) // May 31st of next year
       }
     } else {
       // WNBA season: Dynamically determine from actual game dates
       // This handles variations in season length (e.g., Olympic years)
       if (allGames.length > 0) {
-        const yearGames = allGames.filter(g => {
+        const yearGames = allGames.filter((g) => {
           const gameYear = parseInt(g.date.split('-')[0])
           return gameYear === year
         })
         if (yearGames.length > 0) {
-          const dates = yearGames.map(g => new Date(g.date + 'T12:00:00'))
-          const minDate = new Date(Math.min(...dates.map(d => d.getTime())))
-          const maxDate = new Date(Math.max(...dates.map(d => d.getTime())))
+          const dates = yearGames.map((g) => new Date(g.date + 'T12:00:00'))
+          const minDate = new Date(Math.min(...dates.map((d) => d.getTime())))
+          const maxDate = new Date(Math.max(...dates.map((d) => d.getTime())))
           // Expand to start/end of month for cleaner calendar display
           seasonStart = new Date(minDate.getFullYear(), minDate.getMonth(), 1)
           seasonEnd = new Date(maxDate.getFullYear(), maxDate.getMonth() + 1, 0)
@@ -124,7 +134,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     }
 
     // Filter games to this season
-    const seasonGames = allGames.filter(g => {
+    const seasonGames = allGames.filter((g) => {
       // Parse date as local time to avoid timezone issues
       const [y, m, d] = g.date.split('-').map(Number)
       const gameDate = new Date(y, m - 1, d)
@@ -133,7 +143,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
     // Create a map of games by date
     const gamesByDate = new Map<string, Game[]>()
-    seasonGames.forEach(game => {
+    seasonGames.forEach((game) => {
       const dateStr = game.date
       if (!gamesByDate.has(dateStr)) {
         gamesByDate.set(dateStr, [])
@@ -144,17 +154,18 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     // Iterate through every day of the season
     // Track when we encounter the first unplayed title bout - after that, future is uncertain
     let hasHitUnplayedTitleBout = false
-    
+
     const currentDate = new Date(seasonStart)
     while (currentDate <= seasonEnd) {
       const dateStr = currentDate.toISOString().split('T')[0]
       const gamesOnDate = gamesByDate.get(dateStr) || []
 
       // Find if belt holder played (only matters if we haven't hit uncertainty)
-      const holderGame = !hasHitUnplayedTitleBout 
-        ? gamesOnDate.find(game =>
-            isSameFranchise(game.homeTeam, currentHolder, franchises) ||
-            isSameFranchise(game.awayTeam, currentHolder, franchises)
+      const holderGame = !hasHitUnplayedTitleBout
+        ? gamesOnDate.find(
+            (game) =>
+              isSameFranchise(game.homeTeam, currentHolder, franchises) ||
+              isSameFranchise(game.awayTeam, currentHolder, franchises)
           )
         : undefined
 
@@ -171,14 +182,16 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
         // Belt holder played a completed game
         const holderIsHome = isSameFranchise(holderGame.homeTeam, currentHolder, franchises)
         const isTie = holderGame.homeScore === holderGame.awayScore
-        const holderWon = !isTie && (holderIsHome
-          ? holderGame.homeScore! > holderGame.awayScore!
-          : holderGame.awayScore! > holderGame.homeScore!)
+        const holderWon =
+          !isTie &&
+          (holderIsHome
+            ? holderGame.homeScore! > holderGame.awayScore!
+            : holderGame.awayScore! > holderGame.homeScore!)
 
         const challenger = holderIsHome ? holderGame.awayTeam : holderGame.homeTeam
         // For ties, there's no winner but the belt stays with holder
-        const winner = isTie ? undefined : (holderWon ? currentHolder : challenger)
-        const newHolder = isTie ? currentHolder : (holderWon ? currentHolder : challenger)
+        const winner = isTie ? undefined : holderWon ? currentHolder : challenger
+        const newHolder = isTie ? currentHolder : holderWon ? currentHolder : challenger
         const beltChanged = !isTie && !holderWon
 
         map.set(dateStr, {
@@ -207,7 +220,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
           challenger,
           isScheduledTitleBout: true,
         })
-        
+
         // Mark that we've hit an unplayed title bout - all future days are uncertain
         hasHitUnplayedTitleBout = true
       } else {
@@ -278,7 +291,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
     const sortedMonths = new Map<string, DayData[]>()
     Array.from(monthsWithGames.keys())
       .sort()
-      .forEach(key => {
+      .forEach((key) => {
         sortedMonths.set(key, monthsWithGames.get(key)!)
       })
 
@@ -287,9 +300,8 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
   // Detect schedule breaks and attach them to the first month they affect
   const monthsWithBreaks = useMemo(() => {
-    const seasonKey = league === 'wnba'
-      ? String(year)
-      : `${year}-${String((year + 1) % 100).padStart(2, '0')}`
+    const seasonKey =
+      league === 'wnba' ? String(year) : `${year}-${String((year + 1) % 100).padStart(2, '0')}`
 
     const breaks = getScheduleBreaks(league, seasonKey)
     const monthsArray = Array.from(monthsData.entries())
@@ -308,7 +320,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
           for (let j = i; j >= 0; j--) {
             const earlierDays = monthsArray[j][1]
             const earlierGames = earlierDays
-              .filter(d => d.game && d.date < potentialBreak.startDate)
+              .filter((d) => d.game && d.date < potentialBreak.startDate)
               .sort((a, b) => b.date.localeCompare(a.date))
 
             if (earlierGames.length > 0) {
@@ -322,7 +334,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
           for (let j = i; j < monthsArray.length; j++) {
             const laterDays = monthsArray[j][1]
             const laterGames = laterDays
-              .filter(d => d.game && d.date > potentialBreak.endDate)
+              .filter((d) => d.game && d.date > potentialBreak.endDate)
               .sort((a, b) => a.date.localeCompare(b.date))
 
             if (laterGames.length > 0) {
@@ -334,8 +346,8 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
           if (lastGameBeforeBreak && firstGameAfterBreak) {
             // Calculate gap in days
             const gap = Math.floor(
-              (new Date(firstGameAfterBreak).getTime() - new Date(lastGameBeforeBreak).getTime())
-              / (1000 * 60 * 60 * 24)
+              (new Date(firstGameAfterBreak).getTime() - new Date(lastGameBeforeBreak).getTime()) /
+                (1000 * 60 * 60 * 24)
             )
 
             // Only show if gap meets minimum
@@ -358,11 +370,17 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
   }
 
   return (
-    <div data-card="detailed-calendar" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
+    <div
+      data-card="detailed-calendar"
+      className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden"
+    >
       <div className="flex items-center justify-center mb-4 sm:mb-6 border-b-2 border-border pb-2 sm:pb-3">
         <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground font-normal">
           <span aria-hidden="true">◆ </span>
-          {(league === 'nba' || league === 'nhl' || league === 'pwhl') ? `${year}-${String((year + 1) % 100).padStart(2, '0')}` : year} Calendar
+          {league === 'nba' || league === 'nhl' || league === 'pwhl'
+            ? `${year}-${String((year + 1) % 100).padStart(2, '0')}`
+            : year}{' '}
+          Calendar
           <span aria-hidden="true"> ◆</span>
         </h2>
       </div>
@@ -417,7 +435,10 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
               {/* Day headers */}
               <div className="grid grid-cols-7 border-b border-border/40">
                 {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, i) => (
-                  <div key={i} className="text-[0.5rem] font-mono text-muted-foreground text-center py-1">
+                  <div
+                    key={i}
+                    className="text-[0.5rem] font-mono text-muted-foreground text-center py-1"
+                  >
                     {day}
                   </div>
                 ))}
@@ -429,7 +450,12 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                   <div key={weekIdx} className="grid grid-cols-7">
                     {week.map((dayData, dayIdx) => {
                       if (!dayData) {
-                        return <div key={dayIdx} className="aspect-square border-r border-b border-border/20" />
+                        return (
+                          <div
+                            key={dayIdx}
+                            className="aspect-square border-r border-b border-border/20"
+                          />
+                        )
                       }
 
                       const [dy, dm, dd] = dayData.date.split('-').map(Number)
@@ -441,7 +467,7 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                       const winner = dayData.winner
                       const isScheduledBout = dayData.isScheduledTitleBout
                       const isUncertain = dayData.isUncertainFuture
-                      
+
                       // Background color logic:
                       // - Completed game with winner: winner's color
                       // - Completed game with tie: holder's color (belt stays with holder)
@@ -455,7 +481,9 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
                         bgStyle = {} // No team color for scheduled bouts
                       } else {
                         // For ties, show the holder's color (winner will be undefined)
-                        const displayColor = winner ? getTeamColor(winner, franchises) : getTeamColor(dayData.holder, franchises)
+                        const displayColor = winner
+                          ? getTeamColor(winner, franchises)
+                          : getTeamColor(dayData.holder, franchises)
                         bgStyle = { backgroundColor: `${displayColor}15` }
                       }
 
@@ -501,15 +529,23 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
                           {/* Belt holder indicator - only show for known states */}
                           {!isScheduledBout && !isUncertain && (
-                            <div 
+                            <div
                               className="absolute top-0 right-0 w-1 h-1 rounded-full opacity-60 pointer-events-none"
-                              style={{ backgroundColor: winner ? getTeamColor(winner, franchises) : getTeamColor(dayData.holder, franchises) }}
+                              style={{
+                                backgroundColor: winner
+                                  ? getTeamColor(winner, franchises)
+                                  : getTeamColor(dayData.holder, franchises),
+                              }}
                             />
                           )}
 
                           {/* Belt change indicator */}
                           {dayData.beltChanged && (
-                            <div className="absolute top-0 right-2 text-[0.6rem] font-bold pointer-events-none" style={{ textShadow: '0 0 2px rgba(0,0,0,0.5)' }} aria-hidden="true">
+                            <div
+                              className="absolute top-0 right-2 text-[0.6rem] font-bold pointer-events-none"
+                              style={{ textShadow: '0 0 2px rgba(0,0,0,0.5)' }}
+                              aria-hidden="true"
+                            >
                               ⚡
                             </div>
                           )}
@@ -523,7 +559,9 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
                           {/* Game indicator - show the winner for completed games, or holder for ties */}
                           {(winner || dayData.isTie) && (
-                            <div className={`absolute inset-0 flex items-end justify-center pb-[10%] pointer-events-none ${dayData.isTie ? 'opacity-50' : ''}`}>
+                            <div
+                              className={`absolute inset-0 flex items-end justify-center pb-[10%] pointer-events-none ${dayData.isTie ? 'opacity-50' : ''}`}
+                            >
                               <TeamLogo
                                 teamCode={winner || dayData.holder}
                                 franchises={franchises}
@@ -535,7 +573,10 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
 
                           {/* Trophy icon for scheduled title bouts */}
                           {isScheduledBout && (
-                            <div className="absolute inset-0 flex items-end justify-center pb-[5%] pointer-events-none" aria-hidden="true">
+                            <div
+                              className="absolute inset-0 flex items-end justify-center pb-[5%] pointer-events-none"
+                              aria-hidden="true"
+                            >
                               <span className="text-sm">🏆</span>
                             </div>
                           )}
@@ -547,33 +588,36 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
               </div>
 
               {/* Schedule break banner if present */}
-              {breakInfo && (() => {
-                // Format dates for display
-                const formatDate = (dateStr: string) => {
-                  const date = new Date(dateStr + 'T12:00:00')
-                  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-                }
-                const startFormatted = formatDate(breakInfo.startDate)
-                const endFormatted = formatDate(breakInfo.endDate)
+              {breakInfo &&
+                (() => {
+                  // Format dates for display
+                  const formatDate = (dateStr: string) => {
+                    const date = new Date(dateStr + 'T12:00:00')
+                    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+                  }
+                  const startFormatted = formatDate(breakInfo.startDate)
+                  const endFormatted = formatDate(breakInfo.endDate)
 
-                return (
-                  <div className="border-t border-border/40 bg-muted/10 px-2 py-2">
-                    <div className="flex items-center justify-center gap-1.5">
-                      {breakInfo.emoji && (
-                        <span className="text-xs" aria-hidden="true">{breakInfo.emoji}</span>
-                      )}
-                      <div className="text-center">
-                        <div className="text-[0.55rem] sm:text-[0.6rem] font-orbitron text-muted-foreground leading-tight">
-                          {breakInfo.reason}
-                        </div>
-                        <div className="text-[0.5rem] sm:text-[0.55rem] text-muted-foreground/70 font-mono mt-0.5">
-                          {startFormatted} – {endFormatted}
+                  return (
+                    <div className="border-t border-border/40 bg-muted/10 px-2 py-2">
+                      <div className="flex items-center justify-center gap-1.5">
+                        {breakInfo.emoji && (
+                          <span className="text-xs" aria-hidden="true">
+                            {breakInfo.emoji}
+                          </span>
+                        )}
+                        <div className="text-center">
+                          <div className="text-[0.55rem] sm:text-[0.6rem] font-orbitron text-muted-foreground leading-tight">
+                            {breakInfo.reason}
+                          </div>
+                          <div className="text-[0.5rem] sm:text-[0.55rem] text-muted-foreground/70 font-mono mt-0.5">
+                            {startFormatted} – {endFormatted}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                )
-              })()}
+                  )
+                })()}
             </div>
           )
         })}
@@ -596,10 +640,22 @@ export default function DetailedCalendar({ history, franchises, allGames, year, 
       )}
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div
+        className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
+        aria-hidden="true"
+      />
     </div>
   )
 }

@@ -13,43 +13,45 @@ const allFranchiseAbbrsCache = new WeakMap<FranchiseInfo[], Map<string, string[]
 function getFranchiseMap(franchises: FranchiseInfo[]): Map<string, FranchiseInfo> {
   let map = franchiseMapCache.get(franchises)
   if (!map) {
-    map = new Map(franchises.map(f => [f.franchiseId, f]))
+    map = new Map(franchises.map((f) => [f.franchiseId, f]))
     franchiseMapCache.set(franchises, map)
   }
   return map
 }
 
 export function parseFranchisesCSV(csvContent: string): FranchiseInfo[] {
-  const lines = csvContent.split('\n').filter(line => {
+  const lines = csvContent.split('\n').filter((line) => {
     const trimmed = line.trim()
     return trimmed && !trimmed.startsWith('franchise_id') && !trimmed.startsWith('#')
   })
 
-  return lines.map(line => {
-    const [
-      franchiseId,
-      teamAbbr,
-      displayName,
-      city,
-      startYear,
-      endYear,
-      status,
-      successorFranchiseId,
-      hexColor,
-    ] = line.split(',')
+  return lines
+    .map((line) => {
+      const [
+        franchiseId,
+        teamAbbr,
+        displayName,
+        city,
+        startYear,
+        endYear,
+        status,
+        successorFranchiseId,
+        hexColor,
+      ] = line.split(',')
 
-    return {
-      franchiseId: franchiseId?.trim() || '',
-      teamAbbr: teamAbbr?.trim() || '',
-      displayName: displayName?.trim() || '',
-      city: city?.trim() || '',
-      startYear: startYear?.trim() || '',
-      endYear: endYear?.trim() || '',
-      status: status?.trim() || '',
-      successorFranchiseId: successorFranchiseId?.trim() || '',
-      hexColor: hexColor?.trim() || '',
-    }
-  }).filter(f => f.franchiseId)
+      return {
+        franchiseId: franchiseId?.trim() || '',
+        teamAbbr: teamAbbr?.trim() || '',
+        displayName: displayName?.trim() || '',
+        city: city?.trim() || '',
+        startYear: startYear?.trim() || '',
+        endYear: endYear?.trim() || '',
+        status: status?.trim() || '',
+        successorFranchiseId: successorFranchiseId?.trim() || '',
+        hexColor: hexColor?.trim() || '',
+      }
+    })
+    .filter((f) => f.franchiseId)
 }
 
 export function getRootFranchiseId(teamAbbr: string, franchises: FranchiseInfo[]): string {
@@ -64,7 +66,7 @@ export function getRootFranchiseId(teamAbbr: string, franchises: FranchiseInfo[]
   if (cached !== undefined) return cached
 
   // Compute if not cached
-  const info = franchises.find(f => f.teamAbbr === teamAbbr)
+  const info = franchises.find((f) => f.teamAbbr === teamAbbr)
   if (!info) {
     cache.set(teamAbbr, teamAbbr)
     return teamAbbr
@@ -86,11 +88,15 @@ export function getRootFranchiseId(teamAbbr: string, franchises: FranchiseInfo[]
 
 export function getTeamColor(teamAbbr: string, franchises: FranchiseInfo[]): string {
   const rootFranchiseId = getRootFranchiseId(teamAbbr, franchises)
-  const rootFranchise = franchises.find(f => f.franchiseId === rootFranchiseId)
+  const rootFranchise = franchises.find((f) => f.franchiseId === rootFranchiseId)
   return rootFranchise?.hexColor || '#8b949e'
 }
 
-export function isSameFranchise(team1: string, team2: string, franchises: FranchiseInfo[]): boolean {
+export function isSameFranchise(
+  team1: string,
+  team2: string,
+  franchises: FranchiseInfo[]
+): boolean {
   if (team1 === team2) return true
 
   // Check cache first
@@ -114,7 +120,7 @@ export function isSameFranchise(team1: string, team2: string, franchises: Franch
 }
 
 export function getTeamDisplayName(teamAbbr: string, franchises: FranchiseInfo[]): string {
-  const info = franchises.find(f => f.teamAbbr === teamAbbr)
+  const info = franchises.find((f) => f.teamAbbr === teamAbbr)
   return info?.displayName || teamAbbr
 }
 
@@ -124,7 +130,7 @@ export function getTeamDisplayName(teamAbbr: string, franchises: FranchiseInfo[]
  */
 export function getCurrentFranchiseAbbr(teamAbbr: string, franchises: FranchiseInfo[]): string {
   const rootId = getRootFranchiseId(teamAbbr, franchises)
-  const rootFranchise = franchises.find(f => f.franchiseId === rootId)
+  const rootFranchise = franchises.find((f) => f.franchiseId === rootId)
   return rootFranchise?.teamAbbr || teamAbbr
 }
 
@@ -148,8 +154,8 @@ export function getAllFranchiseAbbrs(teamAbbr: string, franchises: FranchiseInfo
 
   // Build result by filtering franchises that share the same root
   const result = franchises
-    .filter(f => getRootFranchiseId(f.teamAbbr, franchises) === rootId)
-    .map(f => f.teamAbbr)
+    .filter((f) => getRootFranchiseId(f.teamAbbr, franchises) === rootId)
+    .map((f) => f.teamAbbr)
 
   cache.set(teamAbbr, result)
   return result
@@ -169,13 +175,17 @@ export function getCurrentFranchiseName(teamAbbr: string, franchises: FranchiseI
  * For example, getTeamCodeForYear("WAS", 1979, franchises) returns "WSB" (Washington Bullets).
  * Returns the input teamAbbr if no historical code is found for that year.
  */
-export function getTeamCodeForYear(teamAbbr: string, year: number, franchises: FranchiseInfo[]): string {
+export function getTeamCodeForYear(
+  teamAbbr: string,
+  year: number,
+  franchises: FranchiseInfo[]
+): string {
   // Get all team codes in the franchise lineage
   const allAbbrs = getAllFranchiseAbbrs(teamAbbr, franchises)
 
   // Find which team code was active in the given year
   for (const abbr of allAbbrs) {
-    const info = franchises.find(f => f.teamAbbr === abbr)
+    const info = franchises.find((f) => f.teamAbbr === abbr)
     if (!info) continue
 
     const startYear = info.startYear ? parseInt(info.startYear) : -Infinity
@@ -206,10 +216,13 @@ export interface FranchiseEra {
  * Dedupe a set of team codes by franchise, returning only current franchise abbreviations.
  * For example, ["UTA", "SAS", "LVA", "NYL"] becomes ["LVA", "NYL"] (Utah Starzz and San Antonio Stars map to Las Vegas Aces).
  */
-export function dedupeByFranchise(teams: Set<string> | string[], franchises: FranchiseInfo[]): string[] {
+export function dedupeByFranchise(
+  teams: Set<string> | string[],
+  franchises: FranchiseInfo[]
+): string[] {
   const teamArray = teams instanceof Set ? Array.from(teams) : teams
   const franchiseSet = new Set<string>()
-  teamArray.forEach(team => {
+  teamArray.forEach((team) => {
     franchiseSet.add(getCurrentFranchiseAbbr(team, franchises))
   })
   return Array.from(franchiseSet).sort()
@@ -222,7 +235,7 @@ export function getFranchiseEras(teamAbbr: string, franchises: FranchiseInfo[]):
   const periods: { start: number; end: number | null }[] = []
 
   for (const abbr of allAbbrs) {
-    const info = franchises.find(f => f.teamAbbr === abbr)
+    const info = franchises.find((f) => f.teamAbbr === abbr)
     if (!info) continue
 
     const startYear = info.startYear ? parseInt(info.startYear) : null
@@ -251,7 +264,7 @@ export function getFranchiseEras(teamAbbr: string, franchises: FranchiseInfo[]):
       // Close current era and start new one
       eras.push({
         startYear: currentEra.start,
-        endYear: currentEnd
+        endYear: currentEnd,
       })
       currentEra = { ...period }
     } else {
@@ -267,7 +280,7 @@ export function getFranchiseEras(teamAbbr: string, franchises: FranchiseInfo[]):
   // Add final era
   eras.push({
     startYear: currentEra.start,
-    endYear: currentEra.end ?? new Date().getFullYear()
+    endYear: currentEra.end ?? new Date().getFullYear(),
   })
 
   return eras

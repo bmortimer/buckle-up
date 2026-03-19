@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Run tests before committing
-cd web && npm run test:run
+# Run lint and tests before committing
+cd web && npm run lint && npm run format:check && npm run test:run

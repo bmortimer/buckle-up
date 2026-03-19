@@ -5,9 +5,17 @@ interface RetroScoreboardProps {
   isAllTime?: boolean
 }
 
-export default function RetroScoreboard({ totalGames, totalChanges, totalTitleBouts, isAllTime = false }: RetroScoreboardProps) {
+export default function RetroScoreboard({
+  totalGames,
+  totalChanges,
+  totalTitleBouts,
+  isAllTime = false,
+}: RetroScoreboardProps) {
   return (
-    <div data-card="season-stats" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
+    <div
+      data-card="season-stats"
+      className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden"
+    >
       {/* Top LED status bar - shown/hidden by CSS based on theme */}
       <div className="led-bar-top" />
 

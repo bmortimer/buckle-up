@@ -10,14 +10,26 @@ interface BeltHolderCardProps {
   league: League
 }
 
-export default function BeltHolderCard({ currentHolder, stats, franchises, isPastSeason = false, league = 'wnba' }: BeltHolderCardProps) {
+export default function BeltHolderCard({
+  currentHolder,
+  stats,
+  franchises,
+  isPastSeason = false,
+  league = 'wnba',
+}: BeltHolderCardProps) {
   const color = getTeamColor(currentHolder, franchises)
   const displayName = getTeamDisplayName(currentHolder, franchises)
 
   return (
-    <div data-card="current-holder" className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden">
+    <div
+      data-card="current-holder"
+      className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden"
+    >
       {/* LED status bar at top */}
-      <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" aria-hidden="true" />
+      <div
+        className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60"
+        aria-hidden="true"
+      />
 
       <div className="relative z-10">
         {/* Header - always centered */}
@@ -52,7 +64,9 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
                   {stats.totalGames}
                 </div>
                 <div className="text-[0.5rem] sm:text-[0.6rem] uppercase tracking-wider sm:tracking-widest text-muted-foreground font-orbitron">
-                  BELT<br/>GAMES
+                  BELT
+                  <br />
+                  GAMES
                 </div>
               </div>
 
@@ -62,10 +76,13 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
                   className="text-2xl sm:text-3xl font-mono tabular-nums led-text mb-1 sm:mb-2"
                   style={{ color: 'hsl(var(--led-amber))' }}
                 >
-                  {stats.wins}-{stats.losses}{stats.ties ? `-${stats.ties}` : ''}
+                  {stats.wins}-{stats.losses}
+                  {stats.ties ? `-${stats.ties}` : ''}
                 </div>
                 <div className="text-[0.5rem] sm:text-[0.6rem] uppercase tracking-wider sm:tracking-widest text-muted-foreground font-orbitron">
-                  W-L{stats.ties ? '-T' : ''}<br/>RECORD
+                  W-L{stats.ties ? '-T' : ''}
+                  <br />
+                  RECORD
                 </div>
               </div>
 
@@ -78,7 +95,9 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
                   {stats.longestReign}
                 </div>
                 <div className="text-[0.5rem] sm:text-[0.6rem] uppercase tracking-wider sm:tracking-widest text-muted-foreground font-orbitron">
-                  LONGEST<br/>STREAK
+                  LONGEST
+                  <br />
+                  STREAK
                 </div>
               </div>
             </div>
@@ -90,9 +109,17 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
           {/* Left side: Logo and name */}
           <div className="flex flex-col items-center justify-center flex-1 min-w-0">
             <div className="mb-4">
-              <TeamLogo teamCode={currentHolder} franchises={franchises} league={league} size="xl" />
+              <TeamLogo
+                teamCode={currentHolder}
+                franchises={franchises}
+                league={league}
+                size="xl"
+              />
             </div>
-            <div aria-hidden="true" className="text-base lg:text-lg text-foreground font-orbitron tracking-wider uppercase text-center">
+            <div
+              aria-hidden="true"
+              className="text-base lg:text-lg text-foreground font-orbitron tracking-wider uppercase text-center"
+            >
               {displayName}
             </div>
           </div>
@@ -122,7 +149,8 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
                   className="text-2xl lg:text-3xl xl:text-4xl font-mono tabular-nums led-text whitespace-nowrap shrink"
                   style={{ color: 'hsl(var(--led-amber))' }}
                 >
-                  {stats.wins}-{stats.losses}{stats.ties ? `-${stats.ties}` : ''}
+                  {stats.wins}-{stats.losses}
+                  {stats.ties ? `-${stats.ties}` : ''}
                 </div>
                 <div className="text-[0.6rem] lg:text-[0.65rem] uppercase tracking-widest text-muted-foreground font-orbitron shrink-0">
                   W-L{stats.ties ? '-T' : ''} RECORD
@@ -147,10 +175,22 @@ export default function BeltHolderCard({ currentHolder, stats, franchises, isPas
       </div>
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" aria-hidden="true" />
+      <div
+        className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
+        aria-hidden="true"
+      />
     </div>
   )
 }

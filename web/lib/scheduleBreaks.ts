@@ -21,7 +21,7 @@ export const PWHL_BREAKS: Record<string, ScheduleBreak[]> = {
     {
       startDate: '2024-04-03',
       endDate: '2024-04-14',
-      reason: '2024 IIHF Women\'s World Championship',
+      reason: "2024 IIHF Women's World Championship",
       emoji: '🌍',
       minimumGapDays: 7,
     },
@@ -30,7 +30,7 @@ export const PWHL_BREAKS: Record<string, ScheduleBreak[]> = {
     {
       startDate: '2025-04-09',
       endDate: '2025-04-20',
-      reason: '2025 IIHF Women\'s World Championship',
+      reason: "2025 IIHF Women's World Championship",
       emoji: '🌍',
       minimumGapDays: 7,
     },
@@ -185,7 +185,7 @@ export const WNBA_BREAKS: Record<string, ScheduleBreak[]> = {
     {
       startDate: '2026-09-04',
       endDate: '2026-09-13',
-      reason: '2026 FIBA Women\'s Basketball World Cup',
+      reason: "2026 FIBA Women's Basketball World Cup",
       emoji: '🏀',
       minimumGapDays: 14,
     },

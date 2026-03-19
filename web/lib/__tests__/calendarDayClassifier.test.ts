@@ -6,10 +6,7 @@ import { parseFranchisesCSV } from '../franchises'
 import type { Game } from '../types'
 
 // Load test fixtures
-const wnbaFixture = readFileSync(
-  join(__dirname, 'fixtures/wnba-franchises-test.csv'),
-  'utf-8'
-)
+const wnbaFixture = readFileSync(join(__dirname, 'fixtures/wnba-franchises-test.csv'), 'utf-8')
 const franchises = parseFranchisesCSV(wnbaFixture)
 
 describe('classifyDayForTeam', () => {
@@ -106,7 +103,7 @@ describe('classifyDayForTeam', () => {
 
       expect(result.isInvolved).toBe(true)
       expect(result.heldBelt).toBe(true)
-      expect(result.offDay).toBe(true)  // Treated as off day until game is played
+      expect(result.offDay).toBe(true) // Treated as off day until game is played
       expect(result.isWinOrDefense).toBe(false)
       expect(result.isLoss).toBe(false)
     })
@@ -118,7 +115,7 @@ describe('classifyDayForTeam', () => {
         date: '2024-05-14',
         holder: 'NYL',
         played: true,
-        won: true,  // Holder won
+        won: true, // Holder won
         winner: 'NYL',
         challenger: 'MIN',
       }
@@ -131,7 +128,7 @@ describe('classifyDayForTeam', () => {
       expect(result.challengedBelt).toBe(true)
       expect(result.failedChallenge).toBe(true)
       expect(result.isWinOrDefense).toBe(false)
-      expect(result.isLoss).toBe(false)  // isLoss is only for losing the belt while holding
+      expect(result.isLoss).toBe(false) // isLoss is only for losing the belt while holding
     })
 
     it('should classify failed challenge on tie (challenger tied)', () => {
@@ -178,7 +175,7 @@ describe('classifyDayForTeam', () => {
         date: '2024-05-14',
         holder: 'NYL',
         played: true,
-        won: false,  // Holder lost
+        won: false, // Holder lost
         winner: 'MIN',
         challenger: 'MIN',
       }
@@ -233,7 +230,7 @@ describe('classifyDayForTeam', () => {
       // UTA -> SAS -> LVA is the same franchise
       const dayData: DayData = {
         date: '2024-05-14',
-        holder: 'UTA',  // Historical team code
+        holder: 'UTA', // Historical team code
         played: true,
         won: true,
         winner: 'UTA',
@@ -255,7 +252,7 @@ describe('classifyDayForTeam', () => {
         played: true,
         won: true,
         winner: 'NYL',
-        challenger: 'SAS',  // Historical team code (now LVA)
+        challenger: 'SAS', // Historical team code (now LVA)
       }
 
       // Selecting LVA (current franchise) should match SAS (historical)
@@ -273,7 +270,7 @@ describe('classifyDayForTeam', () => {
         holder: 'NYL',
         played: false,
         won: null,
-        challenger: 'SAS',  // Historical team code
+        challenger: 'SAS', // Historical team code
       }
 
       // Selecting LVA should NOT be involved - game hasn't been played
@@ -367,8 +364,8 @@ describe('getActiveMonthsForTeam', () => {
 
   it('should NOT include months with only scheduled (unplayed) games', () => {
     const games: Game[] = [
-      makeGame('2024-01-15', 'NYL', 'MIN'),           // Completed
-      makeScheduledGame('2024-02-20', 'NYL', 'CON'),  // Scheduled only
+      makeGame('2024-01-15', 'NYL', 'MIN'), // Completed
+      makeScheduledGame('2024-02-20', 'NYL', 'CON'), // Scheduled only
     ]
 
     const result = getActiveMonthsForTeam(games, 'NYL', franchises)
@@ -379,9 +376,9 @@ describe('getActiveMonthsForTeam', () => {
 
   it('should match franchise across relocations (historical team codes)', () => {
     const games: Game[] = [
-      makeGame('1999-06-15', 'UTA', 'HOU'),  // Utah Starzz (now LVA)
-      makeGame('2003-07-20', 'SAS', 'PHO'),  // San Antonio (now LVA)
-      makeGame('2024-08-10', 'LVA', 'SEA'),  // Las Vegas Aces
+      makeGame('1999-06-15', 'UTA', 'HOU'), // Utah Starzz (now LVA)
+      makeGame('2003-07-20', 'SAS', 'PHO'), // San Antonio (now LVA)
+      makeGame('2024-08-10', 'LVA', 'SEA'), // Las Vegas Aces
     ]
 
     // Selecting LVA should find all franchise history

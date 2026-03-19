@@ -19,27 +19,90 @@ const WNBA_WESTERN_CONFERENCE = ['DAL', 'LVA', 'LAS', 'MIN', 'PHO', 'SEA', 'GSV'
 
 // NBA Conference organization (current active teams)
 const NBA_EASTERN_CONFERENCE = [
-  'ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DET', 'IND', 'MIA', 'MIL', 'NYK', 'ORL', 'PHI', 'TOR', 'WAS'
+  'ATL',
+  'BOS',
+  'BKN',
+  'CHA',
+  'CHI',
+  'CLE',
+  'DET',
+  'IND',
+  'MIA',
+  'MIL',
+  'NYK',
+  'ORL',
+  'PHI',
+  'TOR',
+  'WAS',
 ]
 const NBA_WESTERN_CONFERENCE = [
-  'DAL', 'DEN', 'GSW', 'HOU', 'LAC', 'LAL', 'MEM', 'MIN', 'NOP', 'OKC', 'PHX', 'POR', 'SAC', 'SAS', 'UTA'
+  'DAL',
+  'DEN',
+  'GSW',
+  'HOU',
+  'LAC',
+  'LAL',
+  'MEM',
+  'MIN',
+  'NOP',
+  'OKC',
+  'PHX',
+  'POR',
+  'SAC',
+  'SAS',
+  'UTA',
 ]
 
 // NHL Conference organization (current active teams)
 const NHL_EASTERN_CONFERENCE = [
   // Metropolitan Division
-  'CAR', 'CBJ', 'NJD', 'NYI', 'NYR', 'PHI', 'PIT', 'WSH',
+  'CAR',
+  'CBJ',
+  'NJD',
+  'NYI',
+  'NYR',
+  'PHI',
+  'PIT',
+  'WSH',
   // Atlantic Division
-  'BOS', 'BUF', 'DET', 'FLA', 'MTL', 'OTT', 'TBL', 'TOR'
+  'BOS',
+  'BUF',
+  'DET',
+  'FLA',
+  'MTL',
+  'OTT',
+  'TBL',
+  'TOR',
 ]
 const NHL_WESTERN_CONFERENCE = [
   // Central Division
-  'UTA', 'CHI', 'COL', 'DAL', 'MIN', 'NSH', 'STL', 'WPG',
+  'UTA',
+  'CHI',
+  'COL',
+  'DAL',
+  'MIN',
+  'NSH',
+  'STL',
+  'WPG',
   // Pacific Division
-  'ANA', 'CGY', 'EDM', 'LAK', 'SJS', 'SEA', 'VAN', 'VEG'
+  'ANA',
+  'CGY',
+  'EDM',
+  'LAK',
+  'SJS',
+  'SEA',
+  'VAN',
+  'VEG',
 ]
 
-export default function TeamSelector({ league, teams, franchises, selectedTeam, onTeamChange, isAllTime = false }: TeamSelectorProps) {
+export default function TeamSelector({
+  league,
+  teams,
+  franchises,
+  selectedTeam,
+  onTeamChange,
+  isAllTime = false,
+}: TeamSelectorProps) {
   const [isOpen, setIsOpen] = useState(false)
   const modalRef = useRef<HTMLDivElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
@@ -90,36 +153,38 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [isOpen])
 
-  const easternConference = league === 'nba'
-    ? NBA_EASTERN_CONFERENCE
-    : league === 'nhl'
-      ? NHL_EASTERN_CONFERENCE
-      : WNBA_EASTERN_CONFERENCE
-  const westernConference = league === 'nba'
-    ? NBA_WESTERN_CONFERENCE
-    : league === 'nhl'
-      ? NHL_WESTERN_CONFERENCE
-      : WNBA_WESTERN_CONFERENCE
+  const easternConference =
+    league === 'nba'
+      ? NBA_EASTERN_CONFERENCE
+      : league === 'nhl'
+        ? NHL_EASTERN_CONFERENCE
+        : WNBA_EASTERN_CONFERENCE
+  const westernConference =
+    league === 'nba'
+      ? NBA_WESTERN_CONFERENCE
+      : league === 'nhl'
+        ? NHL_WESTERN_CONFERENCE
+        : WNBA_WESTERN_CONFERENCE
 
   // For PWHL, show all active teams in one section (no divisions)
   const isPwhl = league === 'pwhl'
 
   // Organize teams by status and conference
-  const activeEast = isPwhl ? [] : teams.filter(t => easternConference.includes(t))
-  const activeWest = isPwhl ? [] : teams.filter(t => westernConference.includes(t))
+  const activeEast = isPwhl ? [] : teams.filter((t) => easternConference.includes(t))
+  const activeWest = isPwhl ? [] : teams.filter((t) => westernConference.includes(t))
 
   // PWHL: all active teams (not defunct/relocated/rebranded)
   const pwhlActiveTeams = isPwhl
-    ? teams.filter(t => {
-        const franchise = franchises.find(f => f.teamAbbr === t)
+    ? teams.filter((t) => {
+        const franchise = franchises.find((f) => f.teamAbbr === t)
         return franchise?.status === 'active'
       })
     : []
 
   // In All Time mode, only show truly defunct teams (no successor)
   // Relocated/rebranded teams are merged into their current franchise
-  const former = teams.filter(t => {
-    const franchise = franchises.find(f => f.teamAbbr === t)
+  const former = teams.filter((t) => {
+    const franchise = franchises.find((f) => f.teamAbbr === t)
     if (!franchise) return false
 
     if (isAllTime) {
@@ -128,9 +193,11 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
     }
 
     // In year-filtered mode, show all former teams
-    return franchise.status === 'defunct' ||
-           franchise.status === 'relocated' ||
-           franchise.status === 'rebranded'
+    return (
+      franchise.status === 'defunct' ||
+      franchise.status === 'relocated' ||
+      franchise.status === 'rebranded'
+    )
   })
 
   const handleTeamChange = (team: string | null) => {
@@ -139,13 +206,11 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
   }
 
   const getTeamDisplayName = (teamAbbr: string) => {
-    const franchise = franchises.find(f => f.teamAbbr === teamAbbr)
+    const franchise = franchises.find((f) => f.teamAbbr === teamAbbr)
     return franchise?.displayName || teamAbbr
   }
 
-  const displayText = selectedTeam
-    ? getTeamDisplayName(selectedTeam)
-    : 'ALL TEAMS'
+  const displayText = selectedTeam ? getTeamDisplayName(selectedTeam) : 'ALL TEAMS'
 
   const handleReset = (e: React.MouseEvent) => {
     e.stopPropagation()
@@ -158,7 +223,10 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
     <div className="space-y-2">
       {/* Label */}
       <div className="flex items-center justify-between">
-        <span id="team-filter-label" className="text-[0.65rem] sm:text-xs font-orbitron text-muted-foreground uppercase tracking-wide sm:tracking-wider">
+        <span
+          id="team-filter-label"
+          className="text-[0.65rem] sm:text-xs font-orbitron text-muted-foreground uppercase tracking-wide sm:tracking-wider"
+        >
           <span aria-hidden="true">◆ </span>Filter by Team
         </span>
         {selectedTeam && (
@@ -182,7 +250,10 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
       >
         {/* Team Display */}
         <div className="text-center">
-          <div className="text-lg sm:text-xl md:text-lg lg:text-xl font-mono font-bold uppercase tracking-wider transition-all group-hover:scale-105" style={{ color: 'hsl(var(--primary))' }}>
+          <div
+            className="text-lg sm:text-xl md:text-lg lg:text-xl font-mono font-bold uppercase tracking-wider transition-all group-hover:scale-105"
+            style={{ color: 'hsl(var(--primary))' }}
+          >
             {displayText}
           </div>
           <div className="text-[0.55rem] text-muted-foreground/60 font-mono mt-1 uppercase tracking-wider">
@@ -212,7 +283,10 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
             {/* Header */}
             <div className="bg-muted/20 border-b-2 border-border p-4 sm:p-5 flex items-center justify-between">
               <div>
-                <h3 id="team-select-dialog-title" className="text-base sm:text-lg font-orbitron uppercase tracking-wider">
+                <h3
+                  id="team-select-dialog-title"
+                  className="text-base sm:text-lg font-orbitron uppercase tracking-wider"
+                >
                   <span aria-hidden="true">◆ </span>Select Team
                 </h3>
               </div>
@@ -239,9 +313,10 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                       w-full px-4 py-3 text-base sm:text-lg font-mono font-bold uppercase
                       border-2 transition-all
                       focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
-                      ${!selectedTeam
-                        ? 'bg-primary/10 text-primary border-primary'
-                        : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-[0.98]'
+                      ${
+                        !selectedTeam
+                          ? 'bg-primary/10 text-primary border-primary'
+                          : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-[0.98]'
                       }
                     `}
                   >
@@ -254,10 +329,13 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Teams</span>
-                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" aria-hidden="true" />
+                      <div
+                        className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
-                      {pwhlActiveTeams.map(team => {
+                      {pwhlActiveTeams.map((team) => {
                         const isSelected = selectedTeam === team
                         const displayName = getTeamDisplayName(team)
 
@@ -271,13 +349,19 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                               p-3 flex flex-col items-center gap-2
                               border-2 transition-all
                               focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
-                              ${isSelected
-                                ? 'bg-primary/10 text-primary border-primary scale-105'
-                                : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
+                              ${
+                                isSelected
+                                  ? 'bg-primary/10 text-primary border-primary scale-105'
+                                  : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
                               }
                             `}
                           >
-                            <TeamLogo teamCode={team} franchises={franchises} league={league} size="md" />
+                            <TeamLogo
+                              teamCode={team}
+                              franchises={franchises}
+                              league={league}
+                              size="md"
+                            />
                             <span className="text-xs sm:text-sm font-mono font-bold text-center leading-tight">
                               {displayName}
                             </span>
@@ -293,10 +377,13 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Eastern Conference</span>
-                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" aria-hidden="true" />
+                      <div
+                        className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                      {activeEast.map(team => {
+                      {activeEast.map((team) => {
                         const isSelected = selectedTeam === team
                         const displayName = getTeamDisplayName(team)
 
@@ -310,13 +397,19 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                               p-3 flex flex-col items-center gap-2
                               border-2 transition-all
                               focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
-                              ${isSelected
-                                ? 'bg-primary/10 text-primary border-primary scale-105'
-                                : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
+                              ${
+                                isSelected
+                                  ? 'bg-primary/10 text-primary border-primary scale-105'
+                                  : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
                               }
                             `}
                           >
-                            <TeamLogo teamCode={team} franchises={franchises} league={league} size="md" />
+                            <TeamLogo
+                              teamCode={team}
+                              franchises={franchises}
+                              league={league}
+                              size="md"
+                            />
                             <span className="text-xs sm:text-sm font-mono font-bold text-center leading-tight">
                               {displayName}
                             </span>
@@ -332,10 +425,13 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Western Conference</span>
-                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" aria-hidden="true" />
+                      <div
+                        className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                      {activeWest.map(team => {
+                      {activeWest.map((team) => {
                         const isSelected = selectedTeam === team
                         const displayName = getTeamDisplayName(team)
 
@@ -349,13 +445,19 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                               p-3 flex flex-col items-center gap-2
                               border-2 transition-all
                               focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
-                              ${isSelected
-                                ? 'bg-primary/10 text-primary border-primary scale-105'
-                                : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
+                              ${
+                                isSelected
+                                  ? 'bg-primary/10 text-primary border-primary scale-105'
+                                  : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
                               }
                             `}
                           >
-                            <TeamLogo teamCode={team} franchises={franchises} league={league} size="md" />
+                            <TeamLogo
+                              teamCode={team}
+                              franchises={franchises}
+                              league={league}
+                              size="md"
+                            />
                             <span className="text-xs sm:text-sm font-mono font-bold text-center leading-tight">
                               {displayName}
                             </span>
@@ -371,10 +473,13 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Former Teams</span>
-                      <div className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent" aria-hidden="true" />
+                      <div
+                        className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                      {former.map(team => {
+                      {former.map((team) => {
                         const isSelected = selectedTeam === team
                         const displayName = getTeamDisplayName(team)
 
@@ -386,13 +491,19 @@ export default function TeamSelector({ league, teams, franchises, selectedTeam, 
                             className={`
                               p-3 flex flex-col items-center gap-2
                               border-2 transition-all
-                              ${isSelected
-                                ? 'bg-primary/10 text-primary border-primary scale-105'
-                                : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
+                              ${
+                                isSelected
+                                  ? 'bg-primary/10 text-primary border-primary scale-105'
+                                  : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-primary active:scale-95'
                               }
                             `}
                           >
-                            <TeamLogo teamCode={team} franchises={franchises} league={league} size="md" />
+                            <TeamLogo
+                              teamCode={team}
+                              franchises={franchises}
+                              league={league}
+                              size="md"
+                            />
                             <span className="text-xs sm:text-sm font-mono font-bold text-center leading-tight opacity-60">
                               {displayName}
                             </span>

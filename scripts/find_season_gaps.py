@@ -53,7 +53,7 @@ def find_gaps_in_season(file_path, league):
 
 def main():
     """Main function to analyze all league files."""
-    base_dir = Path("/Users/mort/code/buckle-up/data")
+    base_dir = Path(__file__).resolve().parent.parent / "data"
 
     all_gaps = []
 

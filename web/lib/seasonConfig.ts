@@ -1,10 +1,10 @@
 /**
  * Season configuration for different leagues
  * This will need to be updated as seasons change
- * 
+ *
  * For NBA: currentYear is the starting year of the season
  * e.g., currentYear: 2025 means the "2025-26" season
- * 
+ *
  * For WNBA: currentYear is the calendar year of the season
  * e.g., currentYear: 2025 means the "2025" season
  */

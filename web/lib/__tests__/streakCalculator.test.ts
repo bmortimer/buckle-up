@@ -84,11 +84,46 @@ describe('getCurrentStreak', () => {
     it('should calculate longer streaks correctly', () => {
       const games: Game[] = [
         // NYK starts with belt, wins 5 in a row
-        { date: '2026-01-15', homeTeam: 'NYK', awayTeam: 'BOS', homeScore: 110, awayScore: 105, isPlayoffs: false },
-        { date: '2026-01-17', homeTeam: 'BRK', awayTeam: 'NYK', homeScore: 98, awayScore: 102, isPlayoffs: false },
-        { date: '2026-01-19', homeTeam: 'NYK', awayTeam: 'PHI', homeScore: 115, awayScore: 108, isPlayoffs: false },
-        { date: '2026-01-21', homeTeam: 'MIA', awayTeam: 'NYK', homeScore: 95, awayScore: 100, isPlayoffs: false },
-        { date: '2026-01-23', homeTeam: 'NYK', awayTeam: 'CHI', homeScore: 120, awayScore: 112, isPlayoffs: false },
+        {
+          date: '2026-01-15',
+          homeTeam: 'NYK',
+          awayTeam: 'BOS',
+          homeScore: 110,
+          awayScore: 105,
+          isPlayoffs: false,
+        },
+        {
+          date: '2026-01-17',
+          homeTeam: 'BRK',
+          awayTeam: 'NYK',
+          homeScore: 98,
+          awayScore: 102,
+          isPlayoffs: false,
+        },
+        {
+          date: '2026-01-19',
+          homeTeam: 'NYK',
+          awayTeam: 'PHI',
+          homeScore: 115,
+          awayScore: 108,
+          isPlayoffs: false,
+        },
+        {
+          date: '2026-01-21',
+          homeTeam: 'MIA',
+          awayTeam: 'NYK',
+          homeScore: 95,
+          awayScore: 100,
+          isPlayoffs: false,
+        },
+        {
+          date: '2026-01-23',
+          homeTeam: 'NYK',
+          awayTeam: 'CHI',
+          homeScore: 120,
+          awayScore: 112,
+          isPlayoffs: false,
+        },
       ]
       const champions = { '2025-26': 'NYK' }
 
@@ -486,8 +521,8 @@ describe('getCurrentStreak', () => {
         },
       ]
       const champions = {
-        '2025': 'NYL',  // NYL was 2024 champion, started 2025 with belt
-        '2026': 'LVA',  // LVA won 2025 championship, starts 2026 with belt
+        '2025': 'NYL', // NYL was 2024 champion, started 2025 with belt
+        '2026': 'LVA', // LVA won 2025 championship, starts 2026 with belt
       }
 
       // LVA's streak should be 2 (new season, they're champion)
@@ -545,8 +580,8 @@ describe('getCurrentStreak', () => {
         },
       ]
       const champions = {
-        '2025': 'LVA',  // LVA was 2024 champion, started 2025 with belt
-        '2026': 'LVA',  // LVA won 2025 championship too, starts 2026 with belt
+        '2025': 'LVA', // LVA was 2024 champion, started 2025 with belt
+        '2026': 'LVA', // LVA won 2025 championship too, starts 2026 with belt
       }
 
       // LVA's streak should be 5 (3 from end of 2025 + 2 in 2026)
@@ -603,8 +638,8 @@ describe('getCurrentStreak', () => {
         },
       ]
       const champions = {
-        '2024': 'LVA',  // LVA was 2023 champion
-        '2025': 'LVA',  // LVA won 2024 championship
+        '2024': 'LVA', // LVA was 2023 champion
+        '2025': 'LVA', // LVA won 2024 championship
       }
 
       // Streak should continue: 3 from 2024 + 2 from 2025 = 5

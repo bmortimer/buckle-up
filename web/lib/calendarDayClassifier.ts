@@ -20,23 +20,23 @@ export interface DayClassification {
   isInvolved: boolean
 
   // Primary states (mutually exclusive for display purposes)
-  heldBelt: boolean        // Team held the belt at start of day
-  wonBelt: boolean         // Team won the belt from another team
-  challengedBelt: boolean  // Team challenged for the belt (completed game only)
+  heldBelt: boolean // Team held the belt at start of day
+  wonBelt: boolean // Team won the belt from another team
+  challengedBelt: boolean // Team challenged for the belt (completed game only)
 
   // Detailed outcomes (for display logic)
-  wonBeltThisDay: boolean    // Won belt from another team (bright color)
-  defendedBelt: boolean      // Held belt and won (bright color)
-  tiedWhileHolding: boolean  // Held belt and tied (dim color, belt stays)
-  lostBelt: boolean          // Held belt and lost (transparent with X)
-  offDay: boolean            // Held belt, no game (dim color)
-  failedChallenge: boolean   // Challenged and lost or tied (tan color)
-  isUpcomingTitleBout: boolean  // Has upcoming unplayed game as belt holder (show "?")
-  isUncertain: boolean       // Day is after an unplayed title bout - outcome unknown
+  wonBeltThisDay: boolean // Won belt from another team (bright color)
+  defendedBelt: boolean // Held belt and won (bright color)
+  tiedWhileHolding: boolean // Held belt and tied (dim color, belt stays)
+  lostBelt: boolean // Held belt and lost (transparent with X)
+  offDay: boolean // Held belt, no game (dim color)
+  failedChallenge: boolean // Challenged and lost or tied (tan color)
+  isUpcomingTitleBout: boolean // Has upcoming unplayed game as belt holder (show "?")
+  isUncertain: boolean // Day is after an unplayed title bout - outcome unknown
 
   // Aggregates for styling
-  isWinOrDefense: boolean    // Bright team color
-  isLoss: boolean            // Transparent with border
+  isWinOrDefense: boolean // Bright team color
+  isLoss: boolean // Transparent with border
 }
 
 /**
@@ -57,8 +57,12 @@ export function classifyDayForTeam(
 
   // Check if selected team is involved: held belt, won belt, OR challenged for belt
   // Use franchise matching to include historical team codes (UTA/SAS for LVA)
-  const heldBelt = Boolean(dayData.holder && isSameFranchise(dayData.holder, selectedTeam, franchises))
-  const wonBelt = Boolean(dayData.winner && isSameFranchise(dayData.winner, selectedTeam, franchises) && !heldBelt)
+  const heldBelt = Boolean(
+    dayData.holder && isSameFranchise(dayData.holder, selectedTeam, franchises)
+  )
+  const wonBelt = Boolean(
+    dayData.winner && isSameFranchise(dayData.winner, selectedTeam, franchises) && !heldBelt
+  )
 
   // Only count as challenged if the game was actually played
   // Unplayed games where team would be challenger should not show as involved
@@ -78,7 +82,7 @@ export function classifyDayForTeam(
   const tiedWhileHolding = heldBelt && played && Boolean(dayData.isTie)
   const lostBelt = heldBelt && played && dayData.won === false
   const offDay = heldBelt && !played && !dayData.isUpcomingTitleBout && !dayData.isUncertain
-  const failedChallenge = challengedBelt && played  // Both tie and loss when challenging
+  const failedChallenge = challengedBelt && played // Both tie and loss when challenging
   const isUpcomingTitleBout = Boolean(heldBelt && dayData.isUpcomingTitleBout)
   const isUncertain = Boolean(dayData.isUncertain)
 
@@ -134,7 +138,7 @@ export function getActiveMonthsForTeam(
 
   const activeMonths = new Set<string>()
 
-  games.forEach(game => {
+  games.forEach((game) => {
     // Use direct Set lookup instead of isSameFranchise for each game
     const teamPlayed = franchiseCodes.has(game.homeTeam) || franchiseCodes.has(game.awayTeam)
     if (teamPlayed && isGameCompleted(game)) {
