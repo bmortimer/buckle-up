@@ -3,6 +3,7 @@
  */
 
 import type { Game, FranchiseInfo, League } from './types'
+import { parseDateLocal } from './dateUtils'
 
 /**
  * Calculate the current holder's win streak (consecutive wins WITH the belt)
@@ -37,7 +38,7 @@ export function getCurrentStreak(
   // which season a game belongs to based on the month
   const gamesBySeason = new Map<string, Game[]>()
   for (const game of completedGames) {
-    const gameDate = new Date(game.date + 'T12:00:00')
+    const gameDate = parseDateLocal(game.date)
     const gameYear = gameDate.getFullYear()
     const gameMonth = gameDate.getMonth() + 1 // 1-12
 

@@ -92,3 +92,8 @@ export interface CalendarDayData {
   isUncertain?: boolean // BeltCalendar: day is after an unplayed title bout
   isUncertainFuture?: boolean // DetailedCalendar: after an unplayed title bout
 }
+
+export interface PopupPosition {
+  x: number
+  y: number
+}

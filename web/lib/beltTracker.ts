@@ -13,6 +13,26 @@ import type {
 import { isGameCompleted } from './types'
 import { isSameFranchise, getCurrentFranchiseAbbr } from './franchises'
 
+export function createEmptyStats(team: string): TeamBeltStats {
+  return {
+    team,
+    timesHeld: 0,
+    totalGames: 0,
+    longestReign: 0,
+    wins: 0,
+    losses: 0,
+  }
+}
+
+export function mergeTeamStats(existing: TeamBeltStats, incoming: TeamBeltStats): void {
+  existing.timesHeld += incoming.timesHeld
+  existing.totalGames += incoming.totalGames
+  existing.wins += incoming.wins
+  existing.losses += incoming.losses
+  existing.ties = (existing.ties || 0) + (incoming.ties || 0)
+  existing.longestReign = Math.max(existing.longestReign, incoming.longestReign)
+}
+
 export class BeltTracker {
   private currentHolder: string
   private changes: BeltChange[] = []
@@ -80,15 +100,6 @@ export class BeltTracker {
   public calculateSummary(games: Game[]): BeltSummary {
     const teamStats = new Map<string, TeamBeltStats>()
 
-    const initStats = (team: string): TeamBeltStats => ({
-      team,
-      timesHeld: 0,
-      totalGames: 0,
-      longestReign: 0,
-      wins: 0,
-      losses: 0,
-    })
-
     let currentHolder = this.startingTeam
     let currentWinStreak = 0
 
@@ -106,13 +117,13 @@ export class BeltTracker {
       const challenger = holderIsHome ? game.awayTeam : game.homeTeam
 
       if (!teamStats.has(currentHolder)) {
-        const stats = initStats(currentHolder)
+        const stats = createEmptyStats(currentHolder)
         stats.timesHeld = 1
         teamStats.set(currentHolder, stats)
       }
 
       if (!teamStats.has(challenger)) {
-        teamStats.set(challenger, initStats(challenger))
+        teamStats.set(challenger, createEmptyStats(challenger))
       }
 
       const holderStats = teamStats.get(currentHolder)!
@@ -227,12 +238,7 @@ function mergeStatsByFranchise(
     const existing = merged.get(currentAbbr)
 
     if (existing) {
-      existing.timesHeld += stats.timesHeld
-      existing.totalGames += stats.totalGames
-      existing.wins += stats.wins
-      existing.losses += stats.losses
-      existing.ties = (existing.ties || 0) + (stats.ties || 0)
-      existing.longestReign = Math.max(existing.longestReign, stats.longestReign)
+      mergeTeamStats(existing, stats)
     } else {
       merged.set(currentAbbr, { ...stats, team: currentAbbr })
     }
@@ -258,15 +264,6 @@ export function trackAllSeasons(
 ): BeltHistory {
   const allChanges: BeltChange[] = []
   const teamStatsMap = new Map<string, TeamBeltStats>()
-
-  const initStats = (team: string): TeamBeltStats => ({
-    team,
-    timesHeld: 0,
-    totalGames: 0,
-    longestReign: 0,
-    wins: 0,
-    losses: 0,
-  })
 
   let finalHolder = ''
 
@@ -314,12 +311,7 @@ export function trackAllSeasons(
     for (const teamStats of seasonHistory.summary.teams) {
       const existing = teamStatsMap.get(teamStats.team)
       if (existing) {
-        existing.timesHeld += teamStats.timesHeld
-        existing.totalGames += teamStats.totalGames
-        existing.wins += teamStats.wins
-        existing.losses += teamStats.losses
-        existing.ties = (existing.ties || 0) + (teamStats.ties || 0)
-        existing.longestReign = Math.max(existing.longestReign, teamStats.longestReign)
+        mergeTeamStats(existing, teamStats)
       } else {
         teamStatsMap.set(teamStats.team, { ...teamStats })
       }
