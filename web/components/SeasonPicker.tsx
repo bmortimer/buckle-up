@@ -11,6 +11,7 @@ interface SeasonPickerProps {
   isAllTime: boolean
   onAllTimeChange: (isAllTime: boolean) => void
   league: League
+  availableYears?: number[]
 }
 
 // Format year for display based on league
@@ -33,6 +34,7 @@ export default function SeasonPicker({
   isAllTime,
   onAllTimeChange,
   league = 'wnba',
+  availableYears,
 }: SeasonPickerProps) {
   const [isOpen, setIsOpen] = useState(false)
   const currentYear = isAllTime ? null : value[0]
@@ -85,20 +87,19 @@ export default function SeasonPicker({
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [isOpen])
 
+  // Get all years to display, filtered by availableYears if provided
+  const allYears = availableYears
+    ? availableYears.filter((y) => y >= minYear && y <= maxYear).sort((a, b) => a - b)
+    : Array.from({ length: maxYear - minYear + 1 }, (_, i) => minYear + i)
+
   // Get unique decades with data
-  const decades = Array.from(
-    new Set(
-      Array.from({ length: maxYear - minYear + 1 }, (_, i) => minYear + i).map(
-        (year) => Math.floor(year / 10) * 10
-      )
-    )
-  ).sort((a, b) => b - a) // Newest first
+  const decades = Array.from(new Set(allYears.map((year) => Math.floor(year / 10) * 10))).sort(
+    (a, b) => b - a
+  ) // Newest first
 
   // Group years by decade for organized display
   const yearsByDecade = decades.map((decade) => {
-    const years = Array.from({ length: maxYear - minYear + 1 }, (_, i) => minYear + i).filter(
-      (year) => Math.floor(year / 10) * 10 === decade
-    )
+    const years = allYears.filter((year) => Math.floor(year / 10) * 10 === decade)
     return { decade, years: years.sort((a, b) => b - a) } // Newest first within decade
   })
 

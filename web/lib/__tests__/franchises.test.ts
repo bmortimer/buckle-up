@@ -10,6 +10,7 @@ import {
   getAllFranchiseAbbrs,
   getCurrentFranchiseName,
   getTeamDisplayName,
+  getTeamCodeForYear,
   getFranchiseEras,
 } from '../franchises'
 import type { FranchiseInfo } from '../types'
@@ -74,10 +75,10 @@ describe('getRootFranchiseId', () => {
 
   describe('WNBA franchises', () => {
     it('should return root ID for multi-city relocation', () => {
-      // UTA -> SAS -> LVA
-      expect(getRootFranchiseId('UTA', wnbaFranchises)).toBe('LVA')
-      expect(getRootFranchiseId('SAS', wnbaFranchises)).toBe('LVA')
-      expect(getRootFranchiseId('LVA', wnbaFranchises)).toBe('LVA')
+      // UTA -> SAST -> SAST14 -> ACES
+      expect(getRootFranchiseId('UTA', wnbaFranchises)).toBe('ACES')
+      expect(getRootFranchiseId('SAS', wnbaFranchises)).toBe('ACES')
+      expect(getRootFranchiseId('LVA', wnbaFranchises)).toBe('ACES')
     })
 
     it('should return root ID for single relocation', () => {
@@ -136,11 +137,12 @@ describe('getAllFranchiseAbbrs', () => {
   })
 
   it('should return all abbreviations for multi-step chain', () => {
+    // ACES(LVA), SAST14(SAS), SAST(SAS), UTA - 4 entries, but SAS appears twice (rebrand)
     const lvaAbbrs = getAllFranchiseAbbrs('LVA', wnbaFranchises)
     expect(lvaAbbrs).toContain('LVA')
     expect(lvaAbbrs).toContain('SAS')
     expect(lvaAbbrs).toContain('UTA')
-    expect(lvaAbbrs.length).toBe(3)
+    expect(lvaAbbrs.length).toBe(4)
   })
 
   it('should return single abbreviation for teams that never relocated', () => {
@@ -244,5 +246,34 @@ describe('getFranchiseEras', () => {
   it('should return empty array for unknown team', () => {
     const eras = getFranchiseEras('UNKNOWN', wnbaFranchises)
     expect(eras).toHaveLength(0)
+  })
+})
+
+describe('getTeamCodeForYear', () => {
+  it('should resolve correct team code for each era of a franchise', () => {
+    expect(getTeamCodeForYear('LVA', 2000, wnbaFranchises)).toBe('UTA')
+    expect(getTeamCodeForYear('LVA', 2002, wnbaFranchises)).toBe('UTA')
+    expect(getTeamCodeForYear('LVA', 2018, wnbaFranchises)).toBe('LVA')
+    expect(getTeamCodeForYear('LVA', 2024, wnbaFranchises)).toBe('LVA')
+  })
+
+  it('should handle rebrands that share the same team abbreviation', () => {
+    // SAST (Silver Stars, 2003-2013) and SAST14 (Stars, 2014-2017) both use "SAS"
+    // Must resolve correctly for years in both eras
+    expect(getTeamCodeForYear('LVA', 2003, wnbaFranchises)).toBe('SAS')
+    expect(getTeamCodeForYear('LVA', 2010, wnbaFranchises)).toBe('SAS')
+    expect(getTeamCodeForYear('LVA', 2013, wnbaFranchises)).toBe('SAS')
+    expect(getTeamCodeForYear('LVA', 2014, wnbaFranchises)).toBe('SAS')
+    expect(getTeamCodeForYear('LVA', 2017, wnbaFranchises)).toBe('SAS')
+  })
+
+  it('should work when queried from a historical team code', () => {
+    expect(getTeamCodeForYear('UTA', 2000, wnbaFranchises)).toBe('UTA')
+    expect(getTeamCodeForYear('UTA', 2010, wnbaFranchises)).toBe('SAS')
+    expect(getTeamCodeForYear('UTA', 2020, wnbaFranchises)).toBe('LVA')
+  })
+
+  it('should return input abbreviation for unknown teams', () => {
+    expect(getTeamCodeForYear('UNKNOWN', 2020, wnbaFranchises)).toBe('UNKNOWN')
   })
 })

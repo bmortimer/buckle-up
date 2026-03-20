@@ -462,6 +462,7 @@ export default function BeltDashboard({
             isAllTime={isAllTime}
             onAllTimeChange={setIsAllTime}
             league={league}
+            availableYears={selectedTeam ? availableYearsForTeam : undefined}
           />
 
           <TeamSelector

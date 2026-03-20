@@ -1,9 +1,10 @@
 franchise_id,team_abbr,display_name,city,start_year,end_year,status,successor_franchise_id,hex_color
 
-# Las Vegas Aces - multi-city relocation chain
-LVA,LVA,Las Vegas Aces,Las Vegas,2018,,active,,#000000
-SAS,SAS,San Antonio Stars,San Antonio,2003,2017,relocated,LVA,#C4CED4
-UTA,UTA,Utah Starzz,Salt Lake City,1997,2002,relocated,SAS,#C4CED4
+# Las Vegas Aces - multi-city relocation chain (with rebrand sharing same team_abbr)
+ACES,LVA,Las Vegas Aces,Las Vegas,2018,,active,,#000000
+SAST14,SAS,San Antonio Stars,San Antonio,2014,2017,relocated,ACES,#C4CED4
+SAST,SAS,San Antonio Silver Stars,San Antonio,2003,2013,rebranded,SAST14,#C4CED4
+UTA,UTA,Utah Starzz,Salt Lake City,1997,2002,relocated,SAST,#C4CED4
 
 # Connecticut Sun - relocation only
 CON,CON,Connecticut Sun,Uncasville,2003,,active,,#C8102E

@@ -180,20 +180,21 @@ export function getTeamCodeForYear(
   year: number,
   franchises: FranchiseInfo[]
 ): string {
-  // Get all team codes in the franchise lineage
-  const allAbbrs = getAllFranchiseAbbrs(teamAbbr, franchises)
+  // Get all franchise entries in the lineage (not just unique abbrs,
+  // since multiple entries can share the same teamAbbr, e.g. SAS for
+  // both San Antonio Silver Stars 2003-2013 and San Antonio Stars 2014-2017)
+  const rootId = getRootFranchiseId(teamAbbr, franchises)
+  const lineageEntries = franchises.filter(
+    (f) => getRootFranchiseId(f.teamAbbr, franchises) === rootId
+  )
 
-  // Find which team code was active in the given year
-  for (const abbr of allAbbrs) {
-    const info = franchises.find((f) => f.teamAbbr === abbr)
-    if (!info) continue
-
+  // Find which franchise entry was active during the given year
+  for (const info of lineageEntries) {
     const startYear = info.startYear ? parseInt(info.startYear) : -Infinity
     const endYear = info.endYear ? parseInt(info.endYear) : Infinity
 
-    // Check if this team was active during the given year
     if (year >= startYear && year <= endYear) {
-      return abbr
+      return info.teamAbbr
     }
   }
 
@@ -229,15 +230,17 @@ export function dedupeByFranchise(
 }
 
 export function getFranchiseEras(teamAbbr: string, franchises: FranchiseInfo[]): FranchiseEra[] {
-  const allAbbrs = getAllFranchiseAbbrs(teamAbbr, franchises)
+  // Get all franchise entries in the lineage (not just unique abbrs,
+  // since multiple entries can share the same teamAbbr)
+  const rootId = getRootFranchiseId(teamAbbr, franchises)
+  const lineageEntries = franchises.filter(
+    (f) => getRootFranchiseId(f.teamAbbr, franchises) === rootId
+  )
 
   // Collect all periods from franchise info
   const periods: { start: number; end: number | null }[] = []
 
-  for (const abbr of allAbbrs) {
-    const info = franchises.find((f) => f.teamAbbr === abbr)
-    if (!info) continue
-
+  for (const info of lineageEntries) {
     const startYear = info.startYear ? parseInt(info.startYear) : null
     const endYear = info.endYear ? parseInt(info.endYear) : null
 

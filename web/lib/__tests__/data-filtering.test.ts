@@ -41,9 +41,9 @@ describe('Data Filtering Logic', () => {
 
       expect(isCurrentFranchise).toBe(true)
       expect(franchiseCodes).toContain('UTA') // Utah Starzz
-      expect(franchiseCodes).toContain('SAS') // San Antonio Silver Stars
+      expect(franchiseCodes).toContain('SAS') // San Antonio Silver Stars / Stars (2 entries)
       expect(franchiseCodes).toContain('LVA') // Las Vegas Aces
-      expect(franchiseCodes.length).toBe(3)
+      expect(franchiseCodes.length).toBe(4) // LVA, SAS, SAS (rebrand), UTA
     })
 
     it('should only include that specific franchise when historical team is selected', () => {
