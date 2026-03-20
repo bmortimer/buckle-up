@@ -4,31 +4,27 @@
     "homeTeam": "NYL",
     "awayTeam": "MIN",
     "homeScore": 95,
-    "awayScore": 87,
-    "isPlayoffs": false
+    "awayScore": 87
   },
   {
     "date": "2024-05-15",
     "homeTeam": "MIN",
     "awayTeam": "LVA",
     "homeScore": 78,
-    "awayScore": 82,
-    "isPlayoffs": false
+    "awayScore": 82
   },
   {
     "date": "2024-05-17",
     "homeTeam": "LVA",
     "awayTeam": "CON",
     "homeScore": 89,
-    "awayScore": 91,
-    "isPlayoffs": false
+    "awayScore": 91
   },
   {
     "date": "2024-05-18",
     "homeTeam": "CON",
     "awayTeam": "NYL",
     "homeScore": 85,
-    "awayScore": 88,
-    "isPlayoffs": false
+    "awayScore": 88
   }
 ]

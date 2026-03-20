@@ -25,7 +25,7 @@ const sampleGames: Game[] = [
     awayTeam: 'MIN',
     homeScore: 95,
     awayScore: 87,
-    isPlayoffs: false,
+
   },
   // MIN challenges but loses (NYL retains)
   {
@@ -34,7 +34,7 @@ const sampleGames: Game[] = [
     awayTeam: 'NYL',
     homeScore: 78,
     awayScore: 82,
-    isPlayoffs: false,
+
   },
   // NYL loses to LVA (belt changes)
   {
@@ -43,7 +43,7 @@ const sampleGames: Game[] = [
     awayTeam: 'LVA',
     homeScore: 85,
     awayScore: 89,
-    isPlayoffs: false,
+
   },
   // LVA loses to CON (belt changes)
   {
@@ -52,7 +52,7 @@ const sampleGames: Game[] = [
     awayTeam: 'CON',
     homeScore: 88,
     awayScore: 92,
-    isPlayoffs: false,
+
   },
 ]
 
@@ -65,7 +65,7 @@ const gamesWithTie: Game[] = [
     awayTeam: 'MTL',
     homeScore: 3,
     awayScore: 2,
-    isPlayoffs: false,
+
   },
   // BOS ties with MTL (belt stays with BOS)
   {
@@ -74,7 +74,7 @@ const gamesWithTie: Game[] = [
     awayTeam: 'MTL',
     homeScore: 2,
     awayScore: 2,
-    isPlayoffs: false,
+
   },
   // BOS beats MTL again
   {
@@ -83,7 +83,7 @@ const gamesWithTie: Game[] = [
     awayTeam: 'MTL',
     homeScore: 4,
     awayScore: 1,
-    isPlayoffs: false,
+
   },
 ]
 
@@ -95,7 +95,7 @@ const gamesWithScheduled: Game[] = [
     awayTeam: 'MIN',
     homeScore: 95,
     awayScore: 87,
-    isPlayoffs: false,
+
   },
   // Scheduled game (no scores yet)
   {
@@ -104,7 +104,7 @@ const gamesWithScheduled: Game[] = [
     awayTeam: 'LVA',
     homeScore: null,
     awayScore: null,
-    isPlayoffs: false,
+
   },
 ]
 
@@ -142,7 +142,8 @@ describe('BeltTracker', () => {
           date: '2024-05-20',
           homeTeam: 'NYL',
           awayTeam: 'LVA',
-          isPlayoffs: false,
+          homeScore: null,
+          awayScore: null,
         },
       ]
 
@@ -217,7 +218,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MIN',
           homeScore: 95,
           awayScore: 87,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-05-15',
@@ -225,7 +226,7 @@ describe('BeltTracker', () => {
           awayTeam: 'LVA',
           homeScore: 88,
           awayScore: 85,
-          isPlayoffs: false,
+      
         },
         // NYL loses to CON (streak ends at 2)
         {
@@ -234,7 +235,7 @@ describe('BeltTracker', () => {
           awayTeam: 'CON',
           homeScore: 85,
           awayScore: 89,
-          isPlayoffs: false,
+      
         },
         // CON wins once then loses (streak = 1)
         {
@@ -243,7 +244,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MIN',
           homeScore: 92,
           awayScore: 88,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-05-20',
@@ -251,7 +252,7 @@ describe('BeltTracker', () => {
           awayTeam: 'NYL',
           homeScore: 78,
           awayScore: 82,
-          isPlayoffs: false,
+      
         },
         // NYL gets belt back (win that takes belt = 1), then wins 2 more (total streak = 3 for second reign)
         {
@@ -260,7 +261,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MIN',
           homeScore: 90,
           awayScore: 85,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-05-24',
@@ -268,7 +269,7 @@ describe('BeltTracker', () => {
           awayTeam: 'LVA',
           homeScore: 88,
           awayScore: 80,
-          isPlayoffs: false,
+      
         },
       ]
 
@@ -296,7 +297,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MIN',
           homeScore: 95,
           awayScore: 87,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-05-15',
@@ -304,7 +305,7 @@ describe('BeltTracker', () => {
           awayTeam: 'LVA',
           homeScore: 88,
           awayScore: 85,
-          isPlayoffs: false,
+      
         },
         // LVA takes belt (this win should count toward LVA's streak)
         {
@@ -313,7 +314,7 @@ describe('BeltTracker', () => {
           awayTeam: 'LVA',
           homeScore: 85,
           awayScore: 89,
-          isPlayoffs: false,
+      
         },
         // LVA wins 2 more (total streak = 3 including the win that took the belt)
         {
@@ -322,7 +323,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MIN',
           homeScore: 92,
           awayScore: 88,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-05-20',
@@ -330,7 +331,7 @@ describe('BeltTracker', () => {
           awayTeam: 'CON',
           homeScore: 90,
           awayScore: 85,
-          isPlayoffs: false,
+      
         },
       ]
 
@@ -364,7 +365,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 1,
           awayScore: 5,
-          isPlayoffs: false,
+      
         },
         // MTL ties on the road (belt should stay with MTL)
         {
@@ -373,7 +374,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 2,
           awayScore: 2,
-          isPlayoffs: false,
+      
         },
       ]
 
@@ -422,7 +423,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 3,
           awayScore: 2,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-10-12',
@@ -430,7 +431,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 4,
           awayScore: 1,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-10-14',
@@ -438,7 +439,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 3,
           awayScore: 1,
-          isPlayoffs: false,
+      
         },
         // Then ties twice
         {
@@ -447,7 +448,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 2,
           awayScore: 2,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-10-18',
@@ -455,7 +456,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 1,
           awayScore: 1,
-          isPlayoffs: false,
+      
         },
         // Then wins again
         {
@@ -464,7 +465,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 5,
           awayScore: 3,
-          isPlayoffs: false,
+      
         },
       ]
 
@@ -490,7 +491,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 2,
           awayScore: 2,
-          isPlayoffs: false,
+      
         },
         // Then wins twice
         {
@@ -499,7 +500,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 3,
           awayScore: 1,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-10-14',
@@ -507,7 +508,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 4,
           awayScore: 2,
-          isPlayoffs: false,
+      
         },
       ]
 
@@ -530,7 +531,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 3,
           awayScore: 2,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-10-12',
@@ -538,7 +539,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 4,
           awayScore: 1,
-          isPlayoffs: false,
+      
         },
         {
           date: '2024-10-14',
@@ -546,7 +547,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 3,
           awayScore: 1,
-          isPlayoffs: false,
+      
         },
         // Ends with tie (season ends)
         {
@@ -555,7 +556,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MTL',
           homeScore: 2,
           awayScore: 2,
-          isPlayoffs: false,
+      
         },
       ]
 
@@ -581,7 +582,7 @@ describe('BeltTracker', () => {
           awayTeam: 'MIN',
           homeScore: 85,
           awayScore: 80,
-          isPlayoffs: false,
+      
         },
         // SAS (relocated team) plays next game
         {
@@ -590,7 +591,7 @@ describe('BeltTracker', () => {
           awayTeam: 'NYL',
           homeScore: 90,
           awayScore: 87,
-          isPlayoffs: false,
+      
         },
       ]
 
@@ -616,7 +617,7 @@ describe('trackAllSeasons', () => {
         awayTeam: 'MIN',
         homeScore: 95,
         awayScore: 87,
-        isPlayoffs: false,
+    
       },
       {
         date: '2023-05-15',
@@ -624,7 +625,7 @@ describe('trackAllSeasons', () => {
         awayTeam: 'LVA',
         homeScore: 85,
         awayScore: 89,
-        isPlayoffs: false,
+    
       },
     ]
 
@@ -635,7 +636,7 @@ describe('trackAllSeasons', () => {
         awayTeam: 'MIN',
         homeScore: 92,
         awayScore: 88,
-        isPlayoffs: false,
+    
       },
     ]
 
@@ -671,7 +672,7 @@ describe('trackAllSeasons', () => {
         awayTeam: 'MIN',
         homeScore: 95,
         awayScore: 87,
-        isPlayoffs: false,
+    
       },
     ]
 
@@ -682,7 +683,7 @@ describe('trackAllSeasons', () => {
         awayTeam: 'MIN',
         homeScore: 90,
         awayScore: 85,
-        isPlayoffs: false,
+    
       },
     ]
 
@@ -718,7 +719,7 @@ describe('trackAllSeasons', () => {
         awayTeam: 'MIN',
         homeScore: 85,
         awayScore: 80,
-        isPlayoffs: false,
+    
       },
     ]
 
@@ -729,7 +730,7 @@ describe('trackAllSeasons', () => {
         awayTeam: 'MIN',
         homeScore: 90,
         awayScore: 85,
-        isPlayoffs: false,
+    
       },
     ]
 
@@ -767,7 +768,7 @@ describe('findNextTitleBout', () => {
         awayTeam: 'MIN',
         homeScore: null,
         awayScore: null,
-        isPlayoffs: false,
+    
       },
       {
         date: '2025-05-15',
@@ -775,7 +776,7 @@ describe('findNextTitleBout', () => {
         awayTeam: 'CON',
         homeScore: null,
         awayScore: null,
-        isPlayoffs: false,
+    
       },
     ]
 
@@ -798,7 +799,7 @@ describe('findNextTitleBout', () => {
         awayTeam: 'MIN',
         homeScore: null,
         awayScore: null,
-        isPlayoffs: false,
+    
       },
     ]
 
@@ -818,7 +819,7 @@ describe('findNextGameForTeam', () => {
         awayTeam: 'MIN',
         homeScore: null,
         awayScore: null,
-        isPlayoffs: false,
+    
       },
       {
         date: '2025-05-15',
@@ -826,7 +827,7 @@ describe('findNextGameForTeam', () => {
         awayTeam: 'MIN',
         homeScore: null,
         awayScore: null,
-        isPlayoffs: false,
+    
       },
     ]
 
@@ -844,7 +845,7 @@ describe('findNextGameForTeam', () => {
         awayTeam: 'MIN',
         homeScore: 95,
         awayScore: 87,
-        isPlayoffs: false,
+    
       },
       {
         date: '2025-05-15',
@@ -852,7 +853,7 @@ describe('findNextGameForTeam', () => {
         awayTeam: 'MIN',
         homeScore: null,
         awayScore: null,
-        isPlayoffs: false,
+    
       },
     ]
 

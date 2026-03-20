@@ -17,7 +17,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'WPG',
           homeScore: null,
           awayScore: null,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = { '2025-26': 'TBL' }
@@ -35,7 +35,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'FLA',
           homeScore: 2,
           awayScore: 0,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = { '2025-26': 'FLA' }
@@ -53,7 +53,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'FLA',
           homeScore: 6,
           awayScore: 1,
-          isPlayoffs: false,
+    
         },
         // UTA wins, takes belt
         {
@@ -62,7 +62,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'UTA',
           homeScore: 2,
           awayScore: 0,
-          isPlayoffs: false,
+    
         },
         // TBL wins, takes belt (streak = 1)
         {
@@ -71,7 +71,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'WPG',
           homeScore: 4,
           awayScore: 1,
-          isPlayoffs: false,
+    
         },
         // TBL defends (streak = 2)
       ]
@@ -90,7 +90,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'BOS',
           homeScore: 110,
           awayScore: 105,
-          isPlayoffs: false,
+    
         },
         {
           date: '2026-01-17',
@@ -98,7 +98,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'NYK',
           homeScore: 98,
           awayScore: 102,
-          isPlayoffs: false,
+    
         },
         {
           date: '2026-01-19',
@@ -106,7 +106,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'PHI',
           homeScore: 115,
           awayScore: 108,
-          isPlayoffs: false,
+    
         },
         {
           date: '2026-01-21',
@@ -114,7 +114,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'NYK',
           homeScore: 95,
           awayScore: 100,
-          isPlayoffs: false,
+    
         },
         {
           date: '2026-01-23',
@@ -122,7 +122,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'CHI',
           homeScore: 120,
           awayScore: 112,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = { '2025-26': 'NYK' }
@@ -143,7 +143,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'FLA',
           homeScore: 6,
           awayScore: 1,
-          isPlayoffs: false,
+    
         },
         // UTA defends a couple times
         {
@@ -152,7 +152,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'CHI',
           homeScore: 4,
           awayScore: 2,
-          isPlayoffs: false,
+    
         },
         // TBL takes belt from UTA
         {
@@ -161,7 +161,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'UTA',
           homeScore: 2,
           awayScore: 0,
-          isPlayoffs: false,
+    
         },
         // TBL defends
         {
@@ -170,7 +170,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'WPG',
           homeScore: 4,
           awayScore: 1,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = { '2025-26': 'FLA' }
@@ -190,7 +190,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'BOS',
           homeScore: 5,
           awayScore: 3,
-          isPlayoffs: false,
+    
         },
         {
           date: '2025-10-17',
@@ -198,7 +198,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'NYR',
           homeScore: 4,
           awayScore: 2,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = { '2025-26': 'FLA' }
@@ -217,7 +217,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'CHI',
           homeScore: 3,
           awayScore: 2,
-          isPlayoffs: false,
+    
         },
         // Early 2025-26 season (Oct 2025) - FLA is new champion
         {
@@ -226,7 +226,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'TBL',
           homeScore: 4,
           awayScore: 2,
-          isPlayoffs: false,
+    
         },
         {
           date: '2025-10-12',
@@ -234,7 +234,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'NYR',
           homeScore: 3,
           awayScore: 1,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = {
@@ -256,7 +256,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'NYR',
           homeScore: 3,
           awayScore: 2,
-          isPlayoffs: false,
+    
         },
         {
           date: '2025-06-17',
@@ -264,7 +264,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'TBL',
           homeScore: 4,
           awayScore: 1,
-          isPlayoffs: false,
+    
         },
         // Start of 2025-26 season (BOS is champion again)
         {
@@ -273,7 +273,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'MTL',
           homeScore: 5,
           awayScore: 2,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = {
@@ -294,7 +294,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'BOS',
           homeScore: 110,
           awayScore: 105,
-          isPlayoffs: false,
+    
         },
         {
           date: '2025-04-17',
@@ -302,7 +302,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'PHI',
           homeScore: 108,
           awayScore: 102,
-          isPlayoffs: false,
+    
         },
         // Start of 2025-26 season (BOS is new champion)
         {
@@ -311,7 +311,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'NYK',
           homeScore: 112,
           awayScore: 108,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = {
@@ -336,7 +336,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'UTA',
           homeScore: 2,
           awayScore: 0,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = { '2025-26': 'UTA' }
@@ -353,7 +353,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'UTA',
           homeScore: 2,
           awayScore: 0,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = { '2025-26': 'UTA' }
@@ -370,7 +370,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'UTA',
           homeScore: 2,
           awayScore: 0,
-          isPlayoffs: false,
+    
         },
         {
           date: '2026-01-29',
@@ -378,7 +378,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'WPG',
           homeScore: 4,
           awayScore: 1,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = {} // No champion defined
@@ -399,7 +399,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'FLA',
           homeScore: 4,
           awayScore: 1,
-          isPlayoffs: false,
+    
         },
         // TOR loses to UTA
         {
@@ -408,7 +408,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'TOR',
           homeScore: 6,
           awayScore: 1,
-          isPlayoffs: false,
+    
         },
         // UTA has belt, plays a few more games
         {
@@ -417,7 +417,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'CHI',
           homeScore: 4,
           awayScore: 2,
-          isPlayoffs: false,
+    
         },
         {
           date: '2026-01-17',
@@ -425,7 +425,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'UTA',
           homeScore: 2,
           awayScore: 3,
-          isPlayoffs: false,
+    
         },
         // TBL takes belt from UTA on 1/26
         {
@@ -434,7 +434,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'UTA',
           homeScore: 2,
           awayScore: 0,
-          isPlayoffs: false,
+    
         },
         // TBL defends against WPG on 1/29
         {
@@ -443,7 +443,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'WPG',
           homeScore: 4,
           awayScore: 1,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = { '2025-26': 'FLA' }
@@ -464,7 +464,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'NYL',
           homeScore: 85,
           awayScore: 78,
-          isPlayoffs: false,
+    
         },
         {
           date: '2026-05-24',
@@ -472,7 +472,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'LVA',
           homeScore: 72,
           awayScore: 80,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = { '2026': 'LVA' }
@@ -491,7 +491,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'CHI',
           homeScore: 90,
           awayScore: 82,
-          isPlayoffs: false,
+    
         },
         {
           date: '2025-09-14',
@@ -499,7 +499,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'LVA',
           homeScore: 88,
           awayScore: 85,
-          isPlayoffs: false,
+    
         },
         // Start of 2026 season - LVA is champion (won 2025 championship)
         // but NYL had the belt at end of 2025 regular season
@@ -509,7 +509,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'PHO',
           homeScore: 92,
           awayScore: 84,
-          isPlayoffs: false,
+    
         },
         {
           date: '2026-05-20',
@@ -517,7 +517,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'SEA',
           homeScore: 88,
           awayScore: 79,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = {
@@ -542,7 +542,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'NYL',
           homeScore: 95,
           awayScore: 88,
-          isPlayoffs: false,
+    
         },
         {
           date: '2025-08-28',
@@ -550,7 +550,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'LVA',
           homeScore: 78,
           awayScore: 85,
-          isPlayoffs: false,
+    
         },
         {
           date: '2025-09-01',
@@ -558,7 +558,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'CHI',
           homeScore: 92,
           awayScore: 84,
-          isPlayoffs: false,
+    
         },
         // ... LVA wins championship (playoffs happen, they win)
         // Start of 2026 season - LVA is champion again, streak should continue
@@ -568,7 +568,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'PHO',
           homeScore: 88,
           awayScore: 80,
-          isPlayoffs: false,
+    
         },
         {
           date: '2026-05-20',
@@ -576,7 +576,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'LVA',
           homeScore: 75,
           awayScore: 82,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = {
@@ -601,7 +601,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'NYL',
           homeScore: 88,
           awayScore: 80,
-          isPlayoffs: false,
+    
         },
         {
           date: '2024-09-08',
@@ -609,7 +609,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'MIN',
           homeScore: 92,
           awayScore: 85,
-          isPlayoffs: false,
+    
         },
         {
           date: '2024-09-12',
@@ -617,7 +617,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'LVA',
           homeScore: 79,
           awayScore: 86,
-          isPlayoffs: false,
+    
         },
         // 2025 season starts - LVA is 2024 champion
         {
@@ -626,7 +626,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'PHO',
           homeScore: 90,
           awayScore: 82,
-          isPlayoffs: false,
+    
         },
         {
           date: '2025-05-21',
@@ -634,7 +634,7 @@ describe('getCurrentStreak', () => {
           awayTeam: 'LVA',
           homeScore: 75,
           awayScore: 88,
-          isPlayoffs: false,
+    
         },
       ]
       const champions = {
