@@ -1,32 +1,14 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react'
-import type { FranchiseInfo, Game, League } from '@/lib/types'
+import type { FranchiseInfo, League, CalendarDayData, PopupPosition } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
 import { getTeamDisplayName } from '@/lib/franchises'
+import { useModalFocusTrap } from '@/hooks/useModalFocusTrap'
 import TeamLogo from './TeamLogo'
 
-interface DayData {
-  date: string
-  holder: string
-  game?: Game
-  beltChanged?: boolean
-  holderWon?: boolean | null
-  winner?: string
-  challenger?: string
-  played?: boolean
-  won?: boolean | null
-  isScheduledTitleBout?: boolean // Has an unplayed title bout
-  isUncertainFuture?: boolean // After an unplayed title bout - outcome unknown
-}
-
-interface PopupPosition {
-  x: number
-  y: number
-}
-
 interface CalendarDayPopupProps {
-  dayData: DayData
+  dayData: CalendarDayData
   position: PopupPosition | null
   franchises: FranchiseInfo[]
   selectedTeam?: string | null
@@ -53,41 +35,7 @@ export default function CalendarDayPopup({
     return () => window.removeEventListener('resize', checkDesktop)
   }, [])
 
-  // Focus trap and Escape key handler
-  useEffect(() => {
-    // Focus the close button when modal opens
-    closeButtonRef.current?.focus()
-
-    // Handle Escape key
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose()
-      }
-
-      // Focus trap
-      if (e.key === 'Tab') {
-        const modal = modalRef.current
-        if (!modal) return
-
-        const focusableElements = modal.querySelectorAll<HTMLElement>(
-          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-        )
-        const firstElement = focusableElements[0]
-        const lastElement = focusableElements[focusableElements.length - 1]
-
-        if (e.shiftKey && document.activeElement === firstElement) {
-          e.preventDefault()
-          lastElement?.focus()
-        } else if (!e.shiftKey && document.activeElement === lastElement) {
-          e.preventDefault()
-          firstElement?.focus()
-        }
-      }
-    }
-
-    document.addEventListener('keydown', handleKeyDown)
-    return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [onClose])
+  useModalFocusTrap(true, onClose, modalRef, closeButtonRef)
 
   return (
     <>

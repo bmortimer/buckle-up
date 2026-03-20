@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import type { League } from '@/lib/types'
+import { useModalFocusTrap } from '@/hooks/useModalFocusTrap'
 
 interface SeasonPickerProps {
   minYear: number
@@ -42,6 +43,8 @@ export default function SeasonPicker({
   const closeButtonRef = useRef<HTMLButtonElement>(null)
   const triggerButtonRef = useRef<HTMLButtonElement>(null)
 
+  const closeModal = useCallback(() => setIsOpen(false), [])
+
   // Return focus to trigger button when modal closes
   useEffect(() => {
     if (!isOpen) {
@@ -49,43 +52,7 @@ export default function SeasonPicker({
     }
   }, [isOpen])
 
-  // Focus trap and Escape key handler
-  useEffect(() => {
-    if (!isOpen) return
-
-    // Focus the close button when modal opens
-    closeButtonRef.current?.focus()
-
-    // Handle Escape key
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setIsOpen(false)
-      }
-
-      // Focus trap
-      if (e.key === 'Tab') {
-        const modal = modalRef.current
-        if (!modal) return
-
-        const focusableElements = modal.querySelectorAll<HTMLElement>(
-          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-        )
-        const firstElement = focusableElements[0]
-        const lastElement = focusableElements[focusableElements.length - 1]
-
-        if (e.shiftKey && document.activeElement === firstElement) {
-          e.preventDefault()
-          lastElement?.focus()
-        } else if (!e.shiftKey && document.activeElement === lastElement) {
-          e.preventDefault()
-          firstElement?.focus()
-        }
-      }
-    }
-
-    document.addEventListener('keydown', handleKeyDown)
-    return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [isOpen])
+  useModalFocusTrap(isOpen, closeModal, modalRef, closeButtonRef)
 
   // Get all years to display, filtered by availableYears if provided
   const allYears = availableYears
