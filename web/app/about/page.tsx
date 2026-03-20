@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import BackButton from '@/components/BackButton'
+import CornerRivets from '@/components/CornerRivets'
 
 export const metadata: Metadata = {
   title: 'About the Championship Belt Tracker',
@@ -171,22 +172,7 @@ export default function AboutPage() {
           </p>
 
           {/* Corner rivets for retro hardware look */}
-          <div
-            className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-            aria-hidden="true"
-          />
+          <CornerRivets />
         </header>
 
         {/* The Concept */}
@@ -208,22 +194,7 @@ export default function AboutPage() {
             </div>
 
             {/* Corner rivets for retro hardware look */}
-            <div
-              className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
+            <CornerRivets />
           </div>
         </section>
 
@@ -318,22 +289,7 @@ export default function AboutPage() {
             </div>
 
             {/* Corner rivets for retro hardware look */}
-            <div
-              className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
+            <CornerRivets />
           </div>
         </section>
 
@@ -358,22 +314,7 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div
-                className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
+              <CornerRivets />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -391,22 +332,7 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div
-                className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
+              <CornerRivets />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -440,22 +366,7 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div
-                className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
+              <CornerRivets />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -561,22 +472,7 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div
-                className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
+              <CornerRivets />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -607,22 +503,7 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div
-                className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
+              <CornerRivets />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -646,22 +527,7 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div
-                className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
+              <CornerRivets />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -685,22 +551,7 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div
-                className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
+              <CornerRivets />
             </details>
 
             <details className="group scoreboard-panel relative overflow-hidden">
@@ -740,22 +591,7 @@ export default function AboutPage() {
               </div>
 
               {/* Corner rivets for retro hardware look */}
-              <div
-                className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
-              <div
-                className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-                aria-hidden="true"
-              />
+              <CornerRivets />
             </details>
           </div>
         </section>
@@ -785,22 +621,7 @@ export default function AboutPage() {
           </div>
 
           {/* Corner rivets for retro hardware look */}
-          <div
-            className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-            aria-hidden="true"
-          />
+          <CornerRivets />
         </footer>
       </article>
     </>

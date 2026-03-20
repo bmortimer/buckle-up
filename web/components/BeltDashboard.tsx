@@ -23,6 +23,7 @@ import SeasonPicker from './SeasonPicker'
 import TeamSelector from './TeamSelector'
 import { ThemeSwitcher } from './ThemeSwitcher'
 import BuyMeCoffee from './BuyMeCoffee'
+import CornerRivets from './CornerRivets'
 import Link from 'next/link'
 
 interface BeltDashboardProps {
@@ -621,10 +622,7 @@ export default function BeltDashboard({
         <div className="led-bar-bottom" />
 
         {/* Corner rivets for retro hardware look */}
-        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <CornerRivets />
       </footer>
 
       {/* Buy Me a Coffee */}

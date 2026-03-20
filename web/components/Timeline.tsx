@@ -1,4 +1,5 @@
 import type { BeltChange, FranchiseInfo } from '@/lib/types'
+import CornerRivets from './CornerRivets'
 import { getTeamColor } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 
@@ -112,10 +113,7 @@ export default function Timeline({ changes, franchises, selectedTeam }: Timeline
       </div>
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <CornerRivets />
     </div>
   )
 }

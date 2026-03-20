@@ -1,6 +1,7 @@
 import type { TeamBeltStats, FranchiseInfo, League } from '@/lib/types'
 import { getTeamColor, getTeamDisplayName } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
+import CornerRivets from './CornerRivets'
 
 interface TeamBeltCardProps {
   team: string
@@ -189,10 +190,7 @@ export default function TeamBeltCard({
       </div>
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <CornerRivets />
     </div>
   )
 }

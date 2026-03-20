@@ -1,3 +1,5 @@
+import CornerRivets from './CornerRivets'
+
 interface RetroScoreboardProps {
   totalGames: number
   totalChanges: number
@@ -86,10 +88,7 @@ export default function RetroScoreboard({
       <div className="led-bar-bottom" />
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <CornerRivets />
     </div>
   )
 }

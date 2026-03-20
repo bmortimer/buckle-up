@@ -1,7 +1,14 @@
 'use client'
 
 import { useState, useEffect, useMemo } from 'react'
-import type { BeltHistory, FranchiseInfo, Game, League, CalendarDayData } from '@/lib/types'
+import type {
+  BeltHistory,
+  FranchiseInfo,
+  Game,
+  League,
+  CalendarDayData,
+  PopupPosition,
+} from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
 import {
   getTeamColor,
@@ -11,6 +18,7 @@ import {
 } from '@/lib/franchises'
 import { classifyDayForTeam, getActiveMonthsForTeam } from '@/lib/calendarDayClassifier'
 import TeamLogo from './TeamLogo'
+import CornerRivets from './CornerRivets'
 import CalendarDayPopup from './CalendarDayPopup'
 
 interface BeltCalendarProps {
@@ -21,13 +29,7 @@ interface BeltCalendarProps {
   league: League
 }
 
-// Use shared CalendarDayData type, but keep local alias for compatibility
 type DayData = CalendarDayData
-
-interface PopupPosition {
-  x: number
-  y: number
-}
 
 export default function BeltCalendar({
   history,
@@ -575,10 +577,7 @@ export default function BeltCalendar({
       )}
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <CornerRivets />
     </div>
   )
 }

@@ -3,9 +3,11 @@
 import { useMemo } from 'react'
 import type { Game, FranchiseInfo, League } from '@/lib/types'
 import { findNextTitleBout } from '@/lib/beltTracker'
+import { parseDateLocal } from '@/lib/dateUtils'
 import { getTeamColor } from '@/lib/franchises'
 import { getCurrentStreak } from '@/lib/streakCalculator'
 import TeamLogo from './TeamLogo'
+import CornerRivets from './CornerRivets'
 
 interface NextGamePreviewProps {
   league: League
@@ -32,7 +34,7 @@ export default function NextGamePreview({
 
   // Format date for display
   const formatDate = (dateStr: string) => {
-    const date = new Date(dateStr + 'T12:00:00') // Add time to avoid timezone issues
+    const date = parseDateLocal(dateStr) // Add time to avoid timezone issues
     return date.toLocaleDateString('en-US', {
       weekday: 'short',
       month: 'short',
@@ -115,22 +117,7 @@ export default function NextGamePreview({
         </div>
 
         {/* Corner rivets for retro hardware look */}
-        <div
-          className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
+        <CornerRivets />
       </div>
     )
   }
@@ -251,22 +238,7 @@ export default function NextGamePreview({
       </div>
 
       {/* Corner rivets for retro hardware look */}
-      <div
-        className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-        aria-hidden="true"
-      />
+      <CornerRivets />
     </div>
   )
 }

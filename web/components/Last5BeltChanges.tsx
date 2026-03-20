@@ -2,8 +2,10 @@
 
 import { useMemo } from 'react'
 import type { BeltHistory, FranchiseInfo, League } from '@/lib/types'
+import { parseDateLocal } from '@/lib/dateUtils'
 import { getTeamColor } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
+import CornerRivets from './CornerRivets'
 
 interface Last5BeltChangesProps {
   league: League
@@ -17,7 +19,7 @@ export default function Last5BeltChanges({ league, history, franchises }: Last5B
   }, [history.changes])
 
   const formatDateShort = (dateStr: string) => {
-    const date = new Date(dateStr + 'T12:00:00')
+    const date = parseDateLocal(dateStr)
     return date.toLocaleDateString('en-US', { month: 'numeric', day: 'numeric' })
   }
 
@@ -43,10 +45,7 @@ export default function Last5BeltChanges({ league, history, franchises }: Last5B
         <div className="led-bar-bottom" />
 
         {/* Corner rivets for retro hardware look */}
-        <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-        <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+        <CornerRivets />
       </div>
     )
   }
@@ -120,10 +119,7 @@ export default function Last5BeltChanges({ league, history, franchises }: Last5B
       </div>
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <CornerRivets />
     </div>
   )
 }

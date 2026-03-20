@@ -1,11 +1,20 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import type { BeltHistory, FranchiseInfo, Game, League, CalendarDayData } from '@/lib/types'
+import type {
+  BeltHistory,
+  FranchiseInfo,
+  Game,
+  League,
+  CalendarDayData,
+  PopupPosition,
+} from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
+import { parseDateLocal } from '@/lib/dateUtils'
 import { getTeamColor, getTeamDisplayName, isSameFranchise } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
 import CalendarDayPopup from './CalendarDayPopup'
+import CornerRivets from './CornerRivets'
 import { getScheduleBreaks, type ScheduleBreak } from '@/lib/scheduleBreaks'
 
 interface DetailedCalendarProps {
@@ -16,12 +25,6 @@ interface DetailedCalendarProps {
   league: League
 }
 
-interface PopupPosition {
-  x: number
-  y: number
-}
-
-// Use shared CalendarDayData type, but keep local alias for compatibility
 type DayData = CalendarDayData
 
 export default function DetailedCalendar({
@@ -115,7 +118,7 @@ export default function DetailedCalendar({
           return gameYear === year
         })
         if (yearGames.length > 0) {
-          const dates = yearGames.map((g) => new Date(g.date + 'T12:00:00'))
+          const dates = yearGames.map((g) => parseDateLocal(g.date))
           const minDate = new Date(Math.min(...dates.map((d) => d.getTime())))
           const maxDate = new Date(Math.max(...dates.map((d) => d.getTime())))
           // Expand to start/end of month for cleaner calendar display
@@ -592,7 +595,7 @@ export default function DetailedCalendar({
                 (() => {
                   // Format dates for display
                   const formatDate = (dateStr: string) => {
-                    const date = new Date(dateStr + 'T12:00:00')
+                    const date = parseDateLocal(dateStr)
                     return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
                   }
                   const startFormatted = formatDate(breakInfo.startDate)
@@ -640,22 +643,7 @@ export default function DetailedCalendar({
       )}
 
       {/* Corner rivets for retro hardware look */}
-      <div
-        className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-        aria-hidden="true"
-      />
+      <CornerRivets />
     </div>
   )
 }

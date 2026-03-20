@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { ThemeSwitcher } from '@/components/ThemeSwitcher'
+import CornerRivets from '@/components/CornerRivets'
 
 export default function HomeClient() {
   return (
@@ -61,22 +62,7 @@ export default function HomeClient() {
         </Link>
 
         {/* Corner rivets for retro hardware look */}
-        <div
-          className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
+        <CornerRivets />
       </header>
 
       {/* League Selection */}
@@ -124,22 +110,7 @@ export default function HomeClient() {
             </div>
 
             {/* Corner rivets */}
-            <div
-              className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
+            <CornerRivets />
           </Link>
 
           {/* NBA Card */}
@@ -178,22 +149,7 @@ export default function HomeClient() {
             </div>
 
             {/* Corner rivets */}
-            <div
-              className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
+            <CornerRivets />
           </Link>
 
           {/* NHL Card */}
@@ -232,22 +188,7 @@ export default function HomeClient() {
             </div>
 
             {/* Corner rivets */}
-            <div
-              className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
+            <CornerRivets />
           </Link>
 
           {/* PWHL Card */}
@@ -286,22 +227,7 @@ export default function HomeClient() {
             </div>
 
             {/* Corner rivets */}
-            <div
-              className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-              aria-hidden="true"
-            />
+            <CornerRivets />
           </Link>
         </div>
       </nav>
@@ -315,22 +241,7 @@ export default function HomeClient() {
         </p>
 
         {/* Corner rivets */}
-        <div
-          className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50"
-          aria-hidden="true"
-        />
+        <CornerRivets />
       </footer>
     </article>
   )

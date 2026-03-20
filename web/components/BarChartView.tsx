@@ -1,6 +1,8 @@
 import type { TeamBeltStats, FranchiseInfo, Game, League } from '@/lib/types'
+import { createEmptyStats } from '@/lib/beltTracker'
 import { getTeamColor, getTeamDisplayName, dedupeByFranchise } from '@/lib/franchises'
 import TeamLogo from './TeamLogo'
+import CornerRivets from './CornerRivets'
 import { useState } from 'react'
 
 interface BarChartViewProps {
@@ -42,29 +44,11 @@ export default function BarChartView({
     const franchiseAbbrs = dedupeByFranchise(allTeams, franchises)
 
     allTeamsStats = franchiseAbbrs.map((franchiseAbbr) => {
-      return (
-        beltStatsMap.get(franchiseAbbr) || {
-          team: franchiseAbbr,
-          timesHeld: 0,
-          totalGames: 0,
-          longestReign: 0,
-          wins: 0,
-          losses: 0,
-        }
-      )
+      return beltStatsMap.get(franchiseAbbr) || createEmptyStats(franchiseAbbr)
     })
   } else {
     allTeamsStats = Array.from(allTeams).map((teamCode) => {
-      return (
-        beltStatsMap.get(teamCode) || {
-          team: teamCode,
-          timesHeld: 0,
-          totalGames: 0,
-          longestReign: 0,
-          wins: 0,
-          losses: 0,
-        }
-      )
+      return beltStatsMap.get(teamCode) || createEmptyStats(teamCode)
     })
   }
 
@@ -221,10 +205,7 @@ export default function BarChartView({
       </div>
 
       {/* Corner rivets for retro hardware look */}
-      <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 left-2 w-2 h-2 rounded-full bg-border opacity-50" />
-      <div className="absolute bottom-2 right-2 w-2 h-2 rounded-full bg-border opacity-50" />
+      <CornerRivets />
     </div>
   )
 }
