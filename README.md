@@ -6,7 +6,7 @@ Live at: **[whohasthebelt.com](https://whohasthebelt.com)** (also [buckle-up.ver
 
 ## Concept
 
-The lineal championship belt starts with the defending champion at the beginning of each season. When the belt holder loses a game, the belt passes to the winning team. This continues throughout the season, tracking which team holds the "belt" at any given time.
+The lineal championship belt starts with the defending champion at the beginning of each season. When the belt holder loses a game, the belt passes to the winning team. This continues throughout the season, tracking which team holds the "belt" at any given time.  See the [About](https://whohasthebelt.com/about) page for more details.
 
 ## Architecture
 
@@ -68,7 +68,7 @@ python scripts/ingest_pwhl.py
 ```
 
 ### Automated Updates
-Data is automatically updated nightly at 6:30 AM ET via GitHub Actions. See `.github/workflows/update-data.yml`.
+Data is automatically updated nightly at ~6:30 AM ET via GitHub Actions. See `.github/workflows/update-data.yml`.
 
 ## Data Format
 
@@ -84,8 +84,7 @@ Season data is stored as JSON in `data/{league}/{season}.json`:
       "homeTeam": "BOS",
       "awayTeam": "MIA",
       "homeScore": 107,
-      "awayScore": 120,
-      "isPlayoffs": false
+      "awayScore": 120
     }
   ]
 }
@@ -109,7 +108,7 @@ The project has 174 tests covering:
 - League health checks (data validation)
 
 ### Tech Stack
-- **Frontend**: Next.js 15, React, TypeScript, Tailwind CSS
+- **Frontend**: Next.js 16, React 19, TypeScript, Tailwind CSS
 - **Testing**: Vitest
 - **Deployment**: Vercel (static export)
 - **CI/CD**: GitHub Actions
