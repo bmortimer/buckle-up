@@ -7349,43 +7349,43 @@
       "date": "2026-03-20",
       "homeTeam": "BKN",
       "awayTeam": "NYK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 92,
+      "awayScore": 93
     },
     {
       "date": "2026-03-20",
       "homeTeam": "DET",
       "awayTeam": "GSW",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 115,
+      "awayScore": 101
     },
     {
       "date": "2026-03-20",
       "homeTeam": "HOU",
       "awayTeam": "ATL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 117,
+      "awayScore": 95
     },
     {
       "date": "2026-03-20",
       "homeTeam": "MEM",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 112,
+      "awayScore": 117
     },
     {
       "date": "2026-03-20",
       "homeTeam": "MIN",
       "awayTeam": "POR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 104,
+      "awayScore": 108
     },
     {
       "date": "2026-03-20",
       "homeTeam": "DEN",
       "awayTeam": "TOR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 121,
+      "awayScore": 115
     },
     {
       "date": "2026-03-21",
@@ -8643,7 +8643,7 @@
   ],
   "metadata": {
     "total_games": 1234,
-    "ingested_at": "2026-03-20T11:51:11.475790",
+    "ingested_at": "2026-03-21T11:43:06.686825",
     "source": "basketball-reference.com"
   }
 }
