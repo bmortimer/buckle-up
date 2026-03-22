@@ -580,15 +580,15 @@
       "date": "2026-03-21",
       "homeTeam": "VAN",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 3
     },
     {
       "date": "2026-03-21",
       "homeTeam": "BOS",
       "awayTeam": "SEA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "date": "2026-03-22",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-03-20T11:51:36.807607"
+    "ingested_at": "2026-03-22T11:44:22.817740"
   }
 }

@@ -7391,71 +7391,71 @@
       "date": "2026-03-21",
       "homeTeam": "WAS",
       "awayTeam": "OKC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 111,
+      "awayScore": 132
     },
     {
       "date": "2026-03-21",
       "homeTeam": "CHA",
       "awayTeam": "MEM",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "date": "2026-03-21",
-      "homeTeam": "ORL",
-      "awayTeam": "LAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 124,
+      "awayScore": 101
     },
     {
       "date": "2026-03-21",
       "homeTeam": "NOP",
       "awayTeam": "CLE",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 106,
+      "awayScore": 111
+    },
+    {
+      "date": "2026-03-21",
+      "homeTeam": "ORL",
+      "awayTeam": "LAL",
+      "homeScore": 104,
+      "awayScore": 105
     },
     {
       "date": "2026-03-21",
       "homeTeam": "ATL",
       "awayTeam": "GSW",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 126,
+      "awayScore": 110
     },
     {
       "date": "2026-03-21",
       "homeTeam": "HOU",
       "awayTeam": "MIA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 123,
+      "awayScore": 122
     },
     {
       "date": "2026-03-21",
       "homeTeam": "SAS",
       "awayTeam": "IND",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 134,
+      "awayScore": 119
     },
     {
       "date": "2026-03-21",
       "homeTeam": "DAL",
       "awayTeam": "LAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 131,
+      "awayScore": 138
     },
     {
       "date": "2026-03-21",
       "homeTeam": "UTA",
       "awayTeam": "PHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 116,
+      "awayScore": 126
     },
     {
       "date": "2026-03-21",
       "homeTeam": "PHX",
       "awayTeam": "MIL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 105,
+      "awayScore": 108
     },
     {
       "date": "2026-03-22",
@@ -8643,7 +8643,7 @@
   ],
   "metadata": {
     "total_games": 1234,
-    "ingested_at": "2026-03-21T11:43:06.686825",
+    "ingested_at": "2026-03-22T11:43:57.692937",
     "source": "basketball-reference.com"
   }
 }
