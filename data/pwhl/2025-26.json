@@ -594,8 +594,8 @@
       "date": "2026-03-22",
       "homeTeam": "OTT",
       "awayTeam": "MTL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "date": "2026-03-24",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-03-22T11:44:22.817740"
+    "ingested_at": "2026-03-23T12:00:37.045749"
   }
 }

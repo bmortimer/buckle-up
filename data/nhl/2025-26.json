@@ -7769,64 +7769,64 @@
       "date": "2026-03-22",
       "homeTeam": "ANA",
       "awayTeam": "BUF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 6,
+      "awayScore": 5
     },
     {
       "date": "2026-03-22",
       "homeTeam": "CGY",
       "awayTeam": "TBL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 3
     },
     {
       "date": "2026-03-22",
       "homeTeam": "CHI",
       "awayTeam": "NSH",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-03-22",
       "homeTeam": "DAL",
       "awayTeam": "VEG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-03-22",
       "homeTeam": "NYI",
       "awayTeam": "CBJ",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 0
     },
     {
       "date": "2026-03-22",
       "homeTeam": "NYR",
       "awayTeam": "WPG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-03-22",
       "homeTeam": "PIT",
       "awayTeam": "CAR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 5
     },
     {
       "date": "2026-03-22",
       "homeTeam": "UTA",
       "awayTeam": "LAK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 3
     },
     {
       "date": "2026-03-22",
       "homeTeam": "WSH",
       "awayTeam": "COL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-03-23",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-03-22T11:44:10.229484"
+    "ingested_at": "2026-03-23T12:00:24.210665"
   }
 }
