@@ -7832,8 +7832,8 @@
       "date": "2026-03-23",
       "homeTeam": "NYR",
       "awayTeam": "OTT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "date": "2026-03-24",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-03-23T12:00:24.210665"
+    "ingested_at": "2026-03-24T12:02:07.883502"
   }
 }
