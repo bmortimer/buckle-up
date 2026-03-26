@@ -7944,15 +7944,15 @@
       "date": "2026-03-25",
       "homeTeam": "BUF",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 4
     },
     {
       "date": "2026-03-25",
       "homeTeam": "TOR",
       "awayTeam": "NYR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 3
     },
     {
       "date": "2026-03-26",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-03-25T12:01:14.423293"
+    "ingested_at": "2026-03-26T12:06:04.517615"
   }
 }
