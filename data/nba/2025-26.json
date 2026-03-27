@@ -7678,22 +7678,22 @@
       "date": "2026-03-26",
       "homeTeam": "CHA",
       "awayTeam": "NYK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 114,
+      "awayScore": 103
     },
     {
       "date": "2026-03-26",
       "homeTeam": "DET",
       "awayTeam": "NOP",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 129,
+      "awayScore": 108
     },
     {
       "date": "2026-03-26",
       "homeTeam": "ORL",
       "awayTeam": "SAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 121,
+      "awayScore": 117
     },
     {
       "date": "2026-03-27",
@@ -8643,7 +8643,7 @@
   ],
   "metadata": {
     "total_games": 1234,
-    "ingested_at": "2026-03-26T12:05:51.953775",
+    "ingested_at": "2026-03-27T12:01:13.078105",
     "source": "basketball-reference.com"
   }
 }
