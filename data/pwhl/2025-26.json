@@ -622,8 +622,8 @@
       "date": "2026-03-27",
       "homeTeam": "TOR",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 4
     },
     {
       "date": "2026-03-28",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-03-26T12:06:17.397747"
+    "ingested_at": "2026-03-28T11:50:16.500358"
   }
 }
