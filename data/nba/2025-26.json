@@ -7811,64 +7811,64 @@
       "date": "2026-03-29",
       "homeTeam": "MIL",
       "awayTeam": "LAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 113,
+      "awayScore": 127
     },
     {
       "date": "2026-03-29",
       "homeTeam": "IND",
       "awayTeam": "MIA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 135,
+      "awayScore": 118
     },
     {
       "date": "2026-03-29",
       "homeTeam": "BKN",
       "awayTeam": "SAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 116,
+      "awayScore": 99
     },
     {
       "date": "2026-03-29",
       "homeTeam": "CHA",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "date": "2026-03-29",
-      "homeTeam": "TOR",
-      "awayTeam": "ORL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 99,
+      "awayScore": 114
     },
     {
       "date": "2026-03-29",
       "homeTeam": "POR",
       "awayTeam": "WAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 123,
+      "awayScore": 88
+    },
+    {
+      "date": "2026-03-29",
+      "homeTeam": "TOR",
+      "awayTeam": "ORL",
+      "homeScore": 139,
+      "awayScore": 87
     },
     {
       "date": "2026-03-29",
       "homeTeam": "NOP",
       "awayTeam": "HOU",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 102,
+      "awayScore": 134
     },
     {
       "date": "2026-03-29",
       "homeTeam": "OKC",
       "awayTeam": "NYK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 111,
+      "awayScore": 100
     },
     {
       "date": "2026-03-29",
       "homeTeam": "DEN",
       "awayTeam": "GSW",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 116,
+      "awayScore": 93
     },
     {
       "date": "2026-03-30",
@@ -8643,7 +8643,7 @@
   ],
   "metadata": {
     "total_games": 1234,
-    "ingested_at": "2026-03-29T11:50:31.832754",
+    "ingested_at": "2026-03-30T12:08:54.242529",
     "source": "basketball-reference.com"
   }
 }
