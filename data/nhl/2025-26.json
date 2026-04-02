@@ -8315,22 +8315,22 @@
       "date": "2026-04-01",
       "homeTeam": "COL",
       "awayTeam": "VAN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 6,
+      "awayScore": 8
     },
     {
       "date": "2026-04-01",
       "homeTeam": "LAK",
       "awayTeam": "STL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "date": "2026-04-01",
       "homeTeam": "SJS",
       "awayTeam": "ANA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 3
     },
     {
       "date": "2026-04-02",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-04-01T12:07:07.107373"
+    "ingested_at": "2026-04-02T12:04:16.546844"
   }
 }
