@@ -8434,15 +8434,15 @@
       "date": "2026-04-03",
       "homeTeam": "ANA",
       "awayTeam": "STL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 6
     },
     {
       "date": "2026-04-03",
       "homeTeam": "NYI",
       "awayTeam": "PHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 4
     },
     {
       "date": "2026-04-04",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-04-03T11:58:26.121461"
+    "ingested_at": "2026-04-04T11:51:16.015757"
   }
 }
