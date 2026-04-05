@@ -685,15 +685,15 @@
       "date": "2026-04-04",
       "homeTeam": "MIN",
       "awayTeam": "VAN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 6,
+      "awayScore": 5
     },
     {
       "date": "2026-04-04",
       "homeTeam": "NYS",
       "awayTeam": "SEA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "date": "2026-04-07",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-04-04T11:51:28.596172"
+    "ingested_at": "2026-04-05T11:51:24.592641"
   }
 }

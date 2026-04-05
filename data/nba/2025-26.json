@@ -8154,22 +8154,22 @@
       "date": "2026-04-04",
       "homeTeam": "MIA",
       "awayTeam": "WAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 152,
+      "awayScore": 136
     },
     {
       "date": "2026-04-04",
       "homeTeam": "DEN",
       "awayTeam": "SAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 136,
+      "awayScore": 134
     },
     {
       "date": "2026-04-04",
       "homeTeam": "PHI",
       "awayTeam": "DET",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 93,
+      "awayScore": 116
     },
     {
       "date": "2026-04-05",
@@ -8657,7 +8657,7 @@
   ],
   "metadata": {
     "total_games": 1236,
-    "ingested_at": "2026-04-04T11:51:03.539090",
+    "ingested_at": "2026-04-05T11:50:59.411930",
     "source": "basketball-reference.com"
   }
 }
