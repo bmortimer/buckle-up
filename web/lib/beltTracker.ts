@@ -346,7 +346,11 @@ export function trackAllSeasons(
     changes: allChanges,
     summary: {
       totalGames,
-      totalChanges: allChanges.length,
+      totalChanges: allChanges.filter(
+        (c) =>
+          c.reason === 'loss' ||
+          (c.reason === 'start' && c.fromTeam !== c.toTeam)
+      ).length,
       teams,
       currentHolder: finalHolder,
     },
