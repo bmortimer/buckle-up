@@ -46,7 +46,8 @@ body {
     /* Accent colors */
     --led-red: 0 72% 51%;
     --led-green: 160 84% 39%;
-    --led-amber: 45 100% 51%;
+    --led-amber: 38 100% 50%;
+    --led-purple: 270 70% 55%;
   }
 
   .dark {
@@ -66,9 +67,10 @@ body {
     --input: 217 33% 18%;
     --ring: 45 100% 51%;
 
-    --led-red: 0 80% 55%;
+    --led-red: 0 80% 58%;
     --led-green: 160 85% 45%;
     --led-amber: 45 100% 55%;
+    --led-purple: 270 75% 65%;
   }
 }
 

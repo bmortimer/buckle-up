@@ -79,15 +79,8 @@ export default function Last5BeltChanges({ league, history, franchises }: Last5B
                 {/* Team */}
                 <div
                   className={`flex flex-col items-center gap-1 sm:gap-1.5 px-2 py-1.5 rounded ${
-                    isEnd ? 'border-2 border-green-500' : ''
+                    isEnd ? 'border-2 border-green-500 shadow-[0_0_6px] shadow-green-500/40' : ''
                   }`}
-                  style={
-                    isEnd
-                      ? {
-                          boxShadow: '0 0 6px rgba(34, 197, 94, 0.4)',
-                        }
-                      : undefined
-                  }
                 >
                   <div className="relative">
                     <TeamLogo teamCode={team} franchises={franchises} league={league} size="sm" />

@@ -28,6 +28,22 @@ const config: Config = {
         gold: '#FFD700',
         silver: '#C0C0C0',
         bronze: '#CD7F32',
+        amber: {
+          400: 'hsl(var(--led-amber) / 0.8)',
+          500: 'hsl(var(--led-amber))',
+        },
+        red: {
+          400: 'hsl(var(--led-red) / 0.8)',
+          500: 'hsl(var(--led-red))',
+        },
+        green: {
+          400: 'hsl(var(--led-green) / 0.8)',
+          500: 'hsl(var(--led-green))',
+        },
+        purple: {
+          400: 'hsl(var(--led-purple) / 0.8)',
+          500: 'hsl(var(--led-purple))',
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
