@@ -8707,22 +8707,22 @@
       "date": "2026-04-08",
       "homeTeam": "NYR",
       "awayTeam": "BUF",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 5
     },
     {
       "date": "2026-04-08",
       "homeTeam": "SJS",
       "awayTeam": "EDM",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 5
     },
     {
       "date": "2026-04-08",
       "homeTeam": "TOR",
       "awayTeam": "WSH",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 4
     },
     {
       "date": "2026-04-09",
@@ -9189,6 +9189,6 @@
   ],
   "metadata": {
     "total_games": 1312,
-    "ingested_at": "2026-04-08T12:07:31.239995"
+    "ingested_at": "2026-04-09T12:08:57.435329"
   }
 }
