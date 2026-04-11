@@ -845,7 +845,7 @@ describe('findNextGameForTeam', () => {
         awayTeam: 'MIN',
         homeScore: 95,
         awayScore: 87,
-    
+
       },
       {
         date: '2025-05-15',
@@ -853,11 +853,44 @@ describe('findNextGameForTeam', () => {
         awayTeam: 'MIN',
         homeScore: null,
         awayScore: null,
-    
+
       },
     ]
 
     const nextGame = findNextGameForTeam(mixedGames, 'NYL', wnbaFranchises)
     expect(nextGame?.date).toBe('2025-05-15')
+  })
+
+  it('should skip postponed games (unplayed games before last played date)', () => {
+    const games: Game[] = [
+      // Postponed game - no score but date is before later played games
+      {
+        date: '2025-03-18',
+        homeTeam: 'LVA',
+        awayTeam: 'NYL',
+        homeScore: null,
+        awayScore: null,
+      },
+      // Played game after the postponed date
+      {
+        date: '2025-04-10',
+        homeTeam: 'MIN',
+        awayTeam: 'CON',
+        homeScore: 80,
+        awayScore: 75,
+      },
+      // Real next game
+      {
+        date: '2025-04-12',
+        homeTeam: 'NYL',
+        awayTeam: 'MIN',
+        homeScore: null,
+        awayScore: null,
+      },
+    ]
+
+    const nextGame = findNextGameForTeam(games, 'NYL', wnbaFranchises)
+    expect(nextGame?.date).toBe('2025-04-12')
+    expect(nextGame?.homeTeam).toBe('NYL')
   })
 })

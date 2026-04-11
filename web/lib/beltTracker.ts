@@ -192,12 +192,26 @@ export function findNextGameForTeam(
   team: string,
   franchises: FranchiseInfo[]
 ): Game | null {
+  // Find the latest completed game date to detect postponed games
+  // (unplayed games before this date are postponed, not upcoming)
+  let lastPlayedDate = ''
+  for (const game of games) {
+    if (isGameCompleted(game) && game.date > lastPlayedDate) {
+      lastPlayedDate = game.date
+    }
+  }
+
   // Sort games by date to find the next one
   const sortedGames = [...games].sort((a, b) => a.date.localeCompare(b.date))
 
   for (const game of sortedGames) {
     // Skip completed games
     if (isGameCompleted(game)) {
+      continue
+    }
+
+    // Skip unplayed games before the last played date (postponed/cancelled)
+    if (game.date <= lastPlayedDate) {
       continue
     }
 
