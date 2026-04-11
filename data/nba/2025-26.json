@@ -4749,13 +4749,6 @@
       "awayScore": 147
     },
     {
-      "date": "2026-01-24",
-      "homeTeam": "MIN",
-      "awayTeam": "GSW",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "date": "2026-01-25",
       "homeTeam": "DET",
       "awayTeam": "SAC",
@@ -4796,20 +4789,6 @@
       "awayTeam": "BKN",
       "homeScore": 126,
       "awayScore": 89
-    },
-    {
-      "date": "2026-01-25",
-      "homeTeam": "MEM",
-      "awayTeam": "DEN",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "date": "2026-01-25",
-      "homeTeam": "MIL",
-      "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
     },
     {
       "date": "2026-01-26",
@@ -7283,13 +7262,6 @@
       "awayScore": 124
     },
     {
-      "date": "2026-03-18",
-      "homeTeam": "MEM",
-      "awayTeam": "NYK",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
       "date": "2026-03-19",
       "homeTeam": "CHA",
       "awayTeam": "ORL",
@@ -8037,13 +8009,6 @@
       "awayTeam": "SAS",
       "homeScore": 113,
       "awayScore": 127
-    },
-    {
-      "date": "2026-04-01",
-      "homeTeam": "MEM",
-      "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
     },
     {
       "date": "2026-04-02",
