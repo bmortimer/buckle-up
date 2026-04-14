@@ -830,21 +830,21 @@
     },
     {
       "date": "2026-04-25",
-      "homeTeam": "SEA",
-      "awayTeam": "MTL",
+      "homeTeam": "VAN",
+      "awayTeam": "MIN",
       "homeScore": null,
       "awayScore": null
     },
     {
       "date": "2026-04-25",
-      "homeTeam": "VAN",
-      "awayTeam": "MIN",
+      "homeTeam": "SEA",
+      "awayTeam": "MTL",
       "homeScore": null,
       "awayScore": null
     }
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-04-12T11:54:33.681527"
+    "ingested_at": "2026-04-14T12:12:41.249207"
   }
 }
