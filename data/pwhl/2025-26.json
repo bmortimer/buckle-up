@@ -741,8 +741,8 @@
       "date": "2026-04-14",
       "homeTeam": "VAN",
       "awayTeam": "SEA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "date": "2026-04-15",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-04-14T12:12:41.249207"
+    "ingested_at": "2026-04-15T12:10:35.739365"
   }
 }

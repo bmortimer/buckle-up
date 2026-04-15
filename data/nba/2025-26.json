@@ -8033,17 +8033,17 @@
     },
     {
       "date": "2026-04-02",
-      "homeTeam": "POR",
-      "awayTeam": "NOP",
-      "homeScore": 118,
-      "awayScore": 106
-    },
-    {
-      "date": "2026-04-02",
       "homeTeam": "GSW",
       "awayTeam": "CLE",
       "homeScore": 111,
       "awayScore": 118
+    },
+    {
+      "date": "2026-04-02",
+      "homeTeam": "POR",
+      "awayTeam": "NOP",
+      "homeScore": 118,
+      "awayScore": 106
     },
     {
       "date": "2026-04-02",
@@ -8082,6 +8082,13 @@
     },
     {
       "date": "2026-04-03",
+      "homeTeam": "HOU",
+      "awayTeam": "UTA",
+      "homeScore": 140,
+      "awayScore": 106
+    },
+    {
+      "date": "2026-04-03",
       "homeTeam": "MIL",
       "awayTeam": "BOS",
       "homeScore": 101,
@@ -8093,13 +8100,6 @@
       "awayTeam": "TOR",
       "homeScore": 96,
       "awayScore": 128
-    },
-    {
-      "date": "2026-04-03",
-      "homeTeam": "HOU",
-      "awayTeam": "UTA",
-      "homeScore": 140,
-      "awayScore": 106
     },
     {
       "date": "2026-04-03",
@@ -8138,16 +8138,23 @@
     },
     {
       "date": "2026-04-05",
-      "homeTeam": "MIL",
-      "awayTeam": "MEM",
-      "homeScore": 131,
+      "homeTeam": "BKN",
+      "awayTeam": "WAS",
+      "homeScore": 121,
       "awayScore": 115
     },
     {
       "date": "2026-04-05",
-      "homeTeam": "BKN",
-      "awayTeam": "WAS",
-      "homeScore": 121,
+      "homeTeam": "CHI",
+      "awayTeam": "PHX",
+      "homeScore": 110,
+      "awayScore": 120
+    },
+    {
+      "date": "2026-04-05",
+      "homeTeam": "MIL",
+      "awayTeam": "MEM",
+      "homeScore": 131,
       "awayScore": 115
     },
     {
@@ -8156,13 +8163,6 @@
       "awayTeam": "TOR",
       "homeScore": 115,
       "awayScore": 101
-    },
-    {
-      "date": "2026-04-05",
-      "homeTeam": "CHI",
-      "awayTeam": "PHX",
-      "homeScore": 110,
-      "awayScore": 120
     },
     {
       "date": "2026-04-05",
@@ -8250,17 +8250,17 @@
     },
     {
       "date": "2026-04-07",
-      "homeTeam": "WAS",
-      "awayTeam": "CHI",
-      "homeScore": 98,
-      "awayScore": 129
-    },
-    {
-      "date": "2026-04-07",
       "homeTeam": "IND",
       "awayTeam": "MIN",
       "homeScore": 104,
       "awayScore": 124
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "WAS",
+      "awayTeam": "CHI",
+      "homeScore": 98,
+      "awayScore": 129
     },
     {
       "date": "2026-04-07",
@@ -8278,17 +8278,17 @@
     },
     {
       "date": "2026-04-07",
-      "homeTeam": "NOP",
-      "awayTeam": "UTA",
-      "homeScore": 156,
-      "awayScore": 137
-    },
-    {
-      "date": "2026-04-07",
       "homeTeam": "BOS",
       "awayTeam": "CHA",
       "homeScore": 113,
       "awayScore": 102
+    },
+    {
+      "date": "2026-04-07",
+      "homeTeam": "NOP",
+      "awayTeam": "UTA",
+      "homeScore": 156,
+      "awayScore": 137
     },
     {
       "date": "2026-04-07",
@@ -8320,13 +8320,6 @@
     },
     {
       "date": "2026-04-08",
-      "homeTeam": "CLE",
-      "awayTeam": "ATL",
-      "homeScore": 122,
-      "awayScore": 116
-    },
-    {
-      "date": "2026-04-08",
       "homeTeam": "DET",
       "awayTeam": "MIL",
       "homeScore": 137,
@@ -8338,6 +8331,13 @@
       "awayTeam": "MIN",
       "homeScore": 132,
       "awayScore": 120
+    },
+    {
+      "date": "2026-04-08",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "homeScore": 122,
+      "awayScore": 116
     },
     {
       "date": "2026-04-08",
@@ -8383,17 +8383,17 @@
     },
     {
       "date": "2026-04-09",
-      "homeTeam": "NYK",
-      "awayTeam": "BOS",
-      "homeScore": 112,
-      "awayScore": 106
-    },
-    {
-      "date": "2026-04-09",
       "homeTeam": "BKN",
       "awayTeam": "IND",
       "homeScore": 94,
       "awayScore": 123
+    },
+    {
+      "date": "2026-04-09",
+      "homeTeam": "NYK",
+      "awayTeam": "BOS",
+      "homeScore": 112,
+      "awayScore": 106
     },
     {
       "date": "2026-04-09",
@@ -8411,6 +8411,13 @@
     },
     {
       "date": "2026-04-10",
+      "homeTeam": "ATL",
+      "awayTeam": "CLE",
+      "homeScore": 124,
+      "awayScore": 102
+    },
+    {
+      "date": "2026-04-10",
       "homeTeam": "WAS",
       "awayTeam": "MIA",
       "homeScore": 117,
@@ -8425,10 +8432,10 @@
     },
     {
       "date": "2026-04-10",
-      "homeTeam": "ATL",
-      "awayTeam": "CLE",
-      "homeScore": 124,
-      "awayScore": 102
+      "homeTeam": "IND",
+      "awayTeam": "PHI",
+      "homeScore": 94,
+      "awayScore": 105
     },
     {
       "date": "2026-04-10",
@@ -8436,13 +8443,6 @@
       "awayTeam": "NOP",
       "homeScore": 144,
       "awayScore": 118
-    },
-    {
-      "date": "2026-04-10",
-      "homeTeam": "IND",
-      "awayTeam": "PHI",
-      "homeScore": 94,
-      "awayScore": 105
     },
     {
       "date": "2026-04-10",
@@ -8516,6 +8516,13 @@
     },
     {
       "date": "2026-04-12",
+      "homeTeam": "BOS",
+      "awayTeam": "ORL",
+      "homeScore": 113,
+      "awayScore": 108
+    },
+    {
+      "date": "2026-04-12",
       "homeTeam": "CLE",
       "awayTeam": "WAS",
       "homeScore": 130,
@@ -8548,13 +8555,6 @@
       "awayTeam": "ATL",
       "homeScore": 143,
       "awayScore": 117
-    },
-    {
-      "date": "2026-04-12",
-      "homeTeam": "BOS",
-      "awayTeam": "ORL",
-      "homeScore": 113,
-      "awayScore": 108
     },
     {
       "date": "2026-04-12",
@@ -8618,11 +8618,25 @@
       "awayTeam": "CHI",
       "homeScore": 149,
       "awayScore": 128
+    },
+    {
+      "date": "2026-04-14",
+      "homeTeam": "CHA",
+      "awayTeam": "MIA",
+      "homeScore": 127,
+      "awayScore": 126
+    },
+    {
+      "date": "2026-04-14",
+      "homeTeam": "PHX",
+      "awayTeam": "POR",
+      "homeScore": 110,
+      "awayScore": 114
     }
   ],
   "metadata": {
-    "total_games": 1231,
-    "ingested_at": "2026-04-14T12:12:16.275967",
+    "total_games": 1233,
+    "ingested_at": "2026-04-15T12:10:10.535599",
     "source": "basketball-reference.com"
   }
 }
