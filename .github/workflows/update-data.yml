@@ -31,21 +31,33 @@ jobs:
             exit 0
           fi
 
-          # NBA/NHL/PWHL seasons run October through June - always update during these months
-          if [ "$CURRENT_MONTH" -ge 10 ] || [ "$CURRENT_MONTH" -le 6 ]; then
-            echo "NBA/NHL/PWHL season months (Oct-Jun) - running update"
-            echo "run=true" >> $GITHUB_OUTPUT
-            exit 0
+          # Check if any league is in its regular season
+          # NBA/NHL: Oct-Apr, PWHL: Nov-May, WNBA: May-Oct
+          # Combined coverage: every month except possibly none — run if any league active
+          ANY_ACTIVE=false
+
+          # NBA/NHL regular season: October through April
+          if [ "$CURRENT_MONTH" -ge 10 ] || [ "$CURRENT_MONTH" -le 4 ]; then
+            ANY_ACTIVE=true
           fi
 
-          # WNBA season runs May through October - always update during these months
+          # PWHL season: November through April
+          if [ "$CURRENT_MONTH" -ge 11 ] || [ "$CURRENT_MONTH" -le 4 ]; then
+            ANY_ACTIVE=true
+          fi
+
+          # WNBA season: May through October
           if [ "$CURRENT_MONTH" -ge 5 ] && [ "$CURRENT_MONTH" -le 10 ]; then
-            echo "WNBA season months (May-Oct) - running update"
+            ANY_ACTIVE=true
+          fi
+
+          if [ "$ANY_ACTIVE" = true ]; then
+            echo "At least one league in season (month $CURRENT_MONTH) - running update"
             echo "run=true" >> $GITHUB_OUTPUT
             exit 0
           fi
 
-          echo "No unplayed games and not a monthly update day - skipping"
+          echo "No leagues in season and not a monthly update day - skipping"
           echo "run=false" >> $GITHUB_OUTPUT
 
       - name: Set up Python
@@ -73,35 +85,45 @@ jobs:
       - name: Update NBA data
         if: steps.should-run.outputs.run == 'true'
         run: |
-          # Run the update script (auto-detects current season and updates sitemap if changed)
-          # Note: Script exits with 0 on success or no changes, 1 on error
-          if ! python scripts/update_nba.py; then
-            echo "⚠️  NBA update failed - please check logs"
-            exit 1
+          # NBA regular season runs Oct-Apr - skip during playoffs
+          CURRENT_MONTH=$(date +%-m)
+          if [ "$CURRENT_MONTH" -ge 10 ] || [ "$CURRENT_MONTH" -le 4 ]; then
+            echo "NBA regular season months (Oct-Apr) - running update"
+            if ! python scripts/update_nba.py; then
+              echo "⚠️  NBA update failed - please check logs"
+              exit 1
+            fi
+          else
+            echo "Not NBA regular season - skipping"
           fi
 
       - name: Update NHL data
         if: steps.should-run.outputs.run == 'true'
         run: |
-          # Add delay before NHL fetch to be respectful to hockey-reference.com
-          # (similar domain to basketball-reference used by WNBA script)
-          echo "Waiting 10s before NHL fetch to respect rate limits..."
-          sleep 10
+          # NHL regular season runs Oct-Apr - skip during playoffs
+          CURRENT_MONTH=$(date +%-m)
+          if [ "$CURRENT_MONTH" -ge 10 ] || [ "$CURRENT_MONTH" -le 4 ]; then
+            echo "NHL regular season months (Oct-Apr) - running update"
 
-          # Run the update script (auto-detects current season and updates sitemap if changed)
-          # Note: Script exits with 0 on success or no changes, 1 on error
-          if ! python scripts/update_nhl.py; then
-            echo "⚠️  NHL update failed - please check logs"
-            exit 1
+            # Add delay before NHL fetch to be respectful to hockey-reference.com
+            echo "Waiting 10s before NHL fetch to respect rate limits..."
+            sleep 10
+
+            if ! python scripts/update_nhl.py; then
+              echo "⚠️  NHL update failed - please check logs"
+              exit 1
+            fi
+          else
+            echo "Not NHL regular season - skipping"
           fi
 
       - name: Update PWHL data
         if: steps.should-run.outputs.run == 'true'
         run: |
-          # PWHL season runs Nov-May - check if we should run
+          # PWHL season runs Nov-Apr - check if we should run
           CURRENT_MONTH=$(date +%-m)
-          if [ "$CURRENT_MONTH" -ge 11 ] || [ "$CURRENT_MONTH" -le 5 ]; then
-            echo "PWHL season months (Nov-May) - running update"
+          if [ "$CURRENT_MONTH" -ge 11 ] || [ "$CURRENT_MONTH" -le 4 ]; then
+            echo "PWHL season months (Nov-Apr) - running update"
 
             # Add delay to be respectful to HockeyTech API
             echo "Waiting 10s before PWHL fetch..."

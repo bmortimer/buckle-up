@@ -49,13 +49,13 @@ export default function NextGamePreview({
   if (!nextGame) {
     const currentYear = new Date().getFullYear()
     const seasonYear =
-      league === 'nba'
-        ? `${currentYear}-${(currentYear + 1).toString().slice(2)}`
-        : currentYear.toString()
+      league === 'wnba'
+        ? currentYear.toString()
+        : `${currentYear}-${(currentYear + 1).toString().slice(2)}`
     const wikiLink =
       league === 'wnba'
         ? `https://en.wikipedia.org/wiki/${currentYear}_WNBA_season`
-        : `https://en.wikipedia.org/wiki/${currentYear}-${(currentYear + 1).toString().slice(2)}_NBA_season`
+        : `https://en.wikipedia.org/wiki/${seasonYear}_${leagueUpper}_season`
 
     // Custom message for WNBA due to CBA negotiations
     const messageText =
