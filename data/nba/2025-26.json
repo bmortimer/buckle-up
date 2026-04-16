@@ -8012,17 +8012,17 @@
     },
     {
       "date": "2026-04-02",
-      "homeTeam": "DET",
-      "awayTeam": "MIN",
-      "homeScore": 113,
-      "awayScore": 108
-    },
-    {
-      "date": "2026-04-02",
       "homeTeam": "CHA",
       "awayTeam": "PHX",
       "homeScore": 127,
       "awayScore": 107
+    },
+    {
+      "date": "2026-04-02",
+      "homeTeam": "DET",
+      "awayTeam": "MIN",
+      "homeScore": 113,
+      "awayScore": 108
     },
     {
       "date": "2026-04-02",
@@ -8089,17 +8089,17 @@
     },
     {
       "date": "2026-04-03",
-      "homeTeam": "MIL",
-      "awayTeam": "BOS",
-      "homeScore": 101,
-      "awayScore": 133
-    },
-    {
-      "date": "2026-04-03",
       "homeTeam": "MEM",
       "awayTeam": "TOR",
       "homeScore": 96,
       "awayScore": 128
+    },
+    {
+      "date": "2026-04-03",
+      "homeTeam": "MIL",
+      "awayTeam": "BOS",
+      "homeScore": 101,
+      "awayScore": 133
     },
     {
       "date": "2026-04-03",
@@ -8138,6 +8138,13 @@
     },
     {
       "date": "2026-04-05",
+      "homeTeam": "BOS",
+      "awayTeam": "TOR",
+      "homeScore": 115,
+      "awayScore": 101
+    },
+    {
+      "date": "2026-04-05",
       "homeTeam": "BKN",
       "awayTeam": "WAS",
       "homeScore": 121,
@@ -8156,13 +8163,6 @@
       "awayTeam": "MEM",
       "homeScore": 131,
       "awayScore": 115
-    },
-    {
-      "date": "2026-04-05",
-      "homeTeam": "BOS",
-      "awayTeam": "TOR",
-      "homeScore": 115,
-      "awayScore": 101
     },
     {
       "date": "2026-04-05",
@@ -8320,6 +8320,13 @@
     },
     {
       "date": "2026-04-08",
+      "homeTeam": "CLE",
+      "awayTeam": "ATL",
+      "homeScore": 122,
+      "awayScore": 116
+    },
+    {
+      "date": "2026-04-08",
       "homeTeam": "DET",
       "awayTeam": "MIL",
       "homeScore": 137,
@@ -8331,13 +8338,6 @@
       "awayTeam": "MIN",
       "homeScore": 132,
       "awayScore": 120
-    },
-    {
-      "date": "2026-04-08",
-      "homeTeam": "CLE",
-      "awayTeam": "ATL",
-      "homeScore": 122,
-      "awayScore": 116
     },
     {
       "date": "2026-04-08",
@@ -8418,6 +8418,13 @@
     },
     {
       "date": "2026-04-10",
+      "homeTeam": "CHA",
+      "awayTeam": "DET",
+      "homeScore": 100,
+      "awayScore": 118
+    },
+    {
+      "date": "2026-04-10",
       "homeTeam": "WAS",
       "awayTeam": "MIA",
       "homeScore": 117,
@@ -8425,9 +8432,9 @@
     },
     {
       "date": "2026-04-10",
-      "homeTeam": "CHA",
-      "awayTeam": "DET",
-      "homeScore": 100,
+      "homeTeam": "BOS",
+      "awayTeam": "NOP",
+      "homeScore": 144,
       "awayScore": 118
     },
     {
@@ -8436,13 +8443,6 @@
       "awayTeam": "PHI",
       "homeScore": 94,
       "awayScore": 105
-    },
-    {
-      "date": "2026-04-10",
-      "homeTeam": "BOS",
-      "awayTeam": "NOP",
-      "homeScore": 144,
-      "awayScore": 118
     },
     {
       "date": "2026-04-10",
@@ -8530,24 +8530,10 @@
     },
     {
       "date": "2026-04-12",
-      "homeTeam": "TOR",
-      "awayTeam": "BKN",
-      "homeScore": 136,
-      "awayScore": 101
-    },
-    {
-      "date": "2026-04-12",
       "homeTeam": "IND",
       "awayTeam": "DET",
       "homeScore": 121,
       "awayScore": 133
-    },
-    {
-      "date": "2026-04-12",
-      "homeTeam": "PHI",
-      "awayTeam": "MIL",
-      "homeScore": 126,
-      "awayScore": 106
     },
     {
       "date": "2026-04-12",
@@ -8565,45 +8551,24 @@
     },
     {
       "date": "2026-04-12",
-      "homeTeam": "MIN",
-      "awayTeam": "NOP",
-      "homeScore": 132,
-      "awayScore": 126
+      "homeTeam": "PHI",
+      "awayTeam": "MIL",
+      "homeScore": 126,
+      "awayScore": 106
     },
     {
       "date": "2026-04-12",
-      "homeTeam": "SAS",
-      "awayTeam": "DEN",
-      "homeScore": 118,
+      "homeTeam": "TOR",
+      "awayTeam": "BKN",
+      "homeScore": 136,
+      "awayScore": 101
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "DAL",
+      "awayTeam": "CHI",
+      "homeScore": 149,
       "awayScore": 128
-    },
-    {
-      "date": "2026-04-12",
-      "homeTeam": "POR",
-      "awayTeam": "SAC",
-      "homeScore": 122,
-      "awayScore": 110
-    },
-    {
-      "date": "2026-04-12",
-      "homeTeam": "OKC",
-      "awayTeam": "PHX",
-      "homeScore": 103,
-      "awayScore": 135
-    },
-    {
-      "date": "2026-04-12",
-      "homeTeam": "LAL",
-      "awayTeam": "UTA",
-      "homeScore": 131,
-      "awayScore": 107
-    },
-    {
-      "date": "2026-04-12",
-      "homeTeam": "LAC",
-      "awayTeam": "GSW",
-      "homeScore": 115,
-      "awayScore": 110
     },
     {
       "date": "2026-04-12",
@@ -8614,9 +8579,44 @@
     },
     {
       "date": "2026-04-12",
-      "homeTeam": "DAL",
-      "awayTeam": "CHI",
-      "homeScore": 149,
+      "homeTeam": "LAC",
+      "awayTeam": "GSW",
+      "homeScore": 115,
+      "awayScore": 110
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "LAL",
+      "awayTeam": "UTA",
+      "homeScore": 131,
+      "awayScore": 107
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "MIN",
+      "awayTeam": "NOP",
+      "homeScore": 132,
+      "awayScore": 126
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "OKC",
+      "awayTeam": "PHX",
+      "homeScore": 103,
+      "awayScore": 135
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "POR",
+      "awayTeam": "SAC",
+      "homeScore": 122,
+      "awayScore": 110
+    },
+    {
+      "date": "2026-04-12",
+      "homeTeam": "SAS",
+      "awayTeam": "DEN",
+      "homeScore": 118,
       "awayScore": 128
     },
     {
@@ -8632,11 +8632,25 @@
       "awayTeam": "POR",
       "homeScore": 110,
       "awayScore": 114
+    },
+    {
+      "date": "2026-04-15",
+      "homeTeam": "PHI",
+      "awayTeam": "ORL",
+      "homeScore": 109,
+      "awayScore": 97
+    },
+    {
+      "date": "2026-04-15",
+      "homeTeam": "LAC",
+      "awayTeam": "GSW",
+      "homeScore": 121,
+      "awayScore": 126
     }
   ],
   "metadata": {
-    "total_games": 1233,
-    "ingested_at": "2026-04-15T12:10:10.535599",
+    "total_games": 1235,
+    "ingested_at": "2026-04-16T12:13:12.802707",
     "source": "basketball-reference.com"
   }
 }

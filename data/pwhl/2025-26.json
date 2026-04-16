@@ -748,15 +748,15 @@
       "date": "2026-04-15",
       "homeTeam": "NYS",
       "awayTeam": "TOR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-04-15",
       "homeTeam": "BOS",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-04-17",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-04-15T12:10:35.739365"
+    "ingested_at": "2026-04-16T12:13:38.069375"
   }
 }
