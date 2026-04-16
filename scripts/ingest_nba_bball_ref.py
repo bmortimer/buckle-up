@@ -274,6 +274,7 @@ def parse_season_schedule(html: str, season: str) -> list[dict]:
     return games
 
 
+
 def save_season_data(league: str, season: str, games: list[dict]):
     """
     Save season data to JSON file, preserving any scheduled games with null scores.
@@ -364,8 +365,9 @@ def main():
         print(f"Error: Season must be in format YYYY-YY (e.g., 1976-77)")
         return
 
-    # Known regular season end dates to filter out playoffs
-    # Basketball-Reference doesn't distinguish between regular season and playoffs on monthly pages
+    # Known regular season end dates to filter out play-in tournament and playoff games.
+    # Basketball-Reference doesn't distinguish these from regular season games.
+    # Must be updated each season — check the NBA schedule for the last regular season date.
     REGULAR_SEASON_END_DATES = {
         "1976-77": "1977-04-10",
         "1977-78": "1978-04-09",
@@ -374,12 +376,22 @@ def main():
         "1980-81": "1981-03-29",
         "1981-82": "1982-04-18",
         "1982-83": "1983-04-17",
+        "2024-25": "2025-04-13",
+        "2025-26": "2026-04-12",
     }
 
-    # For modern seasons (1983-84 onwards), regular season typically ends mid-April
-    # We'll use a heuristic: include games through April, stop at May
-    # This works because playoffs never start before mid-April
+    # Known NBA Cup final dates to exclude.
+    # The NBA Cup (In-Season Tournament) final is not a regular season game but
+    # Basketball-Reference lists it alongside regular season games.
+    # Must be updated each season the NBA Cup is held.
+    NBA_CUP_FINAL_DATES = {
+        "2023-24": "2023-12-09",
+        "2024-25": "2024-12-17",
+        "2025-26": "2025-12-16",
+    }
+
     cutoff_date = REGULAR_SEASON_END_DATES.get(season)
+    cup_final_date = NBA_CUP_FINAL_DATES.get(season)
 
     # Months of the NBA season
     months = ['october', 'november', 'december', 'january', 'february', 'march', 'april']
@@ -414,13 +426,21 @@ def main():
     # Sort all games by date
     all_games.sort(key=lambda g: g["date"])
 
-    # Filter out playoff games if we have a cutoff date
+    # Filter out play-in/playoff games if we have a cutoff date
     if cutoff_date:
         original_count = len(all_games)
         all_games = [g for g in all_games if g["date"] <= cutoff_date]
         filtered_count = original_count - len(all_games)
         if filtered_count > 0:
-            print(f"\nFiltered out {filtered_count} playoff games (cutoff: {cutoff_date})")
+            print(f"\nFiltered out {filtered_count} play-in/playoff game(s) after {cutoff_date}")
+
+    # Filter out NBA Cup final game
+    if cup_final_date:
+        original_count = len(all_games)
+        all_games = [g for g in all_games if g["date"] != cup_final_date]
+        filtered_count = original_count - len(all_games)
+        if filtered_count > 0:
+            print(f"Filtered out {filtered_count} NBA Cup final game(s) on {cup_final_date}")
 
     # Save to file
     save_season_data('nba', season, all_games)

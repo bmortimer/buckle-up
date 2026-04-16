@@ -2712,13 +2712,6 @@
       "awayScore": 121
     },
     {
-      "date": "2025-12-16",
-      "homeTeam": "NYK",
-      "awayTeam": "SAS",
-      "homeScore": 124,
-      "awayScore": 113
-    },
-    {
       "date": "2025-12-17",
       "homeTeam": "CHI",
       "awayTeam": "CLE",
@@ -8618,38 +8611,10 @@
       "awayTeam": "DEN",
       "homeScore": 118,
       "awayScore": 128
-    },
-    {
-      "date": "2026-04-14",
-      "homeTeam": "CHA",
-      "awayTeam": "MIA",
-      "homeScore": 127,
-      "awayScore": 126
-    },
-    {
-      "date": "2026-04-14",
-      "homeTeam": "PHX",
-      "awayTeam": "POR",
-      "homeScore": 110,
-      "awayScore": 114
-    },
-    {
-      "date": "2026-04-15",
-      "homeTeam": "PHI",
-      "awayTeam": "ORL",
-      "homeScore": 109,
-      "awayScore": 97
-    },
-    {
-      "date": "2026-04-15",
-      "homeTeam": "LAC",
-      "awayTeam": "GSW",
-      "homeScore": 121,
-      "awayScore": 126
     }
   ],
   "metadata": {
-    "total_games": 1235,
+    "total_games": 1230,
     "ingested_at": "2026-04-16T12:13:12.802707",
     "source": "basketball-reference.com"
   }
