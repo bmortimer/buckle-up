@@ -762,8 +762,8 @@
       "date": "2026-04-17",
       "homeTeam": "MTL",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-04-18",
@@ -816,15 +816,15 @@
     },
     {
       "date": "2026-04-25",
-      "homeTeam": "OTT",
-      "awayTeam": "TOR",
+      "homeTeam": "BOS",
+      "awayTeam": "NYS",
       "homeScore": null,
       "awayScore": null
     },
     {
       "date": "2026-04-25",
-      "homeTeam": "BOS",
-      "awayTeam": "NYS",
+      "homeTeam": "OTT",
+      "awayTeam": "TOR",
       "homeScore": null,
       "awayScore": null
     },
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-04-16T12:13:38.069375"
+    "ingested_at": "2026-04-18T11:56:21.042744"
   }
 }
