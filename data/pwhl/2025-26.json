@@ -769,15 +769,15 @@
       "date": "2026-04-18",
       "homeTeam": "OTT",
       "awayTeam": "NYS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 1
     },
     {
       "date": "2026-04-18",
       "homeTeam": "SEA",
       "awayTeam": "VAN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 6
     },
     {
       "date": "2026-04-19",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-04-18T11:56:21.042744"
+    "ingested_at": "2026-04-19T11:56:49.405937"
   }
 }
