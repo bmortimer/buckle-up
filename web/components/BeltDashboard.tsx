@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import type { SeasonData, FranchiseInfo, League } from '@/lib/types'
 import { trackAllSeasons } from '@/lib/beltTracker'
 import {
@@ -41,6 +41,8 @@ export default function BeltDashboard({
   champions,
 }: BeltDashboardProps) {
   const searchParams = useSearchParams()
+  const router = useRouter()
+  const pathname = usePathname()
 
   // Get season config for current league
   const seasonConfig = getSeasonConfig(league)
@@ -49,9 +51,6 @@ export default function BeltDashboard({
 
   // Track whether we're updating team due to historical year selection
   const isHistoricalTeamUpdate = useRef(false)
-
-  // Track whether we've initialized from URL params
-  const initializedFromUrl = useRef(false)
 
   // Get available years for range slider
   const availableYears = useMemo(() => {
@@ -68,20 +67,27 @@ export default function BeltDashboard({
   const maxYear = availableYears[availableYears.length - 1] || new Date().getFullYear()
 
   // Default to current year if in season, All Time if off-season
-  const defaultYearRange: [number, number] = seasonConfig.isInSeason
-    ? [seasonConfig.currentYear, seasonConfig.currentYear]
-    : [minYear, maxYear]
+  const defaultYearRange: [number, number] = useMemo(
+    () =>
+      seasonConfig.isInSeason
+        ? [seasonConfig.currentYear, seasonConfig.currentYear]
+        : [minYear, maxYear],
+    [seasonConfig, minYear, maxYear]
+  )
   const defaultIsAllTime = !seasonConfig.isInSeason
 
   const [yearRange, setYearRange] = useState<[number, number]>(defaultYearRange)
   const [isAllTime, setIsAllTime] = useState(defaultIsAllTime)
 
   // Helper to convert a year number to a season key for the URL
-  const yearToSeasonParam = (year: number): string => {
-    if (league === 'wnba') return year.toString()
-    const nextYear = (year + 1) % 100
-    return `${year}-${nextYear.toString().padStart(2, '0')}`
-  }
+  const yearToSeasonParam = useCallback(
+    (year: number): string => {
+      if (league === 'wnba') return year.toString()
+      const nextYear = (year + 1) % 100
+      return `${year}-${nextYear.toString().padStart(2, '0')}`
+    },
+    [league]
+  )
 
   // Helper to parse a season param from URL into a year number
   const seasonParamToYear = (param: string): number | null => {
@@ -89,69 +95,44 @@ export default function BeltDashboard({
     return isNaN(year) ? null : year
   }
 
-  // Track whether we're handling a popstate (back/forward) to avoid pushing a new entry
-  const isPopstate = useRef(false)
+  // Suppress URL sync when we're applying URL → state
+  const isSyncingFromUrl = useRef(false)
 
-  // Apply URL params to state
-  const applyUrlParams = useCallback(() => {
-    const params = new URLSearchParams(window.location.search)
-    const urlSeason = params.get('season')
-    const urlTeam = params.get('team')
-
-    if (urlSeason) {
-      const year = seasonParamToYear(urlSeason)
-      if (year !== null && year >= minYear && year <= maxYear) {
-        setYearRange([year, year])
-        setIsAllTime(false)
-      }
-    } else {
-      // No season param = all time
-      setYearRange([minYear, maxYear])
-      setIsAllTime(true)
-    }
-
-    setSelectedTeam(urlTeam)
-  }, [minYear, maxYear])
-
-  // Read season and team from URL on mount
+  // Apply URL params to state (runs on searchParams changes, including back/forward)
   useEffect(() => {
-    if (initializedFromUrl.current) return
-    initializedFromUrl.current = true
-
     const urlSeason = searchParams.get('season')
     const urlTeam = searchParams.get('team')
 
+    // Derive what state the URL implies
+    let urlYearRange: [number, number]
+    let urlIsAllTime: boolean
+
     if (urlSeason) {
       const year = seasonParamToYear(urlSeason)
       if (year !== null && year >= minYear && year <= maxYear) {
-        setYearRange([year, year])
-        setIsAllTime(false)
+        urlYearRange = [year, year]
+        urlIsAllTime = false
+      } else {
+        // Invalid season param — use defaults
+        urlYearRange = defaultYearRange
+        urlIsAllTime = defaultIsAllTime
       }
+    } else {
+      urlYearRange = defaultYearRange
+      urlIsAllTime = defaultIsAllTime
     }
 
-    if (urlTeam) {
-      setSelectedTeam(urlTeam)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+    isSyncingFromUrl.current = true
+    setYearRange(urlYearRange)
+    setIsAllTime(urlIsAllTime)
+    setSelectedTeam(urlTeam)
+  }, [searchParams, minYear, maxYear, defaultYearRange, defaultIsAllTime])
 
-  // Listen for browser back/forward
+  // Sync state → URL query params
   useEffect(() => {
-    const handlePopstate = () => {
-      isPopstate.current = true
-      applyUrlParams()
-    }
-    window.addEventListener('popstate', handlePopstate)
-    return () => window.removeEventListener('popstate', handlePopstate)
-  }, [applyUrlParams])
-
-  // Sync state to URL query params
-  useEffect(() => {
-    if (!initializedFromUrl.current) return
-
-    // Don't push a new history entry if this change came from back/forward
-    if (isPopstate.current) {
-      isPopstate.current = false
+    // Don't sync back to URL if we're applying URL → state
+    if (isSyncingFromUrl.current) {
+      isSyncingFromUrl.current = false
       return
     }
 
@@ -167,25 +148,13 @@ export default function BeltDashboard({
     }
 
     const paramString = params.toString()
-    const newUrl = paramString
-      ? `${window.location.pathname}?${paramString}`
-      : window.location.pathname
+    const newUrl = paramString ? `${pathname}?${paramString}` : pathname
+    const currentUrl = `${pathname}${window.location.search}`
 
-    if (newUrl !== `${window.location.pathname}${window.location.search}`) {
-      window.history.pushState(null, '', newUrl)
+    if (newUrl !== currentUrl) {
+      router.push(newUrl, { scroll: false })
     }
-  }, [yearRange, isAllTime, selectedTeam, league])
-
-  // Reset year range when component mounts with new league
-  useEffect(() => {
-    const newDefaultRange: [number, number] = seasonConfig.isInSeason
-      ? [seasonConfig.currentYear, seasonConfig.currentYear]
-      : [minYear, maxYear]
-    setYearRange(newDefaultRange)
-    setIsAllTime(!seasonConfig.isInSeason)
-    setSelectedTeam(null)
-    initializedFromUrl.current = true
-  }, [league, minYear, maxYear, seasonConfig])
+  }, [yearRange, isAllTime, selectedTeam, pathname, router, yearToSeasonParam])
 
   // Detect current context
   const context = useMemo(() => {
