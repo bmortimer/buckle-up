@@ -804,15 +804,15 @@
       "date": "2026-04-22",
       "homeTeam": "BOS",
       "awayTeam": "OTT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "date": "2026-04-22",
       "homeTeam": "SEA",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 4
     },
     {
       "date": "2026-04-25",
@@ -845,6 +845,6 @@
   ],
   "metadata": {
     "total_games": 120,
-    "ingested_at": "2026-04-22T12:13:35.887699"
+    "ingested_at": "2026-04-23T12:13:52.279078"
   }
 }
