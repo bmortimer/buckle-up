@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import { useSearchParams } from 'next/navigation'
 import type { SeasonData, FranchiseInfo, League } from '@/lib/types'
 import { trackAllSeasons } from '@/lib/beltTracker'
@@ -45,11 +45,13 @@ export default function BeltDashboard({
   // Get season config for current league
   const seasonConfig = getSeasonConfig(league)
 
-  const [season, setSeason] = useState<string>('all')
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null)
 
   // Track whether we're updating team due to historical year selection
   const isHistoricalTeamUpdate = useRef(false)
+
+  // Track whether we've initialized from URL params
+  const initializedFromUrl = useRef(false)
 
   // Get available years for range slider
   const availableYears = useMemo(() => {
@@ -74,13 +76,105 @@ export default function BeltDashboard({
   const [yearRange, setYearRange] = useState<[number, number]>(defaultYearRange)
   const [isAllTime, setIsAllTime] = useState(defaultIsAllTime)
 
-  // Read season from URL on mount
-  useEffect(() => {
-    const urlSeason = searchParams.get('season')
+  // Helper to convert a year number to a season key for the URL
+  const yearToSeasonParam = (year: number): string => {
+    if (league === 'wnba') return year.toString()
+    const nextYear = (year + 1) % 100
+    return `${year}-${nextYear.toString().padStart(2, '0')}`
+  }
+
+  // Helper to parse a season param from URL into a year number
+  const seasonParamToYear = (param: string): number | null => {
+    const year = parseInt(param.split('-')[0])
+    return isNaN(year) ? null : year
+  }
+
+  // Track whether we're handling a popstate (back/forward) to avoid pushing a new entry
+  const isPopstate = useRef(false)
+
+  // Apply URL params to state
+  const applyUrlParams = useCallback(() => {
+    const params = new URLSearchParams(window.location.search)
+    const urlSeason = params.get('season')
+    const urlTeam = params.get('team')
+
     if (urlSeason) {
-      setSeason(urlSeason)
+      const year = seasonParamToYear(urlSeason)
+      if (year !== null && year >= minYear && year <= maxYear) {
+        setYearRange([year, year])
+        setIsAllTime(false)
+      }
+    } else {
+      // No season param = all time
+      setYearRange([minYear, maxYear])
+      setIsAllTime(true)
     }
-  }, [searchParams])
+
+    setSelectedTeam(urlTeam)
+  }, [minYear, maxYear])
+
+  // Read season and team from URL on mount
+  useEffect(() => {
+    if (initializedFromUrl.current) return
+    initializedFromUrl.current = true
+
+    const urlSeason = searchParams.get('season')
+    const urlTeam = searchParams.get('team')
+
+    if (urlSeason) {
+      const year = seasonParamToYear(urlSeason)
+      if (year !== null && year >= minYear && year <= maxYear) {
+        setYearRange([year, year])
+        setIsAllTime(false)
+      }
+    }
+
+    if (urlTeam) {
+      setSelectedTeam(urlTeam)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // Listen for browser back/forward
+  useEffect(() => {
+    const handlePopstate = () => {
+      isPopstate.current = true
+      applyUrlParams()
+    }
+    window.addEventListener('popstate', handlePopstate)
+    return () => window.removeEventListener('popstate', handlePopstate)
+  }, [applyUrlParams])
+
+  // Sync state to URL query params
+  useEffect(() => {
+    if (!initializedFromUrl.current) return
+
+    // Don't push a new history entry if this change came from back/forward
+    if (isPopstate.current) {
+      isPopstate.current = false
+      return
+    }
+
+    const params = new URLSearchParams()
+    const isSingleYear = yearRange[0] === yearRange[1]
+
+    if (!isAllTime && isSingleYear) {
+      params.set('season', yearToSeasonParam(yearRange[0]))
+    }
+
+    if (selectedTeam) {
+      params.set('team', selectedTeam)
+    }
+
+    const paramString = params.toString()
+    const newUrl = paramString
+      ? `${window.location.pathname}?${paramString}`
+      : window.location.pathname
+
+    if (newUrl !== `${window.location.pathname}${window.location.search}`) {
+      window.history.pushState(null, '', newUrl)
+    }
+  }, [yearRange, isAllTime, selectedTeam, league])
 
   // Reset year range when component mounts with new league
   useEffect(() => {
@@ -90,6 +184,7 @@ export default function BeltDashboard({
     setYearRange(newDefaultRange)
     setIsAllTime(!seasonConfig.isInSeason)
     setSelectedTeam(null)
+    initializedFromUrl.current = true
   }, [league, minYear, maxYear, seasonConfig])
 
   // Detect current context
