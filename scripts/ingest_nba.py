@@ -303,6 +303,14 @@ def save_season_data(league: str, season: str, games: list[dict]):
 
     output_file = data_dir / f'{season}.json'
 
+    # Skip write if game data hasn't changed (avoids updating ingested_at needlessly)
+    if output_file.exists():
+        with open(output_file, 'r') as f:
+            existing = json.load(f)
+        if existing.get('games') == games:
+            print(f"No changes for {season} ({len(games)} games) - skipping write")
+            return
+
     season_data = {
         'season': season,
         'league': league.upper(),
