@@ -31,7 +31,7 @@ export const NHL_CONFIG: SeasonConfig = {
 
 export const PWHL_CONFIG: SeasonConfig = {
   currentYear: 2025, // 2025-26 season
-  isInSeason: true, // In-season as of Feb 2026
+  isInSeason: false, // Off-season as of Apr 2026
 }
 
 /**
