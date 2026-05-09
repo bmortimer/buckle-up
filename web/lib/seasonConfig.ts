@@ -15,8 +15,8 @@ export interface SeasonConfig {
 }
 
 export const WNBA_CONFIG: SeasonConfig = {
-  currentYear: 2025,
-  isInSeason: false, // Off-season as of Jan 2026
+  currentYear: 2026,
+  isInSeason: true,
 }
 
 export const NBA_CONFIG: SeasonConfig = {
