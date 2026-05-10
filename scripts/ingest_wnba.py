@@ -149,10 +149,6 @@ def parse_season_schedule(html: str, season: int) -> list[dict]:
             home_team_name = cells[3].get_text().strip()
             home_score_str = cells[4].get_text().strip()
 
-            # Skip if scores are empty (game not played yet)
-            if not away_score_str or not home_score_str:
-                continue
-
             # Parse date (format like "Fri, May 19, 2023")
             try:
                 game_date = datetime.strptime(date_str, "%a, %b %d, %Y")
@@ -164,13 +160,18 @@ def parse_season_schedule(html: str, season: int) -> list[dict]:
                     print(f"Warning: Could not parse date: {date_str}")
                     continue
 
-            # Convert scores to integers
-            try:
-                away_score = int(away_score_str)
-                home_score = int(home_score_str)
-            except ValueError:
-                print(f"Warning: Could not parse scores: {away_score_str}, {home_score_str}")
-                continue
+            # Determine if scores are available (game has been played)
+            # If scores are empty, this is a scheduled future game
+            if away_score_str and home_score_str:
+                try:
+                    away_score = int(away_score_str)
+                    home_score = int(home_score_str)
+                except ValueError:
+                    print(f"Warning: Could not parse scores: {away_score_str}, {home_score_str}")
+                    continue
+            else:
+                away_score = None
+                home_score = None
 
             # Map team names to codes
             away_code = TEAM_NAME_TO_CODE.get(away_team_name)
@@ -200,7 +201,9 @@ def parse_season_schedule(html: str, season: int) -> list[dict]:
     # Sort by date
     games.sort(key=lambda g: g["date"])
 
-    print(f"Parsed {len(games)} regular season games")
+    completed_games = sum(1 for g in games if g["homeScore"] is not None)
+    scheduled_games = len(games) - completed_games
+    print(f"Parsed {len(games)} regular season games ({completed_games} completed, {scheduled_games} scheduled)")
 
     return games
 
