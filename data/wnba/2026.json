@@ -76,22 +76,22 @@
       "date": "2026-05-12",
       "homeTeam": "DAL",
       "awayTeam": "ATL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 72,
+      "awayScore": 77
     },
     {
       "date": "2026-05-12",
       "homeTeam": "POR",
       "awayTeam": "NYL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 98,
+      "awayScore": 96
     },
     {
       "date": "2026-05-12",
       "homeTeam": "PHO",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 84,
+      "awayScore": 88
     },
     {
       "date": "2026-05-13",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-05-11T14:01:58.264340"
+    "ingested_at": "2026-05-13T13:34:24.337643"
   }
 }
