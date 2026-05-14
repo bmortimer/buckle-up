@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from 'react'
 import type { FranchiseInfo, League, CalendarDayData, PopupPosition } from '@/lib/types'
 import { isGameCompleted } from '@/lib/types'
 import { getTeamDisplayName } from '@/lib/franchises'
+import { parseDateLocal } from '@/lib/dateUtils'
 import { useModalFocusTrap } from '@/hooks/useModalFocusTrap'
 import TeamLogo from './TeamLogo'
 
@@ -75,7 +76,7 @@ export default function CalendarDayPopup({
           id="popup-date"
           className="text-xs sm:text-sm font-mono text-muted-foreground mb-3 uppercase"
         >
-          {new Date(dayData.date).toLocaleDateString('en-US', {
+          {parseDateLocal(dayData.date).toLocaleDateString('en-US', {
             weekday: 'short',
             month: 'short',
             day: 'numeric',

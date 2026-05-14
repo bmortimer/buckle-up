@@ -82,7 +82,7 @@ const faqSchema = {
       name: 'Where does your data come from?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Game Data: NBA scores and schedules come from the official NBA Stats API. WNBA and NHL data come from Sports-Reference.com. PWHL data comes from the HockeyTech API. Team Logos: Current team logos are from the official NBA, WNBA, NHL, and PWHL websites. Historical team logos are from Wikimedia Commons, Loodibee.com, and SportsLogos.net. All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!',
+        text: 'Game Data: NBA scores and schedules come from the official NBA Stats API. WNBA and NHL data come from Sports-Reference.com. PWHL data comes from the HockeyTech API. Team Logos: Current team logos are from the official NBA, WNBA, NHL, and PWHL websites, as well as SportsLogos.net. Historical team logos are from Wikimedia Commons, Loodibee.com, and SportsLogos.net. All team logos are trademarks of their respective organizations. Data and logos are used under fair use for non-commercial, educational purposes. Huge thanks to all these sources for making their data available!',
       },
     },
     {
@@ -435,7 +435,16 @@ export default function AboutPage() {
                   >
                     PWHL
                   </a>{' '}
-                  websites. Historical team logos are from{' '}
+                  websites, as well as{' '}
+                  <a
+                    href="https://www.sportslogos.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:opacity-80 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:rounded"
+                  >
+                    SportsLogos.net
+                  </a>
+                  . Historical team logos are from{' '}
                   <a
                     href="https://commons.wikimedia.org/"
                     target="_blank"

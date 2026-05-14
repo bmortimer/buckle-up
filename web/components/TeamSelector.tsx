@@ -163,7 +163,8 @@ export default function TeamSelector({
     return (
       franchise.status === 'defunct' ||
       franchise.status === 'relocated' ||
-      franchise.status === 'rebranded'
+      franchise.status === 'rebranded' ||
+      franchise.status === 'revived'
     )
   })
 

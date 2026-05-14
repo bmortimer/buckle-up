@@ -122,10 +122,29 @@ export default function BeltDashboard({
       urlIsAllTime = defaultIsAllTime
     }
 
+    // When the URL has no season param, it can mean either "use defaults" (initial
+    // load / external link) or "user is in All Time mode" (state→URL drops the
+    // season param when isAllTime is true). Distinguish by checking current state:
+    // if we're already in All Time, keep that — don't snap back to the default.
+    if (!urlSeason && isAllTime) {
+      urlYearRange = yearRange
+      urlIsAllTime = true
+    }
+
+    const yearRangeUnchanged =
+      yearRange[0] === urlYearRange[0] && yearRange[1] === urlYearRange[1]
+    const isAllTimeUnchanged = isAllTime === urlIsAllTime
+    const selectedTeamUnchanged = selectedTeam === urlTeam
+
+    if (yearRangeUnchanged && isAllTimeUnchanged && selectedTeamUnchanged) {
+      return
+    }
+
     isSyncingFromUrl.current = true
-    setYearRange(urlYearRange)
-    setIsAllTime(urlIsAllTime)
-    setSelectedTeam(urlTeam)
+    if (!yearRangeUnchanged) setYearRange(urlYearRange)
+    if (!isAllTimeUnchanged) setIsAllTime(urlIsAllTime)
+    if (!selectedTeamUnchanged) setSelectedTeam(urlTeam)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams, minYear, maxYear, defaultYearRange, defaultIsAllTime])
 
   // Sync state → URL query params
@@ -270,13 +289,13 @@ export default function BeltDashboard({
 
     const teamYears = new Set<number>()
 
-    // If selecting current franchise in All Time mode, find all historical team codes
+    // If the selected team is the current franchise, include all historical team
+    // codes in the lineage so users can navigate to any era from the season picker.
     const currentFranchise = getCurrentFranchiseAbbr(selectedTeam, franchises)
     const isCurrentFranchise = currentFranchise === selectedTeam
-    const franchiseCodes =
-      isCurrentFranchise && isAllTime
-        ? getAllFranchiseAbbrs(selectedTeam, franchises)
-        : [selectedTeam]
+    const franchiseCodes = isCurrentFranchise
+      ? getAllFranchiseAbbrs(selectedTeam, franchises)
+      : [selectedTeam]
 
     Object.keys(seasons).forEach((seasonKey) => {
       const yearNum = parseInt(seasonKey.split('-')[0]) || parseInt(seasonKey)
@@ -290,7 +309,7 @@ export default function BeltDashboard({
     })
 
     return Array.from(teamYears).sort((a, b) => a - b)
-  }, [selectedTeam, seasons, availableYears, franchises, isAllTime])
+  }, [selectedTeam, seasons, availableYears, franchises])
 
   // Update selected team to historical code when year changes
   useEffect(() => {

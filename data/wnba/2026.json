@@ -39,7 +39,7 @@
     },
     {
       "date": "2026-05-09",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "CHI",
       "homeScore": 83,
       "awayScore": 98
@@ -81,7 +81,7 @@
     },
     {
       "date": "2026-05-12",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "NYL",
       "homeScore": 98,
       "awayScore": 96
@@ -123,7 +123,7 @@
     },
     {
       "date": "2026-05-14",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "NYL",
       "homeScore": null,
       "awayScore": null
@@ -179,7 +179,7 @@
     },
     {
       "date": "2026-05-18",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "CON",
       "homeScore": null,
       "awayScore": null
@@ -194,7 +194,7 @@
     {
       "date": "2026-05-20",
       "homeTeam": "IND",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -285,7 +285,7 @@
     {
       "date": "2026-05-25",
       "homeTeam": "NYL",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -305,7 +305,7 @@
     },
     {
       "date": "2026-05-27",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "CON",
       "homeScore": null,
       "awayScore": null
@@ -347,7 +347,7 @@
     },
     {
       "date": "2026-05-29",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "ATL",
       "homeScore": null,
       "awayScore": null
@@ -368,7 +368,7 @@
     },
     {
       "date": "2026-05-30",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "IND",
       "homeScore": null,
       "awayScore": null
@@ -404,7 +404,7 @@
     {
       "date": "2026-06-02",
       "homeTeam": "GSV",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -459,7 +459,7 @@
     },
     {
       "date": "2026-06-05",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "PHO",
       "homeScore": null,
       "awayScore": null
@@ -495,7 +495,7 @@
     {
       "date": "2026-06-07",
       "homeTeam": "LAS",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -571,7 +571,7 @@
     },
     {
       "date": "2026-06-11",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "LVA",
       "homeScore": null,
       "awayScore": null
@@ -599,7 +599,7 @@
     },
     {
       "date": "2026-06-13",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "DAL",
       "homeScore": null,
       "awayScore": null
@@ -635,7 +635,7 @@
     {
       "date": "2026-06-15",
       "homeTeam": "MIN",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -669,7 +669,7 @@
     },
     {
       "date": "2026-06-17",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "SEA",
       "homeScore": null,
       "awayScore": null
@@ -775,7 +775,7 @@
     {
       "date": "2026-06-24",
       "homeTeam": "CHI",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -817,7 +817,7 @@
     {
       "date": "2026-06-26",
       "homeTeam": "CHI",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -873,7 +873,7 @@
     {
       "date": "2026-06-28",
       "homeTeam": "WAS",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -922,7 +922,7 @@
     {
       "date": "2026-07-04",
       "homeTeam": "SEA",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -991,7 +991,7 @@
     },
     {
       "date": "2026-07-09",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "LVA",
       "homeScore": null,
       "awayScore": null
@@ -1020,7 +1020,7 @@
     {
       "date": "2026-07-11",
       "homeTeam": "ATL",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1076,7 +1076,7 @@
     {
       "date": "2026-07-14",
       "homeTeam": "CON",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1111,7 +1111,7 @@
     {
       "date": "2026-07-16",
       "homeTeam": "WAS",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1153,7 +1153,7 @@
     {
       "date": "2026-07-18",
       "homeTeam": "MIN",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1215,7 +1215,7 @@
     },
     {
       "date": "2026-07-22",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "DAL",
       "homeScore": null,
       "awayScore": null
@@ -1244,7 +1244,7 @@
     {
       "date": "2026-07-28",
       "homeTeam": "LVA",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1299,7 +1299,7 @@
     },
     {
       "date": "2026-07-31",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "IND",
       "homeScore": null,
       "awayScore": null
@@ -1341,7 +1341,7 @@
     },
     {
       "date": "2026-08-02",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "LAS",
       "homeScore": null,
       "awayScore": null
@@ -1446,7 +1446,7 @@
     },
     {
       "date": "2026-08-08",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "SEA",
       "homeScore": null,
       "awayScore": null
@@ -1516,7 +1516,7 @@
     },
     {
       "date": "2026-08-12",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "MIN",
       "homeScore": null,
       "awayScore": null
@@ -1552,7 +1552,7 @@
     {
       "date": "2026-08-14",
       "homeTeam": "SEA",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1587,7 +1587,7 @@
     {
       "date": "2026-08-16",
       "homeTeam": "PHO",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1705,7 +1705,7 @@
     },
     {
       "date": "2026-08-23",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "WAS",
       "homeScore": null,
       "awayScore": null
@@ -1734,7 +1734,7 @@
     {
       "date": "2026-08-25",
       "homeTeam": "DAL",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1769,7 +1769,7 @@
     {
       "date": "2026-08-28",
       "homeTeam": "ATL",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1810,7 +1810,7 @@
     },
     {
       "date": "2026-08-30",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "GSV",
       "homeScore": null,
       "awayScore": null
@@ -1845,7 +1845,7 @@
     },
     {
       "date": "2026-09-17",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "PHO",
       "homeScore": null,
       "awayScore": null
@@ -1860,7 +1860,7 @@
     {
       "date": "2026-09-18",
       "homeTeam": "GSV",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1909,7 +1909,7 @@
     {
       "date": "2026-09-20",
       "homeTeam": "LAS",
-      "awayTeam": "POR",
+      "awayTeam": "PDX",
       "homeScore": null,
       "awayScore": null
     },
@@ -1950,7 +1950,7 @@
     },
     {
       "date": "2026-09-22",
-      "homeTeam": "POR",
+      "homeTeam": "PDX",
       "awayTeam": "GSV",
       "homeScore": null,
       "awayScore": null

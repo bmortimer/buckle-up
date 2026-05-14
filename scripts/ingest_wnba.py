@@ -58,7 +58,7 @@ TEAM_NAME_TO_CODE = {
     "Houston Comets": "HOU",
     "Miami Sol": "MIA",
     "Orlando Miracle": "ORL",
-    "Portland Fire": "POR",
+    "Portland Fire": "PDX",
     "Sacramento Monarchs": "SAC",
     "San Antonio Silver Stars": "SAS",
     "San Antonio Stars": "SAS",
