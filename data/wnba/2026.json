@@ -118,15 +118,15 @@
       "date": "2026-05-14",
       "homeTeam": "DAL",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 86,
+      "awayScore": 90
     },
     {
       "date": "2026-05-14",
       "homeTeam": "PDX",
       "awayTeam": "NYL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 82,
+      "awayScore": 100
     },
     {
       "date": "2026-05-15",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-05-14T13:11:32.377179"
+    "ingested_at": "2026-05-15T13:11:35.171503"
   }
 }
