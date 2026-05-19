@@ -174,15 +174,15 @@
       "date": "2026-05-18",
       "homeTeam": "DAL",
       "awayTeam": "WAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 92,
+      "awayScore": 69
     },
     {
       "date": "2026-05-18",
       "homeTeam": "PDX",
       "awayTeam": "CON",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 83,
+      "awayScore": 82
     },
     {
       "date": "2026-05-20",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-05-18T14:40:21.459464"
+    "ingested_at": "2026-05-19T14:08:32.532183"
   }
 }
