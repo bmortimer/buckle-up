@@ -81,17 +81,17 @@
     },
     {
       "date": "2026-05-12",
-      "homeTeam": "PDX",
-      "awayTeam": "NYL",
-      "homeScore": 98,
-      "awayScore": 96
-    },
-    {
-      "date": "2026-05-12",
       "homeTeam": "PHO",
       "awayTeam": "MIN",
       "homeScore": 84,
       "awayScore": 88
+    },
+    {
+      "date": "2026-05-12",
+      "homeTeam": "PDX",
+      "awayTeam": "NYL",
+      "homeScore": 98,
+      "awayScore": 96
     },
     {
       "date": "2026-05-13",
@@ -599,15 +599,15 @@
     },
     {
       "date": "2026-06-13",
-      "homeTeam": "PDX",
-      "awayTeam": "DAL",
+      "homeTeam": "PHO",
+      "awayTeam": "LAS",
       "homeScore": null,
       "awayScore": null
     },
     {
       "date": "2026-06-13",
-      "homeTeam": "PHO",
-      "awayTeam": "LAS",
+      "homeTeam": "PDX",
+      "awayTeam": "DAL",
       "homeScore": null,
       "awayScore": null
     },
@@ -669,15 +669,15 @@
     },
     {
       "date": "2026-06-17",
-      "homeTeam": "PDX",
-      "awayTeam": "SEA",
+      "homeTeam": "PHO",
+      "awayTeam": "LVA",
       "homeScore": null,
       "awayScore": null
     },
     {
       "date": "2026-06-17",
-      "homeTeam": "PHO",
-      "awayTeam": "LVA",
+      "homeTeam": "PDX",
+      "awayTeam": "SEA",
       "homeScore": null,
       "awayScore": null
     },
@@ -991,15 +991,15 @@
     },
     {
       "date": "2026-07-09",
-      "homeTeam": "PDX",
-      "awayTeam": "LVA",
+      "homeTeam": "PHO",
+      "awayTeam": "IND",
       "homeScore": null,
       "awayScore": null
     },
     {
       "date": "2026-07-09",
-      "homeTeam": "PHO",
-      "awayTeam": "IND",
+      "homeTeam": "PDX",
+      "awayTeam": "LVA",
       "homeScore": null,
       "awayScore": null
     },
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-05-19T14:08:32.532183"
+    "ingested_at": "2026-05-20T14:01:44.883582"
   }
 }
