@@ -209,15 +209,15 @@
       "date": "2026-05-21",
       "homeTeam": "NYL",
       "awayTeam": "GSV",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 70,
+      "awayScore": 87
     },
     {
       "date": "2026-05-21",
       "homeTeam": "PHO",
       "awayTeam": "LAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 88,
+      "awayScore": 97
     },
     {
       "date": "2026-05-22",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-05-21T14:19:24.694375"
+    "ingested_at": "2026-05-22T13:40:29.087712"
   }
 }
