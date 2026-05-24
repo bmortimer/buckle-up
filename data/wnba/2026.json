@@ -244,15 +244,15 @@
       "date": "2026-05-23",
       "homeTeam": "CHI",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 75,
+      "awayScore": 85
     },
     {
       "date": "2026-05-23",
       "homeTeam": "LVA",
       "awayTeam": "LAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 95,
+      "awayScore": 101
     },
     {
       "date": "2026-05-24",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-05-23T12:10:29.935153"
+    "ingested_at": "2026-05-24T12:14:59.501262"
   }
 }
