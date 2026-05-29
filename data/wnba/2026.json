@@ -321,15 +321,15 @@
       "date": "2026-05-28",
       "homeTeam": "DAL",
       "awayTeam": "LVA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 95,
+      "awayScore": 87
     },
     {
       "date": "2026-05-28",
       "homeTeam": "GSV",
       "awayTeam": "IND",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 90,
+      "awayScore": 88
     },
     {
       "date": "2026-05-29",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-05-28T14:47:17.060890"
+    "ingested_at": "2026-05-29T14:16:37.867535"
   }
 }
