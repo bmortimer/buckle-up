@@ -93,7 +93,7 @@ Consider, before you add a new league, if it would be compelling to users.  Spor
 7. Add team logos to `web/public/logos/{league}/`
 8. Create ingestion + update scripts in `scripts/`
 9. Add schedule breaks to `web/lib/scheduleBreaks.ts` if applicable
-10. Wire into `.github/workflows/update-data.yml`
+10. Wire into `.github/workflows/update-data.yml` — add a per-league step that self-gates: runs if the current month is in the league's regular season, or if today is the 1st/15th (monthly catch-up). Follow the existing NBA/NHL/WNBA/PWHL pattern.
 11. Add league-health tests in `web/lib/__tests__/league-health.test.ts`
 
 ## Deployment

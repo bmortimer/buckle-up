@@ -17,138 +17,114 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check if update is needed
-        id: should-run
+      - name: Compute schedule flags
+        id: when
         run: |
-          # Get current date info
-          DAY_OF_MONTH=$(date +%-d)
-          CURRENT_MONTH=$(date +%-m)
-
-          # Always run on 1st or 15th (for error correction / catch-up)
-          if [ "$DAY_OF_MONTH" -eq 1 ] || [ "$DAY_OF_MONTH" -eq 15 ]; then
-            echo "Running monthly update (day $DAY_OF_MONTH)"
-            echo "run=true" >> $GITHUB_OUTPUT
-            exit 0
+          # Each league step decides whether to run based on:
+          #   (a) it is in its regular season this month, OR
+          #   (b) today is the 1st or 15th (monthly catch-up for error correction)
+          DAY=$(date +%-d)
+          MONTH=$(date +%-m)
+          CATCHUP=false
+          if [ "$DAY" -eq 1 ] || [ "$DAY" -eq 15 ]; then
+            CATCHUP=true
           fi
-
-          # Check if any league is in its regular season
-          # NBA/NHL: Oct-Apr, PWHL: Nov-May, WNBA: May-Oct
-          # Combined coverage: every month except possibly none — run if any league active
-          ANY_ACTIVE=false
-
-          # NBA/NHL regular season: October through April
-          if [ "$CURRENT_MONTH" -ge 10 ] || [ "$CURRENT_MONTH" -le 4 ]; then
-            ANY_ACTIVE=true
-          fi
-
-          # PWHL season: November through April
-          if [ "$CURRENT_MONTH" -ge 11 ] || [ "$CURRENT_MONTH" -le 4 ]; then
-            ANY_ACTIVE=true
-          fi
-
-          # WNBA season: May through October
-          if [ "$CURRENT_MONTH" -ge 5 ] && [ "$CURRENT_MONTH" -le 10 ]; then
-            ANY_ACTIVE=true
-          fi
-
-          if [ "$ANY_ACTIVE" = true ]; then
-            echo "At least one league in season (month $CURRENT_MONTH) - running update"
-            echo "run=true" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-
-          echo "No leagues in season and not a monthly update day - skipping"
-          echo "run=false" >> $GITHUB_OUTPUT
+          echo "month=$MONTH" >> $GITHUB_OUTPUT
+          echo "catchup=$CATCHUP" >> $GITHUB_OUTPUT
 
       - name: Set up Python
-        if: steps.should-run.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.9'
 
       - name: Install Python dependencies
-        if: steps.should-run.outputs.run == 'true'
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Update WNBA data
-        if: steps.should-run.outputs.run == 'true'
+      - name: Update NBA data
+        env:
+          MONTH: ${{ steps.when.outputs.month }}
+          CATCHUP: ${{ steps.when.outputs.catchup }}
         run: |
-          # Run the update script (auto-detects current season and updates sitemap if changed)
-          # Note: Script exits with 0 on success or no changes, 1 on error
+          # NBA regular season: Oct-Apr
+          IN_SEASON=false
+          if [ "$MONTH" -ge 10 ] || [ "$MONTH" -le 4 ]; then IN_SEASON=true; fi
+          if [ "$IN_SEASON" = "false" ] && [ "$CATCHUP" = "false" ]; then
+            echo "NBA: out of season and not a catch-up day - skipping"
+            exit 0
+          fi
+          echo "NBA: running update (in_season=$IN_SEASON catchup=$CATCHUP)"
+          if ! python scripts/update_nba.py; then
+            echo "⚠️  NBA update failed - please check logs"
+            exit 1
+          fi
+
+      - name: Update NHL data
+        env:
+          MONTH: ${{ steps.when.outputs.month }}
+          CATCHUP: ${{ steps.when.outputs.catchup }}
+        run: |
+          # NHL regular season: Oct-Apr
+          IN_SEASON=false
+          if [ "$MONTH" -ge 10 ] || [ "$MONTH" -le 4 ]; then IN_SEASON=true; fi
+          if [ "$IN_SEASON" = "false" ] && [ "$CATCHUP" = "false" ]; then
+            echo "NHL: out of season and not a catch-up day - skipping"
+            exit 0
+          fi
+          echo "NHL: running update (in_season=$IN_SEASON catchup=$CATCHUP)"
+          # Add delay before NHL fetch to be respectful to hockey-reference.com
+          sleep 10
+          if ! python scripts/update_nhl.py; then
+            echo "⚠️  NHL update failed - please check logs"
+            exit 1
+          fi
+
+      - name: Update WNBA data
+        env:
+          MONTH: ${{ steps.when.outputs.month }}
+          CATCHUP: ${{ steps.when.outputs.catchup }}
+        run: |
+          # WNBA regular season: May-Oct
+          IN_SEASON=false
+          if [ "$MONTH" -ge 5 ] && [ "$MONTH" -le 10 ]; then IN_SEASON=true; fi
+          if [ "$IN_SEASON" = "false" ] && [ "$CATCHUP" = "false" ]; then
+            echo "WNBA: out of season and not a catch-up day - skipping"
+            exit 0
+          fi
+          echo "WNBA: running update (in_season=$IN_SEASON catchup=$CATCHUP)"
           if ! python scripts/update_wnba.py; then
             echo "⚠️  WNBA update failed - please check logs"
             exit 1
           fi
 
-      - name: Update NBA data
-        if: steps.should-run.outputs.run == 'true'
-        run: |
-          # NBA regular season runs Oct-Apr - skip during playoffs
-          CURRENT_MONTH=$(date +%-m)
-          if [ "$CURRENT_MONTH" -ge 10 ] || [ "$CURRENT_MONTH" -le 4 ]; then
-            echo "NBA regular season months (Oct-Apr) - running update"
-            if ! python scripts/update_nba.py; then
-              echo "⚠️  NBA update failed - please check logs"
-              exit 1
-            fi
-          else
-            echo "Not NBA regular season - skipping"
-          fi
-
-      - name: Update NHL data
-        if: steps.should-run.outputs.run == 'true'
-        run: |
-          # NHL regular season runs Oct-Apr - skip during playoffs
-          CURRENT_MONTH=$(date +%-m)
-          if [ "$CURRENT_MONTH" -ge 10 ] || [ "$CURRENT_MONTH" -le 4 ]; then
-            echo "NHL regular season months (Oct-Apr) - running update"
-
-            # Add delay before NHL fetch to be respectful to hockey-reference.com
-            echo "Waiting 10s before NHL fetch to respect rate limits..."
-            sleep 10
-
-            if ! python scripts/update_nhl.py; then
-              echo "⚠️  NHL update failed - please check logs"
-              exit 1
-            fi
-          else
-            echo "Not NHL regular season - skipping"
-          fi
-
       - name: Update PWHL data
-        if: steps.should-run.outputs.run == 'true'
+        env:
+          MONTH: ${{ steps.when.outputs.month }}
+          CATCHUP: ${{ steps.when.outputs.catchup }}
         run: |
-          # PWHL season runs Nov-Apr - check if we should run
-          CURRENT_MONTH=$(date +%-m)
-          if [ "$CURRENT_MONTH" -ge 11 ] || [ "$CURRENT_MONTH" -le 4 ]; then
-            echo "PWHL season months (Nov-Apr) - running update"
-
-            # Add delay to be respectful to HockeyTech API
-            echo "Waiting 10s before PWHL fetch..."
-            sleep 10
-
-            # Run the update script (auto-detects current season and updates sitemap if changed)
-            # Note: Script exits with 0 on success or no changes, 1 on error
-            if ! python scripts/update_pwhl.py; then
-              echo "⚠️  PWHL update failed - please check logs"
-              # Don't exit 1 - allow workflow to continue with other leagues
-              echo "Continuing with other updates..."
-            fi
-          else
-            echo "Not PWHL season - skipping"
+          # PWHL regular season: Nov-Apr
+          IN_SEASON=false
+          if [ "$MONTH" -ge 11 ] || [ "$MONTH" -le 4 ]; then IN_SEASON=true; fi
+          if [ "$IN_SEASON" = "false" ] && [ "$CATCHUP" = "false" ]; then
+            echo "PWHL: out of season and not a catch-up day - skipping"
+            exit 0
+          fi
+          echo "PWHL: running update (in_season=$IN_SEASON catchup=$CATCHUP)"
+          sleep 10
+          if ! python scripts/update_pwhl.py; then
+            echo "⚠️  PWHL update failed - please check logs"
+            # Don't exit 1 - allow workflow to continue
+            echo "Continuing..."
           fi
 
       - name: Check for changes
-        if: steps.should-run.outputs.run == 'true'
         id: git-check
         run: |
-          # Check both data files and sitemap for changes
           git diff --quiet data/ web/public/sitemap.xml || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push if changes
-        if: steps.should-run.outputs.run == 'true' && steps.git-check.outputs.changes == 'true'
+        if: steps.git-check.outputs.changes == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
