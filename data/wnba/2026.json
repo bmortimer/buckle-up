@@ -398,29 +398,29 @@
       "date": "2026-06-02",
       "homeTeam": "ATL",
       "awayTeam": "CON",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 91,
+      "awayScore": 75
     },
     {
       "date": "2026-06-02",
       "homeTeam": "GSV",
       "awayTeam": "PDX",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 95,
+      "awayScore": 77
     },
     {
       "date": "2026-06-02",
       "homeTeam": "LAS",
       "awayTeam": "LVA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 69,
+      "awayScore": 79
     },
     {
       "date": "2026-06-02",
       "homeTeam": "WAS",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 90,
+      "awayScore": 72
     },
     {
       "date": "2026-06-03",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-02T15:38:14.609821"
+    "ingested_at": "2026-06-03T15:56:48.630806"
   }
 }
