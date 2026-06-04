@@ -426,8 +426,8 @@
       "date": "2026-06-03",
       "homeTeam": "SEA",
       "awayTeam": "PHO",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 68,
+      "awayScore": 72
     },
     {
       "date": "2026-06-04",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-03T15:56:48.630806"
+    "ingested_at": "2026-06-04T14:12:21.550585"
   }
 }
