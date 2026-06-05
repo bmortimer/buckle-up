@@ -433,15 +433,15 @@
       "date": "2026-06-04",
       "homeTeam": "IND",
       "awayTeam": "ATL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 83,
+      "awayScore": 71
     },
     {
       "date": "2026-06-04",
       "homeTeam": "MIN",
       "awayTeam": "GSV",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 87,
+      "awayScore": 84
     },
     {
       "date": "2026-06-05",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-04T14:12:21.550585"
+    "ingested_at": "2026-06-05T14:05:10.751292"
   }
 }
