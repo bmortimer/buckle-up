@@ -496,8 +496,8 @@
       "date": "2026-06-07",
       "homeTeam": "LAS",
       "awayTeam": "PDX",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 89,
+      "awayScore": 72
     },
     {
       "date": "2026-06-08",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-07T12:55:48.049000"
+    "ingested_at": "2026-06-08T14:53:34.902271"
   }
 }
