@@ -503,22 +503,22 @@
       "date": "2026-06-08",
       "homeTeam": "CON",
       "awayTeam": "NYL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 80,
+      "awayScore": 89
     },
     {
       "date": "2026-06-08",
       "homeTeam": "LVA",
       "awayTeam": "SEA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 101,
+      "awayScore": 91
     },
     {
       "date": "2026-06-08",
       "homeTeam": "WAS",
       "awayTeam": "IND",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 76,
+      "awayScore": 78
     },
     {
       "date": "2026-06-09",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-08T14:53:34.902271"
+    "ingested_at": "2026-06-09T13:57:31.541409"
   }
 }
