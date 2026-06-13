@@ -580,8 +580,8 @@
       "date": "2026-06-12",
       "homeTeam": "SEA",
       "awayTeam": "GSV",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 72,
+      "awayScore": 76
     },
     {
       "date": "2026-06-13",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-12T14:18:00.825269"
+    "ingested_at": "2026-06-13T13:00:33.841742"
   }
 }
