@@ -685,8 +685,8 @@
       "date": "2026-06-18",
       "homeTeam": "IND",
       "awayTeam": "ATL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 101,
+      "awayScore": 108
     },
     {
       "date": "2026-06-19",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-18T14:27:14.053476"
+    "ingested_at": "2026-06-19T14:23:37.339781"
   }
 }
