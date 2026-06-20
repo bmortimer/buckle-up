@@ -692,15 +692,15 @@
       "date": "2026-06-19",
       "homeTeam": "GSV",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 75,
+      "awayScore": 81
     },
     {
       "date": "2026-06-19",
       "homeTeam": "NYL",
       "awayTeam": "WAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 83,
+      "awayScore": 86
     },
     {
       "date": "2026-06-20",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-19T14:23:37.339781"
+    "ingested_at": "2026-06-20T13:01:20.293053"
   }
 }
