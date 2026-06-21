@@ -706,22 +706,22 @@
       "date": "2026-06-20",
       "homeTeam": "ATL",
       "awayTeam": "IND",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 113,
+      "awayScore": 96
     },
     {
       "date": "2026-06-20",
       "homeTeam": "DAL",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 93,
+      "awayScore": 92
     },
     {
       "date": "2026-06-20",
       "homeTeam": "PHO",
       "awayTeam": "SEA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 93,
+      "awayScore": 73
     },
     {
       "date": "2026-06-21",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-20T13:01:20.293053"
+    "ingested_at": "2026-06-21T13:20:25.350409"
   }
 }
