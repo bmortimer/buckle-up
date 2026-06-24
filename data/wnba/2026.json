@@ -769,8 +769,8 @@
       "date": "2026-06-23",
       "homeTeam": "LVA",
       "awayTeam": "NYL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 76,
+      "awayScore": 87
     },
     {
       "date": "2026-06-24",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-23T13:57:10.288300"
+    "ingested_at": "2026-06-24T13:32:56.767771"
   }
 }
