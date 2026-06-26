@@ -804,15 +804,15 @@
       "date": "2026-06-25",
       "homeTeam": "LVA",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 99,
+      "awayScore": 84
     },
     {
       "date": "2026-06-25",
       "homeTeam": "SEA",
       "awayTeam": "NYL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 99,
+      "awayScore": 88
     },
     {
       "date": "2026-06-26",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-25T13:31:58.371559"
+    "ingested_at": "2026-06-26T13:26:37.927976"
   }
 }
