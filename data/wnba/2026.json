@@ -839,15 +839,15 @@
       "date": "2026-06-27",
       "homeTeam": "IND",
       "awayTeam": "LAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 111,
+      "awayScore": 87
     },
     {
       "date": "2026-06-27",
       "homeTeam": "SEA",
       "awayTeam": "ATL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 105,
+      "awayScore": 90
     },
     {
       "date": "2026-06-28",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-06-27T12:49:03.518439"
+    "ingested_at": "2026-06-28T12:51:07.565263"
   }
 }
