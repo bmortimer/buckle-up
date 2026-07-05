@@ -916,15 +916,15 @@
       "date": "2026-07-04",
       "homeTeam": "ATL",
       "awayTeam": "GSV",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 83,
+      "awayScore": 88
     },
     {
       "date": "2026-07-04",
       "homeTeam": "SEA",
       "awayTeam": "PDX",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 72,
+      "awayScore": 77
     },
     {
       "date": "2026-07-05",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-04T12:39:31.410890"
+    "ingested_at": "2026-07-05T12:45:25.307056"
   }
 }
