@@ -930,8 +930,8 @@
       "date": "2026-07-05",
       "homeTeam": "LVA",
       "awayTeam": "IND",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 68,
+      "awayScore": 84
     },
     {
       "date": "2026-07-06",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-05T12:45:25.307056"
+    "ingested_at": "2026-07-06T14:41:12.115689"
   }
 }
