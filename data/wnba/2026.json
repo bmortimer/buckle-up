@@ -937,22 +937,22 @@
       "date": "2026-07-06",
       "homeTeam": "LAS",
       "awayTeam": "SEA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 64,
+      "awayScore": 82
     },
     {
       "date": "2026-07-06",
       "homeTeam": "MIN",
       "awayTeam": "CON",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 89,
+      "awayScore": 90
     },
     {
       "date": "2026-07-06",
       "homeTeam": "WAS",
       "awayTeam": "GSV",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 49,
+      "awayScore": 62
     },
     {
       "date": "2026-07-07",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-06T14:41:12.115689"
+    "ingested_at": "2026-07-07T13:30:36.844678"
   }
 }
