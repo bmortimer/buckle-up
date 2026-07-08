@@ -958,15 +958,15 @@
       "date": "2026-07-07",
       "homeTeam": "NYL",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 77,
+      "awayScore": 88
     },
     {
       "date": "2026-07-07",
       "homeTeam": "PHO",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 66,
+      "awayScore": 77
     },
     {
       "date": "2026-07-08",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-07T13:30:36.844678"
+    "ingested_at": "2026-07-08T12:57:05.704852"
   }
 }
