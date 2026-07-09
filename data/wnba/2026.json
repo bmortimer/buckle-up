@@ -972,15 +972,15 @@
       "date": "2026-07-08",
       "homeTeam": "CON",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 80,
+      "awayScore": 86
     },
     {
       "date": "2026-07-08",
       "homeTeam": "LAS",
       "awayTeam": "IND",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 106,
+      "awayScore": 92
     },
     {
       "date": "2026-07-09",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-08T12:57:05.704852"
+    "ingested_at": "2026-07-09T14:01:35.718066"
   }
 }
