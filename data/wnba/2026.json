@@ -1007,15 +1007,15 @@
       "date": "2026-07-10",
       "homeTeam": "CON",
       "awayTeam": "GSV",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 64,
+      "awayScore": 79
     },
     {
       "date": "2026-07-10",
       "homeTeam": "LAS",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 102,
+      "awayScore": 87
     },
     {
       "date": "2026-07-11",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-10T13:22:30.326461"
+    "ingested_at": "2026-07-11T12:10:43.713159"
   }
 }
