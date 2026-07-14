@@ -1063,15 +1063,15 @@
       "date": "2026-07-13",
       "homeTeam": "ATL",
       "awayTeam": "LAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 101,
+      "awayScore": 92
     },
     {
       "date": "2026-07-13",
       "homeTeam": "MIN",
       "awayTeam": "PHO",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 104,
+      "awayScore": 100
     },
     {
       "date": "2026-07-14",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-13T13:32:20.409392"
+    "ingested_at": "2026-07-14T12:44:11.093687"
   }
 }
