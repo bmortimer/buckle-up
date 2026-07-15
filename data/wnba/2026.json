@@ -1077,8 +1077,8 @@
       "date": "2026-07-14",
       "homeTeam": "CON",
       "awayTeam": "PDX",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 90,
+      "awayScore": 87
     },
     {
       "date": "2026-07-15",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-14T12:44:11.093687"
+    "ingested_at": "2026-07-15T12:48:59.822573"
   }
 }
