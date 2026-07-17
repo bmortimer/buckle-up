@@ -1103,17 +1103,10 @@
     },
     {
       "date": "2026-07-16",
-      "homeTeam": "DAL",
-      "awayTeam": "NYL",
-      "homeScore": null,
-      "awayScore": null
-    },
-    {
-      "date": "2026-07-16",
       "homeTeam": "WAS",
       "awayTeam": "PDX",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 56,
+      "awayScore": 75
     },
     {
       "date": "2026-07-17",
@@ -1175,6 +1168,13 @@
       "date": "2026-07-19",
       "homeTeam": "PHO",
       "awayTeam": "CON",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "date": "2026-07-20",
+      "homeTeam": "DAL",
+      "awayTeam": "NYL",
       "homeScore": null,
       "awayScore": null
     },
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-16T12:57:18.860228"
+    "ingested_at": "2026-07-17T12:39:42.588878"
   }
 }
