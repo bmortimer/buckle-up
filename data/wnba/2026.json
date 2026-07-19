@@ -1133,22 +1133,22 @@
       "date": "2026-07-18",
       "homeTeam": "GSV",
       "awayTeam": "WAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 74,
+      "awayScore": 69
     },
     {
       "date": "2026-07-18",
       "homeTeam": "IND",
       "awayTeam": "NYL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 108,
+      "awayScore": 88
     },
     {
       "date": "2026-07-18",
       "homeTeam": "MIN",
       "awayTeam": "PDX",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 101,
+      "awayScore": 93
     },
     {
       "date": "2026-07-19",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-18T12:09:36.725825"
+    "ingested_at": "2026-07-19T12:10:45.810238"
   }
 }
