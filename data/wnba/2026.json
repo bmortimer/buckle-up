@@ -1196,43 +1196,43 @@
       "date": "2026-07-22",
       "homeTeam": "IND",
       "awayTeam": "CON",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 123,
+      "awayScore": 88
     },
     {
       "date": "2026-07-22",
       "homeTeam": "LAS",
       "awayTeam": "PHO",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 82,
+      "awayScore": 86
     },
     {
       "date": "2026-07-22",
       "homeTeam": "NYL",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 95,
+      "awayScore": 94
     },
     {
       "date": "2026-07-22",
       "homeTeam": "PDX",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 97,
+      "awayScore": 101
     },
     {
       "date": "2026-07-22",
       "homeTeam": "SEA",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 76,
+      "awayScore": 86
     },
     {
       "date": "2026-07-22",
       "homeTeam": "WAS",
       "awayTeam": "LVA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 100,
+      "awayScore": 99
     },
     {
       "date": "2026-07-28",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-21T12:50:29.658443"
+    "ingested_at": "2026-07-23T12:54:35.945767"
   }
 }
