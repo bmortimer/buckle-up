@@ -1280,15 +1280,15 @@
       "date": "2026-07-30",
       "homeTeam": "CHI",
       "awayTeam": "CON",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 94,
+      "awayScore": 88
     },
     {
       "date": "2026-07-30",
       "homeTeam": "LVA",
       "awayTeam": "NYL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 104,
+      "awayScore": 99
     },
     {
       "date": "2026-07-31",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-07-30T13:00:26.158225"
+    "ingested_at": "2026-07-31T13:11:17.858404"
   }
 }
