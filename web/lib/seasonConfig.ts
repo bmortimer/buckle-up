@@ -25,8 +25,8 @@ export const NBA_CONFIG: SeasonConfig = {
 }
 
 export const NHL_CONFIG: SeasonConfig = {
-  currentYear: 2025, // 2025-26 season
-  isInSeason: false, // Off-season as of Apr 2026 (belt holder VEG has no remaining games)
+  currentYear: 2026, // 2026-27 season
+  isInSeason: false, // Off-season until 2026-27 opening night (2026-09-29); CAR (2026 Stanley Cup champ) starts the belt
 }
 
 export const PWHL_CONFIG: SeasonConfig = {
