@@ -1483,8 +1483,8 @@
       "date": "2026-08-10",
       "homeTeam": "SEA",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 97,
+      "awayScore": 88
     },
     {
       "date": "2026-08-11",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-08-10T12:05:29.787373"
+    "ingested_at": "2026-08-11T12:04:18.641496"
   }
 }
