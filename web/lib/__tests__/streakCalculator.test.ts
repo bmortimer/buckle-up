@@ -325,6 +325,50 @@ describe('getCurrentStreak', () => {
       expect(streakNYK).toBe(0) // NYK lost the belt
       expect(streakBOS).toBe(1) // BOS just won
     })
+
+    it('should reset new champion to 0 when the season has started but no games are played yet', () => {
+      // Belt-holder at end of last season (VEG) did NOT win the Cup; a
+      // different team (CAR) starts the new season with the belt. The new
+      // season has no completed games yet, so CAR has defended it zero times.
+      const games: Game[] = [
+        // Last season: FLA starts with belt, VEG takes it and defends
+        { date: '2026-01-10', homeTeam: 'VEG', awayTeam: 'FLA', homeScore: 3, awayScore: 1 },
+        { date: '2026-01-14', homeTeam: 'VEG', awayTeam: 'DAL', homeScore: 4, awayScore: 2 },
+        { date: '2026-01-18', homeTeam: 'VEG', awayTeam: 'LAK', homeScore: 5, awayScore: 3 },
+        // New season is scheduled but unplayed (null scores)
+        { date: '2026-10-08', homeTeam: 'CAR', awayTeam: 'FLA', homeScore: null, awayScore: null },
+      ]
+      const champions = {
+        '2025-26': 'FLA',
+        '2026-27': 'CAR', // CAR won the Cup; VEG (end-of-season holder) did not
+      }
+
+      const streakCAR = getCurrentStreak(games, 'CAR', emptyFranchises, champions, nhl)
+      const streakVEG = getCurrentStreak(games, 'VEG', emptyFranchises, champions, nhl)
+
+      expect(streakCAR).toBe(0) // New champion, no defenses yet
+      expect(streakVEG).toBe(0) // Held belt last season but lost it to the new champion
+    })
+
+    it('should continue the streak into a gameless new season when the belt-holder also won the championship', () => {
+      // The team holding the belt at season's end (VEG) ALSO won the Cup, so
+      // their streak carries into the new season even before any games are played.
+      const games: Game[] = [
+        // Last season: FLA starts with belt, VEG takes it and defends twice
+        { date: '2026-01-10', homeTeam: 'VEG', awayTeam: 'FLA', homeScore: 3, awayScore: 1 },
+        { date: '2026-01-14', homeTeam: 'VEG', awayTeam: 'DAL', homeScore: 4, awayScore: 2 },
+        { date: '2026-01-18', homeTeam: 'VEG', awayTeam: 'LAK', homeScore: 5, awayScore: 3 },
+        // New season scheduled but unplayed
+        { date: '2026-10-08', homeTeam: 'VEG', awayTeam: 'FLA', homeScore: null, awayScore: null },
+      ]
+      const champions = {
+        '2025-26': 'FLA',
+        '2026-27': 'VEG', // VEG both held the belt AND won the Cup
+      }
+
+      const streak = getCurrentStreak(games, 'VEG', emptyFranchises, champions, nhl)
+      expect(streak).toBe(3) // Streak carries over across the offseason
+    })
   })
 
   describe('Edge cases', () => {

@@ -71,13 +71,21 @@ export function getCurrentStreak(
 
   // Track belt across all seasons
   let holder: string | null = null
-  let streak = 0
   let currentStreak = 0
 
-  const sortedSeasons = Array.from(gamesBySeason.keys()).sort()
+  // Iterate the union of seasons that have completed games and seasons that
+  // have a defined champion. Including champion-only seasons ensures the
+  // start-of-season reset still fires for a season that has begun but has no
+  // completed games yet (e.g. the current season on opening day). Without this,
+  // a new champion would inherit a stale mid-history streak instead of starting
+  // fresh at 0 — while a team that both held the belt at season's end AND won
+  // the championship still correctly continues its streak.
+  const sortedSeasons = Array.from(
+    new Set([...gamesBySeason.keys(), ...Object.keys(champions)])
+  ).sort()
 
   for (const seasonKey of sortedSeasons) {
-    const seasonGames = gamesBySeason.get(seasonKey)!
+    const seasonGames = gamesBySeason.get(seasonKey) ?? []
 
     // At the start of each season, reset to the champion
     // (unless continuing from previous season - handled below)
@@ -114,21 +122,17 @@ export function getCurrentStreak(
       if (holderWon) {
         // Holder defended the belt
         currentStreak++
-        if (holder === currentHolder) {
-          streak = currentStreak
-        }
       } else {
         // Belt changes hands
-        const newHolder = holderIsHome ? game.awayTeam : game.homeTeam
-        holder = newHolder
+        holder = holderIsHome ? game.awayTeam : game.homeTeam
         currentStreak = 1 // The win that takes the belt counts as game #1
-
-        if (holder === currentHolder) {
-          streak = currentStreak
-        }
       }
     }
   }
 
-  return streak
+  // The current streak belongs to whoever holds the belt after all games.
+  // If the queried team isn't the final holder, they have no current streak.
+  // This also yields 0 when the belt has just reset to a new season's champion
+  // who hasn't defended it yet (their currentStreak is 0).
+  return holder === currentHolder ? currentStreak : 0
 }
