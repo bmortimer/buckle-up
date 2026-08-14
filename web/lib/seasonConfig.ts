@@ -26,7 +26,7 @@ export const NBA_CONFIG: SeasonConfig = {
 
 export const NHL_CONFIG: SeasonConfig = {
   currentYear: 2026, // 2026-27 season
-  isInSeason: false, // Off-season until 2026-27 opening night (2026-09-29); CAR (2026 Stanley Cup champ) starts the belt
+  isInSeason: true, // 2026-27 season; CAR (2026 Stanley Cup champ) starts the belt
 }
 
 export const PWHL_CONFIG: SeasonConfig = {

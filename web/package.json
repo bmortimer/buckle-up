@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.2",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
@@ -36,7 +36,7 @@
     "autoprefixer": "^10.5.0",
     "baseline-browser-mapping": "^2.10.21",
     "canvas": "^3.2.3",
-    "eslint": "^9.39.4",
+    "eslint": "^9.39.5",
     "eslint-config-next": "^16.2.4",
     "eslint-config-prettier": "^10.1.8",
     "jsdom": "^29.0.2",
