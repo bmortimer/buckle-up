@@ -1546,15 +1546,15 @@
       "date": "2026-08-14",
       "homeTeam": "IND",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 98,
+      "awayScore": 87
     },
     {
       "date": "2026-08-14",
       "homeTeam": "SEA",
       "awayTeam": "PDX",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 82,
+      "awayScore": 84
     },
     {
       "date": "2026-08-15",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-08-14T12:03:54.785819"
+    "ingested_at": "2026-08-15T11:42:00.534972"
   }
 }
