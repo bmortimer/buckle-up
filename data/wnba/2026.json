@@ -1602,8 +1602,8 @@
       "date": "2026-08-17",
       "homeTeam": "GSV",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 78,
+      "awayScore": 70
     },
     {
       "date": "2026-08-18",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-08-17T11:46:51.096147"
+    "ingested_at": "2026-08-18T11:47:26.962982"
   }
 }
