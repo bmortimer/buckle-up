@@ -1658,15 +1658,15 @@
       "date": "2026-08-21",
       "homeTeam": "CHI",
       "awayTeam": "GSV",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 73,
+      "awayScore": 70
     },
     {
       "date": "2026-08-21",
       "homeTeam": "WAS",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 84,
+      "awayScore": 94
     },
     {
       "date": "2026-08-22",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-08-21T11:49:15.555491"
+    "ingested_at": "2026-08-22T11:42:10.255387"
   }
 }
