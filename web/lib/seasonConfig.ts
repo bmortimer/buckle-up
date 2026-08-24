@@ -20,8 +20,8 @@ export const WNBA_CONFIG: SeasonConfig = {
 }
 
 export const NBA_CONFIG: SeasonConfig = {
-  currentYear: 2025, // 2025-26 season
-  isInSeason: false, // Off-season as of Apr 2026 (regular season complete, no champion yet)
+  currentYear: 2026, // 2026-27 season
+  isInSeason: true, // 2026-27 season; NYK (2026 champ) starts the belt
 }
 
 export const NHL_CONFIG: SeasonConfig = {

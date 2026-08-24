@@ -130,13 +130,16 @@ def fetch_season_html(season: str, month: str = None, max_retries: int = 3) -> s
     return ""
 
 
-def parse_season_schedule(html: str, season: str) -> list[dict]:
+def parse_season_schedule(html: str, season: str, include_scheduled: bool = False) -> list[dict]:
     """
     Parse NBA season schedule from HTML.
 
     Args:
         html: HTML content from basketball-reference.com
         season: Season string (e.g., '1976-77')
+        include_scheduled: If True, also emit not-yet-played games with null
+            scores (used to seed a freshly released schedule). If False, only
+            completed games with scores are returned.
 
     Returns:
         List of game dictionaries
@@ -217,8 +220,11 @@ def parse_season_schedule(html: str, season: str) -> list[dict]:
             home_team_name = cells[3 + offset].get_text().strip()
             home_score_str = cells[4 + offset].get_text().strip()
 
-            # Skip if scores are empty (game not played yet)
-            if not away_score_str or not home_score_str:
+            # Handle games that haven't been played yet (empty scores).
+            # When seeding a freshly released schedule we keep them with null
+            # scores; otherwise we skip them (only completed games wanted).
+            is_scheduled = not away_score_str or not home_score_str
+            if is_scheduled and not include_scheduled:
                 continue
 
             # Parse date (format like "Tue, Oct 21, 1976")
@@ -233,13 +239,17 @@ def parse_season_schedule(html: str, season: str) -> list[dict]:
                     print(f"Warning: Could not parse date: {date_str}")
                     continue
 
-            # Convert scores to integers
-            try:
-                away_score = int(away_score_str)
-                home_score = int(home_score_str)
-            except ValueError:
-                print(f"Warning: Could not parse scores: {away_score_str}, {home_score_str}")
-                continue
+            # Convert scores to integers (null for not-yet-played games)
+            if is_scheduled:
+                away_score = None
+                home_score = None
+            else:
+                try:
+                    away_score = int(away_score_str)
+                    home_score = int(home_score_str)
+                except ValueError:
+                    print(f"Warning: Could not parse scores: {away_score_str}, {home_score_str}")
+                    continue
 
             # Map team names to codes
             away_code = TEAM_NAME_TO_CODE.get(away_team_name)
@@ -364,6 +374,12 @@ def main():
         type=str,
         help='NBA season (e.g., 1976-77, 1982-83)'
     )
+    parser.add_argument(
+        '--include-scheduled',
+        action='store_true',
+        help='Also emit not-yet-played games with null scores. Use this to seed '
+             'a freshly released schedule before any games have been played.'
+    )
 
     args = parser.parse_args()
     season = args.season
@@ -386,6 +402,7 @@ def main():
         "1982-83": "1983-04-17",
         "2024-25": "2025-04-13",
         "2025-26": "2026-04-12",
+        "2026-27": "2027-04-11",
     }
 
     # Known NBA Cup final dates to exclude.
@@ -396,6 +413,7 @@ def main():
         "2023-24": "2023-12-09",
         "2024-25": "2024-12-17",
         "2025-26": "2025-12-16",
+        "2026-27": "2026-12-11",
     }
 
     cutoff_date = REGULAR_SEASON_END_DATES.get(season)
@@ -421,7 +439,7 @@ def main():
             continue
 
         # Parse games from this month
-        month_games = parse_season_schedule(html, season)
+        month_games = parse_season_schedule(html, season, include_scheduled=args.include_scheduled)
         all_games.extend(month_games)
 
         # Be respectful to Basketball-Reference servers (5 second delay between month pages)
