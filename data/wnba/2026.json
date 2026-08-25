@@ -1714,15 +1714,15 @@
       "date": "2026-08-24",
       "homeTeam": "LAS",
       "awayTeam": "ATL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 71,
+      "awayScore": 78
     },
     {
       "date": "2026-08-24",
       "homeTeam": "MIN",
       "awayTeam": "GSV",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 66,
+      "awayScore": 80
     },
     {
       "date": "2026-08-25",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-08-24T11:50:25.772840"
+    "ingested_at": "2026-08-25T11:50:56.933560"
   }
 }
