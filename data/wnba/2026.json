@@ -1791,8 +1791,8 @@
       "date": "2026-08-29",
       "homeTeam": "NYL",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 85,
+      "awayScore": 66
     },
     {
       "date": "2026-08-30",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-08-29T15:41:45.875840"
+    "ingested_at": "2026-08-30T15:23:18.714159"
   }
 }
