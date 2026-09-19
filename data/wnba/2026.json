@@ -1861,15 +1861,15 @@
       "date": "2026-09-18",
       "homeTeam": "GSV",
       "awayTeam": "PDX",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 82,
+      "awayScore": 66
     },
     {
       "date": "2026-09-18",
       "homeTeam": "MIN",
       "awayTeam": "NYL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 81,
+      "awayScore": 93
     },
     {
       "date": "2026-09-19",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-09-18T15:03:26.380707"
+    "ingested_at": "2026-09-19T14:34:02.870559"
   }
 }
