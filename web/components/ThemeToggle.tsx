@@ -34,7 +34,7 @@ export function ThemeToggle() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`absolute inset-0 m-auto w-5 h-5 transition-all ${
+        className={`absolute inset-0 m-auto w-5 h-5 transition-[opacity,transform] ${
           theme === 'dark' ? 'scale-0 rotate-90 opacity-0' : 'scale-100 rotate-0 opacity-100'
         }`}
         aria-hidden="true"
@@ -53,7 +53,7 @@ export function ThemeToggle() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`absolute inset-0 m-auto w-5 h-5 transition-all ${
+        className={`absolute inset-0 m-auto w-5 h-5 transition-[opacity,transform] ${
           theme === 'dark' ? 'scale-100 rotate-0 opacity-100' : 'scale-0 rotate-90 opacity-0'
         }`}
         aria-hidden="true"

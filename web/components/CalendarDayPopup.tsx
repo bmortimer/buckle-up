@@ -49,7 +49,7 @@ export default function CalendarDayPopup({
         role="dialog"
         aria-modal="true"
         aria-labelledby="popup-date"
-        className={`fixed bg-card border-2 border-amber-500 p-4 shadow-[0_0_20px_rgba(251,191,36,0.3)] z-50 ${
+        className={`fixed bg-card border-2 border-amber-500 p-4 shadow-lg z-50 ${
           isDesktop && position ? 'w-72' : 'bottom-4 left-4 right-4'
         }`}
         style={

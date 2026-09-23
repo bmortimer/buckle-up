@@ -51,7 +51,7 @@ export default function Timeline({ changes, franchises, selectedTeam }: Timeline
             return (
               <div
                 key={idx}
-                className={`flex items-center gap-3 p-2.5 border border-border/40 transition-all duration-200 group cursor-pointer ${
+                className={`flex items-center gap-3 p-2.5 border border-border/40 transition-colors duration-200 group cursor-pointer ${
                   isGreyedOut
                     ? 'bg-muted/20 opacity-40'
                     : 'bg-card hover:bg-muted/30 hover:border-amber-500/50'

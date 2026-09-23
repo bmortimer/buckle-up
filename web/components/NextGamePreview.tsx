@@ -87,7 +87,7 @@ export default function NextGamePreview({
                 TBD
               </div>
             </div>
-            <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-3 sm:mb-4" />
+            <div className="h-px bg-border mb-3 sm:mb-4" />
             <div className="text-center px-2">
               <p className="text-xs sm:text-sm text-muted-foreground font-body leading-relaxed">
                 {league === 'wnba' ? (
@@ -225,7 +225,7 @@ export default function NextGamePreview({
           </div>
 
           {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+          <div className="h-px bg-border" />
         </div>
 
         {/* Status indicator */}

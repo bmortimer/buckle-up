@@ -64,7 +64,7 @@ export default function BeltDynasties({ changes, franchises }: BeltDynastiesProp
           return (
             <div
               key={`${dynasty.team}-${dynasty.startDate}`}
-              className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-200 group"
+              className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors duration-200 group"
             >
               {/* Rank */}
               <div className="w-8 flex justify-center">

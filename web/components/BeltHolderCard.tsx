@@ -52,7 +52,7 @@ export default function BeltHolderCard({
           </h3>
 
           {/* Divider line */}
-          <div className="h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-border to-transparent mb-4 sm:mb-6" />
+          <div className="h-0.5 sm:h-1 bg-border mb-4 sm:mb-6" />
 
           {stats && (
             <div className="grid grid-cols-3 gap-2 sm:gap-3">
@@ -126,7 +126,7 @@ export default function BeltHolderCard({
           </div>
 
           {/* Vertical divider */}
-          <div className="w-px bg-gradient-to-b from-transparent via-border to-transparent" />
+          <div className="w-px bg-border" />
 
           {/* Right side: Stats stacked vertically */}
           {stats && (

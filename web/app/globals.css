@@ -103,7 +103,7 @@ body {
   h6 {
     font-family: var(--font-display);
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
@@ -133,9 +133,9 @@ body {
 
   .dark .scoreboard-panel {
     border-color: hsl(var(--border));
-    box-shadow:
-      0 0 0 1px hsl(var(--accent) / 0.2),
-      0 8px 32px rgba(0, 0, 0, 0.4);
+    /* Panel reads as a physical housing: crisp edge + honest elevation,
+       no gold halo. The bezel comes from the border, not a glow. */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
   }
 
   /* ---- LED TEXT EFFECTS ---- */
@@ -145,8 +145,23 @@ body {
     font-weight: 600;
   }
 
+  /* Real LED/VFD displays bloom a little; a tight 2px halo reads as "lit
+     segment" where 0 0 20px read as "stage light". */
   .dark .led-text {
-    text-shadow: 0 0 20px currentColor;
+    text-shadow: 0 0 2px currentColor;
+  }
+
+  /* ---- SEGMENT RULE ---- */
+  /* A scoreboard divides with hard bezel lines, not soft color fades.
+     Replaces the `via-{color} to-transparent` gradient strips. */
+  .segment-rule {
+    height: 2px;
+    background: hsl(var(--border));
+  }
+
+  .segment-rule-accent {
+    height: 2px;
+    background: hsl(var(--accent));
   }
 
   /* ---- LED STATUS BARS (hidden in Midnight) ---- */
@@ -225,6 +240,19 @@ body {
 
 .animate-fade-in {
   animation: fade-in 0.8s ease-out forwards;
+}
+
+/* Respect users who ask for less motion. Segments simply appear rather
+   than sliding/flipping/pulsing in. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* =====================================================

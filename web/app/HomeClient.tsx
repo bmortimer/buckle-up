@@ -11,7 +11,7 @@ export default function HomeClient() {
       <div className="flex items-center justify-end gap-2 mb-8">
         <Link
           href="/about"
-          className="px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider text-muted-foreground hover:text-foreground border border-border hover:border-muted-foreground bg-card transition-all"
+          className="px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider text-muted-foreground hover:text-foreground border border-border hover:border-muted-foreground bg-card transition-colors"
         >
           About
         </Link>
@@ -37,7 +37,7 @@ export default function HomeClient() {
           The Belt
         </h1>
 
-        <div className="h-0.5 bg-gradient-to-r from-transparent via-border to-transparent mb-4 sm:mb-6" />
+        <div className="h-0.5 bg-border mb-4 sm:mb-6" />
 
         <p className="text-base sm:text-lg text-muted-foreground font-body leading-relaxed max-w-2xl mx-auto mb-6">
           What if our sports leagues worked a bit more like boxing or wrestling? One belt to rule
@@ -48,7 +48,7 @@ export default function HomeClient() {
         {/* How It Works link */}
         <Link
           href="/about"
-          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-mono uppercase tracking-wider text-muted-foreground hover:text-primary border border-border hover:border-primary transition-all rounded"
+          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-mono uppercase tracking-wider text-muted-foreground hover:text-primary border border-border hover:border-primary transition-colors rounded"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
@@ -77,7 +77,7 @@ export default function HomeClient() {
           {/* WNBA Card */}
           <Link
             href="/wnba"
-            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
           >
             {/* Top LED strip - red for WNBA */}
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -94,7 +94,7 @@ export default function HomeClient() {
                 WNBA
               </h3>
 
-              <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+              <div className="h-px bg-border" />
 
               <p className="text-sm text-muted-foreground font-body leading-relaxed">
                 Track the lineal championship from 1997 to present. See who holds the belt, upcoming
@@ -116,7 +116,7 @@ export default function HomeClient() {
           {/* NBA Card */}
           <Link
             href="/nba"
-            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
           >
             {/* Top LED strip - amber for NBA */}
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -133,7 +133,7 @@ export default function HomeClient() {
                 NBA
               </h3>
 
-              <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+              <div className="h-px bg-border" />
 
               <p className="text-sm text-muted-foreground font-body leading-relaxed">
                 Track the lineal championship from 1976 to present. See who holds the belt, upcoming
@@ -155,7 +155,7 @@ export default function HomeClient() {
           {/* NHL Card */}
           <Link
             href="/nhl"
-            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
           >
             {/* Top LED strip - green for NHL */}
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -172,7 +172,7 @@ export default function HomeClient() {
                 NHL
               </h3>
 
-              <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+              <div className="h-px bg-border" />
 
               <p className="text-sm text-muted-foreground font-body leading-relaxed">
                 Track the lineal championship from 1942 to present. See who holds the belt, upcoming
@@ -194,7 +194,7 @@ export default function HomeClient() {
           {/* PWHL Card */}
           <Link
             href="/pwhl"
-            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
           >
             {/* Top LED strip - purple for PWHL */}
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -211,7 +211,7 @@ export default function HomeClient() {
                 PWHL
               </h3>
 
-              <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+              <div className="h-px bg-border" />
 
               <p className="text-sm text-muted-foreground font-body leading-relaxed">
                 Track the lineal championship from 2024 to present. See who holds the belt, upcoming
@@ -234,7 +234,7 @@ export default function HomeClient() {
 
       {/* Footer */}
       <footer className="scoreboard-panel p-4 sm:p-6 text-center relative overflow-hidden">
-        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-border" />
 
         <p className="text-xs text-muted-foreground font-mono tracking-wider uppercase">
           Data updates nightly ~3:30 AM Pacific (winter) / 4:30 AM (summer)

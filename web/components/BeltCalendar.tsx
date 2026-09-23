@@ -371,7 +371,7 @@ export default function BeltCalendar({
               <button
                 key={team}
                 onClick={() => setSelectedTeam(team)}
-                className="flex items-center gap-2 px-3 py-2 border border-border hover:border-amber-500 transition-all group"
+                className="flex items-center gap-2 px-3 py-2 border border-border hover:border-amber-500 transition-colors group"
               >
                 <TeamLogo teamCode={team} franchises={franchises} league={league} size="xs" />
                 <span className="text-xs font-mono group-hover:text-amber-500 transition-colors">
@@ -515,7 +515,7 @@ export default function BeltCalendar({
                               return (
                                 <div
                                   key={dayIdx}
-                                  className={`w-2.5 h-2.5 cursor-pointer transition-all hover:scale-[2] active:scale-[2.2] hover:z-10 active:z-10 relative flex items-center justify-center ${isSelected ? 'scale-[2] z-10 ring-1 ring-amber-500' : ''} ${isLoss ? 'border border-muted-foreground' : ''}`}
+                                  className={`w-2.5 h-2.5 cursor-pointer transition-[colors,transform] hover:scale-[2] active:scale-[2.2] hover:z-10 active:z-10 relative flex items-center justify-center ${isSelected ? 'scale-[2] z-10 ring-1 ring-amber-500' : ''} ${isLoss ? 'border border-muted-foreground' : ''}`}
                                   style={{
                                     backgroundColor: cellColor,
                                     boxShadow: isWinOrDefense ? `0 0 4px ${color}60` : 'none',

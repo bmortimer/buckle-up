@@ -116,12 +116,12 @@ export default function SeasonPicker({
         onClick={() => setIsOpen(true)}
         aria-labelledby="time-period-label"
         aria-haspopup="dialog"
-        className="w-full scoreboard-panel p-2 sm:p-3 relative group hover:border-primary transition-all active:scale-[0.98]"
+        className="w-full scoreboard-panel p-2 sm:p-3 relative group hover:border-primary transition-[colors,transform] active:scale-[0.98]"
       >
         {/* Year Display */}
         <div className="text-center">
           <div
-            className="text-lg sm:text-xl md:text-lg lg:text-xl font-mono font-bold tabular-nums tracking-wider transition-all group-hover:scale-105"
+            className="text-lg sm:text-xl md:text-lg lg:text-xl font-mono font-bold tabular-nums tracking-wider transition-transform group-hover:scale-105"
             style={{ color: 'hsl(var(--primary))' }}
           >
             {isAllTime ? 'ALL TIME' : formatSeasonDisplay(currentYear!, league)}
@@ -167,7 +167,7 @@ export default function SeasonPicker({
               <button
                 ref={closeButtonRef}
                 onClick={() => setIsOpen(false)}
-                className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border-2 border-border bg-card text-muted-foreground hover:border-primary hover:text-primary active:scale-95 transition-all"
+                className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border-2 border-border bg-card text-muted-foreground hover:border-primary hover:text-primary active:scale-95 transition-[colors,transform]"
                 aria-label="Close"
               >
                 ✕
@@ -185,7 +185,7 @@ export default function SeasonPicker({
                     aria-label="Select all time"
                     className={`
                       w-full px-4 py-3 text-base sm:text-lg font-mono font-bold uppercase
-                      border-2 transition-all
+                      border-2 transition-[colors,transform]
                       focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
                       ${
                         isAllTime
@@ -208,7 +208,7 @@ export default function SeasonPicker({
                       <div className="text-xs sm:text-sm font-orbitron tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                         <span>{decadeLabel}</span>
                         <div
-                          className="flex-1 h-px bg-gradient-to-r from-border/40 to-transparent"
+                          className="flex-1 h-px bg-border/40"
                           aria-hidden="true"
                         />
                       </div>
@@ -228,7 +228,7 @@ export default function SeasonPicker({
                               aria-label={`Select ${formatSeasonDisplay(year, league)}`}
                               className={`
                                 px-3 py-2 text-sm sm:text-base font-mono font-bold tabular-nums
-                                border-2 transition-all
+                                border-2 transition-[colors,transform]
                                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
                                 ${
                                   isSelected

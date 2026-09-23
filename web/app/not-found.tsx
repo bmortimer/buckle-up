@@ -17,7 +17,7 @@ export default function NotFound() {
           Page Not Found
         </div>
 
-        <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-6" />
+        <div className="h-px bg-border mb-6" />
 
         <p className="text-sm text-muted-foreground mb-6 font-body">
           The page you&apos;re looking for doesn&apos;t exist or has been moved.

@@ -161,7 +161,7 @@ export default function AboutPage() {
           </h1>
 
           <div
-            className="h-0.5 bg-gradient-to-r from-transparent via-border to-transparent mb-4 sm:mb-6"
+            className="h-0.5 bg-border mb-4 sm:mb-6"
             aria-hidden="true"
           />
 
@@ -224,7 +224,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div
-                className="h-px bg-gradient-to-r from-border/50 via-border to-border/50"
+                className="h-px bg-border"
                 aria-hidden="true"
               />
               <div className="flex gap-4 items-start">
@@ -245,7 +245,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div
-                className="h-px bg-gradient-to-r from-border/50 via-border to-border/50"
+                className="h-px bg-border"
                 aria-hidden="true"
               />
               <div className="flex gap-4 items-start">
@@ -266,7 +266,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div
-                className="h-px bg-gradient-to-r from-border/50 via-border to-border/50"
+                className="h-px bg-border"
                 aria-hidden="true"
               />
               <div className="flex gap-4 items-start">
@@ -608,7 +608,7 @@ export default function AboutPage() {
         {/* Footer */}
         <footer className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
           <div
-            className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent"
+            className="absolute bottom-0 left-0 right-0 h-0.5 bg-border"
             aria-hidden="true"
           />
           <p className="text-xs text-muted-foreground font-mono tracking-wider uppercase mb-3">

@@ -406,7 +406,7 @@ export default function BeltDashboard({
                   setYearRange([previousYear, previousYear])
                   setIsAllTime(false)
                 }}
-                className="px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:text-amber-500 border border-border hover:border-amber-500 bg-card transition-all"
+                className="px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:text-amber-500 border border-border hover:border-amber-500 bg-card transition-colors"
               >
                 ←{' '}
                 {league === 'wnba'
@@ -420,7 +420,7 @@ export default function BeltDashboard({
                   setYearRange([nextYear, nextYear])
                   setIsAllTime(false)
                 }}
-                className="px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:text-amber-500 border border-border hover:border-amber-500 bg-card transition-all"
+                className="px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:text-amber-500 border border-border hover:border-amber-500 bg-card transition-colors"
               >
                 {league === 'wnba'
                   ? nextYear
@@ -450,7 +450,7 @@ export default function BeltDashboard({
         <div className="flex items-center gap-2">
           <Link
             href="/wnba"
-            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-all ${
+            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-colors ${
               league === 'wnba'
                 ? 'text-amber-500 border-amber-500 bg-amber-500/10'
                 : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
@@ -460,7 +460,7 @@ export default function BeltDashboard({
           </Link>
           <Link
             href="/nba"
-            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-all ${
+            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-colors ${
               league === 'nba'
                 ? 'text-amber-500 border-amber-500 bg-amber-500/10'
                 : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
@@ -470,7 +470,7 @@ export default function BeltDashboard({
           </Link>
           <Link
             href="/nhl"
-            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-all ${
+            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-colors ${
               league === 'nhl'
                 ? 'text-amber-500 border-amber-500 bg-amber-500/10'
                 : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
@@ -480,7 +480,7 @@ export default function BeltDashboard({
           </Link>
           <Link
             href="/pwhl"
-            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-all ${
+            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-colors ${
               league === 'pwhl'
                 ? 'text-amber-500 border-amber-500 bg-amber-500/10'
                 : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
@@ -494,7 +494,7 @@ export default function BeltDashboard({
         <div className="flex items-center gap-2">
           <Link
             href="/about"
-            className="px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider text-muted-foreground hover:text-foreground border border-border hover:border-muted-foreground bg-card transition-all"
+            className="px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider text-muted-foreground hover:text-foreground border border-border hover:border-muted-foreground bg-card transition-colors"
           >
             About
           </Link>

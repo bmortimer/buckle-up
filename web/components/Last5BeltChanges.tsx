@@ -79,7 +79,7 @@ export default function Last5BeltChanges({ league, history, franchises }: Last5B
                 {/* Team */}
                 <div
                   className={`flex flex-col items-center gap-1 sm:gap-1.5 px-2 py-1.5 rounded ${
-                    isEnd ? 'border-2 border-green-500 shadow-[0_0_6px] shadow-green-500/40' : ''
+                    isEnd ? 'border-2 border-green-500' : ''
                   }`}
                 >
                   <div className="relative">

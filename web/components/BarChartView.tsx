@@ -103,9 +103,9 @@ export default function BarChartView({
             <button
               key={option.value}
               onClick={() => setSortBy(option.value as SortOption)}
-              className={`px-3 sm:px-4 py-2 text-[0.6rem] sm:text-[0.65rem] font-mono uppercase border transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+              className={`px-3 sm:px-4 py-2 text-[0.6rem] sm:text-[0.65rem] font-mono uppercase border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
                 sortBy === option.value
-                  ? 'bg-amber-500/20 text-amber-500 border-amber-500 shadow-[0_0_8px_rgba(251,191,36,0.4)]'
+                  ? 'bg-amber-500/20 text-amber-500 border-amber-500'
                   : 'bg-card text-muted-foreground border-border hover:border-muted-foreground'
               }`}
               aria-pressed={sortBy === option.value}
@@ -163,7 +163,7 @@ export default function BarChartView({
               <div className="flex-1 bg-black/40 h-7 overflow-hidden relative border border-border/30">
                 {/* Segmented LED bar */}
                 <div
-                  className={`h-full flex items-center px-2.5 transition-all duration-300 relative ${isSelected ? 'ring-1 ring-amber-500' : ''}`}
+                  className={`h-full flex items-center px-2.5 transition-[width] duration-300 relative ${isSelected ? 'ring-1 ring-amber-500' : ''}`}
                   style={{
                     width: `${percentage}%`,
                     background: `linear-gradient(90deg, ${color} 0%, ${color} 90%, transparent 100%)`,

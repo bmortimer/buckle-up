@@ -50,7 +50,7 @@ export default function ChampionshipTimeline({
                 <div key={idx} className="flex items-center gap-2 flex-shrink-0 group">
                   {/* Arrow with team color */}
                   <svg
-                    className="w-6 h-6 flex-shrink-0 transition-all"
+                    className="w-6 h-6 flex-shrink-0 transition-transform"
                     fill="none"
                     stroke={teamColor}
                     viewBox="0 0 24 24"
@@ -71,11 +71,6 @@ export default function ChampionshipTimeline({
                   <div className="flex flex-col items-center gap-2">
                     <div className="transition-transform group-hover:scale-110 relative">
                       <TeamLogo teamCode={change.toTeam} franchises={franchises} size="sm" />
-                      {/* Glow effect on hover */}
-                      <div
-                        className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-50 blur-md transition-opacity -z-10"
-                        style={{ backgroundColor: teamColor }}
-                      />
                     </div>
                     <div className="text-xs text-center w-20">
                       <div className="font-medium truncate font-bebas" style={{ color: teamColor }}>

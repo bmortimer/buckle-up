@@ -47,7 +47,7 @@ export default function RetroScoreboard({
           </div>
 
           {/* Divider */}
-          <div className="h-8 sm:h-10 md:h-12 w-px bg-gradient-to-b from-transparent via-border to-transparent" />
+          <div className="h-8 sm:h-10 md:h-12 w-px bg-border" />
 
           {/* Title Bouts stat */}
           <div className="text-center">
@@ -65,7 +65,7 @@ export default function RetroScoreboard({
           </div>
 
           {/* Divider */}
-          <div className="h-8 sm:h-10 md:h-12 w-px bg-gradient-to-b from-transparent via-border to-transparent" />
+          <div className="h-8 sm:h-10 md:h-12 w-px bg-border" />
 
           {/* Changes stat */}
           <div className="text-center">
