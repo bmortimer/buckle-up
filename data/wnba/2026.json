@@ -1966,15 +1966,15 @@
       "date": "2026-09-23",
       "homeTeam": "NYL",
       "awayTeam": "ATL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 65,
+      "awayScore": 83
     },
     {
       "date": "2026-09-23",
       "homeTeam": "SEA",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 91,
+      "awayScore": 103
     },
     {
       "date": "2026-09-24",
@@ -2007,6 +2007,6 @@
   ],
   "metadata": {
     "total_games": 286,
-    "ingested_at": "2026-09-23T15:29:28.977110"
+    "ingested_at": "2026-09-24T15:51:37.463291"
   }
 }
