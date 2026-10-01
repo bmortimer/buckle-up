@@ -6,57 +6,57 @@
       "date": "2026-09-29",
       "homeTeam": "BOS",
       "awayTeam": "NYR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "date": "2026-09-29",
       "homeTeam": "CAR",
       "awayTeam": "FLA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 1
     },
     {
       "date": "2026-09-29",
       "homeTeam": "EDM",
       "awayTeam": "VAN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 6
     },
     {
       "date": "2026-09-29",
       "homeTeam": "TOR",
       "awayTeam": "MTL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-09-29",
       "homeTeam": "VEG",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 2
     },
     {
       "date": "2026-09-30",
       "homeTeam": "COL",
       "awayTeam": "LAK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 8,
+      "awayScore": 4
     },
     {
       "date": "2026-09-30",
       "homeTeam": "PHI",
       "awayTeam": "PIT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 7
     },
     {
       "date": "2026-09-30",
       "homeTeam": "TOR",
       "awayTeam": "NYI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 1
     },
     {
       "date": "2026-10-01",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-08-09T17:07:10.112317"
+    "ingested_at": "2026-10-01T17:26:36.833315"
   }
 }
