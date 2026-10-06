@@ -279,29 +279,29 @@
       "date": "2026-10-05",
       "homeTeam": "BOS",
       "awayTeam": "OTT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 4
     },
     {
       "date": "2026-10-05",
       "homeTeam": "DAL",
       "awayTeam": "SJS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 0
     },
     {
       "date": "2026-10-05",
       "homeTeam": "PIT",
       "awayTeam": "WPG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-10-05",
       "homeTeam": "TBL",
       "awayTeam": "PHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "date": "2026-10-06",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-10-05T19:45:32.104538"
+    "ingested_at": "2026-10-06T17:19:44.738205"
   }
 }
