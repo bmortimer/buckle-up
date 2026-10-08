@@ -370,22 +370,22 @@
       "date": "2026-10-07",
       "homeTeam": "ANA",
       "awayTeam": "EDM",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 5
     },
     {
       "date": "2026-10-07",
       "homeTeam": "WPG",
       "awayTeam": "COL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-10-07",
       "homeTeam": "WSH",
       "awayTeam": "PIT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 3
     },
     {
       "date": "2026-10-08",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-10-07T17:52:58.367979"
+    "ingested_at": "2026-10-08T17:56:18.331654"
   }
 }
