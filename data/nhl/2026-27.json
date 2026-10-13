@@ -608,22 +608,22 @@
       "date": "2026-10-12",
       "homeTeam": "BUF",
       "awayTeam": "FLA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 3
     },
     {
       "date": "2026-10-12",
       "homeTeam": "MIN",
       "awayTeam": "VEG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 2
     },
     {
       "date": "2026-10-12",
       "homeTeam": "NJD",
       "awayTeam": "OTT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 4
     },
     {
       "date": "2026-10-13",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-10-12T20:22:32.732188"
+    "ingested_at": "2026-10-13T18:24:52.722395"
   }
 }
