@@ -741,15 +741,15 @@
       "date": "2026-10-14",
       "homeTeam": "COL",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-10-14",
       "homeTeam": "WSH",
       "awayTeam": "MTL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 4
     },
     {
       "date": "2026-10-15",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-10-14T15:53:10.572477"
+    "ingested_at": "2026-10-15T15:40:22.296600"
   }
 }
