@@ -832,15 +832,15 @@
       "date": "2026-10-16",
       "homeTeam": "ANA",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 4
     },
     {
       "date": "2026-10-16",
       "homeTeam": "COL",
       "awayTeam": "PIT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 2
     },
     {
       "date": "2026-10-17",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-10-16T15:25:43.855914"
+    "ingested_at": "2026-10-17T14:18:56.986473"
   }
 }
