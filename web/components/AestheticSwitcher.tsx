@@ -13,6 +13,11 @@ const LABEL: Record<ThemeValue, string> = {
   'theme-riso': 'risograph',
 }
 
+// Same box model as the adjacent About link (text-[0.65rem], py-1.5, 1px border)
+// so heights match in every theme. Icons are 1.5em = one line box tall, and
+// px equals py, so the button comes out square. Icons stack in one grid cell.
+const BOX = 'grid place-items-center px-1.5 py-1.5 text-[0.65rem] border border-border bg-card'
+
 export function AestheticSwitcher() {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
@@ -20,7 +25,11 @@ export function AestheticSwitcher() {
   useEffect(() => setMounted(true), [])
 
   if (!mounted) {
-    return <div className="aspect-square h-full border border-border bg-card" aria-hidden="true" />
+    return (
+      <div className={BOX} aria-hidden="true">
+        <span className="w-[1.5em] h-[1.5em]" />
+      </div>
+    )
   }
 
   // Normalize current theme to one of the three cycle states (system → treat as dark)
@@ -37,8 +46,7 @@ export function AestheticSwitcher() {
   return (
     <button
       onClick={() => setTheme(next)}
-      className="relative aspect-square h-full border border-border bg-card hover:border-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-      style={{ borderRadius: 'var(--radius)' }}
+      className={`${BOX} text-muted-foreground hover:text-foreground hover:border-muted-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2`}
       aria-label={`Theme: ${LABEL[current]}. Switch to ${LABEL[next]}.`}
       title={`Theme: ${LABEL[current]} — click for ${LABEL[next]}`}
       type="button"
@@ -50,7 +58,7 @@ export function AestheticSwitcher() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`absolute inset-0 m-auto w-4 h-4 transition-[opacity,transform] ${
+        className={`[grid-area:1/1] w-[1.5em] h-[1.5em] transition-[opacity,transform] ${
           isLight ? 'scale-100 rotate-0 opacity-100' : 'scale-0 -rotate-90 opacity-0'
         }`}
         aria-hidden="true"
@@ -69,7 +77,7 @@ export function AestheticSwitcher() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`absolute inset-0 m-auto w-4 h-4 transition-[opacity,transform] ${
+        className={`[grid-area:1/1] w-[1.5em] h-[1.5em] transition-[opacity,transform] ${
           isDark ? 'scale-100 rotate-0 opacity-100' : 'scale-0 rotate-90 opacity-0'
         }`}
         aria-hidden="true"
@@ -86,7 +94,7 @@ export function AestheticSwitcher() {
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
         viewBox="0 0 24 24"
-        className={`absolute inset-0 m-auto w-4 h-4 transition-[opacity,transform] ${
+        className={`[grid-area:1/1] w-[1.5em] h-[1.5em] transition-[opacity,transform] ${
           isRiso ? 'scale-100 rotate-0 opacity-100' : 'scale-0 rotate-90 opacity-0'
         }`}
         aria-hidden="true"

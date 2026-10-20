@@ -111,11 +111,13 @@ export default function TeamSelector({
 
   const closeModal = useCallback(() => setIsOpen(false), [])
 
-  // Return focus to trigger button when modal closes
+  // Return focus to trigger button when modal closes (not on initial mount)
+  const wasOpenRef = useRef(false)
   useEffect(() => {
-    if (!isOpen) {
+    if (wasOpenRef.current && !isOpen) {
       triggerButtonRef.current?.focus()
     }
+    wasOpenRef.current = isOpen
   }, [isOpen])
 
   useModalFocusTrap(isOpen, closeModal, modalRef, closeButtonRef)

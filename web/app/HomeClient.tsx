@@ -192,7 +192,7 @@ export default function HomeClient() {
 
               <h3
                 className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text"
-                style={{ color: 'hsl(270 60% 60%)' }}
+                style={{ color: 'hsl(var(--led-purple))' }}
               >
                 PWHL
               </h3>

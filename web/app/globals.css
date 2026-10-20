@@ -113,7 +113,18 @@ body {
 
     --led-glow: none;
 
-    /* Ink-driven roles */
+    /* Heavy halftone grain */
+    --body-texture: radial-gradient(hsl(240 15% 12% / 0.14) 1px, transparent 1.4px);
+    background-size: 4px 4px;
+  }
+
+  /* Ink-driven roles. These must be re-declared on every [data-league]
+     scope, not just .theme-riso: a custom property's var() references are
+     resolved where it's declared, so `--primary: var(--ink-a)` on <html>
+     would freeze the default ink and descendants would inherit that value
+     even after [data-league] overrides --ink-a. */
+  .theme-riso,
+  .theme-riso [data-league] {
     --primary: var(--ink-a);
     --primary-foreground: 44 44% 96%;
     --accent: var(--ink-a);
@@ -132,10 +143,6 @@ body {
     --panel-bg: hsl(var(--card));
     --panel-border: 2.5px solid hsl(var(--border));
     --panel-shadow: 5px 5px 0 hsl(var(--ink-a));
-
-    /* Heavy halftone grain */
-    --body-texture: radial-gradient(hsl(240 15% 12% / 0.14) 1px, transparent 1.4px);
-    background-size: 4px 4px;
   }
 
   /* Ink pairings. Each league page owns one pairing so the Risograph
@@ -156,7 +163,7 @@ body {
   }
 
   .theme-riso [data-league='nba'] {
-    --ink-a: 222 82% 47%; /* riso blue */
+    --ink-a: 202 100% 40%; /* riso blue (#0078BF family) */
     --ink-b: 24 100% 55%; /* riso orange */
   }
 
@@ -166,7 +173,7 @@ body {
   }
 
   .theme-riso [data-league='pwhl'] {
-    --ink-a: 145 100% 39%; /* fluoro green */
+    --ink-a: 155 62% 34%; /* riso green, muted */
     --ink-b: 240 15% 12%; /* black */
   }
 }
