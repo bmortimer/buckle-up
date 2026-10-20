@@ -150,15 +150,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body
-        className="min-h-screen bg-background text-foreground transition-colors"
-      >
+      <body className="min-h-screen bg-background text-foreground transition-colors">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="theme-riso"
+          enableSystem={false}
           disableTransitionOnChange={false}
-          themes={['light', 'dark', 'theme-riso']}
+          themes={['theme-riso', 'light', 'dark']}
         >
           <main className="container mx-auto px-4 py-8 max-w-7xl">{children}</main>
         </ThemeProvider>
