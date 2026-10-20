@@ -49,7 +49,7 @@ export default function CalendarDayPopup({
         role="dialog"
         aria-modal="true"
         aria-labelledby="popup-date"
-        className={`fixed bg-card border-2 border-amber-500 p-4 shadow-lg z-50 ${
+        className={`fixed bg-card border-2 border-led-amber p-4 shadow-lg z-50 ${
           isDesktop && position ? 'w-72' : 'bottom-4 left-4 right-4'
         }`}
         style={
@@ -65,7 +65,7 @@ export default function CalendarDayPopup({
         <button
           ref={closeButtonRef}
           onClick={onClose}
-          className="absolute top-2 right-2 w-6 h-6 flex items-center justify-center text-muted-foreground hover:text-foreground active:text-amber-500 transition-colors"
+          className="absolute top-2 right-2 w-6 h-6 flex items-center justify-center text-muted-foreground hover:text-foreground active:text-led-amber transition-colors"
           aria-label="Close"
         >
           ×
@@ -123,7 +123,7 @@ export default function CalendarDayPopup({
             })()}
 
             {/* Belt Status */}
-            <div className="text-xs sm:text-sm text-amber-500 font-orbitron uppercase border-t border-border/40 pt-3">
+            <div className="text-xs sm:text-sm text-led-amber font-orbitron uppercase border-t border-border/40 pt-3">
               {(() => {
                 // Handle scheduled title bout (unplayed game where belt is on the line)
                 if (dayData.isScheduledTitleBout) {
@@ -182,7 +182,7 @@ export default function CalendarDayPopup({
         ) : dayData.isUncertainFuture ? (
           /* Uncertain Future - after an unplayed title bout */
           <div className="text-center">
-            <div className="text-amber-500 text-2xl mb-2" aria-hidden="true">
+            <div className="text-led-amber text-2xl mb-2" aria-hidden="true">
               🏆
             </div>
             <div className="text-xs text-muted-foreground uppercase">Belt Holder Unknown</div>

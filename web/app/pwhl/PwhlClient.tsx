@@ -12,7 +12,7 @@ interface PwhlClientProps {
 
 export default function PwhlClient({ seasons, franchises, champions }: PwhlClientProps) {
   return (
-    <Suspense fallback={<div className="text-center py-20 text-gray-400">Loading...</div>}>
+    <Suspense fallback={<div className="text-center py-20 text-muted-foreground">Loading...</div>}>
       <BeltDashboard
         league="pwhl"
         seasons={seasons}

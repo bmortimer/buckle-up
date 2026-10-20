@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <Suspense fallback={<div className="text-center py-20 text-gray-400">Loading...</div>}>
+    <Suspense fallback={<div className="text-center py-20 text-muted-foreground">Loading...</div>}>
       <HomeClient />
     </Suspense>
   )
