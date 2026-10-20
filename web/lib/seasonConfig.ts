@@ -30,8 +30,8 @@ export const NHL_CONFIG: SeasonConfig = {
 }
 
 export const PWHL_CONFIG: SeasonConfig = {
-  currentYear: 2025, // 2025-26 season
-  isInSeason: false, // Off-season as of Apr 2026
+  currentYear: 2026, // 2026-27 season
+  isInSeason: true, // 2026-27 season (opens Dec 5, 2026); MTL (2026 Walter Cup champ) starts the belt
 }
 
 /**

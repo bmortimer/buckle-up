@@ -44,6 +44,15 @@ export const PWHL_BREAKS: Record<string, ScheduleBreak[]> = {
       minimumGapDays: 14,
     },
   ],
+  '2026-27': [
+    {
+      startDate: '2027-03-01',
+      endDate: '2027-03-08',
+      reason: '2027 PWHL All-Star Break',
+      emoji: '⭐',
+      minimumGapDays: 7,
+    },
+  ],
 }
 
 /**

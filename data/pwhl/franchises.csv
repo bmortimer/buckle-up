@@ -31,3 +31,21 @@ SEA,SEA,Seattle Torrent,Seattle,2025,,active,,#001628
 
 # VANCOUVER GOLDENEYES
 VAN,VAN,Vancouver Goldeneyes,Vancouver,2025,,active,,#00205B
+
+# ============================================
+# PWHL EXPANSION TEAMS (2026)
+# Launched without nicknames; update display_name once revealed.
+# Colors approximate the announced inaugural jersey palettes.
+# ============================================
+
+# PWHL DETROIT (black / silver / red)
+DET,DET,PWHL Detroit,Detroit,2026,,active,,#1C1C1C
+
+# PWHL HAMILTON (gold / deep red / burnt orange / cream)
+HAM,HAM,PWHL Hamilton,Hamilton,2026,,active,,#FFB81C
+
+# PWHL LAS VEGAS (green / gold / navy)
+VGS,VGS,PWHL Las Vegas,Las Vegas,2026,,active,,#00563F
+
+# PWHL SAN JOSE (mandarin orange / sky blue)
+SJS,SJS,PWHL San Jose,San Jose,2026,,active,,#F47A20
