@@ -16,7 +16,7 @@ export interface SeasonConfig {
 
 export const WNBA_CONFIG: SeasonConfig = {
   currentYear: 2026,
-  isInSeason: true,
+  isInSeason: false, // 2026 regular season ended Sep 24, 2026
 }
 
 export const NBA_CONFIG: SeasonConfig = {
@@ -42,4 +42,25 @@ export function getSeasonConfig(league: 'wnba' | 'nba' | 'nhl' | 'pwhl'): Season
   if (league === 'nhl') return NHL_CONFIG
   if (league === 'pwhl') return PWHL_CONFIG
   return NBA_CONFIG
+}
+
+/**
+ * The season fans should look to for schedule news: the current season while
+ * it's running, otherwise the next one. Derived from the manual config above
+ * (not the calendar) so leagues whose seasons span years stay correct.
+ */
+export function getUpcomingSeason(league: 'wnba' | 'nba' | 'nhl' | 'pwhl'): {
+  label: string
+  wikiUrl: string
+} {
+  const { currentYear, isInSeason } = getSeasonConfig(league)
+  const year = isInSeason ? currentYear : currentYear + 1
+  const label =
+    league === 'wnba' ? year.toString() : `${year}-${(year + 1).toString().slice(2)}`
+  // Wikipedia titles use an en dash for split seasons (e.g. 2026–27_NBA_season)
+  const wikiSeason = label.replace('-', '\u2013')
+  return {
+    label,
+    wikiUrl: `https://en.wikipedia.org/wiki/${wikiSeason}_${league.toUpperCase()}_season`,
+  }
 }
