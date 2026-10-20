@@ -138,7 +138,7 @@ export default function NextGamePreview({
                 />
                 {/* Belt indicator for away team if they're the champion */}
                 {!isHolderHome && (
-                  <div className="absolute -top-1 -right-1 text-amber-500 text-xs sm:text-sm">
+                  <div className="absolute -top-1 -right-1 text-led-amber text-xs sm:text-sm">
                     🏆
                   </div>
                 )}
@@ -177,7 +177,7 @@ export default function NextGamePreview({
                 />
                 {/* Belt indicator for home team if they're the champion */}
                 {isHolderHome && (
-                  <div className="absolute -top-1 -right-1 text-amber-500 text-xs sm:text-sm">
+                  <div className="absolute -top-1 -right-1 text-led-amber text-xs sm:text-sm">
                     🏆
                   </div>
                 )}

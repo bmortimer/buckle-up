@@ -12,7 +12,7 @@ interface NhlClientProps {
 
 export default function NhlClient({ seasons, franchises, champions }: NhlClientProps) {
   return (
-    <Suspense fallback={<div className="text-center py-20 text-gray-400">Loading...</div>}>
+    <Suspense fallback={<div className="text-center py-20 text-muted-foreground">Loading...</div>}>
       <BeltDashboard league="nhl" seasons={seasons} franchises={franchises} champions={champions} />
     </Suspense>
   )

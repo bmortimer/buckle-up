@@ -88,7 +88,9 @@ export default function NbaPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <Suspense fallback={<div className="text-center py-20 text-gray-400">Loading...</div>}>
+      <Suspense
+        fallback={<div className="text-center py-20 text-muted-foreground">Loading...</div>}
+      >
         <BeltDashboard
           league="nba"
           seasons={seasons}

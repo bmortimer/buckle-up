@@ -3,8 +3,8 @@
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
-// Three-state cycle: light (sun) → dark (moon) → risograph (zap) → light …
-const CYCLE = ['light', 'dark', 'theme-riso'] as const
+// Three-state cycle: risograph (zap, the default) → light (sun) → dark (moon) → …
+const CYCLE = ['theme-riso', 'light', 'dark'] as const
 type ThemeValue = (typeof CYCLE)[number]
 
 const LABEL: Record<ThemeValue, string> = {
@@ -32,10 +32,11 @@ export function AestheticSwitcher() {
     )
   }
 
-  // Normalize current theme to one of the three cycle states (system → treat as dark)
+  // Normalize current theme to one of the three cycle states (anything else,
+  // e.g. a stale "system" value from before Risograph was default → risograph)
   const current: ThemeValue = (CYCLE as readonly string[]).includes(theme ?? '')
     ? (theme as ThemeValue)
-    : 'dark'
+    : 'theme-riso'
 
   const next = CYCLE[(CYCLE.indexOf(current) + 1) % CYCLE.length]
 

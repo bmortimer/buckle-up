@@ -3,6 +3,15 @@
 import Link from 'next/link'
 import { AestheticSwitcher } from '@/components/AestheticSwitcher'
 import CornerRivets from '@/components/CornerRivets'
+import { LEAGUES, LEAGUE_ORDER, type LeagueInfo } from '@/lib/leagues'
+
+// Full class names so Tailwind's content scan can see them
+const HOVER_TEXT: Record<LeagueInfo['accent'], string> = {
+  'led-red': 'group-hover:text-led-red',
+  'led-amber': 'group-hover:text-led-amber',
+  'led-green': 'group-hover:text-led-green',
+  'led-purple': 'group-hover:text-led-purple',
+}
 
 export default function HomeClient() {
   return (
@@ -68,153 +77,49 @@ export default function HomeClient() {
         </h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-          {/* WNBA Card */}
-          <Link
-            href="/wnba"
-            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
-            data-league="wnba"
-          >
-            <div className="text-center space-y-4">
-              <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
-                Women's Basketball
-              </div>
-
-              <h3
-                className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text"
-                style={{ color: 'hsl(var(--led-red))' }}
+          {LEAGUE_ORDER.map((id) => {
+            const { name, sport, trackedSince, accent } = LEAGUES[id]
+            return (
+              <Link
+                key={id}
+                href={`/${id}`}
+                className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
+                data-league={id}
               >
-                WNBA
-              </h3>
+                <div className="text-center space-y-4">
+                  <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
+                    {sport}
+                  </div>
 
-              <div className="h-px bg-border" />
+                  <h3
+                    className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text"
+                    style={{ color: `hsl(var(--${accent}))` }}
+                  >
+                    {name}
+                  </h3>
 
-              <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                Track the lineal championship from 1997 to present. See who holds the belt, upcoming
-                title bouts, and a complete history of the WNBA.
-              </p>
+                  <div className="h-px bg-border" />
 
-              <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-red-500 transition-colors">
-                <span>Enter</span>
-                <span className="group-hover:translate-x-1 transition-transform duration-300">
-                  →
-                </span>
-              </div>
-            </div>
+                  <p className="text-sm text-muted-foreground font-body leading-relaxed">
+                    Track the lineal championship from {trackedSince} to present. See who holds the
+                    belt, upcoming title bouts, and a complete history of the {name}.
+                  </p>
 
-            {/* Corner rivets */}
-            <CornerRivets />
-          </Link>
+                  <div
+                    className={`flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary ${HOVER_TEXT[accent]} transition-colors`}
+                  >
+                    <span>Enter</span>
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">
+                      →
+                    </span>
+                  </div>
+                </div>
 
-          {/* NBA Card */}
-          <Link
-            href="/nba"
-            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
-            data-league="nba"
-          >
-            <div className="text-center space-y-4">
-              <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
-                Men's Basketball
-              </div>
-
-              <h3
-                className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text"
-                style={{ color: 'hsl(var(--led-amber))' }}
-              >
-                NBA
-              </h3>
-
-              <div className="h-px bg-border" />
-
-              <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                Track the lineal championship from 1976 to present. See who holds the belt, upcoming
-                title bouts, and a complete history of the NBA.
-              </p>
-
-              <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-amber-500 transition-colors">
-                <span>Enter</span>
-                <span className="group-hover:translate-x-1 transition-transform duration-300">
-                  →
-                </span>
-              </div>
-            </div>
-
-            {/* Corner rivets */}
-            <CornerRivets />
-          </Link>
-
-          {/* NHL Card */}
-          <Link
-            href="/nhl"
-            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
-            data-league="nhl"
-          >
-            <div className="text-center space-y-4">
-              <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
-                Men's Ice Hockey
-              </div>
-
-              <h3
-                className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text"
-                style={{ color: 'hsl(var(--led-green))' }}
-              >
-                NHL
-              </h3>
-
-              <div className="h-px bg-border" />
-
-              <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                Track the lineal championship from 1942 to present. See who holds the belt, upcoming
-                title bouts, and a complete history of the NHL.
-              </p>
-
-              <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-green-500 transition-colors">
-                <span>Enter</span>
-                <span className="group-hover:translate-x-1 transition-transform duration-300">
-                  →
-                </span>
-              </div>
-            </div>
-
-            {/* Corner rivets */}
-            <CornerRivets />
-          </Link>
-
-          {/* PWHL Card */}
-          <Link
-            href="/pwhl"
-            className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
-            data-league="pwhl"
-          >
-            <div className="text-center space-y-4">
-              <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
-                Women's Ice Hockey
-              </div>
-
-              <h3
-                className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text"
-                style={{ color: 'hsl(var(--led-purple))' }}
-              >
-                PWHL
-              </h3>
-
-              <div className="h-px bg-border" />
-
-              <p className="text-sm text-muted-foreground font-body leading-relaxed">
-                Track the lineal championship from 2024 to present. See who holds the belt, upcoming
-                title bouts, and a complete history of the PWHL.
-              </p>
-
-              <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-primary group-hover:text-purple-500 transition-colors">
-                <span>Enter</span>
-                <span className="group-hover:translate-x-1 transition-transform duration-300">
-                  →
-                </span>
-              </div>
-            </div>
-
-            {/* Corner rivets */}
-            <CornerRivets />
-          </Link>
+                {/* Corner rivets */}
+                <CornerRivets />
+              </Link>
+            )
+          })}
         </div>
       </nav>
 

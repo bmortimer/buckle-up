@@ -28,22 +28,14 @@ const config: Config = {
         gold: '#FFD700',
         silver: '#C0C0C0',
         bronze: '#CD7F32',
-        amber: {
-          400: 'hsl(var(--led-amber) / 0.8)',
-          500: 'hsl(var(--led-amber))',
-        },
-        red: {
-          400: 'hsl(var(--led-red) / 0.8)',
-          500: 'hsl(var(--led-red))',
-        },
-        green: {
-          400: 'hsl(var(--led-green) / 0.8)',
-          500: 'hsl(var(--led-green))',
-        },
-        purple: {
-          400: 'hsl(var(--led-purple) / 0.8)',
-          500: 'hsl(var(--led-purple))',
-        },
+        // Theme "LED" tokens (see globals.css). Scoreboard themes give each its
+        // own hue; Risograph maps all four to the league's primary ink. Use
+        // these for UI accents so every theme can restyle them; Tailwind's own
+        // palette (amber-500 etc.) is untouched and stays theme-independent.
+        'led-amber': 'hsl(var(--led-amber) / <alpha-value>)',
+        'led-red': 'hsl(var(--led-red) / <alpha-value>)',
+        'led-green': 'hsl(var(--led-green) / <alpha-value>)',
+        'led-purple': 'hsl(var(--led-purple) / <alpha-value>)',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {

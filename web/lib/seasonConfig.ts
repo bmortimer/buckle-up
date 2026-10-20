@@ -9,6 +9,9 @@
  * e.g., currentYear: 2025 means the "2025" season
  */
 
+import { formatSeason } from './leagues'
+import type { League } from './types'
+
 export interface SeasonConfig {
   currentYear: number
   isInSeason: boolean
@@ -37,11 +40,15 @@ export const PWHL_CONFIG: SeasonConfig = {
 /**
  * Get the appropriate season config for a league
  */
-export function getSeasonConfig(league: 'wnba' | 'nba' | 'nhl' | 'pwhl'): SeasonConfig {
-  if (league === 'wnba') return WNBA_CONFIG
-  if (league === 'nhl') return NHL_CONFIG
-  if (league === 'pwhl') return PWHL_CONFIG
-  return NBA_CONFIG
+const CONFIGS: Record<League, SeasonConfig> = {
+  wnba: WNBA_CONFIG,
+  nba: NBA_CONFIG,
+  nhl: NHL_CONFIG,
+  pwhl: PWHL_CONFIG,
+}
+
+export function getSeasonConfig(league: League): SeasonConfig {
+  return CONFIGS[league]
 }
 
 /**
@@ -49,14 +56,13 @@ export function getSeasonConfig(league: 'wnba' | 'nba' | 'nhl' | 'pwhl'): Season
  * it's running, otherwise the next one. Derived from the manual config above
  * (not the calendar) so leagues whose seasons span years stay correct.
  */
-export function getUpcomingSeason(league: 'wnba' | 'nba' | 'nhl' | 'pwhl'): {
+export function getUpcomingSeason(league: League): {
   label: string
   wikiUrl: string
 } {
   const { currentYear, isInSeason } = getSeasonConfig(league)
   const year = isInSeason ? currentYear : currentYear + 1
-  const label =
-    league === 'wnba' ? year.toString() : `${year}-${(year + 1).toString().slice(2)}`
+  const label = formatSeason(league, year)
   // Wikipedia titles use an en dash for split seasons (e.g. 2026–27_NBA_season)
   const wikiSeason = label.replace('-', '\u2013')
   return {

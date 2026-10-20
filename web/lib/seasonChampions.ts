@@ -3,6 +3,7 @@
  */
 
 import type { SeasonData, FranchiseInfo, League } from './types'
+import { formatSeason } from './leagues'
 import { BeltTracker } from './beltTracker'
 import { getCurrentFranchiseAbbr } from './franchises'
 
@@ -13,9 +14,7 @@ export interface ChampionEntry {
 }
 
 export function yearToSeasonKey(year: number, league: League): string {
-  if (league === 'wnba') return year.toString()
-  const nextYear = (year + 1) % 100
-  return `${year}-${nextYear.toString().padStart(2, '0')}`
+  return formatSeason(league, year)
 }
 
 /**

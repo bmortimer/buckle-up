@@ -32,6 +32,8 @@ python scripts/update_pwhl.py           # Update current PWHL season
 
 ### Core Logic (`web/lib/`)
 
+- **`leagues.ts`** - League registry: the one place for per-league facts (season format, labels, season windows, conferences, home-card copy, nav order). Use `formatSeason()` / `formatSeasonRange()` / `seasonKeyForDate()` and `getLeague()` instead of branching on `league === '...'`.
+- **`logoManifest.json`** - Generated from `public/logos/` by `npm run logos` (runs before dev/build). Lists which teams have a logo and its format; a test fails if stale. Keep exactly one file per team (`.svg` or `.png`).
 - **`beltTracker.ts`** - `BeltTracker` class and `trackAllSeasons()`. Processes games in order; if the holder loses, belt passes to winner. Resets belt to champion at each season start.
 - **`dataLoader.ts`** - Server-side file I/O for loading season JSON, franchises CSV, and champions data.
 - **`franchises.ts`** - Franchise lineage resolution. Walks `successorFranchiseId` chains so relocated/rebranded teams (e.g., WSB → WAS) are treated as the same franchise. Uses WeakMap memoization.
@@ -69,10 +71,11 @@ Season files (`data/{league}/{season}.json`):
 
 Tests use Vitest with jsdom. Fixtures in `__tests__/fixtures/`. Pre-commit hook runs all tests via Husky.
 
-Key test files: `beltTracker.test.ts`, `franchises.test.ts`, `data-filtering.test.ts`, `league-health.test.ts` (validates live data integrity), `calendarDayClassifier.test.ts`, `streakCalculator.test.ts`.
+Key test files: `beltTracker.test.ts`, `franchises.test.ts`, `data-filtering.test.ts`, `league-health.test.ts` (validates live data integrity), `calendarDayClassifier.test.ts`, `streakCalculator.test.ts`, `leagues.test.ts` (season formatting, conference coverage of active franchises, logo manifest freshness).
 
 ## Conventions
 
+- Theming: Risograph (`theme-riso`) is the default; light/dark are the "scoreboard" alternatives. Use theme tokens for UI accents: `led-amber`/`led-red`/`led-green`/`led-purple` (Tailwind) or `hsl(var(--led-*))`, plus `primary`, `muted-foreground`, etc. Don't hardcode palette colors for UI chrome; fixed colors are for illustration only (medals, belt art, team colors).
 - All new features should have tests
 - Belt logic lives in `web/lib/`, UI in `web/components/`
 - League pages follow a pattern: server component loads data → passes to `BeltDashboard` (sometimes via a thin `*Client.tsx` wrapper)
@@ -86,11 +89,11 @@ Consider, before you add a new league, if it would be compelling to users.  Spor
 
 1. Create `data/{league}/` with season JSON files, `franchises.csv`, and `champions.json`
 2. Add the league to the `League` union type in `web/lib/types.ts`
-3. Add season config in `web/lib/seasonConfig.ts`
-4. Create `app/{league}/page.tsx` (server data load) and optionally a `*Client.tsx` wrapper
-5. Add league card to `app/HomeClient.tsx`
-6. Add nav link in `BeltDashboard.tsx`
-7. Add team logos to `web/public/logos/{league}/`
+3. Add a registry entry in `web/lib/leagues.ts` (and to `LEAGUE_ORDER`). This drives the nav, home card, season labels, calendar window, and team-picker conferences.
+4. Add season config in `web/lib/seasonConfig.ts`
+5. Create `app/{league}/page.tsx` (server data load) and optionally a `*Client.tsx` wrapper
+6. Add team logos to `web/public/logos/{league}/` and run `npm run logos`; add any background tweaks in `TeamLogo.tsx`
+7. Add Risograph ink pairing for `[data-league='{league}']` in `app/globals.css`
 8. Create ingestion + update scripts in `scripts/`
 9. Add schedule breaks to `web/lib/scheduleBreaks.ts` if applicable
 10. Wire into `.github/workflows/update-data.yml` — add a per-league step that self-gates: runs if the current month is in the league's regular season, or if today is the 1st/15th (monthly catch-up). Follow the existing NBA/NHL/WNBA/PWHL pattern.

@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "logos": "node scripts/generate-logo-manifest.mjs",
+    "predev": "npm run logos",
     "dev": "next dev",
+    "prebuild": "npm run logos",
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint .",

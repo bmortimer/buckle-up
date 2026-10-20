@@ -54,15 +54,6 @@ export function getAvailableSeasons(league: League): string[] {
   }
 }
 
-export function getCurrentSeason(league: League): string {
-  const seasons = getAvailableSeasons(league)
-  if (seasons[0]) return seasons[0]
-  if (league === 'wnba') return '2024'
-  if (league === 'nhl') return '2024-25'
-  if (league === 'pwhl') return '2025-26'
-  return '2024-25'
-}
-
 export function loadChampions(league: League): Record<string, string> {
   try {
     const filePath = join(DATA_DIR, league, 'champions.json')
@@ -75,13 +66,4 @@ export function loadChampions(league: League): Record<string, string> {
     }
     return {}
   }
-}
-
-export function getDefendingChampion(league: League, season: string): string {
-  const champions = loadChampions(league)
-  if (champions[season]) return champions[season]
-  if (league === 'wnba') return 'LVA'
-  if (league === 'nhl') return 'FLA'
-  if (league === 'pwhl') return 'MTL'
-  return 'BOS'
 }

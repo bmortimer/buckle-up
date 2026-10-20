@@ -11,6 +11,7 @@ import {
   dedupeByFranchise,
 } from '@/lib/franchises'
 import { getSeasonConfig } from '@/lib/seasonConfig'
+import { formatSeason, formatSeasonRange, getLeague, LEAGUE_ORDER, LEAGUES } from '@/lib/leagues'
 import BeltHolderCard from './BeltHolderCard'
 import TeamBeltCard from './TeamBeltCard'
 import BarChartView from './BarChartView'
@@ -63,7 +64,7 @@ export default function BeltDashboard({
       .sort((a, b) => a - b)
   }, [seasons])
 
-  const minYear = availableYears[0] || (league === 'wnba' ? 1997 : 2012)
+  const minYear = availableYears[0] || getLeague(league).firstSeasonYear
   const maxYear = availableYears[availableYears.length - 1] || new Date().getFullYear()
 
   // Default to current year if in season, All Time if off-season
@@ -80,14 +81,7 @@ export default function BeltDashboard({
   const [isAllTime, setIsAllTime] = useState(defaultIsAllTime)
 
   // Helper to convert a year number to a season key for the URL
-  const yearToSeasonParam = useCallback(
-    (year: number): string => {
-      if (league === 'wnba') return year.toString()
-      const nextYear = (year + 1) % 100
-      return `${year}-${nextYear.toString().padStart(2, '0')}`
-    },
-    [league]
-  )
+  const yearToSeasonParam = useCallback((year: number) => formatSeason(league, year), [league])
 
   // Helper to parse a season param from URL into a year number
   const seasonParamToYear = (param: string): number | null => {
@@ -195,14 +189,7 @@ export default function BeltDashboard({
   }, [yearRange, selectedTeam, seasonConfig])
 
   // Helper to convert year to season key
-  const yearToSeasonKey = (year: number): string => {
-    if (league === 'wnba') {
-      return year.toString()
-    }
-    // NBA/NHL uses YYYY-YY format
-    const nextYear = (year + 1) % 100
-    return `${year}-${nextYear.toString().padStart(2, '0')}`
-  }
+  const yearToSeasonKey = (year: number) => formatSeason(league, year)
 
   // Get all games for the current view (filtered by year range)
   const allGames = useMemo(() => {
@@ -387,11 +374,8 @@ export default function BeltDashboard({
             </>
           ) : (
             <p className="text-sm text-muted-foreground font-body mb-6">
-              The{' '}
-              {league === 'wnba'
-                ? yearRange[0]
-                : `${yearRange[0]}-${String((yearRange[0] + 1) % 100).padStart(2, '0')}`}{' '}
-              season data is still being added to the tracker.
+              The {formatSeason(league, yearRange[0])} season data is still being added to the
+              tracker.
             </p>
           )}
 
@@ -403,12 +387,9 @@ export default function BeltDashboard({
                   setYearRange([previousYear, previousYear])
                   setIsAllTime(false)
                 }}
-                className="px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:text-amber-500 border border-border hover:border-amber-500 bg-card transition-colors"
+                className="px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:text-led-amber border border-border hover:border-led-amber bg-card transition-colors"
               >
-                ←{' '}
-                {league === 'wnba'
-                  ? previousYear
-                  : `${previousYear}-${String((previousYear + 1) % 100).padStart(2, '0')}`}
+                ← {formatSeason(league, previousYear)}
               </button>
             )}
             {nextYear && (
@@ -417,12 +398,9 @@ export default function BeltDashboard({
                   setYearRange([nextYear, nextYear])
                   setIsAllTime(false)
                 }}
-                className="px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:text-amber-500 border border-border hover:border-amber-500 bg-card transition-colors"
+                className="px-4 py-2 text-sm font-mono uppercase tracking-wider text-foreground hover:text-led-amber border border-border hover:border-led-amber bg-card transition-colors"
               >
-                {league === 'wnba'
-                  ? nextYear
-                  : `${nextYear}-${String((nextYear + 1) % 100).padStart(2, '0')}`}{' '}
-                →
+                {formatSeason(league, nextYear)} →
               </button>
             )}
           </div>
@@ -445,46 +423,20 @@ export default function BeltDashboard({
       <div className="flex justify-between items-center gap-2">
         {/* League Switcher - Left */}
         <div className="flex items-center gap-2">
-          <Link
-            href="/wnba"
-            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-colors ${
-              league === 'wnba'
-                ? 'text-amber-500 border-amber-500 bg-amber-500/10'
-                : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
-            }`}
-          >
-            WNBA
-          </Link>
-          <Link
-            href="/nba"
-            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-colors ${
-              league === 'nba'
-                ? 'text-amber-500 border-amber-500 bg-amber-500/10'
-                : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
-            }`}
-          >
-            NBA
-          </Link>
-          <Link
-            href="/nhl"
-            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-colors ${
-              league === 'nhl'
-                ? 'text-amber-500 border-amber-500 bg-amber-500/10'
-                : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
-            }`}
-          >
-            NHL
-          </Link>
-          <Link
-            href="/pwhl"
-            className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-colors ${
-              league === 'pwhl'
-                ? 'text-amber-500 border-amber-500 bg-amber-500/10'
-                : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
-            }`}
-          >
-            PWHL
-          </Link>
+          {LEAGUE_ORDER.map((id) => (
+            <Link
+              key={id}
+              href={`/${id}`}
+              aria-current={league === id ? 'page' : undefined}
+              className={`px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider border transition-colors ${
+                league === id
+                  ? 'text-led-amber border-led-amber bg-led-amber/10'
+                  : 'text-muted-foreground hover:text-foreground border-border hover:border-muted-foreground bg-card'
+              }`}
+            >
+              {LEAGUES[id].name}
+            </Link>
+          ))}
         </div>
 
         {/* About & Theme - Right */}
@@ -680,15 +632,7 @@ export default function BeltDashboard({
           </p>
           <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider mb-2">
             {league.toUpperCase()}{' '}
-            {isAllTime
-              ? 'ALL-TIME'
-              : yearRange[0] === yearRange[1]
-                ? league === 'nba' || league === 'nhl' || league === 'pwhl'
-                  ? `${yearRange[0]}-${String((yearRange[0] + 1) % 100).padStart(2, '0')}`
-                  : yearRange[0]
-                : league === 'nba' || league === 'nhl' || league === 'pwhl'
-                  ? `${yearRange[0]}-${String((yearRange[1] + 1) % 100).padStart(2, '0')}`
-                  : `${yearRange[0]}-${yearRange[1]}`}
+            {isAllTime ? 'ALL-TIME' : formatSeasonRange(league, yearRange[0], yearRange[1])}
           </p>
           <p className="text-[0.65rem] font-mono text-muted-foreground tracking-wider">
             Created by Avid Squid LLC •{' '}
@@ -696,7 +640,7 @@ export default function BeltDashboard({
               href="https://buymeacoffee.com/bmortimer"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-emerald-500 hover:text-emerald-400 underline decoration-1 underline-offset-2 transition-colors"
+              className="text-led-green hover:text-led-green/80 underline decoration-1 underline-offset-2 transition-colors"
             >
               DONATE
             </a>{' '}
@@ -705,7 +649,7 @@ export default function BeltDashboard({
               href="https://forms.gle/LPBtZDxih1HQT53E9"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber-500 hover:text-amber-400 underline decoration-1 underline-offset-2 transition-colors"
+              className="text-led-amber hover:text-led-amber/80 underline decoration-1 underline-offset-2 transition-colors"
             >
               FEEDBACK
             </a>

@@ -23,7 +23,7 @@ export default function Timeline({ changes, franchises, selectedTeam }: Timeline
           <span aria-hidden="true"> ◆</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+          <div className="w-2 h-2 rounded-full bg-led-red animate-pulse" />
           <span className="text-xs font-mono tabular-nums text-muted-foreground">
             {changes.length.toString().padStart(3, '0')}
           </span>
@@ -54,7 +54,7 @@ export default function Timeline({ changes, franchises, selectedTeam }: Timeline
                 className={`flex items-center gap-3 p-2.5 border border-border/40 transition-colors duration-200 group cursor-pointer ${
                   isGreyedOut
                     ? 'bg-muted/20 opacity-40'
-                    : 'bg-card hover:bg-muted/30 hover:border-amber-500/50'
+                    : 'bg-card hover:bg-muted/30 hover:border-led-amber/50'
                 }`}
               >
                 {/* Date display - LED style */}
@@ -73,8 +73,8 @@ export default function Timeline({ changes, franchises, selectedTeam }: Timeline
 
                   {/* Arrow with LED styling */}
                   <div className="flex items-center gap-0.5">
-                    <div className="w-1 h-px bg-gradient-to-r from-muted-foreground to-transparent group-hover:from-amber-500" />
-                    <div className="text-muted-foreground group-hover:text-amber-500 transition-colors text-xs">
+                    <div className="w-1 h-px bg-gradient-to-r from-muted-foreground to-transparent group-hover:from-led-amber" />
+                    <div className="text-muted-foreground group-hover:text-led-amber transition-colors text-xs">
                       ▸
                     </div>
                   </div>
@@ -85,7 +85,7 @@ export default function Timeline({ changes, franchises, selectedTeam }: Timeline
                   </div>
 
                   {/* Score in LED style */}
-                  <span className="text-sm ml-auto tabular-nums font-mono group-hover:text-amber-500 transition-colors">
+                  <span className="text-sm ml-auto tabular-nums font-mono group-hover:text-led-amber transition-colors">
                     {score}
                   </span>
 
@@ -103,9 +103,9 @@ export default function Timeline({ changes, franchises, selectedTeam }: Timeline
       {/* Bottom LED status strip */}
       <div className="mt-4 pt-3 border-t-2 border-border flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-1.5 h-1.5 rounded-full bg-green-500 opacity-60" />
-          <div className="w-1.5 h-1.5 rounded-full bg-amber-500 opacity-60" />
-          <div className="w-1.5 h-1.5 rounded-full bg-red-500 opacity-60" />
+          <div className="w-1.5 h-1.5 rounded-full bg-led-green opacity-60" />
+          <div className="w-1.5 h-1.5 rounded-full bg-led-amber opacity-60" />
+          <div className="w-1.5 h-1.5 rounded-full bg-led-red opacity-60" />
         </div>
         <div className="text-[0.6rem] font-mono text-muted-foreground tracking-wider">
           ▸ CHRONOLOGICAL ORDER

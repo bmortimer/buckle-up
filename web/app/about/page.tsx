@@ -254,7 +254,7 @@ export default function AboutPage() {
               <div className="flex gap-4 items-start">
                 <div
                   className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center"
-                  style={{ color: 'hsl(270 60% 60%)' }}
+                  style={{ color: 'hsl(var(--led-purple))' }}
                 >
                   4
                 </div>
@@ -602,7 +602,7 @@ export default function AboutPage() {
               href="https://forms.gle/LPBtZDxih1HQT53E9"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber-500 hover:text-amber-400 underline decoration-1 underline-offset-2 transition-colors"
+              className="text-led-amber hover:text-led-amber/80 underline decoration-1 underline-offset-2 transition-colors"
             >
               Feedback
             </a>
