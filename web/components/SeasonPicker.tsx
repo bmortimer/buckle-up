@@ -207,10 +207,7 @@ export default function SeasonPicker({
                       {/* Decade Label */}
                       <div className="text-xs sm:text-sm font-orbitron tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                         <span>{decadeLabel}</span>
-                        <div
-                          className="flex-1 h-px bg-border/40"
-                          aria-hidden="true"
-                        />
+                        <div className="flex-1 h-px bg-border/40" aria-hidden="true" />
                       </div>
 
                       {/* Year Grid */}

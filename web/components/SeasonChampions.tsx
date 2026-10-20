@@ -34,9 +34,6 @@ export default function SeasonChampions({
       data-card="season-champions"
       className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden"
     >
-      {/* Top LED status bar - purple */}
-      <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-60" />
-
       <div className="relative z-10">
         {/* Header */}
         <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center font-normal">
@@ -65,7 +62,10 @@ export default function SeasonChampions({
                   {entry.team}
                 </div>
                 {/* Stars - rows of 5 */}
-                <div className="flex flex-col items-center gap-0.5" aria-label={`${entry.count} championship${entry.count !== 1 ? 's' : ''}`}>
+                <div
+                  className="flex flex-col items-center gap-0.5"
+                  aria-label={`${entry.count} championship${entry.count !== 1 ? 's' : ''}`}
+                >
                   {Array.from({ length: Math.ceil(entry.count / 5) }, (_, row) => (
                     <div key={row} className="flex gap-0.5">
                       {Array.from({ length: Math.min(5, entry.count - row * 5) }, (_, i) => (

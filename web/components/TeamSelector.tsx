@@ -297,10 +297,7 @@ export default function TeamSelector({
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Teams</span>
-                      <div
-                        className="flex-1 h-px bg-border/40"
-                        aria-hidden="true"
-                      />
+                      <div className="flex-1 h-px bg-border/40" aria-hidden="true" />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
                       {pwhlActiveTeams.map((team) => {
@@ -345,10 +342,7 @@ export default function TeamSelector({
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Eastern Conference</span>
-                      <div
-                        className="flex-1 h-px bg-border/40"
-                        aria-hidden="true"
-                      />
+                      <div className="flex-1 h-px bg-border/40" aria-hidden="true" />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                       {activeEast.map((team) => {
@@ -393,10 +387,7 @@ export default function TeamSelector({
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Western Conference</span>
-                      <div
-                        className="flex-1 h-px bg-border/40"
-                        aria-hidden="true"
-                      />
+                      <div className="flex-1 h-px bg-border/40" aria-hidden="true" />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                       {activeWest.map((team) => {
@@ -441,10 +432,7 @@ export default function TeamSelector({
                   <div>
                     <div className="text-xs sm:text-sm font-orbitron uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                       <span>Former Teams</span>
-                      <div
-                        className="flex-1 h-px bg-border/40"
-                        aria-hidden="true"
-                      />
+                      <div className="flex-1 h-px bg-border/40" aria-hidden="true" />
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                       {former.map((team) => {

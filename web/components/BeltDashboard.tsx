@@ -22,7 +22,7 @@ import Last5BeltChanges from './Last5BeltChanges'
 import SeasonChampions from './SeasonChampions'
 import SeasonPicker from './SeasonPicker'
 import TeamSelector from './TeamSelector'
-import { ThemeSwitcher } from './ThemeSwitcher'
+import { AestheticSwitcher } from './AestheticSwitcher'
 import BuyMeCoffee from './BuyMeCoffee'
 import CornerRivets from './CornerRivets'
 import Link from 'next/link'
@@ -131,8 +131,7 @@ export default function BeltDashboard({
       urlIsAllTime = true
     }
 
-    const yearRangeUnchanged =
-      yearRange[0] === urlYearRange[0] && yearRange[1] === urlYearRange[1]
+    const yearRangeUnchanged = yearRange[0] === urlYearRange[0] && yearRange[1] === urlYearRange[1]
     const isAllTimeUnchanged = isAllTime === urlIsAllTime
     const selectedTeamUnchanged = selectedTeam === urlTeam
 
@@ -368,10 +367,8 @@ export default function BeltDashboard({
     const nextYear = currentYear + 1 <= maxYear ? currentYear + 1 : null
 
     return (
-      <div className="text-center py-20">
+      <div className="text-center py-20" data-league={league}>
         <div className="scoreboard-panel p-8 max-w-md mx-auto relative">
-          <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
-
           <h1
             className="text-3xl font-mono tracking-wider led-text mb-4"
             style={{ color: 'hsl(var(--led-amber))' }}
@@ -443,7 +440,7 @@ export default function BeltDashboard({
   )
 
   return (
-    <div className="space-y-4 sm:space-y-6 md:space-y-8">
+    <div className="space-y-4 sm:space-y-6 md:space-y-8" data-league={league}>
       {/* Top Navigation Bar */}
       <div className="flex justify-between items-center gap-2">
         {/* League Switcher - Left */}
@@ -491,14 +488,14 @@ export default function BeltDashboard({
         </div>
 
         {/* About & Theme - Right */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-stretch gap-2">
           <Link
             href="/about"
             className="px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider text-muted-foreground hover:text-foreground border border-border hover:border-muted-foreground bg-card transition-colors"
           >
             About
           </Link>
-          <ThemeSwitcher />
+          <AestheticSwitcher />
         </div>
       </div>
 

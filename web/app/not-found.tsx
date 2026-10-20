@@ -4,8 +4,6 @@ export default function NotFound() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
       <div className="scoreboard-panel p-8 sm:p-12 text-center max-w-md">
-        <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60" />
-
         <div
           className="text-6xl sm:text-8xl font-mono tracking-[0.2em] led-text mb-4"
           style={{ color: 'hsl(var(--led-red))' }}

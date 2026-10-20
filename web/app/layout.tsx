@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
-import { Oswald, Inter } from 'next/font/google'
+import { Oswald, Inter, Archivo_Black, Space_Mono, Orbitron } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
-// Midnight Court fonts
+// Midnight Court (OG) fonts
 const oswald = Oswald({
   subsets: ['latin'],
   variable: '--font-oswald',
@@ -15,6 +15,27 @@ const oswald = Oswald({
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap',
+})
+
+// Risograph — ultra-heavy display slammed against a mono
+const archivoBlack = Archivo_Black({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-archivo-black',
+  display: 'swap',
+})
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-space-mono',
+  display: 'swap',
+})
+
+// Orbitron — provides --font-orbitron for the ◆ eyebrow labels / legacy utility
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  variable: '--font-orbitron',
   display: 'swap',
 })
 
@@ -126,13 +147,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body
-        className={`min-h-screen bg-background text-foreground transition-colors ${oswald.variable} ${inter.variable}`}
+        className={`min-h-screen bg-background text-foreground transition-colors ${oswald.variable} ${inter.variable} ${archivoBlack.variable} ${spaceMono.variable} ${orbitron.variable}`}
       >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange={false}
+          themes={['light', 'dark', 'theme-riso']}
         >
           <main className="container mx-auto px-4 py-8 max-w-7xl">{children}</main>
         </ThemeProvider>
