@@ -958,29 +958,29 @@
       "date": "2026-10-19",
       "homeTeam": "NYR",
       "awayTeam": "ANA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 2
     },
     {
       "date": "2026-10-19",
       "homeTeam": "PHI",
       "awayTeam": "COL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-10-19",
       "homeTeam": "TOR",
       "awayTeam": "SJS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "date": "2026-10-19",
       "homeTeam": "UTA",
       "awayTeam": "PIT",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 4
     },
     {
       "date": "2026-10-20",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-10-19T17:37:24.712653"
+    "ingested_at": "2026-10-20T15:43:12.235358"
   }
 }
