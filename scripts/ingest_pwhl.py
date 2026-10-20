@@ -40,6 +40,7 @@ SEASON_ID_MAP = {
     "2023-24": "1",  # Inaugural season (6 teams, 72 games total)
     "2024-25": "5",  # Season 2 (6 teams, 90 games total)
     "2025-26": "8",  # Season 3 (8 teams with expansion, 120 games total)
+    "2026-27": "11",  # Season 4 (12 teams with expansion, 180 games total)
 }
 
 # Map team names to 3-letter abbreviations
@@ -65,6 +66,20 @@ TEAM_NAME_TO_CODE = {
     "Seattle": "SEA",
     "Vancouver Goldeneyes": "VAN",
     "Vancouver": "VAN",
+    # Expansion teams (2026-27). Launched without nicknames: the API reports
+    # city + nickname "PWHL". Add real names here once revealed.
+    "Detroit": "DET",
+    "Detroit PWHL": "DET",
+    "PWHL Detroit": "DET",
+    "Hamilton": "HAM",
+    "Hamilton PWHL": "HAM",
+    "PWHL Hamilton": "HAM",
+    "Las Vegas": "VGS",
+    "Las Vegas PWHL": "VGS",
+    "PWHL Las Vegas": "VGS",
+    "San Jose": "SJS",
+    "San Jose PWHL": "SJS",
+    "PWHL San Jose": "SJS",
 }
 
 

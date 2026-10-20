@@ -167,5 +167,46 @@ describe('League Health Checks', () => {
       // Note: Historical teams may have different colors than their root franchise
       // This is intentional for historical accuracy, but getTeamColor() will use root color
     })
+
+    it('should have every season-file team abbreviation in franchises.csv', () => {
+      const known = new Set(franchises.map((f) => f.teamAbbr))
+      const seasonFiles = readdirSync(join(dataDir, league)).filter(
+        (f) => f.endsWith('.json') && f !== 'champions.json'
+      )
+
+      const unknown = new Set<string>()
+      for (const file of seasonFiles) {
+        const { games } = JSON.parse(readFileSync(join(dataDir, league, file), 'utf-8'))
+        for (const game of games) {
+          for (const team of [game.homeTeam, game.awayTeam]) {
+            if (!known.has(team)) unknown.add(`${file}: ${team}`)
+          }
+        }
+      }
+      expect([...unknown]).toEqual([])
+    })
+  })
+})
+
+describe('PWHL 2026-27 season', () => {
+  const { games } = JSON.parse(readFileSync(join(dataDir, 'pwhl', '2026-27.json'), 'utf-8'))
+
+  it('should have 12 teams playing 30 games each (180 total)', () => {
+    expect(games).toHaveLength(180)
+    const counts = new Map<string, number>()
+    for (const game of games) {
+      for (const team of [game.homeTeam, game.awayTeam]) {
+        counts.set(team, (counts.get(team) ?? 0) + 1)
+      }
+    }
+    expect(counts.size).toBe(12)
+    expect([...counts.values()].every((n) => n === 30)).toBe(true)
+  })
+
+  it('should have no games during the All-Star break (Mar 1-8, 2027)', () => {
+    const inBreak = games.filter(
+      (g: { date: string }) => g.date >= '2027-03-01' && g.date <= '2027-03-08'
+    )
+    expect(inBreak).toEqual([])
   })
 })

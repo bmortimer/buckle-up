@@ -184,4 +184,14 @@ describe('Schedule break edge cases', () => {
     expect(nhlBreaks[0].startDate.substring(0, 7)).toBe('2026-02')
     expect(pwhlBreaks[0].startDate.substring(0, 7)).toBe('2026-02')
   })
+
+  it('should mark the 2027 PWHL All-Star break', () => {
+    // No games Mar 1-8, 2027 around the Mar 7 All-Star game in Toronto
+    const breaks = getScheduleBreaks('pwhl', '2026-27')
+    expect(breaks).toHaveLength(1)
+    expect(breaks[0].reason).toContain('All-Star')
+    expect(isDateInBreak('pwhl', '2026-27', '2027-03-04')).not.toBeNull()
+    expect(isDateInBreak('pwhl', '2026-27', '2027-02-28')).toBeNull()
+    expect(isDateInBreak('pwhl', '2026-27', '2027-03-09')).toBeNull()
+  })
 })
