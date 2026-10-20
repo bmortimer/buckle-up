@@ -6,6 +6,7 @@ import { findNextTitleBout } from '@/lib/beltTracker'
 import { parseDateLocal } from '@/lib/dateUtils'
 import { getTeamColor } from '@/lib/franchises'
 import { getCurrentStreak } from '@/lib/streakCalculator'
+import { getUpcomingSeason } from '@/lib/seasonConfig'
 import TeamLogo from './TeamLogo'
 import CornerRivets from './CornerRivets'
 
@@ -47,21 +48,7 @@ export default function NextGamePreview({
 
   // If no next game found, show TBD
   if (!nextGame) {
-    const currentYear = new Date().getFullYear()
-    const seasonYear =
-      league === 'wnba'
-        ? currentYear.toString()
-        : `${currentYear}-${(currentYear + 1).toString().slice(2)}`
-    const wikiLink =
-      league === 'wnba'
-        ? `https://en.wikipedia.org/wiki/${currentYear}_WNBA_season`
-        : `https://en.wikipedia.org/wiki/${seasonYear}_${leagueUpper}_season`
-
-    // Custom message for WNBA due to CBA negotiations
-    const messageText =
-      league === 'wnba'
-        ? 'Schedule pending a new collective bargaining agreement. Check the 2026 WNBA season for updates.'
-        : `Check the ${seasonYear} ${leagueUpper} season for schedule updates.`
+    const { label: seasonLabel, wikiUrl } = getUpcomingSeason(league)
 
     return (
       <div
@@ -86,22 +73,16 @@ export default function NextGamePreview({
             <div className="h-px bg-border mb-3 sm:mb-4" />
             <div className="text-center px-2">
               <p className="text-xs sm:text-sm text-muted-foreground font-body leading-relaxed">
-                {league === 'wnba' ? (
-                  messageText
-                ) : (
-                  <>
-                    Check the{' '}
-                    <a
-                      href={wikiLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:opacity-80 underline"
-                    >
-                      {seasonYear} {leagueUpper} season
-                    </a>{' '}
-                    for schedule updates.
-                  </>
-                )}
+                Check the{' '}
+                <a
+                  href={wikiUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:opacity-80 underline"
+                >
+                  {seasonLabel} {leagueUpper} season
+                </a>{' '}
+                for schedule updates.
               </p>
             </div>
           </div>
