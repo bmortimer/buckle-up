@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react'
 import type { League } from '@/lib/types'
+import { formatSeason, getLeague } from '@/lib/leagues'
 import { useModalFocusTrap } from '@/hooks/useModalFocusTrap'
 
 interface SeasonPickerProps {
@@ -13,18 +14,6 @@ interface SeasonPickerProps {
   onAllTimeChange: (isAllTime: boolean) => void
   league: League
   availableYears?: number[]
-}
-
-// Format year for display based on league
-// NBA/NHL: "2024-25" format (season spans two calendar years)
-// WNBA: "2024" format (single calendar year)
-function formatSeasonDisplay(year: number, league: League): string {
-  if (league === 'wnba') {
-    return year.toString()
-  }
-  // NBA/NHL uses YYYY-YY format
-  const nextYear = (year + 1) % 100
-  return `${year}-${nextYear.toString().padStart(2, '0')}`
 }
 
 export default function SeasonPicker({
@@ -126,7 +115,7 @@ export default function SeasonPicker({
             className="text-lg sm:text-xl md:text-lg lg:text-xl font-mono font-bold tabular-nums tracking-wider transition-transform group-hover:scale-105"
             style={{ color: 'hsl(var(--primary))' }}
           >
-            {isAllTime ? 'ALL TIME' : formatSeasonDisplay(currentYear!, league)}
+            {isAllTime ? 'ALL TIME' : formatSeason(league, currentYear!)}
           </div>
           <div className="text-[0.55rem] text-muted-foreground/60 font-mono mt-1 uppercase tracking-wider">
             Click to change ▸
@@ -160,10 +149,10 @@ export default function SeasonPicker({
                   className="text-base sm:text-lg font-orbitron uppercase tracking-wider"
                 >
                   <span aria-hidden="true">◆ </span>Select{' '}
-                  {league === 'nba' || league === 'nhl' ? 'Season' : 'Year'}
+                  {getLeague(league).splitYear ? 'Season' : 'Year'}
                 </h3>
                 <div className="text-[0.6rem] text-muted-foreground/60 font-mono mt-1">
-                  {formatSeasonDisplay(minYear, league)} — {formatSeasonDisplay(maxYear, league)}
+                  {formatSeason(league, minYear)} — {formatSeason(league, maxYear)}
                 </div>
               </div>
               <button
@@ -214,7 +203,7 @@ export default function SeasonPicker({
 
                       {/* Year Grid */}
                       <div
-                        className={`grid gap-2 ${league === 'wnba' ? 'grid-cols-4 sm:grid-cols-6 md:grid-cols-8' : 'grid-cols-3 sm:grid-cols-4 md:grid-cols-5'}`}
+                        className={`grid gap-2 ${getLeague(league).splitYear ? 'grid-cols-3 sm:grid-cols-4 md:grid-cols-5' : 'grid-cols-4 sm:grid-cols-6 md:grid-cols-8'}`}
                       >
                         {years.map((year) => {
                           const isSelected = currentYear === year
@@ -224,7 +213,7 @@ export default function SeasonPicker({
                               key={year}
                               onClick={() => handleYearChange(year)}
                               aria-current={isSelected ? 'true' : undefined}
-                              aria-label={`Select ${formatSeasonDisplay(year, league)}`}
+                              aria-label={`Select ${formatSeason(league, year)}`}
                               className={`
                                 px-3 py-2 text-sm sm:text-base font-mono font-bold tabular-nums
                                 border-2 transition-[colors,transform]
@@ -236,7 +225,7 @@ export default function SeasonPicker({
                                 }
                               `}
                             >
-                              {formatSeasonDisplay(year, league)}
+                              {formatSeason(league, year)}
                             </button>
                           )
                         })}

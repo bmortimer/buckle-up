@@ -9,6 +9,7 @@ import type {
   CalendarDayData,
   PopupPosition,
 } from '@/lib/types'
+import { formatSeason, getLeague } from '@/lib/leagues'
 import { isGameCompleted } from '@/lib/types'
 import { parseDateLocal } from '@/lib/dateUtils'
 import { getTeamColor, getTeamDisplayName, isSameFranchise } from '@/lib/franchises'
@@ -84,31 +85,16 @@ export default function DetailedCalendar({
     const map = new Map<string, DayData>()
     let currentHolder = history.startingTeam
 
-    // For NBA/NHL/PWHL, seasons span two calendar years
-    // For WNBA, seasons are within a single calendar year
+    // Leagues with a fixed window (split-year leagues) use it; otherwise
+    // (WNBA) derive the window from actual game dates, since season length
+    // varies (Olympic years, bubble).
     let seasonStart: Date
     let seasonEnd: Date
 
-    if (league === 'nba' || league === 'nhl') {
-      // NBA/NHL season: October of year to June of year+1
-      // Exception: 2019-20 NBA season extended to August due to COVID
-      seasonStart = new Date(year, 9, 1) // October 1st
-      if (league === 'nba' && year === 2019) {
-        seasonEnd = new Date(2020, 9, 31) // October 31, 2020 (extended for COVID bubble)
-      } else {
-        seasonEnd = new Date(year + 1, 5, 30) // June 30th
-      }
-    } else if (league === 'pwhl') {
-      // PWHL season: November of year to May of year+1
-      // 2023-24 started Jan 2024 (shortened inaugural season)
-      // 2024-25 and beyond: Nov to May
-      if (year === 2023) {
-        seasonStart = new Date(2024, 0, 1) // January 1, 2024
-        seasonEnd = new Date(2024, 4, 31) // May 31, 2024
-      } else {
-        seasonStart = new Date(year, 10, 1) // November 1st
-        seasonEnd = new Date(year + 1, 4, 31) // May 31st of next year
-      }
+    const fixedWindow = getLeague(league).seasonWindow?.(year)
+    if (fixedWindow) {
+      seasonStart = fixedWindow.start
+      seasonEnd = fixedWindow.end
     } else {
       // WNBA season: Dynamically determine from actual game dates
       // This handles variations in season length (e.g., Olympic years)
@@ -303,8 +289,7 @@ export default function DetailedCalendar({
 
   // Detect schedule breaks and attach them to the first month they affect
   const monthsWithBreaks = useMemo(() => {
-    const seasonKey =
-      league === 'wnba' ? String(year) : `${year}-${String((year + 1) % 100).padStart(2, '0')}`
+    const seasonKey = formatSeason(league, year)
 
     const breaks = getScheduleBreaks(league, seasonKey)
     const monthsArray = Array.from(monthsData.entries())
@@ -380,10 +365,7 @@ export default function DetailedCalendar({
       <div className="flex items-center justify-center mb-4 sm:mb-6 border-b-2 border-border pb-2 sm:pb-3">
         <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground font-normal">
           <span aria-hidden="true">◆ </span>
-          {league === 'nba' || league === 'nhl' || league === 'pwhl'
-            ? `${year}-${String((year + 1) % 100).padStart(2, '0')}`
-            : year}{' '}
-          Calendar
+          {formatSeason(league, year)} Calendar
           <span aria-hidden="true"> ◆</span>
         </h2>
       </div>

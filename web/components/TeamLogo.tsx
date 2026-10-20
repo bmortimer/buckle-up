@@ -2,6 +2,7 @@ import type { FranchiseInfo, League } from '@/lib/types'
 import { getTeamColor } from '@/lib/franchises'
 import Image from 'next/image'
 import { memo } from 'react'
+import logoManifest from '@/lib/logoManifest.json'
 
 interface TeamLogoProps {
   teamCode: string
@@ -20,212 +21,9 @@ const sizeMap = {
   xl: 'w-24 h-24 text-2xl',
 }
 
-// WNBA teams with logos available (SVG or PNG)
-const WNBA_TEAMS_WITH_LOGOS = new Set([
-  // Current teams (SVG)
-  'ATL',
-  'CHI',
-  'CON',
-  'DAL',
-  'GSV',
-  'IND',
-  'LAS',
-  'LVA',
-  'MIN',
-  'NYL',
-  'PHO',
-  'SEA',
-  'WAS',
-  'TOR',
-  'PDX',
-  // Historical teams (SVG)
-  'CHA',
-  'MIA',
-  'ORL',
-  'POR',
-  'UTA',
-  // Historical teams (PNG)
-  'DET',
-  'SAS',
-  'TUL',
-  'CLE',
-  'HOU',
-  'SAC',
-])
-
-// WNBA teams using PNG instead of SVG
-const WNBA_PNG_TEAMS = new Set(['DET', 'SAS', 'TUL', 'CLE', 'HOU', 'SAC'])
-
 // WNBA SVG teams that need white background in dark mode
 const WNBA_SVG_WHITE_BG = new Set([
   'TOR', // Toronto Tempo has dark colors
-])
-
-// NBA teams - all 30 current teams have SVG logos
-const NBA_TEAMS_WITH_LOGOS = new Set([
-  'ATL',
-  'BOS',
-  'BKN',
-  'CHA',
-  'CHI',
-  'CLE',
-  'DAL',
-  'DEN',
-  'DET',
-  'GSW',
-  'HOU',
-  'IND',
-  'LAC',
-  'LAL',
-  'MEM',
-  'MIA',
-  'MIL',
-  'MIN',
-  'NOP',
-  'NYK',
-  'OKC',
-  'ORL',
-  'PHI',
-  'PHX',
-  'POR',
-  'SAC',
-  'SAS',
-  'TOR',
-  'UTA',
-  'WAS',
-  // Old abbreviations (pre-1996) - use current team logos
-  'GOS',
-  'PHL',
-  'SAN',
-  'UTH',
-  // Historical teams with logos (SVG)
-  'SEA',
-  'VAN',
-  'BUF',
-  // Historical teams with logos (PNG)
-  'CHH',
-  'WSB',
-  'NJN',
-  'NOH',
-  'NOJ',
-  'SDC',
-  'KCK',
-  'NYN',
-  'NOK',
-])
-
-// NBA teams that use PNG (need white background in dark mode)
-const NBA_PNG_TEAMS = new Set(['CHH', 'WSB', 'NJN', 'NOH', 'NOJ', 'SDC', 'KCK', 'NYN', 'NOK'])
-
-// NHL teams with logos available
-const NHL_TEAMS_WITH_LOGOS = new Set([
-  // Current teams (PNG from ESPN - square 500x500)
-  'ANA',
-  'BOS',
-  'BUF',
-  'CAR',
-  'CBJ',
-  'CGY',
-  'CHI',
-  'COL',
-  'DAL',
-  'DET',
-  'EDM',
-  'FLA',
-  'LAK',
-  'MIN',
-  'MTL',
-  'NJD',
-  'NSH',
-  'NYI',
-  'NYR',
-  'OTT',
-  'PHI',
-  'PIT',
-  'SEA',
-  'SJS',
-  'STL',
-  'TBL',
-  'TOR',
-  'UTA',
-  'VAN',
-  'VEG',
-  'WPG',
-  'WSH',
-  // Historical teams available from ESPN (PNG)
-  'ARI',
-  'ATL',
-  'PHX',
-  // Historical teams with SVG
-  'CBH',
-  'WIN',
-  // Historical teams with PNG (legacy)
-  'AFM',
-  'ATF',
-  'CLE',
-  'CLR',
-  'HAR',
-  'HFD',
-  'KCS',
-  'MDA',
-  'MNS',
-  'OAK',
-  'QUE',
-  'WPG1',
-])
-
-// NHL teams that use PNG
-const NHL_PNG_TEAMS = new Set([
-  // Current teams (ESPN square logos)
-  'ANA',
-  'BOS',
-  'BUF',
-  'CAR',
-  'CBJ',
-  'CGY',
-  'CHI',
-  'COL',
-  'DAL',
-  'DET',
-  'EDM',
-  'FLA',
-  'LAK',
-  'MIN',
-  'MTL',
-  'NJD',
-  'NSH',
-  'NYI',
-  'NYR',
-  'OTT',
-  'PHI',
-  'PIT',
-  'SEA',
-  'SJS',
-  'STL',
-  'TBL',
-  'TOR',
-  'UTA',
-  'VAN',
-  'VEG',
-  'WPG',
-  'WSH',
-  // Historical teams (ESPN)
-  'ARI',
-  'ATL',
-  'PHX',
-  // Historical teams (legacy PNGs)
-  'AFM',
-  'ATF',
-  'CLE',
-  'CLR',
-  'HFD',
-  'HAR',
-  'KCS',
-  'MDA',
-  'MNS',
-  'OAK',
-  'QUE',
-  'WPG1',
 ])
 
 // NHL PNG teams that need white background in dark mode
@@ -249,32 +47,33 @@ const NHL_PNG_WHITE_BG = new Set([
   'WPG1',
 ])
 
-// NHL SVG teams with white logos that need colored background in light mode
-// Note: TOR/TBL now use ESPN PNGs which handle this properly
-const NHL_SVG_COLORED_BG = new Set<string>([])
-
-// PWHL teams with logos available (all PNG from SportsLogos.Net)
-const PWHL_TEAMS_WITH_LOGOS = new Set([
-  // Inaugural teams (2024-25)
-  'BOS',
-  'MIN',
-  'MTL',
-  'NYS',
-  'OTT',
-  'TOR',
-  // Expansion teams (2025-26)
-  'SEA',
-  'VAN',
-])
-
-// PWHL teams using PNG
-const PWHL_PNG_TEAMS = new Set(['BOS', 'MIN', 'MTL', 'NYS', 'OTT', 'TOR', 'SEA', 'VAN'])
-
 // PWHL PNG teams that need white background in dark mode
 const PWHL_PNG_WHITE_BG = new Set([
   'SEA',
   'VAN', // Dark colored logos that need white background
 ])
+
+// Logos that need a white circle behind them so they read on dark backgrounds.
+// NBA and WNBA PNGs are all legacy/dark artwork, so every one gets it.
+const WHITE_BG: Record<League, Set<string>> = {
+  wnba: WNBA_SVG_WHITE_BG,
+  nba: new Set(),
+  nhl: NHL_PNG_WHITE_BG,
+  pwhl: PWHL_PNG_WHITE_BG,
+}
+const WHITE_BG_ALL_PNG = new Set<League>(['nba', 'wnba'])
+
+// White logos that need a team-colored circle in light mode (none currently;
+// TOR/TBL switched to ESPN PNGs that handle this themselves)
+const COLORED_BG: Record<League, Set<string>> = {
+  wnba: new Set(),
+  nba: new Set(),
+  nhl: new Set(),
+  pwhl: new Set(),
+}
+
+// PWHL artwork is edge-to-edge, so give large sizes some breathing room
+const PAD_LARGE_LOGOS = new Set<League>(['pwhl'])
 
 const TeamLogo = memo(function TeamLogo({
   teamCode,
@@ -287,38 +86,14 @@ const TeamLogo = memo(function TeamLogo({
   const franchise = franchises.find((f) => f.teamAbbr === teamCode)
   const displayName = franchise?.displayName || teamCode
 
-  const teamsWithLogos =
-    league === 'nba'
-      ? NBA_TEAMS_WITH_LOGOS
-      : league === 'nhl'
-        ? NHL_TEAMS_WITH_LOGOS
-        : league === 'pwhl'
-          ? PWHL_TEAMS_WITH_LOGOS
-          : WNBA_TEAMS_WITH_LOGOS
-  const pngTeams =
-    league === 'nba'
-      ? NBA_PNG_TEAMS
-      : league === 'nhl'
-        ? NHL_PNG_TEAMS
-        : league === 'pwhl'
-          ? PWHL_PNG_TEAMS
-          : WNBA_PNG_TEAMS
-  const svgWhiteBg = league === 'wnba' ? WNBA_SVG_WHITE_BG : new Set<string>()
-  const svgColoredBg = league === 'nhl' ? NHL_SVG_COLORED_BG : new Set<string>()
-  const pngWhiteBg =
-    league === 'nba'
-      ? NBA_PNG_TEAMS
-      : league === 'nhl'
-        ? NHL_PNG_WHITE_BG
-        : league === 'pwhl'
-          ? PWHL_PNG_WHITE_BG
-          : WNBA_PNG_TEAMS
-
-  const hasLogo = teamsWithLogos.has(teamCode)
-  const isPng = pngTeams.has(teamCode)
-  const needsWhiteBg = pngWhiteBg.has(teamCode) || svgWhiteBg.has(teamCode)
-  const needsColoredBg = svgColoredBg.has(teamCode)
-  const fileExtension = isPng ? 'png' : 'svg'
+  const logoFormat = (logoManifest as Record<string, Record<string, 'svg' | 'png'>>)[league]?.[
+    teamCode
+  ]
+  const hasLogo = logoFormat !== undefined
+  const needsWhiteBg =
+    WHITE_BG[league].has(teamCode) || (logoFormat === 'png' && WHITE_BG_ALL_PNG.has(league))
+  const needsColoredBg = COLORED_BG[league].has(teamCode)
+  const fileExtension = logoFormat
 
   // If logo exists, render the image
   if (hasLogo) {
@@ -350,7 +125,7 @@ const TeamLogo = memo(function TeamLogo({
           src={`/logos/${league}/${teamCode}.${fileExtension}`}
           alt={`${displayName} logo`}
           fill
-          className={`object-contain ${needsWhiteBg ? 'relative z-10 p-0.5' : ''} ${league === 'pwhl' && (size === 'lg' || size === 'xl') ? 'p-2' : ''}`}
+          className={`object-contain ${needsWhiteBg ? 'relative z-10 p-0.5' : ''} ${PAD_LARGE_LOGOS.has(league) && (size === 'lg' || size === 'xl') ? 'p-2' : ''}`}
           unoptimized // SVGs and small PNGs don't need optimization
         />
       </div>

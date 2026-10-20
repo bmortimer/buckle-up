@@ -4,6 +4,7 @@
 
 import type { Game, FranchiseInfo, League } from './types'
 import { parseDateLocal } from './dateUtils'
+import { seasonKeyForDate } from './leagues'
 
 /**
  * Calculate the current holder's win streak (consecutive wins WITH the belt)
@@ -33,35 +34,11 @@ export function getCurrentStreak(
     return 0
   }
 
-  // Group games by season to handle season transitions
-  // NHL/NBA seasons span two years (e.g., "2025-26"), so we need to determine
-  // which season a game belongs to based on the month
+  // Group games by season to handle season transitions. Split-year seasons
+  // (e.g. "2025-26") straddle New Year, so the key comes from the game date.
   const gamesBySeason = new Map<string, Game[]>()
   for (const game of completedGames) {
-    const gameDate = parseDateLocal(game.date)
-    const gameYear = gameDate.getFullYear()
-    const gameMonth = gameDate.getMonth() + 1 // 1-12
-
-    // Season key format depends on league type:
-    // - WNBA: Summer league, single year (e.g., "2026" for games May-Oct 2026)
-    // - NBA/NHL: Fall/winter leagues, spanning format (e.g., "2025-26" for Oct 2025 - Jun 2026)
-    let seasonKey: string
-    if (league === 'wnba') {
-      // WNBA runs May-Oct within a single calendar year
-      seasonKey = gameYear.toString()
-    } else {
-      // NHL/NBA seasons run Oct-Jun
-      // Oct-Dec: game is in season that started this year (e.g., Oct 2025 = 2025-26)
-      // Jan-Sep: game is in season that started last year (e.g., Jan 2026 = 2025-26)
-      let seasonStartYear: number
-      if (gameMonth >= 10) {
-        seasonStartYear = gameYear
-      } else {
-        seasonStartYear = gameYear - 1
-      }
-      const seasonEndYear = seasonStartYear + 1
-      seasonKey = `${seasonStartYear}-${seasonEndYear.toString().slice(-2)}`
-    }
+    const seasonKey = seasonKeyForDate(league, parseDateLocal(game.date))
 
     if (!gamesBySeason.has(seasonKey)) {
       gamesBySeason.set(seasonKey, [])
