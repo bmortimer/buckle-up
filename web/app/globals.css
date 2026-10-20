@@ -71,6 +71,110 @@ body {
     --led-green: 160 85% 45%;
     --led-amber: 45 100% 55%;
     --led-purple: 270 75% 65%;
+
+    /* Restore the tight "lit segment" bloom for the OG dark scoreboard */
+    --led-glow: 0 0 2px currentColor;
+  }
+
+  /* =====================================================
+     THEME: RISOGRAPH (shared DNA + 4 ink variants)
+
+     90s zine / punk fight-poster. Warm newsprint paper, ultra-black
+     condensed display slammed against a mono, square corners, fat
+     black borders, a hard offset "misregistered print" shadow, and a
+     halftone grain overlay. Only the two ink hues change per variant:
+       --ink-a  = primary ink (chrome + offset shadow)
+       --ink-b  = second print run (ring / secondary accent)
+     ===================================================== */
+  .theme-riso {
+    --font-display: var(--font-archivo-black);
+    --font-body: var(--font-space-mono);
+    --font-mono: var(--font-space-mono);
+
+    --background: 44 44% 92%; /* warm newsprint */
+    --foreground: 240 15% 12%; /* near-black ink */
+    --secondary: 44 30% 86%;
+    --secondary-foreground: 240 15% 12%;
+    --muted: 44 20% 82%;
+    --muted-foreground: 240 8% 38%;
+    --card: 44 48% 95%;
+    --card-foreground: 240 15% 12%;
+    --border: 240 15% 12%;
+    --input: 240 15% 12%;
+
+    --radius: 0px;
+    --border-width: 2.5px;
+
+    /* Poster type: tight, uppercase slam */
+    --heading-transform: uppercase;
+    --heading-tracking: -0.01em;
+    --heading-weight: 400;
+    --heading-leading: 0.92;
+
+    --led-glow: none;
+
+    /* Heavy halftone grain */
+    --body-texture: radial-gradient(hsl(240 15% 12% / 0.14) 1px, transparent 1.4px);
+    background-size: 4px 4px;
+  }
+
+  /* Ink-driven roles. These must be re-declared on every [data-league]
+     scope, not just .theme-riso: a custom property's var() references are
+     resolved where it's declared, so `--primary: var(--ink-a)` on <html>
+     would freeze the default ink and descendants would inherit that value
+     even after [data-league] overrides --ink-a. */
+  .theme-riso,
+  .theme-riso [data-league] {
+    --primary: var(--ink-a);
+    --primary-foreground: 44 44% 96%;
+    --accent: var(--ink-a);
+    --accent-foreground: 44 44% 96%;
+    --ring: var(--ink-b);
+
+    /* Riso treats figures as ONE print run: every numeric readout renders
+       in ink-a. Ink-b does structural work (rings/borders/shadows), not
+       number-tinting — so the stats read as intentional, not a rainbow. */
+    --led-red: var(--ink-a);
+    --led-green: var(--ink-a);
+    --led-amber: var(--ink-a);
+    --led-purple: var(--ink-a);
+
+    /* Hard offset "misregistered print" shadow in ink A — the signature */
+    --panel-bg: hsl(var(--card));
+    --panel-border: 2.5px solid hsl(var(--border));
+    --panel-shadow: 5px 5px 0 hsl(var(--ink-a));
+  }
+
+  /* Ink pairings. Each league page owns one pairing so the Risograph
+     system reads as a coherent print series with per-league identity.
+     Pages without a league (home, about) use the default below.
+       WNBA → pink + yellow   NBA  → blue + orange
+       NHL  → red + teal      PWHL → green + black
+     ink-a = primary ink (figures + offset shadow); ink-b = second run. */
+  .theme-riso {
+    /* Default (home / about): fluoro pink + yellow */
+    --ink-a: 331 100% 60%;
+    --ink-b: 47 100% 55%;
+  }
+
+  .theme-riso [data-league='wnba'] {
+    --ink-a: 331 100% 60%; /* fluoro pink */
+    --ink-b: 47 100% 55%; /* riso yellow */
+  }
+
+  .theme-riso [data-league='nba'] {
+    --ink-a: 202 100% 40%; /* riso blue (#0078BF family) */
+    --ink-b: 24 100% 55%; /* riso orange */
+  }
+
+  .theme-riso [data-league='nhl'] {
+    --ink-a: 0 100% 62%; /* riso red */
+    --ink-b: 175 100% 33%; /* riso teal */
+  }
+
+  .theme-riso [data-league='pwhl'] {
+    --ink-a: 155 62% 34%; /* riso green, muted */
+    --ink-b: 240 15% 12%; /* black */
   }
 }
 
@@ -93,6 +197,9 @@ body {
     transition:
       background-color 0.3s ease,
       color 0.3s ease;
+    /* Theme-driven atmosphere: gradient meshes / grain / patterns layer here */
+    background-image: var(--body-texture, none);
+    background-attachment: fixed;
   }
 
   h1,
@@ -102,9 +209,10 @@ body {
   h5,
   h6 {
     font-family: var(--font-display);
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    font-weight: var(--heading-weight, 700);
+    letter-spacing: var(--heading-tracking, 0.04em);
+    text-transform: var(--heading-transform, uppercase);
+    line-height: var(--heading-leading, 1.1);
   }
 
   .tabular-nums {
@@ -118,37 +226,32 @@ body {
 
 @layer components {
   /* ---- SCOREBOARD PANEL ---- */
+  /* Fully theme-driven so each aesthetic redefines the panel's whole
+     character (edge, radius, elevation) without touching components. */
   .scoreboard-panel {
-    background: hsl(var(--card));
-    border: var(--border-width) solid hsl(var(--border));
+    background: var(--panel-bg, hsl(var(--card)));
+    border: var(--panel-border, var(--border-width) solid hsl(var(--border)));
     border-radius: var(--radius);
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
-    border-color: transparent;
-    box-shadow:
+    box-shadow: var(
+      --panel-shadow,
       0 1px 3px rgba(0, 0, 0, 0.05),
-      0 8px 24px rgba(0, 0, 0, 0.08);
+      0 8px 24px rgba(0, 0, 0, 0.08)
+    );
   }
 
   .dark .scoreboard-panel {
-    border-color: hsl(var(--border));
-    /* Panel reads as a physical housing: crisp edge + honest elevation,
-       no gold halo. The bezel comes from the border, not a glow. */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--panel-shadow, 0 4px 16px rgba(0, 0, 0, 0.4));
   }
 
-  /* ---- LED TEXT EFFECTS ---- */
+  /* ---- LED / DISPLAY TEXT EFFECTS ---- */
   .led-text {
     font-family: var(--font-mono);
-    text-shadow: none;
     font-weight: 600;
-  }
-
-  /* Real LED/VFD displays bloom a little; a tight 2px halo reads as "lit
-     segment" where 0 0 20px read as "stage light". */
-  .dark .led-text {
-    text-shadow: 0 0 2px currentColor;
+    /* Each theme sets its own display-text glow (or none) */
+    text-shadow: var(--led-glow, none);
   }
 
   /* ---- SEGMENT RULE ---- */

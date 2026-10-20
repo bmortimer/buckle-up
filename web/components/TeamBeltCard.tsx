@@ -30,9 +30,6 @@ export default function TeamBeltCard({
       data-card="team-belt-stats"
       className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden"
     >
-      {/* LED status bar at top */}
-      <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
-
       <div className="relative z-10">
         {/* Header - always centered */}
         <h2 className="text-[0.6rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 font-orbitron text-center font-normal">

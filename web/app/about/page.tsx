@@ -143,12 +143,6 @@ export default function AboutPage() {
 
         {/* Header - Scoreboard Style */}
         <header className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center mb-8 sm:mb-12 relative overflow-hidden">
-          {/* Top LED strip */}
-          <div
-            className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60"
-            aria-hidden="true"
-          />
-
           <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4">
             <span aria-hidden="true">◆ </span>About<span aria-hidden="true"> ◆</span>
           </div>
@@ -160,10 +154,7 @@ export default function AboutPage() {
             The Belt
           </h1>
 
-          <div
-            className="h-0.5 bg-border mb-4 sm:mb-6"
-            aria-hidden="true"
-          />
+          <div className="h-0.5 bg-border mb-4 sm:mb-6" aria-hidden="true" />
 
           <p className="text-base sm:text-lg text-muted-foreground font-body leading-relaxed max-w-2xl mx-auto">
             What if our sports leagues worked a bit more like boxing or wrestling? One belt to rule
@@ -223,10 +214,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div
-                className="h-px bg-border"
-                aria-hidden="true"
-              />
+              <div className="h-px bg-border" aria-hidden="true" />
               <div className="flex gap-4 items-start">
                 <div
                   className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center"
@@ -244,10 +232,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div
-                className="h-px bg-border"
-                aria-hidden="true"
-              />
+              <div className="h-px bg-border" aria-hidden="true" />
               <div className="flex gap-4 items-start">
                 <div
                   className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center"
@@ -265,10 +250,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div
-                className="h-px bg-border"
-                aria-hidden="true"
-              />
+              <div className="h-px bg-border" aria-hidden="true" />
               <div className="flex gap-4 items-start">
                 <div
                   className="text-xl sm:text-2xl font-mono led-text flex-shrink-0 w-8 text-center"
@@ -607,10 +589,7 @@ export default function AboutPage() {
 
         {/* Footer */}
         <footer className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
-          <div
-            className="absolute bottom-0 left-0 right-0 h-0.5 bg-border"
-            aria-hidden="true"
-          />
+          <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-border" aria-hidden="true" />
           <p className="text-xs text-muted-foreground font-mono tracking-wider uppercase mb-3">
             Data updates nightly ~3:30 AM Pacific (winter) / 4:30 AM (summer).
           </p>

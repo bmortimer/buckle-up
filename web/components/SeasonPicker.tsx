@@ -45,11 +45,13 @@ export default function SeasonPicker({
 
   const closeModal = useCallback(() => setIsOpen(false), [])
 
-  // Return focus to trigger button when modal closes
+  // Return focus to trigger button when modal closes (not on initial mount)
+  const wasOpenRef = useRef(false)
   useEffect(() => {
-    if (!isOpen) {
+    if (wasOpenRef.current && !isOpen) {
       triggerButtonRef.current?.focus()
     }
+    wasOpenRef.current = isOpen
   }, [isOpen])
 
   useModalFocusTrap(isOpen, closeModal, modalRef, closeButtonRef)
@@ -207,10 +209,7 @@ export default function SeasonPicker({
                       {/* Decade Label */}
                       <div className="text-xs sm:text-sm font-orbitron tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
                         <span>{decadeLabel}</span>
-                        <div
-                          className="flex-1 h-px bg-border/40"
-                          aria-hidden="true"
-                        />
+                        <div className="flex-1 h-px bg-border/40" aria-hidden="true" />
                       </div>
 
                       {/* Year Grid */}

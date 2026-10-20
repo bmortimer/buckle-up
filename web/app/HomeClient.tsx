@@ -1,31 +1,25 @@
 'use client'
 
 import Link from 'next/link'
-import { ThemeSwitcher } from '@/components/ThemeSwitcher'
+import { AestheticSwitcher } from '@/components/AestheticSwitcher'
 import CornerRivets from '@/components/CornerRivets'
 
 export default function HomeClient() {
   return (
     <article className="max-w-4xl mx-auto">
       {/* Top navigation - About & Theme */}
-      <div className="flex items-center justify-end gap-2 mb-8">
+      <div className="flex items-stretch justify-end gap-2 mb-8">
         <Link
           href="/about"
           className="px-3 py-1.5 text-[0.65rem] font-mono uppercase tracking-wider text-muted-foreground hover:text-foreground border border-border hover:border-muted-foreground bg-card transition-colors"
         >
           About
         </Link>
-        <ThemeSwitcher />
+        <AestheticSwitcher />
       </div>
 
       {/* Header - Scoreboard Style */}
       <header className="scoreboard-panel p-4 sm:p-6 md:p-8 text-center mb-8 sm:mb-12 relative overflow-hidden">
-        {/* Top LED strip */}
-        <div
-          className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-60"
-          aria-hidden="true"
-        />
-
         <div className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4">
           ◆ Championship Belt Tracker ◆
         </div>
@@ -78,10 +72,8 @@ export default function HomeClient() {
           <Link
             href="/wnba"
             className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
+            data-league="wnba"
           >
-            {/* Top LED strip - red for WNBA */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
             <div className="text-center space-y-4">
               <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
                 Women's Basketball
@@ -117,10 +109,8 @@ export default function HomeClient() {
           <Link
             href="/nba"
             className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
+            data-league="nba"
           >
-            {/* Top LED strip - amber for NBA */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
             <div className="text-center space-y-4">
               <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
                 Men's Basketball
@@ -156,10 +146,8 @@ export default function HomeClient() {
           <Link
             href="/nhl"
             className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
+            data-league="nhl"
           >
-            {/* Top LED strip - green for NHL */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
             <div className="text-center space-y-4">
               <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
                 Men's Ice Hockey
@@ -195,10 +183,8 @@ export default function HomeClient() {
           <Link
             href="/pwhl"
             className="group scoreboard-panel p-6 sm:p-8 relative overflow-hidden transition-[transform,box-shadow,border-color] duration-300 hover:scale-[1.02] hover:shadow-lg"
+            data-league="pwhl"
           >
-            {/* Top LED strip - purple for PWHL */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
             <div className="text-center space-y-4">
               <div className="text-xs font-orbitron uppercase tracking-[0.2em] text-muted-foreground">
                 Women's Ice Hockey
@@ -206,7 +192,7 @@ export default function HomeClient() {
 
               <h3
                 className="text-2xl sm:text-3xl font-display tracking-wide uppercase led-text"
-                style={{ color: 'hsl(270 60% 60%)' }}
+                style={{ color: 'hsl(var(--led-purple))' }}
               >
                 PWHL
               </h3>

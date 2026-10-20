@@ -68,10 +68,6 @@ export default function NextGamePreview({
         data-card="next-game"
         className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden h-full flex flex-col"
       >
-        <div
-          className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60"
-          aria-hidden="true"
-        />
         <div className="relative z-10 flex flex-col flex-1 justify-between">
           <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center font-normal">
             <span aria-hidden="true">◆ </span>
@@ -127,9 +123,6 @@ export default function NextGamePreview({
       data-card="next-game"
       className="scoreboard-panel p-4 sm:p-6 md:p-8 relative overflow-hidden h-full flex flex-col"
     >
-      {/* Top LED status bar */}
-      <div className="absolute top-0 left-0 right-0 h-1 sm:h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-60" />
-
       <div className="relative z-10 flex flex-col flex-1">
         {/* Header */}
         <h2 className="text-[0.6rem] sm:text-xs font-orbitron uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 text-center font-normal">
