@@ -6,22 +6,22 @@
       "date": "2026-10-20",
       "homeTeam": "DET",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 121,
+      "awayScore": 113
     },
     {
       "date": "2026-10-20",
       "homeTeam": "NYK",
       "awayTeam": "PHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 100,
+      "awayScore": 106
     },
     {
       "date": "2026-10-20",
       "homeTeam": "SAS",
       "awayTeam": "OKC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 104,
+      "awayScore": 116
     },
     {
       "date": "2026-10-21",
@@ -8405,7 +8405,7 @@
   ],
   "metadata": {
     "total_games": 1200,
-    "ingested_at": "2026-08-23T19:37:53.285577",
+    "ingested_at": "2026-10-21T16:00:58.704087",
     "source": "basketball-reference.com"
   }
 }
