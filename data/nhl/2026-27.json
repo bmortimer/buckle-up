@@ -1063,15 +1063,15 @@
       "date": "2026-10-21",
       "homeTeam": "BUF",
       "awayTeam": "PHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 3
     },
     {
       "date": "2026-10-21",
       "homeTeam": "OTT",
       "awayTeam": "FLA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 1
     },
     {
       "date": "2026-10-22",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-10-21T16:01:11.100647"
+    "ingested_at": "2026-10-22T15:56:54.277274"
   }
 }

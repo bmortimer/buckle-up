@@ -27,78 +27,78 @@
       "date": "2026-10-21",
       "homeTeam": "WAS",
       "awayTeam": "MIL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 128,
+      "awayScore": 116
     },
     {
       "date": "2026-10-21",
       "homeTeam": "ORL",
       "awayTeam": "ATL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 125,
+      "awayScore": 132
     },
     {
       "date": "2026-10-21",
       "homeTeam": "BKN",
       "awayTeam": "CHA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 103,
+      "awayScore": 110
     },
     {
       "date": "2026-10-21",
       "homeTeam": "TOR",
       "awayTeam": "CHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 135,
+      "awayScore": 92
     },
     {
       "date": "2026-10-21",
       "homeTeam": "MIA",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 106,
+      "awayScore": 131
     },
     {
       "date": "2026-10-21",
       "homeTeam": "MEM",
       "awayTeam": "UTA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 123,
+      "awayScore": 103
     },
     {
       "date": "2026-10-21",
       "homeTeam": "NOP",
       "awayTeam": "IND",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 120,
+      "awayScore": 123
     },
     {
       "date": "2026-10-21",
       "homeTeam": "HOU",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 128,
+      "awayScore": 110
     },
     {
       "date": "2026-10-21",
       "homeTeam": "LAL",
       "awayTeam": "GSW",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 127,
+      "awayScore": 105
     },
     {
       "date": "2026-10-21",
       "homeTeam": "POR",
       "awayTeam": "PHX",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 124,
+      "awayScore": 83
     },
     {
       "date": "2026-10-21",
       "homeTeam": "LAC",
       "awayTeam": "SAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 121,
+      "awayScore": 96
     },
     {
       "date": "2026-10-22",
@@ -8405,7 +8405,7 @@
   ],
   "metadata": {
     "total_games": 1200,
-    "ingested_at": "2026-10-21T16:00:58.704087",
+    "ingested_at": "2026-10-22T15:56:41.884620",
     "source": "basketball-reference.com"
   }
 }
