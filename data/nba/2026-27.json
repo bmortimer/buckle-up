@@ -104,15 +104,15 @@
       "date": "2026-10-22",
       "homeTeam": "PHI",
       "awayTeam": "CLE",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 114,
+      "awayScore": 106
     },
     {
       "date": "2026-10-22",
       "homeTeam": "OKC",
       "awayTeam": "DEN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 96,
+      "awayScore": 84
     },
     {
       "date": "2026-10-23",
@@ -8405,7 +8405,7 @@
   ],
   "metadata": {
     "total_games": 1200,
-    "ingested_at": "2026-10-22T15:56:41.884620",
+    "ingested_at": "2026-10-23T15:48:23.534330",
     "source": "basketball-reference.com"
   }
 }
