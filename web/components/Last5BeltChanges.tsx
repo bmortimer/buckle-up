@@ -50,8 +50,16 @@ export default function Last5BeltChanges({ league, history, franchises }: Last5B
     )
   }
 
-  // Just show the 5 winners in chronological order (left to right = old to new)
-  const fullPath = last5Changes.map((c) => c.toTeam)
+  // Winners in chronological order (left to right = old to new). When the whole
+  // history fits, lead with the holder before the first change so a single
+  // change still reads as "from ▸ to".
+  const fullPath = last5Changes.map((c) => ({
+    team: c.toTeam,
+    label: formatDateShort(c.game.date),
+  }))
+  if (last5Changes.length < 5) {
+    fullPath.unshift({ team: last5Changes[0].fromTeam, label: 'Start' })
+  }
 
   return (
     <div
@@ -68,9 +76,8 @@ export default function Last5BeltChanges({ league, history, franchises }: Last5B
 
         {/* Horizontal flow showing belt path */}
         <div className="flex items-center justify-center gap-2 sm:gap-3">
-          {fullPath.map((team, idx) => {
+          {fullPath.map(({ team, label }, idx) => {
             const isEnd = idx === fullPath.length - 1
-            const changeForThisTeam = last5Changes[idx]
 
             return (
               <div key={`${team}-${idx}`} className="flex items-center gap-2 sm:gap-3">
@@ -90,7 +97,7 @@ export default function Last5BeltChanges({ league, history, franchises }: Last5B
                     {team}
                   </div>
                   <div className="text-[0.6rem] sm:text-xs font-mono text-muted-foreground">
-                    {formatDateShort(changeForThisTeam.game.date)}
+                    {label}
                   </div>
                 </div>
 
