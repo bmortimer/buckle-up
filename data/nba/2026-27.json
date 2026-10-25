@@ -202,57 +202,57 @@
       "date": "2026-10-24",
       "homeTeam": "CHA",
       "awayTeam": "MIA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 115,
+      "awayScore": 110
     },
     {
       "date": "2026-10-24",
       "homeTeam": "PHI",
       "awayTeam": "MIL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 127,
+      "awayScore": 116
     },
     {
       "date": "2026-10-24",
       "homeTeam": "CLE",
       "awayTeam": "BKN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 125,
+      "awayScore": 121
     },
     {
       "date": "2026-10-24",
       "homeTeam": "DAL",
       "awayTeam": "SAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 106,
+      "awayScore": 122
     },
     {
       "date": "2026-10-24",
       "homeTeam": "CHI",
       "awayTeam": "WAS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 120,
+      "awayScore": 124
     },
     {
       "date": "2026-10-24",
       "homeTeam": "ATL",
       "awayTeam": "HOU",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 114,
+      "awayScore": 121
     },
     {
       "date": "2026-10-24",
       "homeTeam": "DEN",
       "awayTeam": "NOP",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 141,
+      "awayScore": 135
     },
     {
       "date": "2026-10-24",
       "homeTeam": "PHX",
       "awayTeam": "GSW",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 131,
+      "awayScore": 122
     },
     {
       "date": "2026-10-25",
@@ -8405,7 +8405,7 @@
   ],
   "metadata": {
     "total_games": 1200,
-    "ingested_at": "2026-10-24T14:42:26.504727",
+    "ingested_at": "2026-10-25T14:59:35.291024",
     "source": "basketball-reference.com"
   }
 }
