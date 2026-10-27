@@ -1294,22 +1294,22 @@
       "date": "2026-10-26",
       "homeTeam": "CGY",
       "awayTeam": "TOR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 2
     },
     {
       "date": "2026-10-26",
       "homeTeam": "EDM",
       "awayTeam": "DET",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 4
     },
     {
       "date": "2026-10-26",
       "homeTeam": "NYR",
       "awayTeam": "LAK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 6
     },
     {
       "date": "2026-10-27",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-10-26T17:30:15.622501"
+    "ingested_at": "2026-10-27T16:46:04.492580"
   }
 }
