@@ -1651,78 +1651,78 @@
       "date": "2026-11-03",
       "homeTeam": "CBJ",
       "awayTeam": "COL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 7,
+      "awayScore": 2
     },
     {
       "date": "2026-11-03",
       "homeTeam": "MTL",
       "awayTeam": "WPG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 5
     },
     {
       "date": "2026-11-03",
       "homeTeam": "NJD",
       "awayTeam": "EDM",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 3
     },
     {
       "date": "2026-11-03",
       "homeTeam": "NSH",
       "awayTeam": "CAR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "date": "2026-11-03",
       "homeTeam": "NYR",
       "awayTeam": "STL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "date": "2026-11-03",
       "homeTeam": "PHI",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 4
     },
     {
       "date": "2026-11-03",
       "homeTeam": "PIT",
       "awayTeam": "VEG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-11-03",
       "homeTeam": "TBL",
       "awayTeam": "DET",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 2
     },
     {
       "date": "2026-11-03",
       "homeTeam": "TOR",
       "awayTeam": "UTA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-11-03",
       "homeTeam": "VAN",
       "awayTeam": "ANA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 5
     },
     {
       "date": "2026-11-03",
       "homeTeam": "WSH",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 6
     },
     {
       "date": "2026-11-04",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-11-03T18:31:52.107977"
+    "ingested_at": "2026-11-04T18:44:43.761794"
   }
 }
