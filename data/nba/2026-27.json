@@ -853,15 +853,15 @@
       "date": "2026-11-05",
       "homeTeam": "PHX",
       "awayTeam": "ORL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 117,
+      "awayScore": 104
     },
     {
       "date": "2026-11-05",
       "homeTeam": "GSW",
       "awayTeam": "MIA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 120,
+      "awayScore": 100
     },
     {
       "date": "2026-11-06",
@@ -8405,7 +8405,7 @@
   ],
   "metadata": {
     "total_games": 1200,
-    "ingested_at": "2026-11-05T18:52:32.133290",
+    "ingested_at": "2026-11-06T18:08:57.848667",
     "source": "basketball-reference.com"
   }
 }
