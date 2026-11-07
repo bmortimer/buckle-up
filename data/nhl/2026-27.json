@@ -1833,22 +1833,22 @@
       "date": "2026-11-06",
       "homeTeam": "BUF",
       "awayTeam": "CBJ",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 5,
+      "awayScore": 2
     },
     {
       "date": "2026-11-06",
       "homeTeam": "CGY",
       "awayTeam": "ANA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 5
     },
     {
       "date": "2026-11-06",
       "homeTeam": "MIN",
       "awayTeam": "SJS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "date": "2026-11-07",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-11-06T18:09:09.592428"
+    "ingested_at": "2026-11-07T16:56:45.219153"
   }
 }
