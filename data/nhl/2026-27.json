@@ -1980,22 +1980,22 @@
       "date": "2026-11-09",
       "homeTeam": "EDM",
       "awayTeam": "NYR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "date": "2026-11-09",
       "homeTeam": "SJS",
       "awayTeam": "NYI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-11-09",
       "homeTeam": "VAN",
       "awayTeam": "PHI",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 3
     },
     {
       "date": "2026-11-10",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-11-09T21:31:54.300590"
+    "ingested_at": "2026-11-10T18:44:31.791480"
   }
 }
