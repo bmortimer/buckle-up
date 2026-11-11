@@ -66,17 +66,23 @@ TEAM_NAME_TO_CODE = {
     "Seattle": "SEA",
     "Vancouver Goldeneyes": "VAN",
     "Vancouver": "VAN",
-    # Expansion teams (2026-27). Launched without nicknames: the API reports
-    # city + nickname "PWHL". Add real names here once revealed.
+    # Expansion teams (2026-27). Names revealed 2026-11-10; the API launched
+    # with city + nickname "PWHL", so keep those placeholder forms too.
+    "Detroit Clutch": "DET",
     "Detroit": "DET",
     "Detroit PWHL": "DET",
     "PWHL Detroit": "DET",
+    "Hamilton Havoc": "HAM",
     "Hamilton": "HAM",
     "Hamilton PWHL": "HAM",
     "PWHL Hamilton": "HAM",
+    "Vegas Vanguards": "VGS",
+    "Las Vegas Vanguards": "VGS",
+    "Vegas": "VGS",
     "Las Vegas": "VGS",
     "Las Vegas PWHL": "VGS",
     "PWHL Las Vegas": "VGS",
+    "San Jose Sea Lions": "SJS",
     "San Jose": "SJS",
     "San Jose PWHL": "SJS",
     "PWHL San Jose": "SJS",

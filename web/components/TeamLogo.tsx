@@ -49,8 +49,11 @@ const NHL_PNG_WHITE_BG = new Set([
 
 // PWHL PNG teams that need white background in dark mode
 const PWHL_PNG_WHITE_BG = new Set([
+  'DET',
+  'HAM',
   'SEA',
-  'VAN', // Dark colored logos that need white background
+  'VAN',
+  'VGS', // Dark colored logos that need white background
 ])
 
 // Logos that need a white circle behind them so they read on dark backgrounds.

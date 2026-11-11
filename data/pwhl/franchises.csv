@@ -35,17 +35,17 @@ VAN,VAN,Vancouver Goldeneyes,Vancouver,2025,,active,,#00205B
 # ============================================
 # PWHL EXPANSION TEAMS (2026)
 # Launched without nicknames; update display_name once revealed.
-# Colors approximate the announced inaugural jersey palettes.
+# Names/logos revealed 2026-11-10. Colors sampled from the logos.
 # ============================================
 
-# PWHL DETROIT (black / silver / red)
-DET,DET,PWHL Detroit,Detroit,2026,,active,,#1C1C1C
+# DETROIT CLUTCH (motor black / clutch chrome / racing red)
+DET,DET,Detroit Clutch,Detroit,2026,,active,,#1C1C1C
 
-# PWHL HAMILTON (gold / deep red / burnt orange / cream)
-HAM,HAM,PWHL Hamilton,Hamilton,2026,,active,,#FFB81C
+# HAMILTON HAVOC (rusted metal / molten steel / falcon ivory / flame orange)
+HAM,HAM,Hamilton Havoc,Hamilton,2026,,active,,#64111D
 
-# PWHL LAS VEGAS (green / gold / navy)
-VGS,VGS,PWHL Las Vegas,Las Vegas,2026,,active,,#00563F
+# VEGAS VANGUARDS (cactus green / fox ivory / desert gold / midnight navy)
+VGS,VGS,Vegas Vanguards,Las Vegas,2026,,active,,#686F12
 
-# PWHL SAN JOSE (mandarin orange / sky blue)
-SJS,SJS,PWHL San Jose,San Jose,2026,,active,,#F47A20
+# SAN JOSE SEA LIONS (coastal blue / sunset orange / tidal navy / sea mist)
+SJS,SJS,San Jose Sea Lions,San Jose,2026,,active,,#2B71B8

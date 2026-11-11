@@ -100,13 +100,17 @@
   },
   "pwhl": {
     "BOS": "png",
+    "DET": "png",
+    "HAM": "png",
     "MIN": "png",
     "MTL": "png",
     "NYS": "png",
     "OTT": "png",
     "SEA": "png",
+    "SJS": "png",
     "TOR": "png",
-    "VAN": "png"
+    "VAN": "png",
+    "VGS": "png"
   },
   "wnba": {
     "ATL": "svg",
