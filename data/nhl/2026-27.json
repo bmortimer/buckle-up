@@ -2001,50 +2001,50 @@
       "date": "2026-11-10",
       "homeTeam": "CBJ",
       "awayTeam": "FLA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 4
     },
     {
       "date": "2026-11-10",
       "homeTeam": "LAK",
       "awayTeam": "NSH",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 0,
+      "awayScore": 3
     },
     {
       "date": "2026-11-10",
       "homeTeam": "MTL",
       "awayTeam": "MIN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 2
     },
     {
       "date": "2026-11-10",
       "homeTeam": "OTT",
       "awayTeam": "WSH",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-11-10",
       "homeTeam": "STL",
       "awayTeam": "DET",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 2
     },
     {
       "date": "2026-11-10",
       "homeTeam": "TOR",
       "awayTeam": "COL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 6
     },
     {
       "date": "2026-11-10",
       "homeTeam": "WPG",
       "awayTeam": "NJD",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 2
     },
     {
       "date": "2026-11-11",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-11-10T18:44:31.791480"
+    "ingested_at": "2026-11-11T18:48:29.129783"
   }
 }
