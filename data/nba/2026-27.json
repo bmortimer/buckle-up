@@ -1196,29 +1196,29 @@
       "date": "2026-11-12",
       "homeTeam": "PHI",
       "awayTeam": "TOR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 123,
+      "awayScore": 112
     },
     {
       "date": "2026-11-12",
       "homeTeam": "WAS",
       "awayTeam": "DET",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 140,
+      "awayScore": 144
     },
     {
       "date": "2026-11-12",
       "homeTeam": "MIN",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 133,
+      "awayScore": 94
     },
     {
       "date": "2026-11-12",
       "homeTeam": "PHX",
       "awayTeam": "CHA",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 101,
+      "awayScore": 96
     },
     {
       "date": "2026-11-13",
@@ -8405,7 +8405,7 @@
   ],
   "metadata": {
     "total_games": 1200,
-    "ingested_at": "2026-11-12T19:00:46.370589",
+    "ingested_at": "2026-11-13T18:37:38.552451",
     "source": "basketball-reference.com"
   }
 }
