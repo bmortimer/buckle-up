@@ -2169,15 +2169,15 @@
       "date": "2026-11-13",
       "homeTeam": "VAN",
       "awayTeam": "NYR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 5
     },
     {
       "date": "2026-11-13",
       "homeTeam": "VEG",
       "awayTeam": "NSH",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-11-14",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-11-13T18:37:50.829220"
+    "ingested_at": "2026-11-14T17:14:57.744162"
   }
 }
