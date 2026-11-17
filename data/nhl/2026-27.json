@@ -2316,15 +2316,15 @@
       "date": "2026-11-16",
       "homeTeam": "NYR",
       "awayTeam": "MTL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "date": "2026-11-16",
       "homeTeam": "UTA",
       "awayTeam": "VAN",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-11-17",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-11-16T21:08:06.781973"
+    "ingested_at": "2026-11-17T19:57:14.704963"
   }
 }
