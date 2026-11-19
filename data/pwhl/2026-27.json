@@ -662,8 +662,8 @@
     },
     {
       "date": "2027-02-07",
-      "homeTeam": "VAN",
-      "awayTeam": "VGS",
+      "homeTeam": "VGS",
+      "awayTeam": "VAN",
       "homeScore": null,
       "awayScore": null
     },
@@ -1005,8 +1005,8 @@
     },
     {
       "date": "2027-03-21",
-      "homeTeam": "VGS",
-      "awayTeam": "VAN",
+      "homeTeam": "VAN",
+      "awayTeam": "VGS",
       "homeScore": null,
       "awayScore": null
     },
@@ -1265,6 +1265,6 @@
   ],
   "metadata": {
     "total_games": 180,
-    "ingested_at": "2026-10-19T21:44:26.505719"
+    "ingested_at": "2026-11-19T19:33:07.978117"
   }
 }

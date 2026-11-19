@@ -2407,22 +2407,22 @@
       "date": "2026-11-18",
       "homeTeam": "DET",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 1,
+      "awayScore": 4
     },
     {
       "date": "2026-11-18",
       "homeTeam": "NJD",
       "awayTeam": "MTL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 2,
+      "awayScore": 3
     },
     {
       "date": "2026-11-18",
       "homeTeam": "UTA",
       "awayTeam": "COL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 4,
+      "awayScore": 1
     },
     {
       "date": "2026-11-19",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-11-18T19:28:21.349448"
+    "ingested_at": "2026-11-19T19:32:54.374409"
   }
 }
