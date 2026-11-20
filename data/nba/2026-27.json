@@ -1560,29 +1560,29 @@
       "date": "2026-11-19",
       "homeTeam": "MEM",
       "awayTeam": "GSW",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 126,
+      "awayScore": 98
     },
     {
       "date": "2026-11-19",
       "homeTeam": "MIL",
       "awayTeam": "POR",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 114,
+      "awayScore": 124
     },
     {
       "date": "2026-11-19",
       "homeTeam": "MIN",
       "awayTeam": "NYK",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 99,
+      "awayScore": 102
     },
     {
       "date": "2026-11-19",
       "homeTeam": "SAS",
       "awayTeam": "LAC",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 124,
+      "awayScore": 112
     },
     {
       "date": "2026-11-20",
@@ -8405,7 +8405,7 @@
   ],
   "metadata": {
     "total_games": 1200,
-    "ingested_at": "2026-11-19T19:32:42.078645",
+    "ingested_at": "2026-11-20T19:11:16.609305",
     "source": "basketball-reference.com"
   }
 }
