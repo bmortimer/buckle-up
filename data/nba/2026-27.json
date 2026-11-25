@@ -1812,22 +1812,22 @@
       "date": "2026-11-24",
       "homeTeam": "ORL",
       "awayTeam": "DET",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 86,
+      "awayScore": 104
     },
     {
       "date": "2026-11-24",
       "homeTeam": "WAS",
       "awayTeam": "BOS",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 116,
+      "awayScore": 131
     },
     {
       "date": "2026-11-24",
       "homeTeam": "DEN",
       "awayTeam": "DAL",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 101,
+      "awayScore": 120
     },
     {
       "date": "2026-11-25",
@@ -8405,7 +8405,7 @@
   ],
   "metadata": {
     "total_games": 1200,
-    "ingested_at": "2026-11-24T21:24:57.827707",
+    "ingested_at": "2026-11-25T20:32:20.234169",
     "source": "basketball-reference.com"
   }
 }

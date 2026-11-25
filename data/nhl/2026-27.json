@@ -2694,8 +2694,8 @@
       "date": "2026-11-24",
       "homeTeam": "EDM",
       "awayTeam": "VEG",
-      "homeScore": null,
-      "awayScore": null
+      "homeScore": 3,
+      "awayScore": 5
     },
     {
       "date": "2026-11-25",
@@ -9413,6 +9413,6 @@
   ],
   "metadata": {
     "total_games": 1344,
-    "ingested_at": "2026-11-24T21:25:09.695139"
+    "ingested_at": "2026-11-25T20:32:32.042446"
   }
 }
